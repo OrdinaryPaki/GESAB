@@ -75,6 +75,16 @@ P2 acceptable if documented:
 
 Do not stop with unresolved P0/P1 deviations.
 
-Do not loop indefinitely on P2 differences. After reasonable section passes, document P2 and move on.
+Do not loop indefinitely on P2 differences.
 
 If repeated changes are not improving visual match, stop that loop, document the blocker, and ask main for a repair order or foundation decision.
+
+## Section Pass Limits
+
+For each section:
+
+- minimum: 1 reference/local screenshot comparison pass
+- default maximum: 3 correction passes for P1 deviations
+- if P1 deviations remain after 3 passes and changes are no longer improving the match, report `needs_foundation_decision` or request a repair order
+- P0 deviations cannot be accepted as complete
+- P2 deviations must not trigger more than 1 extra pass unless main explicitly orders it

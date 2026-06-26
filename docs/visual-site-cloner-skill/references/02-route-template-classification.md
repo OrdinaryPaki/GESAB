@@ -70,7 +70,8 @@ Do not create visually separate page implementations for CMS-like routes unless 
 For each template family:
 
 - implement one reusable template
-- create data/routes for all detected instances when feasible
+- create route/data entries for all P0/P1 detected template instances
+- if all P0/P1 instances cannot be created, document exactly which instances were skipped and why
 - visually QA the canonical instance
 - sample-QA at least one additional instance when available
 - do not handcraft each instance unless classified as materially different

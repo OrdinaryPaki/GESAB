@@ -95,3 +95,4 @@ Use `scripts/validate-worker-report.mjs` when validating worker reports.
 - Mark screenshots stale when their foundation version, worktree, branch, commit, or local route state no longer matches the integrated baseline.
 - Use at most 4 active implementation workers by default.
 - Inspect dirty working trees before creating worktrees or checkpoints; never treat uncommitted user changes as disposable.
+- Use section pass limits: at least 1 comparison pass, at most 3 P1 correction passes by default, and no more than 1 extra P2 pass unless main explicitly orders it.
