@@ -1,0 +1,6 @@
+interface:
+  display_name: "Visual Site Cloner"
+  short_description: "Recreate a reference website design with browser-led visual QA."
+  default_prompt: "Use $visual-site-cloner on this URL:"
+policy:
+  allow_implicit_invocation: false
