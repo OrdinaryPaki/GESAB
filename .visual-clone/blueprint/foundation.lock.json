@@ -1,0 +1,21 @@
+{
+  "version": "foundation.v1",
+  "lockedFiles": [
+    "app/globals.css",
+    "app/layout.js",
+    "app/components/PlumblyShell.js",
+    "app/components/PlumblyIcons.js",
+    "app/components/HomeSections.js",
+    "app/plumbly-data.js"
+  ],
+  "workersMayNotSilentlyChange": [
+    "global CSS variables",
+    "font setup",
+    "Header",
+    "Footer",
+    "ContactBand",
+    "shared buttons/cards",
+    "shared section spacing"
+  ],
+  "changeRequestProcess": "Sequential main-worktree run; any foundation mutation is reviewed directly in main before route QA."
+}

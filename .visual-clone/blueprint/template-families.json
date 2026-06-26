@@ -1,0 +1,20 @@
+{
+  "families": [
+    {
+      "id": "service_detail",
+      "canonicalReferenceRoute": "/service/leak-detection-repair",
+      "detectedInstances": [
+        "/service/leak-detection-repair",
+        "/service/drain-cleaning",
+        "/service/sewer-line-services",
+        "/service/faucet-fixture-repair"
+      ],
+      "evidence": [
+        "Primary services cards share the same detail route structure.",
+        "Differences are service title, body copy, image and active sidebar item."
+      ],
+      "localTemplate": "app/service/[slug]/page.js",
+      "dataSource": "app/plumbly-data.js"
+    }
+  ]
+}

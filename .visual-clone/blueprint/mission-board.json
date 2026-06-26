@@ -1,0 +1,40 @@
+{
+  "mode": "sequential-main-worktree",
+  "missions": [
+    {
+      "id": "homepage",
+      "type": "unique_page",
+      "status": "implemented",
+      "reference": "/",
+      "local": "/"
+    },
+    {
+      "id": "about-page",
+      "type": "unique_page",
+      "status": "implemented",
+      "reference": "/about",
+      "local": "/about"
+    },
+    {
+      "id": "service-index",
+      "type": "index_page",
+      "status": "implemented",
+      "reference": "/service",
+      "local": "/service"
+    },
+    {
+      "id": "contact-page",
+      "type": "unique_page",
+      "status": "implemented",
+      "reference": "/contact",
+      "local": "/contact"
+    },
+    {
+      "id": "service-detail-template",
+      "type": "template_family",
+      "status": "implemented",
+      "reference": "/service/leak-detection-repair",
+      "local": "/service/leak-detection-repair"
+    }
+  ]
+}

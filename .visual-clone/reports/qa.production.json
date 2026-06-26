@@ -1,0 +1,150 @@
+{
+  "base": "http://localhost:3001",
+  "generatedAt": "2026-06-26T18:13:16.568Z",
+  "routes": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/home/local.desktop.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/home/local.mobile.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/about/local.desktop.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/about/local.mobile.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/service",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/service-index/local.desktop.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/service",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/service-index/local.mobile.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/contact/local.desktop.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/contact/local.mobile.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/service/leak-detection-repair",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/service-detail-leak/local.desktop.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/service/leak-detection-repair",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/service-detail-leak/local.mobile.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/service/drain-cleaning",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/service-detail-drain/local.desktop.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    },
+    {
+      "route": "/service/drain-cleaning",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": ".visual-clone/reports/service-detail-drain/local.mobile.prod.png",
+      "overflowX": false,
+      "nextDevOverlay": false,
+      "brokenImages": [],
+      "consoleMessages": [],
+      "pageErrors": []
+    }
+  ],
+  "interactions": [
+    {
+      "name": "desktop nav Services",
+      "passed": true
+    },
+    {
+      "name": "contact form fill/select",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

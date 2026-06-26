@@ -1,0 +1,35 @@
+{
+  "version": "foundation.v1",
+  "colors": {
+    "blue": "#1681ff",
+    "yellow": "#fdbc0d",
+    "black": "#030303",
+    "text": "#050505",
+    "muted": "#3b3b3b",
+    "line": "#e8e8e8",
+    "soft": "#f6f7f9"
+  },
+  "typography": {
+    "heading": "Outfit",
+    "body": "Inter",
+    "heroDesktop": "72px / 1.1 / 600",
+    "sectionHeadingDesktop": "48px / 1.2 / 700",
+    "bodyDesktop": "16px / 1.7 / 400"
+  },
+  "layout": {
+    "container": "1200px max with 24px side gutters",
+    "sectionPadding": "approximately 105px desktop, 72px mobile",
+    "radius": "16px",
+    "desktopHero": "50/50 blue content and full-height plumber image"
+  },
+  "globalComponents": [
+    "Header",
+    "Footer",
+    "ContactBand",
+    "AppointmentForm",
+    "InnerHero",
+    "buttons",
+    "cards",
+    "section titles"
+  ]
+}

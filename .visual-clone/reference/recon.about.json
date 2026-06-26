@@ -1,0 +1,5727 @@
+{
+  "url": "https://plumbly.framer.website/about",
+  "height": 6333,
+  "text": "Pages\n\nAbout\n\nServices\n\nContact\n\nCall Us: +1 406 555 0120\n\nOur Story\n\nWhat started as a small, family-run plumbing service has grown into a trusted name in the community\n\n“Our goal has always been simple — to provide honest, dependable plumbing services that people can trust\n\nJacob Jones\n\nCEO at Plumbly\n\nDelivering Trust, Quality Plumbing Solutions\n\nOur mission is to provide top-notch plumbing services that combine quality, integrity, and efficiency. We strive to solve problems quickly and effectively while ensuring every customer feels heard, valued, and fully satisfied with the results.\n\nThrough innovation and commitment, we aim to raise the standard for plumbing care in our community.\n\nExpert Craftsmanship\n\nOur licensed technicians bring years of hands-on experience, ensuring every job with care\n\nFast & Reliable Service\n\nWe respond quickly and work efficiently to resolve your plumbing issues without delay\n\nFair Honest Pricing\n\nNo hidden fees or surprise costs. We offer transparent pricing and clear communication\n\nWork Process\n\nFixing Your Plumbing the Simple Way\n01\n\nSchedule Your Service\n\nCall us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment\n\n02\n\nWe Inspect & Fix\n\nOur technician arrives on time, diagnoses the issue and explains the solution clearly\n\n03\n\nEnjoy Peace of Mind\n\nOnce the job’s done, we double-check everything clean up, and ensure you’re 100% satisfied\n\nTeam Members\n\nOur Hard working Members\n\nJacob Jones\n\nOperations Manager\n\nCody Fisher\n\nDrainage Technician\n\nAlbert Flores\n\nField Supervisor\n\nRalph Edwards\n\nProject Manager\n\nTestimonials\n\nTrusted by 10,000+ Customers\nAlbert Flores\n\nNew York, NY\n\n\"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work\n\nKristin Watson\n\nNew York, NY\n\n\"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home with care\n\nSarah M\n\nChicago\n\n\"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"\n\nAlbert Flores\n\nNew York, NY\n\n\"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work\n\nKristin Watson\n\nNew York, NY\n\n\"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home with care\n\nSarah M\n\nChicago\n\n\"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"\n\nAlbert Flores\n\nNew York, NY\n\n\"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work\n\nKristin Watson\n\nNew York, NY\n\n\"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home with care\n\nFAQ\n\nFrequently Asked Questions\n\nStill have Questions?\n\nCan’t find the answer you’re looking for? Please contact with our customer service\n\nContact Us\n\nWhat plumbing services do you offer?\n\nWe offer a full range of services including leak detection pipe repairs, drain cleaning, water heater installation faucet/toilet repairs, emergency plumbing\n\nAre your plumbers licensed and insured?\n\nDo you offer 24/7 Services?\n\nHow much do your services cost?\n\nWE ARE READY TO HELP YOU\n\nLet’s discuss\n\n+1 406 555 0120\n\nadmin@plumbly.com\n\nplumbly@gmail.com\n\n+1 406 555 0121\n\nBook Your Service\n\nFull Name\n\nEmail\n\nPhone\n\nService\n\nSelect…\nAC Services\nFreeze Services\n\nMake An Appointment\n\nWe offer fast, reliable, and affordable solutions to keep your home running smoothly\n\nService\n\nLeak Detection & Repair\n\nDrain Cleaning\n\nSewer Line Services\n\nFaucet & Fixture Repair\n\nHelp\n\nPrivacy policy\n\nTerms conditions\n\n404\n\nCopyright & design by ©Mezario 2025 plumbly, Inc. All rights reserved\n\nGet This Template\n\nUnlock 100+ Templates\n\nNeed to customize this template?\n\nStart With Top Experts!\n\nCreate a free website with Framer, the website builder loved by startups, designers and agencies.",
+  "blocks": [
+    {
+      "idx": 0,
+      "tag": "header",
+      "name": "Header",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 71
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 1,
+      "tag": "div",
+      "name": "Container",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 60,
+        "y": 0,
+        "w": 1320,
+        "h": 71
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 2,
+      "tag": "nav",
+      "name": "Dekstop Dark V2",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 60,
+        "y": 0,
+        "w": 1320,
+        "h": 71
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 3,
+      "tag": "div",
+      "name": "Nav Link",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 60,
+        "y": 24,
+        "w": 1320,
+        "h": 47
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 4,
+      "tag": "div",
+      "name": "Name",
+      "text": "",
+      "rect": {
+        "x": 60,
+        "y": 25,
+        "w": 160,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 5,
+      "tag": "a",
+      "name": "Logo and Name",
+      "text": "",
+      "rect": {
+        "x": 60,
+        "y": 25,
+        "w": 160,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 6,
+      "tag": "img",
+      "name": "",
+      "text": "Logo Image",
+      "rect": {
+        "x": 60,
+        "y": 25,
+        "w": 160,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 7,
+      "tag": "div",
+      "name": "Links",
+      "text": "Pages About Services Contact",
+      "rect": {
+        "x": 284,
+        "y": 29,
+        "w": 768,
+        "h": 37
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 8,
+      "tag": "div",
+      "name": "Trigger",
+      "text": "Pages",
+      "rect": {
+        "x": 284,
+        "y": 29,
+        "w": 67,
+        "h": 37
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 9,
+      "tag": "div",
+      "name": "Closed Dark",
+      "text": "Pages",
+      "rect": {
+        "x": 284,
+        "y": 29,
+        "w": 67,
+        "h": 37
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 10,
+      "tag": "p",
+      "name": "",
+      "text": "Pages",
+      "rect": {
+        "x": 284,
+        "y": 34,
+        "w": 48,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 11,
+      "tag": "div",
+      "name": "Closed Dark",
+      "text": "",
+      "rect": {
+        "x": 337,
+        "y": 41,
+        "w": 14,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 12,
+      "tag": "div",
+      "name": "Frame",
+      "text": "",
+      "rect": {
+        "x": 337,
+        "y": 41,
+        "w": 14,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 13,
+      "tag": "div",
+      "name": "Icon",
+      "text": "",
+      "rect": {
+        "x": 337,
+        "y": 41,
+        "w": 14,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 14,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "About",
+      "rect": {
+        "x": 387,
+        "y": 34,
+        "w": 45,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 15,
+      "tag": "p",
+      "name": "",
+      "text": "About",
+      "rect": {
+        "x": 387,
+        "y": 34,
+        "w": 45,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 16,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Services",
+      "rect": {
+        "x": 468,
+        "y": 34,
+        "w": 66,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 17,
+      "tag": "p",
+      "name": "",
+      "text": "Services",
+      "rect": {
+        "x": 468,
+        "y": 34,
+        "w": 66,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 18,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Contact",
+      "rect": {
+        "x": 569,
+        "y": 34,
+        "w": 60,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 19,
+      "tag": "p",
+      "name": "",
+      "text": "Contact",
+      "rect": {
+        "x": 569,
+        "y": 34,
+        "w": 60,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 20,
+      "tag": "a",
+      "name": "Variant 13",
+      "text": "Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 1116,
+        "y": 24,
+        "w": 264,
+        "h": 47
+      },
+      "style": {
+        "bg": "rgb(0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 21,
+      "tag": "div",
+      "name": "Shape",
+      "text": "",
+      "rect": {
+        "x": 1116,
+        "y": 73,
+        "w": 264,
+        "h": 9
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 22,
+      "tag": "p",
+      "name": "",
+      "text": "Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 1166,
+        "y": 34,
+        "w": 192,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "16px",
+        "weight": "600",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 23,
+      "tag": "div",
+      "name": "Hero Section",
+      "text": "Our Story What started as a small, family-run plumbing service has grown into a trusted name in the community “Our goal has always been simple — to provide honest, dependable plumbing services that people can trust Jacob",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 873
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 24,
+      "tag": "div",
+      "name": "Container",
+      "text": "Our Story What started as a small, family-run plumbing service has grown into a trusted name in the community “Our goal has always been simple — to provide honest, dependable plumbing services that people can trust Jacob",
+      "rect": {
+        "x": 120,
+        "y": 160,
+        "w": 1200,
+        "h": 713
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 25,
+      "tag": "div",
+      "name": "Content",
+      "text": "Our Story What started as a small, family-run plumbing service has grown into a trusted name in the community “Our goal has always been simple — to provide honest, dependable plumbing services that people can trust Jacob",
+      "rect": {
+        "x": 120,
+        "y": 160,
+        "w": 1200,
+        "h": 713
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 26,
+      "tag": "div",
+      "name": "Title ",
+      "text": "Our Story What started as a small, family-run plumbing service has grown into a trusted name in the community",
+      "rect": {
+        "x": 470,
+        "y": 160,
+        "w": 500,
+        "h": 156
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 27,
+      "tag": "h1",
+      "name": "",
+      "text": "Our Story",
+      "rect": {
+        "x": 470,
+        "y": 160,
+        "w": 500,
+        "h": 79
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "72px",
+        "weight": "600",
+        "line": "79.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 28,
+      "tag": "p",
+      "name": "",
+      "text": "What started as a small, family-run plumbing service has grown into a trusted name in the community",
+      "rect": {
+        "x": 470,
+        "y": 255,
+        "w": 500,
+        "h": 61
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "18px",
+        "weight": "400",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 29,
+      "tag": "div",
+      "name": "Image Wrapper",
+      "text": "“Our goal has always been simple — to provide honest, dependable plumbing services that people can trust Jacob Jones CEO at Plumbly",
+      "rect": {
+        "x": 120,
+        "y": 372,
+        "w": 1200,
+        "h": 501
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "grid"
+      }
+    },
+    {
+      "idx": 30,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 120,
+        "y": 372,
+        "w": 588,
+        "h": 501
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "15px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 31,
+      "tag": "img",
+      "name": "",
+      "text": "Gallery Image",
+      "rect": {
+        "x": 120,
+        "y": 372,
+        "w": 588,
+        "h": 501
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "15px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 32,
+      "tag": "div",
+      "name": "Right Content",
+      "text": "“Our goal has always been simple — to provide honest, dependable plumbing services that people can trust Jacob Jones CEO at Plumbly",
+      "rect": {
+        "x": 732,
+        "y": 372,
+        "w": 588,
+        "h": 501
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 33,
+      "tag": "div",
+      "name": "Image Wrapper",
+      "text": "",
+      "rect": {
+        "x": 732,
+        "y": 372,
+        "w": 588,
+        "h": 237
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 34,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 732,
+        "y": 372,
+        "w": 282,
+        "h": 237
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "15px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 35,
+      "tag": "img",
+      "name": "",
+      "text": "Gallery Image",
+      "rect": {
+        "x": 732,
+        "y": 372,
+        "w": 282,
+        "h": 237
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "15px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 36,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 1038,
+        "y": 372,
+        "w": 282,
+        "h": 237
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "15px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 37,
+      "tag": "img",
+      "name": "",
+      "text": "Gallery Image",
+      "rect": {
+        "x": 1038,
+        "y": 372,
+        "w": 282,
+        "h": 237
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "15px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 38,
+      "tag": "div",
+      "name": "Author Card",
+      "text": "“Our goal has always been simple — to provide honest, dependable plumbing services that people can trust Jacob Jones CEO at Plumbly",
+      "rect": {
+        "x": 732,
+        "y": 633,
+        "w": 588,
+        "h": 240
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 39,
+      "tag": "img",
+      "name": "",
+      "text": "Image",
+      "rect": {
+        "x": 756,
+        "y": 657,
+        "w": 197,
+        "h": 192
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "8px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 40,
+      "tag": "div",
+      "name": "Title",
+      "text": "“Our goal has always been simple — to provide honest, dependable plumbing services that people can trust Jacob Jones CEO at Plumbly",
+      "rect": {
+        "x": 977,
+        "y": 657,
+        "w": 319,
+        "h": 192
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 41,
+      "tag": "p",
+      "name": "",
+      "text": "“Our goal has always been simple — to provide honest, dependable plumbing services that people can trust",
+      "rect": {
+        "x": 977,
+        "y": 657,
+        "w": 319,
+        "h": 82
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 42,
+      "tag": "div",
+      "name": "Name",
+      "text": "Jacob Jones CEO at Plumbly",
+      "rect": {
+        "x": 977,
+        "y": 795,
+        "w": 111,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 43,
+      "tag": "p",
+      "name": "",
+      "text": "Jacob Jones",
+      "rect": {
+        "x": 977,
+        "y": 795,
+        "w": 111,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 44,
+      "tag": "p",
+      "name": "",
+      "text": "CEO at Plumbly",
+      "rect": {
+        "x": 977,
+        "y": 826,
+        "w": 103,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(255, 255, 255, 0.9)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 45,
+      "tag": "div",
+      "name": "Support Section",
+      "text": "Delivering Trust, Quality Plumbing Solutions Our mission is to provide top-notch plumbing services that combine quality, integrity, and efficiency. We strive to solve problems quickly and effectively while ensuring every",
+      "rect": {
+        "x": 0,
+        "y": 873,
+        "w": 1440,
+        "h": 371
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 46,
+      "tag": "div",
+      "name": "Container",
+      "text": "Delivering Trust, Quality Plumbing Solutions Our mission is to provide top-notch plumbing services that combine quality, integrity, and efficiency. We strive to solve problems quickly and effectively while ensuring every",
+      "rect": {
+        "x": 120,
+        "y": 961,
+        "w": 1200,
+        "h": 195
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 47,
+      "tag": "div",
+      "name": "Content",
+      "text": "Delivering Trust, Quality Plumbing Solutions Our mission is to provide top-notch plumbing services that combine quality, integrity, and efficiency. We strive to solve problems quickly and effectively while ensuring every",
+      "rect": {
+        "x": 120,
+        "y": 961,
+        "w": 1200,
+        "h": 195
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 48,
+      "tag": "h2",
+      "name": "",
+      "text": "Delivering Trust, Quality Plumbing Solutions",
+      "rect": {
+        "x": 120,
+        "y": 961,
+        "w": 520,
+        "h": 115
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "48px",
+        "weight": "600",
+        "line": "57.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 49,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Our mission is to provide top-notch plumbing services that combine quality, integrity, and efficiency. We strive to solve problems quickly and effectively while ensuring every customer feels heard, valued, and fully sati",
+      "rect": {
+        "x": 800,
+        "y": 961,
+        "w": 520,
+        "h": 195
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 50,
+      "tag": "p",
+      "name": "",
+      "text": "Our mission is to provide top-notch plumbing services that combine quality, integrity, and efficiency. We strive to solve problems quickly and effectively while ensuring every customer feels heard, valued, and fully sati",
+      "rect": {
+        "x": 800,
+        "y": 961,
+        "w": 520,
+        "h": 109
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 51,
+      "tag": "p",
+      "name": "",
+      "text": "Through innovation and commitment, we aim to raise the standard for plumbing care in our community.",
+      "rect": {
+        "x": 800,
+        "y": 1102,
+        "w": 520,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 52,
+      "tag": "div",
+      "name": "About Us Section",
+      "text": "Expert Craftsmanship Our licensed technicians bring years of hands-on experience, ensuring every job with care Fast & Reliable Service We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 0,
+        "y": 1245,
+        "w": 1440,
+        "h": 752
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 53,
+      "tag": "div",
+      "name": "Container",
+      "text": "Expert Craftsmanship Our licensed technicians bring years of hands-on experience, ensuring every job with care Fast & Reliable Service We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 120,
+        "y": 1245,
+        "w": 1200,
+        "h": 752
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 54,
+      "tag": "div",
+      "name": "Content",
+      "text": "Expert Craftsmanship Our licensed technicians bring years of hands-on experience, ensuring every job with care Fast & Reliable Service We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 120,
+        "y": 1245,
+        "w": 1200,
+        "h": 752
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 55,
+      "tag": "img",
+      "name": "",
+      "text": "Image",
+      "rect": {
+        "x": 120,
+        "y": 1245,
+        "w": 1200,
+        "h": 599
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 56,
+      "tag": "div",
+      "name": "Content",
+      "text": "Expert Craftsmanship Our licensed technicians bring years of hands-on experience, ensuring every job with care Fast & Reliable Service We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 180,
+        "y": 1640,
+        "w": 1080,
+        "h": 357
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 57,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "Expert Craftsmanship Our licensed technicians bring years of hands-on experience, ensuring every job with care",
+      "rect": {
+        "x": 180,
+        "y": 1640,
+        "w": 344,
+        "h": 357
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 58,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Expert Craftsmanship Our licensed technicians bring years of hands-on experience, ensuring every job with care",
+      "rect": {
+        "x": 212,
+        "y": 1672,
+        "w": 280,
+        "h": 293
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 59,
+      "tag": "div",
+      "name": "Icon",
+      "text": "",
+      "rect": {
+        "x": 212,
+        "y": 1672,
+        "w": 56,
+        "h": 56
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 60,
+      "tag": "img",
+      "name": "",
+      "text": "Icon",
+      "rect": {
+        "x": 228,
+        "y": 1688,
+        "w": 24,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 61,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Expert Craftsmanship Our licensed technicians bring years of hands-on experience, ensuring every job with care",
+      "rect": {
+        "x": 212,
+        "y": 1806,
+        "w": 280,
+        "h": 159
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 62,
+      "tag": "p",
+      "name": "",
+      "text": "Our licensed technicians bring years of hands-on experience, ensuring every job with care",
+      "rect": {
+        "x": 212,
+        "y": 1883,
+        "w": 280,
+        "h": 82
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(245, 247, 250)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 63,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "Fast & Reliable Service We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 548,
+        "y": 1640,
+        "w": 344,
+        "h": 357
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 64,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Fast & Reliable Service We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 580,
+        "y": 1672,
+        "w": 280,
+        "h": 293
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 65,
+      "tag": "div",
+      "name": "Icon",
+      "text": "",
+      "rect": {
+        "x": 580,
+        "y": 1672,
+        "w": 56,
+        "h": 56
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 66,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 596,
+        "y": 1688,
+        "w": 24,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 67,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Fast & Reliable Service We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 580,
+        "y": 1806,
+        "w": 280,
+        "h": 159
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 68,
+      "tag": "p",
+      "name": "",
+      "text": "We respond quickly and work efficiently to resolve your plumbing issues without delay",
+      "rect": {
+        "x": 580,
+        "y": 1883,
+        "w": 280,
+        "h": 82
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(245, 247, 250)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 69,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "Fair Honest Pricing No hidden fees or surprise costs. We offer transparent pricing and clear communication",
+      "rect": {
+        "x": 916,
+        "y": 1640,
+        "w": 344,
+        "h": 357
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 70,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Fair Honest Pricing No hidden fees or surprise costs. We offer transparent pricing and clear communication",
+      "rect": {
+        "x": 948,
+        "y": 1672,
+        "w": 280,
+        "h": 293
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 71,
+      "tag": "div",
+      "name": "Icon",
+      "text": "",
+      "rect": {
+        "x": 948,
+        "y": 1672,
+        "w": 56,
+        "h": 56
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 72,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 964,
+        "y": 1688,
+        "w": 24,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 73,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Fair Honest Pricing No hidden fees or surprise costs. We offer transparent pricing and clear communication",
+      "rect": {
+        "x": 948,
+        "y": 1806,
+        "w": 280,
+        "h": 159
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 74,
+      "tag": "p",
+      "name": "",
+      "text": "No hidden fees or surprise costs. We offer transparent pricing and clear communication",
+      "rect": {
+        "x": 948,
+        "y": 1883,
+        "w": 280,
+        "h": 82
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(245, 247, 250)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 75,
+      "tag": "div",
+      "name": "Work Section",
+      "text": "Work Process Fixing Your Plumbing the Simple Way 01 Schedule Your Service Call us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment 02 We Inspect & Fix Our technician arrives on tim",
+      "rect": {
+        "x": 0,
+        "y": 1996,
+        "w": 1440,
+        "h": 825
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 76,
+      "tag": "div",
+      "name": "Container",
+      "text": "Work Process Fixing Your Plumbing the Simple Way 01 Schedule Your Service Call us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment 02 We Inspect & Fix Our technician arrives on tim",
+      "rect": {
+        "x": 120,
+        "y": 2076,
+        "w": 1200,
+        "h": 705
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 77,
+      "tag": "div",
+      "name": "Content",
+      "text": "Work Process Fixing Your Plumbing the Simple Way 01 Schedule Your Service Call us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment 02 We Inspect & Fix Our technician arrives on tim",
+      "rect": {
+        "x": 120,
+        "y": 2076,
+        "w": 1200,
+        "h": 705
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 78,
+      "tag": "div",
+      "name": "Title ",
+      "text": "Work Process Fixing Your Plumbing the Simple Way",
+      "rect": {
+        "x": 120,
+        "y": 2076,
+        "w": 575,
+        "h": 153
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 79,
+      "tag": "p",
+      "name": "",
+      "text": "Work Process",
+      "rect": {
+        "x": 120,
+        "y": 2076,
+        "w": 575,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 80,
+      "tag": "h2",
+      "name": "",
+      "text": "Fixing Your Plumbing the Simple Way",
+      "rect": {
+        "x": 120,
+        "y": 2114,
+        "w": 575,
+        "h": 115
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "48px",
+        "weight": "600",
+        "line": "57.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 81,
+      "tag": "div",
+      "name": "Card Wrapper",
+      "text": "01 Schedule Your Service Call us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment 02 We Inspect & Fix Our technician arrives on time, diagnoses the issue and explains the solution ",
+      "rect": {
+        "x": 745,
+        "y": 2076,
+        "w": 575,
+        "h": 705
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 82,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "01 Schedule Your Service Call us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment",
+      "rect": {
+        "x": 745,
+        "y": 2076,
+        "w": 575,
+        "h": 224
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 83,
+      "tag": "img",
+      "name": "",
+      "text": "BG Image",
+      "rect": {
+        "x": 745,
+        "y": 2076,
+        "w": 575,
+        "h": 224
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 84,
+      "tag": "h2",
+      "name": "",
+      "text": "01",
+      "rect": {
+        "x": 777,
+        "y": 2094,
+        "w": 40,
+        "h": 56
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "40px",
+        "weight": "600",
+        "line": "56px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 85,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Schedule Your Service Call us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment",
+      "rect": {
+        "x": 777,
+        "y": 2174,
+        "w": 511,
+        "h": 98
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 86,
+      "tag": "p",
+      "name": "",
+      "text": "Schedule Your Service",
+      "rect": {
+        "x": 777,
+        "y": 2174,
+        "w": 511,
+        "h": 34
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "34px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 87,
+      "tag": "p",
+      "name": "",
+      "text": "Call us or book online in just a few clicks. Tell us what’s wrong we’ll confirm your appointment",
+      "rect": {
+        "x": 777,
+        "y": 2218,
+        "w": 511,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(0, 0, 0, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 88,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "02 We Inspect & Fix Our technician arrives on time, diagnoses the issue and explains the solution clearly",
+      "rect": {
+        "x": 745,
+        "y": 2317,
+        "w": 575,
+        "h": 224
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 89,
+      "tag": "img",
+      "name": "",
+      "text": "BG Image",
+      "rect": {
+        "x": 745,
+        "y": 2317,
+        "w": 575,
+        "h": 224
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 90,
+      "tag": "h2",
+      "name": "",
+      "text": "02",
+      "rect": {
+        "x": 777,
+        "y": 2335,
+        "w": 48,
+        "h": 56
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "40px",
+        "weight": "600",
+        "line": "56px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 91,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "We Inspect & Fix Our technician arrives on time, diagnoses the issue and explains the solution clearly",
+      "rect": {
+        "x": 777,
+        "y": 2415,
+        "w": 511,
+        "h": 98
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 92,
+      "tag": "p",
+      "name": "",
+      "text": "We Inspect & Fix",
+      "rect": {
+        "x": 777,
+        "y": 2415,
+        "w": 511,
+        "h": 34
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "34px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 93,
+      "tag": "p",
+      "name": "",
+      "text": "Our technician arrives on time, diagnoses the issue and explains the solution clearly",
+      "rect": {
+        "x": 777,
+        "y": 2459,
+        "w": 511,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(0, 0, 0, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 94,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "03 Enjoy Peace of Mind Once the job’s done, we double-check everything clean up, and ensure you’re 100% satisfied",
+      "rect": {
+        "x": 745,
+        "y": 2557,
+        "w": 575,
+        "h": 224
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 95,
+      "tag": "img",
+      "name": "",
+      "text": "BG Image",
+      "rect": {
+        "x": 745,
+        "y": 2557,
+        "w": 575,
+        "h": 224
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 96,
+      "tag": "h2",
+      "name": "",
+      "text": "03",
+      "rect": {
+        "x": 777,
+        "y": 2575,
+        "w": 48,
+        "h": 56
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "40px",
+        "weight": "600",
+        "line": "56px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 97,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Enjoy Peace of Mind Once the job’s done, we double-check everything clean up, and ensure you’re 100% satisfied",
+      "rect": {
+        "x": 777,
+        "y": 2655,
+        "w": 511,
+        "h": 98
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 98,
+      "tag": "p",
+      "name": "",
+      "text": "Enjoy Peace of Mind",
+      "rect": {
+        "x": 777,
+        "y": 2655,
+        "w": 511,
+        "h": 34
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "line": "34px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 99,
+      "tag": "p",
+      "name": "",
+      "text": "Once the job’s done, we double-check everything clean up, and ensure you’re 100% satisfied",
+      "rect": {
+        "x": 777,
+        "y": 2699,
+        "w": 511,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(0, 0, 0, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 100,
+      "tag": "div",
+      "name": "Team Section",
+      "text": "Team Members Our Hard working Members Jacob Jones Operations Manager Cody Fisher Drainage Technician Albert Flores Field Supervisor Ralph Edwards Project Manager",
+      "rect": {
+        "x": 0,
+        "y": 2822,
+        "w": 1440,
+        "h": 733
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 101,
+      "tag": "div",
+      "name": "Container",
+      "text": "Team Members Our Hard working Members Jacob Jones Operations Manager Cody Fisher Drainage Technician Albert Flores Field Supervisor Ralph Edwards Project Manager",
+      "rect": {
+        "x": 120,
+        "y": 2882,
+        "w": 1200,
+        "h": 553
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 102,
+      "tag": "div",
+      "name": "Content",
+      "text": "Team Members Our Hard working Members Jacob Jones Operations Manager Cody Fisher Drainage Technician Albert Flores Field Supervisor Ralph Edwards Project Manager",
+      "rect": {
+        "x": 120,
+        "y": 2882,
+        "w": 1200,
+        "h": 553
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 103,
+      "tag": "div",
+      "name": "Title ",
+      "text": "Team Members Our Hard working Members",
+      "rect": {
+        "x": 120,
+        "y": 2882,
+        "w": 1200,
+        "h": 95
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 104,
+      "tag": "p",
+      "name": "",
+      "text": "Team Members",
+      "rect": {
+        "x": 120,
+        "y": 2882,
+        "w": 1200,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 105,
+      "tag": "h2",
+      "name": "",
+      "text": "Our Hard working Members",
+      "rect": {
+        "x": 120,
+        "y": 2919,
+        "w": 1200,
+        "h": 58
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "48px",
+        "weight": "600",
+        "line": "57.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 106,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "Jacob Jones Operations Manager",
+      "rect": {
+        "x": 120,
+        "y": 3033,
+        "w": 282,
+        "h": 401
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 107,
+      "tag": "div",
+      "name": "Image Wreapper",
+      "text": "",
+      "rect": {
+        "x": 120,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 108,
+      "tag": "img",
+      "name": "",
+      "text": "Team Image",
+      "rect": {
+        "x": 120,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 109,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Jacob Jones Operations Manager",
+      "rect": {
+        "x": 120,
+        "y": 3380,
+        "w": 246,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 110,
+      "tag": "p",
+      "name": "",
+      "text": "Jacob Jones",
+      "rect": {
+        "x": 120,
+        "y": 3380,
+        "w": 246,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 111,
+      "tag": "p",
+      "name": "",
+      "text": "Operations Manager",
+      "rect": {
+        "x": 120,
+        "y": 3411,
+        "w": 246,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 112,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 366,
+        "y": 3398,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "8px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 113,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "Cody Fisher Drainage Technician",
+      "rect": {
+        "x": 426,
+        "y": 3033,
+        "w": 282,
+        "h": 401
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 114,
+      "tag": "div",
+      "name": "Image Wreapper",
+      "text": "",
+      "rect": {
+        "x": 426,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 115,
+      "tag": "img",
+      "name": "",
+      "text": "Team Image",
+      "rect": {
+        "x": 426,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 116,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Cody Fisher Drainage Technician",
+      "rect": {
+        "x": 426,
+        "y": 3380,
+        "w": 246,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 117,
+      "tag": "p",
+      "name": "",
+      "text": "Cody Fisher",
+      "rect": {
+        "x": 426,
+        "y": 3380,
+        "w": 246,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 118,
+      "tag": "p",
+      "name": "",
+      "text": "Drainage Technician",
+      "rect": {
+        "x": 426,
+        "y": 3411,
+        "w": 246,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 119,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 672,
+        "y": 3398,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "8px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 120,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "Albert Flores Field Supervisor",
+      "rect": {
+        "x": 732,
+        "y": 3033,
+        "w": 282,
+        "h": 401
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 121,
+      "tag": "div",
+      "name": "Image Wreapper",
+      "text": "",
+      "rect": {
+        "x": 732,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 122,
+      "tag": "img",
+      "name": "",
+      "text": "Blog Image",
+      "rect": {
+        "x": 732,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 123,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Albert Flores Field Supervisor",
+      "rect": {
+        "x": 732,
+        "y": 3380,
+        "w": 246,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 124,
+      "tag": "p",
+      "name": "",
+      "text": "Albert Flores",
+      "rect": {
+        "x": 732,
+        "y": 3380,
+        "w": 246,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 125,
+      "tag": "p",
+      "name": "",
+      "text": "Field Supervisor",
+      "rect": {
+        "x": 732,
+        "y": 3411,
+        "w": 246,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 126,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 978,
+        "y": 3398,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "8px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 127,
+      "tag": "div",
+      "name": "Dekstop",
+      "text": "Ralph Edwards Project Manager",
+      "rect": {
+        "x": 1038,
+        "y": 3033,
+        "w": 282,
+        "h": 401
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 128,
+      "tag": "div",
+      "name": "Image Wreapper",
+      "text": "",
+      "rect": {
+        "x": 1038,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 129,
+      "tag": "img",
+      "name": "",
+      "text": "Team Image",
+      "rect": {
+        "x": 1038,
+        "y": 3033,
+        "w": 282,
+        "h": 339
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 130,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Ralph Edwards Project Manager",
+      "rect": {
+        "x": 1038,
+        "y": 3380,
+        "w": 246,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 131,
+      "tag": "p",
+      "name": "",
+      "text": "Ralph Edwards",
+      "rect": {
+        "x": 1038,
+        "y": 3380,
+        "w": 246,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 132,
+      "tag": "p",
+      "name": "",
+      "text": "Project Manager",
+      "rect": {
+        "x": 1038,
+        "y": 3411,
+        "w": 246,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 133,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 1284,
+        "y": 3398,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "8px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 134,
+      "tag": "div",
+      "name": "Testimonial Section",
+      "text": "Testimonials Trusted by 10,000+ Customers Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, s",
+      "rect": {
+        "x": 0,
+        "y": 3554,
+        "w": 1440,
+        "h": 799
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 135,
+      "tag": "div",
+      "name": "Container",
+      "text": "Testimonials Trusted by 10,000+ Customers Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, s",
+      "rect": {
+        "x": 120,
+        "y": 3654,
+        "w": 1200,
+        "h": 599
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 136,
+      "tag": "div",
+      "name": "Content",
+      "text": "Testimonials Trusted by 10,000+ Customers Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, s",
+      "rect": {
+        "x": 120,
+        "y": 3654,
+        "w": 1200,
+        "h": 599
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 137,
+      "tag": "div",
+      "name": "Title ",
+      "text": "Testimonials Trusted by 10,000+ Customers",
+      "rect": {
+        "x": 120,
+        "y": 3654,
+        "w": 1200,
+        "h": 95
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 138,
+      "tag": "p",
+      "name": "",
+      "text": "Testimonials",
+      "rect": {
+        "x": 120,
+        "y": 3654,
+        "w": 1200,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 139,
+      "tag": "h2",
+      "name": "",
+      "text": "Trusted by 10,000+ Customers",
+      "rect": {
+        "x": 120,
+        "y": 3692,
+        "w": 1200,
+        "h": 58
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "48px",
+        "weight": "600",
+        "line": "57.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 140,
+      "tag": "section",
+      "name": "",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work Kris",
+      "rect": {
+        "x": 120,
+        "y": 3838,
+        "w": 1200,
+        "h": 416
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 141,
+      "tag": "div",
+      "name": "Card 01",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": -1128,
+        "y": 3942,
+        "w": 159,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 142,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": -1128,
+        "y": 3942,
+        "w": 159,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 143,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": -1115,
+        "y": 3963,
+        "w": 137,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 144,
+      "tag": "div",
+      "name": "Author",
+      "text": "Albert Flores New York, NY",
+      "rect": {
+        "x": -1115,
+        "y": 3963,
+        "w": 137,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 145,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": -992,
+        "y": 3976,
+        "w": 15,
+        "h": 28
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 146,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Albert Flores New York, NY",
+      "rect": {
+        "x": -1115,
+        "y": 3964,
+        "w": 119,
+        "h": 38
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 147,
+      "tag": "p",
+      "name": "",
+      "text": "New York, NY",
+      "rect": {
+        "x": -1115,
+        "y": 3980,
+        "w": 119,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 148,
+      "tag": "p",
+      "name": "",
+      "text": "\"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": -1115,
+        "y": 4004,
+        "w": 137,
+        "h": 60
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 149,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": -1115,
+        "y": 4078,
+        "w": 137,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 150,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": -1011,
+        "y": 4079,
+        "w": 34,
+        "h": 12
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 151,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": -1115,
+        "y": 4084,
+        "w": 10,
+        "h": 15
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 152,
+      "tag": "div",
+      "name": "Card 02",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": -516,
+        "y": 3942,
+        "w": 39,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 153,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": -516,
+        "y": 3942,
+        "w": 39,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 154,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": -513,
+        "y": 3963,
+        "w": 33,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 155,
+      "tag": "div",
+      "name": "Author",
+      "text": "Kristin Watson New York, NY",
+      "rect": {
+        "x": -513,
+        "y": 3963,
+        "w": 33,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 156,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": -483,
+        "y": 3976,
+        "w": 4,
+        "h": 28
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 157,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Kristin Watson New York, NY",
+      "rect": {
+        "x": -513,
+        "y": 3964,
+        "w": 29,
+        "h": 38
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 158,
+      "tag": "p",
+      "name": "",
+      "text": "New York, NY",
+      "rect": {
+        "x": -513,
+        "y": 3980,
+        "w": 29,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 159,
+      "tag": "p",
+      "name": "",
+      "text": "\"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home with care",
+      "rect": {
+        "x": -513,
+        "y": 4004,
+        "w": 33,
+        "h": 60
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 160,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": -513,
+        "y": 4078,
+        "w": 33,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 161,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": -488,
+        "y": 4079,
+        "w": 8,
+        "h": 12
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 162,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": -513,
+        "y": 4084,
+        "w": 2,
+        "h": 15
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 163,
+      "tag": "div",
+      "name": "Card 03",
+      "text": "Sarah M Chicago \"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 14,
+        "y": 3942,
+        "w": 82,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 164,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Sarah M Chicago \"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 14,
+        "y": 3942,
+        "w": 82,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 165,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Sarah M Chicago \"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 19,
+        "y": 3963,
+        "w": 70,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 166,
+      "tag": "div",
+      "name": "Author",
+      "text": "Sarah M Chicago",
+      "rect": {
+        "x": 19,
+        "y": 3963,
+        "w": 70,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 167,
+      "tag": "img",
+      "name": "",
+      "text": "woman in black crew neck t-shirt wearing brown framed eyeglasses standing on rocky shore during",
+      "rect": {
+        "x": 19,
+        "y": 3976,
+        "w": 8,
+        "h": 28
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 168,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Sarah M Chicago",
+      "rect": {
+        "x": 28,
+        "y": 3964,
+        "w": 61,
+        "h": 38
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 169,
+      "tag": "p",
+      "name": "",
+      "text": "Chicago",
+      "rect": {
+        "x": 28,
+        "y": 3980,
+        "w": 61,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 170,
+      "tag": "p",
+      "name": "",
+      "text": "\"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 19,
+        "y": 4004,
+        "w": 70,
+        "h": 60
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 171,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 19,
+        "y": 4078,
+        "w": 70,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 172,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 19,
+        "y": 4079,
+        "w": 17,
+        "h": 12
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 173,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 84,
+        "y": 4084,
+        "w": 5,
+        "h": 15
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 174,
+      "tag": "div",
+      "name": "Card 01",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 120,
+        "y": 3838,
+        "w": 588,
+        "h": 416
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 175,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 120,
+        "y": 3838,
+        "w": 588,
+        "h": 356
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 176,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 160,
+        "y": 3878,
+        "w": 508,
+        "h": 206
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 177,
+      "tag": "div",
+      "name": "Author",
+      "text": "Albert Flores New York, NY",
+      "rect": {
+        "x": 160,
+        "y": 3878,
+        "w": 508,
+        "h": 64
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 178,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": 160,
+        "y": 3878,
+        "w": 64,
+        "h": 64
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 179,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Albert Flores New York, NY",
+      "rect": {
+        "x": 238,
+        "y": 3879,
+        "w": 430,
+        "h": 61
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 180,
+      "tag": "p",
+      "name": "",
+      "text": "New York, NY",
+      "rect": {
+        "x": 238,
+        "y": 3913,
+        "w": 430,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 181,
+      "tag": "p",
+      "name": "",
+      "text": "\"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 160,
+        "y": 3962,
+        "w": 508,
+        "h": 122
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 182,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 160,
+        "y": 4124,
+        "w": 508,
+        "h": 30
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 183,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 160,
+        "y": 4127,
+        "w": 144,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 184,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 638,
+        "y": 4124,
+        "w": 30,
+        "h": 30
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 185,
+      "tag": "div",
+      "name": "Card 02",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": 732,
+        "y": 3838,
+        "w": 588,
+        "h": 416
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 186,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": 732,
+        "y": 3838,
+        "w": 588,
+        "h": 356
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 187,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": 772,
+        "y": 3878,
+        "w": 508,
+        "h": 206
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 188,
+      "tag": "div",
+      "name": "Author",
+      "text": "Kristin Watson New York, NY",
+      "rect": {
+        "x": 772,
+        "y": 3878,
+        "w": 508,
+        "h": 64
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 189,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": 772,
+        "y": 3878,
+        "w": 64,
+        "h": 64
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 190,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Kristin Watson New York, NY",
+      "rect": {
+        "x": 850,
+        "y": 3879,
+        "w": 430,
+        "h": 61
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 191,
+      "tag": "p",
+      "name": "",
+      "text": "New York, NY",
+      "rect": {
+        "x": 850,
+        "y": 3913,
+        "w": 430,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 192,
+      "tag": "p",
+      "name": "",
+      "text": "\"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home with care",
+      "rect": {
+        "x": 772,
+        "y": 3962,
+        "w": 508,
+        "h": 122
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 193,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 772,
+        "y": 4124,
+        "w": 508,
+        "h": 30
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 194,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 772,
+        "y": 4127,
+        "w": 144,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 195,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 1250,
+        "y": 4124,
+        "w": 30,
+        "h": 30
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 196,
+      "tag": "div",
+      "name": "Card 03",
+      "text": "Sarah M Chicago \"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 1344,
+        "y": 3942,
+        "w": 82,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 197,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Sarah M Chicago \"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 1344,
+        "y": 3942,
+        "w": 82,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 198,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Sarah M Chicago \"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 1351,
+        "y": 3963,
+        "w": 70,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 199,
+      "tag": "div",
+      "name": "Author",
+      "text": "Sarah M Chicago",
+      "rect": {
+        "x": 1351,
+        "y": 3963,
+        "w": 70,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 200,
+      "tag": "img",
+      "name": "",
+      "text": "woman in black crew neck t-shirt wearing brown framed eyeglasses standing on rocky shore during",
+      "rect": {
+        "x": 1351,
+        "y": 3963,
+        "w": 10,
+        "h": 33
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 201,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Sarah M Chicago",
+      "rect": {
+        "x": 1363,
+        "y": 3966,
+        "w": 58,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 202,
+      "tag": "p",
+      "name": "",
+      "text": "Chicago",
+      "rect": {
+        "x": 1363,
+        "y": 3983,
+        "w": 58,
+        "h": 20
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 203,
+      "tag": "p",
+      "name": "",
+      "text": "\"From my first call, I knew I chose the right team. The staff was friendly and arranged a visit right away. The technician arrived promptly, used protective covers, and handled my home with respect.\"",
+      "rect": {
+        "x": 1351,
+        "y": 4004,
+        "w": 70,
+        "h": 60
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 204,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 1351,
+        "y": 4078,
+        "w": 70,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 205,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 1351,
+        "y": 4084,
+        "w": 23,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 206,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 1418,
+        "y": 4078,
+        "w": 3,
+        "h": 13
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 207,
+      "tag": "div",
+      "name": "Card 01",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 1917,
+        "y": 3942,
+        "w": 39,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 208,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 1917,
+        "y": 3942,
+        "w": 39,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 209,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Albert Flores New York, NY \"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 1919,
+        "y": 3963,
+        "w": 33,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 210,
+      "tag": "div",
+      "name": "Author",
+      "text": "Albert Flores New York, NY",
+      "rect": {
+        "x": 1919,
+        "y": 3963,
+        "w": 33,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 211,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": 1948,
+        "y": 3963,
+        "w": 5,
+        "h": 33
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 212,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Albert Flores New York, NY",
+      "rect": {
+        "x": 1919,
+        "y": 3966,
+        "w": 27,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 213,
+      "tag": "p",
+      "name": "",
+      "text": "New York, NY",
+      "rect": {
+        "x": 1919,
+        "y": 3983,
+        "w": 27,
+        "h": 20
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 214,
+      "tag": "p",
+      "name": "",
+      "text": "\"I had a burst pipe in the middle of the night and didn’t know who to call. I found this plumbing team online and gave them a try. Within 45 minutes, someone was at my house, ready to work",
+      "rect": {
+        "x": 1919,
+        "y": 4004,
+        "w": 33,
+        "h": 60
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 215,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 1919,
+        "y": 4078,
+        "w": 33,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 216,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 1942,
+        "y": 4084,
+        "w": 11,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 217,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 1919,
+        "y": 4078,
+        "w": 2,
+        "h": 13
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 218,
+      "tag": "div",
+      "name": "Card 02",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": 2409,
+        "y": 3942,
+        "w": 159,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 219,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": 2409,
+        "y": 3942,
+        "w": 159,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 220,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Kristin Watson New York, NY \"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home w",
+      "rect": {
+        "x": 2418,
+        "y": 3963,
+        "w": 137,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 221,
+      "tag": "div",
+      "name": "Author",
+      "text": "Kristin Watson New York, NY",
+      "rect": {
+        "x": 2418,
+        "y": 3963,
+        "w": 137,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 222,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": 2534,
+        "y": 3963,
+        "w": 20,
+        "h": 33
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 223,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "Kristin Watson New York, NY",
+      "rect": {
+        "x": 2418,
+        "y": 3966,
+        "w": 112,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 224,
+      "tag": "p",
+      "name": "",
+      "text": "New York, NY",
+      "rect": {
+        "x": 2418,
+        "y": 3983,
+        "w": 112,
+        "h": 20
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 225,
+      "tag": "p",
+      "name": "",
+      "text": "\"From the moment I called, I felt like I was in good hands. The office team was helpful and scheduled a visit the next day. The plumber arrived on time, wore shoe covers, and treated my home with care",
+      "rect": {
+        "x": 2418,
+        "y": 4004,
+        "w": 137,
+        "h": 60
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "500",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 226,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 2418,
+        "y": 4078,
+        "w": 137,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 227,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 2510,
+        "y": 4084,
+        "w": 44,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 228,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 2418,
+        "y": 4078,
+        "w": 7,
+        "h": 13
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 229,
+      "tag": "div",
+      "name": "Card 03",
+      "text": "",
+      "rect": {
+        "x": 2900,
+        "y": 3942,
+        "w": 280,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 230,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 2900,
+        "y": 3942,
+        "w": 280,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 231,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "",
+      "rect": {
+        "x": 2916,
+        "y": 3963,
+        "w": 241,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 232,
+      "tag": "div",
+      "name": "Author",
+      "text": "",
+      "rect": {
+        "x": 2916,
+        "y": 3963,
+        "w": 241,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 233,
+      "tag": "img",
+      "name": "",
+      "text": "woman in black crew neck t-shirt wearing brown framed eyeglasses standing on rocky shore during",
+      "rect": {
+        "x": 3121,
+        "y": 3963,
+        "w": 36,
+        "h": 33
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 234,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "",
+      "rect": {
+        "x": 2916,
+        "y": 3966,
+        "w": 198,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 237,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 2916,
+        "y": 4078,
+        "w": 241,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 238,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 3079,
+        "y": 4084,
+        "w": 78,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 239,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 2916,
+        "y": 4078,
+        "w": 12,
+        "h": 13
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 240,
+      "tag": "div",
+      "name": "Card 01",
+      "text": "",
+      "rect": {
+        "x": 3392,
+        "y": 3942,
+        "w": 400,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 241,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 3392,
+        "y": 3942,
+        "w": 400,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 242,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "",
+      "rect": {
+        "x": 3414,
+        "y": 3963,
+        "w": 345,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 243,
+      "tag": "div",
+      "name": "Author",
+      "text": "",
+      "rect": {
+        "x": 3414,
+        "y": 3963,
+        "w": 345,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 244,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": 3708,
+        "y": 3963,
+        "w": 51,
+        "h": 33
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 245,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "",
+      "rect": {
+        "x": 3414,
+        "y": 3966,
+        "w": 283,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 248,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 3414,
+        "y": 4078,
+        "w": 345,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 249,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 3647,
+        "y": 4084,
+        "w": 111,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 250,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 3414,
+        "y": 4078,
+        "w": 17,
+        "h": 13
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 251,
+      "tag": "div",
+      "name": "Card 02",
+      "text": "",
+      "rect": {
+        "x": 3884,
+        "y": 3942,
+        "w": 520,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 252,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 3884,
+        "y": 3942,
+        "w": 520,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 253,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "",
+      "rect": {
+        "x": 3912,
+        "y": 3963,
+        "w": 448,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 254,
+      "tag": "div",
+      "name": "Author",
+      "text": "",
+      "rect": {
+        "x": 3912,
+        "y": 3963,
+        "w": 448,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 255,
+      "tag": "img",
+      "name": "",
+      "text": "Author Image",
+      "rect": {
+        "x": 4294,
+        "y": 3963,
+        "w": 66,
+        "h": 33
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 256,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "",
+      "rect": {
+        "x": 3912,
+        "y": 3966,
+        "w": 368,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 259,
+      "tag": "div",
+      "name": "Retting Wrapper",
+      "text": "",
+      "rect": {
+        "x": 3912,
+        "y": 4078,
+        "w": 448,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 260,
+      "tag": "div",
+      "name": "5 Star",
+      "text": "",
+      "rect": {
+        "x": 4216,
+        "y": 4084,
+        "w": 145,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 261,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 3912,
+        "y": 4078,
+        "w": 22,
+        "h": 13
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 262,
+      "tag": "div",
+      "name": "Card 03",
+      "text": "",
+      "rect": {
+        "x": 4375,
+        "y": 3942,
+        "w": 641,
+        "h": 208
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 263,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 4375,
+        "y": 3942,
+        "w": 641,
+        "h": 178
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 264,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "",
+      "rect": {
+        "x": 4411,
+        "y": 3963,
+        "w": 552,
+        "h": 101
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 265,
+      "tag": "div",
+      "name": "Author",
+      "text": "",
+      "rect": {
+        "x": 4411,
+        "y": 3963,
+        "w": 552,
+        "h": 40
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    }
+  ]
+}

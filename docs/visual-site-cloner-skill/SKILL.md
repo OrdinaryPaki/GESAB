@@ -1,6 +1,6 @@
 ---
 name: visual-site-cloner
-description: Explicitly invoke with $visual-site-cloner when the user provides a public reference website URL and wants Codex to recreate the site's rendered visual design framework in the current project using Browser/CDP screenshots, route/template discovery, reusable templates, shared foundation, parallel implementation workers, and phase-1 design replication before later user-led copy or asset replacement. Do not use for ordinary URL research, scraping, summarization, SEO analysis, accessibility audit, or content rewriting.
+description: Use only when the user explicitly invokes $visual-site-cloner or explicitly says to use the visual-site-cloner skill with a public reference website URL. Do not use for ordinary URL research, website review, scraping, summarization, SEO analysis, accessibility audit, content rewriting, or any request that merely includes a URL.
 ---
 
 # Visual Site Cloner
@@ -10,6 +10,17 @@ Run a browser-verified visual site reconstruction workflow.
 The user should only need to provide this skill and one reference URL. Do not ask the user to repeat standard instructions already defined here.
 
 This skill is explicit-only. Use it when the user invokes `$visual-site-cloner` or clearly asks to use this exact skill. Do not use it for ordinary URL tasks.
+
+## Automatic Trigger Guard
+
+Do not activate this skill just because the user provides a URL, asks about a website, asks for inspiration, asks for research, or describes a visual clone task without naming this skill.
+
+Activate only when the user does one of these:
+
+- Types `$visual-site-cloner`.
+- Says `use visual-site-cloner`, `run visual-site-cloner`, `use the visual site cloner skill`, or an equivalent direct instruction naming this skill.
+
+If the request looks related but does not explicitly name this skill, ask one short confirmation question instead of starting the workflow.
 
 ## Invocation Permission Contract
 

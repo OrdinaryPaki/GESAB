@@ -1,0 +1,15 @@
+{
+  "skill": "visual-site-cloner",
+  "referenceUrl": "https://plumbly.framer.website/",
+  "mode": "sequential-main-worktree",
+  "reasonForSequentialMode": "Project instructions require main worktree and main branch unless explicitly asked otherwise.",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "packageManager": "npm",
+  "devCommand": "npm run dev",
+  "browserVerification": "Playwright Chromium fallback because Browser/IAB tools were not exposed in this session.",
+  "dirtyWorktreeAtStart": [
+    "docs/visual-site-cloner-skill/SKILL.md",
+    "docs/visual-site-cloner-skill/codex-agents/visual_clone_worker.toml",
+    "docs/visual-site-cloner-skill/references/04-worker-missions.md"
+  ]
+}

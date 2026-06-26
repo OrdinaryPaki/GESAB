@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-06-26T18:13:16.568Z",
+  "reference_url": "https://plumbly.framer.website/",
+  "foundation_version": "foundation.v1",
+  "worktree": "main",
+  "branch": "main",
+  "screenshots": [
+    {
+      "mission_id": "homepage",
+      "route": "/",
+      "viewport": "1440x900",
+      "checkpoint": "pre-implementation-reference",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/home.desktop.fold.png"
+    },
+    {
+      "mission_id": "homepage",
+      "route": "/",
+      "viewport": "390x844",
+      "checkpoint": "pre-implementation-reference",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/home.mobile.fold.png"
+    },
+    {
+      "mission_id": "homepage",
+      "route": "/",
+      "viewport": "1440x900",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/home/local.desktop.prod.png"
+    },
+    {
+      "mission_id": "homepage",
+      "route": "/",
+      "viewport": "390x844",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/home/local.mobile.prod.png"
+    },
+    {
+      "mission_id": "about-page",
+      "route": "/about",
+      "viewport": "1440x900",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/about/local.desktop.prod.png"
+    },
+    {
+      "mission_id": "about-page",
+      "route": "/about",
+      "viewport": "390x844",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/about/local.mobile.prod.png"
+    },
+    {
+      "mission_id": "service-index",
+      "route": "/service",
+      "viewport": "1440x900",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/service-index/local.desktop.prod.png"
+    },
+    {
+      "mission_id": "service-index",
+      "route": "/service",
+      "viewport": "390x844",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/service-index/local.mobile.prod.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "1440x900",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.desktop.prod.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390x844",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.mobile.prod.png"
+    },
+    {
+      "mission_id": "service-detail-template",
+      "route": "/service/leak-detection-repair",
+      "viewport": "1440x900",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-leak/local.desktop.prod.png"
+    },
+    {
+      "mission_id": "service-detail-template",
+      "route": "/service/leak-detection-repair",
+      "viewport": "390x844",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-leak/local.mobile.prod.png"
+    },
+    {
+      "mission_id": "service-detail-template",
+      "route": "/service/drain-cleaning",
+      "viewport": "1440x900",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-drain/local.desktop.prod.png"
+    },
+    {
+      "mission_id": "service-detail-template",
+      "route": "/service/drain-cleaning",
+      "viewport": "390x844",
+      "checkpoint": "production-final",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-drain/local.mobile.prod.png"
+    }
+  ]
+}

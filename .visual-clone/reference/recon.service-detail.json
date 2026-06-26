@@ -1,0 +1,3593 @@
+{
+  "url": "https://plumbly.framer.website/service/leak-detection-repair",
+  "height": 4627,
+  "text": "Pages\n\nAbout\n\nServices\n\nContact\n\nCall Us: +1 406 555 0120\n\nLeak Detection & Repair\nProtect Your Property from Hidden Water Damage\n\n\n\n\nLeaks can be silent destroyers, often going unnoticed until serious damage has already been done. Whether it's a hidden pipe inside your wall or a slow leak under your slab foundation, early detection is key to preventing structural damage, mold growth, and costly repairs\n\n\n\n\n\n\n\nAdvanced Leak Detection Technology\n\n\n\n\nWe use non-invasive tools and cutting-edge equipment to detect leaks without tearing down walls or digging up your floors. From thermal imaging to acoustic sensors, our technology helps us pinpoint even the smallest leaks with incredible accuracy\n\n\n\n\n\n\n\nExpert Diagnosis by Trained Professionals\n\n\n\n\nOur certified plumbing technicians are trained to spot the signs of leaks and conduct a thorough inspection of your plumbing system. No guesswork—just precise, professional assessment to find the source quickly\n\nFast and Reliable Leak Repairs\n\n\n\n\nOnce a leak is detected, we act fast. Our team is equipped to handle all types of repairs, including pipe replacement, joint sealing, and fixture upgrades. We use durable, long-lasting materials to ensure the problem doesn’t return\n\n\n\n\n\n\n\nWhy Timely Leak Repair Matters\n\n\n\n\nPrevent water waste and lower utility bills\n\nAvoid foundation and structural damage\n\nReduce the risk of mold and mildew\n\nMaintain the safety and comfort of your home\n\n\n\n\n\n\n\nYour Safety Is Our Priority\n\n\n\n\nWe understand how stressful plumbing issues can be. That’s why we focus on delivering not just technical service, but peace of mind. Our work is clean, respectful, and backed by a satisfaction guarantee\n\n\n\n\n\n\n\nAvailable 24/7 for Emergencies\n\n\n\n\nSome leaks can’t wait. That’s why we offer 24/7 emergency response for sudden pipe bursts or flooding. Call us anytime—day or night—and we’ll be there to help\n\n\n\n\n\n\n\nSchedule a Leak Inspection Today\n\n\n\n\nDon’t wait for visible damage. If you hear dripping sounds, notice damp spots, or see a spike in your water bill, let us inspect your home. Early action can save thousands in repairs\n\nGo Back\n\nWE ARE READY TO HELP YOU\n\nLet’s discuss\n\n+1 406 555 0120\n\nadmin@plumbly.com\n\nplumbly@gmail.com\n\n+1 406 555 0121\n\nBook Your Service\n\nFull Name\n\nEmail\n\nPhone\n\nService\n\nSelect…\nAC Services\nFreeze Services\n\nMake An Appointment\n\nWe offer fast, reliable, and affordable solutions to keep your home running smoothly\n\nService\n\nLeak Detection & Repair\n\nDrain Cleaning\n\nSewer Line Services\n\nFaucet & Fixture Repair\n\nHelp\n\nPrivacy policy\n\nTerms conditions\n\n404\n\nCopyright & design by ©Mezario 2025 plumbly, Inc. All rights reserved\n\nGet This Template\n\nUnlock 100+ Templates\n\nNeed to customize this template?\n\nStart With Top Experts!\n\nCreate a free website with Framer, the website builder loved by startups, designers and agencies.",
+  "blocks": [
+    {
+      "idx": 0,
+      "tag": "header",
+      "name": "Header",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 71
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 1,
+      "tag": "div",
+      "name": "Container",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 60,
+        "y": 0,
+        "w": 1320,
+        "h": 71
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 2,
+      "tag": "nav",
+      "name": "Dekstop Dark V2",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 60,
+        "y": 0,
+        "w": 1320,
+        "h": 71
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 3,
+      "tag": "div",
+      "name": "Nav Link",
+      "text": "Pages About Services Contact Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 60,
+        "y": 24,
+        "w": 1320,
+        "h": 47
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 4,
+      "tag": "div",
+      "name": "Name",
+      "text": "",
+      "rect": {
+        "x": 60,
+        "y": 25,
+        "w": 160,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 5,
+      "tag": "a",
+      "name": "Logo and Name",
+      "text": "",
+      "rect": {
+        "x": 60,
+        "y": 25,
+        "w": 160,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 6,
+      "tag": "img",
+      "name": "",
+      "text": "Logo Image",
+      "rect": {
+        "x": 60,
+        "y": 25,
+        "w": 160,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 7,
+      "tag": "div",
+      "name": "Links",
+      "text": "Pages About Services Contact",
+      "rect": {
+        "x": 284,
+        "y": 29,
+        "w": 768,
+        "h": 37
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 8,
+      "tag": "div",
+      "name": "Trigger",
+      "text": "Pages",
+      "rect": {
+        "x": 284,
+        "y": 29,
+        "w": 67,
+        "h": 37
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 9,
+      "tag": "div",
+      "name": "Closed Dark",
+      "text": "Pages",
+      "rect": {
+        "x": 284,
+        "y": 29,
+        "w": 67,
+        "h": 37
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 10,
+      "tag": "p",
+      "name": "",
+      "text": "Pages",
+      "rect": {
+        "x": 284,
+        "y": 34,
+        "w": 48,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 11,
+      "tag": "div",
+      "name": "Closed Dark",
+      "text": "",
+      "rect": {
+        "x": 337,
+        "y": 41,
+        "w": 14,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 12,
+      "tag": "div",
+      "name": "Frame",
+      "text": "",
+      "rect": {
+        "x": 337,
+        "y": 41,
+        "w": 14,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 13,
+      "tag": "div",
+      "name": "Icon",
+      "text": "",
+      "rect": {
+        "x": 337,
+        "y": 41,
+        "w": 14,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 14,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "About",
+      "rect": {
+        "x": 387,
+        "y": 34,
+        "w": 45,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 15,
+      "tag": "p",
+      "name": "",
+      "text": "About",
+      "rect": {
+        "x": 387,
+        "y": 34,
+        "w": 45,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 16,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Services",
+      "rect": {
+        "x": 468,
+        "y": 34,
+        "w": 66,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 17,
+      "tag": "p",
+      "name": "",
+      "text": "Services",
+      "rect": {
+        "x": 468,
+        "y": 34,
+        "w": 66,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 18,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Contact",
+      "rect": {
+        "x": 569,
+        "y": 34,
+        "w": 60,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 19,
+      "tag": "p",
+      "name": "",
+      "text": "Contact",
+      "rect": {
+        "x": 569,
+        "y": 34,
+        "w": 60,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 20,
+      "tag": "a",
+      "name": "Variant 13",
+      "text": "Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 1116,
+        "y": 24,
+        "w": 264,
+        "h": 47
+      },
+      "style": {
+        "bg": "rgb(0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 21,
+      "tag": "div",
+      "name": "Shape",
+      "text": "",
+      "rect": {
+        "x": 1116,
+        "y": 73,
+        "w": 264,
+        "h": 9
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 22,
+      "tag": "p",
+      "name": "",
+      "text": "Call Us: +1 406 555 0120",
+      "rect": {
+        "x": 1166,
+        "y": 34,
+        "w": 192,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "16px",
+        "weight": "600",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 23,
+      "tag": "div",
+      "name": "Hero Section",
+      "text": "Leak Detection & Repair",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 983
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 24,
+      "tag": "div",
+      "name": "Container",
+      "text": "Leak Detection & Repair",
+      "rect": {
+        "x": 226,
+        "y": 160,
+        "w": 988,
+        "h": 759
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 25,
+      "tag": "div",
+      "name": "Content",
+      "text": "Leak Detection & Repair",
+      "rect": {
+        "x": 226,
+        "y": 160,
+        "w": 988,
+        "h": 759
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 26,
+      "tag": "h1",
+      "name": "",
+      "text": "Leak Detection & Repair",
+      "rect": {
+        "x": 226,
+        "y": 160,
+        "w": 988,
+        "h": 79
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "72px",
+        "weight": "600",
+        "line": "79.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 27,
+      "tag": "div",
+      "name": "Image Wrapper",
+      "text": "",
+      "rect": {
+        "x": 226,
+        "y": 279,
+        "w": 988,
+        "h": 640
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 28,
+      "tag": "img",
+      "name": "",
+      "text": "Service Image",
+      "rect": {
+        "x": 226,
+        "y": 279,
+        "w": 988,
+        "h": 640
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 29,
+      "tag": "div",
+      "name": "Details Section",
+      "text": "Protect Your Property from Hidden Water Damage Leaks can be silent destroyers, often going unnoticed until serious damage has already been done. Whether it's a hidden pipe inside your wall or a slow leak under your slab ",
+      "rect": {
+        "x": 0,
+        "y": 983,
+        "w": 1440,
+        "h": 2267
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 30,
+      "tag": "div",
+      "name": "Container",
+      "text": "Protect Your Property from Hidden Water Damage Leaks can be silent destroyers, often going unnoticed until serious damage has already been done. Whether it's a hidden pipe inside your wall or a slow leak under your slab ",
+      "rect": {
+        "x": 307,
+        "y": 983,
+        "w": 827,
+        "h": 2167
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 31,
+      "tag": "div",
+      "name": "Content",
+      "text": "Protect Your Property from Hidden Water Damage Leaks can be silent destroyers, often going unnoticed until serious damage has already been done. Whether it's a hidden pipe inside your wall or a slow leak under your slab ",
+      "rect": {
+        "x": 307,
+        "y": 983,
+        "w": 827,
+        "h": 2167
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 32,
+      "tag": "div",
+      "name": "Content 01 Visible",
+      "text": "Protect Your Property from Hidden Water Damage Leaks can be silent destroyers, often going unnoticed until serious damage has already been done. Whether it's a hidden pipe inside your wall or a slow leak under your slab ",
+      "rect": {
+        "x": 307,
+        "y": 983,
+        "w": 827,
+        "h": 542
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 33,
+      "tag": "h3",
+      "name": "",
+      "text": "Protect Your Property from Hidden Water Damage",
+      "rect": {
+        "x": 307,
+        "y": 983,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 35,
+      "tag": "p",
+      "name": "",
+      "text": "Leaks can be silent destroyers, often going unnoticed until serious damage has already been done. Whether it's a hidden pipe inside your wall or a slow leak under your slab foundation, early detection is key to preventin",
+      "rect": {
+        "x": 307,
+        "y": 1055,
+        "w": 827,
+        "h": 82
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 38,
+      "tag": "h3",
+      "name": "",
+      "text": "Advanced Leak Detection Technology",
+      "rect": {
+        "x": 307,
+        "y": 1191,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 40,
+      "tag": "p",
+      "name": "",
+      "text": "We use non-invasive tools and cutting-edge equipment to detect leaks without tearing down walls or digging up your floors. From thermal imaging to acoustic sensors, our technology helps us pinpoint even the smallest leak",
+      "rect": {
+        "x": 307,
+        "y": 1263,
+        "w": 827,
+        "h": 82
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 43,
+      "tag": "h3",
+      "name": "",
+      "text": "Expert Diagnosis by Trained Professionals",
+      "rect": {
+        "x": 307,
+        "y": 1399,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 45,
+      "tag": "p",
+      "name": "",
+      "text": "Our certified plumbing technicians are trained to spot the signs of leaks and conduct a thorough inspection of your plumbing system. No guesswork—just precise, professional assessment to find the source quickly",
+      "rect": {
+        "x": 307,
+        "y": 1471,
+        "w": 827,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 46,
+      "tag": "div",
+      "name": "Image Wrapper",
+      "text": "",
+      "rect": {
+        "x": 307,
+        "y": 1574,
+        "w": 827,
+        "h": 494
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 47,
+      "tag": "img",
+      "name": "",
+      "text": "Details Image",
+      "rect": {
+        "x": 307,
+        "y": 1574,
+        "w": 827,
+        "h": 494
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 48,
+      "tag": "div",
+      "name": "Content 02 Visible",
+      "text": "Fast and Reliable Leak Repairs Once a leak is detected, we act fast. Our team is equipped to handle all types of repairs, including pipe replacement, joint sealing, and fixture upgrades. We use durable, long-lasting mate",
+      "rect": {
+        "x": 307,
+        "y": 2116,
+        "w": 827,
+        "h": 931
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 49,
+      "tag": "h3",
+      "name": "",
+      "text": "Fast and Reliable Leak Repairs",
+      "rect": {
+        "x": 307,
+        "y": 2116,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 51,
+      "tag": "p",
+      "name": "",
+      "text": "Once a leak is detected, we act fast. Our team is equipped to handle all types of repairs, including pipe replacement, joint sealing, and fixture upgrades. We use durable, long-lasting materials to ensure the problem doe",
+      "rect": {
+        "x": 307,
+        "y": 2188,
+        "w": 827,
+        "h": 82
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 54,
+      "tag": "h3",
+      "name": "",
+      "text": "Why Timely Leak Repair Matters",
+      "rect": {
+        "x": 307,
+        "y": 2324,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 56,
+      "tag": "p",
+      "name": "",
+      "text": "Prevent water waste and lower utility bills",
+      "rect": {
+        "x": 327,
+        "y": 2396,
+        "w": 807,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 57,
+      "tag": "p",
+      "name": "",
+      "text": "Avoid foundation and structural damage",
+      "rect": {
+        "x": 327,
+        "y": 2423,
+        "w": 807,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 58,
+      "tag": "p",
+      "name": "",
+      "text": "Reduce the risk of mold and mildew",
+      "rect": {
+        "x": 327,
+        "y": 2450,
+        "w": 807,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 59,
+      "tag": "p",
+      "name": "",
+      "text": "Maintain the safety and comfort of your home",
+      "rect": {
+        "x": 327,
+        "y": 2477,
+        "w": 807,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 62,
+      "tag": "h3",
+      "name": "",
+      "text": "Your Safety Is Our Priority",
+      "rect": {
+        "x": 307,
+        "y": 2559,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 64,
+      "tag": "p",
+      "name": "",
+      "text": "We understand how stressful plumbing issues can be. That’s why we focus on delivering not just technical service, but peace of mind. Our work is clean, respectful, and backed by a satisfaction guarantee",
+      "rect": {
+        "x": 307,
+        "y": 2631,
+        "w": 827,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 67,
+      "tag": "h3",
+      "name": "",
+      "text": "Available 24/7 for Emergencies",
+      "rect": {
+        "x": 307,
+        "y": 2740,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 69,
+      "tag": "p",
+      "name": "",
+      "text": "Some leaks can’t wait. That’s why we offer 24/7 emergency response for sudden pipe bursts or flooding. Call us anytime—day or night—and we’ll be there to help",
+      "rect": {
+        "x": 307,
+        "y": 2812,
+        "w": 827,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 72,
+      "tag": "h3",
+      "name": "",
+      "text": "Schedule a Leak Inspection Today",
+      "rect": {
+        "x": 307,
+        "y": 2921,
+        "w": 827,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 74,
+      "tag": "p",
+      "name": "",
+      "text": "Don’t wait for visible damage. If you hear dripping sounds, notice damp spots, or see a spike in your water bill, let us inspect your home. Early action can save thousands in repairs",
+      "rect": {
+        "x": 307,
+        "y": 2993,
+        "w": 827,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 75,
+      "tag": "a",
+      "name": "Primary Dekstop",
+      "text": "Go Back",
+      "rect": {
+        "x": 307,
+        "y": 3095,
+        "w": 109,
+        "h": 55
+      },
+      "style": {
+        "bg": "rgb(0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 76,
+      "tag": "div",
+      "name": "Shape",
+      "text": "",
+      "rect": {
+        "x": 307,
+        "y": 3150,
+        "w": 109,
+        "h": 11
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 77,
+      "tag": "p",
+      "name": "",
+      "text": "Go Back",
+      "rect": {
+        "x": 329,
+        "y": 3109,
+        "w": 65,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "16px",
+        "weight": "600",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 78,
+      "tag": "section",
+      "name": "Dekstop",
+      "text": "WE ARE READY TO HELP YOU Let’s discuss +1 406 555 0120 admin@plumbly.com plumbly@gmail.com +1 406 555 0121 Book Your Service Full Name Email Phone Service Select… AC Services Freeze Services Make An Appointment",
+      "rect": {
+        "x": 0,
+        "y": 3250,
+        "w": 1440,
+        "h": 822
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 79,
+      "tag": "img",
+      "name": "",
+      "text": "BG Image",
+      "rect": {
+        "x": 0,
+        "y": 3250,
+        "w": 1440,
+        "h": 822
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 80,
+      "tag": "div",
+      "name": "Shape",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 3250,
+        "w": 1440,
+        "h": 822
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 81,
+      "tag": "div",
+      "name": "Container",
+      "text": "WE ARE READY TO HELP YOU Let’s discuss +1 406 555 0120 admin@plumbly.com plumbly@gmail.com +1 406 555 0121 Book Your Service Full Name Email Phone Service Select… AC Services Freeze Services Make An Appointment",
+      "rect": {
+        "x": 120,
+        "y": 3370,
+        "w": 1200,
+        "h": 582
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 82,
+      "tag": "div",
+      "name": "Content",
+      "text": "WE ARE READY TO HELP YOU Let’s discuss +1 406 555 0120 admin@plumbly.com plumbly@gmail.com +1 406 555 0121 Book Your Service Full Name Email Phone Service Select… AC Services Freeze Services Make An Appointment",
+      "rect": {
+        "x": 120,
+        "y": 3370,
+        "w": 1200,
+        "h": 582
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 83,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "WE ARE READY TO HELP YOU Let’s discuss +1 406 555 0120 admin@plumbly.com plumbly@gmail.com +1 406 555 0121",
+      "rect": {
+        "x": 120,
+        "y": 3386,
+        "w": 600,
+        "h": 549
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 84,
+      "tag": "div",
+      "name": "Title Wrapper",
+      "text": "WE ARE READY TO HELP YOU Let’s discuss",
+      "rect": {
+        "x": 120,
+        "y": 3386,
+        "w": 443,
+        "h": 124
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 85,
+      "tag": "p",
+      "name": "",
+      "text": "WE ARE READY TO HELP YOU",
+      "rect": {
+        "x": 120,
+        "y": 3386,
+        "w": 443,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 86,
+      "tag": "h2",
+      "name": "",
+      "text": "Let’s discuss",
+      "rect": {
+        "x": 120,
+        "y": 3424,
+        "w": 443,
+        "h": 86
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "72px",
+        "weight": "600",
+        "line": "86.4px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 87,
+      "tag": "div",
+      "name": "Link Wrapper",
+      "text": "+1 406 555 0120 admin@plumbly.com plumbly@gmail.com +1 406 555 0121",
+      "rect": {
+        "x": 120,
+        "y": 3844,
+        "w": 600,
+        "h": 92
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "grid"
+      }
+    },
+    {
+      "idx": 88,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "+1 406 555 0120",
+      "rect": {
+        "x": 120,
+        "y": 3844,
+        "w": 191,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 89,
+      "tag": "div",
+      "name": "Icon ",
+      "text": "",
+      "rect": {
+        "x": 120,
+        "y": 3844,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 90,
+      "tag": "p",
+      "name": "",
+      "text": "+1 406 555 0120",
+      "rect": {
+        "x": 166,
+        "y": 3846,
+        "w": 145,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 91,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "admin@plumbly.com",
+      "rect": {
+        "x": 445,
+        "y": 3844,
+        "w": 231,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 92,
+      "tag": "div",
+      "name": "Icon ",
+      "text": "",
+      "rect": {
+        "x": 445,
+        "y": 3844,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 93,
+      "tag": "p",
+      "name": "",
+      "text": "admin@plumbly.com",
+      "rect": {
+        "x": 491,
+        "y": 3846,
+        "w": 185,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 94,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "plumbly@gmail.com",
+      "rect": {
+        "x": 120,
+        "y": 3900,
+        "w": 225,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 95,
+      "tag": "div",
+      "name": "Icon ",
+      "text": "",
+      "rect": {
+        "x": 120,
+        "y": 3900,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 96,
+      "tag": "p",
+      "name": "",
+      "text": "plumbly@gmail.com",
+      "rect": {
+        "x": 166,
+        "y": 3902,
+        "w": 179,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 97,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "+1 406 555 0121",
+      "rect": {
+        "x": 445,
+        "y": 3900,
+        "w": 186,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 98,
+      "tag": "div",
+      "name": "Icon ",
+      "text": "",
+      "rect": {
+        "x": 445,
+        "y": 3900,
+        "w": 36,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 99,
+      "tag": "p",
+      "name": "",
+      "text": "+1 406 555 0121",
+      "rect": {
+        "x": 491,
+        "y": 3902,
+        "w": 140,
+        "h": 31
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "18px",
+        "weight": "600",
+        "line": "30.6px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 100,
+      "tag": "form",
+      "name": "",
+      "text": "Book Your Service Full Name Email Phone Service Select… AC Services Freeze Services Make An Appointment",
+      "rect": {
+        "x": 781,
+        "y": 3370,
+        "w": 539,
+        "h": 582
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "16px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 101,
+      "tag": "h3",
+      "name": "",
+      "text": "Book Your Service",
+      "rect": {
+        "x": 829,
+        "y": 3408,
+        "w": 443,
+        "h": 45
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Outfit, \"Outfit Placeholder\", sans-serif",
+        "size": "32px",
+        "weight": "600",
+        "line": "44.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 102,
+      "tag": "div",
+      "name": "Label Wrapper",
+      "text": "Full Name Email Phone Service Select… AC Services Freeze Services Make An Appointment",
+      "rect": {
+        "x": 829,
+        "y": 3477,
+        "w": 443,
+        "h": 427
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 103,
+      "tag": "p",
+      "name": "",
+      "text": "Full Name",
+      "rect": {
+        "x": 829,
+        "y": 3477,
+        "w": 67,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 104,
+      "tag": "input",
+      "name": "",
+      "text": "Robert Downe",
+      "rect": {
+        "x": 847,
+        "y": 3521,
+        "w": 407,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 105,
+      "tag": "p",
+      "name": "",
+      "text": "Email",
+      "rect": {
+        "x": 829,
+        "y": 3572,
+        "w": 37,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 106,
+      "tag": "input",
+      "name": "",
+      "text": "plumbly@gmail.com",
+      "rect": {
+        "x": 847,
+        "y": 3616,
+        "w": 407,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 107,
+      "tag": "p",
+      "name": "",
+      "text": "Phone",
+      "rect": {
+        "x": 829,
+        "y": 3667,
+        "w": 43,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 108,
+      "tag": "input",
+      "name": "",
+      "text": "xxx-xxx-xxx",
+      "rect": {
+        "x": 847,
+        "y": 3711,
+        "w": 407,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 109,
+      "tag": "p",
+      "name": "",
+      "text": "Service",
+      "rect": {
+        "x": 829,
+        "y": 3762,
+        "w": 443,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 110,
+      "tag": "select",
+      "name": "",
+      "text": "Select… AC Services Freeze Services",
+      "rect": {
+        "x": 829,
+        "y": 3794,
+        "w": 425,
+        "h": 51
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgba(59, 59, 59, 0.8)",
+        "font": "Inter",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "inline-block"
+      }
+    },
+    {
+      "idx": 111,
+      "tag": "button",
+      "name": "Dekstop",
+      "text": "Make An Appointment",
+      "rect": {
+        "x": 829,
+        "y": 3857,
+        "w": 443,
+        "h": 47
+      },
+      "style": {
+        "bg": "rgb(253, 188, 13)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "12px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 112,
+      "tag": "div",
+      "name": "Shape",
+      "text": "",
+      "rect": {
+        "x": 807,
+        "y": 3910,
+        "w": 487,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgb(22, 129, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "12px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 113,
+      "tag": "p",
+      "name": "",
+      "text": "Make An Appointment",
+      "rect": {
+        "x": 965,
+        "y": 3867,
+        "w": 171,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 125,
+      "tag": "footer",
+      "name": "Dekstop",
+      "text": "We offer fast, reliable, and affordable solutions to keep your home running smoothly Service Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair Help Privacy policy Terms conditions 404 Cop",
+      "rect": {
+        "x": 0,
+        "y": 4072,
+        "w": 1440,
+        "h": 555
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 126,
+      "tag": "div",
+      "name": "Container",
+      "text": "We offer fast, reliable, and affordable solutions to keep your home running smoothly Service Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair Help Privacy policy Terms conditions 404 Cop",
+      "rect": {
+        "x": 120,
+        "y": 4172,
+        "w": 1200,
+        "h": 379
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 127,
+      "tag": "div",
+      "name": "Content",
+      "text": "We offer fast, reliable, and affordable solutions to keep your home running smoothly Service Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair Help Privacy policy Terms conditions 404 Cop",
+      "rect": {
+        "x": 120,
+        "y": 4172,
+        "w": 1200,
+        "h": 379
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 128,
+      "tag": "div",
+      "name": "Top Content",
+      "text": "We offer fast, reliable, and affordable solutions to keep your home running smoothly Service Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair Help Privacy policy Terms conditions 404",
+      "rect": {
+        "x": 120,
+        "y": 4172,
+        "w": 1200,
+        "h": 229
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 129,
+      "tag": "div",
+      "name": "Logo+Icon",
+      "text": "We offer fast, reliable, and affordable solutions to keep your home running smoothly",
+      "rect": {
+        "x": 120,
+        "y": 4172,
+        "w": 277,
+        "h": 229
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 130,
+      "tag": "div",
+      "name": "Logo Wrapper",
+      "text": "We offer fast, reliable, and affordable solutions to keep your home running smoothly",
+      "rect": {
+        "x": 120,
+        "y": 4172,
+        "w": 277,
+        "h": 149
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 131,
+      "tag": "a",
+      "name": "Logo",
+      "text": "",
+      "rect": {
+        "x": 120,
+        "y": 4172,
+        "w": 184,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 133,
+      "tag": "p",
+      "name": "",
+      "text": "We offer fast, reliable, and affordable solutions to keep your home running smoothly",
+      "rect": {
+        "x": 120,
+        "y": 4250,
+        "w": 277,
+        "h": 71
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 134,
+      "tag": "div",
+      "name": "Icon Wrapper",
+      "text": "",
+      "rect": {
+        "x": 120,
+        "y": 4369,
+        "w": 152,
+        "h": 32
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 135,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 120,
+        "y": 4369,
+        "w": 32,
+        "h": 32
+      },
+      "style": {
+        "bg": "rgb(253, 188, 13)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 136,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 160,
+        "y": 4369,
+        "w": 32,
+        "h": 32
+      },
+      "style": {
+        "bg": "rgb(253, 188, 13)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 137,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 200,
+        "y": 4369,
+        "w": 32,
+        "h": 32
+      },
+      "style": {
+        "bg": "rgb(253, 188, 13)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 138,
+      "tag": "a",
+      "name": "Dekstop",
+      "text": "",
+      "rect": {
+        "x": 240,
+        "y": 4369,
+        "w": 32,
+        "h": 32
+      },
+      "style": {
+        "bg": "rgb(253, 188, 13)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "100px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 139,
+      "tag": "div",
+      "name": "Right Content",
+      "text": "Service Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair Help Privacy policy Terms conditions 404",
+      "rect": {
+        "x": 576,
+        "y": 4180,
+        "w": 744,
+        "h": 213
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 140,
+      "tag": "div",
+      "name": "Text Wrapper",
+      "text": "Service Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair Help Privacy policy Terms conditions 404",
+      "rect": {
+        "x": 576,
+        "y": 4180,
+        "w": 484,
+        "h": 213
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 141,
+      "tag": "div",
+      "name": "Service",
+      "text": "Service Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair",
+      "rect": {
+        "x": 576,
+        "y": 4180,
+        "w": 200,
+        "h": 213
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 142,
+      "tag": "p",
+      "name": "",
+      "text": "Service",
+      "rect": {
+        "x": 576,
+        "y": 4180,
+        "w": 50,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 143,
+      "tag": "div",
+      "name": "Link Wrapper",
+      "text": "Leak Detection & Repair Drain Cleaning Sewer Line Services Faucet & Fixture Repair",
+      "rect": {
+        "x": 576,
+        "y": 4224,
+        "w": 200,
+        "h": 169
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 144,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Leak Detection & Repair",
+      "rect": {
+        "x": 576,
+        "y": 4224,
+        "w": 182,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 145,
+      "tag": "p",
+      "name": "",
+      "text": "Leak Detection & Repair",
+      "rect": {
+        "x": 576,
+        "y": 4224,
+        "w": 182,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 146,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Drain Cleaning",
+      "rect": {
+        "x": 576,
+        "y": 4271,
+        "w": 112,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 147,
+      "tag": "p",
+      "name": "",
+      "text": "Drain Cleaning",
+      "rect": {
+        "x": 576,
+        "y": 4271,
+        "w": 112,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 148,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Sewer Line Services",
+      "rect": {
+        "x": 576,
+        "y": 4319,
+        "w": 154,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 149,
+      "tag": "p",
+      "name": "",
+      "text": "Sewer Line Services",
+      "rect": {
+        "x": 576,
+        "y": 4319,
+        "w": 154,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 150,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Faucet & Fixture Repair",
+      "rect": {
+        "x": 576,
+        "y": 4366,
+        "w": 177,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 151,
+      "tag": "p",
+      "name": "",
+      "text": "Faucet & Fixture Repair",
+      "rect": {
+        "x": 576,
+        "y": 4366,
+        "w": 177,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 152,
+      "tag": "div",
+      "name": "Help",
+      "text": "Help Privacy policy Terms conditions 404",
+      "rect": {
+        "x": 860,
+        "y": 4180,
+        "w": 200,
+        "h": 157
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 153,
+      "tag": "p",
+      "name": "",
+      "text": "Help",
+      "rect": {
+        "x": 860,
+        "y": 4180,
+        "w": 31,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 154,
+      "tag": "div",
+      "name": "Link Wrapper",
+      "text": "Privacy policy Terms conditions 404",
+      "rect": {
+        "x": 860,
+        "y": 4224,
+        "w": 200,
+        "h": 114
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 155,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Privacy policy",
+      "rect": {
+        "x": 860,
+        "y": 4224,
+        "w": 106,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 156,
+      "tag": "p",
+      "name": "",
+      "text": "Privacy policy",
+      "rect": {
+        "x": 860,
+        "y": 4224,
+        "w": 106,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 157,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "Terms conditions",
+      "rect": {
+        "x": 860,
+        "y": 4267,
+        "w": 130,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 158,
+      "tag": "p",
+      "name": "",
+      "text": "Terms conditions",
+      "rect": {
+        "x": 860,
+        "y": 4267,
+        "w": 130,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 159,
+      "tag": "a",
+      "name": "Dark V",
+      "text": "404",
+      "rect": {
+        "x": 860,
+        "y": 4311,
+        "w": 31,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 160,
+      "tag": "p",
+      "name": "",
+      "text": "404",
+      "rect": {
+        "x": 860,
+        "y": 4311,
+        "w": 31,
+        "h": 27
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "Inter, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "line": "27.2px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 161,
+      "tag": "div",
+      "name": "Image Wrapper",
+      "text": "",
+      "rect": {
+        "x": 1103,
+        "y": 4180,
+        "w": 217,
+        "h": 199
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 162,
+      "tag": "div",
+      "name": "1",
+      "text": "",
+      "rect": {
+        "x": 1103,
+        "y": 4180,
+        "w": 203,
+        "h": 96
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 163,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 1103,
+        "y": 4182,
+        "w": 93,
+        "h": 93
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 164,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 1209,
+        "y": 4180,
+        "w": 97,
+        "h": 96
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 165,
+      "tag": "div",
+      "name": "2",
+      "text": "",
+      "rect": {
+        "x": 1103,
+        "y": 4286,
+        "w": 217,
+        "h": 93
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 166,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 1103,
+        "y": 4286,
+        "w": 93,
+        "h": 93
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 167,
+      "tag": "img",
+      "name": "",
+      "text": "Icon Image",
+      "rect": {
+        "x": 1200,
+        "y": 4289,
+        "w": 120,
+        "h": 88
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 168,
+      "tag": "div",
+      "name": "Bottom Content",
+      "text": "Copyright & design by ©Mezario 2025 plumbly, Inc. All rights reserved",
+      "rect": {
+        "x": 120,
+        "y": 4497,
+        "w": 1200,
+        "h": 54
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 169,
+      "tag": "p",
+      "name": "",
+      "text": "Copyright & design by ©Mezario 2025 plumbly, Inc. All rights reserved",
+      "rect": {
+        "x": 120,
+        "y": 4527,
+        "w": 1200,
+        "h": 24
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 170,
+      "tag": "a",
+      "name": "",
+      "text": "©Mezario",
+      "rect": {
+        "x": 637,
+        "y": 4530,
+        "w": 67,
+        "h": 17
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(59, 59, 59)",
+        "font": "Inter, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "23.8px",
+        "radius": "0px",
+        "display": "inline"
+      }
+    },
+    {
+      "idx": 171,
+      "tag": "div",
+      "name": "Desktop",
+      "text": "Get This Template Unlock 100+ Templates Need to customize this template? Start With Top Experts!",
+      "rect": {
+        "x": 1134,
+        "y": 641,
+        "w": 282,
+        "h": 194
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 172,
+      "tag": "div",
+      "name": "Remove This Buy Button",
+      "text": "Get This Template",
+      "rect": {
+        "x": 1134,
+        "y": 641,
+        "w": 282,
+        "h": 46
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 173,
+      "tag": "a",
+      "name": "Remove Button",
+      "text": "Get This Template",
+      "rect": {
+        "x": 1134,
+        "y": 641,
+        "w": 282,
+        "h": 46
+      },
+      "style": {
+        "bg": "rgb(252, 98, 19)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "10px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 174,
+      "tag": "div",
+      "name": "Icon",
+      "text": "",
+      "rect": {
+        "x": 1196,
+        "y": 655,
+        "w": 18,
+        "h": 18
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 175,
+      "tag": "p",
+      "name": "",
+      "text": "Get This Template",
+      "rect": {
+        "x": 1222,
+        "y": 655,
+        "w": 131,
+        "h": 18
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "15px",
+        "weight": "600",
+        "line": "18px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 176,
+      "tag": "div",
+      "name": "Remove This Buy Button",
+      "text": "Unlock 100+ Templates",
+      "rect": {
+        "x": 1134,
+        "y": 692,
+        "w": 282,
+        "h": 46
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 177,
+      "tag": "a",
+      "name": "Remove Button",
+      "text": "Unlock 100+ Templates",
+      "rect": {
+        "x": 1134,
+        "y": 692,
+        "w": 282,
+        "h": 46
+      },
+      "style": {
+        "bg": "rgb(9, 9, 61)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "10px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 178,
+      "tag": "div",
+      "name": "Icon",
+      "text": "",
+      "rect": {
+        "x": 1177,
+        "y": 706,
+        "w": 18,
+        "h": 18
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 179,
+      "tag": "p",
+      "name": "",
+      "text": "Unlock 100+ Templates",
+      "rect": {
+        "x": 1203,
+        "y": 706,
+        "w": 170,
+        "h": 18
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "15px",
+        "weight": "600",
+        "line": "18px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 180,
+      "tag": "a",
+      "name": "Remove This Buy Button",
+      "text": "Need to customize this template? Start With Top Experts!",
+      "rect": {
+        "x": 1134,
+        "y": 743,
+        "w": 282,
+        "h": 51
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "10px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 181,
+      "tag": "div",
+      "name": "Variant 2",
+      "text": "",
+      "rect": {
+        "x": 1148,
+        "y": 762,
+        "w": 12,
+        "h": 12
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "12px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 182,
+      "tag": "div",
+      "name": "3",
+      "text": "",
+      "rect": {
+        "x": 1143,
+        "y": 758,
+        "w": 21,
+        "h": 21
+      },
+      "style": {
+        "bg": "rgb(220, 70, 61)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "99.7848% / 99.7845%",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 183,
+      "tag": "div",
+      "name": "2",
+      "text": "",
+      "rect": {
+        "x": 1146,
+        "y": 760,
+        "w": 16,
+        "h": 16
+      },
+      "style": {
+        "bg": "rgb(220, 70, 61)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "99.8735% / 99.8731%",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 184,
+      "tag": "div",
+      "name": "1",
+      "text": "",
+      "rect": {
+        "x": 1148,
+        "y": 762,
+        "w": 12,
+        "h": 12
+      },
+      "style": {
+        "bg": "rgb(220, 70, 61)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "12px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 185,
+      "tag": "p",
+      "name": "",
+      "text": "Need to customize this template?",
+      "rect": {
+        "x": 1170,
+        "y": 753,
+        "w": 232,
+        "h": 17
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(9, 9, 61)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 186,
+      "tag": "p",
+      "name": "",
+      "text": "Start With Top Experts!",
+      "rect": {
+        "x": 1170,
+        "y": 770,
+        "w": 232,
+        "h": 14
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(208, 54, 176)",
+        "font": "Inter, \"Inter Placeholder\", sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "14.4px",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 187,
+      "tag": "div",
+      "name": "Variant 1",
+      "text": "",
+      "rect": {
+        "x": 1368,
+        "y": 799,
+        "w": 48,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "8px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 188,
+      "tag": "a",
+      "name": "Light",
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "rect": {
+        "x": 1280,
+        "y": 842,
+        "w": 140,
+        "h": 38
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 189,
+      "tag": "div",
+      "name": "Backdrop",
+      "text": "",
+      "rect": {
+        "x": 1281,
+        "y": 843,
+        "w": 138,
+        "h": 36
+      },
+      "style": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "10px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 190,
+      "tag": "div",
+      "name": "Content",
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "rect": {
+        "x": 1291,
+        "y": 853,
+        "w": 119,
+        "h": 16
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "flex"
+      }
+    },
+    {
+      "idx": 191,
+      "tag": "div",
+      "name": "Logo",
+      "text": "",
+      "rect": {
+        "x": 1291,
+        "y": 851,
+        "w": 12,
+        "h": 20
+      },
+      "style": {
+        "bg": "rgb(0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 193,
+      "tag": "div",
+      "name": "Text",
+      "text": "",
+      "rect": {
+        "x": 1313,
+        "y": 856,
+        "w": 97,
+        "h": 10
+      },
+      "style": {
+        "bg": "rgb(0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "0px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 194,
+      "tag": "div",
+      "name": "Bottom",
+      "text": "",
+      "rect": {
+        "x": 1280,
+        "y": 842,
+        "w": 140,
+        "h": 38
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "11px",
+        "display": "block"
+      }
+    },
+    {
+      "idx": 195,
+      "tag": "div",
+      "name": "Border",
+      "text": "",
+      "rect": {
+        "x": 1280,
+        "y": 842,
+        "w": 140,
+        "h": 38
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 238)",
+        "font": "sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "line": "normal",
+        "radius": "11px",
+        "display": "block"
+      }
+    }
+  ]
+}

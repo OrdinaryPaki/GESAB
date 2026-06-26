@@ -1,0 +1,73 @@
+{
+  "referenceBase": "https://plumbly.framer.website",
+  "routes": [
+    {
+      "priority": "P0",
+      "type": "unique_page",
+      "reference": "/",
+      "local": "/",
+      "notes": "Homepage with hero, support strip, why choose, services, about, team, testimonials, process, gallery, FAQ, contact band, footer."
+    },
+    {
+      "priority": "P0",
+      "type": "unique_page",
+      "reference": "/about",
+      "local": "/about",
+      "notes": "Interior page using shared hero, about and team sections."
+    },
+    {
+      "priority": "P0",
+      "type": "index_page",
+      "reference": "/service",
+      "local": "/service",
+      "notes": "Services index using shared services grid."
+    },
+    {
+      "priority": "P0",
+      "type": "unique_page",
+      "reference": "/contact",
+      "local": "/contact",
+      "notes": "Contact page with contact methods and booking form."
+    },
+    {
+      "priority": "P0",
+      "type": "template_instance",
+      "family": "service_detail",
+      "reference": "/service/leak-detection-repair",
+      "local": "/service/leak-detection-repair"
+    },
+    {
+      "priority": "P1",
+      "type": "template_instance",
+      "family": "service_detail",
+      "reference": "/service/drain-cleaning",
+      "local": "/service/drain-cleaning"
+    },
+    {
+      "priority": "P1",
+      "type": "template_instance",
+      "family": "service_detail",
+      "reference": "/service/sewer-line-services",
+      "local": "/service/sewer-line-services"
+    },
+    {
+      "priority": "P1",
+      "type": "template_instance",
+      "family": "service_detail",
+      "reference": "/service/faucet-fixture-repair",
+      "local": "/service/faucet-fixture-repair"
+    }
+  ],
+  "excluded": [
+    {
+      "priority": "P2",
+      "reference": "/terms-privacy/privacy-policy",
+      "reason": "Legal content is visually minor and outside phase-1 core surfaces."
+    },
+    {
+      "priority": "P2",
+      "reference": "/terms-privacy/terms-conditions",
+      "reason": "Legal content is visually minor and outside phase-1 core surfaces."
+    }
+  ]
+}
