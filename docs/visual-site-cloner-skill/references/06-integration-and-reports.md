@@ -64,6 +64,7 @@ Allowed fields:
 
 When a worker reports ready, main verifies:
 
+- `scripts/validate-worker-report.mjs` passes when the script is available
 - report uses expected schema
 - foundation version is current
 - screenshots exist
@@ -84,6 +85,19 @@ Mark a worker report invalid if:
 - it changes global files without an approved foundation change request
 
 If invalid, send a targeted repair order or require a foundation change request.
+
+## Report Validation Script
+
+Use the bundled script for mechanical checks:
+
+```bash
+node /path/to/visual-site-cloner/scripts/validate-worker-report.mjs \
+  .visual-clone/reports/about.report.xml \
+  --foundation-version foundation.v1 \
+  --base-dir .
+```
+
+The script checks allowed status values, required mission/foundation fields, desktop/mobile screenshots, P0/P1 counts, global file mutations, and disallowed XML tags.
 
 ## Global Mutation Detector
 

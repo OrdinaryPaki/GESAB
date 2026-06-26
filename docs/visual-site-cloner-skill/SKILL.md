@@ -51,6 +51,8 @@ Before acting, read these files in order:
 10. `references/09-screenshot-staleness.md`
 11. `references/10-subagent-message-safety.md`
 
+Use `scripts/validate-worker-report.mjs` when validating worker reports.
+
 ## Main Workflow
 
 1. Parse invocation and reference URL. Continue only for explicit `$visual-site-cloner` invocation or an unambiguous request to use this skill.
@@ -67,9 +69,9 @@ Before acting, read these files in order:
 12. Browser-check shared Header/Footer/PageShell against the reference.
 13. Lock foundation as `foundation.v1`.
 14. Create mission packets under `.visual-clone/missions/`.
-15. Spawn workers explicitly when at least two independent missions exist, preferably in Git worktrees under the invocation permission contract.
+15. Spawn workers explicitly when at least two independent missions exist, preferably in Git worktrees under the invocation permission contract. Limit active implementation workers to 4 by default.
 16. Collect structured worker reports.
-17. Reject invalid reports.
+17. Validate worker reports with `scripts/validate-worker-report.mjs` where possible and reject invalid reports.
 18. Process foundation change requests.
 19. Mark stale screenshots if foundation changes.
 20. Integrate workers one at a time.
@@ -91,3 +93,5 @@ Before acting, read these files in order:
 - Document P2 deviations instead of looping indefinitely.
 - Do not claim visual match without desktop and mobile screenshot evidence.
 - Mark screenshots stale when their foundation version, worktree, branch, commit, or local route state no longer matches the integrated baseline.
+- Use at most 4 active implementation workers by default.
+- Inspect dirty working trees before creating worktrees or checkpoints; never treat uncommitted user changes as disposable.

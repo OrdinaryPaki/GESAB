@@ -10,16 +10,24 @@ Review entrypoint:
 
 1. `SKILL.md`
 2. `agents/openai.yaml`
-3. `references/00-operating-model.md`
-4. `references/01-browser-reconnaissance.md`
-5. `references/02-route-template-classification.md`
-6. `references/03-foundation-lock.md`
-7. `references/04-worker-missions.md`
-8. `references/05-visual-qa-loop.md`
-9. `references/06-integration-and-reports.md`
-10. `references/07-worker-spawn-protocol.md`
-11. `references/08-worktree-and-merge-protocol.md`
-12. `references/09-screenshot-staleness.md`
-13. `references/10-subagent-message-safety.md`
+3. `codex-agents/visual_clone_worker.toml`
+4. `scripts/validate-worker-report.mjs`
+5. `references/00-operating-model.md`
+6. `references/01-browser-reconnaissance.md`
+7. `references/02-route-template-classification.md`
+8. `references/03-foundation-lock.md`
+9. `references/04-worker-missions.md`
+10. `references/05-visual-qa-loop.md`
+11. `references/06-integration-and-reports.md`
+12. `references/07-worker-spawn-protocol.md`
+13. `references/08-worktree-and-merge-protocol.md`
+14. `references/09-screenshot-staleness.md`
+15. `references/10-subagent-message-safety.md`
 
 The copied files are for review. If changes are accepted, apply them back to the global skill folder before relying on the skill in Codex.
+
+`codex-agents/visual_clone_worker.toml` is a project-local review copy of the global custom agent file:
+
+```text
+/Users/chaudhry/.codex/agents/visual_clone_worker.toml
+```

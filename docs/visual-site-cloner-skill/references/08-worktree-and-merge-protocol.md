@@ -2,6 +2,21 @@
 
 Use worktree mode only when the project is a Git repo and worktrees are allowed by the invocation contract and project rules.
 
+## Dirty Working Tree Policy
+
+Before creating worktrees or an integration baseline, main must inspect Git status.
+
+If uncommitted user changes exist:
+
+- do not overwrite them
+- do not reset them
+- do not delete them
+- record them in `.visual-clone/run.json`
+- prefer a non-destructive checkpoint if allowed
+- otherwise run in sequential main-worktree mode or report blocked
+
+Workers must never assume uncommitted files are disposable.
+
 ## Worktree Mode
 
 1. Main creates or confirms the shared foundation in the base worktree.
