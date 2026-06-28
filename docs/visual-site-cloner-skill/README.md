@@ -23,6 +23,7 @@ Review entrypoint:
 13. `references/08-worktree-and-merge-protocol.md`
 14. `references/09-screenshot-staleness.md`
 15. `references/10-subagent-message-safety.md`
+16. `references/11-interaction-and-motion-fidelity.md`
 
 The copied files are for review. If changes are accepted, apply them back to the global skill folder before relying on the skill in Codex.
 

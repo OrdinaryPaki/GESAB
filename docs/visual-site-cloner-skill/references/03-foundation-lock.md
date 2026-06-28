@@ -34,6 +34,7 @@ Write:
 
 ```text
 .visual-clone/blueprint/design-foundation.v1.json
+.visual-clone/blueprint/motion-foundation.v1.json
 .visual-clone/blueprint/foundation.lock.json
 ```
 
@@ -59,6 +60,31 @@ After foundation lock, workers must not silently modify:
 If a worker believes a global change is required, it submits a foundation change request.
 
 Main must reject or review any worker report that changed global foundation files without an approved foundation change request.
+
+## Motion And Interaction Foundation
+
+When the reference contains repeated motion or interactions, main must create shared motion primitives before worker implementation.
+
+Examples:
+
+- button hover transition
+- card hover transform or shadow
+- nav link hover
+- mobile menu open/close animation
+- FAQ or accordion expand/collapse behavior
+- icon rotation
+- tab active-state transition
+- scroll reveal opacity or translate
+- sticky header transition
+- marquee or looping animation behavior
+
+Write these patterns to:
+
+```text
+.visual-clone/blueprint/motion-foundation.v1.json
+```
+
+Workers must reuse shared motion primitives instead of inventing separate hover or motion systems per route, unless browser evidence shows materially different behavior in the reference.
 
 ## Foundation Change Gate
 

@@ -32,6 +32,7 @@ Continue the build, browser screenshot, compare, and fix loop until one exit con
 - needs_foundation_decision because the mission cannot proceed without an approved global foundation change
 - blocked because the route cannot be accessed, rendered, or verified after concrete attempts
 - repair_complete for repair_order missions
+If the mission includes interactions, continue the build, browser action, state screenshot, compare, and fix loop until required interaction states are functional and verified.
 Do not mark the goal complete until the required worker_report has been written or returned.
 </goal_activation_tail>
 ```
@@ -47,6 +48,21 @@ Use:
 - `template_family`
 - `shared_component`
 - `repair_order`
+
+## Interaction Responsibility
+
+Each worker is responsible for interactions inside its assigned route/template.
+
+Before implementation, the worker must read these files when they exist:
+
+```text
+.visual-clone/blueprint/interaction-map.json
+.visual-clone/blueprint/motion-foundation.v1.json
+```
+
+The worker must not report `ready_for_main_review` if a visible FAQ, accordion, tab, dropdown, mobile menu, button hover, card hover, form state, sticky behavior, or scroll reveal in its assigned scope is missing or non-functional.
+
+Interaction state screenshots are required for missions with interactive components.
 
 ## Unique Page Mission Example
 
@@ -79,6 +95,7 @@ Use:
     <rule>Do not create a second Header or Footer.</rule>
     <rule>Do not silently modify global design tokens after foundation lock.</rule>
     <rule>If a global change is needed, submit foundation_change_request.</rule>
+    <rule>If interaction-map.json lists interactions for this route, verify default and changed states with state screenshots.</rule>
     <rule>Do not turn this into an inspired redesign.</rule>
     <rule>Do not replace reference copy/images with arbitrary placeholders if it changes visual mass.</rule>
   </hard_rules>
@@ -146,6 +163,7 @@ You must use the locked foundation version named in the mission.
 You must not silently mutate global foundation files after lock.
 If a global change appears necessary, submit a foundation_change_request instead of applying it silently.
 You must fix P0/P1 deviations before reporting ready.
+You must implement and verify interaction states listed in interaction-map.json for your assigned mission.
 You must document P2 deviations instead of looping indefinitely.
 You must submit one structured worker_report only.
 If goal tooling is available, you must make the assigned mission your active goal before implementation and continue until a valid exit condition is reached.

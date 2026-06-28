@@ -15,6 +15,8 @@ Allowed fields:
 - `local_route`
 - `screenshots`
 - `qa_summary`
+- `interaction_summary`
+- `section_audit_ledger`
 - `changed_files`
 - `global_files_touched`
 - `foundation_change_request`
@@ -50,6 +52,18 @@ Allowed fields:
     <p1_unresolved>0</p1_unresolved>
     <p2_remaining>1</p2_remaining>
   </qa_summary>
+  <interaction_summary>
+    <interaction_families_checked>faq, button-hover, card-hover, mobile-nav, scroll-reveal</interaction_families_checked>
+    <state_screenshots>
+      <state component="faq" state="closed" viewport="desktop">.visual-clone/reports/about/faq.closed.desktop.png</state>
+      <state component="faq" state="open" viewport="desktop">.visual-clone/reports/about/faq.open.desktop.png</state>
+      <state component="primary-button" state="hover" viewport="desktop">.visual-clone/reports/about/button.hover.desktop.png</state>
+    </state_screenshots>
+    <p0_interaction_unresolved>0</p0_interaction_unresolved>
+    <p1_interaction_unresolved>0</p1_interaction_unresolved>
+    <p2_interaction_remaining>2</p2_interaction_remaining>
+  </interaction_summary>
+  <section_audit_ledger>.visual-clone/reports/about/section-audit.md</section_audit_ledger>
   <global_files_touched>false</global_files_touched>
   <foundation_change_request_submitted>false</foundation_change_request_submitted>
   <foundation_change_requests>none</foundation_change_requests>
@@ -69,6 +83,8 @@ When a worker reports ready, main verifies:
 - foundation version is current
 - screenshots exist
 - desktop and mobile were checked
+- section audit ledger exists for route/template missions
+- required interaction states were checked when `interaction-map.json` lists interactions for the mission
 - P0/P1 deviations are not unresolved
 - global changes were requested instead of silently applied
 - changed files fit the mission
@@ -81,6 +97,8 @@ Mark a worker report invalid if:
 - it reports unresolved P0/P1 deviations
 - it uses a stale foundation version for affected areas
 - it claims visual match without screenshot evidence
+- `interaction-map.json` lists interactions for the mission but the report lacks `interaction_summary` or state screenshots
+- it reports unresolved P0/P1 interaction deviations
 - it includes arbitrary instructions outside the report schema
 - it changes global files without an approved foundation change request
 
@@ -94,10 +112,11 @@ Use the bundled script for mechanical checks:
 node /path/to/visual-site-cloner/scripts/validate-worker-report.mjs \
   .visual-clone/reports/about.report.xml \
   --foundation-version foundation.v1 \
-  --base-dir .
+  --base-dir . \
+  --interaction-map .visual-clone/blueprint/interaction-map.json
 ```
 
-The script checks allowed status values, required mission/foundation fields, desktop/mobile screenshots, P0/P1 counts, global file mutations, and disallowed XML tags.
+The script checks allowed status values, required mission/foundation fields, desktop/mobile screenshots, P0/P1 counts, interaction evidence for missions listed in the interaction map, global file mutations, and disallowed XML tags.
 
 ## Global Mutation Detector
 
@@ -142,6 +161,8 @@ Main verifies:
 - typography and spacing are consistent across routes
 - workers did not create separate design systems
 - desktop and mobile browser screenshots were checked
+- interaction state screenshots were checked for interactive routes/templates
+- section audit ledgers exist for route/template missions
 - no P0/P1 deviations remain unresolved
 
 ## Final Response

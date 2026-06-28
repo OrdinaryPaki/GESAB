@@ -48,6 +48,34 @@ Store screenshots with stable names:
 
 Record every screenshot in `.visual-clone/screenshot-manifest.json` with route, viewport, foundation version, worktree/branch, commit or checkpoint id, timestamp, and screenshot type.
 
+## Interaction Reconnaissance
+
+During browser reconnaissance, main must actively test visible interactions. Do not infer that a component is static just because the first screenshot is static.
+
+For each selected route/template:
+
+1. Hover major buttons, nav links, cards, and media blocks.
+2. Click FAQ, accordion, tabs, dropdowns, modal triggers, and carousels.
+3. Open and close mobile navigation.
+4. Focus visible form fields and controls when focus state is visible.
+5. Scroll through the page and observe reveal, sticky, parallax, marquee, or looping animation behavior.
+6. Record default and changed states in `.visual-clone/blueprint/interaction-map.json`.
+7. Capture representative state screenshots.
+
+Use Browser/CDP to identify candidates:
+
+- `button`
+- `a`
+- `[role="button"]`
+- `[aria-expanded]`
+- `[aria-controls]`
+- `details summary`
+- `input`, `textarea`, `select`
+- elements with CSS `transition`, `animation`, `transform`, `opacity`, or `filter`
+- elements that visibly change on hover, click, focus, scroll, or viewport entry
+
+Do not capture every repeated item when behavior is identical. Capture one canonical example and at least one additional sample for repeated patterns when useful.
+
 ## Rendered Style Extraction
 
 Use CDP/DOM inspection to collect:

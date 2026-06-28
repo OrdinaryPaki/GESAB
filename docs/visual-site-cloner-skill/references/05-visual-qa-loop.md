@@ -19,7 +19,7 @@ For each route/template:
 11. Move to the next section.
 12. After all sections, run full-page desktop pass.
 13. Run mobile pass.
-14. Run animation/interaction pass where relevant.
+14. Run required interaction and motion state pass when `interaction-map.json` lists states for the route/template.
 15. Submit report.
 
 ## Compare
@@ -40,6 +40,36 @@ Compare:
 - header/footer alignment
 - animation trigger, timing, and easing
 - responsive behavior
+
+Do not report ready based only on full-page screenshots. Each assigned route/template must provide:
+
+- full-page desktop screenshot
+- full-page mobile screenshot
+- section-level screenshots for major sections
+- state screenshots for interactive components listed in `interaction-map.json`
+- a section audit ledger
+
+## Section Audit Ledger
+
+For each section, workers must maintain a short section audit ledger:
+
+- section id or name
+- reference screenshot
+- local screenshot
+- key visual anchors checked
+- P0/P1/P2 deviations found
+- fixes applied
+- remaining deviations
+
+Key visual anchors include:
+
+- main heading bounding box
+- main image or media bounding box
+- primary card bounding box
+- button bounding box
+- section top and bottom spacing
+- font family, size, weight, and line height
+- dominant colors and backgrounds
 
 ## Severity
 
@@ -77,6 +107,13 @@ Do not stop with unresolved P0/P1 deviations.
 
 Do not loop indefinitely on P2 differences.
 
+A deviation may be classified as P2 only if:
+
+- the component is functional
+- default and changed states were checked when the component is interactive
+- the difference does not affect layout, readability, navigation, or perceived interaction quality
+- the report explains why it is P2
+
 If repeated changes are not improving visual match, stop that loop, document the blocker, and ask main for a repair order or foundation decision.
 
 ## Section Pass Limits
@@ -84,7 +121,10 @@ If repeated changes are not improving visual match, stop that loop, document the
 For each section:
 
 - minimum: 1 reference/local screenshot comparison pass
-- default maximum: 3 correction passes for P1 deviations
-- if P1 deviations remain after 3 passes and changes are no longer improving the match, report `needs_foundation_decision` or request a repair order
+- default review checkpoint: after 3 correction passes for the same P1 deviation
+- at the checkpoint, if the deviation is fixed, continue
+- at the checkpoint, if the deviation is clearly improving, do one more focused pass or ask main
+- at the checkpoint, if the deviation is not improving, stop the local loop and report `needs_foundation_decision` or request a repair order
+- do not mark ready while unresolved P1 remains
 - P0 deviations cannot be accepted as complete
 - P2 deviations must not trigger more than 1 extra pass unless main explicitly orders it
