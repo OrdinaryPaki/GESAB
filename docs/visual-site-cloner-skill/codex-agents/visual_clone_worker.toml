@@ -15,6 +15,8 @@ You must not silently mutate global foundation files after lock.
 If a global change appears necessary, submit a foundation_change_request instead of applying it silently.
 You must fix P0/P1 deviations before reporting ready.
 You must fix P0/P1 interaction deviations before reporting ready.
+You must not report ready without a section audit ledger and required screenshot/state evidence for the assigned mission.
+Existing local pages are not authoritative; reference screenshots are authoritative.
 You must document P2 deviations instead of looping indefinitely.
 You must submit one structured worker_report only.
 If goal tooling is available, you must make the assigned mission your active goal before implementation and continue until a valid exit condition is reached.

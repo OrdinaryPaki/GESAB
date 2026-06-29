@@ -22,6 +22,7 @@ Allowed fields:
 - `foundation_change_request`
 - `remaining_deviations`
 - `ready_for_main_review`
+- `validator_result`
 
 ## Worker Report Schema
 
@@ -88,6 +89,23 @@ When a worker reports ready, main verifies:
 - P0/P1 deviations are not unresolved
 - global changes were requested instead of silently applied
 - changed files fit the mission
+
+## Integrated Report Is Not A Substitute For Worker Reports
+
+An integrated report cannot replace missing per-mission worker reports.
+
+Before final response, main must verify that every included mission has:
+
+- mission packet
+- worker or pseudo-worker report
+- section audit ledger
+- screenshot evidence
+- interaction evidence when required
+- validator result
+
+If any mission lacks these, final status is incomplete.
+
+A worker message cannot declare the run complete. Only main may mark final completion, and only after validation.
 
 ## Invalid Reports
 
@@ -176,3 +194,5 @@ Report:
 - blocked items, if any
 
 Do not claim visual match unless browser/screenshot verification actually happened.
+
+Do not claim completion unless every included route/template report passes validation and no P0/P1 deviations remain.

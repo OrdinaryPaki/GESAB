@@ -4,6 +4,8 @@ Use worktree mode only when the project is a Git repo and worktrees are allowed 
 
 If project instructions say to work only in the main worktree or main branch unless explicitly asked, invoking `$visual-site-cloner` counts as that explicit ask for temporary local visual-cloner worktrees and branches.
 
+If project instructions say branches/worktrees require explicit user approval, invoking `$visual-site-cloner <url>` is that explicit approval for temporary local `codex/visual-site-cloner-*` branches/worktrees.
+
 If project instructions absolutely forbid branches or worktrees with no exception, obey them.
 
 ## Dirty Working Tree Policy

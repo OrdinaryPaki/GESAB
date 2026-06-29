@@ -48,6 +48,7 @@ Use:
 - `template_family`
 - `shared_component`
 - `repair_order`
+- `pseudo_worker`
 
 ## Interaction Responsibility
 
@@ -179,8 +180,11 @@ Workers may use only these readiness statuses:
 - `blocked`
 - `needs_foundation_decision`
 - `repair_complete`
+- `incomplete`
 
 Workers must not claim `visually identical`, `matched`, `complete`, or `pixel-perfect` unless desktop and mobile screenshot evidence is included.
+
+Use `incomplete` only when reporting a partial technical repair or missing evidence package. Main must not treat `incomplete` as ready.
 
 ## Worker Completion
 

@@ -9,6 +9,7 @@ const allowedStatuses = new Set([
   "blocked",
   "needs_foundation_decision",
   "repair_complete",
+  "incomplete",
 ]);
 
 const allowedTags = new Set([
@@ -46,6 +47,7 @@ const allowedTags = new Set([
   "foundation_change_request",
   "remaining_deviations",
   "deviation",
+  "validator_result",
   "ready",
 ]);
 
@@ -113,12 +115,24 @@ function isGlobalFile(path) {
   return globalFilePatterns.some((pattern) => pattern.test(path));
 }
 
-function normalizeFamily(value) {
+function normalizeToken(value) {
   return String(value ?? "")
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+}
+
+function normalizeFamily(value) {
+  return normalizeToken(value);
+}
+
+function requiredStates(entry) {
+  const raw = entry.states || entry.required_states || entry.requiredStates || entry.required_state || entry.requiredState;
+  if (!raw) return [];
+  if (Array.isArray(raw)) return raw.map(normalizeToken).filter(Boolean);
+  if (typeof raw === "object") return Object.keys(raw).map(normalizeToken).filter(Boolean);
+  return [normalizeToken(raw)].filter(Boolean);
 }
 
 function collectInteractionEntries(node, missionId, inheritedMission, out) {
@@ -220,6 +234,7 @@ const p1Interaction = numberText(text(xml, "p1_interaction_unresolved"));
 const globalFilesTouched = boolText(text(xml, "global_files_touched"));
 const requestSubmitted = boolText(text(xml, "foundation_change_request_submitted"));
 const interactionSummary = text(xml, "interaction_summary");
+const sectionAuditLedger = text(xml, "section_audit_ledger");
 const states = stateScreenshots(xml);
 
 if (!missionId) errors.push("Missing mission_id");
@@ -270,10 +285,31 @@ if (interactionMapFile) {
         }
 
         const requiredFamilies = new Set(interactions.map((entry) => normalizeFamily(entry.family)).filter(Boolean));
+        const stateEvidence = new Set(
+          states.map((state) => `${normalizeFamily(state.component)}:${normalizeToken(state.state)}`).filter((key) => key !== ":"),
+        );
+        const familyEvidence = new Set(states.map((state) => normalizeFamily(state.component)).filter(Boolean));
+
         if (states.length < requiredFamilies.size) {
           errors.push(
             `interaction-map lists ${requiredFamilies.size} interaction families for this mission, but report includes ${states.length} state screenshots`,
           );
+        }
+
+        for (const entry of interactions) {
+          const family = normalizeFamily(entry.family);
+          if (!family) continue;
+          const statesForEntry = requiredStates(entry);
+          if (statesForEntry.length) {
+            for (const requiredState of statesForEntry) {
+              const key = `${family}:${requiredState}`;
+              if (!stateEvidence.has(key)) {
+                errors.push(`Missing required interaction state screenshot for ${family}/${requiredState}`);
+              }
+            }
+          } else if (!familyEvidence.has(family)) {
+            errors.push(`Missing state screenshot for interaction family ${family}`);
+          }
         }
       }
     }
@@ -298,6 +334,14 @@ if ((globalFilesTouched || globalChangedFiles.length) && !requestSubmitted && !a
 
 if (status === "ready_for_main_review" && (!desktopScreenshots.length || !mobileScreenshots.length)) {
   errors.push("ready_for_main_review requires desktop and mobile screenshot evidence");
+}
+
+if (status === "ready_for_main_review") {
+  if (!sectionAuditLedger) {
+    errors.push("ready_for_main_review requires section_audit_ledger");
+  } else if (!existsSync(reportPath(baseDir, sectionAuditLedger))) {
+    errors.push(`Section audit ledger file not found: ${sectionAuditLedger}`);
+  }
 }
 
 if (!changedFiles.length) warnings.push("No changed_files listed");
