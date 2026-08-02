@@ -1,0 +1,624 @@
+.page {
+  min-width: 0;
+  overflow: clip;
+  background: #fff;
+  color: var(--text);
+}
+
+.page :global(.header-inner) {
+  width: min(1320px, calc(100% - 48px));
+  max-width: none;
+}
+
+.container {
+  width: min(1320px, 100%);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 172px 24px 82px;
+}
+
+.title {
+  max-width: 1120px;
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: clamp(64px, 5.25vw, 92px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 34px;
+  margin-top: 30px;
+  color: rgba(5, 5, 5, 0.68);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.meta span + span::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 18px 2px 0;
+  border-radius: 999px;
+  background: var(--blue);
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1320 / 650;
+  margin-top: 46px;
+  border-radius: 16px;
+  background: var(--soft);
+  object-fit: cover;
+}
+
+.contentSection {
+  padding: 0 24px 128px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-areas: "article quote";
+  grid-template-columns: minmax(0, 820px) 380px;
+  gap: 120px;
+  align-items: start;
+}
+
+.article {
+  min-width: 0;
+  grid-area: article;
+}
+
+.lead {
+  max-width: 760px;
+  margin: 0 0 68px;
+  color: var(--text);
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.articleSection {
+  margin-top: 66px;
+}
+
+.articleSection:first-of-type {
+  margin-top: 0;
+}
+
+.article h2,
+.importantNote h2,
+.relatedHeader h2 {
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+}
+
+.article h2,
+.importantNote h2 {
+  font-size: 36px;
+}
+
+.articleSection > p,
+.importantNote p {
+  max-width: 780px;
+  margin: 22px 0 0;
+  color: rgba(5, 5, 5, 0.72);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.supportingImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 827 / 494;
+  margin-top: 46px;
+  border-radius: 16px;
+  background: var(--soft);
+  object-fit: cover;
+}
+
+.includedList,
+.considerationList {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.includedList li,
+.considerationList li {
+  position: relative;
+  padding-left: 34px;
+  color: rgba(5, 5, 5, 0.78);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.includedList li::before {
+  content: "✓";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: grid;
+  width: 23px;
+  height: 23px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--blue);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.considerationList li::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--yellow);
+  box-shadow: 0 0 0 5px rgba(253, 188, 13, 0.18);
+}
+
+.processList {
+  margin: 34px 0 0;
+  padding: 0;
+  border-bottom: 1px solid var(--line);
+  list-style: none;
+}
+
+.processItem {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 22px;
+  padding: 26px 0 28px;
+  border-top: 1px solid var(--line);
+}
+
+.processItem > span {
+  color: var(--blue);
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.processItem h3 {
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.processItem p {
+  margin: 8px 0 0;
+  color: rgba(5, 5, 5, 0.7);
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.importantNote {
+  margin-top: 72px;
+  border-left: 6px solid var(--blue);
+  border-radius: 0 16px 16px 0;
+  background: #eef6ff;
+  padding: 36px 40px 40px;
+}
+
+.importantNote p {
+  margin-top: 16px;
+}
+
+.faqSection {
+  margin-top: 82px;
+}
+
+.faqSection > h2 {
+  margin-bottom: 30px;
+}
+
+.faqSection :global(.faq-list) {
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.faqSection :global(.faq-item) {
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: 20px 24px;
+}
+
+.faqSection :global(.faq-item:last-child) {
+  border-bottom: 0;
+}
+
+.faqSection :global(.faq-question) {
+  text-align: left;
+}
+
+.quoteCard {
+  position: sticky;
+  top: 28px;
+  grid-area: quote;
+  border-radius: 16px;
+  background: var(--blue);
+  color: white;
+  padding: 34px 32px 32px;
+  box-shadow: 0 26px 70px rgba(22, 129, 255, 0.2);
+}
+
+.page .quoteCard :global(.appointment-card) {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: white;
+  box-shadow: none;
+}
+
+.page .quoteCard :global(.appointment-card h2) {
+  margin: 0;
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  line-height: 1.16;
+}
+
+.page .quoteCard :global(.appointment-card-intro) {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 15px;
+  line-height: 1.58;
+}
+
+.page .quoteCard :global(.appointment-card label) {
+  gap: 6px;
+  color: white;
+  font-size: 13px;
+}
+
+.page .quoteCard :global(.appointment-card input),
+.page .quoteCard :global(.appointment-card select) {
+  height: 52px;
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 14px;
+  background: white;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.page .quoteCard :global(.appointment-card .cta-button) {
+  height: 52px;
+  min-height: 52px;
+  margin-top: 6px;
+  border-radius: 10px;
+}
+
+.quoteBenefits {
+  display: grid;
+  gap: 11px;
+  margin: 24px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  list-style: none;
+}
+
+.quoteBenefits li {
+  position: relative;
+  padding-left: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.quoteBenefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--yellow);
+  font-weight: 800;
+}
+
+.relatedSection {
+  background: var(--soft);
+  padding: 92px 24px 118px;
+}
+
+.relatedHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 42px;
+}
+
+.relatedHeader h2 {
+  max-width: 680px;
+  font-size: 48px;
+}
+
+.relatedHeader :global(.cta-button) {
+  flex: 0 0 auto;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.relatedCard {
+  display: flex;
+  min-width: 0;
+  min-height: 500px;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.relatedCard:hover,
+.relatedCard:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 56px rgba(0, 0, 0, 0.1);
+}
+
+.relatedCard:focus-visible {
+  outline: 3px solid rgba(22, 129, 255, 0.38);
+  outline-offset: 4px;
+}
+
+.relatedCard > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  background: #eceef1;
+  object-fit: cover;
+}
+
+.relatedCard > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 28px 28px 30px;
+}
+
+.relatedCard h3 {
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.relatedCard p {
+  margin: 14px 0 30px;
+  color: rgba(5, 5, 5, 0.68);
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.relatedCard > div > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .contentGrid {
+    grid-template-columns: minmax(0, 1fr) 350px;
+    gap: 64px;
+  }
+}
+
+@media (max-width: 980px) {
+  .page :global(.header-inner) {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .hero {
+    padding-top: 132px;
+    padding-bottom: 60px;
+  }
+
+  .title {
+    font-size: clamp(50px, 8vw, 68px);
+  }
+
+  .contentGrid {
+    width: min(720px, 100%);
+    grid-template-areas:
+      "quote"
+      "article";
+    grid-template-columns: minmax(0, 1fr);
+    gap: 72px;
+  }
+
+  .quoteCard {
+    position: static;
+  }
+
+  .relatedGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .relatedCard:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 118px 16px 40px;
+  }
+
+  .title {
+    font-size: clamp(32px, 8.8vw, 40px);
+    hyphens: none;
+    letter-spacing: -0.04em;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .meta {
+    display: grid;
+    gap: 4px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .meta span + span::before {
+    display: none;
+  }
+
+  .heroImage {
+    aspect-ratio: 4 / 3;
+    margin-top: 28px;
+    border-radius: 14px;
+  }
+
+  .contentSection {
+    padding: 0 16px 84px;
+  }
+
+  .contentGrid {
+    gap: 60px;
+  }
+
+  .quoteCard {
+    margin: 0;
+    border-radius: 14px;
+    padding: 28px 20px 26px;
+  }
+
+  .page .quoteCard :global(.appointment-card h2) {
+    font-size: 29px;
+  }
+
+  .lead {
+    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 1.55;
+  }
+
+  .articleSection {
+    margin-top: 54px;
+  }
+
+  .article h2,
+  .importantNote h2 {
+    font-size: 30px;
+  }
+
+  .articleSection > p,
+  .importantNote p,
+  .includedList li,
+  .considerationList li {
+    font-size: 16px;
+  }
+
+  .supportingImage {
+    margin-top: 34px;
+    border-radius: 14px;
+  }
+
+  .processItem {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 14px;
+    padding: 22px 0 24px;
+  }
+
+  .processItem h3 {
+    font-size: 20px;
+  }
+
+  .importantNote {
+    margin-top: 58px;
+    border-left-width: 5px;
+    padding: 28px 24px 30px;
+  }
+
+  .faqSection {
+    margin-top: 64px;
+  }
+
+  .faqSection :global(.faq-item) {
+    padding: 18px;
+  }
+
+  .faqSection :global(.faq-question) {
+    font-size: 17px;
+    line-height: 1.45;
+  }
+
+  .relatedSection {
+    padding: 68px 16px 84px;
+  }
+
+  .relatedHeader {
+    align-items: stretch;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .relatedHeader h2 {
+    font-size: 38px;
+  }
+
+  .relatedHeader :global(.cta-button) {
+    width: 100%;
+  }
+
+  .relatedGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .relatedCard,
+  .relatedCard:last-child {
+    min-height: 0;
+    grid-column: auto;
+  }
+
+  .relatedCard > div {
+    padding: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .relatedCard {
+    transition: none;
+  }
+
+  .relatedCard:hover,
+  .relatedCard:focus-visible {
+    transform: none;
+  }
+}
