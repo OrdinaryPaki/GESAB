@@ -1,0 +1,6 @@
+@import "./responsive/shared.css";
+@import "./responsive/home.css";
+@import "./responsive/about.css";
+@import "./responsive/contact.css";
+@import "./responsive/service.css";
+@import "./responsive/blog.css";

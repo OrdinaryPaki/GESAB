@@ -1,0 +1,93 @@
+@media (min-width: 981px) and (max-width: 1248px) {
+  [class*="blog-module"][class*="compactCard"] {
+    gap: clamp(20px, 3vw, 36px);
+  }
+
+  [class*="blog-module"][class*="compactCard"] [class*="cardImageWrap"] {
+    width: 42%;
+  }
+
+  [class*="blog-module"][class*="compactCard"] [class*="cardCopy"] {
+    width: auto;
+    flex: 1;
+  }
+
+  [class*="blog-module"][class*="detailLeadImage"] {
+    width: 100%;
+    max-width: 988px;
+    height: auto;
+    aspect-ratio: 988 / 608;
+  }
+
+  [class*="blog-module"] .contact-band-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 46%);
+    gap: clamp(40px, 5vw, 72px);
+  }
+
+  [class*="blog-module"] .appointment-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 980px) {
+  [class*="blog-module"][class*="indexContainer"],
+  [class*="blog-module"][class*="detailHeroInner"],
+  [class*="blog-module"][class*="detailArticle"] {
+    width: min(720px, calc(100% - 40px)) !important;
+    max-width: 100%;
+  }
+
+  [class*="blog-module"][class*="largeCard"],
+  [class*="blog-module"][class*="compactCard"],
+  [class*="blog-module"][class*="articleCard"],
+  [class*="blog-module"] [class*="cardImageWrap"],
+  [class*="blog-module"] [class*="cardCopy"],
+  [class*="blog-module"][class*="detailTitleBlock"] h1,
+  [class*="blog-module"][class*="detailLeadImage"],
+  [class*="blog-module"][class*="detailSecondaryImage"] {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  [class*="blog-module"][class*="largeCard"],
+  [class*="blog-module"][class*="compactCard"],
+  [class*="blog-module"][class*="articleCard"] {
+    height: auto;
+  }
+
+  [class*="blog-module"] [class*="cardImageWrap"],
+  [class*="blog-module"][class*="detailLeadImage"],
+  [class*="blog-module"][class*="detailSecondaryImage"] {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 980px) {
+  [class*="blog-module"][class*="featuredGrid"],
+  [class*="blog-module"][class*="articleGrid"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 389px) {
+  [class*="blog-module"][class*="indexContainer"],
+  [class*="blog-module"][class*="largeCard"],
+  [class*="blog-module"][class*="compactCard"],
+  [class*="blog-module"][class*="articleCard"],
+  [class*="blog-module"] [class*="cardImageWrap"],
+  [class*="blog-module"] [class*="cardCopy"],
+  [class*="blog-module"][class*="detailHeroInner"],
+  [class*="blog-module"][class*="detailTitleBlock"] h1,
+  [class*="blog-module"][class*="detailLeadImage"],
+  [class*="blog-module"][class*="detailArticle"],
+  [class*="blog-module"][class*="detailSecondaryImage"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  [class*="blog-module"][class*="indexHero"] h1,
+  [class*="blog-module"][class*="detailTitleBlock"] h1 {
+    font-size: clamp(34px, 11vw, 40px);
+  }
+}
