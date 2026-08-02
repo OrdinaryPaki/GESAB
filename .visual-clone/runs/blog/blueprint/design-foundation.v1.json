@@ -1,0 +1,45 @@
+{
+  "version": "foundation.blog.v1",
+  "scope": "/blog and /blog/[slug] only",
+  "fonts": {
+    "display": "Outfit",
+    "body": "Inter",
+    "headingWeight": 600,
+    "bodyWeight": 400,
+    "mediumWeight": 500
+  },
+  "colors": {
+    "blue": "#1681ff",
+    "yellow": "#fdbc0d",
+    "black": "#000000",
+    "muted": "#3b3b3b",
+    "soft": "#f5f7fa",
+    "white": "#ffffff"
+  },
+  "desktop": {
+    "viewport": "1440x1000",
+    "containerWidth": 1200,
+    "containerLeft": 120,
+    "indexHero": "72px / 79.2px / 600 / -1.44px",
+    "indexFeaturedColumns": "588px 588px with 24px gap",
+    "detailHeroWidth": 988,
+    "detailArticleWidth": 827,
+    "radius": 16
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "contentWidth": 350,
+    "contentLeft": 20,
+    "heroTitle": "40px / 44px / 600 / -0.8px",
+    "indexCards": "one 350px column",
+    "detailLeadImage": "330x203px",
+    "detailArticleWidth": 350,
+    "radius": 16
+  },
+  "sharedPreservation": [
+    "GESAB branding and contact details",
+    "existing Header, ContactBand and Footer implementations",
+    "existing global design tokens",
+    "all non-blog routes"
+  ]
+}

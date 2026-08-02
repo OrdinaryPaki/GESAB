@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "referenceOrigin": "https://plumbly.framer.website",
+  "routes": [
+    {
+      "priority": "P0",
+      "classification": "index_page",
+      "referenceRoute": "/blog",
+      "localRoute": "/blog",
+      "included": true
+    },
+    {
+      "priority": "P0",
+      "classification": "template_instance",
+      "familyId": "blog-detail",
+      "referenceRoute": "/blog/how-to-solve-10-common-plumbing-problems",
+      "localRoute": "/blog/how-to-solve-10-common-plumbing-problems",
+      "included": true,
+      "canonical": true
+    }
+  ],
+  "excluded": "All non-blog routes are excluded by the user. Shared Header, ContactBand and Footer are reused without changing their default behavior."
+}

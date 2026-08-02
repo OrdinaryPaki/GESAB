@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "executionMode": "sequential-pseudo-worker",
+  "missions": [
+    {
+      "id": "blog-index",
+      "mission_id": "blog-index",
+      "type": "pseudo_worker",
+      "status": "ready_for_main_review",
+      "referenceRoute": "/blog",
+      "localRoute": "/blog",
+      "foundationVersion": "foundation.blog.v1",
+      "reportPath": ".visual-clone/runs/blog/reports/blog-index.report.xml"
+    },
+    {
+      "id": "blog-detail-template",
+      "mission_id": "blog-detail-template",
+      "type": "pseudo_worker",
+      "status": "ready_for_main_review",
+      "referenceRoute": "/blog/how-to-solve-10-common-plumbing-problems",
+      "localRoute": "/blog/how-to-solve-10-common-plumbing-problems",
+      "foundationVersion": "foundation.blog.v1",
+      "reportPath": ".visual-clone/runs/blog/reports/blog-detail-template.report.xml"
+    }
+  ]
+}

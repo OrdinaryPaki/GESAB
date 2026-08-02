@@ -1,0 +1,55 @@
+<worker_report version="1.0">
+  <mission_id>blog-detail-template</mission_id>
+  <status>ready_for_main_review</status>
+  <foundation_version_used>foundation.blog.v1</foundation_version_used>
+  <worktree>shared-current-worktree-sequential-run</worktree>
+  <reference>
+    <url>https://plumbly.framer.website/blog/how-to-solve-10-common-plumbing-problems</url>
+    <desktop_screenshot>.visual-clone/reference/screenshots/blog-detail.desktop.full.png</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/reference/screenshots/blog-detail.mobile.full.png</mobile_screenshot>
+  </reference>
+  <local>
+    <route>/blog/how-to-solve-10-common-plumbing-problems</route>
+    <desktop_screenshot>.visual-clone/runs/blog/reports/blog-detail.local.desktop.full.png</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/runs/blog/reports/blog-detail.local.mobile.full.png</mobile_screenshot>
+  </local>
+  <changed_files>
+    <file>app/blog/[slug]/page.js</file>
+    <file>app/blog/blog-posts.mjs</file>
+    <file>app/blog/RevealOnView.js</file>
+    <file>app/blog/reveal-utils.mjs</file>
+    <file>app/blog/blog.module.css</file>
+    <file>tests/blog-posts.test.mjs</file>
+    <file>tests/blog-routes.test.mjs</file>
+    <file>tests/reveal-utils.test.mjs</file>
+  </changed_files>
+  <qa_summary>
+    <desktop_passes>3</desktop_passes>
+    <mobile_passes>3</mobile_passes>
+    <sections_checked>15</sections_checked>
+    <p0_unresolved>0</p0_unresolved>
+    <p1_unresolved>0</p1_unresolved>
+    <p2_remaining>0</p2_remaining>
+  </qa_summary>
+  <interaction_summary>
+    <interaction_families_checked>go-back-hover, mobile-navigation, scroll-reveal</interaction_families_checked>
+    <state_screenshots>
+      <state component="go-back-hover" state="default" viewport="desktop">.visual-clone/runs/blog/reports/blog-detail.go-back.default.desktop.png</state>
+      <state component="go-back-hover" state="hover" viewport="desktop">.visual-clone/runs/blog/reports/blog-detail.go-back.hover.desktop.png</state>
+      <state component="mobile-navigation" state="closed" viewport="mobile">.visual-clone/runs/blog/reports/blog-detail.menu.closed.mobile.png</state>
+      <state component="mobile-navigation" state="open" viewport="mobile">.visual-clone/runs/blog/reports/blog-detail.menu.open.mobile.png</state>
+      <state component="scroll-reveal" state="default" viewport="desktop">.visual-clone/runs/blog/reports/blog-detail.local.desktop.fold.png</state>
+      <state component="scroll-reveal" state="revealed" viewport="desktop">.visual-clone/runs/blog/reports/blog-detail.local.desktop.full.png</state>
+    </state_screenshots>
+    <p0_interaction_unresolved>0</p0_interaction_unresolved>
+    <p1_interaction_unresolved>0</p1_interaction_unresolved>
+    <p2_interaction_remaining>0</p2_interaction_remaining>
+  </interaction_summary>
+  <section_audit_ledger>.visual-clone/runs/blog/reports/blog-detail-template.section-audit.md</section_audit_ledger>
+  <global_files_touched>false</global_files_touched>
+  <foundation_change_request_submitted>false</foundation_change_request_submitted>
+  <foundation_change_requests>none</foundation_change_requests>
+  <remaining_deviations></remaining_deviations>
+  <validator_result>passed</validator_result>
+  <ready>true</ready>
+</worker_report>

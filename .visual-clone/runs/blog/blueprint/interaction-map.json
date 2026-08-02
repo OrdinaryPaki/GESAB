@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "routes": [
+    {
+      "missionId": "blog-index",
+      "referenceRoute": "/blog",
+      "localRoute": "/blog",
+      "interactions": [
+        {
+          "family": "blog-card-hover",
+          "states": ["default", "hover"]
+        },
+        {
+          "family": "blog-load-more",
+          "states": ["default", "expanded"]
+        },
+        {
+          "family": "mobile-navigation",
+          "states": ["closed", "open"]
+        },
+        {
+          "family": "scroll-reveal",
+          "states": ["default", "revealed"]
+        }
+      ]
+    },
+    {
+      "missionId": "blog-detail-template",
+      "referenceRoute": "/blog/how-to-solve-10-common-plumbing-problems",
+      "localRoute": "/blog/how-to-solve-10-common-plumbing-problems",
+      "interactions": [
+        {
+          "family": "go-back-hover",
+          "states": ["default", "hover"]
+        },
+        {
+          "family": "mobile-navigation",
+          "states": ["closed", "open"]
+        },
+        {
+          "family": "scroll-reveal",
+          "states": ["default", "revealed"]
+        }
+      ]
+    }
+  ]
+}

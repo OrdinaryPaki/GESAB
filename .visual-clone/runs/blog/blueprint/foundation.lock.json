@@ -1,0 +1,22 @@
+{
+  "version": "foundation.blog.v1",
+  "status": "locked",
+  "globalFiles": [
+    "app/globals.css",
+    "app/layout.js",
+    "app/components/GesabShell.js",
+    "app/components/CtaButton.js",
+    "app/components/GesabIcons.js"
+  ],
+  "missionMayChange": [
+    "app/blog/layout.js",
+    "app/blog/page.js",
+    "app/blog/[slug]/page.js",
+    "app/blog/blog-posts.mjs",
+    "app/blog/blog.module.css",
+    "app/blog/BlogIndexGrid.js",
+    "app/blog/RevealOnView.js",
+    "tests/blog-posts.test.mjs"
+  ],
+  "rule": "All visual corrections remain route-scoped. Shared files and their existing uncommitted changes must not be edited."
+}

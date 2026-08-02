@@ -1,0 +1,22 @@
+{
+  "version": "foundation.blog.v1",
+  "defaultTransitionMs": 180,
+  "easing": "ease",
+  "blogCardHover": {
+    "titleColor": "#1681ff",
+    "ctaColor": "#1681ff",
+    "bodyColor": "#3b3b3b",
+    "transform": "none"
+  },
+  "mobileMenu": {
+    "type": "full-width details panel below the 85px header",
+    "openCloseDurationMs": 180,
+    "reducedMotion": true
+  },
+  "scrollReveal": {
+    "type": "opacity and 18px upward reveal on viewport entry",
+    "durationMs": 520,
+    "rootMargin": "0px 0px -8% 0px",
+    "reducedMotion": true
+  }
+}

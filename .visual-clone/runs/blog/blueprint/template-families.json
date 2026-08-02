@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "families": [
+    {
+      "id": "blog-detail",
+      "type": "template_family",
+      "canonicalReferenceRoute": "/blog/how-to-solve-10-common-plumbing-problems",
+      "instances": [
+        "/blog/how-to-solve-10-common-plumbing-problems",
+        "/blog/how-to-prevent-your-plumbing-disasters-at-home",
+        "/blog/why-you-should-never-ignore-a-leaky-faucet",
+        "/blog/the-hidden-dangers-of-ignoring-a-dripping-faucet",
+        "/blog/how-a-small-leak-can-turn-into-a-big-problem",
+        "/blog/winter-plumbing-tips-to-protect-your-pipes",
+        "/blog/the-importance-of-regular-leak-detection",
+        "/blog/understanding-the-cost-of-plumbing-repairs",
+        "/blog/what-to-expect-during-a-plumbing-inspection"
+      ],
+      "evidence": [
+        "same centered date and headline hero",
+        "same full-width lead image",
+        "same narrow article column and heading rhythm",
+        "same secondary image position",
+        "same Go Back CTA and shared contact/footer",
+        "differences are content, image, date and slug"
+      ],
+      "intendedComponent": "BlogDetailPage backed by one blog-posts data module",
+      "dataSource": "app/blog/blog-posts.mjs"
+    }
+  ],
+  "indexPages": [
+    {
+      "id": "blog-index",
+      "referenceRoute": "/blog",
+      "localRoute": "/blog",
+      "intendedComponent": "BlogIndexPage"
+    }
+  ]
+}

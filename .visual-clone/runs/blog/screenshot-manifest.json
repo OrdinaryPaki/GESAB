@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "run": "blog-only",
+  "reference": {
+    "blogIndexDesktop": ".visual-clone/reference/screenshots/blog-index.desktop.full.png",
+    "blogIndexMobile": ".visual-clone/reference/screenshots/blog-index.mobile.full.png",
+    "blogDetailDesktop": ".visual-clone/reference/screenshots/blog-detail.desktop.full.png",
+    "blogDetailMobile": ".visual-clone/reference/screenshots/blog-detail.mobile.full.png"
+  },
+  "local": {
+    "blogIndexDesktop": ".visual-clone/runs/blog/reports/blog-index.local.desktop.full.png",
+    "blogIndexMobile": ".visual-clone/runs/blog/reports/blog-index.local.mobile.full.png",
+    "blogDetailDesktop": ".visual-clone/runs/blog/reports/blog-detail.local.desktop.full.png",
+    "blogDetailMobile": ".visual-clone/runs/blog/reports/blog-detail.local.mobile.full.png"
+  }
+}

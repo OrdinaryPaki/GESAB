@@ -1,0 +1,27 @@
+<visual_clone_mission version="1.0">
+  <mission_id>blog-detail-template</mission_id>
+  <worker_role>sequential_pseudo_worker</worker_role>
+  <goal>Build one reusable /blog/[slug] detail template and all nine detected route instances so the canonical route matches the reference at 1440px and 390px with no unresolved P0 or P1 deviations.</goal>
+  <assigned_scope>
+    <type>template_family</type>
+    <family_id>blog-detail</family_id>
+    <reference_url>https://plumbly.framer.website/blog/how-to-solve-10-common-plumbing-problems</reference_url>
+    <local_route>/blog/how-to-solve-10-common-plumbing-problems</local_route>
+  </assigned_scope>
+  <preserve>GESAB branding, contact information, shared Header, ContactBand, Footer, and every non-blog route.</preserve>
+  <implementation>Use one dynamic Next.js route plus one data module. Do not handcraft separate article pages.</implementation>
+  <qa>Verify desktop, mobile, Go Back hover, mobile menu closed/open, scroll reveals, canonical template, one extra template instance, full-page screenshots, and every major section.</qa>
+  <foundation_version>foundation.blog.v1</foundation_version>
+  <goal_activation_tail>
+    Before implementation, make this mission your active goal if goal tooling is available.
+    Use the mission goal as the goal objective.
+    Do not stop after analysis, planning, or a first draft.
+    Continue the build, browser screenshot, compare, and fix loop until one exit condition is true:
+    - ready_for_main_review with desktop and mobile screenshot evidence, no unresolved P0/P1 deviations, and one structured worker_report
+    - needs_foundation_decision because the mission cannot proceed without an approved global foundation change
+    - blocked because the route cannot be accessed, rendered, or verified after concrete attempts
+    - repair_complete for repair_order missions
+    If the mission includes interactions, continue the build, browser action, state screenshot, compare, and fix loop until required interaction states are functional and verified.
+    Do not mark the goal complete until the required worker_report has been written or returned.
+  </goal_activation_tail>
+</visual_clone_mission>

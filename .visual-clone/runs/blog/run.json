@@ -1,0 +1,24 @@
+{
+  "skill": "visual-site-cloner",
+  "referenceUrl": "https://plumbly.framer.website/",
+  "includedRoutes": [
+    "/blog",
+    "/blog/[slug]"
+  ],
+  "excludedByUser": "All routes except the blog index and reusable blog detail family",
+  "mode": "sequential-pseudo-worker",
+  "reasonForSequentialMode": "The user explicitly requested no subagents.",
+  "createdAt": "2026-08-02T18:57:53+02:00",
+  "packageManager": "npm",
+  "devCommand": "npm run dev",
+  "localUrl": "http://127.0.0.1:3000/blog",
+  "browserVerification": "Browser plugin with raw CDP measurements, desktop and mobile screenshots",
+  "foundationVersion": "foundation.blog.v1",
+  "artifactNamespaceReason": "The shared .visual-clone root already contains unrelated uncommitted route work, so this run is isolated to avoid overwriting it.",
+  "git": {
+    "branch": "main",
+    "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+    "dirtyAtStart": true,
+    "sharedDirtyStatePreserved": true
+  }
+}
