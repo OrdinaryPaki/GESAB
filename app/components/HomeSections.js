@@ -23,7 +23,6 @@ export function HomePage() {
       <AboutPreview />
       <TeamSection />
       <Testimonials />
-      <ProcessSection />
       <GallerySection />
       <FaqSection />
       <ContactBand />
