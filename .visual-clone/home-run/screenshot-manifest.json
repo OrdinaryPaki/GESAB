@@ -1,0 +1,158 @@
+{
+  "version": "1.0",
+  "foundationVersion": "foundation.home.v1",
+  "capturedAt": "2026-08-02T19:34:30+02:00",
+  "checkpoint": "227c71f24c63+home-working-tree",
+  "source": "In-app Browser screenshots with CDP viewport control",
+  "screenshots": [
+    {
+      "id": "home-desktop-full",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "revealed-full-page",
+      "kind": "stitched-viewport-captures",
+      "reference": ".visual-clone/home-run/reference/home.desktop.full.final.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.desktop.full.final.jpg"
+    },
+    {
+      "id": "home-mobile-full",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "revealed-full-page",
+      "kind": "stitched-viewport-captures",
+      "reference": ".visual-clone/home-run/reference/home.mobile.full.final.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile.full.final.jpg"
+    },
+    {
+      "id": "home-desktop-fold",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "default",
+      "kind": "viewport",
+      "reference": ".visual-clone/home-run/reference/home.desktop.final.fold.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.desktop.final.fold.jpg"
+    },
+    {
+      "id": "home-mobile-fold",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "default",
+      "kind": "viewport",
+      "reference": ".visual-clone/home-run/reference/home.mobile.final.fold.png",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile.final.fold.png"
+    },
+    {
+      "id": "home-desktop-services",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "revealed",
+      "kind": "section",
+      "reference": ".visual-clone/home-run/reference/home.desktop.services.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.desktop.services.jpg"
+    },
+    {
+      "id": "home-desktop-gallery",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "revealed",
+      "kind": "section",
+      "reference": ".visual-clone/home-run/reference/home.desktop.gallery.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.desktop.gallery.jpg"
+    },
+    {
+      "id": "home-desktop-contact",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "default",
+      "kind": "section",
+      "reference": ".visual-clone/home-run/reference/home.desktop.contact.final.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.desktop.contact.final.jpg"
+    },
+    {
+      "id": "home-mobile-services",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "revealed",
+      "kind": "section",
+      "reference": ".visual-clone/home-run/reference/home.mobile.services.png",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile.services.png"
+    },
+    {
+      "id": "home-mobile-menu-open",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "open",
+      "kind": "interaction",
+      "reference": ".visual-clone/home-run/reference/home.mobile.menu-open.png",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile.menu-open.png"
+    },
+    {
+      "id": "home-primary-cta-hover",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "hover",
+      "kind": "interaction",
+      "reference": ".visual-clone/home-run/reference/home.desktop.cta-hover.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.desktop.cta-hover.jpg"
+    },
+    {
+      "id": "home-service-card-hover",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "state": "hover",
+      "kind": "interaction",
+      "reference": ".visual-clone/home-run/reference/home.desktop.service-hover.jpg",
+      "local": ".visual-clone/home-run/reports/homepage/local.desktop.service-hover.jpg"
+    },
+    {
+      "id": "home-faq-open",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "open",
+      "kind": "interaction",
+      "reference": ".visual-clone/home-run/reference/home.mobile.faq-open.png",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile.faq-open.png"
+    },
+    {
+      "id": "home-faq-closed",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "closed",
+      "kind": "interaction",
+      "reference": ".visual-clone/home-run/reference/home.mobile.faq-closed.png",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile.faq-closed.png"
+    },
+    {
+      "id": "home-form-focus",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-390",
+      "state": "focus",
+      "kind": "interaction",
+      "reference": ".visual-clone/home-run/reference/home.mobile.form-focus.png",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile.form-focus.png"
+    },
+    {
+      "id": "home-mobile-360",
+      "missionId": "homepage",
+      "route": "/",
+      "viewport": "mobile-360",
+      "state": "default",
+      "kind": "responsive-check",
+      "local": ".visual-clone/home-run/reports/homepage/local.mobile-360.fold.png"
+    }
+  ]
+}

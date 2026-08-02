@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "referenceOrigin": "https://plumbly.framer.website",
+  "routes": [
+    {
+      "priority": "P0",
+      "classification": "unique_page",
+      "referenceRoute": "/",
+      "localRoute": "/",
+      "label": "HOME",
+      "included": true
+    }
+  ],
+  "excluded": "All other routes, per user scope."
+}

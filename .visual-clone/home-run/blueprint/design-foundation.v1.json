@@ -1,0 +1,27 @@
+{
+  "version": "foundation.home.v1",
+  "colors": {
+    "blue": "#1681ff",
+    "yellow": "#fdbc0d",
+    "black": "#030303",
+    "text": "#050505",
+    "muted": "#3b3b3b",
+    "soft": "#f6f7f9"
+  },
+  "typography": {
+    "heading": "Outfit",
+    "bodyFont": "Inter",
+    "heroDesktop": "72px / 1.1 / 600 / -2% letter spacing",
+    "heroMobile": "40px / 1.1 / 600 / -2% letter spacing",
+    "sectionHeadingDesktop": "48px / 1.2 / 600 / -1% letter spacing",
+    "sectionHeadingMobile": "30px / 1.2 / 600 / -1% letter spacing",
+    "bodyText": "16px / 1.7 / 400"
+  },
+  "layout": {
+    "desktopContainer": "1200px at 1440px (120px gutters)",
+    "mobileContainer": "350px at 390px (20px gutters)",
+    "radius": "16px",
+    "desktopHero": "1000px high and 50/50 split",
+    "mobileHero": "862px high; 587px blue content followed by 275px image"
+  }
+}

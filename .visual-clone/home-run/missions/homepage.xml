@@ -1,0 +1,23 @@
+<visual_clone_mission version="1.0">
+  <mission_id>homepage</mission_id>
+  <worker_role>sequential_pseudo_worker</worker_role>
+  <goal>Make local HOME visually match the Plumbly reference homepage on desktop and mobile with no unresolved P0/P1 deviations.</goal>
+  <assigned_scope>
+    <type>unique_page</type>
+    <reference_url>https://plumbly.framer.website/</reference_url>
+    <local_route>/</local_route>
+  </assigned_scope>
+  <shared_context>
+    <route_map>.visual-clone/home-run/blueprint/route-map.json</route_map>
+    <foundation>.visual-clone/home-run/blueprint/design-foundation.v1.json</foundation>
+    <motion_foundation>.visual-clone/home-run/blueprint/motion-foundation.v1.json</motion_foundation>
+    <foundation_lock>.visual-clone/home-run/blueprint/foundation.lock.json</foundation_lock>
+    <interaction_map>.visual-clone/home-run/blueprint/interaction-map.json</interaction_map>
+  </shared_context>
+  <hard_rules>
+    <rule>Use Browser/CDP and screenshots at 1440px and 390px.</rule>
+    <rule>Change HOME only; do not visually alter other routes.</rule>
+    <rule>Verify every major section and required interaction state.</rule>
+    <rule>Fix all P0/P1 deviations before reporting ready.</rule>
+  </hard_rules>
+</visual_clone_mission>

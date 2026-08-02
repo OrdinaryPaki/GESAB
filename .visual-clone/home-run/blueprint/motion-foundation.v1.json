@@ -1,0 +1,10 @@
+{
+  "version": "foundation.home.v1",
+  "button": { "effect": "Primary hero and header CTAs remain visually unchanged on hover, matching the reference." },
+  "serviceCard": { "effect": "No pointer-hover movement or image zoom; keyboard focus remains visible." },
+  "faq": { "itemDurationMs": 220, "panelDurationMs": 260, "effect": "background change, icon rotation and expansion" },
+  "mobileMenu": { "behavior": "native details open/close with a full-screen white panel below the fixed 85px header" },
+  "stickyHeader": { "behavior": "fixed blue header on mobile" },
+  "scrollReveal": { "durationMs": 420, "imageDurationMs": 520, "easing": "cubic-bezier(0.22, 1, 0.36, 1)", "effect": "40px section entry; team and gallery media scale from 0.8; why image enters horizontally" },
+  "reducedMotion": "Transitions collapse to 1ms when prefers-reduced-motion is enabled."
+}

@@ -1,0 +1,60 @@
+<worker_report version="1.0">
+  <mission_id>homepage</mission_id>
+  <status>ready_for_main_review</status>
+  <foundation_version_used>foundation.home.v1</foundation_version_used>
+  <worktree>main</worktree>
+  <reference>
+    <url>https://plumbly.framer.website/</url>
+    <desktop_screenshot>.visual-clone/home-run/reference/home.desktop.full.final.jpg</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/home-run/reference/home.mobile.full.final.jpg</mobile_screenshot>
+  </reference>
+  <local>
+    <route>/</route>
+    <desktop_screenshot>.visual-clone/home-run/reports/homepage/local.desktop.full.final.jpg</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/home-run/reports/homepage/local.mobile.full.final.jpg</mobile_screenshot>
+  </local>
+  <changed_files>
+    <file>app/page.js</file>
+    <file>app/components/HomeSections.js</file>
+    <file>app/components/HomePageFidelity.js</file>
+    <file>app/components/HomeReveal.js</file>
+    <file>app/home-fidelity.css</file>
+  </changed_files>
+  <qa_summary>
+    <desktop_passes>6</desktop_passes>
+    <mobile_passes>7</mobile_passes>
+    <sections_checked>24</sections_checked>
+    <p0_unresolved>0</p0_unresolved>
+    <p1_unresolved>0</p1_unresolved>
+    <p2_remaining>1</p2_remaining>
+  </qa_summary>
+  <interaction_summary>
+    <interaction_families_checked>mobile-menu, primary-cta, service-card, faq, appointment-form, sticky-mobile-header</interaction_families_checked>
+    <state_screenshots>
+      <state component="mobile-menu" state="closed" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.final.fold.png</state>
+      <state component="mobile-menu" state="open" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.menu-open.png</state>
+      <state component="primary-cta" state="default" viewport="local-desktop">.visual-clone/home-run/reports/homepage/local.desktop.final.fold.jpg</state>
+      <state component="primary-cta" state="hover" viewport="local-desktop">.visual-clone/home-run/reports/homepage/local.desktop.cta-hover.jpg</state>
+      <state component="service-card" state="default" viewport="local-desktop">.visual-clone/home-run/reports/homepage/local.desktop.services.jpg</state>
+      <state component="service-card" state="hover" viewport="local-desktop">.visual-clone/home-run/reports/homepage/local.desktop.service-hover.jpg</state>
+      <state component="faq" state="closed" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.faq-closed.png</state>
+      <state component="faq" state="open" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.faq-open.png</state>
+      <state component="appointment-form" state="default" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.contact.png</state>
+      <state component="appointment-form" state="focus" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.form-focus.png</state>
+      <state component="sticky-mobile-header" state="top" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.final.fold.png</state>
+      <state component="sticky-mobile-header" state="scrolled" viewport="local-mobile">.visual-clone/home-run/reports/homepage/local.mobile.faq-open.png</state>
+    </state_screenshots>
+    <p0_interaction_unresolved>0</p0_interaction_unresolved>
+    <p1_interaction_unresolved>0</p1_interaction_unresolved>
+    <p2_interaction_remaining>0</p2_interaction_remaining>
+  </interaction_summary>
+  <section_audit_ledger>.visual-clone/home-run/reports/homepage/section-audit.md</section_audit_ledger>
+  <global_files_touched>false</global_files_touched>
+  <foundation_change_request_submitted>false</foundation_change_request_submitted>
+  <foundation_change_requests></foundation_change_requests>
+  <remaining_deviations>
+    <deviation severity="P2">Reference-only Framer promotional chrome is intentionally not reproduced as part of the GESAB product UI.</deviation>
+  </remaining_deviations>
+  <validator_result>validate-worker-report and validate-run-completion: pass</validator_result>
+  <ready>true</ready>
+</worker_report>

@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "routes": [
+    {
+      "missionId": "homepage",
+      "route": "/",
+      "interactions": [
+        { "family": "mobile-menu", "states": ["closed", "open"] },
+        { "family": "primary-cta", "states": ["default", "hover"] },
+        { "family": "service-card", "states": ["default", "hover"] },
+        { "family": "faq", "states": ["closed", "open"] },
+        { "family": "appointment-form", "states": ["default", "focus"] },
+        { "family": "sticky-mobile-header", "states": ["top", "scrolled"] }
+      ]
+    }
+  ]
+}

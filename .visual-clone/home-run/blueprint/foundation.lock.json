@@ -1,0 +1,17 @@
+{
+  "version": "foundation.home.v1",
+  "lockedFiles": [
+    "app/home-fidelity.css",
+    "app/page.js",
+    "app/components/HomeSections.js",
+    "app/components/HomePageFidelity.js",
+    "app/components/HomeReveal.js"
+  ],
+  "sharedFilesIntentionallyUntouched": [
+    "app/globals.css",
+    "app/components/GesabShell.js",
+    "app/components/GesabIcons.js",
+    "app/gesab-data.js"
+  ],
+  "changeRequestProcess": "Sequential main-run review. HOME changes stay scoped under .home-page."
+}

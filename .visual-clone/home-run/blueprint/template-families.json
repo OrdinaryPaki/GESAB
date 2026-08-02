@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "families": [],
+  "uniquePages": [
+    {
+      "id": "homepage",
+      "canonicalReferenceRoute": "/",
+      "localRoute": "/",
+      "intendedComponent": "HomePage",
+      "evidence": "Unique composition of hero, trust, services, about, team, testimonials, process, gallery, FAQ, contact and footer sections."
+    }
+  ]
+}

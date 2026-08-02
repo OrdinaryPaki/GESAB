@@ -1,0 +1,20 @@
+{
+  "skill": "visual-site-cloner",
+  "referenceUrl": "https://plumbly.framer.website/",
+  "includedRoutes": ["/"],
+  "excludedByUser": "All routes except X = HOME",
+  "mode": "sequential-main-worktree",
+  "reasonForSequentialMode": "The user explicitly requested no subagents. Run files are namespaced because another local visual-clone task is updating the shared root artifacts concurrently.",
+  "createdAt": "2026-08-02T18:55:35+02:00",
+  "packageManager": "npm",
+  "devCommand": "npm run dev",
+  "localUrl": "http://localhost:3000/",
+  "browserVerification": "In-app Browser with raw CDP, 1440px desktop and 390px mobile screenshots",
+  "foundationVersion": "foundation.home.v1",
+  "git": {
+    "branch": "main",
+    "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+    "dirtyAtStart": true,
+    "note": "Existing modified and untracked files are user-owned and must not be reset or committed with this mission."
+  }
+}

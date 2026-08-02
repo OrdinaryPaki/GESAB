@@ -1,0 +1,13 @@
+{
+  "mode": "sequential-main-worktree",
+  "missions": [
+    {
+      "id": "homepage",
+      "type": "unique_page",
+      "status": "ready_for_main_review",
+      "reference": "/",
+      "local": "/",
+      "report_path": ".visual-clone/home-run/reports/homepage.report.xml"
+    }
+  ]
+}
