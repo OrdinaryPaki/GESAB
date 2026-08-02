@@ -1,7 +1,9 @@
 # Blog index section audit
 
-Route: `/blog`  
-Reference: `https://plumbly.framer.website/blog`  
+Route: `/blog`
+
+Reference: `https://plumbly.framer.website/blog`
+
 Viewports: `1440 × 1000` and `390 × 844`
 
 | Section or state | Desktop | Mobile | Result |
@@ -17,6 +19,8 @@ Viewports: `1440 × 1000` and `390 × 844`
 | Scroll reveal | Featured and article groups reveal once | Same behavior verified | Pass |
 | Full page | Main page height 3751px before viewport-specific shared footer differences | Main content positions match; GESAB contact/footer intentionally preserved | Pass |
 
-Unresolved P0: 0  
-Unresolved P1: 0  
+Unresolved P0: 0
+
+Unresolved P1: 0
+
 Remaining P2: 0

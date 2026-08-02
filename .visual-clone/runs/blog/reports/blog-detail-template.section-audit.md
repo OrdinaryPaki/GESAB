@@ -1,7 +1,9 @@
 # Blog detail template section audit
 
-Canonical route: `/blog/how-to-solve-10-common-plumbing-problems`  
-Second instance checked: `/blog/how-to-prevent-your-plumbing-disasters-at-home`  
+Canonical route: `/blog/how-to-solve-10-common-plumbing-problems`
+
+Second instance checked: `/blog/how-to-prevent-your-plumbing-disasters-at-home`
+
 Viewports: `1440 × 1000` and `390 × 844`
 
 | Section or state | Desktop | Mobile | Result |
@@ -16,6 +18,8 @@ Viewports: `1440 × 1000` and `390 × 844`
 | Scroll reveal | Every article block reaches opacity 1 and transform none | Same behavior verified | Pass |
 | Reusable template | Canonical article verified | Second slug renders its own title and lead image through the same template | Pass |
 
-Unresolved P0: 0  
-Unresolved P1: 0  
+Unresolved P0: 0
+
+Unresolved P1: 0
+
 Remaining P2: 0
