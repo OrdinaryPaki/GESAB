@@ -46,7 +46,6 @@ function Hero() {
           Book a Free Consultation
         </Link>
         <div className="trusted">
-          <img src={image.avatars} alt="" />
           <span>10,500+ Individuals who have trusted Plumbly</span>
         </div>
       </div>
