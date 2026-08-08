@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { gallery, image, processSteps, services, team, testimonials } from "../plumbly-data";
+import { image, processSteps, services, team, testimonials } from "../plumbly-data";
 import { ArrowIcon, CheckIcon } from "./PlumblyIcons";
 import { Footer, Header, ContactBand } from "./PlumblyShell";
+import { homeImages } from "./home-image-data";
 
 function SectionTitle({ label, title, center = false, light = false }) {
   return (
@@ -83,8 +84,8 @@ function WhyChoose() {
     <section className="why-section">
       <div className="container why-grid">
         <div className="image-stack">
-          <img src={image.chooseOne} alt="Plumber speaking with customer" />
-          <img src={image.chooseTwo} alt="Plumber smiling at work" />
+          <img {...homeImages.why[0]} loading="lazy" decoding="async" />
+          <img {...homeImages.why[1]} loading="lazy" decoding="async" />
         </div>
         <div className="why-copy">
           <SectionTitle label="Why Choose Us" title="Why Choose Our Plumbing Team" />
@@ -122,18 +123,22 @@ export function ServicesPreview({ compact = false }) {
           </Link>
         </div>
         <div className="services-grid">
-          {services.map((service) => (
-            <Link href={`/service/${service.slug}`} key={service.slug} className="service-card">
-              <img src={service.image} alt="" />
-              <div>
-                <h3>{service.title}</h3>
-                <p>{service.body}</p>
-                <span>
-                  Read More <ArrowIcon />
-                </span>
-              </div>
-            </Link>
-          ))}
+          {services.map((service) => {
+            const serviceImage = homeImages.services[service.slug] ?? { src: service.image, alt: "" };
+
+            return (
+              <Link href={`/service/${service.slug}`} key={service.slug} className="service-card">
+                <img {...serviceImage} loading="lazy" decoding="async" />
+                <div>
+                  <h3>{service.title}</h3>
+                  <p>{service.body}</p>
+                  <span>
+                    Read More <ArrowIcon />
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -160,7 +165,7 @@ export function AboutPreview() {
             </div>
           </div>
         </div>
-        <img className="about-photo" src={image.aboutPlumber} alt="Plumber repairing bathroom sink" />
+        <img className="about-photo" {...homeImages.about} loading="lazy" decoding="async" />
       </div>
       <div className="container stat-grid">
         <div>
@@ -238,8 +243,8 @@ function GallerySection() {
       <div className="container">
         <SectionTitle label="Project Gallery" title="Gallery of Trusted Repairs & Installations" center />
         <div className="gallery-grid">
-          {gallery.map((src, index) => (
-            <img key={src} className={index < 2 ? "wide" : ""} src={src} alt="" />
+          {homeImages.gallery.map((photo, index) => (
+            <img key={photo.src} className={index < 2 ? "wide" : ""} {...photo} loading="lazy" decoding="async" />
           ))}
         </div>
       </div>
