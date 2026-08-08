@@ -21,7 +21,6 @@ export function HomePage() {
       <WhyChoose />
       <ServicesPreview />
       <AboutPreview />
-      <TeamSection />
       <Testimonials />
       <GallerySection />
       <FaqSection />
@@ -180,25 +179,6 @@ export function AboutPreview() {
         <div>
           <strong>99%</strong>
           <span>Customer Satisfaction</span>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function TeamSection() {
-  return (
-    <section className="team-section">
-      <div className="container">
-        <SectionTitle label="Team Members" title="Our Hard working Members" center />
-        <div className="team-grid">
-          {team.map((member) => (
-            <article key={member.name} className="team-card">
-              <img src={member.image} alt="" />
-              <h3>{member.name}</h3>
-              <p>{member.role}</p>
-            </article>
-          ))}
         </div>
       </div>
     </section>

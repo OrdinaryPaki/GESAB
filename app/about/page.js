@@ -1,4 +1,4 @@
-import { ProcessSection, TeamSection, Testimonials } from "../components/HomeSections";
+import { ProcessSection, Testimonials } from "../components/HomeSections";
 import { ContactBand, Footer, Header } from "../components/PlumblyShell";
 import { gallery } from "../plumbly-data";
 
@@ -41,7 +41,6 @@ export default function AboutPage() {
         </div>
       </section>
       <ProcessSection />
-      <TeamSection />
       <Testimonials />
       <ContactBand />
       <Footer />
