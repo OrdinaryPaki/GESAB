@@ -47,7 +47,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
           <div className={styles.container}>
             <h1 className={styles.title} id="service-title">{service.title}</h1>
             <div className={styles.meta} aria-label="Tjänsteinformation">
-              <span>Privatpersoner, företag och föreningar</span>
+              <span data-service-audience={detail.audience}>{detail.audience}</span>
               <span>Göteborg med omnejd</span>
             </div>
             <img
@@ -83,6 +83,28 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
 
             <article className={styles.article}>
               <p className={styles.lead}>{service.body}</p>
+
+              <section className={styles.fitOverview} aria-label={`När ${service.title.toLowerCase()} passar och vad du kan förbereda`}>
+                <div className={styles.fitColumn}>
+                  <h2>Tjänsten passar för</h2>
+                  <ul className={styles.fitList}>
+                    {detail.suitableFor.map(([title, body], index) => (
+                      <li data-service-fit={index + 1} key={title}>
+                        <h3>{title}</h3>
+                        <p>{body}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className={styles.preparationColumn}>
+                  <h2>Bra att ha inför första genomgången</h2>
+                  <ul className={styles.preparationList}>
+                    {detail.preparation.map((item, index) => (
+                      <li data-service-preparation={index + 1} key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </section>
 
               <section className={styles.articleSection}>
                 <h2>{service.detail.introTitle}</h2>

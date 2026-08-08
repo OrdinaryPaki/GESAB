@@ -1,5 +1,16 @@
 export const renovationDetailContent = {
   badrumsrenovering: {
+    audience: "Privatpersoner, fastighetsägare och BRF:er med våtrumsprojekt",
+    suitableFor: [
+      ["Helrenovering av befintligt badrum", "När ytskikt, tätskikt, installationer och inredning behöver förnyas som en sammanhållen helhet."],
+      ["Ändrad planlösning eller funktion", "När placering av dusch, badkar, förvaring eller installationer behöver ses över för att rummet ska fungera bättre."],
+      ["Samordnade våtrumsarbeten", "När du vill ha en tydlig arbetsordning mellan rivning, VVS, el, tätskikt, plattsättning och montage."],
+    ],
+    preparation: [
+      "Bilder på badrummet och ungefärliga mått, inklusive golvbrunn och synliga installationer.",
+      "Dina viktigaste önskemål om funktion, stil, förvaring och material.",
+      "Information om boendeform, åtkomst och när du helst vill att arbetet ska genomföras.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/rYld1RtawTcSnr6YgGDpswY4Hg.jpg?scale-down-to=2048&width=3309&height=1976",
     process: [
@@ -26,6 +37,17 @@ export const renovationDetailContent = {
     related: ["totalentreprenad", "rivningsarbeten", "montage"],
   },
   koksrenovering: {
+    audience: "Privatpersoner, fastighetsägare och BRF:er med köksprojekt",
+    suitableFor: [
+      ["Komplett köksrenovering", "När stommar, ytskikt, installationer, vitvaror och montage behöver planeras i ett gemensamt projekt."],
+      ["Delvis förnyelse", "När delar av köket ska bytas eller byggas om utan att allt befintligt behöver rivas ut."],
+      ["Kök med ändrade installationer", "När vatten, avlopp, ventilation eller el behöver anpassas till en ny planlösning eller ny utrustning."],
+    ],
+    preparation: [
+      "Köksritning, produktlista eller inspirationsbilder om sådant redan finns.",
+      "Bilder och ungefärliga mått på rummet samt information om befintligt vatten, avlopp och el.",
+      "Önskad tidpunkt, kända leveransdatum och om bostaden behöver fungera under renoveringen.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/c7c6aPJa4eimkeRgCTstTKRg24.jpg?scale-down-to=1024&width=1640&height=2088",
     process: [
@@ -52,6 +74,17 @@ export const renovationDetailContent = {
     related: ["totalentreprenad", "snickeri", "montage"],
   },
   totalentreprenad: {
+    audience: "Beställare av större renoveringar, företag, fastighetsägare och föreningar",
+    suitableFor: [
+      ["Renoveringar med flera yrkesroller", "När bygg, VVS, el, ytskikt och montage behöver planeras och följas upp som en helhet."],
+      ["Projekt över flera rum eller delar", "När olika arbetsområden påverkar varandra och behöver en gemensam ordning, tidplan och kontaktväg."],
+      ["Beställare som vill samla ansvaret", "När du vill minska den egna samordningen och ha tydliga gränser för omfattning, beslut och uppföljning."],
+    ],
+    preparation: [
+      "Ritningar, bilder och en enkel beskrivning av vad som ska förändras och vad som ska bevaras.",
+      "Projektets viktigaste prioriteringar, önskad kvalitetsnivå och ungefärliga tidsram.",
+      "Information om beslutsvägar, tillträde och vilka andra leverantörer eller konsulter som redan är involverade.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/td8HawPEPsqppzq8BOQKqENv34.jpg?scale-down-to=1024&width=2352&height=1856",
     process: [

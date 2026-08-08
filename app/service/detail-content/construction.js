@@ -1,5 +1,16 @@
 export const constructionDetailContent = {
   rivningsarbeten: {
+    audience: "Privatpersoner, fastighetsägare och verksamheter inför renovering",
+    suitableFor: [
+      ["Förberedelse inför renovering", "När befintliga ytskikt, inredning eller byggdelar behöver tas bort innan nästa yrkesgrupp kan börja."],
+      ["Selektiv rivning", "När vissa delar ska rivas medan angränsande konstruktioner, installationer och ytor behöver skyddas och sparas."],
+      ["Samordnad rivning och återuppbyggnad", "När det är viktigt att det öppnade underlaget kontrolleras och lämnas redo för nästa byggmoment."],
+    ],
+    preparation: [
+      "Bilder eller ritningar som visar vad som ska tas bort och vad som ska bevaras.",
+      "Information om byggnadens ålder, kända material och installationer i arbetsområdet.",
+      "Förutsättningar för tillträde, avspärrning, avfallshantering och transportvägar.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/DZWmtqm9HQwIG5M2Ky157nHyzyA.jpg?scale-down-to=1024&width=1428&height=1548",
     process: [
@@ -26,6 +37,17 @@ export const constructionDetailContent = {
     related: ["bygg", "totalentreprenad", "malning"],
   },
   bygg: {
+    audience: "Privatpersoner, företag och fastighetsägare med ombyggnadsbehov",
+    suitableFor: [
+      ["Renovering och ombyggnad", "När rum, byggdelar eller lokaler behöver anpassas till nya funktioner och ett nytt utförande."],
+      ["Återställning och reparation", "När underlag eller konstruktioner behöver repareras och färdigställas efter skada, rivning eller installation."],
+      ["Byggmoment i ett större projekt", "När byggarbetet behöver samordnas med VVS, el, målning, snickeri eller montage."],
+    ],
+    preparation: [
+      "Bilder, mått och eventuella ritningar över det som ska byggas om eller återställas.",
+      "En beskrivning av önskad funktion, materialnivå och vilka delar som ska bevaras.",
+      "Information om fastigheten, tillträde och eventuella beslut från förening, hyresvärd eller myndighet.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/kpzLt08Jr5pzvSVn5nxcIjE.jpg?scale-down-to=1024&width=2352&height=1856",
     process: [
@@ -52,6 +74,17 @@ export const constructionDetailContent = {
     related: ["totalentreprenad", "snickeri", "malning"],
   },
   fasadrenovering: {
+    audience: "Fastighetsägare, bostadsrättsföreningar och företag med fasadansvar",
+    suitableFor: [
+      ["Lokala skador och slitage", "När sprickor, färgsläpp eller utsatta partier behöver bedömas och åtgärdas innan skadan växer."],
+      ["Större sammanhängande fasadarbeten", "När rengöring, lagning och ytbehandling behöver planeras för en hel fasad eller byggnadsdel."],
+      ["Planerat fastighetsunderhåll", "När beställaren vill få en tydligare bild av metod, åtkomst, väderberoenden och framtida underhåll."],
+    ],
+    preparation: [
+      "Översiktsbilder och närbilder på sprickor, släpp, missfärgning eller andra synliga problem.",
+      "Information om fasadmaterial, tidigare behandlingar och när problemen först upptäcktes.",
+      "Förutsättningar för ställning, markåtkomst, entréer och verksamhet nära arbetsområdet.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/YzIewOSyeipY6CeBUEuF1AOJJa0.jpg?scale-down-to=512&width=1536&height=1360",
     process: [

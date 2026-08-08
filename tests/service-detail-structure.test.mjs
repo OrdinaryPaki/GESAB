@@ -71,6 +71,44 @@ test("every service detail renders decision-helping content, FAQs and related se
   }
 });
 
+test("every service detail explains who it suits and how to prepare", async () => {
+  const audienceLabels = [];
+
+  for (const slug of serviceSlugs) {
+    const html = await fetchServicePage(slug);
+    const audienceLabel = html.match(/data-service-audience="([^"]+)"/)?.[1];
+    const suitableForItems = html.match(/data-service-fit=/g) ?? [];
+    const preparationItems = html.match(/data-service-preparation=/g) ?? [];
+
+    assert.match(
+      html,
+      /data-service-audience=/,
+      `${slug} must identify its relevant customer groups`,
+    );
+    audienceLabels.push(audienceLabel);
+    assert.match(html, /Tjänsten passar för/, `${slug} must explain suitable project types`);
+    assert.ok(
+      suitableForItems.length >= 3,
+      `${slug} must include at least three concrete project types`,
+    );
+    assert.match(
+      html,
+      /Bra att ha inför första genomgången/,
+      `${slug} must help the customer prepare for the first conversation`,
+    );
+    assert.ok(
+      preparationItems.length >= 3,
+      `${slug} must include at least three preparation points`,
+    );
+  }
+
+  assert.equal(
+    new Set(audienceLabels).size,
+    serviceSlugs.length,
+    "each service must describe its own relevant customer groups",
+  );
+});
+
 test("service details use meaningful, distinct editorial images", async () => {
   const html = await fetchServicePage("badrumsrenovering");
   const images = [...html.matchAll(/<img[^>]*>/g)].map(([tag]) => ({

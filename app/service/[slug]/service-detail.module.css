@@ -86,6 +86,99 @@
   line-height: 1.55;
 }
 
+.fitOverview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(260px, 0.92fr);
+  gap: 58px;
+  padding: 42px 0 46px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.article .fitColumn h2,
+.article .preparationColumn h2 {
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.22;
+}
+
+.fitList,
+.preparationList {
+  display: grid;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fitList {
+  gap: 24px;
+}
+
+.fitList li {
+  padding-left: 24px;
+  border-left: 3px solid var(--blue);
+}
+
+.fitList h3 {
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.fitList p {
+  margin: 7px 0 0;
+  color: rgba(5, 5, 5, 0.68);
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.preparationList {
+  gap: 0;
+  counter-reset: preparation;
+}
+
+.preparationList li {
+  position: relative;
+  min-height: 54px;
+  padding: 0 0 20px 48px;
+  color: rgba(5, 5, 5, 0.72);
+  font-size: 15px;
+  line-height: 1.62;
+  counter-increment: preparation;
+}
+
+.preparationList li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 17px;
+  width: 1px;
+  height: 18px;
+  background: rgba(22, 129, 255, 0.26);
+}
+
+.preparationList li::before {
+  content: counter(preparation);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: var(--blue);
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .articleSection {
   margin-top: 66px;
 }
@@ -527,6 +620,17 @@
     margin-bottom: 52px;
     font-size: 20px;
     line-height: 1.55;
+  }
+
+  .fitOverview {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    padding: 34px 0 38px;
+  }
+
+  .article .fitColumn h2,
+  .article .preparationColumn h2 {
+    font-size: 25px;
   }
 
   .articleSection {

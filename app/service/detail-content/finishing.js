@@ -1,5 +1,16 @@
 export const finishingDetailContent = {
   snickeri: {
+    audience: "Privatpersoner, företag och fastighetsägare med måttanpassade behov",
+    suitableFor: [
+      ["Måttanpassade lösningar", "När förvaring, inredning eller byggdelar behöver anpassas till rummets verkliga mått och funktion."],
+      ["Återställning och detaljarbeten", "När lister, foder, paneler, luckor eller andra snickeridetaljer ska repareras, bytas eller färdigställas."],
+      ["Snickeri i en större renovering", "När lösningen behöver planeras tillsammans med målning, el, ytskikt eller montage."],
+    ],
+    preparation: [
+      "Skiss, inspirationsbild eller en enkel beskrivning av funktionen du vill uppnå.",
+      "Bilder och ungefärliga mått på platsen där lösningen ska byggas eller monteras.",
+      "Önskemål om material, kulör, beslag och när arbetet behöver vara färdigt.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/KUrLwljq131KPkT0gW3k032SOwE.jpg?scale-down-to=512&width=1536&height=1360",
     process: [
@@ -26,6 +37,17 @@ export const finishingDetailContent = {
     related: ["bygg", "koksrenovering", "montage"],
   },
   malning: {
+    audience: "Privatpersoner, lokalägare, fastighetsägare och bostadsrättsföreningar",
+    suitableFor: [
+      ["Invändig målning", "När väggar, tak, snickerier eller andra ytor behöver förberedas och målas i bostad eller lokal."],
+      ["Utvändig målning", "När fasaddelar, trädetaljer eller andra väderutsatta ytor behöver ett anpassat underarbete och färgsystem."],
+      ["Målning som del av renovering", "När ytskikten behöver samordnas med bygg, snickeri, installationer och slutmontage."],
+    ],
+    preparation: [
+      "Bilder på ytorna och en ungefärlig uppskattning av rum, kvadratmeter eller fasaddelar.",
+      "Information om sprickor, fläckar, färgsläpp eller andra kända problem i underlaget.",
+      "Önskad kulör eller uttryck, tillträde till ytorna och när arbetet helst ska utföras.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/kpzLt08Jr5pzvSVn5nxcIjE.jpg?scale-down-to=1024&width=2352&height=1856",
     process: [
@@ -52,6 +74,17 @@ export const finishingDetailContent = {
     related: ["bygg", "fasadrenovering", "snickeri"],
   },
   montage: {
+    audience: "Privatpersoner, företag och fastighetsägare med produkter för montage",
+    suitableFor: [
+      ["Kök, badrum och fast inredning", "När levererade delar behöver monteras, passas in och avslutas mot befintliga ytor och installationer."],
+      ["Byggdelar och inredningsdetaljer", "När korrekt måttsättning, infästning och justering är avgörande för funktion och hållbarhet."],
+      ["Montage i ett samordnat projekt", "När monteringen behöver ske i rätt ordning tillsammans med snickeri, el, VVS eller målning."],
+    ],
+    preparation: [
+      "Produktnamn, monteringsanvisning och information om mått, vikt och antal delar.",
+      "Bilder på platsen och underlaget där produkten ska monteras eller anslutas.",
+      "Leveransstatus, önskad tidpunkt och uppgift om huruvida el, VVS eller andra arbeten krävs före montaget.",
+    ],
     supportingImage:
       "https://framerusercontent.com/images/5HvWrJmM6xzGq3DYvPA463WFMxA.jpg?scale-down-to=512&width=1536&height=1360",
     process: [
