@@ -193,7 +193,6 @@ export function Testimonials() {
           {testimonials.map((item) => (
             <article key={item.name} className="testimonial-card">
               <div className="person">
-                <img src={item.image} alt="" />
                 <div>
                   <h3>{item.name}</h3>
                   <span>{item.place}</span>

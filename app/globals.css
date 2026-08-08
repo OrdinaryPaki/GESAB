@@ -637,13 +637,6 @@ select {
   margin-bottom: 24px;
 }
 
-.person img {
-  width: 64px;
-  height: 64px;
-  border-radius: 999px;
-  object-fit: cover;
-}
-
 .person h3 {
   margin: 0 0 4px;
   font-size: 24px;
