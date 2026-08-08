@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./responsive.css";
+import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
 
 export const metadata = {
   title: "Plumbly",
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <MobileNavigationEnhancement />
+        {children}
+      </body>
     </html>
   );
 }
