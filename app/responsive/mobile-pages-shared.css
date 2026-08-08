@@ -1,0 +1,171 @@
+/* Shared phone rhythm for every route except HOME, which has its own layer. */
+@media (max-width: 680px) {
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      .service-detail-page,
+      [class*="blogRoot"]
+    ) {
+    --page-mobile-gutter: 24px;
+    --page-mobile-section-space: 80px;
+    --page-mobile-content-gap: 32px;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      [class*="blogRoot"]
+    )
+    :where(.contact-band, .contact-band-inner) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      [class*="blogRoot"]
+    )
+    .contact-band {
+    padding: 0 !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      [class*="blogRoot"]
+    )
+    .contact-band-inner {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+    gap: 48px !important;
+    padding: var(--page-mobile-section-space) 0 !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      [class*="blogRoot"]
+    )
+    .contact-copy {
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      [class*="blogRoot"]
+    )
+    .contact-copy h2 {
+    margin: 14px 0 36px !important;
+    font-size: 42px !important;
+    line-height: 1.15 !important;
+    transform: none !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      [class*="blogRoot"]
+    )
+    .contact-copy > span {
+    transform: none !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      [class*="blogRoot"]
+    )
+    .appointment-card {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 32px 24px !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      .service-detail-page,
+      [class*="blogRoot"]
+    )
+    .footer {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: var(--page-mobile-section-space) 0 48px !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      .service-detail-page,
+      [class*="blogRoot"]
+    )
+    :where(.footer > .container, .footer-bottom) {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      .service-detail-page,
+      [class*="blogRoot"]
+    )
+    .footer-grid {
+    height: auto !important;
+    min-height: 0 !important;
+    grid-template-rows: none !important;
+    gap: 40px !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      .service-detail-page,
+      [class*="blogRoot"]
+    )
+    :where(.footer-brand, .footer-services, .footer-pages, .badge-grid) {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      .service-detail-page,
+      [class*="blogRoot"]
+    )
+    .footer-brand p {
+    max-width: none !important;
+    margin: 24px 0 32px !important;
+  }
+
+  :is(
+      #about-page,
+      [class*="contact-page"][class*="page"],
+      [class*="service-page"][class*="servicePage"],
+      .service-detail-page,
+      [class*="blogRoot"]
+    )
+    .footer-bottom {
+    height: auto !important;
+    margin-top: 56px !important;
+    padding-top: 24px !important;
+  }
+}

@@ -1,0 +1,179 @@
+/* Service index and service detail routes: phone-only layout and rhythm. */
+@media (max-width: 680px) {
+  [class*="service-page"][class*="indexSection"] {
+    padding: 132px 0 var(--page-mobile-section-space) !important;
+  }
+
+  [class*="service-page"][class*="indexContainer"],
+  [class*="service-page"][class*="trustGrid"],
+  [class*="service-page"][class*="reviewContainer"] {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  [class*="service-page"][class*="indexTitle"],
+  [class*="service-page"][class*="serviceGrid"],
+  [class*="service-page"][class*="serviceCard"],
+  [class*="service-page"][class*="serviceCardContent"],
+  [class*="service-page"][class*="serviceCardCopy"] {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  [class*="service-page"][class*="indexTitle"] {
+    margin-bottom: 48px;
+  }
+
+  [class*="service-page"][class*="indexTitle"] h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  [class*="service-page"][class*="serviceGrid"] {
+    gap: var(--page-mobile-content-gap);
+  }
+
+  [class*="service-page"][class*="serviceCard"] {
+    height: auto !important;
+  }
+
+  [class*="service-page"][class*="serviceCard"] > img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 10;
+  }
+
+  [class*="service-page"][class*="serviceCardContent"] {
+    height: auto !important;
+    min-height: 220px;
+    padding: 28px 24px;
+  }
+
+  [class*="service-page"][class*="loadMoreSlot"] {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  [class*="service-page"][class*="trustSection"],
+  [class*="service-page"][class*="reviewSection"] {
+    height: auto !important;
+    padding: var(--page-mobile-section-space) 0 !important;
+  }
+
+  [class*="service-page"][class*="trustGrid"] {
+    height: auto !important;
+    gap: 48px;
+  }
+
+  [class*="service-page"][class*="trustCopy"],
+  [class*="service-page"][class*="trustCopy"] h2,
+  [class*="service-page"][class*="trustCopyBottom"],
+  [class*="service-page"][class*="trustMedia"] {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  [class*="service-page"][class*="trustMedia"],
+  [class*="service-page"][class*="trustMedia"] > img {
+    min-height: 342px;
+    aspect-ratio: 1;
+  }
+
+  [class*="service-page"][class*="reviewContainer"],
+  [class*="service-page"][class*="reviewHeader"] {
+    height: auto !important;
+  }
+
+  [class*="service-page"][class*="reviewHeader"],
+  [class*="service-page"][class*="reviewGrid"] {
+    width: 100% !important;
+  }
+
+  [class*="service-page"][class*="reviewGrid"] {
+    min-height: 0;
+    gap: var(--page-mobile-content-gap);
+    margin-top: 48px;
+  }
+
+  [class*="service-page"][class*="reviewCard"] {
+    min-height: 0;
+    padding: 24px;
+  }
+
+  [class*="service-page"][class*="reviewCardQuote"] {
+    min-height: 0;
+  }
+
+  .service-detail-page main > [class*="hero"] {
+    padding: 132px var(--page-mobile-gutter) 64px !important;
+  }
+
+  .service-detail-page main > [class*="hero"] > [class*="container"],
+  .service-detail-page [class*="contentGrid"],
+  .service-detail-page [class*="relatedSection"] > [class*="container"] {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .service-detail-page [class*="title"] {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  .service-detail-page [class*="meta"] {
+    margin-top: 24px;
+  }
+
+  .service-detail-page [class*="heroImage"] {
+    margin-top: 32px;
+  }
+
+  .service-detail-page [class*="contentSection"] {
+    padding: 0 var(--page-mobile-gutter) 96px !important;
+  }
+
+  .service-detail-page [class*="contentGrid"] {
+    gap: 72px;
+  }
+
+  .service-detail-page [class*="quoteCard"] {
+    padding: 32px 24px;
+  }
+
+  .service-detail-page [class*="lead"] {
+    margin-bottom: 64px;
+  }
+
+  .service-detail-page [class*="articleSection"] {
+    margin-top: 64px;
+  }
+
+  .service-detail-page [class*="supportingImage"] {
+    margin-top: 40px;
+  }
+
+  .service-detail-page [class*="importantNote"] {
+    margin-top: 64px;
+  }
+
+  .service-detail-page [class*="faqSection"] {
+    margin-top: 72px;
+  }
+
+  .service-detail-page [class*="relatedSection"] {
+    padding: var(--page-mobile-section-space) var(--page-mobile-gutter) 96px !important;
+  }
+
+  .service-detail-page [class*="relatedHeader"] {
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+
+  .service-detail-page [class*="relatedHeader"] h2 {
+    font-size: 38px;
+  }
+
+  .service-detail-page [class*="relatedGrid"] {
+    gap: var(--page-mobile-content-gap);
+  }
+}
