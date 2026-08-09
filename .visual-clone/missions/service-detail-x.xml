@@ -1,0 +1,41 @@
+<visual_clone_mission version="1.0">
+  <mission_id>service-detail-x</mission_id>
+  <worker_role>sequential_pseudo_worker</worker_role>
+  <goal>Make the reusable local service detail page family reproduce the reference detail page on desktop and mobile with no unresolved P0 or P1 deviations.</goal>
+  <global_objective>Clone the reference visual hierarchy and geometry for X only while keeping GESAB branding, Swedish content, real service routes, and shared application components.</global_objective>
+  <assigned_scope>
+    <type>template_family</type>
+    <reference_url>https://plumbly.framer.website/service/leak-detection-repair</reference_url>
+    <local_route>/service/badrumsrenovering</local_route>
+    <local_route>/service/koksrenovering</local_route>
+  </assigned_scope>
+  <shared_context>
+    <route_map>.visual-clone/blueprint/route-map.json</route_map>
+    <template_families>.visual-clone/blueprint/template-families.json</template_families>
+    <foundation>.visual-clone/blueprint/design-foundation.v1.json</foundation>
+    <foundation_lock>.visual-clone/blueprint/foundation.lock.json</foundation_lock>
+    <interaction_map>.visual-clone/blueprint/interaction-map.json</interaction_map>
+    <motion_foundation>.visual-clone/blueprint/motion-foundation.v1.json</motion_foundation>
+  </shared_context>
+  <hard_rules>
+    <rule>Use Browser, raw CDP measurements, and screenshots for visual verification.</rule>
+    <rule>Do not create a second Header, ContactBand, appointment form, or Footer.</rule>
+    <rule>Keep all detail visual overrides scoped to .service-detail-page.</rule>
+    <rule>Verify desktop 1440x900 and mobile 390x844.</rule>
+    <rule>Verify mobile navigation, CTA hover, and form focus states.</rule>
+    <rule>Sample-test at least one additional GESAB service detail instance.</rule>
+    <rule>Do not alter excluded page routes.</rule>
+  </hard_rules>
+  <goal_activation_tail>
+    Before implementation, make this mission your active goal if goal tooling is available.
+    Use the mission goal as the goal objective.
+    Do not stop after analysis, planning, or a first draft.
+    Continue the build, browser screenshot, compare, and fix loop until one exit condition is true:
+    - ready_for_main_review with desktop and mobile screenshot evidence, no unresolved P0/P1 deviations, and one structured worker_report
+    - needs_foundation_decision because the mission cannot proceed without an approved global foundation change
+    - blocked because the route cannot be accessed, rendered, or verified after concrete attempts
+    - repair_complete for repair_order missions
+    If the mission includes interactions, continue the build, browser action, state screenshot, compare, and fix loop until required interaction states are functional and verified.
+    Do not mark the goal complete until the required worker_report has been written or returned.
+  </goal_activation_tail>
+</visual_clone_mission>

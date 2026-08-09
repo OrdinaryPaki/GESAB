@@ -8,8 +8,20 @@ import "./responsive/blog-mobile.css";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
 
 export const metadata = {
-  title: "Plumbly",
-  description: "All type of Plumbing Care for your home",
+  metadataBase: new URL("https://www.ges-ab.se"),
+  title: {
+    default: "GESAB - Badrumsrenovering och entreprenad i Göteborg",
+    template: "%s | GESAB",
+  },
+  description:
+    "Göteborgs Entreprenad Service AB hjälper med badrumsrenovering, köksrenovering, totalentreprenad, bygg, fasad, snickeri, målning och montage i Göteborg.",
+  openGraph: {
+    title: "GESAB - Badrumsrenovering och entreprenad i Göteborg",
+    description:
+      "Rådgivning, planering och utförande för badrum, kök, bygg och renovering i Göteborg.",
+    locale: "sv_SE",
+    type: "website",
+  },
 };
 
 export const viewport = {

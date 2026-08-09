@@ -385,14 +385,16 @@
   line-height: 1.58;
 }
 
-.page .quoteCard :global(.appointment-card label) {
+.page .quoteCard :global(.appointment-card label),
+.page .quoteCard :global(.appointment-card .service-select-field) {
   gap: 6px;
   color: white;
   font-size: 13px;
 }
 
 .page .quoteCard :global(.appointment-card input),
-.page .quoteCard :global(.appointment-card select) {
+.page .quoteCard :global(.appointment-card select),
+.page .quoteCard :global(.appointment-card .service-select-trigger) {
   height: 52px;
   border: 0;
   border-radius: 10px;

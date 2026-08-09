@@ -1,0 +1,27 @@
+<visual_clone_mission version="1.0">
+  <mission_id>contact-page</mission_id>
+  <worker_role>sequential_pseudo_worker</worker_role>
+  <goal>Make the local contact page reproduce the reference contact page on desktop and mobile with no unresolved P0 or P1 deviations.</goal>
+  <global_objective>Clone X, where X is Kontakta oss, while keeping GESAB branding, Swedish content, real contact details, and shared application components.</global_objective>
+  <assigned_scope>
+    <type>unique_page</type>
+    <reference_url>https://plumbly.framer.website/contact</reference_url>
+    <local_route>/contact</local_route>
+  </assigned_scope>
+  <shared_context>
+    <route_map>.visual-clone/runs/contact-page/blueprint/route-map.json</route_map>
+    <template_families>.visual-clone/runs/contact-page/blueprint/template-families.json</template_families>
+    <foundation>.visual-clone/runs/contact-page/blueprint/design-foundation.v1.json</foundation>
+    <foundation_lock>.visual-clone/runs/contact-page/blueprint/foundation.lock.json</foundation_lock>
+    <interaction_map>.visual-clone/runs/contact-page/blueprint/interaction-map.json</interaction_map>
+    <motion_foundation>.visual-clone/runs/contact-page/blueprint/motion-foundation.v1.json</motion_foundation>
+  </shared_context>
+  <hard_rules>
+    <rule>Use Browser, raw CDP measurements, and screenshots for visual verification.</rule>
+    <rule>Do not use subagents.</rule>
+    <rule>Keep contact visual overrides scoped to the contact CSS module.</rule>
+    <rule>Verify desktop 1440x900 and mobile 390x844.</rule>
+    <rule>Verify mobile navigation, input focus, submit hover, FAQ, and map states.</rule>
+    <rule>Do not alter excluded page routes.</rule>
+  </hard_rules>
+</visual_clone_mission>

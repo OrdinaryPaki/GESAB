@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "referenceOrigin": "https://plumbly.framer.website",
+  "routes": [
+    {
+      "priority": "P0",
+      "classification": "unique_page",
+      "familyId": "contact-page",
+      "referenceRoute": "/contact",
+      "localRoute": "/contact",
+      "label": "X — Kontakta oss",
+      "included": true
+    }
+  ],
+  "excluded": "Every route other than /contact, per the user request."
+}

@@ -1,0 +1,23 @@
+{
+  "version": "foundation.contact.v1",
+  "status": "locked",
+  "globalFiles": [
+    "app/components/HomeSections.js",
+    "app/components/FaqAccordion.js"
+  ],
+  "approvedRouteScopedFoundationChange": {
+    "file": "app/contact/contact-page.module.css",
+    "scopeSelector": ".page",
+    "reason": "The contact page needs exact reference geometry and typography without changing excluded routes."
+  },
+  "sharedBehaviorPreservation": "The shared FAQ defaults remain unchanged; the contact page opts into single-open behavior and supplies its own item data.",
+  "missionMayChange": [
+    "app/contact/page.js",
+    "app/contact/contact-page.module.css",
+    "app/contact/contact-icons.js",
+    "app/components/HomeSections.js optional FAQ props only",
+    "app/components/FaqAccordion.js optional allowMultiple behavior only",
+    "public/fonts/contact font files"
+  ],
+  "rule": "No unscoped contact-page visual rules may be added after this lock."
+}

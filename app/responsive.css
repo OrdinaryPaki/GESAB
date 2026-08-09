@@ -5,3 +5,8 @@
 @import "./responsive/service.css";
 @import "./responsive/blog.css";
 @import "./responsive/mobile-navigation.css";
+@import "./responsive/mobile-pages-shared.css";
+@import "./responsive/about-mobile.css";
+@import "./responsive/contact-mobile.css";
+@import "./responsive/service-mobile.css";
+@import "./responsive/blog-mobile.css";

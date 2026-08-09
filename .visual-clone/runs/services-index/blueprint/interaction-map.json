@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "interactions": [
+    {
+      "missionId": "services-index",
+      "family": "load-more",
+      "states": ["default", "expanded"],
+      "effect": "Desktop reveals cards 5-6; mobile reveals cards 4-6 while preserving the control slot."
+    },
+    {
+      "missionId": "services-index",
+      "family": "mobile-navigation",
+      "states": ["closed", "open"],
+      "effect": "Full viewport menu below the 85px header with a close icon."
+    },
+    {
+      "missionId": "services-index",
+      "family": "service-card-hover",
+      "states": ["default", "hover"],
+      "effect": "Card lifts 2px, gains a soft shadow and scales the image to 1.04."
+    }
+  ]
+}

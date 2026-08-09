@@ -1,0 +1,840 @@
+.page {
+  width: 100%;
+  overflow: clip;
+}
+
+.page :global(.header-inner) {
+  width: calc(100% - 120px);
+  max-width: none;
+  gap: 0;
+}
+
+.page :global(.logo) {
+  gap: 8px;
+}
+
+.page :global(.logo-text) {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.page :global(.nav-links) {
+  margin-left: 64px;
+}
+
+.page :global(.phone-button) {
+  --cta-bg: var(--black);
+  --cta-hover-bg: var(--blue);
+  --cta-color: white;
+  --cta-hover-color: white;
+  border-radius: 16px;
+  background-color: var(--black);
+  background-image: linear-gradient(var(--blue), var(--blue));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  color: white;
+  font-weight: 600;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .page :global(.phone-button):hover {
+    background-size: 100% 100%;
+    color: var(--cta-hover-color);
+  }
+}
+
+.page :global(.phone-button):focus-visible {
+  background-size: 100% 100%;
+  color: var(--cta-hover-color);
+}
+
+.storySection {
+  height: 873px;
+  padding: 160px 0 0;
+}
+
+.storyGrid {
+  display: flex;
+  width: 1200px;
+  height: 713px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+
+.storyTitle {
+  width: 500px;
+  text-align: center;
+}
+
+.storyTitle h1 {
+  width: 500px;
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 79.2px;
+  letter-spacing: -1.44px;
+}
+
+.storyTitle p {
+  width: 500px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+}
+
+.storyCollage {
+  display: grid;
+  width: 1200px;
+  height: 501px;
+  grid-template-columns: 588px 282px 282px;
+  grid-template-rows: 237px 240px;
+  gap: 24px;
+}
+
+.storyCollage > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.storyPrimaryImage {
+  grid-row: 1 / 3;
+}
+
+.quoteCard {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-template-columns: 197px 1fr;
+  gap: 24px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--blue);
+  color: white;
+  padding: 24px;
+}
+
+.quoteCard > img {
+  width: 197px;
+  height: 192px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.quoteCard blockquote {
+  margin: 0;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+}
+
+.quoteCard strong,
+.quoteCard span {
+  display: block;
+}
+
+.quoteCard strong {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.6px;
+}
+
+.quoteCard span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 23.8px;
+}
+
+.missionSection {
+  height: 1124px;
+  padding: 0;
+}
+
+.missionInner {
+  position: relative;
+  width: 1200px;
+  height: 1124px;
+  padding-top: 128px;
+}
+
+.missionCopy {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 520px 520px;
+  gap: 160px;
+}
+
+.missionCopy h2 {
+  margin: 0;
+  text-align: left;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  letter-spacing: -0.48px;
+}
+
+.missionBody p {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+.missionBody p + p {
+  margin-top: 26px;
+}
+
+.missionImage {
+  position: absolute;
+  top: 372px;
+  left: 0;
+  width: 1200px;
+  height: 599px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.missionSection .missionInner > .missionImage {
+  margin-top: 0;
+}
+
+.missionCards {
+  position: absolute;
+  z-index: 2;
+  top: 767px;
+  right: 60px;
+  left: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.missionCards article {
+  display: flex;
+  height: 357px;
+  min-height: 0;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--blue);
+  color: white;
+  padding: 32px;
+  box-shadow: none;
+}
+
+.missionCards article > span {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+  border-radius: 999px;
+  background: white;
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.missionCards h3 {
+  max-width: 180px;
+  margin: auto 0 10px;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  letter-spacing: -0.24px;
+}
+
+.missionCards p {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+.page :global(.process-section) {
+  height: 825px;
+  padding: 80px 0 40px;
+}
+
+.page :global(.process-grid) {
+  grid-template-columns: 575px 575px;
+  gap: 50px;
+}
+
+.page :global(.process-section .section-title h2) {
+  max-width: 442px;
+}
+
+.page :global(.team-section) {
+  height: 733px;
+  padding: 60px 0 120px;
+}
+
+.page :global(.testimonial-section) {
+  height: 799px;
+  padding: 100px 0;
+}
+
+.page :global(.faq-section) {
+  height: 602px;
+}
+
+.page :global(.faq-item) {
+  border: 1px solid var(--line);
+}
+
+.page :global(.faq-item.open) {
+  border-color: transparent;
+}
+
+.page :global(.faq-question)::after,
+.page :global(.faq-item.open .faq-question)::after {
+  content: "⌃" !important;
+  background: transparent !important;
+  color: var(--text) !important;
+  transform: none !important;
+}
+
+.page :global(.faq-item.open .faq-question)::after {
+  content: "⌄" !important;
+}
+
+.page:global(.about-animations-ready) :global(.process-grid),
+.page:global(.about-animations-ready) :global(.team-section > .container),
+.page:global(.about-animations-ready) :global(.testimonial-section > .container),
+.page:global(.about-animations-ready) :global(.faq-section > .container) {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.page:global(.about-animations-ready) :global(.process-grid.about-revealed),
+.page:global(.about-animations-ready) :global(.team-section > .container.about-revealed),
+.page:global(.about-animations-ready) :global(.testimonial-section > .container.about-revealed),
+.page:global(.about-animations-ready) :global(.faq-section > .container.about-revealed) {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1), transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page :global(.process-grid),
+  .page :global(.team-section > .container),
+  .page :global(.testimonial-section > .container),
+  .page :global(.faq-section > .container) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .page :global(.header-inner) {
+    width: calc(100% - 40px);
+    height: 85px;
+    padding: 20px 0;
+  }
+
+  .page :global(.mobile-menu-button) {
+    width: 44px;
+    height: 44px;
+    background: var(--blue);
+    color: white;
+  }
+
+  .page :global(.mobile-menu[open]) {
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    display: block;
+    margin: 0;
+    background: white;
+  }
+
+  .page :global(.mobile-menu[open] .mobile-menu-button) {
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+  }
+
+  .page :global(.mobile-menu[open] .mobile-menu-button span) {
+    position: absolute;
+    top: 21px;
+    left: 13px;
+  }
+
+  .page :global(.mobile-menu[open] .mobile-menu-button span:first-child) {
+    transform: rotate(45deg);
+  }
+
+  .page :global(.mobile-menu[open] .mobile-menu-button span:last-child) {
+    transform: rotate(-45deg);
+  }
+
+  .page :global(.mobile-menu-panel) {
+    position: fixed;
+    inset: 85px 0 0;
+    display: grid;
+    min-width: 0;
+    align-content: start;
+    gap: 0;
+    overflow-y: auto;
+    border-top: 1px solid var(--blue);
+    border-radius: 0;
+    padding: 12px 20px 40px;
+    box-shadow: none;
+  }
+
+  .page :global(.mobile-menu-panel a) {
+    border-radius: 0;
+    padding: 11px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.2px;
+  }
+
+  .page :global(.mobile-menu-panel .mobile-phone-link) {
+    display: none;
+  }
+
+  .storySection,
+  .missionSection,
+  .page :global(.process-section),
+  .page :global(.team-section),
+  .page :global(.testimonial-section),
+  .page :global(.faq-section) {
+    height: auto;
+  }
+
+  .storyGrid,
+  .missionInner,
+  .page :global(.process-section > .container) {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .storyCollage {
+    width: 100%;
+  }
+
+  .page :global(.process-grid) {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+}
+
+@media (max-width: 520px) {
+  .page :global(.logo-text) {
+    font-size: 30px;
+  }
+
+  .storySection {
+    height: 1386px;
+    padding: 120px 0 0;
+  }
+
+  .storyGrid {
+    width: 350px;
+    height: 1266px;
+    gap: 0;
+  }
+
+  .storyTitle,
+  .storyTitle h1,
+  .storyTitle p {
+    width: 350px;
+  }
+
+  .storyTitle h1 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+  }
+
+  .storyTitle p {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 30.6px;
+  }
+
+  .storyCollage {
+    width: 350px;
+    height: 1059px;
+    grid-template-columns: repeat(2, 168px);
+    grid-template-rows: 301px 224px 489px;
+    column-gap: 14px;
+    row-gap: 15px;
+    margin-top: 43px;
+  }
+
+  .storyPrimaryImage {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .storySecondaryImage {
+    grid-row: 2;
+  }
+
+  .quoteCard {
+    display: block;
+    grid-column: 1 / 3;
+    grid-row: 3;
+    padding: 16px;
+  }
+
+  .quoteCard > img {
+    width: 318px;
+    height: 286px;
+    border-radius: 8px;
+  }
+
+  .quoteCard blockquote {
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+
+  .quoteCard strong {
+    margin-top: 14px;
+  }
+
+  .missionSection {
+    height: 1753px;
+  }
+
+  .missionInner {
+    width: 350px;
+    height: 1753px;
+    padding-top: 30px;
+  }
+
+  .missionCopy {
+    display: block;
+  }
+
+  .missionCopy h2 {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.3px;
+  }
+
+  .missionBody p {
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+
+  .missionBody p:first-child {
+    margin-top: 24px;
+  }
+
+  .missionBody p + p {
+    margin-top: 26px;
+  }
+
+  .missionImage {
+    top: 455px;
+    width: 350px;
+    height: 320px;
+  }
+
+  .missionCards {
+    top: 799px;
+    right: 0;
+    left: 0;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .missionCards article {
+    height: 297px;
+    padding: 24px;
+  }
+
+  .missionCards article > span {
+    width: 56px;
+    height: 56px;
+  }
+
+  .missionCards h3 {
+    margin: 42px 0 10px;
+    font-size: 22px;
+    line-height: 30.8px;
+  }
+
+  .page :global(.process-section) {
+    height: 917px;
+    padding: 30px 0;
+  }
+
+  .page :global(.process-section > .container) {
+    width: 350px;
+  }
+
+  .page :global(.process-section .section-title h2),
+  .page :global(.team-section .section-title h2),
+  .page :global(.testimonial-section .section-title h2),
+  .page :global(.faq-section .section-title h2) {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.3px;
+  }
+
+  .page :global(.process-section .section-title h2),
+  .page :global(.team-section .section-title h2) {
+    max-width: 300px;
+  }
+
+  .page :global(.team-section .section-title h2) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .page :global(.process-card) {
+    min-height: 0;
+    padding: 18px 16px 28px;
+  }
+
+  .page :global(.process-card strong) {
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 36.4px;
+  }
+
+  .page :global(.team-section) {
+    height: 1511px;
+    padding: 30px 0 60px;
+  }
+
+  .page :global(.team-section > .container) {
+    width: 350px;
+  }
+
+  .page :global(.team-grid) {
+    gap: 24px;
+    margin-top: 34px;
+  }
+
+  .page :global(.team-card:nth-child(4)) {
+    display: none;
+  }
+
+  .page :global(.team-card img) {
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1;
+  }
+
+  .page :global(.team-card h3) {
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 24.48px;
+  }
+
+  .page :global(.team-card p) {
+    font-size: 14px;
+    line-height: 23.8px;
+  }
+
+  .page :global(.testimonial-section) {
+    position: relative;
+    height: 616px;
+    padding: 60px 0;
+  }
+
+  .page :global(.testimonial-section > .container) {
+    width: 390px;
+  }
+
+  .page :global(.testimonial-section .section-title) {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .page :global(.testimonial-grid) {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    margin-top: 32px;
+    padding: 0 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .page :global(.testimonial-grid::-webkit-scrollbar) {
+    display: none;
+  }
+
+  .page :global(.testimonial-card) {
+    width: 350px;
+    min-width: 350px;
+    min-height: 278px;
+    height: 278px;
+    flex: 0 0 350px;
+    scroll-snap-align: center;
+    padding: 16px;
+  }
+
+  .page :global(.testimonial-card p) {
+    min-height: 0;
+    max-height: 82px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+
+  .page :global(.testimonial-card .person) {
+    margin-bottom: 16px;
+  }
+
+  .page :global(.testimonial-card .person h3) {
+    font-size: 18px;
+    line-height: 30.6px;
+    white-space: nowrap;
+  }
+
+  .page :global(.testimonial-card .rating-stars) {
+    margin-top: auto;
+  }
+
+  .page :global(.testimonial-section)::after {
+    content: "";
+    position: absolute;
+    bottom: 60px;
+    left: calc(50% - 20px);
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: white;
+    box-shadow: 20px 0 rgba(255, 255, 255, 0.58), 40px 0 rgba(255, 255, 255, 0.58);
+  }
+
+  .page :global(.faq-section) {
+    height: 979px;
+    padding: 30px 0;
+  }
+
+  .page :global(.faq-grid) {
+    width: 350px;
+    max-width: none;
+    gap: 29px;
+  }
+
+  .page :global(.still) {
+    margin-top: 27px;
+  }
+
+  .page :global(.faq-question) {
+    gap: 8px;
+    font-size: 20px;
+    line-height: 33.6px;
+    text-align: left !important;
+  }
+
+  .page :global(.faq-item.open) {
+    min-height: 253px;
+  }
+
+  .page :global(.faq-item.open .faq-question) {
+    position: relative;
+    padding-right: 80px;
+  }
+
+  .page :global(.faq-item.open .faq-question)::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .page :global(.faq-item.open .faq-panel p) {
+    max-width: 270px;
+  }
+
+  .page :global(.contact-band),
+  .page :global(.contact-band-inner) {
+    min-height: 1031px;
+    height: 1031px;
+  }
+
+  .page :global(.contact-band-inner) {
+    gap: 24px;
+  }
+
+  .page :global(.contact-copy) {
+    padding-top: 60px;
+  }
+
+  .page :global(.contact-copy h2) {
+    margin: 14px 0 24px;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: -0.48px;
+  }
+
+  .page :global(.contact-methods) {
+    gap: 12px;
+  }
+
+  .page :global(.appointment-card) {
+    height: 532px;
+    padding: 24px;
+  }
+
+  .page :global(.appointment-card h2) {
+    margin-bottom: 8px;
+    font-size: 26px;
+    line-height: 36.4px;
+  }
+
+  .page :global(.appointment-card input),
+  .page :global(.appointment-card select) {
+    height: 51px;
+  }
+
+  .page :global(.footer) {
+    height: 994px;
+    padding: 64px 0 32px;
+  }
+
+  .page :global(.footer-grid) {
+    width: 350px;
+    gap: 24px;
+    padding-bottom: 0;
+  }
+
+  .page :global(.footer-brand p) {
+    margin: 20px 0 24px;
+  }
+
+  .page :global(.footer-list) {
+    gap: 10px;
+  }
+
+  .page :global(.badge-grid) {
+    width: 217px;
+    grid-template-columns: repeat(2, 86px);
+    gap: 12px 18px;
+    margin: 4px auto 0;
+  }
+
+  .page :global(.badge-grid img) {
+    width: 86px;
+    height: 86px;
+  }
+
+  .page :global(.footer-bottom) {
+    width: 350px;
+    margin-top: 28px;
+    padding-top: 24px;
+  }
+}

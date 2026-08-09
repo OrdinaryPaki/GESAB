@@ -1,0 +1,27 @@
+{
+  "version": "foundation.contact.v1",
+  "ctaHover": {
+    "durationMs": 180,
+    "easing": "ease-in",
+    "from": "black with 0% blue fill",
+    "to": "black base with 100% blue fill"
+  },
+  "faq": {
+    "panelDurationMs": 260,
+    "opacityDurationMs": 180,
+    "mode": "single-open on /contact"
+  },
+  "mobileMenu": {
+    "type": "native details disclosure with fixed full-viewport panel",
+    "closedIcon": "two horizontal lines",
+    "openIcon": "X"
+  },
+  "reducedMotion": {
+    "supported": true,
+    "durationMs": 1
+  },
+  "scrollReveal": {
+    "required": false,
+    "reason": "The measured contact reference does not require additional route-specific scroll animation."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "skill": "visual-site-cloner",
+  "referenceUrl": "https://plumbly.framer.website/contact",
+  "includedRoutes": [
+    "/contact"
+  ],
+  "excludedByUser": "All routes except X, where X is Kontakta oss.",
+  "mode": "sequential-pseudo-worker",
+  "reasonForSequentialMode": "The user explicitly requested no subagents.",
+  "createdAt": "2026-08-02T19:21:23+02:00",
+  "packageManager": "npm",
+  "devCommand": "npm run dev",
+  "localUrl": "http://localhost:3000/contact",
+  "productionVerificationUrl": "http://localhost:3108/contact (isolated temporary production build)",
+  "browserVerification": "Browser plugin screenshots plus raw CDP geometry, font, state, and console verification",
+  "foundationVersion": "foundation.contact.v1",
+  "git": {
+    "branch": "main",
+    "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+    "dirtyAtStart": true,
+    "commitCreated": false,
+    "commitReason": "The required contact page and shared component files already contained overlapping uncommitted user work before this task, so a task-only commit could not be created safely."
+  }
+}

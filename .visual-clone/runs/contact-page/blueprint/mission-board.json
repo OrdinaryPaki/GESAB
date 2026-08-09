@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "executionMode": "sequential-pseudo-worker",
+  "missions": [
+    {
+      "id": "contact-page",
+      "type": "pseudo_worker",
+      "status": "ready_for_main_review",
+      "referenceRoute": "/contact",
+      "localRoute": "/contact",
+      "foundationVersion": "foundation.contact.v1",
+      "reportPath": ".visual-clone/runs/contact-page/reports/contact-page.report.xml"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "interactions": [
+    {
+      "missionId": "contact-page",
+      "family": "mobile-navigation",
+      "states": ["closed", "open"],
+      "effect": "full-viewport mobile menu with a blue close control"
+    },
+    {
+      "missionId": "contact-page",
+      "family": "main-form-focus",
+      "states": ["default", "focus"],
+      "effect": "focused field receives a black 1px outline without layout shift"
+    },
+    {
+      "missionId": "contact-page",
+      "family": "main-submit-hover",
+      "states": ["default", "hover"],
+      "effect": "blue fill rises over the black submit button"
+    },
+    {
+      "missionId": "contact-page",
+      "family": "faq-single-open",
+      "states": ["first-open", "second-open"],
+      "effect": "opening a new answer closes the previously open answer"
+    },
+    {
+      "missionId": "contact-page",
+      "family": "map-lazy-load",
+      "states": ["placeholder", "loaded"],
+      "effect": "embedded map loads when its section reaches the viewport"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "referenceBase": "https://plumbly.framer.website",
+  "routes": [
+    {
+      "priority": "P0",
+      "type": "unique_page",
+      "reference": "/about",
+      "local": "/about",
+      "included": true,
+      "notes": "The only route included by the user. Must match on desktop and mobile."
+    }
+  ],
+  "excluded": [
+    {
+      "reference": "all other routes",
+      "reason": "The user explicitly requested only OM OSS."
+    }
+  ]
+}

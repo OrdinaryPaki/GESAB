@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "missionId": "about-page",
+  "timestamp": "2026-08-02T19:25:34+02:00",
+  "screenshots": [
+    {"type":"reference","viewport":"1440xfull","state":"default","path":".visual-clone/reference/screenshots/about.desktop.full.png"},
+    {"type":"reference","viewport":"390xfull","state":"default","path":".visual-clone/reference/screenshots/about.mobile.full.png"},
+    {"type":"reference","viewport":"390x844","state":"menu-open","path":".visual-clone/reference/screenshots/about.mobile-menu.open.png"},
+    {"type":"reference","viewport":"1440x602","state":"faq-open","path":".visual-clone/reference/screenshots/about.faq.open.desktop.png"},
+    {"type":"reference","viewport":"1440x602","state":"faq-closed","path":".visual-clone/reference/screenshots/about.faq.closed.desktop.png"},
+    {"type":"local","viewport":"1440xfull","state":"default","path":".visual-clone/runs/about-page/reports/about-page/local.desktop.full.png"},
+    {"type":"local","viewport":"390xfull","state":"default","path":".visual-clone/runs/about-page/reports/about-page/local.mobile.full.png"},
+    {"type":"local","viewport":"390x844","state":"menu-open","path":".visual-clone/runs/about-page/reports/about-page/local.mobile-menu.open.png"},
+    {"type":"local","viewport":"390x979","state":"faq-open","path":".visual-clone/runs/about-page/reports/about-page/local.mobile.faq.open.png"},
+    {"type":"local","viewport":"390x979","state":"faq-closed","path":".visual-clone/runs/about-page/reports/about-page/local.mobile.faq.closed.png"},
+    {"type":"local","viewport":"390x616","state":"testimonial-default","path":".visual-clone/runs/about-page/reports/about-page/local.mobile.testimonial.default.png"},
+    {"type":"local","viewport":"390x616","state":"testimonial-scrolled","path":".visual-clone/runs/about-page/reports/about-page/local.mobile.testimonial.scrolled.png"},
+    {"type":"local","viewport":"1440x1000","state":"phone-hover","path":".visual-clone/runs/about-page/reports/about-page/local.desktop.phone.hover.png"},
+    {"type":"local","viewport":"1440x1000","state":"phone-focus-visible","path":".visual-clone/runs/about-page/reports/about-page/local.desktop.phone.focus.png"}
+  ]
+}

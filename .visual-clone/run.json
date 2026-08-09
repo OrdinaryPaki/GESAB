@@ -1,15 +1,42 @@
 {
   "skill": "visual-site-cloner",
-  "referenceUrl": "https://plumbly.framer.website/",
+  "referenceUrl": "https://plumbly.framer.website/service/leak-detection-repair",
+  "includedRoutes": [
+    "/service/[slug]"
+  ],
+  "excludedByUser": "All routes except the reusable service detail page family (X).",
   "mode": "sequential-main-worktree",
-  "reasonForSequentialMode": "Project instructions require main worktree and main branch unless explicitly asked otherwise.",
-  "createdAt": "2026-06-26T00:00:00.000Z",
+  "reasonForSequentialMode": "The user explicitly requested no subagents.",
+  "createdAt": "2026-08-02T18:45:00+02:00",
   "packageManager": "npm",
   "devCommand": "npm run dev",
-  "browserVerification": "Playwright Chromium fallback because Browser/IAB tools were not exposed in this session.",
-  "dirtyWorktreeAtStart": [
-    "docs/visual-site-cloner-skill/SKILL.md",
-    "docs/visual-site-cloner-skill/codex-agents/visual_clone_worker.toml",
-    "docs/visual-site-cloner-skill/references/04-worker-missions.md"
-  ]
+  "localUrl": "http://localhost:3000/service/badrumsrenovering",
+  "browserVerification": "Chrome Browser plugin with raw CDP measurements, real pointer input, and desktop/mobile screenshots",
+  "foundationVersion": "foundation.service-detail.v2",
+  "git": {
+    "branch": "main",
+    "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+    "dirtyAtStart": true,
+    "dirtyFilesAtStart": [
+      ".visual-clone/reference/screenshots/home.desktop.full.png",
+      "app/about/page.js",
+      "app/about/team-section.js",
+      "app/components/HomeSections.js",
+      "app/components/PlumblyIcons.js (deleted)",
+      "app/components/PlumblyShell.js (deleted)",
+      "app/contact/page.js",
+      "app/globals.css",
+      "app/layout.js",
+      "app/page.js",
+      "app/plumbly-data.js (deleted)",
+      "app/service/[slug]/page.js",
+      "app/service/page.js",
+      ".visual-clone/reports/home/local.desktop.baseline.png (untracked)",
+      "app/components/CtaButton.js (untracked)",
+      "app/components/FaqAccordion.js (untracked)",
+      "app/components/GesabIcons.js (untracked)",
+      "app/components/GesabShell.js (untracked)",
+      "app/gesab-data.js (untracked)"
+    ]
+  }
 }

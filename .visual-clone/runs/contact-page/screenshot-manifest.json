@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "screenshots": [
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "1440x900",
+      "reference_url": "https://plumbly.framer.website/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/contact.current.desktop.fold.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "1440xfull",
+      "reference_url": "https://plumbly.framer.website/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/contact.current.desktop.revealed.full.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390x844",
+      "reference_url": "https://plumbly.framer.website/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/contact.current.mobile.fold.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390xfull",
+      "reference_url": "https://plumbly.framer.website/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/contact.current.mobile.revealed.full.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "1440x900",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.desktop.final.fold.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "1440xfull",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.desktop.final.full.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390x844",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.mobile.final.fold.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390xfull",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.mobile.final.full.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "1440x900 hover",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.desktop.final.button-hover.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "1440x900 map-loaded",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.desktop.final.map.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390x844 menu-open",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.mobile.final.menu-open.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390x844 input-focus",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.mobile.final.input-focus.png"
+    },
+    {
+      "mission_id": "contact-page",
+      "route": "/contact",
+      "viewport": "390x844 faq-second-open",
+      "local_route": "http://localhost:3000/contact",
+      "foundation_version": "foundation.contact.v1",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:21:23+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/contact/local.current.mobile.final.faq-second-open.png"
+    }
+  ]
+}

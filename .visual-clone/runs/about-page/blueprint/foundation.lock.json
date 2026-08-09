@@ -1,0 +1,27 @@
+{
+  "version": "foundation.about.v1",
+  "lockedFiles": [
+    "app/globals.css",
+    "app/layout.js",
+    "app/components/GesabShell.js",
+    "app/components/GesabIcons.js",
+    "app/components/HomeSections.js",
+    "app/components/FaqAccordion.js",
+    "app/gesab-data.js"
+  ],
+  "allowedMissionFiles": [
+    "app/about/page.js",
+    "app/about/about-sections.js",
+    "app/about/about.module.css",
+    "tests/about-page.test.mjs"
+  ],
+  "workersMayNotSilentlyChange": [
+    "global CSS variables",
+    "global font setup",
+    "shared Header markup",
+    "shared Footer markup",
+    "shared ContactBand markup",
+    "shared FAQ behavior"
+  ],
+  "changeRequestProcess": "Sequential main-worktree run; global changes require reference and local screenshot evidence before approval."
+}

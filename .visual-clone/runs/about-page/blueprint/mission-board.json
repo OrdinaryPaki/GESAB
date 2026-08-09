@@ -1,0 +1,14 @@
+{
+  "mode": "sequential-main-worktree",
+  "missions": [
+    {
+      "id": "about-page",
+      "type": "pseudo_worker",
+      "status": "ready_for_main_review",
+      "reference": "/about",
+      "local": "/about",
+      "foundationVersion": "foundation.about.v1",
+      "report_path": ".visual-clone/runs/about-page/reports/about-page.report.xml"
+    }
+  ]
+}

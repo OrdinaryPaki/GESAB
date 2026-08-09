@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "families": [
+    {
+      "id": "contact-page",
+      "type": "unique_page",
+      "canonicalReferenceRoute": "/contact",
+      "canonicalLocalRoute": "/contact",
+      "intendedComponent": "ContactPage",
+      "instances": [
+        "/contact"
+      ],
+      "evidence": [
+        "one contact hero and enquiry form",
+        "three contact cards and one map",
+        "one FAQ block with single-open behavior",
+        "one shared contact band and footer"
+      ]
+    }
+  ]
+}

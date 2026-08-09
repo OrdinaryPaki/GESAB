@@ -1,121 +1,137 @@
 {
-  "generated_at": "2026-06-26T18:13:16.568Z",
-  "reference_url": "https://plumbly.framer.website/",
-  "foundation_version": "foundation.v1",
-  "worktree": "main",
-  "branch": "main",
+  "version": "1.0",
   "screenshots": [
     {
-      "mission_id": "homepage",
-      "route": "/",
-      "viewport": "1440x900",
-      "checkpoint": "pre-implementation-reference",
-      "type": "reference",
-      "path": ".visual-clone/reference/screenshots/home.desktop.fold.png"
-    },
-    {
-      "mission_id": "homepage",
-      "route": "/",
-      "viewport": "390x844",
-      "checkpoint": "pre-implementation-reference",
-      "type": "reference",
-      "path": ".visual-clone/reference/screenshots/home.mobile.fold.png"
-    },
-    {
-      "mission_id": "homepage",
-      "route": "/",
-      "viewport": "1440x900",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/home/local.desktop.prod.png"
-    },
-    {
-      "mission_id": "homepage",
-      "route": "/",
-      "viewport": "390x844",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/home/local.mobile.prod.png"
-    },
-    {
-      "mission_id": "about-page",
-      "route": "/about",
-      "viewport": "1440x900",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/about/local.desktop.prod.png"
-    },
-    {
-      "mission_id": "about-page",
-      "route": "/about",
-      "viewport": "390x844",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/about/local.mobile.prod.png"
-    },
-    {
-      "mission_id": "service-index",
-      "route": "/service",
-      "viewport": "1440x900",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/service-index/local.desktop.prod.png"
-    },
-    {
-      "mission_id": "service-index",
-      "route": "/service",
-      "viewport": "390x844",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/service-index/local.mobile.prod.png"
-    },
-    {
-      "mission_id": "contact-page",
-      "route": "/contact",
-      "viewport": "1440x900",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/contact/local.desktop.prod.png"
-    },
-    {
-      "mission_id": "contact-page",
-      "route": "/contact",
-      "viewport": "390x844",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/contact/local.mobile.prod.png"
-    },
-    {
-      "mission_id": "service-detail-template",
+      "mission_id": "service-detail-x",
       "route": "/service/leak-detection-repair",
       "viewport": "1440x900",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/service-detail-leak/local.desktop.prod.png"
+      "reference_url": "https://plumbly.framer.website/service/leak-detection-repair",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T18:51:27+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/service-detail-x.desktop.fold.png"
     },
     {
-      "mission_id": "service-detail-template",
+      "mission_id": "service-detail-x",
+      "route": "/service/leak-detection-repair",
+      "viewport": "1440xfull",
+      "reference_url": "https://plumbly.framer.website/service/leak-detection-repair",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T18:52:04+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/service-detail-x.desktop.full.png"
+    },
+    {
+      "mission_id": "service-detail-x",
       "route": "/service/leak-detection-repair",
       "viewport": "390x844",
-      "checkpoint": "production-final",
-      "type": "local",
-      "path": ".visual-clone/reports/service-detail-leak/local.mobile.prod.png"
+      "reference_url": "https://plumbly.framer.website/service/leak-detection-repair",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T18:52:16+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/service-detail-x.mobile.fold.png"
     },
     {
-      "mission_id": "service-detail-template",
-      "route": "/service/drain-cleaning",
+      "mission_id": "service-detail-x",
+      "route": "/service/leak-detection-repair",
+      "viewport": "390xfull",
+      "reference_url": "https://plumbly.framer.website/service/leak-detection-repair",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T18:52:16+02:00",
+      "type": "reference",
+      "path": ".visual-clone/reference/screenshots/service-detail-x.mobile.full.png"
+    },
+    {
+      "mission_id": "service-detail-x",
+      "route": "/service/badrumsrenovering",
       "viewport": "1440x900",
-      "checkpoint": "production-final",
+      "local_route": "http://localhost:3000/service/badrumsrenovering",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:10:12+02:00",
       "type": "local",
-      "path": ".visual-clone/reports/service-detail-drain/local.desktop.prod.png"
+      "path": ".visual-clone/reports/service-detail-x/local.desktop.final.fold.png"
     },
     {
-      "mission_id": "service-detail-template",
-      "route": "/service/drain-cleaning",
-      "viewport": "390x844",
-      "checkpoint": "production-final",
+      "mission_id": "service-detail-x",
+      "route": "/service/badrumsrenovering",
+      "viewport": "1440xfull",
+      "local_route": "http://localhost:3000/service/badrumsrenovering",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:10:12+02:00",
       "type": "local",
-      "path": ".visual-clone/reports/service-detail-drain/local.mobile.prod.png"
+      "path": ".visual-clone/reports/service-detail-x/local.desktop.final.full.png"
+    },
+    {
+      "mission_id": "service-detail-x",
+      "route": "/service/badrumsrenovering",
+      "viewport": "390x844",
+      "local_route": "http://localhost:3000/service/badrumsrenovering",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:10:13+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-x/local.mobile.final.fold.png"
+    },
+    {
+      "mission_id": "service-detail-x",
+      "route": "/service/badrumsrenovering",
+      "viewport": "390xfull",
+      "local_route": "http://localhost:3000/service/badrumsrenovering",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:10:13+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-x/local.mobile.final.full.png"
+    },
+    {
+      "mission_id": "service-detail-x",
+      "route": "/service/badrumsrenovering",
+      "viewport": "1440x900 hover",
+      "local_route": "http://localhost:3000/service/badrumsrenovering",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:10:01+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-x/local.desktop.cta-hover.final.png"
+    },
+    {
+      "mission_id": "service-detail-x",
+      "route": "/service/badrumsrenovering",
+      "viewport": "390x844 menu-open",
+      "local_route": "http://localhost:3000/service/badrumsrenovering",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:08:57+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-x/local.mobile.menu-open.final.png"
+    },
+    {
+      "mission_id": "service-detail-x",
+      "route": "/service/koksrenovering",
+      "viewport": "390x844 sample",
+      "local_route": "http://localhost:3000/service/koksrenovering",
+      "foundation_version": "foundation.service-detail.v2",
+      "worktree_or_branch": "main",
+      "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+      "timestamp": "2026-08-02T19:10:37+02:00",
+      "type": "local",
+      "path": ".visual-clone/reports/service-detail-x/local.mobile.sample-koksrenovering.png"
     }
   ]
 }

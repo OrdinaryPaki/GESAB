@@ -1,0 +1,35 @@
+{
+  "version": "foundation.services-index.v1",
+  "scope": "/service only",
+  "fonts": {
+    "display": "Outfit",
+    "body": "Inter",
+    "displayWeight": 600,
+    "bodyWeight": 400
+  },
+  "colors": {
+    "blue": "#1681ff",
+    "yellow": "#fdbc0d",
+    "black": "#030303",
+    "white": "#ffffff"
+  },
+  "desktop": {
+    "viewport": "1440x900",
+    "pageHeightDefault": 4475,
+    "pageHeightExpanded": 4755,
+    "contentWidth": 1200,
+    "title": "72px / 79.2px / 600 / -1.44px",
+    "card": "588x256.40625px",
+    "radius": 16
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "pageHeightDefault": 6992,
+    "pageHeightExpanded": 8439,
+    "contentWidth": 350,
+    "title": "40px / 44px / 600 / -0.8px",
+    "card": "350x458.453125px",
+    "radius": 16
+  },
+  "contentPolicy": "Preserve GESAB branding, Swedish copy, real routes and contact data while matching the reference geometry."
+}

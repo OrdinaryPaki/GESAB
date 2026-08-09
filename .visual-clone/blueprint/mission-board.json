@@ -1,40 +1,16 @@
 {
-  "mode": "sequential-main-worktree",
+  "version": "1.0",
+  "executionMode": "sequential-pseudo-worker",
   "missions": [
     {
-      "id": "homepage",
-      "type": "unique_page",
-      "status": "implemented",
-      "reference": "/",
-      "local": "/"
-    },
-    {
-      "id": "about-page",
-      "type": "unique_page",
-      "status": "implemented",
-      "reference": "/about",
-      "local": "/about"
-    },
-    {
-      "id": "service-index",
-      "type": "index_page",
-      "status": "implemented",
-      "reference": "/service",
-      "local": "/service"
-    },
-    {
-      "id": "contact-page",
-      "type": "unique_page",
-      "status": "implemented",
-      "reference": "/contact",
-      "local": "/contact"
-    },
-    {
-      "id": "service-detail-template",
-      "type": "template_family",
-      "status": "implemented",
-      "reference": "/service/leak-detection-repair",
-      "local": "/service/leak-detection-repair"
+      "id": "service-detail-x",
+      "type": "pseudo_worker",
+      "status": "ready_for_main_review",
+      "referenceRoute": "/service/leak-detection-repair",
+      "localRoute": "/service/badrumsrenovering",
+      "sampleQaRoute": "/service/koksrenovering",
+      "foundationVersion": "foundation.service-detail.v2",
+      "reportPath": ".visual-clone/reports/service-detail-x.report.xml"
     }
   ]
 }

@@ -168,7 +168,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
 
               <section className={`${styles.articleSection} ${styles.faqSection}`}>
                 <h2>Vanliga frågor</h2>
-                <FaqAccordion allowMultiple={false} items={detail.faq} />
+                <FaqAccordion items={detail.faq} />
               </section>
             </article>
           </div>

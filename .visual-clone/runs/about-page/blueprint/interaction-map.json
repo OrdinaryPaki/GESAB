@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "missions": [
+    {
+      "mission_id": "about-page",
+      "route": "/about",
+      "interactions": [
+        {"family": "mobile-menu", "requiredStates": ["closed", "open"], "severityIfMissing": "P0"},
+        {"family": "faq-accordion", "requiredStates": ["open", "closed"], "severityIfMissing": "P0"},
+        {"family": "testimonial-strip", "requiredStates": ["default", "horizontally-scrollable-mobile"], "severityIfMissing": "P1"},
+        {"family": "button-hover-focus", "requiredStates": ["default", "hover", "focus-visible"], "severityIfMissing": "P1"},
+        {"family": "scroll-reveal", "requiredStates": ["before-entry", "revealed"], "severityIfMissing": "P1"}
+      ]
+    }
+  ]
+}

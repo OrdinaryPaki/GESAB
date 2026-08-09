@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "missionId": "services-index",
+  "timestamp": "2026-08-02T19:19:17+02:00",
+  "screenshots": [
+    {"type": "reference", "viewport": "1440xfull", "state": "default", "path": ".visual-clone/reference/screenshots/service-index.desktop.full.png"},
+    {"type": "reference", "viewport": "390xfull", "state": "default", "path": ".visual-clone/reference/screenshots/service-index.mobile.full.png"},
+    {"type": "local", "viewport": "1440xfull", "state": "default", "path": ".visual-clone/reports/services/local.desktop.final.full.png"},
+    {"type": "local", "viewport": "390xfull", "state": "default", "path": ".visual-clone/reports/services/local.mobile.final.full.png"},
+    {"type": "local", "viewport": "1440xfull", "state": "expanded", "path": ".visual-clone/reports/services/local.desktop.final.expanded.full.png"},
+    {"type": "local", "viewport": "390xfull", "state": "expanded", "path": ".visual-clone/reports/services/local.mobile.final.expanded.full.png"},
+    {"type": "local", "viewport": "1440x900", "state": "card-hover", "path": ".visual-clone/reports/services/local.service-card.hover.desktop.png"},
+    {"type": "local", "viewport": "390x844", "state": "menu-open", "path": ".visual-clone/reports/services/local.mobile.menu-open.png"},
+    {"type": "local", "viewport": "1440x900", "state": "load-more-default", "path": ".visual-clone/reports/services/local.load-more.default.desktop.png"},
+    {"type": "local", "viewport": "1440x900", "state": "load-more-expanded", "path": ".visual-clone/reports/services/local.load-more.expanded.desktop.png"},
+    {"type": "local", "viewport": "390x844", "state": "load-more-default", "path": ".visual-clone/reports/services/local.load-more.default.mobile.png"},
+    {"type": "local", "viewport": "390x844", "state": "load-more-expanded", "path": ".visual-clone/reports/services/local.load-more.expanded.mobile.png"}
+  ]
+}

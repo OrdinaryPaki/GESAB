@@ -1,0 +1,60 @@
+<worker_report version="1.0">
+  <mission_id>about-page</mission_id>
+  <status>ready_for_main_review</status>
+  <foundation_version_used>foundation.about.v1</foundation_version_used>
+  <worktree>main</worktree>
+  <reference>
+    <url>https://plumbly.framer.website/about</url>
+    <desktop_screenshot>.visual-clone/reference/screenshots/about.desktop.full.png</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/reference/screenshots/about.mobile.full.png</mobile_screenshot>
+  </reference>
+  <local>
+    <route>/about</route>
+    <desktop_screenshot>.visual-clone/runs/about-page/reports/about-page/local.desktop.full.png</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/runs/about-page/reports/about-page/local.mobile.full.png</mobile_screenshot>
+  </local>
+  <changed_files>
+    <file>app/about/page.js</file>
+    <file>app/about/about-sections.js</file>
+    <file>app/about/about.module.css</file>
+    <file>app/about/reveal-controller.js</file>
+    <file>tests/about-page.test.mjs</file>
+  </changed_files>
+  <qa_summary>
+    <desktop_passes>4</desktop_passes>
+    <mobile_passes>4</mobile_passes>
+    <sections_checked>8</sections_checked>
+    <p0_unresolved>0</p0_unresolved>
+    <p1_unresolved>0</p1_unresolved>
+    <p2_remaining>2</p2_remaining>
+  </qa_summary>
+  <interaction_summary>
+    <interaction_families_checked>mobile-menu, faq-accordion, testimonial-strip, button-hover-focus, scroll-reveal</interaction_families_checked>
+    <state_screenshots>
+      <state component="mobile-menu" state="closed" viewport="local-mobile">.visual-clone/runs/about-page/reports/about-page/local.mobile.fold.png</state>
+      <state component="mobile-menu" state="open" viewport="local-mobile">.visual-clone/runs/about-page/reports/about-page/local.mobile-menu.open.png</state>
+      <state component="faq-accordion" state="open" viewport="local-mobile">.visual-clone/runs/about-page/reports/about-page/local.mobile.faq.open.png</state>
+      <state component="faq-accordion" state="closed" viewport="local-mobile">.visual-clone/runs/about-page/reports/about-page/local.mobile.faq.closed.png</state>
+      <state component="testimonial-strip" state="default" viewport="local-mobile">.visual-clone/runs/about-page/reports/about-page/local.mobile.testimonial.default.png</state>
+      <state component="testimonial-strip" state="horizontally-scrollable-mobile" viewport="local-mobile">.visual-clone/runs/about-page/reports/about-page/local.mobile.testimonial.scrolled.png</state>
+      <state component="button-hover-focus" state="default" viewport="local-desktop">.visual-clone/runs/about-page/reports/about-page/local.desktop.fold.png</state>
+      <state component="button-hover-focus" state="hover" viewport="local-desktop">.visual-clone/runs/about-page/reports/about-page/local.desktop.phone.hover.png</state>
+      <state component="button-hover-focus" state="focus-visible" viewport="local-desktop">.visual-clone/runs/about-page/reports/about-page/local.desktop.phone.focus.png</state>
+      <state component="scroll-reveal" state="before-entry" viewport="local-desktop">.visual-clone/runs/about-page/reports/about-page/local.desktop.process.diagnostic.png</state>
+      <state component="scroll-reveal" state="revealed" viewport="local-desktop">.visual-clone/runs/about-page/reports/about-page/local.desktop.process.safe.png</state>
+    </state_screenshots>
+    <p0_interaction_unresolved>0</p0_interaction_unresolved>
+    <p1_interaction_unresolved>0</p1_interaction_unresolved>
+    <p2_interaction_remaining>0</p2_interaction_remaining>
+  </interaction_summary>
+  <section_audit_ledger>.visual-clone/runs/about-page/reports/about-page/section-audit.md</section_audit_ledger>
+  <global_files_touched>false</global_files_touched>
+  <foundation_change_request_submitted>false</foundation_change_request_submitted>
+  <foundation_change_requests></foundation_change_requests>
+  <remaining_deviations>
+    <deviation>Swedish GESAB copy causes small line-break differences inside a few cards.</deviation>
+    <deviation>Reference-only Google and social provider marks are not fabricated without real GESAB URLs or provider data.</deviation>
+  </remaining_deviations>
+  <validator_result>validate-worker-report: pass</validator_result>
+  <ready>true</ready>
+</worker_report>

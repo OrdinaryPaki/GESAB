@@ -1,0 +1,72 @@
+<worker_report version="1.0">
+  <mission_id>contact-page</mission_id>
+  <status>ready_for_main_review</status>
+  <foundation_version_used>foundation.contact.v1</foundation_version_used>
+  <worktree>main</worktree>
+  <reference>
+    <url>https://plumbly.framer.website/contact</url>
+    <desktop_screenshot>.visual-clone/reference/screenshots/contact.current.desktop.revealed.full.png</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/reference/screenshots/contact.current.mobile.revealed.full.png</mobile_screenshot>
+  </reference>
+  <local>
+    <route>/contact</route>
+    <desktop_screenshot>.visual-clone/reports/contact/local.current.desktop.final.full.png</desktop_screenshot>
+    <mobile_screenshot>.visual-clone/reports/contact/local.current.mobile.final.full.png</mobile_screenshot>
+  </local>
+  <changed_files>
+    <file>app/contact/page.js</file>
+    <file>app/contact/contact-page.module.css</file>
+    <file>app/contact/contact-icons.js</file>
+    <file>app/components/HomeSections.js</file>
+    <file>app/components/FaqAccordion.js</file>
+    <file>public/fonts/outfit-600.woff2</file>
+    <file>public/fonts/inter-400.woff2</file>
+    <file>public/fonts/inter-500.woff2</file>
+    <file>public/fonts/inter-600.woff2</file>
+  </changed_files>
+  <qa_summary>
+    <desktop_passes>3</desktop_passes>
+    <mobile_passes>3</mobile_passes>
+    <sections_checked>8</sections_checked>
+    <p0_unresolved>0</p0_unresolved>
+    <p1_unresolved>0</p1_unresolved>
+    <p2_remaining>0</p2_remaining>
+  </qa_summary>
+  <interaction_summary>
+    <interaction_families_checked>mobile-navigation, main-form-focus, main-submit-hover, faq-single-open, map-lazy-load</interaction_families_checked>
+    <state_screenshots>
+      <state component="mobile-navigation" state="closed" viewport="reference-mobile">.visual-clone/reference/screenshots/contact.current.mobile.fold.png</state>
+      <state component="mobile-navigation" state="closed" viewport="local-mobile">.visual-clone/reports/contact/local.current.mobile.final.fold.png</state>
+      <state component="mobile-navigation" state="open" viewport="reference-mobile">.visual-clone/reference/screenshots/contact.current.mobile.menu-open.png</state>
+      <state component="mobile-navigation" state="open" viewport="local-mobile">.visual-clone/reports/contact/local.current.mobile.final.menu-open.png</state>
+      <state component="main-form-focus" state="default" viewport="reference-mobile">.visual-clone/reference/screenshots/contact.current.mobile.fold.png</state>
+      <state component="main-form-focus" state="default" viewport="local-mobile">.visual-clone/reports/contact/local.current.mobile.final.fold.png</state>
+      <state component="main-form-focus" state="focus" viewport="reference-mobile">.visual-clone/reference/screenshots/contact.current.mobile.input-focus.png</state>
+      <state component="main-form-focus" state="focus" viewport="local-mobile">.visual-clone/reports/contact/local.current.mobile.final.input-focus.png</state>
+      <state component="main-submit-hover" state="default" viewport="reference-desktop">.visual-clone/reference/screenshots/contact.current.desktop.button-default.png</state>
+      <state component="main-submit-hover" state="default" viewport="local-desktop">.visual-clone/reports/contact/local.current.desktop.final.fold.png</state>
+      <state component="main-submit-hover" state="hover" viewport="reference-desktop">.visual-clone/reference/screenshots/contact.current.desktop.button-hover.png</state>
+      <state component="main-submit-hover" state="hover" viewport="local-desktop">.visual-clone/reports/contact/local.current.desktop.final.button-hover.png</state>
+      <state component="faq-single-open" state="first-open" viewport="reference-mobile">.visual-clone/reference/screenshots/contact.current.mobile.faq-default.png</state>
+      <state component="faq-single-open" state="first-open" viewport="local-mobile">.visual-clone/reports/contact/local.current.mobile.final.full.png</state>
+      <state component="faq-single-open" state="second-open" viewport="reference-mobile">.visual-clone/reference/screenshots/contact.current.mobile.faq-second-open.png</state>
+      <state component="faq-single-open" state="second-open" viewport="local-mobile">.visual-clone/reports/contact/local.current.mobile.final.faq-second-open.png</state>
+      <state component="map-lazy-load" state="placeholder" viewport="reference-desktop">.visual-clone/reference/screenshots/contact.current.desktop.full.png</state>
+      <state component="map-lazy-load" state="placeholder" viewport="local-desktop">.visual-clone/reports/contact/local.current.desktop.final.full.png</state>
+      <state component="map-lazy-load" state="loaded" viewport="reference-desktop">.visual-clone/reference/screenshots/contact.current.desktop.section-03.png</state>
+      <state component="map-lazy-load" state="loaded" viewport="local-desktop">.visual-clone/reports/contact/local.current.desktop.final.map.png</state>
+    </state_screenshots>
+    <p0_interaction_unresolved>0</p0_interaction_unresolved>
+    <p1_interaction_unresolved>0</p1_interaction_unresolved>
+    <p2_interaction_remaining>0</p2_interaction_remaining>
+  </interaction_summary>
+  <section_audit_ledger>.visual-clone/runs/contact-page/reports/section-audit.md</section_audit_ledger>
+  <global_files_touched>true</global_files_touched>
+  <foundation_change_request_submitted>true</foundation_change_request_submitted>
+  <foundation_change_requests>
+    <foundation_change_request>Approved backward-compatible optional FAQ props in shared components; existing routes retain their previous defaults.</foundation_change_request>
+  </foundation_change_requests>
+  <remaining_deviations>none</remaining_deviations>
+  <validator_result>validate-worker-report and validate-run-completion: pass</validator_result>
+  <ready>true</ready>
+</worker_report>

@@ -1,21 +1,22 @@
 {
-  "version": "foundation.v1",
-  "lockedFiles": [
+  "version": "foundation.service-detail.v2",
+  "status": "locked",
+  "globalFiles": [
     "app/globals.css",
     "app/layout.js",
-    "app/components/PlumblyShell.js",
-    "app/components/PlumblyIcons.js",
-    "app/components/HomeSections.js",
-    "app/plumbly-data.js"
+    "app/components/GesabShell.js",
+    "app/components/CtaButton.js"
   ],
-  "workersMayNotSilentlyChange": [
-    "global CSS variables",
-    "font setup",
-    "Header",
-    "Footer",
-    "ContactBand",
-    "shared buttons/cards",
-    "shared section spacing"
+  "approvedRouteScopedFoundationChange": {
+    "file": "app/globals.css",
+    "scopeSelector": ".service-detail-page",
+    "reason": "The reusable detail family needs exact reference geometry without changing excluded routes."
+  },
+  "missionMayChange": [
+    "app/service/[slug]/page.js",
+    "app/gesab-data.js",
+    "app/globals.css under .service-detail-page selectors",
+    "tests/service-detail-structure.test.mjs"
   ],
-  "changeRequestProcess": "Sequential main-worktree run; any foundation mutation is reviewed directly in main before route QA."
+  "rule": "No unscoped detail-page visual behavior may be added after this lock."
 }

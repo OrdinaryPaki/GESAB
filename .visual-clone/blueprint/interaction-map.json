@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "interactions": [
+    {
+      "missionId": "service-detail-x",
+      "family": "mobile-navigation",
+      "states": ["closed", "open"],
+      "effect": "full-viewport menu below the 84px header with a close icon"
+    },
+    {
+      "missionId": "service-detail-x",
+      "family": "cta-hover",
+      "states": ["default", "hover"],
+      "effect": "blue fill rises over the black CTA"
+    },
+    {
+      "missionId": "service-detail-x",
+      "family": "form-focus",
+      "states": ["default", "focus"],
+      "effect": "name field accepts pointer focus without shifting layout"
+    }
+  ]
+}

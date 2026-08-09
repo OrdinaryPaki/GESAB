@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "executionMode": "sequential-pseudo-worker",
+  "missions": [
+    {
+      "id": "services-index",
+      "type": "pseudo_worker",
+      "status": "ready_for_main_review",
+      "referenceRoute": "/service",
+      "localRoute": "/service",
+      "foundationVersion": "foundation.services-index.v1",
+      "reportPath": ".visual-clone/runs/services-index/reports/services-index.report.xml"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "foundation.about.v1",
+  "scrollReveal": {
+    "duration": "520ms",
+    "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "translateY": "24px",
+    "opacity": "0 to 1",
+    "trigger": "viewport entry"
+  },
+  "mobileMenu": {"duration": "240ms", "easing": "ease-out", "behavior": "full-viewport overlay with close icon"},
+  "faq": {"duration": "260ms", "easing": "ease", "behavior": "content expansion and icon rotation"},
+  "hover": {"duration": "180ms", "easing": "ease-in"}
+}

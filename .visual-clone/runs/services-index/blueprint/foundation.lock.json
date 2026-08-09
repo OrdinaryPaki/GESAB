@@ -1,0 +1,16 @@
+{
+  "version": "foundation.services-index.v1",
+  "status": "locked",
+  "globalFiles": [
+    "app/globals.css",
+    "app/layout.js",
+    "app/components/GesabShell.js",
+    "app/components/CtaButton.js"
+  ],
+  "missionMayChange": [
+    "app/service/page.js",
+    "app/service/ServiceGrid.js",
+    "app/service/service-page.module.css"
+  ],
+  "rule": "All visual overrides must stay scoped to /service."
+}

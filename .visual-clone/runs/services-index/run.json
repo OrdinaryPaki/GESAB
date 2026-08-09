@@ -1,0 +1,19 @@
+{
+  "skill": "visual-site-cloner",
+  "missionId": "services-index",
+  "referenceUrl": "https://plumbly.framer.website/service",
+  "includedRoutes": ["/service"],
+  "excludedByUser": "All routes except Tjänster (/service).",
+  "mode": "sequential-pseudo-worker",
+  "reasonForSequentialMode": "The user explicitly requested no subagents.",
+  "createdAt": "2026-08-02T19:19:17+02:00",
+  "packageManager": "npm",
+  "localUrl": "http://localhost:3000/service",
+  "browserVerification": "Chrome Browser plugin, CDP measurements and screenshots at 1440x900 and 390x844",
+  "foundationVersion": "foundation.services-index.v1",
+  "git": {
+    "branch": "main",
+    "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+    "dirtyAtStart": true
+  }
+}

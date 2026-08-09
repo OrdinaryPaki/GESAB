@@ -1,20 +1,33 @@
 {
+  "version": "1.0",
   "families": [
     {
-      "id": "service_detail",
+      "id": "service-detail-x",
+      "type": "template_family",
       "canonicalReferenceRoute": "/service/leak-detection-repair",
-      "detectedInstances": [
-        "/service/leak-detection-repair",
-        "/service/drain-cleaning",
-        "/service/sewer-line-services",
-        "/service/faucet-fixture-repair"
+      "canonicalLocalRoute": "/service/badrumsrenovering",
+      "sampleQaRoute": "/service/koksrenovering",
+      "intendedComponent": "ServiceDetailPage",
+      "dataSource": "app/gesab-data.js services",
+      "instances": [
+        "/service/badrumsrenovering",
+        "/service/koksrenovering",
+        "/service/totalentreprenad",
+        "/service/rivningsarbeten",
+        "/service/bygg",
+        "/service/fasadrenovering",
+        "/service/snickeri",
+        "/service/malning",
+        "/service/montage"
       ],
       "evidence": [
-        "Primary services cards share the same detail route structure.",
-        "Differences are service title, body copy, image and active sidebar item."
-      ],
-      "localTemplate": "app/service/[slug]/page.js",
-      "dataSource": "app/plumbly-data.js"
+        "one reusable dynamic route",
+        "centered 988px desktop hero and 827px article",
+        "330px mobile hero and 350px mobile article",
+        "one supporting image distinct from the hero",
+        "one shared contact form",
+        "shared Header, ContactBand, and Footer"
+      ]
     }
   ]
 }

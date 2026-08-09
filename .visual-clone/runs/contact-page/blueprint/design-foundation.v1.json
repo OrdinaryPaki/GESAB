@@ -1,0 +1,52 @@
+{
+  "version": "foundation.contact.v1",
+  "scope": "/contact only",
+  "fonts": {
+    "display": "Outfit",
+    "body": "Inter",
+    "selfHosted": true,
+    "files": [
+      "public/fonts/outfit-600.woff2",
+      "public/fonts/inter-400.woff2",
+      "public/fonts/inter-500.woff2",
+      "public/fonts/inter-600.woff2"
+    ]
+  },
+  "colors": {
+    "blue": "#1681ff",
+    "yellow": "#fdbc0d",
+    "black": "#000000",
+    "muted": "#3b3b3b",
+    "soft": "#f5f7fa",
+    "white": "#ffffff"
+  },
+  "desktop": {
+    "viewport": "1440x900",
+    "pageHeight": 4414,
+    "headerHeight": 71.203125,
+    "contentWidth": 1200,
+    "heroWidth": 745,
+    "heroTitle": "72px / 79.2px / 600 / -1.44px",
+    "mainForm": "745x643.6px",
+    "contactCards": "3 x 332x280.4px",
+    "map": "1200x704.98px",
+    "appointmentForm": "539x582px",
+    "footerHeight": 555.171875,
+    "radius": 16
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "pageHeight": 5405,
+    "headerHeight": 84.984375,
+    "contentWidth": 350,
+    "heroTitle": "40px / 44px / 600 / -0.8px",
+    "mainForm": "350x679.95px",
+    "contactCards": "3 x 350x280.4px",
+    "map": "350x250px",
+    "faqList": "350x572.02px",
+    "appointmentForm": "350x531.6px",
+    "footerHeight": 994.171875,
+    "radius": 16
+  },
+  "contentPolicy": "Keep GESAB branding, Swedish contact copy, real contact details, service options, and address while matching the reference geometry and hierarchy."
+}

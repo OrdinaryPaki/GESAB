@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "routes": [
+    {
+      "missionId": "services-index",
+      "reference": "https://plumbly.framer.website/service",
+      "local": "/service",
+      "template": "service-index",
+      "included": true
+    }
+  ],
+  "excluded": ["/", "/about", "/contact", "/blog", "/service/[slug]"]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "foundation.services-index.v1",
+  "hover": {
+    "cardLift": "translateY(-2px)",
+    "cardShadow": "0 18px 42px rgba(0,0,0,0.12)",
+    "imageScale": 1.04,
+    "durationMs": 220
+  },
+  "mobileMenu": {
+    "viewport": "390x844",
+    "panel": "fixed below 85px header",
+    "closeIcon": "cross"
+  },
+  "reducedMotion": true
+}

@@ -1,0 +1,12 @@
+{
+  "families": [],
+  "uniquePages": [
+    {
+      "id": "about-page",
+      "canonicalReferenceRoute": "/about",
+      "localRoute": "/about",
+      "intendedComponent": "AboutPage",
+      "evidence": "The About route has a unique story collage and mission layout, then reuses shared process, team, testimonials, FAQ, contact and footer sections."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "foundation.about.v1",
+  "colors": {
+    "blue": "#1681ff",
+    "yellow": "#fdbc0d",
+    "black": "#030303",
+    "text": "#050505",
+    "muted": "#3b3b3b",
+    "line": "#e8e8e8",
+    "soft": "#f6f7f9"
+  },
+  "typography": {
+    "heading": "Outfit, weight 600",
+    "body": "Inter, weights 400 to 600",
+    "heroDesktop": "72px / 79.2px / 600 / -1.44px",
+    "heroMobile": "40px / 44px / 600 / -0.8px",
+    "sectionHeadingDesktop": "48px / 57.6px / 600 / -0.48px",
+    "sectionHeadingMobile": "30px / 36px / 600 / -0.3px",
+    "bodyDesktop": "16px / 27.2px / 400",
+    "heroBody": "18px / 30.6px / 400"
+  },
+  "layout": {
+    "desktopViewport": "1440x1000",
+    "mobileViewport": "390x844",
+    "desktopContainer": "1200px centered",
+    "mobileGutter": "20px",
+    "radius": "16px",
+    "desktopSectionHeights": {
+      "story": 873,
+      "mission": 1124,
+      "process": 825,
+      "team": 733,
+      "testimonials": 799,
+      "faq": 602,
+      "contact": 822,
+      "footer": 555
+    },
+    "mobileSectionHeights": {
+      "story": 1386,
+      "mission": 1753,
+      "process": 917,
+      "team": 1511,
+      "testimonials": 616,
+      "faq": 979,
+      "contact": 1031,
+      "footer": 994
+    }
+  },
+  "globalComponents": ["Header", "Footer", "ContactBand", "AppointmentForm", "FaqAccordion"],
+  "scopeRule": "All visual overrides for this mission must remain inside the About route wrapper."
+}

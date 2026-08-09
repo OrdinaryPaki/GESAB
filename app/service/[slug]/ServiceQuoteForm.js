@@ -1,5 +1,6 @@
 import { CtaButton } from "../../components/CtaButton";
-import { contactInfo, services } from "../../gesab-data";
+import { ServiceSelect } from "../../components/ServiceSelect";
+import { contactInfo, serviceSelectOptions } from "../../gesab-data";
 
 export function ServiceQuoteForm({ defaultServiceSlug, description, heading }) {
   return (
@@ -18,19 +19,7 @@ export function ServiceQuoteForm({ defaultServiceSlug, description, heading }) {
         Telefon
         <input type="tel" placeholder="0700 00 00 00" />
       </label>
-      <label>
-        Tjänst
-        <select defaultValue={defaultServiceSlug}>
-          <option value="" disabled>
-            Välj tjänst
-          </option>
-          {services.map((service) => (
-            <option key={service.slug} value={service.slug}>
-              {service.title}
-            </option>
-          ))}
-        </select>
-      </label>
+      <ServiceSelect defaultValue={defaultServiceSlug} options={serviceSelectOptions} />
       <CtaButton variant="yellow">Skicka förfrågan</CtaButton>
     </form>
   );

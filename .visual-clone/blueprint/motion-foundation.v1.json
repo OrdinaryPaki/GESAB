@@ -1,0 +1,23 @@
+{
+  "version": "foundation.service-detail.v2",
+  "ctaHover": {
+    "durationMs": 180,
+    "easing": "ease-in",
+    "from": "black with 0% blue fill",
+    "to": "black base with 100% blue fill"
+  },
+  "mobileMenu": {
+    "type": "native details disclosure with fixed full-viewport panel",
+    "openCloseDurationMs": 180,
+    "closedIcon": "two horizontal lines",
+    "openIcon": "X"
+  },
+  "reducedMotion": {
+    "supported": true,
+    "durationMs": 1
+  },
+  "scrollReveal": {
+    "required": false,
+    "reason": "No detail-route scroll reveal was necessary for the measured reference states."
+  }
+}

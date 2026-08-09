@@ -1,0 +1,38 @@
+{
+  "skill": "visual-site-cloner",
+  "referenceUrl": "https://plumbly.framer.website/about",
+  "includedRoutes": ["/about"],
+  "excludedByUser": "All routes except OM OSS",
+  "mode": "sequential-main-worktree",
+  "reasonForSequentialMode": "The user explicitly requested no subagents.",
+  "createdAt": "2026-08-02T20:15:00+02:00",
+  "packageManager": "npm",
+  "devCommand": "npm run dev",
+  "localUrl": "http://localhost:3000/about",
+  "browserVerification": "Browser plugin with CDP, 1440px desktop and 390px mobile screenshots",
+  "foundationVersion": "foundation.about.v1",
+  "git": {
+    "branch": "main",
+    "checkpoint": "f858c87f689d1d98db5709f5c7bf949ad0f426d3",
+    "dirtyAtStart": true,
+    "dirtyFilesAtStart": [
+      "app/about/page.js",
+      "app/about/team-section.js",
+      "app/components/HomeSections.js",
+      "app/components/PlumblyIcons.js (deleted)",
+      "app/components/PlumblyShell.js (deleted)",
+      "app/contact/page.js",
+      "app/globals.css",
+      "app/layout.js",
+      "app/page.js",
+      "app/plumbly-data.js (deleted)",
+      "app/service/[slug]/page.js",
+      "app/service/page.js",
+      "app/components/CtaButton.js (untracked)",
+      "app/components/FaqAccordion.js (untracked)",
+      "app/components/GesabIcons.js (untracked)",
+      "app/components/GesabShell.js (untracked)",
+      "app/gesab-data.js (untracked)"
+    ]
+  }
+}

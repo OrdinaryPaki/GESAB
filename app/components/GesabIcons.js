@@ -1,8 +1,7 @@
 export function Logo({ dark = false }) {
   return (
-    <span className="logo" aria-label="Plumbly">
-      <span className="logo-mark">⌁</span>
-      <span className={dark ? "logo-text dark" : "logo-text"}>Plumbly</span>
+    <span className="logo" aria-label="GESAB">
+      <span className={dark ? "logo-text dark" : "logo-text"}>GESAB</span>
     </span>
   );
 }
@@ -35,6 +34,14 @@ export function MailIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M4 6h16v12H4zm2.2 2 5.8 4.4L17.8 8zm11.8 8v-5.4l-6 4.5-6-4.5V16z" />
+    </svg>
+  );
+}
+
+export function StarIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m12 2.4 2.9 6 6.6.9-4.8 4.7 1.2 6.6-5.9-3.1-5.9 3.1 1.2-6.6-4.8-4.7 6.6-.9z" />
     </svg>
   );
 }

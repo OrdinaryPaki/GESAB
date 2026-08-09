@@ -1,0 +1,28 @@
+<visual_clone_mission version="1.0">
+  <mission_id>about-page</mission_id>
+  <worker_role>sequential_pseudo_worker</worker_role>
+  <goal>Make the local /about route closely match the reference About page on 1440px desktop and 390px mobile with no unresolved P0 or P1 deviations.</goal>
+  <global_objective>Reconstruct the reference layout and responsive behavior without changing other local routes.</global_objective>
+  <assigned_scope>
+    <type>unique_page</type>
+    <reference_url>https://plumbly.framer.website/about</reference_url>
+    <local_route>/about</local_route>
+  </assigned_scope>
+  <shared_context>
+    <route_map>.visual-clone/runs/about-page/blueprint/route-map.json</route_map>
+    <template_families>.visual-clone/runs/about-page/blueprint/template-families.json</template_families>
+    <foundation>.visual-clone/runs/about-page/blueprint/design-foundation.v1.json</foundation>
+    <foundation_lock>.visual-clone/runs/about-page/blueprint/foundation.lock.json</foundation_lock>
+    <interaction_map>.visual-clone/runs/about-page/blueprint/interaction-map.json</interaction_map>
+    <motion_foundation>.visual-clone/runs/about-page/blueprint/motion-foundation.v1.json</motion_foundation>
+  </shared_context>
+  <hard_rules>
+    <rule>Use Browser/CDP and screenshots for visual verification.</rule>
+    <rule>Do not create a second Header, Footer, ContactBand or FAQ implementation.</rule>
+    <rule>Keep visual overrides isolated to the About route.</rule>
+    <rule>Fix all P0 and P1 desktop and mobile deviations before reporting ready.</rule>
+  </hard_rules>
+  <goal_activation_tail>
+    Continue the build, browser screenshot, compare, and fix loop until the report has desktop and mobile evidence, no unresolved P0/P1 deviations, or a concrete blocker is documented.
+  </goal_activation_tail>
+</visual_clone_mission>

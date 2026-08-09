@@ -1,0 +1,32 @@
+{
+  "missionId": "services-index",
+  "status": "pass",
+  "viewports": {
+    "desktop": {
+      "referenceBodyHeight": 4474.890625,
+      "localBodyHeight": 4474.90625,
+      "referenceAnchors": {"trust": 1158.203125, "reviews": 1907.203125, "contact": 3097.71875, "footer": 3919.71875},
+      "localAnchors": {"trust": 1158.21875, "reviews": 1907.21875, "contact": 3097.734375, "footer": 3919.734375},
+      "largestAnchorDeltaPx": 0.015625
+    },
+    "mobile": {
+      "referenceBodyHeight": 6991.921875,
+      "localBodyHeight": 6991.90625,
+      "referenceAnchors": {"trust": 1887.140625, "reviews": 2669.953125, "contact": 4966.75, "footer": 5997.75},
+      "localAnchors": {"trust": 1887.140625, "reviews": 2669.953125, "contact": 4966.75, "footer": 5997.75},
+      "largestAnchorDeltaPx": 0
+    }
+  },
+  "sections": [
+    {"id": "index", "desktop": "pass", "mobile": "pass"},
+    {"id": "trust", "desktop": "pass", "mobile": "pass"},
+    {"id": "reviews", "desktop": "pass", "mobile": "pass"},
+    {"id": "contact", "desktop": "pass", "mobile": "pass"},
+    {"id": "footer", "desktop": "pass", "mobile": "pass"}
+  ],
+  "console": {
+    "runtimeExceptions": 0,
+    "applicationWarningsOrErrors": 0,
+    "excludedEnvironmentNoise": ["Chrome extension CSP injection", "pre-existing /favicon.ico 404"]
+  }
+}

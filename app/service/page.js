@@ -1,66 +1,126 @@
-import Link from "next/link";
-import { ContactBand, Footer, Header } from "../components/PlumblyShell";
-import { ArrowIcon, CheckIcon } from "../components/PlumblyIcons";
-import { services, testimonials } from "../plumbly-data";
+import { CtaLink } from "../components/CtaButton";
+import { ContactBand, Footer, Header } from "../components/GesabShell";
+import { StarIcon } from "../components/GesabIcons";
+import { image, services, team } from "../gesab-data";
+import { ServiceGrid } from "./ServiceGrid";
+import styles from "./service-page.module.css";
+
+export const metadata = {
+  title: "Tjänster för badrum, bygg och renovering i Göteborg",
+  description:
+    "Se GESABs tjänster inom badrumsrenovering, köksrenovering, totalentreprenad, rivning, bygg, fasadrenovering, snickeri, målning och montage.",
+};
+
+const serviceIndexCopy = {
+  badrumsrenovering: "Badrumsrenovering med planering, samordning och trygg arbetsgång från start till klart.",
+  koksrenovering: "Köksrenovering med planering för ytskikt, el, vatten, snickeri och montage.",
+  totalentreprenad: "En samlad kontakt för projekt där flera delar behöver planeras, utföras och följas upp.",
+  rivningsarbeten: "Kontrollerad rivning inför renovering, med fokus på säkerhet, underlag och nästa steg.",
+  bygg: "Byggarbeten för renovering, ombyggnad och anpassning av bostäder och lokaler.",
+  fasadrenovering: "Fasadrenovering med rätt metod, säkert utförande och långsiktigt skydd.",
+};
+
+const featuredServices = services.slice(0, 6).map((service) => ({
+  ...service,
+  body: serviceIndexCopy[service.slug] ?? service.body,
+}));
+
+const trustPoints = [
+  {
+    label: "Kostnadsfri genomgång",
+    icon: "https://framerusercontent.com/images/2GUlNnU3kug1y5fbSY3gbLjww8s.svg?width=22&height=22",
+    iconSize: 22,
+  },
+  {
+    label: "Samordnade hantverkare",
+    icon: "https://framerusercontent.com/images/vBdOazWIJGVMpXx9Zxdfuedktlc.svg?width=24&height=24",
+    iconSize: 24,
+  },
+  {
+    label: "Dokumentation och ROT",
+    icon: "https://framerusercontent.com/images/vFoBxfn1HM0xcgHElFf7EQ4WUM.svg?width=22&height=22",
+    iconSize: 22,
+  },
+];
 
 export default function ServicePage() {
   return (
-    <>
+    <div className={styles.servicePage}>
       <Header dark />
-      <section className="service-index-section">
-        <div className="container">
-          <div className="service-index-title">
-            <h1>Our Services</h1>
-            <p>We offer a full range of reliable plumbing solutions tailored to meet your residential and commercial needs.</p>
+      <main>
+        <section className={styles.indexSection}>
+          <div className={`container ${styles.indexContainer}`}>
+            <header className={styles.indexTitle}>
+            <h1>Tjänster</h1>
+              <p>Trygga tjänster för badrum, kök och renovering – anpassade efter ditt hem och dina behov.</p>
+            </header>
+            <ServiceGrid services={featuredServices} />
           </div>
-          <div className="services-grid white">
-            {services.map((service) => (
-              <Link href={`/service/${service.slug}`} key={service.slug} className="service-card">
-                <img src={service.image} alt="" />
-                <div>
-                  <h3>{service.title}</h3>
-                  <p>{service.body}</p>
-                  <span>Read More <ArrowIcon /></span>
-                </div>
-              </Link>
-            ))}
+        </section>
+        <section className={styles.trustSection}>
+          <div className={`container ${styles.trustGrid}`}>
+            <div className={styles.trustCopy}>
+              <h2>Samordnade tjänster du kan lita på</h2>
+              <div className={styles.trustCopyBottom}>
+                <p>Vi samordnar rådgivning, offert, arbetsordning och utförande så att projektet blir tydligt från start till överlämning.</p>
+                <CtaLink href="/about" variant="yellow" className={styles.trustCta}>Läs mer</CtaLink>
+              </div>
+            </div>
+            <div className={styles.trustMedia}>
+              <img src="https://framerusercontent.com/images/9R9tsiBykeVoZizc3GBOcvQMKs.jpg?scale-down-to=1024&width=2160&height=2196" alt="" />
+              <div className={styles.trustList}>
+                {trustPoints.map((item) => (
+                  <p key={item.label}>
+                    <span className={styles.trustIcon} aria-hidden="true">
+                      <img src={item.icon} width={item.iconSize} height={item.iconSize} alt="" />
+                    </span>
+                    <span>{item.label}</span>
+                  </p>
+                ))}
+              </div>
+            </div>
           </div>
-          <button className="load-more" type="button">Load More</button>
-        </div>
-      </section>
-      <section className="service-trust-section">
-        <div className="container service-trust-grid">
-          <div>
-            <h2>Complete Plumbing Services You Can Trust</h2>
-            <p>Our licensed plumbers handle every job with care, precision, and a commitment to quality</p>
-            <Link href="/service/leak-detection-repair" className="button dark">Read More</Link>
+        </section>
+        <section className={styles.reviewSection}>
+          <div className={`container ${styles.reviewContainer}`}>
+            <header className={styles.reviewHeader}>
+              <p className={styles.reviewEyebrow}>INFÖR OFFERT</p>
+              <h2>Frågor som avgör ett bra resultat</h2>
+              <div className={styles.reviewSummary} aria-label="Sex utvalda tjänsteområden">
+                <strong>6</strong>
+                <span className={styles.reviewSummaryIcons} aria-hidden="true">
+                  {Array.from({ length: 5 }, (_, index) => <StarIcon key={index} />)}
+                </span>
+                <span>(urval)</span>
+              </div>
+            </header>
+            <div className={styles.reviewGrid}>
+              {featuredServices.map((service, index) => (
+                <article className={styles.reviewCard} key={service.slug}>
+                  <div className={styles.reviewCardStars} aria-hidden="true">
+                    {Array.from({ length: 5 }, (_, starIndex) => <StarIcon key={starIndex} />)}
+                  </div>
+                  <div className={styles.reviewCardContent}>
+                    <p className={styles.reviewCardQuote}>{service.body}</p>
+                    <div className={styles.reviewCardFooter}>
+                      <div className={styles.reviewAuthor}>
+                        <img src={team[index % team.length].image} alt="" />
+                        <div className={styles.reviewAuthorName}>
+                          <strong>{service.title}</strong>
+                          <small>GESAB rådgivning</small>
+                        </div>
+                      </div>
+                      <img className={styles.reviewBadge} src={image.badges[0]} alt="" />
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-          <div className="trust-list">
-            {["24/7 Emergency Support", "Fast & Reliable Service", "Trusted Experts"].map((item) => (
-              <p key={item}><CheckIcon /> {item}</p>
-            ))}
-          </div>
-          <img src="https://framerusercontent.com/images/9R9tsiBykeVoZizc3GBOcvQMKs.jpg?scale-down-to=1024&width=2160&height=2196" alt="" />
-        </div>
-      </section>
-      <section className="service-review-section">
-        <div className="container">
-          <span>CUSTOMER REVIEWS</span>
-          <h2>Stories from Happy Clients</h2>
-          <div className="review-grid">
-            {testimonials.concat(testimonials, testimonials).slice(0, 6).map((item, index) => (
-              <article key={`${item.name}-${index}`}>
-                <div className="stars">★★★★★</div>
-                <p>{item.quote}</p>
-                <strong>{item.name}</strong>
-                <small>{index % 2 ? "New York, NY" : "San Diego Ca"}</small>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
       <ContactBand />
       <Footer />
-    </>
+    </div>
   );
 }

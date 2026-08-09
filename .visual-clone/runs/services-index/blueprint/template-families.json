@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "families": [
+    {
+      "id": "service-index",
+      "routes": ["/service"],
+      "sections": ["header", "service-grid", "trust", "review-advice", "contact", "footer"]
+    }
+  ]
+}
