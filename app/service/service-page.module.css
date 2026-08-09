@@ -8,10 +8,6 @@
   padding: 170px 0 132.046875px;
 }
 
-.servicePage :global(.footer) {
-  padding-bottom: 76.1875px;
-}
-
 .indexContainer {
   width: min(1200px, calc(100% - 48px));
 }
@@ -472,8 +468,7 @@
   .indexContainer,
   .trustGrid,
   .reviewContainer,
-  .servicePage :global(.contact-band .container),
-  .servicePage :global(.footer .container) {
+  .servicePage :global(.contact-band .container) {
     width: calc(100% - 40px);
   }
 
@@ -639,10 +634,6 @@
     min-height: 152.96875px;
   }
 
-  .servicePage :global(.footer) {
-    padding: 60px 0 30px;
-  }
-
   .servicePage :global(.contact-band) {
     min-height: 1031px;
     padding: 60px 20px;
@@ -705,53 +696,6 @@
     margin-top: 0;
   }
 
-  .servicePage :global(.footer-grid) {
-    display: grid;
-    height: 800.578125px;
-    grid-template-rows: 181.578125px 184.609375px 145.40625px 208.984375px;
-    gap: 32px 0;
-    padding-bottom: 0;
-  }
-
-  .servicePage :global(.footer-brand) {
-    height: 181.578125px;
-  }
-
-  .servicePage :global(.footer-brand p) {
-    max-width: 350px;
-    margin: 16px 0;
-  }
-
-  .servicePage :global(.footer-services) {
-    height: 184.609375px;
-    gap: 12px;
-  }
-
-  .servicePage :global(.footer-pages) {
-    height: 145.40625px;
-    gap: 2.203125px;
-  }
-
-  .servicePage :global(.badge-grid) {
-    width: 350px;
-    height: 208.984375px;
-    grid-template-columns: repeat(2, 84px);
-    grid-template-rows: 95.984375px 93px;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .servicePage :global(.badge-grid img) {
-    width: 66px;
-    height: 66px;
-  }
-
-  .servicePage :global(.footer .footer-bottom) {
-    width: 245px;
-    height: 71.59375px;
-    margin: 32px auto 0;
-    padding-top: 24px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

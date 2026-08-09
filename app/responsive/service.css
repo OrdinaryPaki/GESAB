@@ -62,7 +62,7 @@
   [class*="service-page-module"][class*="indexContainer"],
   [class*="service-page-module"][class*="trustGrid"],
   [class*="service-page-module"][class*="reviewContainer"],
-  [class*="service-page-module"] :where(.contact-band .container, .footer .container) {
+  [class*="service-page-module"] .contact-band .container {
     width: min(720px, calc(100% - 40px)) !important;
     max-width: 100%;
   }
@@ -153,11 +153,6 @@
     transform: none;
   }
 
-  [class*="service-page-module"] :where(.footer, .footer-grid) {
-    height: auto !important;
-    min-height: 0 !important;
-    grid-template-rows: none;
-  }
 }
 
 @media (min-width: 681px) and (max-width: 980px) {
@@ -183,13 +178,13 @@
   [class*="service-page-module"][class*="reviewContainer"],
   [class*="service-page-module"][class*="reviewHeader"],
   [class*="service-page-module"][class*="reviewGrid"],
-  [class*="service-page-module"] :where(.contact-band .container, .footer .container) {
+  [class*="service-page-module"] .contact-band .container {
     width: 100% !important;
     max-width: 100% !important;
   }
 
   [class*="service-page-module"][class*="serviceCard"],
-  [class*="service-page-module"] :where(.contact-band, .contact-band-inner, .contact-copy, .appointment-card, .footer, .footer-grid) {
+  [class*="service-page-module"] :where(.contact-band, .contact-band-inner, .contact-copy, .appointment-card) {
     height: auto !important;
     min-height: 0 !important;
   }

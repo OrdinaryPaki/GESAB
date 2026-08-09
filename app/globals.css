@@ -1534,6 +1534,7 @@ textarea {
   padding: 100px 0 76px;
   border-top: 0;
   background: white;
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 .footer-grid {
@@ -2432,8 +2433,7 @@ textarea {
   .contact-page-grid,
   .service-detail-layout,
   .detail-grid,
-  .contact-band-inner,
-  .footer-grid {
+  .contact-band-inner {
     grid-template-columns: 1fr;
     gap: 42px;
   }
@@ -2615,26 +2615,6 @@ textarea {
     gap: 42px;
   }
 
-  .footer-grid {
-    display: grid;
-  }
-
-  .footer-brand,
-  .footer-services,
-  .footer-pages {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .badge-grid {
-    grid-template-columns: repeat(4, 64px);
-  }
-
-  .badge-grid img {
-    width: 64px;
-    height: 64px;
-  }
-
   .inner-hero {
     min-height: 390px;
   }
@@ -2811,11 +2791,4 @@ textarea {
     min-height: 720px;
   }
 
-  .footer-grid {
-    padding-bottom: 54px;
-  }
-
-  .footer-services {
-    grid-template-columns: 1fr;
-  }
 }

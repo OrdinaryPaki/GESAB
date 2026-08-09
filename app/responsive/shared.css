@@ -45,21 +45,6 @@ body {
     width: 100%;
   }
 
-  :where(.home-page, #about-page, .service-detail-page) .footer-grid {
-    display: grid;
-    grid-template-columns: minmax(240px, 1.4fr) repeat(2, minmax(140px, 0.7fr));
-    gap: 48px 32px;
-  }
-
-  :where(.home-page, #about-page, .service-detail-page) :where(.footer-brand, .footer-list) {
-    width: auto;
-    margin-right: 0;
-  }
-
-  :where(.home-page, #about-page, .service-detail-page) .badge-grid {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
 }
 
 @media (min-width: 521px) and (max-width: 980px) {
@@ -95,15 +80,6 @@ body {
     margin-top: 0;
   }
 
-  :where(.home-page, #about-page, .service-detail-page) .footer {
-    height: auto;
-    min-height: 0;
-  }
-
-  :where(.home-page, #about-page, .service-detail-page) .footer-grid {
-    height: auto;
-    grid-template-rows: none;
-  }
 }
 
 @media (max-width: 389px) {
@@ -137,7 +113,7 @@ body {
       [class*="contact-page-module"],
       [class*="service-page-module"],
       [class*="blog-module"]
-    ) :where(.appointment-card, .faq-grid, .footer-grid, .footer-bottom) {
+    ) :where(.appointment-card, .faq-grid) {
     width: 100%;
     max-width: 100%;
   }
@@ -146,8 +122,4 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .badge-grid {
-    width: 100% !important;
-    grid-template-columns: repeat(2, minmax(64px, 86px)) !important;
-  }
 }

@@ -8,21 +8,6 @@
     width: 100%;
   }
 
-  [class*="contact-page-module"] .footer-grid {
-    display: grid;
-    grid-template-columns: minmax(240px, 1.4fr) repeat(2, minmax(140px, 0.7fr));
-    gap: 48px 32px;
-  }
-
-  [class*="contact-page-module"] :where(.footer-brand, .footer-list) {
-    width: auto;
-    margin-right: 0;
-  }
-
-  [class*="contact-page-module"] .badge-grid {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
 }
 
 @media (min-width: 521px) and (max-width: 980px) {
@@ -30,9 +15,7 @@
       .contact-hero-inner,
       .contact-info-section > .container,
       .faq-grid,
-      .contact-band-inner,
-      .footer > .container,
-      .footer-bottom
+      .contact-band-inner
     ) {
     width: min(720px, calc(100% - 40px)) !important;
     max-width: 100%;
@@ -78,10 +61,6 @@
     height: auto !important;
   }
 
-  [class*="contact-page-module"] :where(.footer, .footer-grid) {
-    height: auto !important;
-    min-height: 0 !important;
-  }
 }
 
 @media (max-width: 640px) {
@@ -102,16 +81,13 @@
       .contact-info-section > .container,
       .faq-grid,
       .contact-band-inner,
-      .appointment-card,
-      .footer > .container,
-      .footer-grid,
-      .footer-bottom
+      .appointment-card
     ) {
     width: 100% !important;
     max-width: 100% !important;
   }
 
-  [class*="contact-page-module"] :where(.footer, .footer-grid, .contact-band, .contact-band-inner) {
+  [class*="contact-page-module"] :where(.contact-band, .contact-band-inner) {
     height: auto !important;
     min-height: 0 !important;
   }

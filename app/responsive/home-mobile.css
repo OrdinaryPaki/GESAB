@@ -9,8 +9,7 @@
   .home-page .container,
   .home-page .hero-content,
   .home-page .faq-grid,
-  .home-page .contact-band-inner,
-  .home-page .footer .container {
+  .home-page .contact-band-inner {
     width: calc(100% - (var(--home-mobile-gutter) * 2));
     max-width: none;
   }
@@ -247,19 +246,4 @@
     padding: 32px 24px;
   }
 
-  .home-page .footer {
-    padding: var(--home-mobile-section-space) 0 48px;
-  }
-
-  .home-page .footer-grid {
-    gap: 40px;
-  }
-
-  .home-page .footer-brand p {
-    margin: 24px 0 32px;
-  }
-
-  .home-page .footer-bottom {
-    margin-top: 56px;
-  }
 }

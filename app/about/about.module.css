@@ -682,40 +682,4 @@
     height: 51px;
   }
 
-  .page :global(.footer) {
-    height: 994px;
-    padding: 64px 0 32px;
-  }
-
-  .page :global(.footer-grid) {
-    width: 350px;
-    gap: 24px;
-    padding-bottom: 0;
-  }
-
-  .page :global(.footer-brand p) {
-    margin: 20px 0 24px;
-  }
-
-  .page :global(.footer-list) {
-    gap: 10px;
-  }
-
-  .page :global(.badge-grid) {
-    width: 217px;
-    grid-template-columns: repeat(2, 86px);
-    gap: 12px 18px;
-    margin: 4px auto 0;
-  }
-
-  .page :global(.badge-grid img) {
-    width: 86px;
-    height: 86px;
-  }
-
-  .page :global(.footer-bottom) {
-    width: 350px;
-    margin-top: 28px;
-    padding-top: 24px;
-  }
 }

@@ -356,17 +356,6 @@
   line-height: 27.2px;
 }
 
-.page :global(.footer),
-.page :global(.footer a),
-.page :global(.footer p),
-.page :global(.footer span) {
-  font-family: "Contact Inter", Inter, sans-serif;
-}
-
-.page :global(.footer) {
-  min-height: 555.171875px;
-}
-
 @media (hover: hover) and (pointer: fine) {
   .page :global(.contact-main-form .cta-button:hover) {
     background-size: 100% 100%;
@@ -494,23 +483,4 @@
     line-height: 36.4px;
   }
 
-  .page :global(.footer > .container),
-  .page :global(.footer-bottom) {
-    width: min(350px, calc(100% - 40px));
-  }
-
-  .page :global(.footer) {
-    min-height: 994.171875px;
-    padding: 60px 0 30px;
-  }
-
-  .page :global(.footer-grid) {
-    gap: 14px;
-    padding-bottom: 0;
-  }
-
-  .page :global(.footer-bottom) {
-    margin-top: 50px;
-    padding-top: 30px;
-  }
 }
