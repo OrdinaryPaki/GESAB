@@ -86,14 +86,14 @@ test("every service detail explains who it suits and how to prepare", async () =
       `${slug} must identify its relevant customer groups`,
     );
     audienceLabels.push(audienceLabel);
-    assert.match(html, /Tjänsten passar för/, `${slug} must explain suitable project types`);
+    assert.match(html, /När passar tjänsten\?/, `${slug} must explain suitable project types`);
     assert.ok(
       suitableForItems.length >= 3,
       `${slug} must include at least three concrete project types`,
     );
     assert.match(
       html,
-      /Bra att ha inför första genomgången/,
+      /Inför första genomgången/,
       `${slug} must help the customer prepare for the first conversation`,
     );
     assert.ok(
@@ -106,6 +106,31 @@ test("every service detail explains who it suits and how to prepare", async () =
     new Set(audienceLabels).size,
     serviceSlugs.length,
     "each service must describe its own relevant customer groups",
+  );
+});
+
+test("the service article introduces the work before guidance and moves supporting imagery up", async () => {
+  const html = await fetchServicePage("badrumsrenovering");
+  const introPosition = html.indexOf("data-service-introduction");
+  const supportingImagePosition = html.indexOf("data-service-supporting-image");
+  const suitableForPosition = html.indexOf("data-service-fit-section");
+  const detailPosition = html.indexOf("data-service-detail-section");
+  const preparationPosition = html.indexOf("data-service-preparation-section");
+  const processPosition = html.indexOf("data-service-process-section");
+
+  assert.ok(introPosition >= 0, "the article must start with its service-specific introduction");
+  assert.ok(
+    supportingImagePosition > introPosition,
+    "the supporting image must follow the introduction",
+  );
+  assert.ok(
+    suitableForPosition > supportingImagePosition,
+    "project guidance must follow the early supporting image",
+  );
+  assert.ok(detailPosition > suitableForPosition, "detailed service copy must follow project guidance");
+  assert.ok(
+    preparationPosition > detailPosition && preparationPosition < processPosition,
+    "preparation guidance must sit naturally before the work process",
   );
 });
 

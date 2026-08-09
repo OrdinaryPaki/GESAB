@@ -84,48 +84,37 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
             <article className={styles.article}>
               <p className={styles.lead}>{service.body}</p>
 
-              <section className={styles.fitOverview} aria-label={`När ${service.title.toLowerCase()} passar och vad du kan förbereda`}>
-                <div className={styles.fitColumn}>
-                  <h2>Tjänsten passar för</h2>
-                  <ul className={styles.fitList}>
-                    {detail.suitableFor.map(([title, body], index) => (
-                      <li data-service-fit={index + 1} key={title}>
-                        <h3>{title}</h3>
-                        <p>{body}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className={styles.preparationColumn}>
-                  <h2>Bra att ha inför första genomgången</h2>
-                  <ul className={styles.preparationList}>
-                    {detail.preparation.map((item, index) => (
-                      <li data-service-preparation={index + 1} key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </section>
-
-              <section className={styles.articleSection}>
+              <section className={styles.articleSection} data-service-introduction>
                 <h2>{service.detail.introTitle}</h2>
                 <p>{service.detail.intro}</p>
+                <img
+                  alt={`${service.title} – planerat och fackmässigt arbete`}
+                  className={styles.supportingImage}
+                  data-service-supporting-image
+                  decoding="async"
+                  height="494"
+                  loading="lazy"
+                  src={detail.supportingImage}
+                  width="827"
+                />
               </section>
 
-              {service.detail.sections.map(([title, body], index) => (
-                <section className={styles.articleSection} key={title}>
+              <section className={styles.articleSection} data-service-fit-section>
+                <h2>När passar tjänsten?</h2>
+                <ul className={styles.guidanceList}>
+                  {detail.suitableFor.map(([title, body], index) => (
+                    <li data-service-fit={index + 1} key={title}>
+                      <h3>{title}</h3>
+                      <p>{body}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              {service.detail.sections.map(([title, body]) => (
+                <section className={styles.articleSection} data-service-detail-section key={title}>
                   <h2>{title}</h2>
                   <p>{body}</p>
-                  {index === 1 ? (
-                    <img
-                      alt={`${service.title} – planerat och fackmässigt arbete`}
-                      className={styles.supportingImage}
-                      decoding="async"
-                      height="494"
-                      loading="lazy"
-                      src={detail.supportingImage}
-                      width="827"
-                    />
-                  ) : null}
                 </section>
               ))}
 
@@ -137,7 +126,17 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 </ul>
               </section>
 
-              <section className={styles.articleSection}>
+              <section className={styles.articleSection} data-service-preparation-section>
+                <h2>Inför första genomgången</h2>
+                <p>Det räcker med ett enkelt underlag. Det här hjälper oss att förstå projektet och ge dig rätt nästa steg:</p>
+                <ul className={styles.preparationList}>
+                  {detail.preparation.map((item, index) => (
+                    <li data-service-preparation={index + 1} key={item}>{item}</li>
+                  ))}
+                </ul>
+              </section>
+
+              <section className={styles.articleSection} data-service-process-section>
                 <h2>Så arbetar vi</h2>
                 <p>En tydlig ordning minskar väntetid, missförstånd och kostsamma omtag.</p>
                 <ol className={styles.processList}>
