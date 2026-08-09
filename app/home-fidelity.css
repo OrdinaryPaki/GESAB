@@ -50,14 +50,6 @@
     color: black;
   }
 
-  .home-page .service-card:hover {
-    transform: none;
-    box-shadow: none;
-  }
-
-  .home-page .service-card:hover img {
-    transform: none;
-  }
 }
 
 .home-page .trusted {

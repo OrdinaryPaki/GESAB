@@ -803,12 +803,17 @@ textarea {
 .service-card:hover,
 .service-card:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 28px rgba(5, 5, 5, 0.08);
 }
 
 .service-card:hover img,
 .service-card:focus-visible img {
-  transform: scale(1.06);
+  transform: scale(1.015);
+}
+
+.service-card:hover svg,
+.service-card:focus-visible svg {
+  transform: translateX(3px);
 }
 
 .service-card:focus-visible {
@@ -846,9 +851,21 @@ textarea {
   color: var(--blue);
 }
 
+.service-card svg,
+.still svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.service-card svg {
+  transition: transform 180ms ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .service-card,
-  .service-card img {
+  .service-card img,
+  .service-card svg {
     transition: none;
   }
 
@@ -861,13 +878,11 @@ textarea {
   .service-card:focus-visible img {
     transform: none;
   }
-}
 
-.service-card svg,
-.still svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
+  .service-card:hover svg,
+  .service-card:focus-visible svg {
+    transform: none;
+  }
 }
 
 .about-row {
