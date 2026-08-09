@@ -27,7 +27,6 @@
 
 @media (min-width: 521px) and (max-width: 980px) {
   [class*="contact-page-module"] :where(
-      .header-inner,
       .contact-hero-inner,
       .contact-info-section > .container,
       .faq-grid,

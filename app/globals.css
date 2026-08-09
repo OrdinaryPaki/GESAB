@@ -187,6 +187,7 @@ textarea {
   z-index: 20;
   height: 95px;
   color: white;
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 .site-header.dark {
@@ -195,16 +196,17 @@ textarea {
 
 .header-inner {
   display: flex;
+  width: min(1200px, calc(100% - 48px));
+  max-width: 1200px;
   align-items: center;
   height: 95px;
   gap: 44px;
 }
 
-.hero-header .header-inner {
-  width: calc(100% - 40px);
-  max-width: none;
-  height: auto;
-  padding: 20px 0;
+@media (min-width: 981px) and (max-width: 1248px) {
+  .header-inner {
+    gap: clamp(20px, 3vw, 44px);
+  }
 }
 
 .logo-link {
@@ -231,8 +233,9 @@ textarea {
 
 .logo-text {
   color: white;
+  font-family: Outfit, Inter, sans-serif;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -251,7 +254,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 36px;
-  margin-left: 18px;
+  margin-left: 80px;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -285,11 +288,6 @@ textarea {
   height: 2px;
   border-radius: 99px;
   background: currentColor;
-}
-
-.hero-header .mobile-menu-button {
-  width: 45px;
-  height: 45px;
 }
 
 .mobile-menu-panel {
@@ -335,14 +333,12 @@ textarea {
 }
 
 .phone-button {
-  display: inline-flex;
-  align-items: center;
+  --cta-bg: var(--black);
+  --cta-hover-bg: var(--blue);
+  --cta-color: white;
+  --cta-hover-color: white;
   gap: 12px;
-  min-height: 47px;
   margin-left: auto;
-  padding: 10px 24px;
-  border-radius: 16px;
-  font-weight: 700;
 }
 
 .phone-button svg,
@@ -400,11 +396,24 @@ textarea {
   --cta-hover-color: white;
 }
 
+.cta-button.phone-button {
+  min-width: 264px;
+  min-height: 47px;
+  height: 47px;
+  background-color: var(--black);
+  font-weight: 600;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .cta-button:hover {
     background-size: 100% 100%;
     color: var(--cta-hover-color);
     box-shadow: none;
+  }
+
+  .phone-button:hover {
+    background-size: 100% 0%;
+    color: var(--cta-color);
   }
 }
 
@@ -2362,97 +2371,7 @@ textarea {
     width: min(720px, calc(100% - 40px));
   }
 
-  .site-header {
-    height: auto;
-  }
-
-  .header-inner {
-    height: auto;
-    gap: 16px;
-    padding: 18px 0;
-  }
-
-  .service-detail-page .header-inner {
-    width: calc(100% - 40px);
-    padding: 20px 0;
-  }
-
-  .logo-text {
-    font-size: 26px;
-  }
-
   .nav-links {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: block;
-    margin-left: auto;
-  }
-
-  .mobile-menu-button {
-    display: grid;
-    width: 48px;
-    height: 48px;
-  }
-
-  .service-detail-page .mobile-menu-button {
-    position: relative;
-    width: 44px;
-    height: 44px;
-    transition: background-color 180ms ease-in-out, color 180ms ease-in-out;
-  }
-
-  .service-detail-page .site-header.dark .mobile-menu-button {
-    background: var(--blue);
-    color: white;
-  }
-
-  .service-detail-page .mobile-menu[open] .mobile-menu-button span:first-child {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  .service-detail-page .mobile-menu[open] .mobile-menu-button span:last-child {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  .service-detail-page .mobile-menu-button span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: transform 180ms ease-in-out;
-  }
-
-  .service-detail-page .mobile-menu-button span:first-child {
-    transform: translate(-50%, calc(-50% - 5px));
-  }
-
-  .service-detail-page .mobile-menu-button span:last-child {
-    transform: translate(-50%, calc(-50% + 5px));
-  }
-
-  .service-detail-page .mobile-menu-panel {
-    position: fixed;
-    inset: 84px 0 auto;
-    width: 100%;
-    min-width: 0;
-    min-height: calc(100dvh - 84px);
-    gap: 0;
-    align-content: start;
-    border-top: 1px solid var(--blue);
-    border-radius: 0;
-    padding: 16px 20px 24px;
-    box-shadow: none;
-  }
-
-  .service-detail-page .mobile-menu-panel a {
-    min-height: 44px;
-    border-radius: 0;
-    padding: 10px 0;
-    font-weight: 400;
-  }
-
-  .service-detail-page .mobile-menu-panel .mobile-phone-link {
     display: none;
   }
 

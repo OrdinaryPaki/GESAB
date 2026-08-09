@@ -36,16 +36,6 @@ body {
 }
 
 @media (min-width: 981px) and (max-width: 1248px) {
-  :where(.home-page, #about-page, .service-detail-page) .header-inner {
-    width: calc(100% - 48px);
-    max-width: 1200px;
-    gap: clamp(20px, 3vw, 44px);
-  }
-
-  :where(.home-page, #about-page, .service-detail-page) .nav-links {
-    margin-left: clamp(12px, 3vw, 48px);
-  }
-
   :where(.home-page, #about-page, .service-detail-page) .contact-band-inner {
     grid-template-columns: minmax(0, 1fr) minmax(400px, 46%);
     gap: clamp(40px, 5vw, 72px);
@@ -73,7 +63,7 @@ body {
 }
 
 @media (min-width: 521px) and (max-width: 980px) {
-  :where(.home-page, #about-page, .service-detail-page) :where(.container, .header-inner) {
+  :where(.home-page, #about-page, .service-detail-page) .container {
     width: min(720px, calc(100% - 40px));
     max-width: 100%;
   }
@@ -124,7 +114,7 @@ body {
       [class*="contact-page-module"],
       [class*="service-page-module"],
       [class*="blog-module"]
-    ) :where(.container, .header-inner) {
+    ) .container {
     width: calc(100% - 32px) !important;
     max-width: 100% !important;
   }
@@ -150,12 +140,6 @@ body {
     ) :where(.appointment-card, .faq-grid, .footer-grid, .footer-bottom) {
     width: 100%;
     max-width: 100%;
-  }
-
-  .mobile-menu-panel {
-    width: 100vw !important;
-    max-width: none !important;
-    min-height: calc(100dvh - 85px) !important;
   }
 
   .contact-methods {

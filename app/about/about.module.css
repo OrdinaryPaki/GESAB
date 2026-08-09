@@ -3,52 +3,6 @@
   overflow: clip;
 }
 
-.page :global(.header-inner) {
-  width: calc(100% - 120px);
-  max-width: none;
-  gap: 0;
-}
-
-.page :global(.logo) {
-  gap: 8px;
-}
-
-.page :global(.logo-text) {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.page :global(.nav-links) {
-  margin-left: 64px;
-}
-
-.page :global(.phone-button) {
-  --cta-bg: var(--black);
-  --cta-hover-bg: var(--blue);
-  --cta-color: white;
-  --cta-hover-color: white;
-  border-radius: 16px;
-  background-color: var(--black);
-  background-image: linear-gradient(var(--blue), var(--blue));
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 0%;
-  color: white;
-  font-weight: 600;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .page :global(.phone-button):hover {
-    background-size: 100% 100%;
-    color: var(--cta-hover-color);
-  }
-}
-
-.page :global(.phone-button):focus-visible {
-  background-size: 100% 100%;
-  color: var(--cta-hover-color);
-}
-
 .storySection {
   height: 873px;
   padding: 160px 0 0;
@@ -339,75 +293,6 @@
 }
 
 @media (max-width: 980px) {
-  .page :global(.header-inner) {
-    width: calc(100% - 40px);
-    height: 85px;
-    padding: 20px 0;
-  }
-
-  .page :global(.mobile-menu-button) {
-    width: 44px;
-    height: 44px;
-    background: var(--blue);
-    color: white;
-  }
-
-  .page :global(.mobile-menu[open]) {
-    position: fixed;
-    z-index: 100;
-    inset: 0;
-    display: block;
-    margin: 0;
-    background: white;
-  }
-
-  .page :global(.mobile-menu[open] .mobile-menu-button) {
-    position: fixed;
-    z-index: 2;
-    top: 20px;
-    right: 20px;
-  }
-
-  .page :global(.mobile-menu[open] .mobile-menu-button span) {
-    position: absolute;
-    top: 21px;
-    left: 13px;
-  }
-
-  .page :global(.mobile-menu[open] .mobile-menu-button span:first-child) {
-    transform: rotate(45deg);
-  }
-
-  .page :global(.mobile-menu[open] .mobile-menu-button span:last-child) {
-    transform: rotate(-45deg);
-  }
-
-  .page :global(.mobile-menu-panel) {
-    position: fixed;
-    inset: 85px 0 0;
-    display: grid;
-    min-width: 0;
-    align-content: start;
-    gap: 0;
-    overflow-y: auto;
-    border-top: 1px solid var(--blue);
-    border-radius: 0;
-    padding: 12px 20px 40px;
-    box-shadow: none;
-  }
-
-  .page :global(.mobile-menu-panel a) {
-    border-radius: 0;
-    padding: 11px 0;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27.2px;
-  }
-
-  .page :global(.mobile-menu-panel .mobile-phone-link) {
-    display: none;
-  }
-
   .storySection,
   .missionSection,
   .page :global(.process-section),
@@ -434,10 +319,6 @@
 }
 
 @media (max-width: 520px) {
-  .page :global(.logo-text) {
-    font-size: 30px;
-  }
-
   .storySection {
     height: 1386px;
     padding: 120px 0 0;

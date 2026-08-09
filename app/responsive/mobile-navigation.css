@@ -1,5 +1,4 @@
-/* One mobile-navigation design for every route. This file is imported last so
-   legacy page-level header rules cannot create a different menu per page. */
+/* HOME is the single source of truth for navigation on every route. */
 @media (max-width: 980px) {
   body.mobile-navigation-open {
     overflow: hidden;
@@ -148,6 +147,9 @@
   }
 
   .site-header .mobile-menu .mobile-menu-panel {
+    width: 100vw;
+    max-width: none;
+    min-height: calc(100dvh - 85px);
     padding-right: 16px;
     padding-left: 16px;
   }

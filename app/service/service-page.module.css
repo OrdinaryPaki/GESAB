@@ -464,135 +464,7 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .servicePage :global(.site-header .header-inner) {
-    width: calc(100% - 120px);
-    max-width: none;
-  }
-
-  .servicePage :global(.site-header .logo-link) {
-    display: flex;
-    width: 160px;
-  }
-
-  .servicePage :global(.site-header .nav-links) {
-    display: grid;
-    grid-template-columns: 68px 45px 66px 60px;
-    gap: 36px;
-  }
-
-  .servicePage :global(.site-header .nav-links a) {
-    white-space: nowrap;
-  }
-
-  .servicePage :global(.site-header .phone-button) {
-    width: 264.40625px;
-    min-width: 264.40625px;
-    height: 47.203125px;
-    min-height: 47.203125px;
-    border-radius: 16px;
-    background: black;
-    color: white;
-    padding: 10px 22px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 27.2px;
-  }
-}
-
 @media (max-width: 980px) {
-  .servicePage :global(.site-header) {
-    position: fixed;
-    height: 85px;
-    background: white;
-    color: black;
-  }
-
-  .servicePage :global(.site-header .header-inner) {
-    width: calc(100% - 40px);
-    height: 85px;
-    padding: 20px 0;
-  }
-
-  .servicePage :global(.site-header .logo-text) {
-    color: black;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 45px;
-  }
-
-  .servicePage :global(.mobile-menu-button) {
-    width: 45px;
-    height: 45px;
-    border-radius: 8px;
-    background: var(--blue);
-    color: white;
-  }
-
-  .servicePage :global(.mobile-menu-button span) {
-    transition: transform 180ms ease;
-  }
-
-  .servicePage :global(.mobile-menu[open]) {
-    position: fixed;
-    inset: 0;
-    z-index: 40;
-    display: block;
-    margin: 0;
-    background: white;
-  }
-
-  .servicePage :global(.site-header:has(.mobile-menu[open]) .logo-link) {
-    visibility: hidden;
-  }
-
-  .servicePage :global(.mobile-menu[open] .mobile-menu-button) {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 42;
-  }
-
-  .servicePage :global(.mobile-menu[open] .mobile-menu-button span:first-child) {
-    transform: translateY(4.5px) rotate(45deg);
-  }
-
-  .servicePage :global(.mobile-menu[open] .mobile-menu-button span:last-child) {
-    transform: translateY(-4.5px) rotate(-45deg);
-  }
-
-  .servicePage :global(.mobile-menu-panel) {
-    position: fixed;
-    inset: 85px 0 0;
-    z-index: 41;
-    display: grid;
-    min-width: 0;
-    align-content: start;
-    gap: 0;
-    overflow-y: auto;
-    border-top: 1px solid var(--blue);
-    border-radius: 0;
-    background: white;
-    padding: 8px 20px 24px;
-    box-shadow: none;
-  }
-
-  .servicePage :global(.mobile-menu-panel a) {
-    min-height: 43px;
-    border-radius: 0;
-    padding: 8px 0;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27.2px;
-  }
-
-  .servicePage :global(.mobile-menu-panel .mobile-phone-link) {
-    min-height: 47px;
-    margin-top: 8px;
-    border-radius: 16px;
-    padding: 10px 14px;
-  }
-
   .indexSection {
     padding: 130px 0 60.0625px;
   }
@@ -884,8 +756,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .serviceCard,
-  .serviceCard > img,
-  .servicePage :global(.mobile-menu-button span) {
+  .serviceCard > img {
     transition: none;
   }
 }
