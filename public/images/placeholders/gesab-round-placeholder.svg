@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title description">
+  <title id="title">Bild kommer</title>
+  <desc id="description">Tillfällig rund platshållare för en kommande GESAB-bild.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#dce4ed" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="#f3f6f9"/>
+  <rect width="400" height="400" fill="url(#grid)" opacity="0.72"/>
+  <circle cx="200" cy="200" r="104" fill="#ffffff" stroke="#d7e1eb" stroke-width="4"/>
+  <path d="M145 247v-94c0-15 12-27 27-27h56c15 0 27 12 27 27v94H145Z" fill="#1681ff"/>
+  <circle cx="225" cy="160" r="16" fill="#fdbc0d"/>
+  <path d="m161 229 31-37 24 27 17-19 22 29h-94Z" fill="#ffffff"/>
+</svg>

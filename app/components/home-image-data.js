@@ -1,3 +1,5 @@
+import { placeholderImages } from "./placeholder-images";
+
 const homeImageDimensions = { width: 1440, height: 960 };
 
 export const homeImages = {
@@ -25,13 +27,13 @@ export const homeImages = {
       ...homeImageDimensions,
     },
     totalentreprenad: {
-      src: "/images/home/service-total-project.webp",
-      alt: "Två hantverkare mäter en innervägg under renovering",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
     rivningsarbeten: {
-      src: "/images/home/service-demolition.webp",
-      alt: "Kakel tas varsamt bort under kontrollerad rivning",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
   },
@@ -52,18 +54,18 @@ export const homeImages = {
       ...homeImageDimensions,
     },
     {
-      src: "/images/home/gallery-shower-detail.webp",
-      alt: "Färdig duschnisch med jämna fogar och kakelavslut",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
     {
-      src: "/images/home/gallery-carpentry-result.webp",
-      alt: "Färdig platsbyggd hallförvaring med bänk",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
     {
-      src: "/images/home/gallery-tiling-progress.webp",
-      alt: "Kakel monteras och kontrolleras med vattenpass",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
   ],

@@ -1,4 +1,4 @@
-import { gallery } from "../gesab-data";
+import { placeholderImages } from "../components/placeholder-images";
 import styles from "./about.module.css";
 
 const missionCards = [
@@ -28,14 +28,11 @@ export function AboutStorySection() {
           <p>Från badrumsrenovering till bygg och entreprenad – GESAB samordnar yrkesrollerna och håller ihop projektet.</p>
         </div>
         <div className={styles.storyCollage}>
-          <img className={styles.storyPrimaryImage} src={gallery[0]} alt="" />
-          <img className={styles.storySecondaryImage} src={gallery[1]} alt="" />
-          <img className={styles.storySecondaryImage} src={gallery[2]} alt="" />
+          <img className={styles.storyPrimaryImage} src={placeholderImages.content} alt="" />
+          <img className={styles.storySecondaryImage} src={placeholderImages.content} alt="" />
+          <img className={styles.storySecondaryImage} src={placeholderImages.content} alt="" />
           <article className={styles.quoteCard}>
-            <img
-              src="https://framerusercontent.com/images/HCfKCgyvxfEFHbm0ViUBM4r7css.jpg?scale-down-to=512&width=788&height=768"
-              alt=""
-            />
+            <img src={placeholderImages.round} alt="" />
             <div>
               <blockquote>“Vårt mål är enkelt – tydlig planering, pålitlig service och ett fackmässigt resultat du kan känna dig trygg med.”</blockquote>
               <strong>GESAB</strong>
@@ -61,7 +58,7 @@ export function AboutMissionSection() {
         </div>
         <img
           className={styles.missionImage}
-          src="https://framerusercontent.com/images/K6GgsUDd5GcllgsX9N0Xah7Y.jpg?scale-down-to=2048&width=4800&height=2396"
+          src={placeholderImages.content}
           alt=""
         />
         <div className={`mission-card-row ${styles.missionCards}`}>

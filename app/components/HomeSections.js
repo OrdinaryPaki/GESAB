@@ -251,7 +251,7 @@ function GallerySection() {
         <SectionTitle label="Galleri" title="Renoveringar och byggarbeten i urval" center />
         <div className="gallery-grid">
           {homeImages.gallery.map((photo, index) => (
-            <img key={photo.src} className={index < 2 ? "wide" : ""} {...photo} loading="lazy" decoding="async" />
+            <img key={`${photo.src}-${index}`} className={index < 2 ? "wide" : ""} {...photo} loading="lazy" decoding="async" />
           ))}
         </div>
       </div>

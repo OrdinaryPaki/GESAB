@@ -3,6 +3,7 @@ import { contactInfo, image, serviceSelectOptions, services } from "../gesab-dat
 import { CtaAnchor, CtaButton } from "./CtaButton";
 import { Logo, MailIcon, PhoneIcon } from "./GesabIcons";
 import { ServiceSelect } from "./ServiceSelect";
+import { placeholderImages } from "./placeholder-images";
 
 const navItems = [
   ["Hem", "/"],
@@ -11,7 +12,7 @@ const navItems = [
   ["Kontakt", "/contact"],
 ];
 
-const footerBadges = [image.badges[0], image.chooseOne, image.chooseTwo, image.aboutPlumber];
+const footerBadges = Array.from({ length: 4 }, () => placeholderImages.round);
 
 export function Header({ dark = false, hero = false }) {
   const className = [dark ? "site-header dark" : "site-header", hero ? "hero-header" : ""].filter(Boolean).join(" ");
