@@ -5,13 +5,13 @@ const homeImageDimensions = { width: 1440, height: 960 };
 export const homeImages = {
   why: [
     {
-      src: "/images/home/why-waterproofing.webp",
-      alt: "Tätskikt appliceras i ett badrum under renovering",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
     {
-      src: "/images/home/why-site-measurement.webp",
-      alt: "Mått tas på en vägg inför badrumsrenovering",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
   ],
