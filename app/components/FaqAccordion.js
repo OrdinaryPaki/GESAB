@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 
 import {
   getInitialOpenFaqIndex,
@@ -8,6 +8,7 @@ import {
 } from "./faq-accordion-state.mjs";
 
 export function FaqAccordion({ items }) {
+  const baseId = useId();
   const [openItemIndex, setOpenItemIndex] = useState(getInitialOpenFaqIndex);
 
   function toggleItem(index) {
@@ -18,7 +19,7 @@ export function FaqAccordion({ items }) {
     <div className="faq-list">
       {items.map((item, index) => {
         const isOpen = openItemIndex === index;
-        const panelId = `faq-panel-${index}`;
+        const panelId = `${baseId}-panel-${index}`;
 
         return (
           <div className={isOpen ? "faq-item open" : "faq-item"} key={item.question}>
@@ -29,7 +30,8 @@ export function FaqAccordion({ items }) {
               onClick={() => toggleItem(index)}
               type="button"
             >
-              {item.question}
+              <span className="faq-question-text">{item.question}</span>
+              <span aria-hidden="true" className="faq-toggle" />
             </button>
             <div aria-hidden={!isOpen} className="faq-panel" id={panelId}>
               <div className="faq-panel-inner">

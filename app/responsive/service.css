@@ -44,10 +44,6 @@
     height: auto;
   }
 
-  [class*="service-page-module"][class*="reviewGrid"] {
-    grid-auto-rows: auto;
-  }
-
   [class*="service-page-module"] .contact-band-inner {
     grid-template-columns: minmax(0, 1fr) minmax(400px, 46%);
     gap: clamp(40px, 5vw, 72px);
@@ -77,8 +73,7 @@
   [class*="service-page-module"][class*="trustCopyBottom"],
   [class*="service-page-module"][class*="trustMedia"],
   [class*="service-page-module"][class*="trustMedia"] > img,
-  [class*="service-page-module"][class*="reviewHeader"],
-  [class*="service-page-module"][class*="reviewGrid"] {
+  [class*="service-page-module"][class*="reviewHeader"] {
     width: 100% !important;
     max-width: 100%;
   }
@@ -125,12 +120,6 @@
     aspect-ratio: 16 / 10;
   }
 
-  [class*="service-page-module"][class*="reviewGrid"] {
-    min-height: 0;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-  }
-
   [class*="service-page-module"][class*="reviewCard"] {
     min-height: 0;
   }
@@ -156,8 +145,7 @@
 }
 
 @media (min-width: 681px) and (max-width: 980px) {
-  [class*="service-page-module"][class*="serviceGrid"],
-  [class*="service-page-module"][class*="reviewGrid"] {
+  [class*="service-page-module"][class*="serviceGrid"] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -177,7 +165,6 @@
   [class*="service-page-module"][class*="trustMedia"] > img,
   [class*="service-page-module"][class*="reviewContainer"],
   [class*="service-page-module"][class*="reviewHeader"],
-  [class*="service-page-module"][class*="reviewGrid"],
   [class*="service-page-module"] .contact-band .container {
     width: 100% !important;
     max-width: 100% !important;

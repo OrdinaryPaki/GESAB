@@ -1,10 +1,13 @@
 import Link from "next/link";
-import { faqItems, image, processSteps, services, team, testimonials } from "../gesab-data";
+import { image, processSteps, services, team, testimonials } from "../gesab-data";
 import { CtaLink } from "./CtaButton";
-import { FaqAccordion } from "./FaqAccordion";
+import { FaqSection } from "./FaqSection";
+import { FaqSectionAlternative } from "./FaqSectionAlternative";
 import { ArrowIcon, CheckIcon, StarIcon } from "./GesabIcons";
 import { Footer, Header, ContactBand } from "./GesabShell";
 import { homeImages } from "./home-image-data";
+
+export { FaqSection };
 
 const servicePreviewCopy = {
   badrumsrenovering: "Planering, tätskikt, VVS och plattsättning i rätt ordning.",
@@ -40,7 +43,7 @@ export function HomePage() {
       <AboutPreview />
       <TrustNotes />
       <GallerySection />
-      <FaqSection />
+      <FaqSectionAlternative />
       <ContactBand />
       <Footer />
     </>
@@ -259,22 +262,3 @@ function GallerySection() {
   );
 }
 
-export function FaqSection({ items = faqItems }) {
-  return (
-    <section className="faq-section">
-      <div className="container faq-grid">
-        <div>
-          <SectionTitle label="FAQ" title="Vanliga frågor inför renovering" />
-          <div className="still">
-            <h3>Vill du stämma av ditt projekt?</h3>
-            <p>Beskriv projektet, så återkommer vi med nästa steg inför offert.</p>
-            <Link href="/contact">
-              Kontakta oss <ArrowIcon />
-            </Link>
-          </div>
-        </div>
-        <FaqAccordion items={items} />
-      </div>
-    </section>
-  );
-}

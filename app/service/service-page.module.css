@@ -256,14 +256,13 @@
 }
 
 .reviewSection {
-  height: 1190.515625px;
+  height: auto;
   padding: 120px 0 100px;
 }
 
 .reviewContainer {
   display: flex;
   width: min(1200px, calc(100% - 48px));
-  height: 970.515625px;
   flex-direction: column;
   align-items: center;
 }
@@ -272,7 +271,6 @@
   display: flex;
   width: 1200px;
   max-width: 100%;
-  height: 149.390625px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -331,22 +329,82 @@
   line-height: 34px;
 }
 
-.reviewGrid {
-  display: grid;
-  width: 1200px;
-  max-width: 100%;
-  min-height: 765.125px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
-  gap: 24px;
-  align-content: start;
-  align-items: start;
+.marqueeContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.marqueeRow {
+  display: flex;
+  width: max-content;
+}
+
+.marqueeContentRight {
+  display: flex;
+  animation: scrollRight 40s linear infinite;
+}
+
+.marqueeContentLeft {
+  display: flex;
+  animation: scrollLeft 40s linear infinite;
+}
+
+.marqueeContentRight:hover,
+.marqueeContentLeft:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marqueeFadeLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  background: linear-gradient(to right, white, transparent);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.marqueeFadeRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  background: linear-gradient(to left, white, transparent);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .reviewCard {
   position: relative;
   display: flex;
+  width: 384px;
+  margin-right: 24px;
+  flex-shrink: 0;
   min-height: 339.96875px;
   flex-direction: column;
   gap: 16px;
@@ -591,17 +649,17 @@
   }
 
   .reviewSection {
-    height: 2296.796875px;
+    height: auto;
     padding: 60px 0;
   }
 
   .reviewContainer {
-    height: 2176.796875px;
+    height: auto;
   }
 
   .reviewHeader {
     width: 350px;
-    height: 163.796875px;
+    height: auto;
   }
 
   .reviewHeader h2 {
@@ -611,17 +669,8 @@
     line-height: 36px;
   }
 
-  .reviewGrid {
-    width: 350px;
-    min-height: 1981px;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    gap: 24px;
-    align-content: start;
-    margin-top: 32px;
-  }
-
   .reviewCard {
+    width: 300px;
     min-height: 299.96875px;
     padding: 16px;
   }

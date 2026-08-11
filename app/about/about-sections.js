@@ -1,19 +1,44 @@
 import { placeholderImages } from "../components/placeholder-images";
+import { ProcessCarousel } from "./process-carousel";
 import styles from "./about.module.css";
 
-const missionCards = [
+function CheckIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ArrowUpIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ScopeIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" />
+    </svg>
+  );
+}
+
+const missionPrinciples = [
   {
-    icon: "✓",
+    Icon: CheckIcon,
     title: "Fackmässigt utförande",
     body: "Rätt material och metod i varje steg, utfört med omsorg om nästa moment.",
   },
   {
-    icon: "↗",
+    Icon: ArrowUpIcon,
     title: "Säker arbetsplats",
     body: "Planerat skydd, god ordning och rätt behörighet för uppgiften.",
   },
   {
-    icon: "□",
+    Icon: ScopeIcon,
     title: "Tydlig omfattning",
     body: "Du vet vad som ingår, vilka moment som krävs och vad som påverkar tiden.",
   },
@@ -45,30 +70,59 @@ export function AboutStorySection() {
   );
 }
 
+export function AboutProcessSection() {
+  return (
+    <section className={`process-section ${styles.aboutProcessSection}`}>
+      <div className={`container ${styles.aboutProcessGrid}`}>
+        <div className="section-title center">
+          <span>Vår arbetsprocess</span>
+          <h2>Vägen till ett färdigt resultat</h2>
+        </div>
+        <ProcessCarousel />
+      </div>
+    </section>
+  );
+}
+
 export function AboutMissionSection() {
   return (
-    <section className={`mission-section ${styles.missionSection}`}>
+    <section className={styles.missionSection}>
       <div className={`container ${styles.missionInner}`}>
-        <div className={styles.missionCopy}>
-          <h2>Tryggt arbete med ansvar och ordning</h2>
-          <div className={styles.missionBody}>
-            <p>GESAB skapar trygga renoveringar där kunden vet vad som ska göras, varför det görs och vilka yrkesroller som behövs. I våtrum är ordning, dokumentation och rätt arbetsmetod avgörande.</p>
-            <p>Vi tar arbetsmiljö och miljöansvar på allvar, med säkrare arbetsplatser, sorterat avfall och omsorg om materialen.</p>
+        <header className={styles.missionIntro}>
+          <span className={styles.missionEyebrow}>Vårt ansvar</span>
+          <div className={styles.missionCopy}>
+            <h2>Tryggt arbete med ansvar och ordning</h2>
+            <div className={styles.missionBody}>
+              <p>
+                GESAB skapar trygga renoveringar där kunden vet vad som ska göras, varför det görs och vilka
+                yrkesroller som behövs. I våtrum är ordning, dokumentation och rätt arbetsmetod avgörande.
+              </p>
+              <p>
+                Vi tar arbetsmiljö och miljöansvar på allvar, med säkrare arbetsplatser, sorterat avfall och
+                omsorg om materialen.
+              </p>
+            </div>
           </div>
-        </div>
-        <img
-          className={styles.missionImage}
-          src={placeholderImages.content}
-          alt=""
-        />
-        <div className={`mission-card-row ${styles.missionCards}`}>
-          {missionCards.map((card) => (
-            <article key={card.title}>
-              <span aria-hidden="true">{card.icon}</span>
-              <h3>{card.title}</h3>
-              <p>{card.body}</p>
-            </article>
-          ))}
+        </header>
+
+        <div className={styles.missionStage}>
+          <figure className={styles.missionImage}>
+            <img src={placeholderImages.content} alt="" loading="lazy" decoding="async" />
+          </figure>
+
+          <div className={styles.missionPrinciples}>
+            {missionPrinciples.map(({ Icon, title, body }) => (
+              <article key={title} className={styles.missionPrinciple}>
+                <span aria-hidden="true" className={styles.missionPrincipleIcon}>
+                  <Icon />
+                </span>
+                <div className={styles.missionPrincipleCopy}>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

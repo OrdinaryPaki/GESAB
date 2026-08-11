@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./faq-alt.css";
 import "./responsive.css";
 import "./responsive/mobile-pages-shared.css";
 import "./responsive/about-mobile.css";

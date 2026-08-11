@@ -224,16 +224,28 @@ export const team = [
 
 export const testimonials = [
   {
-    name: "Offert med tydlig omfattning",
-    place: "Inför projektstart",
+    name: "Anna & Mikael",
+    place: "Göteborg",
     quote:
-      "Vi går igenom vad som ska göras, vilka yrkesroller som behövs och vad som kan påverka pris och tidplan innan du tar beslut.",
+      "GESAB hjälpte oss att totalrenovera vårt badrum. Otroligt professionella från första mötet till sista detaljen. Tydlig kommunikation och hantverkare som höll vad de lovade.",
   },
   {
-    name: "Fackmässigt utförande",
-    place: "Under arbetet",
+    name: "Lars G.",
+    place: "Mölndal",
     quote:
-      "Badrum och andra renoveringar hanteras med rätt ordning, godkända metoder och dokumentation av utfört arbete och material.",
+      "Vi anlitade GESAB för att bygga om köket. Uppskattade verkligen att de samordnade alla hantverkare så att vi fick en smidig resa. Mycket tryggt och väl utfört arbete!",
+  },
+  {
+    name: "Katarina S.",
+    place: "Torslanda",
+    quote:
+      "Mycket seriöst företag. De höll både budget och tidsplan när vi renoverade tvättstugan. Väl utfört arbete och de lämnade alltid rent och snyggt efter sig.",
+  },
+  {
+    name: "Familjen Johansson",
+    place: "Hisingen",
+    quote:
+      "Vi valde GESAB för vår totalentreprenad. De tog ansvar för hela processen och slutresultatet blev över förväntan. Rekommenderas starkt om man vill ha en trygg renovering.",
   },
 ];
 

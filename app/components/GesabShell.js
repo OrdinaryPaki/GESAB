@@ -8,6 +8,7 @@ const navItems = [
   ["Hem", "/"],
   ["Om oss", "/about"],
   ["Tjänster", "/service"],
+  ["Blogg", "/blog"],
   ["Kontakt", "/contact"],
 ];
 
@@ -19,9 +20,11 @@ export function Header({ dark = false, hero = false }) {
   return (
     <header className={className}>
       <div className="container header-inner">
-        <Link href="/" className="logo-link">
-          <Logo dark={dark} />
-        </Link>
+        <div className="header-left">
+          <Link href="/" className="logo-link">
+            <Logo dark={true} />
+          </Link>
+        </div>
         <nav className="nav-links" aria-label="Primary navigation">
           {navItems.map(([label, href]) => (
             <Link key={href} href={href}>
@@ -29,27 +32,29 @@ export function Header({ dark = false, hero = false }) {
             </Link>
           ))}
         </nav>
-        <details className="mobile-menu">
-          <summary className="mobile-menu-button" aria-label="Öppna meny">
-            <span />
-            <span />
-          </summary>
-          <div className="mobile-menu-panel">
-            {navItems.map(([label, href]) => (
-              <Link key={href} href={href}>
-                {label}
-              </Link>
-            ))}
-            <CtaAnchor className="mobile-phone-link" href={contactInfo.phonePrimaryHref}>
-              <PhoneIcon />
-              <span>Ring: {contactInfo.phonePrimary}</span>
-            </CtaAnchor>
-          </div>
-        </details>
-        <CtaAnchor className="phone-button" href={contactInfo.phonePrimaryHref}>
-          <PhoneIcon />
-          <span>Ring: {contactInfo.phonePrimary}</span>
-        </CtaAnchor>
+        <div className="header-right">
+          <details className="mobile-menu">
+            <summary className="mobile-menu-button" aria-label="Öppna meny">
+              <span />
+              <span />
+            </summary>
+            <div className="mobile-menu-panel">
+              {navItems.map(([label, href]) => (
+                <Link key={href} href={href}>
+                  {label}
+                </Link>
+              ))}
+              <CtaAnchor className="mobile-phone-link" href={contactInfo.phonePrimaryHref}>
+                <PhoneIcon />
+                <span>Ring: {contactInfo.phonePrimary}</span>
+              </CtaAnchor>
+            </div>
+          </details>
+          <CtaAnchor className="phone-button" href={contactInfo.phonePrimaryHref}>
+            <PhoneIcon />
+            <span>Ring: {contactInfo.phonePrimary}</span>
+          </CtaAnchor>
+        </div>
       </div>
     </header>
   );
@@ -86,13 +91,23 @@ export function Footer() {
           <Link href="/service">Tjänster</Link>
           <Link href="/contact">Kontakt</Link>
         </div>
+        <div className="footer-list footer-contact">
+          <span>Kontakt</span>
+          <a href={contactInfo.phonePrimaryHref}>{contactInfo.phonePrimary}</a>
+          <a href={contactInfo.emailHref}>{contactInfo.email}</a>
+          <p>{contactInfo.addressLine}</p>
+        </div>
+      </div>
+      <div className="container footer-bottom">
+        <div className="footer-bottom-left">
+          Copyright © {new Date().getFullYear()} GESAB. Alla rättigheter förbehålls.
+        </div>
         <div className="badge-grid" aria-label="GESAB bilder">
           {footerBadges.map((src, index) => (
             <img key={`${src}-${index}`} src={src} alt="" />
           ))}
         </div>
       </div>
-      <div className="container footer-bottom">Copyright © GESAB. Alla rättigheter förbehålls.</div>
     </footer>
   );
 }

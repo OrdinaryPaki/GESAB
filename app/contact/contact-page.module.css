@@ -230,9 +230,7 @@
 }
 
 .page :global(.faq-grid) {
-  width: min(1200px, calc(100% - 40px));
-  max-width: none;
-  grid-template-columns: 370px 560px;
+  grid-template-columns: minmax(0, 370px) minmax(0, 560px);
 }
 
 .page :global(.faq-section .section-title span) {
@@ -259,8 +257,7 @@
   padding: 18px 22px;
 }
 
-.page :global(.faq-question)::after {
-  content: "";
+.page :global(.faq-toggle) {
   width: 9px;
   height: 9px;
   border-right: 1.5px solid currentColor;
@@ -270,29 +267,32 @@
   transform: rotate(225deg);
 }
 
-.page :global(.faq-item.open .faq-question)::after {
-  content: "";
+.page :global(.faq-toggle)::before {
+  content: none;
+}
+
+.page :global(.faq-item.open .faq-toggle) {
   background: transparent;
   color: #000;
   transform: rotate(45deg);
 }
 
 .page :global(.faq-panel p),
-.page :global(.still p) {
+.page :global(.faq-cta p) {
   font-family: "Contact Inter", Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
 }
 
-.page :global(.still h3) {
+.page :global(.faq-cta h3) {
   font-family: "Contact Inter", Inter, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 30.6px;
 }
 
-.page :global(.still a) {
+.page :global(.faq-cta a) {
   font-family: "Contact Inter", Inter, sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -437,12 +437,12 @@
     gap: 40px;
   }
 
-  .page :global(.still) {
+  .page :global(.faq-cta) {
     height: 142.796875px;
     margin-top: 24px;
   }
 
-  .page :global(.still a) {
+  .page :global(.faq-cta a) {
     margin-top: 24px;
   }
 

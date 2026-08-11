@@ -182,10 +182,11 @@ textarea {
 }
 
 .site-header {
-  position: absolute;
-  inset: 0 0 auto;
-  z-index: 20;
-  height: 95px;
+  position: fixed;
+  inset: 24px 0 auto;
+  z-index: 99;
+  height: auto;
+  width: 100%;
   color: white;
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
@@ -199,18 +200,46 @@ textarea {
   width: min(1200px, calc(100% - 48px));
   max-width: 1200px;
   align-items: center;
-  height: 95px;
-  gap: 44px;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 24px;
+  margin: 0 auto;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  color: var(--text);
 }
 
-@media (min-width: 981px) and (max-width: 1248px) {
-  .header-inner {
-    gap: clamp(20px, 3vw, 44px);
-  }
+.site-header.dark .header-inner {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
+}
+
+.header-left, .header-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+
+.header-right {
+  justify-content: flex-end;
 }
 
 .logo-link {
   flex: 0 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.02);
 }
 
 .logo {
@@ -253,10 +282,37 @@ textarea {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
-  margin-left: 80px;
-  font-size: 16px;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 1.7;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.2s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .mobile-menu {
@@ -338,7 +394,7 @@ textarea {
   --cta-color: white;
   --cta-hover-color: white;
   gap: 12px;
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .phone-button svg,
@@ -567,7 +623,7 @@ textarea {
 .support-item p,
 .why-copy p,
 .about-row p,
-.still p,
+.faq-cta p,
 .contact-page-section p,
 .detail-main p {
   margin: 0;
@@ -852,7 +908,7 @@ textarea {
 }
 
 .service-card svg,
-.still svg {
+.faq-cta svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
@@ -894,7 +950,7 @@ textarea {
 }
 
 .about-section {
-  padding: 115px 0 66px;
+  padding: 115px 0 160px;
 }
 
 .about-section .about-grid {
@@ -987,7 +1043,7 @@ textarea {
 
 .about-section .stat-grid {
   gap: 0;
-  margin-top: 88px;
+  margin-top: 180px;
 }
 
 .about-section .stat-grid > div {
@@ -1125,6 +1181,7 @@ textarea {
 }
 
 .testimonial-card p {
+  flex-grow: 1;
   min-height: 122px;
   margin: 0;
   font-size: 18px;
@@ -1257,31 +1314,33 @@ textarea {
 }
 
 .faq-grid {
-  width: 1360px;
-  max-width: calc(100% - 32px);
-  grid-template-columns: 370px 560px;
+  grid-template-columns: minmax(0, 370px) minmax(0, 560px);
   justify-content: space-between;
   gap: 0;
   align-items: start;
+}
+
+.faq-intro {
+  max-width: 370px;
 }
 
 .faq-section .section-title h2 {
   max-width: 370px;
 }
 
-.still {
+.faq-cta {
   max-width: 370px;
   margin-top: 110px;
 }
 
-.still h3 {
+.faq-cta h3 {
   margin: 0 0 10px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
 }
 
-.still a {
+.faq-cta a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -1300,7 +1359,7 @@ textarea {
   overflow: hidden;
   border: 0;
   border-radius: 16px;
-  background: white;
+  background: transparent;
   padding: 18px 22px;
   transition: background-color 220ms ease;
 }
@@ -1323,29 +1382,41 @@ textarea {
   font-weight: 600;
   line-height: 1.7;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
-.faq-question::after {
-  content: "+";
+.faq-question-text {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.faq-toggle {
   display: grid;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   flex: 0 0 auto;
   place-items: center;
   border-radius: 999px;
   background: var(--yellow);
   color: black;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1;
   transition: transform 220ms ease, background-color 220ms ease, color 220ms ease;
 }
 
-.faq-item.open .faq-question::after {
-  content: "-";
+.faq-toggle::before {
+  content: "+";
+}
+
+.faq-item.open .faq-toggle {
   background: var(--blue);
   color: white;
   transform: rotate(180deg);
+}
+
+.faq-item.open .faq-toggle::before {
+  content: "−";
 }
 
 .faq-question:focus-visible {
@@ -1379,7 +1450,7 @@ textarea {
 
 @media (prefers-reduced-motion: reduce) {
   .faq-item,
-  .faq-question::after,
+  .faq-toggle,
   .faq-panel {
     transition-duration: 1ms;
   }
@@ -1546,113 +1617,116 @@ textarea {
 }
 
 .footer {
-  padding: 100px 0 76px;
-  border-top: 0;
-  background: white;
+  padding: 100px 0 40px;
+  border-top: 4px solid var(--blue);
+  background: var(--soft);
+  color: var(--text);
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 .footer-grid {
   display: flex;
   align-items: start;
-  padding-bottom: 0;
-  border-bottom: 0;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--line);
 }
 
 .footer-brand {
-  width: 277px;
-  margin-right: 179px;
+  width: 320px;
 }
 
 .footer-brand p {
-  max-width: 277px;
-  margin: 24px 0 48px;
+  margin: 24px 0 32px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
 .socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
 }
 
 .socials a {
   display: inline-flex;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
+  background: var(--blue);
+  color: white;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.socials a:hover,
+.socials a:focus-visible {
   background: var(--yellow);
-  color: var(--text);
-  padding: 8px;
+  color: black;
+  transform: translateY(-3px);
 }
 
 .socials svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
 .footer-list {
   display: grid;
-  width: 200px;
   align-content: start;
   gap: 16px;
 }
 
-.footer-services {
-  margin-right: 83.6px;
-}
-
-.footer-pages {
-  margin-right: 43.4px;
-}
-
 .footer-list span {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: var(--text);
-  font-size: 14px;
-  font-weight: 400;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 1.7;
 }
 
-.footer-list a {
+.footer-list a,
+.footer-list p {
   color: var(--text);
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
+  transition: color 200ms ease, transform 200ms ease;
+  margin: 0;
 }
 
-.footer-services {
-  grid-template-columns: 1fr;
-}
-
-.footer-services span {
-  grid-column: auto;
+.footer-list a:hover,
+.footer-list a:focus-visible {
+  color: var(--blue);
+  transform: translateX(4px);
 }
 
 .badge-grid {
-  display: grid;
-  width: 217px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 13px 18px;
+  display: flex;
+  gap: 16px;
   align-items: center;
 }
 
 .badge-grid img {
-  width: 68px;
-  height: 68px;
-  justify-self: center;
-  border-radius: 999px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
   object-fit: cover;
+  transition: transform 200ms ease;
+}
+
+.badge-grid img:hover {
+  transform: scale(1.05);
 }
 
 .footer-bottom {
-  margin-top: 81px;
-  padding-top: 30px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.7;
@@ -2175,9 +2249,9 @@ textarea {
 }
 
 .mission-section h2 {
-  max-width: 780px;
-  margin: 0 auto 24px;
-  text-align: center;
+  max-width: none;
+  margin: 0;
+  text-align: left;
   font-family: Outfit, Inter, sans-serif;
   font-size: 48px;
   line-height: 1.2;
@@ -2320,30 +2394,6 @@ textarea {
   width: 26px;
   height: 26px;
   fill: currentColor;
-}
-
-.footer-contact {
-  display: grid;
-  align-content: start;
-  gap: 10px;
-}
-
-.footer-contact span {
-  margin-bottom: 12px;
-  color: var(--text);
-  font-weight: 800;
-}
-
-.footer-contact p,
-.footer-contact a {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.footer-contact a {
-  width: fit-content;
-  font-weight: 700;
 }
 
 .service-index-cta {
@@ -2623,11 +2673,6 @@ textarea {
     width: 100%;
     margin-top: 0;
     padding: 32px 24px 28px;
-  }
-
-  .faq-grid {
-    width: min(720px, calc(100% - 32px));
-    gap: 42px;
   }
 
   .inner-hero {

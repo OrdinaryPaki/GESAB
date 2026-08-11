@@ -1,0 +1,184 @@
+.wrapper {
+  padding: 100px 0;
+  background-color: var(--bg);
+  min-height: 800px;
+}
+
+.paginationHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  background: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.arrowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: transparent;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.arrowBtn:hover:not(:disabled) {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.arrowBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.arrowBtn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.arrowBtn.prev svg {
+  transform: rotate(180deg);
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.dot:hover:not(.activeDot) {
+  background: var(--bg);
+}
+
+.dot.activeDot {
+  background: var(--blue);
+  color: white;
+}
+
+.conceptLabel {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Concept 1: Vertical Cards */
+.c1List { display: flex; flex-direction: column; gap: 16px; max-width: 600px; margin: 0 auto; }
+.c1Card { display: flex; gap: 24px; padding: 24px; background: white; border: 1px solid var(--line); border-radius: 12px; }
+.c1Num { font-size: 24px; font-weight: 600; color: var(--blue); font-family: Outfit, sans-serif; }
+.c1Card h3 { margin: 0 0 8px 0; font-size: 20px; }
+.c1Card p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+/* Concept 2: Grid */
+.c2Grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.c2Card { padding: 32px; background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+.c2Num { display: inline-block; padding: 8px 16px; background: var(--bg); color: var(--blue); border-radius: 999px; margin-bottom: 24px; font-weight: 600; font-family: Outfit, sans-serif; }
+.c2Card h3 { margin: 0 0 12px 0; font-size: 22px; }
+.c2Card p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+/* Concept 3: Timeline */
+.c3Timeline { position: relative; max-width: 600px; margin: 0 auto; padding-left: 40px; }
+.c3Timeline::before { content: ''; position: absolute; left: 11px; top: 0; bottom: 0; width: 2px; background: var(--line); }
+.c3Item { position: relative; margin-bottom: 48px; }
+.c3Item:last-child { margin-bottom: 0; }
+.c3Dot { position: absolute; left: -40px; top: 4px; width: 24px; height: 24px; border-radius: 50%; background: var(--blue); border: 4px solid var(--bg); }
+.c3Item h3 { margin: 0 0 8px 0; font-size: 22px; }
+.c3Item p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+/* Concept 4: Zigzag */
+.c4List { display: flex; flex-direction: column; gap: 64px; max-width: 800px; margin: 0 auto; }
+.c4Item { display: flex; gap: 48px; align-items: center; }
+.c4Item:nth-child(even) { flex-direction: row-reverse; }
+.c4NumBox { flex: 1; display: flex; justify-content: center; font-size: 120px; font-weight: 700; color: white; text-shadow: -1px -1px 0 var(--line), 1px -1px 0 var(--line), -1px 1px 0 var(--line), 1px 1px 0 var(--line); font-family: Outfit, sans-serif; }
+.c4Content { flex: 1; }
+.c4Content h3 { margin: 0 0 12px 0; font-size: 28px; }
+.c4Content p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+/* Concept 5: Tabs */
+.c5Tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+.c5Tab { padding: 12px 24px; border: 1px solid var(--line); border-radius: 999px; background: white; cursor: pointer; font-weight: 500; color: var(--text); transition: all 0.2s; }
+.c5Tab.activeTab { background: var(--blue); color: white; border-color: var(--blue); }
+.c5Content { max-width: 600px; margin: 0 auto; text-align: center; padding: 64px 40px; background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
+.c5Content h3 { margin: 0 0 16px 0; font-size: 32px; }
+.c5Content p { margin: 0; color: var(--muted); line-height: 1.7; font-size: 18px; }
+
+/* Concept 6: Accordion */
+.c6List { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.c6Item { background: white; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+.c6Header { padding: 24px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 600; font-size: 18px; }
+.c6Header span { color: var(--blue); font-family: Outfit, sans-serif; margin-right: 16px; }
+.c6Body { padding: 0 24px 24px; color: var(--muted); line-height: 1.6; }
+
+/* Concept 7: Horizontal Scroll */
+.c7Scroll { display: flex; gap: 24px; overflow-x: auto; padding-bottom: 32px; scroll-snap-type: x mandatory; }
+.c7Scroll::-webkit-scrollbar { height: 8px; }
+.c7Scroll::-webkit-scrollbar-track { background: var(--line); border-radius: 4px; }
+.c7Scroll::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 4px; }
+.c7Card { flex: 0 0 320px; scroll-snap-align: start; background: white; padding: 40px; border-radius: 16px; border: 1px solid var(--line); }
+.c7Card h3 { margin: 0 0 12px 0; font-size: 24px; }
+.c7Card p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+/* Concept 8: Dark Theme */
+.c8Wrapper { background: var(--blue); padding: 64px; border-radius: 24px; color: white; }
+.c8Grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+.c8Card { border-left: 2px solid rgba(255,255,255,0.2); padding-left: 24px; }
+.c8Num { color: rgba(255,255,255,0.5); font-size: 24px; font-family: Outfit, sans-serif; margin-bottom: 12px; display: block; }
+.c8Card h3 { margin: 0 0 12px 0; font-size: 20px; color: white; }
+.c8Card p { margin: 0; color: rgba(255,255,255,0.8); line-height: 1.6; }
+
+/* Concept 9: Big Numbers */
+.c9Grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.c9Card { position: relative; padding: 48px 32px; background: white; border-radius: 16px; overflow: hidden; z-index: 1; border: 1px solid var(--line); }
+.c9NumBg { position: absolute; right: -10px; bottom: -30px; font-size: 180px; font-weight: 700; color: var(--bg); z-index: -1; font-family: Outfit, sans-serif; line-height: 1; }
+.c9Card h3 { margin: 0 0 12px 0; font-size: 24px; }
+.c9Card p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+/* Concept 10: Minimalist */
+.c10List { max-width: 800px; margin: 0 auto; }
+.c10Item { display: flex; gap: 48px; padding: 40px 0; border-top: 1px solid var(--line); }
+.c10Item:last-child { border-bottom: 1px solid var(--line); }
+.c10Num { font-size: 18px; font-weight: 600; color: var(--muted); font-family: Outfit, sans-serif; }
+.c10Content { flex: 1; }
+.c10Content h3 { margin: 0 0 12px 0; font-size: 24px; }
+.c10Content p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .c4Item, .c4Item:nth-child(even) { flex-direction: column; gap: 24px; text-align: center; }
+  .c4NumBox { font-size: 80px; }
+  .c10Item { flex-direction: column; gap: 16px; padding: 32px 0; }
+  .c8Wrapper { padding: 32px; }
+  .paginationControls { gap: 8px; padding: 8px 16px; }
+  .dot { width: 28px; height: 28px; font-size: 14px; }
+}

@@ -62,6 +62,18 @@
   font-weight: 600;
 }
 
+.home-page .about-section {
+  padding-bottom: 160px;
+}
+
+.home-page .about-section .stat-grid {
+  margin-top: 180px;
+}
+
+.home-page .testimonial-section {
+  padding-top: 200px;
+}
+
 .home-page .about-section .stat-grid strong {
   font-size: 62px;
 }
@@ -90,7 +102,11 @@
 }
 
 .home-page .gallery-section {
-  padding: 66px 0 58px;
+  padding: 66px 0 100px;
+}
+
+.home-page .faq-section {
+  padding: 100px 0 120px;
 }
 
 .home-page .gallery-grid img.wide {
@@ -345,7 +361,7 @@
   .home-page .about-section .stat-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 15px 20px;
-    margin-top: 64px;
+    margin-top: 120px;
     text-align: center;
   }
 
@@ -441,11 +457,10 @@
   }
 
   .home-page .faq-grid {
-    width: min(720px, calc(100% - 40px));
     gap: 42px;
   }
 
-  .home-page .still {
+  .home-page .faq-cta {
     margin-top: 76px;
   }
 

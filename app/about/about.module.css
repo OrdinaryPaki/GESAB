@@ -6,6 +6,7 @@
 .storySection {
   height: 873px;
   padding: 160px 0 0;
+  margin-bottom: 40px;
 }
 
 .storyGrid {
@@ -108,112 +109,278 @@
 }
 
 .missionSection {
-  height: 1124px;
-  padding: 0;
+  padding: 160px 0 120px;
+  background: white;
 }
 
 .missionInner {
-  position: relative;
-  width: 1200px;
-  height: 1124px;
-  padding-top: 128px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.missionIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.missionEyebrow {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .missionCopy {
-  position: relative;
-  z-index: 2;
   display: grid;
-  grid-template-columns: 520px 520px;
-  gap: 160px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(40px, 8vw, 120px);
+  align-items: start;
 }
 
 .missionCopy h2 {
   margin: 0;
+  max-width: 14ch;
   text-align: left;
   font-family: Outfit, Inter, sans-serif;
-  font-size: 48px;
+  font-size: clamp(36px, 4vw, 48px);
   font-weight: 600;
-  line-height: 57.6px;
-  letter-spacing: -0.48px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.missionBody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 6px;
 }
 
 .missionBody p {
   margin: 0;
-  color: var(--text);
+  color: var(--muted);
   font-size: 16px;
-  line-height: 27.2px;
+  line-height: 1.7;
 }
 
-.missionBody p + p {
-  margin-top: 26px;
+.missionStage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .missionImage {
-  position: absolute;
-  top: 372px;
-  left: 0;
-  width: 1200px;
-  height: 599px;
-  border-radius: 16px;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 2 / 1;
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+
+.missionImage img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.missionSection .missionInner > .missionImage {
-  margin-top: 0;
-}
-
-.missionCards {
-  position: absolute;
-  z-index: 2;
-  top: 767px;
-  right: 60px;
-  left: 60px;
+.missionPrinciples {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin: 0;
-  padding: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: calc(100% - 40px);
+  margin: -112px auto 0;
+  position: relative;
+  z-index: 1;
 }
 
-.missionCards article {
+.missionPrinciple {
   display: flex;
-  height: 357px;
-  min-height: 0;
   flex-direction: column;
-  border-radius: 16px;
+  min-height: 320px;
+  padding: 36px 28px;
+  border-radius: var(--radius);
   background: var(--blue);
   color: white;
-  padding: 32px;
-  box-shadow: none;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.missionCards article > span {
+.missionPrinciple:hover {
+  transform: translateY(-6px);
+}
+
+.missionPrincipleIcon {
   display: grid;
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
   place-items: center;
-  border-radius: 999px;
+  margin-bottom: auto;
+  border-radius: 50%;
   background: white;
   color: var(--blue);
-  font-size: 20px;
-  font-weight: 700;
+  flex-shrink: 0;
 }
 
-.missionCards h3 {
-  max-width: 180px;
-  margin: auto 0 10px;
+.missionPrincipleCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.missionPrinciple h3 {
+  margin: 0;
   font-family: Outfit, Inter, sans-serif;
   font-size: 24px;
   font-weight: 600;
-  line-height: 33.6px;
-  letter-spacing: -0.24px;
+  line-height: 1.2;
 }
 
-.missionCards p {
+.missionPrinciple p {
   margin: 0;
-  color: white;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.aboutProcessSection {
+  height: auto;
+  padding: 100px 0;
+  background-color: var(--bg);
+  overflow: hidden;
+}
+
+.aboutProcessGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.carouselWrapper {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.carouselViewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.carouselSlide {
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.carouselCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  height: 100%;
+}
+
+.carouselHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.carouselNumber {
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--blue);
+  line-height: 1;
+}
+
+.carouselCard h3 {
+  margin: 0 0 8px 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.carouselCard p {
+  margin: 0;
   font-size: 16px;
-  line-height: 27.2px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.carouselControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.carouselArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.carouselArrow:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.carouselArrow svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.carouselPagination {
+  display: flex;
+  gap: 8px;
+}
+
+.carouselDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--line);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.carouselDot:hover {
+  background: var(--muted);
+}
+
+.carouselDot.activeDot {
+  background: var(--blue);
+  transform: scale(1.2);
 }
 
 .page :global(.process-section) {
@@ -236,12 +403,14 @@
 }
 
 .page :global(.testimonial-section) {
-  height: 799px;
+  height: auto;
   padding: 100px 0;
+  overflow: clip;
 }
 
 .page :global(.faq-section) {
-  height: 602px;
+  height: auto;
+  overflow: clip;
 }
 
 .page :global(.faq-item) {
@@ -252,22 +421,26 @@
   border-color: transparent;
 }
 
-.page :global(.faq-question)::after,
-.page :global(.faq-item.open .faq-question)::after {
-  content: "⌃" !important;
+.page :global(.faq-toggle),
+.page :global(.faq-item.open .faq-toggle) {
   background: transparent !important;
   color: var(--text) !important;
   transform: none !important;
 }
 
-.page :global(.faq-item.open .faq-question)::after {
+.page :global(.faq-toggle)::before {
+  content: "⌃" !important;
+}
+
+.page :global(.faq-item.open .faq-toggle)::before {
   content: "⌄" !important;
 }
 
 .page:global(.about-animations-ready) :global(.process-grid),
 .page:global(.about-animations-ready) :global(.team-section > .container),
 .page:global(.about-animations-ready) :global(.testimonial-section > .container),
-.page:global(.about-animations-ready) :global(.faq-section > .container) {
+.page:global(.about-animations-ready) :global(.faq-section > .container),
+.page:global(.about-animations-ready) .missionStage {
   opacity: 0;
   transform: translateY(24px);
 }
@@ -275,7 +448,8 @@
 .page:global(.about-animations-ready) :global(.process-grid.about-revealed),
 .page:global(.about-animations-ready) :global(.team-section > .container.about-revealed),
 .page:global(.about-animations-ready) :global(.testimonial-section > .container.about-revealed),
-.page:global(.about-animations-ready) :global(.faq-section > .container.about-revealed) {
+.page:global(.about-animations-ready) :global(.faq-section > .container.about-revealed),
+.page:global(.about-animations-ready) .missionStage:global(.about-revealed) {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1), transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
@@ -285,10 +459,16 @@
   .page :global(.process-grid),
   .page :global(.team-section > .container),
   .page :global(.testimonial-section > .container),
-  .page :global(.faq-section > .container) {
+  .page :global(.faq-section > .container),
+  .page .missionStage,
+  .page .missionPrinciple {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .page .missionPrinciple:hover {
+    transform: none;
   }
 }
 
@@ -304,7 +484,8 @@
 
   .storyGrid,
   .missionInner,
-  .page :global(.process-section > .container) {
+  .page :global(.process-section > .container),
+  .aboutProcessGrid {
     width: min(720px, calc(100% - 40px));
   }
 
@@ -391,66 +572,75 @@
   }
 
   .missionSection {
-    height: 1753px;
+    padding: 60px 0;
   }
 
   .missionInner {
     width: 350px;
-    height: 1753px;
-    padding-top: 30px;
+    gap: 40px;
+  }
+
+  .missionIntro {
+    gap: 20px;
   }
 
   .missionCopy {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .missionCopy h2 {
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -0.3px;
+    max-width: none;
+    font-size: 36px;
+    line-height: 1.1;
   }
 
-  .missionBody p {
-    font-size: 16px;
-    line-height: 27.2px;
-  }
-
-  .missionBody p:first-child {
-    margin-top: 24px;
-  }
-
-  .missionBody p + p {
-    margin-top: 26px;
+  .missionBody {
+    padding-top: 0;
   }
 
   .missionImage {
-    top: 455px;
-    width: 350px;
-    height: 320px;
+    aspect-ratio: 4 / 3;
   }
 
-  .missionCards {
-    top: 799px;
-    right: 0;
-    left: 0;
+  .missionPrinciples {
     grid-template-columns: 1fr;
-    gap: 16px;
+    width: 100%;
+    margin-top: -48px;
+    gap: 14px;
   }
 
-  .missionCards article {
-    height: 297px;
+  .missionPrinciple {
+    min-height: 0;
+    padding: 28px 24px;
+  }
+
+  .missionPrinciple:hover {
+    transform: none;
+  }
+
+  .missionPrincipleCopy {
+    margin-top: 24px;
+  }
+
+  .missionPrinciple h3 {
+    font-size: 22px;
+  }
+
+  .aboutProcessSection {
+    padding: 60px 0;
+  }
+
+  .carouselSlide {
+    padding: 0 8px;
+  }
+
+  .carouselCard {
     padding: 24px;
   }
 
-  .missionCards article > span {
-    width: 56px;
-    height: 56px;
-  }
-
-  .missionCards h3 {
-    margin: 42px 0 10px;
-    font-size: 22px;
-    line-height: 30.8px;
+  .carouselControls {
+    margin-top: 32px;
   }
 
   .page :global(.process-section) {
@@ -529,8 +719,9 @@
 
   .page :global(.testimonial-section) {
     position: relative;
-    height: 616px;
+    height: auto;
     padding: 60px 0;
+    overflow: clip;
   }
 
   .page :global(.testimonial-section > .container) {
@@ -601,7 +792,7 @@
   }
 
   .page :global(.faq-section) {
-    height: 979px;
+    height: auto;
     padding: 30px 0;
   }
 
@@ -611,7 +802,7 @@
     gap: 29px;
   }
 
-  .page :global(.still) {
+  .page :global(.faq-cta) {
     margin-top: 27px;
   }
 
@@ -631,7 +822,7 @@
     padding-right: 80px;
   }
 
-  .page :global(.faq-item.open .faq-question)::after {
+  .page :global(.faq-item.open .faq-toggle) {
     position: absolute;
     top: 0;
     right: 0;

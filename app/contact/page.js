@@ -1,7 +1,7 @@
 import { ContactBand, Footer, Header } from "../components/GesabShell";
 import { CtaButton } from "../components/CtaButton";
 import { MailIcon, PhoneIcon } from "../components/GesabIcons";
-import { FaqSection } from "../components/HomeSections";
+import { FaqSection } from "../components/FaqSection";
 import { ServiceSelect } from "../components/ServiceSelect";
 import { contactInfo, serviceSelectOptions } from "../gesab-data";
 import { LocationIcon } from "./contact-icons";

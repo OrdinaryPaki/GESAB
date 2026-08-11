@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 
 const revealSelector = [
+  "[class*='missionStage']",
   ".process-grid",
   ".team-section > .container",
   ".testimonial-section > .container",

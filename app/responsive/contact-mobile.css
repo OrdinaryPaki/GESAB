@@ -75,7 +75,7 @@
     padding: 22px 20px;
   }
 
-  [class*="contact-page"][class*="page"] .still {
+  [class*="contact-page"][class*="page"] .faq-cta {
     height: auto !important;
     margin-top: 40px;
   }

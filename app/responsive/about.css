@@ -13,7 +13,8 @@
     gap: clamp(56px, 8vw, 120px);
   }
 
-  #about-page [class*="missionImage"] {
+  #about-page [class*="missionImage"],
+  #about-page [class*="missionStage"] {
     width: 100%;
   }
 
@@ -97,26 +98,29 @@
     gap: 32px;
   }
 
+  #about-page [class*="missionIntro"] {
+    gap: 20px;
+  }
+
   #about-page [class*="missionImage"] {
     position: static;
     width: 100%;
     height: auto;
-    aspect-ratio: 2 / 1;
-    margin-top: 48px;
+    aspect-ratio: 16 / 9;
   }
 
-  #about-page [class*="missionCards"] {
+  #about-page [class*="missionPrinciples"] {
     position: static;
+    width: 100%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 24px;
+    margin-top: -56px;
   }
 
-  #about-page [class*="missionCards"] article {
-    height: auto;
-    min-height: 320px;
+  #about-page [class*="missionPrinciples"] > * {
+    min-height: 280px;
   }
 
-  #about-page [class*="missionCards"] article:last-child {
+  #about-page [class*="missionPrinciples"] > :last-child {
     grid-column: 1 / -1;
   }
 
@@ -175,17 +179,17 @@
   }
 
   #about-page [class*="missionImage"],
-  #about-page [class*="missionCards"] {
+  #about-page [class*="missionPrinciples"] {
     position: static;
   }
 
   #about-page [class*="missionImage"] {
     height: auto;
-    margin-top: 40px;
   }
 
-  #about-page [class*="missionCards"] {
-    margin-top: 24px;
+  #about-page [class*="missionPrinciples"] {
+    width: 100%;
+    margin-top: -40px;
   }
 
   #about-page :where(.process-section, .team-section, .testimonial-section, .faq-section) {

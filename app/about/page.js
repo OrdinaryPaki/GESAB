@@ -1,6 +1,8 @@
-import { FaqSection, ProcessSection, TrustNotes } from "../components/HomeSections";
+import { FaqSection } from "../components/FaqSection";
+import { TrustNotes } from "../components/HomeSections";
 import { ContactBand, Footer, Header } from "../components/GesabShell";
 import { AboutMissionSection, AboutStorySection } from "./about-sections";
+import { ProcessConcepts } from "./process-concepts";
 import styles from "./about.module.css";
 import { AboutRevealController } from "./reveal-controller";
 
@@ -17,7 +19,7 @@ export default function AboutPage() {
       <Header dark />
       <AboutStorySection />
       <AboutMissionSection />
-      <ProcessSection />
+      <ProcessConcepts />
       <TrustNotes />
       <FaqSection />
       <ContactBand />

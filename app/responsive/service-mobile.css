@@ -84,15 +84,8 @@
     height: auto !important;
   }
 
-  [class*="service-page"][class*="reviewHeader"],
-  [class*="service-page"][class*="reviewGrid"] {
+  [class*="service-page"][class*="reviewHeader"] {
     width: 100% !important;
-  }
-
-  [class*="service-page"][class*="reviewGrid"] {
-    min-height: 0;
-    gap: var(--page-mobile-content-gap);
-    margin-top: 48px;
   }
 
   [class*="service-page"][class*="reviewCard"] {

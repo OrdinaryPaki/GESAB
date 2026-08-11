@@ -211,11 +211,7 @@
     border-color: transparent;
   }
 
-  .home-page .faq-question {
-    text-align: left;
-  }
-
-  .home-page .still {
+  .home-page .faq-cta {
     margin-top: 40px;
   }
 

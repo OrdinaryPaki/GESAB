@@ -43,6 +43,35 @@ const trustPoints = [
   },
 ];
 
+const allReviewServices = services.map((service) => ({
+  ...service,
+  body: serviceIndexCopy[service.slug] ?? service.body,
+}));
+
+const topRowServices = allReviewServices.slice(0, 5);
+const bottomRowServices = allReviewServices.slice(5, 9);
+
+const ReviewCard = ({ service, index }) => (
+  <article className={styles.reviewCard}>
+    <div className={styles.reviewCardStars} aria-hidden="true">
+      {Array.from({ length: 5 }, (_, starIndex) => <StarIcon key={starIndex} />)}
+    </div>
+    <div className={styles.reviewCardContent}>
+      <p className={styles.reviewCardQuote}>{service.body}</p>
+      <div className={styles.reviewCardFooter}>
+        <div className={styles.reviewAuthor}>
+          <img src={team[index % team.length].image} alt="" />
+          <div className={styles.reviewAuthorName}>
+            <strong>{service.title}</strong>
+            <small>GESAB rådgivning</small>
+          </div>
+        </div>
+        <img className={styles.reviewBadge} src={image.badges[0]} alt="" />
+      </div>
+    </div>
+  </article>
+);
+
 export default function ServicePage() {
   return (
     <div className={styles.servicePage}>
@@ -86,36 +115,30 @@ export default function ServicePage() {
             <header className={styles.reviewHeader}>
               <p className={styles.reviewEyebrow}>INFÖR OFFERT</p>
               <h2>Frågor som avgör ett bra resultat</h2>
-              <div className={styles.reviewSummary} aria-label="Sex utvalda tjänsteområden">
-                <strong>6</strong>
+              <div className={styles.reviewSummary} aria-label="Nio utvalda tjänsteområden">
+                <strong>9</strong>
                 <span className={styles.reviewSummaryIcons} aria-hidden="true">
                   {Array.from({ length: 5 }, (_, index) => <StarIcon key={index} />)}
                 </span>
                 <span>(urval)</span>
               </div>
             </header>
-            <div className={styles.reviewGrid}>
-              {featuredServices.map((service, index) => (
-                <article className={styles.reviewCard} key={service.slug}>
-                  <div className={styles.reviewCardStars} aria-hidden="true">
-                    {Array.from({ length: 5 }, (_, starIndex) => <StarIcon key={starIndex} />)}
-                  </div>
-                  <div className={styles.reviewCardContent}>
-                    <p className={styles.reviewCardQuote}>{service.body}</p>
-                    <div className={styles.reviewCardFooter}>
-                      <div className={styles.reviewAuthor}>
-                        <img src={team[index % team.length].image} alt="" />
-                        <div className={styles.reviewAuthorName}>
-                          <strong>{service.title}</strong>
-                          <small>GESAB rådgivning</small>
-                        </div>
-                      </div>
-                      <img className={styles.reviewBadge} src={image.badges[0]} alt="" />
-                    </div>
-                  </div>
-                </article>
-              ))}
+          </div>
+          <div className={styles.marqueeContainer}>
+            <div className={styles.marqueeRow}>
+              <div className={styles.marqueeContentRight}>
+                {topRowServices.map((service, index) => <ReviewCard key={service.slug + '-1'} service={service} index={index} />)}
+                {topRowServices.map((service, index) => <ReviewCard key={service.slug + '-2'} service={service} index={index} />)}
+              </div>
             </div>
+            <div className={styles.marqueeRow}>
+              <div className={styles.marqueeContentLeft}>
+                {bottomRowServices.map((service, index) => <ReviewCard key={service.slug + '-1'} service={service} index={index + 5} />)}
+                {bottomRowServices.map((service, index) => <ReviewCard key={service.slug + '-2'} service={service} index={index + 5} />)}
+              </div>
+            </div>
+            <div className={styles.marqueeFadeLeft}></div>
+            <div className={styles.marqueeFadeRight}></div>
           </div>
         </section>
       </main>
