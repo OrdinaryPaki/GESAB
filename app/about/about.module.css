@@ -249,143 +249,9 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
-.aboutProcessSection {
-  height: auto;
-  padding: 100px 0;
-  background-color: var(--bg);
-  overflow: hidden;
-}
-
-.aboutProcessGrid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
-}
-
-.carouselWrapper {
-  width: 100%;
-  max-width: 1200px;
-  position: relative;
-}
-
-.carouselViewport {
-  overflow: hidden;
-  width: 100%;
-}
-
-.carouselTrack {
-  display: flex;
-  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
-}
-
-.carouselSlide {
-  padding: 0 12px;
-  box-sizing: border-box;
-}
-
-.carouselCard {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background: white;
-  padding: 32px;
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  height: 100%;
-}
-
-.carouselHeader {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-}
-
-.carouselNumber {
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--blue);
-  line-height: 1;
-}
-
-.carouselCard h3 {
-  margin: 0 0 8px 0;
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.carouselCard p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--muted);
-}
-
-.carouselControls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 48px;
-}
-
-.carouselArrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  background: white;
-  color: var(--text);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.carouselArrow:hover {
-  border-color: var(--blue);
-  color: var(--blue);
-}
-
-.carouselArrow svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.carouselPagination {
-  display: flex;
-  gap: 8px;
-}
-
-.carouselDot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--line);
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  transition: all 0.3s ease;
-}
-
-.carouselDot:hover {
-  background: var(--muted);
-}
-
-.carouselDot.activeDot {
-  background: var(--blue);
-  transform: scale(1.2);
-}
-
 .page :global(.process-section) {
-  height: 825px;
-  padding: 80px 0 40px;
+  height: auto;
+  padding: 80px 0 140px;
 }
 
 .page :global(.process-grid) {
@@ -395,11 +261,6 @@
 
 .page :global(.process-section .section-title h2) {
   max-width: 442px;
-}
-
-.page :global(.team-section) {
-  height: 733px;
-  padding: 60px 0 120px;
 }
 
 .page :global(.testimonial-section) {
@@ -413,31 +274,7 @@
   overflow: clip;
 }
 
-.page :global(.faq-item) {
-  border: 1px solid var(--line);
-}
-
-.page :global(.faq-item.open) {
-  border-color: transparent;
-}
-
-.page :global(.faq-toggle),
-.page :global(.faq-item.open .faq-toggle) {
-  background: transparent !important;
-  color: var(--text) !important;
-  transform: none !important;
-}
-
-.page :global(.faq-toggle)::before {
-  content: "⌃" !important;
-}
-
-.page :global(.faq-item.open .faq-toggle)::before {
-  content: "⌄" !important;
-}
-
 .page:global(.about-animations-ready) :global(.process-grid),
-.page:global(.about-animations-ready) :global(.team-section > .container),
 .page:global(.about-animations-ready) :global(.testimonial-section > .container),
 .page:global(.about-animations-ready) :global(.faq-section > .container),
 .page:global(.about-animations-ready) .missionStage {
@@ -446,7 +283,6 @@
 }
 
 .page:global(.about-animations-ready) :global(.process-grid.about-revealed),
-.page:global(.about-animations-ready) :global(.team-section > .container.about-revealed),
 .page:global(.about-animations-ready) :global(.testimonial-section > .container.about-revealed),
 .page:global(.about-animations-ready) :global(.faq-section > .container.about-revealed),
 .page:global(.about-animations-ready) .missionStage:global(.about-revealed) {
@@ -457,7 +293,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .page :global(.process-grid),
-  .page :global(.team-section > .container),
   .page :global(.testimonial-section > .container),
   .page :global(.faq-section > .container),
   .page .missionStage,
@@ -476,7 +311,6 @@
   .storySection,
   .missionSection,
   .page :global(.process-section),
-  .page :global(.team-section),
   .page :global(.testimonial-section),
   .page :global(.faq-section) {
     height: auto;
@@ -484,8 +318,7 @@
 
   .storyGrid,
   .missionInner,
-  .page :global(.process-section > .container),
-  .aboutProcessGrid {
+  .page :global(.process-section > .container) {
     width: min(720px, calc(100% - 40px));
   }
 
@@ -627,24 +460,8 @@
     font-size: 22px;
   }
 
-  .aboutProcessSection {
-    padding: 60px 0;
-  }
-
-  .carouselSlide {
-    padding: 0 8px;
-  }
-
-  .carouselCard {
-    padding: 24px;
-  }
-
-  .carouselControls {
-    margin-top: 32px;
-  }
-
   .page :global(.process-section) {
-    height: 917px;
+    height: auto;
     padding: 30px 0;
   }
 
@@ -653,22 +470,14 @@
   }
 
   .page :global(.process-section .section-title h2),
-  .page :global(.team-section .section-title h2),
-  .page :global(.testimonial-section .section-title h2),
-  .page :global(.faq-section .section-title h2) {
+  .page :global(.testimonial-section .section-title h2) {
     font-size: 30px;
     line-height: 36px;
     letter-spacing: -0.3px;
   }
 
-  .page :global(.process-section .section-title h2),
-  .page :global(.team-section .section-title h2) {
+  .page :global(.process-section .section-title h2) {
     max-width: 300px;
-  }
-
-  .page :global(.team-section .section-title h2) {
-    margin-right: auto;
-    margin-left: auto;
   }
 
   .page :global(.process-card) {
@@ -680,41 +489,6 @@
     margin-bottom: 24px;
     font-size: 26px;
     line-height: 36.4px;
-  }
-
-  .page :global(.team-section) {
-    height: 1511px;
-    padding: 30px 0 60px;
-  }
-
-  .page :global(.team-section > .container) {
-    width: 350px;
-  }
-
-  .page :global(.team-grid) {
-    gap: 24px;
-    margin-top: 34px;
-  }
-
-  .page :global(.team-card:nth-child(4)) {
-    display: none;
-  }
-
-  .page :global(.team-card img) {
-    width: 350px;
-    height: 350px;
-    aspect-ratio: 1;
-  }
-
-  .page :global(.team-card h3) {
-    margin-top: 8px;
-    font-size: 18px;
-    line-height: 24.48px;
-  }
-
-  .page :global(.team-card p) {
-    font-size: 14px;
-    line-height: 23.8px;
   }
 
   .page :global(.testimonial-section) {
@@ -793,43 +567,6 @@
 
   .page :global(.faq-section) {
     height: auto;
-    padding: 30px 0;
-  }
-
-  .page :global(.faq-grid) {
-    width: 350px;
-    max-width: none;
-    gap: 29px;
-  }
-
-  .page :global(.faq-cta) {
-    margin-top: 27px;
-  }
-
-  .page :global(.faq-question) {
-    gap: 8px;
-    font-size: 20px;
-    line-height: 33.6px;
-    text-align: left !important;
-  }
-
-  .page :global(.faq-item.open) {
-    min-height: 253px;
-  }
-
-  .page :global(.faq-item.open .faq-question) {
-    position: relative;
-    padding-right: 80px;
-  }
-
-  .page :global(.faq-item.open .faq-toggle) {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .page :global(.faq-item.open .faq-panel p) {
-    max-width: 270px;
   }
 
   .page :global(.contact-band),

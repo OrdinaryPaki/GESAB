@@ -6,6 +6,7 @@ import {
   createServiceSelectState,
   reduceServiceSelectState,
 } from "./service-select-state.mjs";
+import "./ServiceSelect.css";
 
 function fieldClassName(className) {
   return ["service-select-field", className].filter(Boolean).join(" ");

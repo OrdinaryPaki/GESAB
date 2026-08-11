@@ -35,7 +35,7 @@
     max-width: none !important;
   }
 
-  [class*="contact-page"][class*="page"] :where(.contact-info-section .section-title h2, .faq-section .section-title h2) {
+  [class*="contact-page"][class*="page"] .contact-info-section .section-title h2 {
     font-size: 32px;
     line-height: 1.2;
   }
@@ -57,26 +57,10 @@
 
   [class*="contact-page"][class*="page"] .faq-section {
     padding: var(--page-mobile-section-space) 0 !important;
-    background: white;
   }
 
   [class*="contact-page"][class*="page"] .faq-grid {
     width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
     max-width: none !important;
-    gap: 48px;
-  }
-
-  [class*="contact-page"][class*="page"] .faq-list {
-    gap: 16px;
-  }
-
-  [class*="contact-page"][class*="page"] .faq-item,
-  [class*="contact-page"][class*="page"] .faq-item.open {
-    padding: 22px 20px;
-  }
-
-  [class*="contact-page"][class*="page"] .faq-cta {
-    height: auto !important;
-    margin-top: 40px;
   }
 }

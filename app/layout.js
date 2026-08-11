@@ -1,11 +1,5 @@
 import "./globals.css";
-import "./faq-alt.css";
 import "./responsive.css";
-import "./responsive/mobile-pages-shared.css";
-import "./responsive/about-mobile.css";
-import "./responsive/contact-mobile.css";
-import "./responsive/service-mobile.css";
-import "./responsive/blog-mobile.css";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
 
 export const metadata = {

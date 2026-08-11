@@ -30,19 +30,21 @@ export function ServiceGrid({ services }) {
           </Link>
         ))}
       </div>
-      <div className={styles.loadMoreSlot}>
-        {!isExpanded ? (
-          <CtaButton
-            variant="yellow"
-            className={styles.loadMore}
-            aria-controls="service-overview-grid"
-            aria-expanded="false"
-            onClick={() => setIsExpanded(true)}
-          >
-            Visa fler
-          </CtaButton>
-        ) : null}
-      </div>
+      {services.length > 6 && (
+        <div className={styles.loadMoreSlot}>
+          {!isExpanded ? (
+            <CtaButton
+              variant="yellow"
+              className={styles.loadMore}
+              aria-controls="service-overview-grid"
+              aria-expanded="false"
+              onClick={() => setIsExpanded(true)}
+            >
+              Visa fler
+            </CtaButton>
+          ) : null}
+        </div>
+      )}
     </>
   );
 }

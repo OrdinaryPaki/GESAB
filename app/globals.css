@@ -47,135 +47,6 @@ textarea {
   font: inherit;
 }
 
-.service-select-field {
-  display: grid;
-  min-width: 0;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.service-select {
-  position: relative;
-  width: 100%;
-  min-width: 0;
-  color: var(--text);
-}
-
-.service-select-trigger {
-  display: flex;
-  width: 100%;
-  height: 56px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: white;
-  color: var(--text);
-  cursor: pointer;
-  padding: 12px 20px;
-  text-align: left;
-}
-
-.service-select-trigger:focus-visible {
-  outline: 3px solid rgba(22, 129, 255, 0.35);
-  outline-offset: 2px;
-}
-
-.service-select-value {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.service-select-value.placeholder {
-  color: #777;
-}
-
-.service-select-chevron {
-  width: 9px;
-  height: 9px;
-  flex: 0 0 auto;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: translateY(-2px) rotate(45deg);
-  transition: transform 180ms ease;
-}
-
-.service-select.open .service-select-chevron {
-  transform: translateY(2px) rotate(225deg);
-}
-
-.service-select-menu {
-  position: absolute;
-  z-index: 80;
-  top: calc(100% + 8px);
-  left: 0;
-  display: grid;
-  width: 100%;
-  max-height: 280px;
-  gap: 4px;
-  overflow-y: auto;
-  border: 1px solid rgba(22, 129, 255, 0.2);
-  border-radius: 14px;
-  background: white;
-  color: var(--text);
-  padding: 8px;
-  box-shadow: 0 24px 60px rgba(5, 5, 5, 0.18);
-}
-
-.service-select-option {
-  display: flex;
-  width: 100%;
-  min-height: 44px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  border: 0;
-  border-radius: 9px;
-  background: white;
-  color: var(--text);
-  cursor: pointer;
-  padding: 10px 12px;
-  font-size: 15px;
-  line-height: 1.45;
-  text-align: left;
-}
-
-.service-select-option:hover,
-.service-select-option:focus-visible,
-.service-select-option.active {
-  background: #eef6ff;
-  outline: none;
-}
-
-.service-select-option.selected {
-  background: var(--blue);
-  color: white;
-}
-
-.service-select-check {
-  display: grid;
-  width: 22px;
-  height: 22px;
-  flex: 0 0 auto;
-  place-items: center;
-  border-radius: 999px;
-  background: var(--yellow);
-  color: black;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .service-select-chevron {
-    transition-duration: 1ms;
-  }
-}
-
 .container {
   width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
@@ -183,11 +54,13 @@ textarea {
 
 .site-header {
   position: fixed;
-  inset: 24px 0 auto;
+  inset: 0 0 auto;
   z-index: 99;
-  height: auto;
+  height: 72px;
   width: 100%;
-  color: white;
+  background: white;
+  color: var(--text);
+  border-bottom: 1px solid var(--line);
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -201,25 +74,13 @@ textarea {
   max-width: 1200px;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  padding: 0 24px;
+  height: 72px;
   margin: 0 auto;
-  border-radius: 100px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   color: var(--text);
 }
 
-.site-header.dark .header-inner {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
-}
-
-.header-left, .header-right {
+.header-left,
+.header-right {
   display: flex;
   flex: 1;
   align-items: center;
@@ -235,11 +96,6 @@ textarea {
 
 .logo-link {
   flex: 0 0 auto;
-  transition: transform 0.2s ease;
-}
-
-.logo-link:hover {
-  transform: scale(1.02);
 }
 
 .logo {
@@ -263,11 +119,12 @@ textarea {
 .logo-text {
   color: white;
   font-family: Outfit, Inter, sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   letter-spacing: 0;
 }
 
+.site-header .logo-text,
 .logo-text.dark,
 .site-header.dark .logo-text {
   color: var(--text);
@@ -283,7 +140,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 32px;
   margin: 0;
   font-size: 15px;
   font-weight: 500;
@@ -291,28 +148,11 @@ textarea {
 }
 
 .nav-links a {
-  position: relative;
-  padding: 8px 0;
   transition: color 0.2s ease;
 }
 
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 2px;
-}
-
-.nav-links a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+.nav-links a:hover {
+  color: var(--blue);
 }
 
 .mobile-menu {
@@ -389,8 +229,8 @@ textarea {
 }
 
 .phone-button {
-  --cta-bg: var(--black);
-  --cta-hover-bg: var(--blue);
+  --cta-bg: var(--blue);
+  --cta-hover-bg: var(--black);
   --cta-color: white;
   --cta-hover-color: white;
   gap: 12px;
@@ -453,11 +293,15 @@ textarea {
 }
 
 .cta-button.phone-button {
-  min-width: 264px;
-  min-height: 47px;
-  height: 47px;
-  background-color: var(--black);
+  min-width: 0;
+  min-height: 44px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 8px;
+  background-color: var(--blue);
+  font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -623,7 +467,6 @@ textarea {
 .support-item p,
 .why-copy p,
 .about-row p,
-.faq-cta p,
 .contact-page-section p,
 .detail-main p {
   margin: 0;
@@ -634,10 +477,8 @@ textarea {
 
 .why-section,
 .about-section,
-.team-section,
 .process-section,
 .gallery-section,
-.faq-section,
 .contact-page-section,
 .service-detail-section {
   padding: 105px 0;
@@ -650,7 +491,6 @@ textarea {
 .why-grid,
 .about-grid,
 .process-grid,
-.faq-grid,
 .contact-page-grid,
 .detail-grid {
   display: grid;
@@ -907,8 +747,7 @@ textarea {
   color: var(--blue);
 }
 
-.service-card svg,
-.faq-cta svg {
+.service-card svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
@@ -1073,70 +912,26 @@ textarea {
   margin-top: 0;
 }
 
-.team-section {
-  padding: 106px 0 172px;
-}
 
-.team-section.interior {
-  padding-top: 0;
-}
-
-.team-section .section-title span,
 .testimonial-section .section-title span,
 .process-section .section-title span,
-.gallery-section .section-title span,
-.faq-section .section-title span {
+.gallery-section .section-title span {
   margin-bottom: 14px;
   font-weight: 600;
   line-height: 1.7;
 }
 
-.team-section .section-title h2,
 .testimonial-section .section-title h2,
 .process-section .section-title h2,
-.gallery-section .section-title h2,
-.faq-section .section-title h2 {
+.gallery-section .section-title h2 {
   font-weight: 600;
   line-height: 1.2;
 }
 
-.team-section .section-title h2,
 .testimonial-section .section-title h2 {
   max-width: 1200px;
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 225.6px);
-  justify-content: center;
-  gap: 80.4px;
-  margin-top: 56px;
-}
-
-.team-card {
-  width: 225.6px;
-}
-
-.team-card img {
-  width: 225.6px;
-  height: 271.2px;
-  border-radius: 16px;
-  object-fit: cover;
-}
-
-.team-card h3 {
-  margin: 6.4px 0 0;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.36;
-}
-
-.team-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.36;
-}
 
 .testimonial-section {
   background: var(--blue);
@@ -1227,6 +1022,7 @@ textarea {
   background: white;
 }
 
+
 .process-section {
   padding: 155px 0 26px;
 }
@@ -1307,153 +1103,6 @@ textarea {
 .gallery-grid img.wide {
   height: 374px;
   grid-column: span 3;
-}
-
-.faq-section {
-  padding: 66px 0 120px;
-}
-
-.faq-grid {
-  grid-template-columns: minmax(0, 370px) minmax(0, 560px);
-  justify-content: space-between;
-  gap: 0;
-  align-items: start;
-}
-
-.faq-intro {
-  max-width: 370px;
-}
-
-.faq-section .section-title h2 {
-  max-width: 370px;
-}
-
-.faq-cta {
-  max-width: 370px;
-  margin-top: 110px;
-}
-
-.faq-cta h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.faq-cta a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 32px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.7;
-}
-
-.faq-list {
-  display: grid;
-  gap: 14px;
-}
-
-.faq-item {
-  overflow: hidden;
-  border: 0;
-  border-radius: 16px;
-  background: transparent;
-  padding: 18px 22px;
-  transition: background-color 220ms ease;
-}
-
-.faq-item.open {
-  background: var(--soft);
-}
-
-.faq-question {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.7;
-  padding: 0;
-  text-align: left;
-}
-
-.faq-question-text {
-  min-width: 0;
-  flex: 1 1 auto;
-}
-
-.faq-toggle {
-  display: grid;
-  width: 28px;
-  height: 28px;
-  flex: 0 0 auto;
-  place-items: center;
-  border-radius: 999px;
-  background: var(--yellow);
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1;
-  transition: transform 220ms ease, background-color 220ms ease, color 220ms ease;
-}
-
-.faq-toggle::before {
-  content: "+";
-}
-
-.faq-item.open .faq-toggle {
-  background: var(--blue);
-  color: white;
-  transform: rotate(180deg);
-}
-
-.faq-item.open .faq-toggle::before {
-  content: "−";
-}
-
-.faq-question:focus-visible {
-  outline: 3px solid rgba(22, 129, 255, 0.35);
-  outline-offset: 4px;
-}
-
-.faq-panel {
-  display: grid;
-  grid-template-rows: 0fr;
-  opacity: 0;
-  transition: grid-template-rows 260ms ease, opacity 180ms ease;
-}
-
-.faq-item.open .faq-panel {
-  grid-template-rows: 1fr;
-  opacity: 1;
-}
-
-.faq-panel-inner {
-  overflow: hidden;
-}
-
-.faq-panel p {
-  max-width: 492px;
-  margin: 12px 0 0;
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .faq-item,
-  .faq-toggle,
-  .faq-panel {
-    transition-duration: 1ms;
-  }
 }
 
 .contact-band {
@@ -1732,29 +1381,6 @@ textarea {
   line-height: 1.7;
 }
 
-.inner-hero {
-  display: grid;
-  min-height: 360px;
-  place-items: center;
-  background: white;
-  color: var(--text);
-  text-align: center;
-}
-
-.inner-hero-content {
-  padding-top: 70px;
-}
-
-.inner-hero span {
-  font-weight: 800;
-}
-
-.inner-hero h1 {
-  margin: 18px 0 0;
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 72px;
-  line-height: 1.05;
-}
 
 .contact-page-grid {
   align-items: start;
@@ -2494,7 +2120,6 @@ textarea {
   .why-grid,
   .about-grid,
   .process-grid,
-  .faq-grid,
   .contact-page-grid,
   .service-detail-layout,
   .detail-grid,
@@ -2527,10 +2152,8 @@ textarea {
   .support-strip,
   .why-section,
   .about-section,
-  .team-section,
   .process-section,
   .gallery-section,
-  .faq-section,
   .contact-page-section,
   .service-detail-section {
     padding: 72px 0;
@@ -2587,7 +2210,6 @@ textarea {
 
   .services-grid,
   .testimonial-grid,
-  .team-grid,
   .stat-grid,
   .detail-checks {
     grid-template-columns: 1fr;
@@ -2625,19 +2247,6 @@ textarea {
     justify-self: start;
   }
 
-  .team-grid {
-    gap: 32px;
-  }
-
-  .team-card {
-    width: 100%;
-  }
-
-  .team-card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 225.6 / 271.2;
-  }
 
   .gallery-grid {
     grid-template-columns: 1fr;
@@ -2675,13 +2284,6 @@ textarea {
     padding: 32px 24px 28px;
   }
 
-  .inner-hero {
-    min-height: 390px;
-  }
-
-  .inner-hero h1 {
-    font-size: 52px;
-  }
 
   .contact-hero-inner h1,
   .service-index-title h1,

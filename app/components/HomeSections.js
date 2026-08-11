@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { image, processSteps, services, team, testimonials } from "../gesab-data";
+import { image, processSteps, services, testimonials } from "../gesab-data";
 import { CtaLink } from "./CtaButton";
 import { FaqSection } from "./FaqSection";
-import { FaqSectionAlternative } from "./FaqSectionAlternative";
 import { ArrowIcon, CheckIcon, StarIcon } from "./GesabIcons";
 import { Footer, Header, ContactBand } from "./GesabShell";
 import { homeImages } from "./home-image-data";
-
-export { FaqSection };
 
 const servicePreviewCopy = {
   badrumsrenovering: "Planering, tätskikt, VVS och plattsättning i rätt ordning.",
@@ -43,7 +40,7 @@ export function HomePage() {
       <AboutPreview />
       <TrustNotes />
       <GallerySection />
-      <FaqSectionAlternative />
+      <FaqSection />
       <ContactBand />
       <Footer />
     </>

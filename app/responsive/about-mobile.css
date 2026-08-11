@@ -111,29 +111,17 @@
     padding: 28px 24px;
   }
 
-  #about-page .process-section,
   #about-page .testimonial-section,
   #about-page .faq-section {
     height: auto !important;
     padding: var(--page-mobile-section-space) 0 !important;
   }
 
-  #about-page .process-section {
-    background: white;
-  }
-
-  #about-page .faq-section {
-    background: var(--soft);
-  }
-
-  #about-page :where(.process-section > .container, .testimonial-section > .container, .faq-section > .container) {
+  #about-page :where(.testimonial-section > .container, .faq-section > .container) {
     width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
     max-width: none !important;
   }
 
-  #about-page .process-grid {
-    gap: 48px;
-  }
 
   #about-page .testimonial-grid {
     gap: var(--page-mobile-content-gap);
@@ -154,12 +142,4 @@
     gap: 16px;
   }
 
-  #about-page .faq-item {
-    padding: 22px 20px;
-    border: 1px solid var(--line);
-  }
-
-  #about-page .faq-cta {
-    margin-top: 40px;
-  }
 }

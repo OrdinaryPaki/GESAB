@@ -147,8 +147,7 @@
   padding: 60px 0 0;
 }
 
-.page :global(.contact-info-section .section-title h2),
-.page :global(.faq-section .section-title h2) {
+.page :global(.contact-info-section .section-title h2) {
   font-family: "Contact Outfit", Outfit, sans-serif;
   font-size: 48px;
   font-weight: 600;
@@ -223,80 +222,6 @@
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.page :global(.faq-section) {
-  padding: 126px 0 120px;
-}
-
-.page :global(.faq-grid) {
-  grid-template-columns: minmax(0, 370px) minmax(0, 560px);
-}
-
-.page :global(.faq-section .section-title span) {
-  font-family: "Contact Inter", Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 23.8px;
-}
-
-.page :global(.faq-question) {
-  font-family: "Contact Inter", Inter, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 34px;
-}
-
-.page :global(.faq-item) {
-  border: 1px solid #e8e8e8;
-  padding: 17px 21px;
-}
-
-.page :global(.faq-item.open) {
-  border: 0;
-  padding: 18px 22px;
-}
-
-.page :global(.faq-toggle) {
-  width: 9px;
-  height: 9px;
-  border-right: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
-  border-radius: 0;
-  background: transparent;
-  transform: rotate(225deg);
-}
-
-.page :global(.faq-toggle)::before {
-  content: none;
-}
-
-.page :global(.faq-item.open .faq-toggle) {
-  background: transparent;
-  color: #000;
-  transform: rotate(45deg);
-}
-
-.page :global(.faq-panel p),
-.page :global(.faq-cta p) {
-  font-family: "Contact Inter", Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27.2px;
-}
-
-.page :global(.faq-cta h3) {
-  font-family: "Contact Inter", Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30.6px;
-}
-
-.page :global(.faq-cta a) {
-  font-family: "Contact Inter", Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 23.8px;
 }
 
 .page :global(.contact-band-inner) {
@@ -406,8 +331,7 @@
     width: min(350px, calc(100% - 40px));
   }
 
-  .page :global(.contact-info-section .section-title h2),
-  .page :global(.faq-section .section-title h2) {
+  .page :global(.contact-info-section .section-title h2) {
     font-size: 30px;
     letter-spacing: -0.3px;
     line-height: 36px;
@@ -425,25 +349,6 @@
   .map {
     height: 250px;
     margin-top: 28px;
-  }
-
-  .page :global(.faq-section) {
-    padding: 60px 0;
-  }
-
-  .page :global(.faq-grid) {
-    width: min(350px, calc(100% - 40px));
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .page :global(.faq-cta) {
-    height: 142.796875px;
-    margin-top: 24px;
-  }
-
-  .page :global(.faq-cta a) {
-    margin-top: 24px;
   }
 
   .page :global(.contact-band-inner) {

@@ -202,19 +202,6 @@
     gap: 16px;
   }
 
-  .home-page .faq-item {
-    padding: 22px 20px;
-    border: 1px solid var(--line);
-  }
-
-  .home-page .faq-item.open {
-    border-color: transparent;
-  }
-
-  .home-page .faq-cta {
-    margin-top: 40px;
-  }
-
   .home-page .contact-band,
   .home-page .contact-band-inner {
     min-height: 0;

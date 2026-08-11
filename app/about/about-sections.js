@@ -1,5 +1,4 @@
 import { placeholderImages } from "../components/placeholder-images";
-import { ProcessCarousel } from "./process-carousel";
 import styles from "./about.module.css";
 
 function CheckIcon() {
@@ -65,20 +64,6 @@ export function AboutStorySection() {
             </div>
           </article>
         </div>
-      </div>
-    </section>
-  );
-}
-
-export function AboutProcessSection() {
-  return (
-    <section className={`process-section ${styles.aboutProcessSection}`}>
-      <div className={`container ${styles.aboutProcessGrid}`}>
-        <div className="section-title center">
-          <span>Vår arbetsprocess</span>
-          <h2>Vägen till ett färdigt resultat</h2>
-        </div>
-        <ProcessCarousel />
       </div>
     </section>
   );

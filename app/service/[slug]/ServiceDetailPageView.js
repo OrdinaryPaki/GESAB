@@ -101,14 +101,14 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
 
               <section className={styles.articleSection} data-service-fit-section>
                 <h2>När passar tjänsten?</h2>
-                <ul className={styles.guidanceList}>
+                <div className={styles.textBlocks}>
                   {detail.suitableFor.map(([title, body], index) => (
-                    <li data-service-fit={index + 1} key={title}>
+                    <div className={styles.textBlock} data-service-fit={index + 1} key={title}>
                       <h3>{title}</h3>
                       <p>{body}</p>
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </section>
 
               {service.detail.sections.map(([title, body]) => (
@@ -121,7 +121,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
               <section className={styles.articleSection}>
                 <h2>Det här ingår ofta</h2>
                 <p>Den slutliga omfattningen anpassas efter platsen och det vi kommer överens om. Vanliga delar är:</p>
-                <ul className={styles.includedList}>
+                <ul className={styles.standardList}>
                   {service.detail.bullets.map((item) => <li key={item}>{item}</li>)}
                 </ul>
               </section>
@@ -129,7 +129,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
               <section className={styles.articleSection} data-service-preparation-section>
                 <h2>Inför första genomgången</h2>
                 <p>Det räcker med ett enkelt underlag. Det här hjälper oss att förstå projektet och ge dig rätt nästa steg:</p>
-                <ul className={styles.preparationList}>
+                <ul className={styles.standardList}>
                   {detail.preparation.map((item, index) => (
                     <li data-service-preparation={index + 1} key={item}>{item}</li>
                   ))}
@@ -139,31 +139,28 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
               <section className={styles.articleSection} data-service-process-section>
                 <h2>Så arbetar vi</h2>
                 <p>En tydlig ordning minskar väntetid, missförstånd och kostsamma omtag.</p>
-                <ol className={styles.processList}>
+                <div className={styles.textBlocks}>
                   {detail.process.map(([title, body], index) => (
-                    <li className={styles.processItem} key={title}>
-                      <span>{String(index + 1).padStart(2, "0")}</span>
-                      <div>
-                        <h3>{title}</h3>
-                        <p>{body}</p>
-                      </div>
-                    </li>
+                    <div className={styles.textBlock} key={title}>
+                      <h3>{index + 1}. {title}</h3>
+                      <p>{body}</p>
+                    </div>
                   ))}
-                </ol>
+                </div>
               </section>
 
               <section className={styles.articleSection}>
                 <h2>Det här påverkar offert och tidplan</h2>
                 <p>Vi lämnar hellre en genomarbetad bedömning än ett snabbt pris som inte speglar verkligheten.</p>
-                <ul className={styles.considerationList}>
+                <ul className={styles.standardList}>
                   {detail.considerations.map((item) => <li key={item}>{item}</li>)}
                 </ul>
               </section>
 
-              <aside className={styles.importantNote}>
+              <section className={styles.articleSection}>
                 <h2>{detail.importantTitle}</h2>
                 <p>{detail.important}</p>
-              </aside>
+              </section>
 
               <section className={`${styles.articleSection} ${styles.faqSection}`}>
                 <h2>Vanliga frågor</h2>

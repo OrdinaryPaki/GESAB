@@ -83,23 +83,6 @@
   line-height: 1.7;
 }
 
-.home-page .team-section {
-  padding: 66px 0 145px;
-}
-
-.home-page .team-grid {
-  grid-template-columns: repeat(4, 282px);
-  gap: 24px;
-}
-
-.home-page .team-card,
-.home-page .team-card img {
-  width: 282px;
-}
-
-.home-page .team-card img {
-  height: 339px;
-}
 
 .home-page .gallery-section {
   padding: 66px 0 100px;
@@ -164,12 +147,12 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .home-page.home-reveal-ready > :is(.why-section, .services-section, .about-section, .team-section, .gallery-section) > .container {
+  .home-page.home-reveal-ready > :is(.why-section, .services-section, .about-section, .gallery-section) > .container {
     transform: translateY(40px);
     transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .home-page.home-reveal-ready > :is(.why-section, .services-section, .about-section, .team-section, .gallery-section).is-visible > .container {
+  .home-page.home-reveal-ready > :is(.why-section, .services-section, .about-section, .gallery-section).is-visible > .container {
     transform: translateY(0);
   }
 
@@ -182,14 +165,12 @@
     transform: translateX(0);
   }
 
-  .home-page.home-reveal-ready .team-card,
   .home-page.home-reveal-ready .gallery-grid img {
     transform: scale(0.8);
     transform-origin: center top;
     transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .home-page.home-reveal-ready .team-section.is-visible .team-card,
   .home-page.home-reveal-ready .gallery-section.is-visible .gallery-grid img {
     transform: scale(1);
   }
@@ -375,29 +356,6 @@
     line-height: 1.5;
   }
 
-  .home-page .team-section {
-    padding: 30px 0 60px;
-  }
-
-  .home-page .team-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
-    margin-top: 63px;
-  }
-
-  .home-page .team-card:nth-child(n + 4) {
-    display: none;
-  }
-
-  .home-page .team-card img {
-    width: 100%;
-    height: 350px;
-    aspect-ratio: auto;
-  }
-
-  .home-page .team-card {
-    width: 100%;
-  }
 
   .home-page .testimonial-section {
     padding: 60px 0;
@@ -416,23 +374,6 @@
     min-height: 356px;
   }
 
-  .home-page .process-section {
-    padding: 60px 0 30px;
-  }
-
-  .home-page .process-grid {
-    gap: 36px;
-  }
-
-  .home-page .process-card {
-    min-height: 224px;
-    padding: 18px 16px 22px;
-  }
-
-  .home-page .process-card strong {
-    font-size: 26px;
-    line-height: 1.4;
-  }
 
   .home-page .gallery-section {
     padding: 30px 0;
@@ -458,10 +399,6 @@
 
   .home-page .faq-grid {
     gap: 42px;
-  }
-
-  .home-page .faq-cta {
-    margin-top: 76px;
   }
 
   .home-page .contact-band {

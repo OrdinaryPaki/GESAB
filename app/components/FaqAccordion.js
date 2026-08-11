@@ -6,6 +6,7 @@ import {
   getInitialOpenFaqIndex,
   getNextOpenFaqIndex,
 } from "./faq-accordion-state.mjs";
+import "./FaqAccordion.css";
 
 export function FaqAccordion({ items }) {
   const baseId = useId();

@@ -22,7 +22,7 @@ export function Header({ dark = false, hero = false }) {
       <div className="container header-inner">
         <div className="header-left">
           <Link href="/" className="logo-link">
-            <Logo dark={true} />
+            <Logo dark />
           </Link>
         </div>
         <nav className="nav-links" aria-label="Primary navigation">
@@ -89,6 +89,7 @@ export function Footer() {
           <Link href="/">Hem</Link>
           <Link href="/about">Om oss</Link>
           <Link href="/service">Tjänster</Link>
+          <Link href="/blog">Blogg</Link>
           <Link href="/contact">Kontakt</Link>
         </div>
         <div className="footer-list footer-contact">
@@ -167,27 +168,5 @@ export function AppointmentForm() {
       </label>
       <CtaButton variant="yellow">Skicka förfrågan</CtaButton>
     </form>
-  );
-}
-
-export function PageFrame({ children, headerDark = false }) {
-  return (
-    <>
-      <Header dark={headerDark} />
-      {children}
-      <ContactBand />
-      <Footer />
-    </>
-  );
-}
-
-export function InnerHero({ label, title }) {
-  return (
-    <section className="inner-hero">
-      <div className="container inner-hero-content">
-        <span>{label}</span>
-        <h1>{title}</h1>
-      </div>
-    </section>
   );
 }

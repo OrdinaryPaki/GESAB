@@ -17,7 +17,7 @@
 .title {
   max-width: 1120px;
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: clamp(64px, 5.25vw, 92px);
   font-weight: 600;
   letter-spacing: -0.045em;
@@ -74,39 +74,37 @@
 
 .lead {
   max-width: 760px;
-  margin: 0 0 68px;
+  margin: 0 0 88px;
   color: var(--text);
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
-.guidanceList,
-.preparationList {
+.textBlocks {
   display: grid;
-  margin: 30px 0 0;
+  margin: 36px 0 0;
   padding: 0;
-  list-style: none;
 }
 
-.guidanceList {
+.textBlocks {
   border-top: 1px solid var(--line);
 }
 
-.guidanceList li {
+.textBlock {
   padding: 24px 0 26px;
   border-bottom: 1px solid var(--line);
 }
 
-.guidanceList h3 {
+.textBlock h3 {
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 21px;
   font-weight: 600;
   line-height: 1.35;
 }
 
-.guidanceList p {
+.textBlock p {
   max-width: 720px;
   margin: 9px 0 0;
   color: rgba(5, 5, 5, 0.7);
@@ -114,11 +112,15 @@
   line-height: 1.68;
 }
 
-.preparationList {
+.standardList {
+  display: grid;
   gap: 14px;
+  margin: 36px 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.preparationList li {
+.standardList li {
   position: relative;
   padding-left: 28px;
   color: rgba(5, 5, 5, 0.76);
@@ -126,19 +128,19 @@
   line-height: 1.65;
 }
 
-.preparationList li::before {
+.standardList li::before {
   content: "";
   position: absolute;
   top: 11px;
   left: 3px;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 999px;
-  background: var(--blue);
+  background: var(--muted);
 }
 
 .articleSection {
-  margin-top: 66px;
+  margin-top: 88px;
 }
 
 .articleSection:first-of-type {
@@ -146,24 +148,22 @@
 }
 
 .article h2,
-.importantNote h2,
 .relatedHeader h2 {
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.18;
 }
 
-.article h2,
-.importantNote h2 {
+.article h2 {
   font-size: 36px;
+  margin-bottom: 24px;
 }
 
-.articleSection > p,
-.importantNote p {
+.articleSection > p {
   max-width: 780px;
-  margin: 22px 0 0;
+  margin: 0;
   color: rgba(5, 5, 5, 0.72);
   font-size: 17px;
   line-height: 1.75;
@@ -174,127 +174,35 @@
   width: 100%;
   height: auto;
   aspect-ratio: 827 / 494;
-  margin-top: 46px;
+  margin-top: 64px;
   border-radius: 16px;
   background: var(--soft);
   object-fit: cover;
 }
 
-.includedList,
-.considerationList {
-  display: grid;
-  gap: 16px;
-  margin: 28px 0 0;
-  padding: 0;
-  list-style: none;
-}
 
-.includedList li,
-.considerationList li {
-  position: relative;
-  padding-left: 34px;
-  color: rgba(5, 5, 5, 0.78);
-  font-size: 17px;
-  line-height: 1.65;
-}
-
-.includedList li::before {
-  content: "✓";
-  position: absolute;
-  top: 1px;
-  left: 0;
-  display: grid;
-  width: 23px;
-  height: 23px;
-  place-items: center;
-  border-radius: 999px;
-  background: var(--blue);
-  color: white;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.considerationList li::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--yellow);
-  box-shadow: 0 0 0 5px rgba(253, 188, 13, 0.18);
-}
-
-.processList {
-  margin: 34px 0 0;
-  padding: 0;
-  border-bottom: 1px solid var(--line);
-  list-style: none;
-}
-
-.processItem {
-  display: grid;
-  grid-template-columns: 54px minmax(0, 1fr);
-  gap: 22px;
-  padding: 26px 0 28px;
-  border-top: 1px solid var(--line);
-}
-
-.processItem > span {
-  color: var(--blue);
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.processItem h3 {
-  margin: 0;
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-.processItem p {
-  margin: 8px 0 0;
-  color: rgba(5, 5, 5, 0.7);
-  font-size: 16px;
-  line-height: 1.68;
-}
-
-.importantNote {
-  margin-top: 72px;
-  border-left: 6px solid var(--blue);
-  border-radius: 0 16px 16px 0;
-  background: #eef6ff;
-  padding: 36px 40px 40px;
-}
-
-.importantNote p {
-  margin-top: 16px;
-}
 
 .faqSection {
   margin-top: 82px;
+  background: var(--soft);
+  border-radius: 16px;
+  padding: 40px;
 }
 
 .faqSection > h2 {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .faqSection :global(.faq-list) {
   gap: 0;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 16px;
+  border: none;
 }
 
 .faqSection :global(.faq-item) {
   border-bottom: 1px solid var(--line);
   border-radius: 0;
-  padding: 20px 24px;
+  padding: 0;
 }
 
 .faqSection :global(.faq-item:last-child) {
@@ -303,6 +211,44 @@
 
 .faqSection :global(.faq-question) {
   text-align: left;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faqSection :global(.faq-toggle) {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  color: rgba(5, 5, 5, 0.4);
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.faqSection :global(.faq-toggle)::before {
+  content: "›";
+}
+
+.faqSection :global(.faq-item.open) :global(.faq-toggle) {
+  background: transparent;
+  color: var(--text);
+  transform: rotate(90deg);
+  border-color: transparent;
+}
+
+.faqSection :global(.faq-item.open) :global(.faq-toggle)::before {
+  content: "›";
+}
+
+.faqSection :global(.faq-panel p) {
+  margin: 0 0 24px 0;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .quoteCard {
@@ -313,7 +259,6 @@
   background: var(--blue);
   color: white;
   padding: 34px 32px 32px;
-  box-shadow: 0 26px 70px rgba(22, 129, 255, 0.2);
 }
 
 .page .quoteCard :global(.appointment-card) {
@@ -332,6 +277,7 @@
   margin: 0;
   color: white;
   text-align: left;
+  font-family: Inter, sans-serif;
   font-size: 30px;
   line-height: 1.16;
 }
@@ -355,7 +301,7 @@
 .page .quoteCard :global(.appointment-card .service-select-trigger) {
   height: 52px;
   border: 0;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 11px 14px;
   background: white;
   color: var(--text);
@@ -390,13 +336,13 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--yellow);
+  color: white;
   font-weight: 800;
 }
 
 .relatedSection {
   background: var(--soft);
-  padding: 92px 24px 118px;
+  padding: 42px 24px 118px;
 }
 
 .relatedHeader {
@@ -462,7 +408,7 @@
 
 .relatedCard h3 {
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 25px;
   font-weight: 600;
   line-height: 1.25;
@@ -573,61 +519,45 @@
   }
 
   .lead {
-    margin-bottom: 52px;
+    margin-bottom: 64px;
     font-size: 20px;
     line-height: 1.55;
   }
 
   .articleSection {
-    margin-top: 54px;
+    margin-top: 64px;
   }
 
-  .article h2,
-  .importantNote h2 {
+  .article h2 {
     font-size: 30px;
   }
 
   .articleSection > p,
-  .importantNote p,
-  .guidanceList p,
-  .preparationList li,
-  .includedList li,
-  .considerationList li {
+  .textBlock p,
+  .standardList li {
     font-size: 16px;
   }
 
   .supportingImage {
-    margin-top: 34px;
+    margin-top: 48px;
     border-radius: 14px;
   }
 
-  .processItem {
-    grid-template-columns: 42px minmax(0, 1fr);
-    gap: 14px;
-    padding: 22px 0 24px;
-  }
 
-  .processItem h3 {
-    font-size: 20px;
-  }
-
-  .importantNote {
-    margin-top: 58px;
-    border-left-width: 5px;
-    padding: 28px 24px 30px;
-  }
 
   .faqSection {
     margin-top: 64px;
+    padding: 32px 24px;
   }
 
   .faqSection :global(.faq-item) {
-    padding: 18px;
+    padding: 0;
   }
 
   .faqSection :global(.faq-question) {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.45;
+    padding: 16px 0;
   }
 
   .relatedSection {

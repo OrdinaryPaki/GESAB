@@ -3,25 +3,14 @@ export const image = {
     "https://framerusercontent.com/images/103ND4j7PijC4HeTNa6Ypuu0zc.jpg?scale-down-to=1024&width=3144&height=3392",
   heroPlumber:
     "https://framerusercontent.com/images/XjlHJTrjfARAHBuipgxM3GkuIg.jpg?scale-down-to=1024&width=2836&height=3392",
-  avatars:
-    "https://framerusercontent.com/images/2DfOhKFXewgH74A38AsKFqnQatY.svg?width=108&height=40",
-  chooseOne:
-    "https://framerusercontent.com/images/c7c6aPJa4eimkeRgCTstTKRg24.jpg?scale-down-to=1024&width=1640&height=2088",
-  chooseTwo:
-    "https://framerusercontent.com/images/DZWmtqm9HQwIG5M2Ky157nHyzyA.jpg?scale-down-to=1024&width=1428&height=1548",
   aboutPattern:
     "https://framerusercontent.com/images/i1Q21Y5um9Mhlr1tWmkdbhpsg4.jpg?width=1244&height=1252",
-  aboutPlumber:
-    "https://framerusercontent.com/images/ozohsjrZkkrOX5TQZWZpKD4RI.jpg?scale-down-to=1024&width=1912&height=2176",
   ctaBg:
     "https://framerusercontent.com/images/mhxhhhWWPx2n0wtFeA22WW7g20.jpg?scale-down-to=2048&width=5760&height=3440",
   badges: [
     "https://framerusercontent.com/images/q05e4fwr8su4jydDalYSvEwJDgA.jpg?width=386&height=385",
   ],
 };
-
-export const serviceDetailSupportingImage =
-  "https://framerusercontent.com/images/rYld1RtawTcSnr6YgGDpswY4Hg.jpg?scale-down-to=2048&width=3309&height=1976";
 
 export const contactInfo = {
   company: "Göteborgs Entreprenad Service AB",
@@ -249,14 +238,6 @@ export const testimonials = [
   },
 ];
 
-export const gallery = [
-  "https://framerusercontent.com/images/td8HawPEPsqppzq8BOQKqENv34.jpg?scale-down-to=1024&width=2352&height=1856",
-  "https://framerusercontent.com/images/kpzLt08Jr5pzvSVn5nxcIjE.jpg?scale-down-to=1024&width=2352&height=1856",
-  "https://framerusercontent.com/images/5HvWrJmM6xzGq3DYvPA463WFMxA.jpg?scale-down-to=512&width=1536&height=1360",
-  "https://framerusercontent.com/images/YzIewOSyeipY6CeBUEuF1AOJJa0.jpg?scale-down-to=512&width=1536&height=1360",
-  "https://framerusercontent.com/images/KUrLwljq131KPkT0gW3k032SOwE.jpg?scale-down-to=512&width=1536&height=1360",
-];
-
 export const processSteps = [
   {
     number: "01",
@@ -285,6 +266,11 @@ export const faqItems = [
     question: "Kan ni hjälpa till från idé till färdigt badrum?",
     answer:
       "Ja. Vi kan hjälpa till med rådgivning, planering, material- och lösningsval, samordning av hantverkare och färdigställande.",
+  },
+  {
+    question: "Hur lång tid tar en badrumsrenovering?",
+    answer:
+      "En standardrenovering av ett badrum tar oftast mellan 3 till 5 veckor beroende på omfattning, materialval och torktider för tätskikt.",
   },
   {
     question: "Arbetar ni med ROT-avdrag?",

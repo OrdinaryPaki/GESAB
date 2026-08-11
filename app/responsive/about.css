@@ -18,19 +18,6 @@
     width: 100%;
   }
 
-  #about-page .process-grid {
-    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1fr);
-    gap: clamp(56px, 9vw, 120px);
-  }
-
-  #about-page .team-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: clamp(16px, 2vw, 24px);
-  }
-
-  #about-page :where(.team-card, .team-card img) {
-    width: 100%;
-  }
 }
 
 @media (min-width: 521px) and (max-width: 980px) {
@@ -124,9 +111,6 @@
     grid-column: 1 / -1;
   }
 
-  #about-page .team-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 389px) {
@@ -138,8 +122,6 @@
       [class*="storyCollage"],
       [class*="missionInner"],
       [class*="missionImage"],
-      .process-section > .container,
-      .team-section > .container,
       .faq-grid
     ) {
     width: 100% !important;
@@ -192,7 +174,7 @@
     margin-top: -40px;
   }
 
-  #about-page :where(.process-section, .team-section, .testimonial-section, .faq-section) {
+  #about-page :where(.testimonial-section, .faq-section) {
     height: auto !important;
   }
 

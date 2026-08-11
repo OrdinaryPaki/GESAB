@@ -1,8 +1,6 @@
-import { CtaLink } from "../components/CtaButton";
 import { ContactBand, Footer, Header } from "../components/GesabShell";
-import { StarIcon } from "../components/GesabIcons";
-import { image, services, team } from "../gesab-data";
-import { ServiceGrid } from "./ServiceGrid";
+import { services } from "../gesab-data";
+import { ServiceConcepts } from "./ServiceConcepts";
 import styles from "./service-page.module.css";
 
 export const metadata = {
@@ -20,57 +18,10 @@ const serviceIndexCopy = {
   fasadrenovering: "Fasadrenovering med rätt metod, säkert utförande och långsiktigt skydd.",
 };
 
-const featuredServices = services.slice(0, 6).map((service) => ({
+const allServicesWithCopy = services.map((service) => ({
   ...service,
   body: serviceIndexCopy[service.slug] ?? service.body,
 }));
-
-const trustPoints = [
-  {
-    label: "Kostnadsfri genomgång",
-    icon: "https://framerusercontent.com/images/2GUlNnU3kug1y5fbSY3gbLjww8s.svg?width=22&height=22",
-    iconSize: 22,
-  },
-  {
-    label: "Samordnade hantverkare",
-    icon: "https://framerusercontent.com/images/vBdOazWIJGVMpXx9Zxdfuedktlc.svg?width=24&height=24",
-    iconSize: 24,
-  },
-  {
-    label: "Dokumentation och ROT",
-    icon: "https://framerusercontent.com/images/vFoBxfn1HM0xcgHElFf7EQ4WUM.svg?width=22&height=22",
-    iconSize: 22,
-  },
-];
-
-const allReviewServices = services.map((service) => ({
-  ...service,
-  body: serviceIndexCopy[service.slug] ?? service.body,
-}));
-
-const topRowServices = allReviewServices.slice(0, 5);
-const bottomRowServices = allReviewServices.slice(5, 9);
-
-const ReviewCard = ({ service, index }) => (
-  <article className={styles.reviewCard}>
-    <div className={styles.reviewCardStars} aria-hidden="true">
-      {Array.from({ length: 5 }, (_, starIndex) => <StarIcon key={starIndex} />)}
-    </div>
-    <div className={styles.reviewCardContent}>
-      <p className={styles.reviewCardQuote}>{service.body}</p>
-      <div className={styles.reviewCardFooter}>
-        <div className={styles.reviewAuthor}>
-          <img src={team[index % team.length].image} alt="" />
-          <div className={styles.reviewAuthorName}>
-            <strong>{service.title}</strong>
-            <small>GESAB rådgivning</small>
-          </div>
-        </div>
-        <img className={styles.reviewBadge} src={image.badges[0]} alt="" />
-      </div>
-    </div>
-  </article>
-);
 
 export default function ServicePage() {
   return (
@@ -80,65 +31,10 @@ export default function ServicePage() {
         <section className={styles.indexSection}>
           <div className={`container ${styles.indexContainer}`}>
             <header className={styles.indexTitle}>
-            <h1>Tjänster</h1>
+              <h1>Tjänster</h1>
               <p>Trygga tjänster för badrum, kök och renovering – anpassade efter ditt hem och dina behov.</p>
             </header>
-            <ServiceGrid services={featuredServices} />
-          </div>
-        </section>
-        <section className={styles.trustSection}>
-          <div className={`container ${styles.trustGrid}`}>
-            <div className={styles.trustCopy}>
-              <h2>Samordnade tjänster du kan lita på</h2>
-              <div className={styles.trustCopyBottom}>
-                <p>Vi samordnar rådgivning, offert, arbetsordning och utförande så att projektet blir tydligt från start till överlämning.</p>
-                <CtaLink href="/about" variant="yellow" className={styles.trustCta}>Läs mer</CtaLink>
-              </div>
-            </div>
-            <div className={styles.trustMedia}>
-              <img src="https://framerusercontent.com/images/9R9tsiBykeVoZizc3GBOcvQMKs.jpg?scale-down-to=1024&width=2160&height=2196" alt="" />
-              <div className={styles.trustList}>
-                {trustPoints.map((item) => (
-                  <p key={item.label}>
-                    <span className={styles.trustIcon} aria-hidden="true">
-                      <img src={item.icon} width={item.iconSize} height={item.iconSize} alt="" />
-                    </span>
-                    <span>{item.label}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={styles.reviewSection}>
-          <div className={`container ${styles.reviewContainer}`}>
-            <header className={styles.reviewHeader}>
-              <p className={styles.reviewEyebrow}>INFÖR OFFERT</p>
-              <h2>Frågor som avgör ett bra resultat</h2>
-              <div className={styles.reviewSummary} aria-label="Nio utvalda tjänsteområden">
-                <strong>9</strong>
-                <span className={styles.reviewSummaryIcons} aria-hidden="true">
-                  {Array.from({ length: 5 }, (_, index) => <StarIcon key={index} />)}
-                </span>
-                <span>(urval)</span>
-              </div>
-            </header>
-          </div>
-          <div className={styles.marqueeContainer}>
-            <div className={styles.marqueeRow}>
-              <div className={styles.marqueeContentRight}>
-                {topRowServices.map((service, index) => <ReviewCard key={service.slug + '-1'} service={service} index={index} />)}
-                {topRowServices.map((service, index) => <ReviewCard key={service.slug + '-2'} service={service} index={index} />)}
-              </div>
-            </div>
-            <div className={styles.marqueeRow}>
-              <div className={styles.marqueeContentLeft}>
-                {bottomRowServices.map((service, index) => <ReviewCard key={service.slug + '-1'} service={service} index={index + 5} />)}
-                {bottomRowServices.map((service, index) => <ReviewCard key={service.slug + '-2'} service={service} index={index + 5} />)}
-              </div>
-            </div>
-            <div className={styles.marqueeFadeLeft}></div>
-            <div className={styles.marqueeFadeRight}></div>
+            <ServiceConcepts services={allServicesWithCopy} />
           </div>
         </section>
       </main>

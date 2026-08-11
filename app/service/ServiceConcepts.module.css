@@ -1,0 +1,790 @@
+.conceptsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.paginationLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.paginationButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.pageButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageButton:hover {
+  border-color: var(--text);
+}
+
+.pageButton.active {
+  background: var(--text);
+  color: white;
+  border-color: var(--text);
+}
+
+.conceptContainer {
+  width: 100%;
+}
+
+/* Common elements */
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.8px;
+}
+
+.readMore svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Concept 1: Classic Grid (Current) */
+.concept1 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.c1Card {
+  display: grid;
+  grid-template-columns: 262px minmax(0, 1fr);
+  height: 256px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  color: var(--text);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.c1Card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.c1Content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+}
+
+.c1Content h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.c1Content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.c1Card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+}
+.c1Card:hover > img {
+  transform: scale(1.04);
+}
+
+/* Concept 2: Masonry / Staggered */
+.concept2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.c2Card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  color: var(--text);
+  border: 1px solid var(--line);
+  transition: transform 0.3s ease;
+}
+
+.c2Card:hover {
+  transform: translateY(-8px);
+}
+
+.c2ImageWrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.c2ImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.c2Card:hover .c2ImageWrapper img {
+  transform: scale(1.05);
+}
+
+.c2Content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.c2Content h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.c2Content p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Concept 3: List View */
+.concept3 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.c3Card {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  color: var(--text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.c3Card:hover {
+  border-color: var(--text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.c3Card > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.c3Content {
+  flex-grow: 1;
+  padding: 0 32px;
+}
+
+.c3Content h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.c3Content p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.c3Action {
+  padding-right: 16px;
+}
+
+.c3Button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--surface);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.c3Card:hover .c3Button {
+  background: var(--text);
+  color: white;
+}
+
+/* Concept 4: Large Hero Cards */
+.concept4 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.c4Card {
+  position: relative;
+  height: 400px;
+  border-radius: 24px;
+  overflow: hidden;
+  color: white;
+}
+
+.c4Card > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.c4Card:hover > img {
+  transform: scale(1.05);
+}
+
+.c4Overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 48px;
+}
+
+.c4Content {
+  max-width: 600px;
+}
+
+.c4Content h3 {
+  margin: 0 0 16px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.c4Content p {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Concept 5: Minimalist Text-focused */
+.concept5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.c5Card {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  color: var(--text);
+  transition: background 0.3s ease;
+}
+
+.c5Card:hover {
+  background: var(--text);
+  color: white;
+}
+
+.c5Number {
+  font-family: Outfit, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 32px;
+  opacity: 0.5;
+}
+
+.c5Content {
+  flex-grow: 1;
+}
+
+.c5Content h3 {
+  margin: 0 0 16px;
+  font-size: 24px;
+}
+
+.c5Content p {
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.c5Arrow {
+  margin-left: 24px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.c5Arrow svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.c5Card:hover .c5Arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Concept 6: Accordion */
+.concept6 {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--line);
+}
+
+.c6Card {
+  border-bottom: 1px solid var(--line);
+}
+
+.c6Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.c6Header h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.c6Header:hover h3 {
+  color: var(--muted);
+}
+
+.c6Toggle {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.c6BodyWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.c6Expanded .c6BodyWrapper {
+  grid-template-rows: 1fr;
+}
+
+.c6Body {
+  overflow: hidden;
+  display: flex;
+  gap: 48px;
+  padding-bottom: 0;
+}
+
+.c6Expanded .c6Body {
+  padding-bottom: 40px;
+}
+
+.c6BodyContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c6BodyContent p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 32px;
+  max-width: 500px;
+}
+
+.c6Link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.c6Link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.c6Body img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Concept 7: Carousel/Slider */
+.concept7 {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 0 24px 48px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.concept7::-webkit-scrollbar {
+  display: none;
+}
+
+.c7Track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  padding: 0 calc(50vw - 600px); /* Center align the first item on large screens */
+}
+
+@media (max-width: 1200px) {
+  .c7Track {
+    padding: 0 24px;
+  }
+}
+
+.c7Card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  scroll-snap-align: start;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  color: var(--text);
+}
+
+.c7Card > img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.c7Content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.c7Content h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.c7Content p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Concept 8: Asymmetrical/Editorial */
+.concept8 {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.c8Row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.c8Reverse {
+  direction: rtl;
+}
+
+.c8Reverse > * {
+  direction: ltr;
+}
+
+.c8Image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.c8Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c8Content {
+  padding: 40px;
+}
+
+.c8Content h3 {
+  font-family: Outfit, sans-serif;
+  font-size: 48px;
+  margin: 0 0 24px;
+  line-height: 1.1;
+}
+
+.c8Content p {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 40px;
+}
+
+.c8Button {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--text);
+  color: white;
+  border-radius: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.c8Button:hover {
+  opacity: 0.9;
+}
+
+/* Concept 9: Grid with Icons */
+.concept9 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.c9Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--surface);
+  border-radius: 24px;
+  color: var(--text);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.c9Card:hover {
+  transform: translateY(-4px);
+  background: white;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
+.c9Icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 24px;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.c9Icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c9Card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.c9Card p {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Concept 10: Interactive Hover Cards */
+.concept10 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.c10Card {
+  position: relative;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  color: white;
+}
+
+.c10Image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.c10Overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  transition: background 0.3s ease;
+}
+
+.c10Card:hover .c10Image {
+  transform: scale(1.1);
+}
+
+.c10Card:hover .c10Overlay {
+  background: rgba(0,0,0,0.7);
+}
+
+.c10Content {
+  position: absolute;
+  inset: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.c10Content h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.c10Hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  max-height: 0;
+}
+
+.c10Card:hover .c10Content h3 {
+  transform: translateY(0);
+  margin-bottom: 16px;
+}
+
+.c10Card:hover .c10Hidden {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 200px;
+}
+
+.c10Hidden p {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.c10Button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 980px) {
+  .concept1, .concept2, .concept5, .concept9, .concept10 {
+    grid-template-columns: 1fr;
+  }
+  
+  .c1Card {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .c1Card > img {
+    height: 200px;
+  }
+  
+  .c3Card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .c3Card > img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 16px;
+  }
+  
+  .c3Content {
+    padding: 0 16px 24px;
+  }
+  
+  .c6Body {
+    flex-direction: column;
+  }
+  
+  .c6Body img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .c8Row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .c8Content {
+    padding: 0;
+  }
+}

@@ -1,0 +1,111 @@
+/* Style owner: FaqAccordion (shared accordion primitive).
+   HOME / about / contact / service-detail host variants stay with those hosts. */
+
+.faq-list {
+  display: grid;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  transition: background-color 200ms ease;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--line);
+}
+
+@media (hover: hover) {
+  .faq-item:hover {
+    background-color: rgba(0, 0, 0, 0.015);
+  }
+}
+
+.faq-question {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 0;
+  background: transparent;
+  color: var(--black);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 32px 16px;
+  text-align: left;
+}
+
+.faq-question-text {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.faq-toggle {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--yellow);
+  background: var(--yellow);
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  transition: transform 220ms ease, background-color 220ms ease, color 220ms ease, border-color 220ms ease;
+}
+
+.faq-toggle::before {
+  content: "+";
+}
+
+.faq-item.open .faq-toggle {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+  transform: rotate(180deg);
+}
+
+.faq-item.open .faq-toggle::before {
+  content: "−";
+}
+
+.faq-question:focus-visible {
+  outline: 3px solid rgba(22, 129, 255, 0.35);
+  outline-offset: 4px;
+}
+
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 260ms ease, opacity 180ms ease;
+}
+
+.faq-item.open .faq-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.faq-panel-inner {
+  overflow: hidden;
+}
+
+.faq-panel p {
+  max-width: 600px;
+  margin: 0 16px 32px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item,
+  .faq-toggle,
+  .faq-panel {
+    transition-duration: 1ms;
+  }
+}
