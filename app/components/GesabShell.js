@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { contactInfo, image, serviceSelectOptions, services } from "../gesab-data";
+import { contactInfo, image, services } from "../gesab-data";
 import { CtaAnchor, CtaButton } from "./CtaButton";
 import { Logo, MailIcon, PhoneIcon } from "./GesabIcons";
-import { ServiceSelect } from "./ServiceSelect";
 import { placeholderImages } from "./placeholder-images";
 
 const navItems = [
@@ -144,7 +143,13 @@ export function AppointmentForm() {
         Telefon
         <input type="tel" placeholder="0700 00 00 00" />
       </label>
-      <ServiceSelect options={serviceSelectOptions.slice(0, 4)} />
+      <label>
+        Meddelande
+        <textarea
+          name="message"
+          placeholder="Beskriv kort vad du vill ha hjälp med."
+        />
+      </label>
       <CtaButton variant="yellow">Skicka förfrågan</CtaButton>
     </form>
   );

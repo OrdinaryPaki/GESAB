@@ -312,7 +312,7 @@
 
 .page :global(.appointment-card) {
   width: 539px;
-  height: 582px;
+  height: auto;
   gap: 12px;
   margin-top: 120px;
   padding: 38px 48px 48px;
