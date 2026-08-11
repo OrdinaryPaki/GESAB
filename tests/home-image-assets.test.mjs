@@ -4,13 +4,30 @@ import test from "node:test";
 const siteUrl = process.env.SITE_URL ?? "http://127.0.0.1:3000";
 
 const homeImagePaths = [
-  "/images/home/service-bathroom-result.webp",
-  "/images/home/service-kitchen-result.webp",
   "/images/home/gallery-bathroom-result.webp",
   "/images/home/gallery-kitchen-result.webp",
 ];
 
-const aboutPlaceholderPath = "/images/placeholders/gesab-content-placeholder.svg";
+const contentPlaceholderPath = "/images/placeholders/gesab-content-placeholder.svg";
+
+test("every HOME service card renders the GESAB image placeholder", async () => {
+  const response = await fetch(new URL("/", siteUrl));
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  const servicesSection = html.match(/<section class="services-section">[\s\S]*?<\/section>/)?.[0];
+  const serviceCards = servicesSection?.match(/<a[^>]*class="service-card"[^>]*>[\s\S]*?<\/a>/g) ?? [];
+  const serviceImageSources = serviceCards.map(
+    (card) => card.match(/<img[^>]*src="([^"]+)"/)?.[1],
+  );
+
+  assert.ok(servicesSection, "the services section is missing from HOME");
+  assert.deepEqual(
+    serviceImageSources,
+    Array.from({ length: 4 }, () => contentPlaceholderPath),
+    "all four HOME service cards must render the GESAB image placeholder",
+  );
+});
 
 test("the HOME about section renders the GESAB image placeholder", async () => {
   const response = await fetch(new URL("/", siteUrl));
@@ -22,7 +39,7 @@ test("the HOME about section renders the GESAB image placeholder", async () => {
   assert.ok(aboutSection, "the Om GESAB section is missing from HOME");
   assert.match(
     aboutSection,
-    new RegExp(`<img class="about-photo"[^>]*src="${aboutPlaceholderPath}"`),
+    new RegExp(`<img class="about-photo"[^>]*src="${contentPlaceholderPath}"`),
     "the Om GESAB section must render the GESAB image placeholder",
   );
 });

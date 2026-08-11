@@ -17,13 +17,13 @@ export const homeImages = {
   ],
   services: {
     badrumsrenovering: {
-      src: "/images/home/service-bathroom-result.webp",
-      alt: "Färdigrenoverat badrum med dusch och kommod",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
     koksrenovering: {
-      src: "/images/home/service-kitchen-result.webp",
-      alt: "Färdigrenoverat kök med träfronter och matplats",
+      src: placeholderImages.content,
+      alt: "",
       ...homeImageDimensions,
     },
     totalentreprenad: {
