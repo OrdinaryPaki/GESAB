@@ -267,9 +267,12 @@
 
 .page :global(.contact-hero-inner) {
   width: min(745px, calc(100% - 40px));
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page :global(.contact-hero-inner h1) {
+  margin: 0;
   font-family: "Contact Outfit", Outfit, sans-serif;
   font-size: 72px;
   font-weight: 600;
@@ -282,7 +285,7 @@
 }
 
 .page :global(.contact-hero-inner > p) {
-  margin-top: 16px;
+  margin: 16px auto 0;
   color: #3b3b3b;
   font-family: "Contact Inter", Inter, sans-serif;
   font-size: 18px;
@@ -299,6 +302,7 @@
   border-radius: 16px;
   background: #f5f7fa;
   padding: 48px 40px;
+  text-align: left;
 }
 
 .contactFormFields {
@@ -310,6 +314,7 @@
 
 .page :global(.contact-main-form label),
 .page :global(.contact-main-form .service-select-field) {
+  display: grid;
   gap: 8px;
   color: #000;
   font-family: "Contact Inter", Inter, sans-serif;
@@ -318,10 +323,15 @@
   line-height: 27.2px;
 }
 
+.page :global(.contact-main-form .wide) {
+  grid-column: 1 / -1;
+}
+
 .page :global(.contact-main-form input),
 .page :global(.contact-main-form select),
 .page :global(.contact-main-form .service-select-trigger),
 .page :global(.contact-main-form textarea) {
+  width: 100%;
   border: 0;
   border-radius: 16px;
   background: #fff;
@@ -342,6 +352,7 @@
 .page :global(.contact-main-form textarea) {
   min-height: 100px;
   padding: 15px 18px;
+  resize: vertical;
 }
 
 .page :global(.contact-main-form input:focus),
@@ -372,6 +383,7 @@
 }
 
 .page :global(.contact-info-section .section-title h2) {
+  margin: 0 auto;
   font-family: "Contact Outfit", Outfit, sans-serif;
   font-size: 48px;
   font-weight: 600;
@@ -379,8 +391,12 @@
   line-height: 57.6px;
 }
 
+.page :global(.contact-info-section .section-title) {
+  text-align: center;
+}
+
 .page :global(.contact-info-section .section-title p) {
-  margin-top: 14px;
+  margin: 14px auto 0;
   color: #3b3b3b;
   font-family: "Contact Inter", Inter, sans-serif;
   font-size: 16px;
@@ -389,9 +405,11 @@
 }
 
 .page :global(.contact-card-row) {
+  display: grid;
   width: min(1044px, 100%);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
-  margin-top: 56px;
+  margin: 56px auto 0;
 }
 
 .page :global(.contact-card-row article) {
@@ -401,15 +419,28 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  border-radius: 16px;
+  background: var(--blue);
+  color: white;
   padding: 44px 32px;
+  text-align: center;
 }
 
 .page :global(.contact-card-row article > span) {
+  display: grid;
   width: 72px;
   height: 72px;
   flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
   background: #f5f7fa;
   color: #fdbc0d;
+}
+
+.page :global(.contact-card-row svg) {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .page :global(.contact-card-row h3) {

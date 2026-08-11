@@ -44,6 +44,29 @@ test("responsive styles load through their component and route owners", async ()
   );
 });
 
+test("globals stays a small foundation instead of becoming a page-style dump again", async () => {
+  const globalsUrl = new URL("../app/globals.css", import.meta.url);
+  const source = await readFile(globalsUrl, "utf8");
+  const root = postcss.parse(source, { from: globalsUrl.pathname });
+  const classNames = new Set();
+
+  root.walkRules((rule) => {
+    for (const match of rule.selector.matchAll(/\.([A-Za-z_][\w-]*)/g)) {
+      classNames.add(match[1]);
+    }
+  });
+
+  assert.deepEqual(
+    [...classNames].sort(),
+    ["container"],
+    "globals.css may contain only the shared container class; components and routes own the rest",
+  );
+  assert.ok(
+    source.split("\n").length <= 150,
+    "globals.css must stay small enough to review as a true global foundation",
+  );
+});
+
 test("route owners contain responsive rules without generated-class substring selectors", async () => {
   const ownerFiles = [
     new URL("../app/home-fidelity.css", import.meta.url),

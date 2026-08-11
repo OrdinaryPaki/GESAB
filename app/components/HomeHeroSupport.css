@@ -1,0 +1,418 @@
+/* Style owner: HOME hero, support strip and why-choose sections. */
+
+.blue-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.hero {
+  position: relative;
+  min-height: 808px;
+  overflow: hidden;
+  background: var(--blue);
+}
+
+.hero-pattern,
+.hero-photo {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-pattern {
+  left: 0;
+  width: 57%;
+}
+
+.hero-photo {
+  right: 0;
+  width: 43%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: auto;
+  min-height: 808px;
+  max-width: none;
+  margin: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 153px;
+  padding-left: 40px;
+  color: white;
+}
+
+.rating-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rating-pill {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--yellow);
+  color: black;
+  padding: 3px 10px;
+}
+
+.hero h1 {
+  max-width: 420px;
+  margin: 0;
+  color: white;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.hero p {
+  max-width: 420px;
+  margin: 16px 0 40px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.hero .cta-button {
+  min-width: 238px;
+}
+
+.trusted {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 320px;
+  margin-top: 76px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.support-strip {
+  padding: 88px 0 66px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 76px;
+}
+
+.support-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+}
+
+.blue-icon {
+  display: inline-grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--blue);
+  color: white;
+}
+
+.blue-icon.small {
+  width: 32px;
+  height: 32px;
+}
+
+.support-item h3,
+.check-list strong {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.support-item p,
+.why-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.why-section {
+  padding: 105px 0;
+}
+
+.why-section {
+  padding: 66px 0 213px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: center;
+}
+
+.why-section .why-grid {
+  grid-template-columns: 598px 380px;
+  align-items: start;
+  justify-content: start;
+}
+
+.why-section .why-copy {
+  position: relative;
+  top: 34px;
+}
+
+.image-stack {
+  position: relative;
+  min-height: 628px;
+}
+
+.why-section .image-stack {
+  width: 598px;
+  min-height: 522px;
+  height: 522px;
+}
+
+.image-stack img {
+  position: absolute;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.image-stack img:first-child {
+  left: 0;
+  top: 0;
+  width: 410px;
+  height: 522px;
+}
+
+.image-stack img:last-child {
+  right: 0;
+  bottom: 0;
+  width: 357px;
+  height: 387px;
+  border: 10px solid white;
+}
+
+.why-section .image-stack img:last-child {
+  bottom: -106px;
+  border-width: 10px;
+}
+
+.why-section .section-title h2 {
+  max-width: 380px;
+  font-weight: 600;
+}
+
+.why-copy > p {
+  max-width: 380px;
+  margin-top: 16px;
+}
+
+.check-list {
+  display: grid;
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.why-section .check-list {
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.check-list > div {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  column-gap: 10px;
+}
+
+.why-section .check-list > div {
+  grid-template-columns: 32px 338px;
+  column-gap: 10px;
+}
+
+.why-section .check-list strong {
+  display: block;
+  margin: -8px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.check-list p {
+  grid-column: 2;
+}
+
+.services-section .cta-button {
+  min-width: 169px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.about-section .about-row .cta-button {
+  margin-top: auto;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+@media (max-width: 1248px) {
+  .why-section .why-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
+    gap: 72px;
+  }
+
+  .why-section .image-stack {
+    width: auto;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .hero {
+    min-height: 930px;
+  }
+
+  .hero-pattern,
+.hero-photo {
+    width: 100%;
+  }
+
+  .hero-pattern {
+    height: 100%;
+  }
+
+  .hero-photo {
+    top: auto;
+    bottom: 0;
+    height: 130px;
+    opacity: 0.98;
+  }
+
+  .hero-content {
+    min-height: 844px;
+    justify-content: flex-start;
+    padding-top: 137px;
+  }
+
+  .rating-line {
+    margin-bottom: 28px;
+  }
+
+  .hero h1 {
+    max-width: 350px;
+    color: rgba(255, 255, 255, 0.24);
+    font-size: 48px;
+  }
+
+  .hero p {
+    display: none;
+  }
+
+  .hero .cta-button,
+.trusted {
+    display: none;
+  }
+
+  .support-grid,
+.why-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .why-section .why-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .why-section .why-copy {
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .why-section .section-title h2,
+.why-copy > p {
+    max-width: 100%;
+  }
+
+  .why-section .check-list > div {
+    width: 100%;
+    grid-template-columns: 32px minmax(0, 1fr);
+  }
+
+  .support-strip,
+.why-section {
+    padding: 72px 0;
+  }
+
+  .image-stack {
+    min-height: 520px;
+  }
+
+  .why-section .image-stack {
+    width: 100%;
+    height: 520px;
+    min-height: 520px;
+  }
+
+  .image-stack img:first-child {
+    width: 70%;
+    height: 430px;
+  }
+
+  .image-stack img:last-child {
+    width: 62%;
+    height: 320px;
+  }
+
+  .why-section .image-stack img:last-child {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .support-item {
+    grid-template-columns: 44px 1fr;
+    gap: 18px;
+  }
+
+  .image-stack {
+    min-height: 455px;
+  }
+
+  .why-section .image-stack {
+    width: 100%;
+    height: 455px;
+    min-height: 455px;
+  }
+
+  .image-stack img:first-child {
+    width: 76%;
+    height: 360px;
+  }
+
+  .image-stack img:last-child {
+    width: 68%;
+    height: 280px;
+  }
+
+  .why-section .image-stack img:last-child {
+    bottom: 0;
+  }
+
+}

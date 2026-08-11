@@ -7,6 +7,9 @@ import { ContactBand } from "./ContactBand";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { homeImages } from "./home-image-data";
+import "./HomeHeroSupport.css";
+import "./HomeServicesAbout.css";
+import "./SharedContentSections.css";
 
 const servicePreviewCopy = {
   badrumsrenovering: "Planering, tätskikt, VVS och plattsättning i rätt ordning.",
