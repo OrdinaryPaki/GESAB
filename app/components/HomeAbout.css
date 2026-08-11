@@ -1,7 +1,8 @@
-/* Style owner: HOME services and about-preview sections. */
-
-.hero .cta-button {
-  min-width: 238px;
+/* Home about preview, metrics and statistics. */
+.about-section .about-row .cta-button {
+  margin-top: auto;
+  font-weight: 600;
+  line-height: 1.7;
 }
 
 .about-row p {
@@ -20,165 +21,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 120px;
   align-items: center;
-}
-
-.services-section {
-  background: var(--yellow);
-  padding: 115px 0;
-}
-
-.services-section.compact {
-  padding-top: 115px;
-}
-
-.split-title {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 32px;
-  margin-bottom: 56px;
-}
-
-.services-section .section-title span {
-  margin-bottom: 14px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.services-section .section-title h2 {
-  max-width: 499px;
-  font-weight: 600;
-}
-
-.services-section .cta-button {
-  min-width: 169px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.service-card {
-  position: relative;
-  display: grid;
-  min-height: 256.40625px;
-  grid-template-columns: 262px 1fr;
-  overflow: hidden;
-  border-radius: 16px;
-  background: white;
-  color: var(--text);
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease,
-    border-color 180ms ease;
-  -webkit-tap-highlight-color: rgba(22, 129, 255, 0.18);
-}
-
-.service-card img {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 260ms ease;
-  transform-origin: center;
-}
-
-.service-card div {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  background: white;
-  padding: 24px 32px 27px;
-}
-
-.service-card:hover,
-.service-card:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(5, 5, 5, 0.08);
-}
-
-.service-card:hover img,
-.service-card:focus-visible img {
-  transform: scale(1.015);
-}
-
-.service-card:hover svg,
-.service-card:focus-visible svg {
-  transform: translateX(3px);
-}
-
-.service-card:focus-visible {
-  outline: 3px solid rgba(22, 129, 255, 0.34);
-  outline-offset: 4px;
-}
-
-.service-card h3 {
-  margin: 0 0 8px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.service-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.service-card span {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.7;
-}
-
-.service-card:active h3,
-.service-card:active p,
-.service-card:active span {
-  color: var(--blue);
-}
-
-.service-card svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
-
-.service-card svg {
-  transition: transform 180ms ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .service-card,
-.service-card img,
-.service-card svg {
-    transition: none;
-  }
-
-  .service-card:hover,
-.service-card:focus-visible {
-    transform: none;
-  }
-
-  .service-card:hover img,
-.service-card:focus-visible img {
-    transform: none;
-  }
-
-  .service-card:hover svg,
-.service-card:focus-visible svg {
-    transform: none;
-  }
 }
 
 .about-row {
@@ -332,10 +174,6 @@
 
 @media (max-width: 980px) {
 
-  .hero .cta-button {
-    display: none;
-  }
-
   .about-grid {
     grid-template-columns: 1fr;
     gap: 42px;
@@ -345,22 +183,8 @@
     padding: 72px 0;
   }
 
-  .split-title {
-    display: grid;
-    align-items: start;
-  }
-
-  .services-grid,
-.stat-grid {
+  .stat-grid {
     grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card img {
-    height: 230px;
   }
 
   .about-row {
@@ -390,10 +214,6 @@
 
 @media (max-width: 520px) {
 
-  .services-section {
-    padding: 78px 0;
-  }
-
   .metric-card {
     min-height: 250px;
     padding: 40px;
@@ -402,5 +222,141 @@
   .stat-grid strong {
     font-size: 50px;
   }
+}
 
+@media (min-width: 981px) and (max-width: 1248px) {
+  .home-page .about-section .about-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 40%);
+    gap: clamp(40px, 5vw, 61px);
+  }
+
+  .home-page .about-section .about-row {
+    grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1fr);
+    gap: clamp(32px, 5vw, 61px);
+  }
+}
+
+@media (max-width: 389px) {
+
+  .home-page .about-section .stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-page .about-section {
+  padding-bottom: 160px;
+}
+
+.home-page .about-section .stat-grid {
+  margin-top: 180px;
+}
+
+.home-page .about-section .stat-grid strong {
+  font-size: 62px;
+}
+
+.home-page .about-section .stat-grid span {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.home-page .metric-card strong,
+.home-page .stat-grid strong {
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 980px) {
+
+  .home-page .about-section {
+    padding: 60px 0 60px;
+  }
+
+  .home-page .about-section .about-grid {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-page .about-copy {
+    display: contents;
+  }
+
+  .home-page .about-copy > :first-child {
+    order: 1;
+  }
+
+  .home-page .about-photo {
+    height: 320px;
+    width: 100%;
+    order: 2;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .home-page .about-row {
+    order: 3;
+  }
+
+  .home-page .about-section .about-row {
+    gap: 32px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-page .metric-card {
+    min-height: 140px;
+    padding: 24px;
+    border-radius: 12px;
+  }
+
+  .home-page .metric-card strong {
+    font-size: 44px;
+  }
+
+  .home-page .metric-card span {
+    font-size: 16px;
+  }
+
+  .home-page .about-section .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 20px;
+    margin-top: 64px;
+    text-align: center;
+  }
+
+  .home-page .about-section .stat-grid strong {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .home-page .about-section .stat-grid span {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .home-page .metric-card {
+    min-height: 162px;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .home-page .about-section {
+    padding: var(--home-mobile-section-space) 0;
+  }
+
+  .home-page .stat-grid {
+    gap: 0;
+    margin-top: 64px;
+  }
+
+  .home-page .stat-grid > div {
+    padding: 24px 12px;
+    border-top: 1px solid var(--line);
+  }
 }

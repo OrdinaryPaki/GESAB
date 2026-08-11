@@ -1,0 +1,117 @@
+/* Service-detail FAQ presentation and accordion states. */
+@media (max-width: 680px) {
+
+  .faqSection {
+    margin-top: 72px;
+  }
+}
+
+.fitUnderIntro {
+  margin-top: 48px;
+}
+
+.fitUnderIntro.faqSection {
+  margin-top: 48px;
+}
+
+.fitUnderIntroTitle {
+  margin: 0 0 16px;
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.faqSection {
+  margin-top: 82px;
+  background: var(--soft);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.faqSection > h2 {
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.faqSection :global(.faq-list) {
+  gap: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.faqSection :global(.faq-item) {
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0;
+}
+
+.faqSection :global(.faq-item:last-child) {
+  border-bottom: 0;
+}
+
+.faqSection :global(.faq-question) {
+  text-align: left;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.faqSection :global(.faq-toggle) {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  color: rgba(5, 5, 5, 0.4);
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.faqSection :global(.faq-toggle)::before {
+  content: "›";
+}
+
+.faqSection :global(.faq-item.open) :global(.faq-toggle) {
+  background: transparent;
+  color: var(--text);
+  transform: rotate(90deg);
+  border-color: transparent;
+}
+
+.faqSection :global(.faq-item.open) :global(.faq-toggle)::before {
+  content: "›";
+}
+
+.faqSection :global(.faq-panel p) {
+  margin: 0 0 24px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(5, 5, 5, 0.8);
+}
+
+@media (max-width: 640px) {
+
+
+
+  .faqSection {
+    margin-top: 64px;
+    padding: 32px 24px;
+  }
+
+  .faqSection :global(.faq-item) {
+    padding: 0;
+  }
+
+  .faqSection :global(.faq-question) {
+    font-size: 16px;
+    line-height: 1.45;
+    padding: 16px 0;
+  }
+}

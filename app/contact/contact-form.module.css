@@ -1,0 +1,161 @@
+/* Main contact form fields and route-specific form layout. */
+@media (min-width: 521px) and (max-width: 980px) {
+
+  :global(#contact-page) :global(.contact-main-form) {
+    width: 100% !important;
+  }
+
+  .contactFormFields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  :global(#contact-page) :global(.contact-main-form .wide) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactFormFields {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 389px) {
+  :global(#contact-page) :global(.contact-main-form) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 680px) {
+
+  :global(#contact-page) :global(.contact-main-form) {
+    width: 100% !important;
+    margin-top: 48px;
+    padding: 32px 24px;
+  }
+
+  .contactFormFields {
+    gap: 20px;
+  }
+}
+
+:global(#contact-page) :global(.contact-main-form) {
+  display: flex;
+  width: 745px;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 56px;
+  border-radius: 16px;
+  background: #f5f7fa;
+  padding: 48px 40px;
+  text-align: left;
+}
+
+.contactFormFields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  row-gap: 24px;
+}
+
+:global(#contact-page) :global(.contact-main-form label),
+:global(#contact-page) :global(.contact-main-form .service-select-field) {
+  display: grid;
+  gap: 8px;
+  color: #000;
+  font-family: "Contact Inter", Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27.2px;
+}
+
+:global(#contact-page) :global(.contact-main-form .wide) {
+  grid-column: 1 / -1;
+}
+
+:global(#contact-page) :global(.contact-main-form input),
+:global(#contact-page) :global(.contact-main-form select),
+:global(#contact-page) :global(.contact-main-form .service-select-trigger),
+:global(#contact-page) :global(.contact-main-form textarea) {
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  background: #fff;
+  color: rgba(59, 59, 59, 0.8);
+  font-family: "Contact Inter", Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+}
+
+:global(#contact-page) :global(.contact-main-form input),
+:global(#contact-page) :global(.contact-main-form select),
+:global(#contact-page) :global(.contact-main-form .service-select-trigger) {
+  height: 57.203125px;
+  padding: 15px 18px;
+}
+
+:global(#contact-page) :global(.contact-main-form textarea) {
+  min-height: 100px;
+  padding: 15px 18px;
+  resize: vertical;
+}
+
+:global(#contact-page) :global(.contact-main-form input:focus),
+:global(#contact-page) :global(.contact-main-form select:focus),
+:global(#contact-page) :global(.contact-main-form .service-select-trigger:focus-visible),
+:global(#contact-page) :global(.contact-main-form textarea:focus) {
+  outline: 1px solid #000;
+  outline-offset: 0;
+}
+
+:global(#contact-page) :global(.contact-main-form .cta-button) {
+  width: 100%;
+  height: 47.203125px;
+  min-height: 47.203125px;
+  border-radius: 12px;
+  background-color: #000;
+  background-image: linear-gradient(#1681ff, #1681ff);
+  color: #fff;
+  font-family: "Contact Inter", Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  box-shadow: inset 0 4px 4px rgba(255, 255, 255, 0.32);
+}
+
+:global(#contact-page) :global(.appointment-card .cta-button) {
+  height: 47.203125px;
+  min-height: 47.203125px;
+  font-family: "Contact Inter", Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :global(#contact-page) :global(.contact-main-form .cta-button:hover) {
+    background-size: 100% 100%;
+    color: #fff;
+  }
+}
+
+@media (max-width: 980px) {
+
+  :global(#contact-page) :global(.contact-main-form) {
+    width: 350px;
+    margin-top: 32px;
+    padding: 24px 16px;
+  }
+
+  .contactFormFields {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  :global(#contact-page) :global(.contact-main-form label),
+:global(#contact-page) :global(.contact-main-form .wide) {
+    grid-column: 1;
+  }
+}

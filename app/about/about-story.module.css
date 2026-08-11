@@ -1,0 +1,371 @@
+/* About story section, including its responsive layout. */
+@media (min-width: 981px) and (max-width: 1248px) {
+  :global(#about-page) .storySection {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  :global(#about-page) :where(.storyGrid, .storyCollage) {
+    width: min(1200px, calc(100% - 48px)) !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  :global(#about-page) .storyCollage {
+    grid-template-columns: minmax(0, 2.1fr) repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+  }
+
+  :global(#about-page) .storySecondaryImage {
+    aspect-ratio: 282 / 237;
+    height: auto;
+  }
+
+  :global(#about-page) .storyPrimaryImage {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  :global(#about-page) .quoteCard {
+    grid-template-columns: minmax(110px, 0.42fr) minmax(0, 1fr);
+    align-items: center;
+    overflow: visible;
+    min-height: 0;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    aspect-ratio: 197 / 192;
+  }
+}
+@media (min-width: 521px) and (max-width: 980px) {
+  :global(#about-page) .storySection {
+    height: auto !important;
+    padding: 130px 0 72px;
+  }
+
+  :global(#about-page) :where(.storyGrid, .storyCollage) {
+    width: min(720px, calc(100% - 40px)) !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  :global(#about-page) .storyGrid {
+    gap: 48px;
+  }
+
+  :global(#about-page) :where(.storyTitle, .storyTitle h1, .storyTitle p) {
+    width: min(520px, 100%) !important;
+  }
+
+  :global(#about-page) .storyCollage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  :global(#about-page) .storyPrimaryImage {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  :global(#about-page) .storySecondaryImage {
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  :global(#about-page) .quoteCard {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1fr);
+    height: auto;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+  }
+}
+@media (max-width: 389px) {
+  :global(#about-page) :where(.storyGrid, .storyTitle, .storyTitle h1, .storyTitle p, .storyCollage) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  :global(#about-page) :where(.storySection, .storyGrid, .storyCollage) {
+    height: auto !important;
+  }
+
+  :global(#about-page) .storyCollage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  :global(#about-page) :where(.storyPrimaryImage, .storySecondaryImage) {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  :global(#about-page) .quoteCard {
+    height: auto;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 0.9;
+  }
+}
+@media (max-width: 680px) {
+
+  :global(#about-page) .storySection {
+    height: auto !important;
+    padding: 132px 0 var(--page-mobile-section-space) !important;
+    background: white;
+  }
+
+  :global(#about-page) .storyGrid {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    height: auto !important;
+    gap: 48px !important;
+  }
+
+  :global(#about-page) :where(.storyTitle, .storyTitle h1, .storyTitle p) {
+    width: 100% !important;
+  }
+
+  :global(#about-page) .storyTitle h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  :global(#about-page) .storyTitle p {
+    margin-top: 16px;
+  }
+
+  :global(#about-page) .storyCollage {
+    width: 100% !important;
+    height: auto !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    gap: 16px;
+    margin-top: 0;
+  }
+
+  :global(#about-page) .storyPrimaryImage {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  :global(#about-page) .storySecondaryImage {
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  :global(#about-page) .quoteCard {
+    display: grid;
+    height: auto;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+.storySection {
+  height: auto;
+  padding: 160px 0 0;
+  margin-bottom: 40px;
+}
+.storyGrid {
+  display: flex;
+  width: 1200px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+.storyTitle {
+  width: 500px;
+  text-align: center;
+}
+.storyTitle h1 {
+  width: 500px;
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 79.2px;
+  letter-spacing: -1.44px;
+}
+.storyTitle p {
+  width: 500px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+}
+.storyCollage {
+  display: grid;
+  width: 1200px;
+  height: auto;
+  grid-template-columns: minmax(0, 588px) minmax(0, 282px) minmax(0, 282px);
+  grid-template-rows: minmax(220px, 237px) auto;
+  gap: 24px;
+}
+.storyCollage > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.storyPrimaryImage {
+  grid-row: 1 / 3;
+}
+.quoteCard {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-template-columns: minmax(0, 197px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  min-height: 0;
+  overflow: clip;
+  border-radius: 16px;
+  background: var(--blue);
+  color: white;
+  padding: 24px;
+}
+.quoteCard > img {
+  width: 100%;
+  max-width: 197px;
+  height: auto;
+  aspect-ratio: 197 / 192;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.quoteCard > div {
+  min-width: 0;
+}
+.quoteCard blockquote {
+  margin: 0;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.quoteCard strong,
+.quoteCard span {
+  display: block;
+  color: white;
+}
+.quoteCard strong {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.quoteCard span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 1.7;
+}
+@media (max-width: 980px) {
+  .storySection {
+    height: auto;
+  }
+
+  .storyGrid {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .storyCollage {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .storySection {
+    height: 1386px;
+    padding: 120px 0 0;
+  }
+
+  .storyGrid {
+    width: 350px;
+    height: 1266px;
+    gap: 0;
+  }
+
+  .storyTitle,
+.storyTitle h1,
+.storyTitle p {
+    width: 350px;
+  }
+
+  .storyTitle h1 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+  }
+
+  .storyTitle p {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 30.6px;
+  }
+
+  .storyCollage {
+    width: 350px;
+    height: 1059px;
+    grid-template-columns: repeat(2, 168px);
+    grid-template-rows: 301px 224px 489px;
+    column-gap: 14px;
+    row-gap: 15px;
+    margin-top: 43px;
+  }
+
+  .storyPrimaryImage {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .storySecondaryImage {
+    grid-row: 2;
+  }
+
+  .quoteCard {
+    display: block;
+    grid-column: 1 / 3;
+    grid-row: 3;
+    padding: 16px;
+  }
+
+  .quoteCard > img {
+    width: 318px;
+    height: 286px;
+    border-radius: 8px;
+  }
+
+  .quoteCard blockquote {
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+
+  .quoteCard strong {
+    margin-top: 14px;
+  }
+}

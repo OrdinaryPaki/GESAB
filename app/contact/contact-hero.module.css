@@ -1,0 +1,76 @@
+/* Contact hero section across desktop and responsive layouts. */
+@media (min-width: 521px) and (max-width: 980px) {
+  :global(#contact-page) :global(.contact-hero-inner) {
+    width: min(720px, calc(100% - 40px)) !important;
+    max-width: 100%;
+  }
+}
+@media (max-width: 389px) {
+  :global(#contact-page) :global(.contact-hero-inner) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 680px) {
+
+  :global(#contact-page) :global(.contact-hero-section) {
+    padding: 132px 0 var(--page-mobile-section-space) !important;
+    background: white;
+  }
+
+  :global(#contact-page) :global(.contact-hero-inner) {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  :global(#contact-page) :global(.contact-hero-inner h1) {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+:global(#contact-page) :global(.contact-hero-section) {
+  padding: 170px 0 60px;
+}
+:global(#contact-page) :global(.contact-hero-inner) {
+  width: min(745px, calc(100% - 40px));
+  margin: 0 auto;
+  text-align: center;
+}
+:global(#contact-page) :global(.contact-hero-inner h1) {
+  margin: 0;
+  font-family: "Contact Outfit", Outfit, sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: -1.44px;
+  line-height: 79.2px;
+}
+:global(#contact-page) :global(.contact-hero-inner h1 br) {
+  display: none;
+}
+:global(#contact-page) :global(.contact-hero-inner > p) {
+  margin: 16px auto 0;
+  color: #3b3b3b;
+  font-family: "Contact Inter", Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+}
+@media (max-width: 980px) {
+  :global(#contact-page) :global(.contact-hero-section) {
+    padding: 130px 0 30px;
+  }
+
+  :global(#contact-page) :global(.contact-hero-inner) {
+    width: min(350px, calc(100% - 40px));
+  }
+
+  :global(#contact-page) :global(.contact-hero-inner h1) {
+    font-size: 40px;
+    letter-spacing: -0.8px;
+    line-height: 44px;
+  }
+
+  :global(#contact-page) :global(.contact-hero-inner h1 br) {
+    display: block;
+  }
+}

@@ -5,7 +5,7 @@ import { Header } from "../../components/Header";
 import { CtaLink } from "../../components/CtaButton";
 import { FaqAccordion } from "../../components/FaqAccordion";
 import { ServiceQuoteForm } from "./ServiceQuoteForm";
-import styles from "./service-detail.module.css";
+import styles from "./service-detail-styles.js";
 
 function buildStructuredData(service, detail) {
   return {
@@ -46,7 +46,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
       <Header dark />
       <main>
         <section className={styles.hero} aria-labelledby="service-title">
-          <div className={styles.container}>
+          <div className={`container ${styles.container}`}>
             <h1 className={styles.title} id="service-title">{service.title}</h1>
             <div className={styles.meta} aria-label="Tjänsteinformation">
               <span data-service-audience={detail.audience}>{detail.audience}</span>
@@ -65,7 +65,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
         </section>
 
         <section className={styles.contentSection}>
-          <div className={`${styles.container} ${styles.contentGrid}`}>
+          <div className={`container ${styles.container} ${styles.contentGrid}`}>
             <aside
               aria-label={`Begär offert för ${service.title}`}
               className={styles.quoteCard}
@@ -177,7 +177,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
         </section>
 
         <section className={styles.relatedSection} aria-labelledby="related-services-title">
-          <div className={styles.container}>
+          <div className={`container ${styles.container}`}>
             <div className={styles.relatedHeader}>
               <h2 id="related-services-title">Fler tjänster som kan passa</h2>
               <CtaLink href="/service" variant="dark">Visa alla tjänster</CtaLink>

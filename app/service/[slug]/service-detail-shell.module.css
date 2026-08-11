@@ -1,0 +1,207 @@
+/* Service-detail page shell, hero and ContactBand overrides. */
+@media (min-width: 521px) and (max-width: 980px) {
+  .container {
+    width: min(720px, calc(100% - 40px));
+    max-width: 100%;
+  }
+}
+@media (max-width: 389px) {
+  .container {
+    width: calc(100% - 32px) !important;
+    max-width: 100% !important;
+  }
+
+  .page :global(form),
+.page :global(input),
+.page :global(select),
+.page :global(textarea),
+.page :global(img),
+.page :global(iframe) {
+    max-width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .page {
+    --page-mobile-gutter: 24px;
+    --page-mobile-section-space: 80px;
+    --page-mobile-content-gap: 32px;
+  }
+
+  .page main > .hero {
+    padding: 132px var(--page-mobile-gutter) 64px !important;
+  }
+
+  .hero > .container {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .title {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  .meta {
+    margin-top: 24px;
+  }
+
+  .heroImage {
+    margin-top: 32px;
+  }
+}
+.page {
+  min-width: 0;
+  overflow: clip;
+  background: #fff;
+  color: var(--text);
+}
+.page :where(h1, h2, h3, p, a) {
+  overflow-wrap: break-word;
+}
+.page :global(.contact-band-inner) {
+  grid-template-columns: 600px 539px;
+  gap: 61px;
+}
+.page :global(.contact-copy) {
+  padding-top: 133px;
+}
+.page :global(.contact-copy > span) {
+  display: block;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.page :global(.contact-copy h2) {
+  margin-bottom: 336px;
+  letter-spacing: -0.01em;
+}
+.page :global(.contact-methods) {
+  column-gap: 50px;
+}
+.page :global(.contact-methods a) {
+  font-size: 16px;
+}
+.page :global(.appointment-card) {
+  width: 539px;
+  gap: 12px;
+  margin-top: 120px;
+  padding: 38px 48px 48px;
+}
+.page :global(.appointment-card h2) {
+  margin-bottom: 12px;
+  font-size: 32px;
+}
+.page :global(.appointment-card input),
+.page :global(.appointment-card select) {
+  height: 51.2px;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.page :global(.appointment-card .cta-button) {
+  height: 47.2px;
+  min-height: 47.2px;
+  margin-top: 0;
+  font-weight: 500;
+}
+.container {
+  width: min(1320px, 100%);
+  margin: 0 auto;
+}
+.hero {
+  padding: 172px 24px 82px;
+}
+.title {
+  max-width: 1120px;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: clamp(64px, 5.25vw, 92px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 34px;
+  margin-top: 30px;
+  color: rgba(5, 5, 5, 0.68);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.meta span + span::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 18px 2px 0;
+  border-radius: 999px;
+  background: var(--blue);
+}
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1320 / 650;
+  margin-top: 46px;
+  border-radius: 16px;
+  background: var(--soft);
+  object-fit: cover;
+}
+@media (max-width: 980px) {
+  .hero {
+    padding-top: 132px;
+    padding-bottom: 60px;
+  }
+
+  .title {
+    font-size: clamp(50px, 8vw, 68px);
+  }
+}
+@media (max-width: 640px) {
+  .hero {
+    padding: 118px 16px 40px;
+  }
+
+  .title {
+    font-size: clamp(32px, 8.8vw, 40px);
+    hyphens: none;
+    letter-spacing: -0.04em;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .meta {
+    display: grid;
+    gap: 4px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .meta span + span::before {
+    display: none;
+  }
+
+  .heroImage {
+    aspect-ratio: 4 / 3;
+    margin-top: 28px;
+    border-radius: 14px;
+  }
+}
+@media (max-width: 980px) {
+  .page :global(.contact-band-inner) {
+    width: min(720px, calc(100% - 40px));
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .page :global(.appointment-card) {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 24px 24px;
+  }
+
+  .page :global(.appointment-card h2) {
+    font-size: 26px;
+  }
+}

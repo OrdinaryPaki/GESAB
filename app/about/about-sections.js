@@ -1,5 +1,6 @@
 import { placeholderImages } from "../components/placeholder-images";
-import styles from "./about.module.css";
+import missionStyles from "./about-mission.module.css";
+import storyStyles from "./about-story.module.css";
 
 function CheckIcon() {
   return (
@@ -45,17 +46,17 @@ const missionPrinciples = [
 
 export function AboutStorySection() {
   return (
-    <section className={`about-story-section ${styles.storySection}`}>
-      <div className={`container ${styles.storyGrid}`}>
-        <div className={styles.storyTitle}>
+    <section className={`about-story-section ${storyStyles.storySection}`}>
+      <div className={`container ${storyStyles.storyGrid}`}>
+        <div className={storyStyles.storyTitle}>
           <h1>Om GESAB</h1>
           <p>Från badrumsrenovering till bygg och entreprenad – GESAB samordnar yrkesrollerna och håller ihop projektet.</p>
         </div>
-        <div className={styles.storyCollage}>
-          <img className={styles.storyPrimaryImage} src={placeholderImages.content} alt="" />
-          <img className={styles.storySecondaryImage} src={placeholderImages.content} alt="" />
-          <img className={styles.storySecondaryImage} src={placeholderImages.content} alt="" />
-          <article className={styles.quoteCard}>
+        <div className={storyStyles.storyCollage}>
+          <img className={storyStyles.storyPrimaryImage} src={placeholderImages.content} alt="" />
+          <img className={storyStyles.storySecondaryImage} src={placeholderImages.content} alt="" />
+          <img className={storyStyles.storySecondaryImage} src={placeholderImages.content} alt="" />
+          <article className={storyStyles.quoteCard}>
             <img src={placeholderImages.round} alt="" />
             <div>
               <blockquote>“Vårt mål är enkelt – tydlig planering, pålitlig service och ett fackmässigt resultat du kan känna dig trygg med.”</blockquote>
@@ -71,13 +72,13 @@ export function AboutStorySection() {
 
 export function AboutMissionSection() {
   return (
-    <section className={styles.missionSection}>
-      <div className={`container ${styles.missionInner}`}>
-        <header className={styles.missionIntro}>
-          <span className={styles.missionEyebrow}>Vårt ansvar</span>
-          <div className={styles.missionCopy}>
+    <section className={missionStyles.missionSection}>
+      <div className={`container ${missionStyles.missionInner}`}>
+        <header className={missionStyles.missionIntro}>
+          <span className={missionStyles.missionEyebrow}>Vårt ansvar</span>
+          <div className={missionStyles.missionCopy}>
             <h2>Tryggt arbete med ansvar och ordning</h2>
-            <div className={styles.missionBody}>
+            <div className={missionStyles.missionBody}>
               <p>
                 GESAB skapar trygga renoveringar där kunden vet vad som ska göras, varför det görs och vilka
                 yrkesroller som behövs. I våtrum är ordning, dokumentation och rätt arbetsmetod avgörande.
@@ -90,18 +91,18 @@ export function AboutMissionSection() {
           </div>
         </header>
 
-        <div className={styles.missionStage}>
-          <figure className={styles.missionImage}>
+        <div className={missionStyles.missionStage}>
+          <figure className={missionStyles.missionImage}>
             <img src={placeholderImages.content} alt="" loading="lazy" decoding="async" />
           </figure>
 
-          <div className={styles.missionPrinciples}>
+          <div className={missionStyles.missionPrinciples}>
             {missionPrinciples.map(({ Icon, title, body }) => (
-              <article key={title} className={styles.missionPrinciple}>
-                <span aria-hidden="true" className={styles.missionPrincipleIcon}>
+              <article key={title} className={missionStyles.missionPrinciple}>
+                <span aria-hidden="true" className={missionStyles.missionPrincipleIcon}>
                   <Icon />
                 </span>
-                <div className={styles.missionPrincipleCopy}>
+                <div className={missionStyles.missionPrincipleCopy}>
                   <h3>{title}</h3>
                   <p>{body}</p>
                 </div>

@@ -7,7 +7,7 @@ import { FaqSection } from "../components/FaqSection";
 import { ServiceSelect } from "../components/ServiceSelect";
 import { contactInfo, serviceSelectOptions } from "../gesab-data";
 import { LocationIcon } from "./contact-icons";
-import styles from "./contact-page.module.css";
+import styles from "./contact-styles.js";
 
 const contactFaqItems = [
   {
@@ -40,7 +40,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className={styles.page}>
+    <div className={styles.page} id="contact-page">
       <Header dark />
       <section className="contact-hero-section">
         <div className="contact-hero-inner">

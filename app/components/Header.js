@@ -3,7 +3,8 @@ import Link from "next/link";
 import { contactInfo } from "../gesab-data";
 import { CtaAnchor } from "./CtaButton";
 import { Logo, PhoneIcon } from "./GesabIcons";
-import "./Header.css";
+import "./HeaderBase.css";
+import "./HeaderMobile.css";
 
 const navItems = [
   ["Hem", "/"],

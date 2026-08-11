@@ -1,0 +1,245 @@
+/* Home route shell, shared headings and ContactBand overrides. */
+.section-title span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.section-title h2 {
+  max-width: 560px;
+  margin: 0;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-title.center h2 {
+  margin: 0 auto;
+}
+
+.section-title .light,
+.section-title h2.light {
+  color: white;
+}
+
+@media (max-width: 980px) {
+
+  .section-title h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .section-title h2 {
+    font-size: 34px;
+  }
+}
+
+.home-page {
+  min-width: 0;
+}
+
+.home-page :where(h1, h2, h3, p, a) {
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 981px) and (max-width: 1248px) {
+
+  :where(.home-page) .contact-band-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 46%);
+    gap: clamp(40px, 5vw, 72px);
+  }
+
+  :where(.home-page) .appointment-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 980px) {
+
+  :where(.home-page) .container {
+    width: min(720px, calc(100% - 40px));
+    max-width: 100%;
+  }
+
+  :where(.home-page) :where(.contact-band, .contact-band-inner) {
+    height: auto;
+    min-height: 0;
+  }
+
+  :where(.home-page) .contact-band-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  :where(.home-page) .contact-copy {
+    height: auto;
+    padding-top: 0;
+  }
+
+  :where(.home-page) .contact-copy h2 {
+    margin-bottom: 40px;
+  }
+
+  :where(.home-page) .appointment-card {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 389px) {
+
+  .home-page :where(form, input, select, textarea, img, iframe) {
+    max-width: 100%;
+  }
+
+  .home-page .contact-methods {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-page .section-title h2 {
+  letter-spacing: -0.01em;
+}
+
+.home-page .contact-copy h2,
+.home-page .appointment-card h2 {
+  letter-spacing: -0.01em;
+}
+
+.home-page .appointment-card input:focus,
+.home-page .appointment-card select:focus,
+.home-page .appointment-card textarea:focus {
+  border-color: var(--text);
+}
+
+@media (min-width: 981px) {
+  .home-page .contact-band-inner {
+    grid-template-columns: minmax(0, 1fr) 540px;
+  }
+
+  .home-page .appointment-card {
+    width: 540px;
+    gap: 12px;
+    margin-top: 120px;
+    padding: 38px 48px 48px;
+  }
+
+  .home-page .appointment-card h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .home-page .appointment-card input,
+.home-page .appointment-card select {
+    height: 51px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  .home-page .appointment-card .cta-button {
+    height: 47px;
+    min-height: 47px;
+  }
+}
+
+@media (max-width: 980px) {
+  .home-page .container {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .home-page .section-title h2 {
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .home-page .contact-band {
+    min-height: 1031px;
+  }
+
+  .home-page .contact-band-inner {
+    min-height: 1031px;
+    gap: 34px;
+  }
+
+  .home-page .contact-copy {
+    padding-top: 72px;
+  }
+
+  .home-page .contact-copy h2 {
+    margin: 14px 0 40px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .home-page .appointment-card {
+    padding: 28px 24px;
+  }
+
+  .home-page .appointment-card h2 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 680px) {
+  .home-page {
+    --home-mobile-gutter: 28px;
+    --home-mobile-section-space: 80px;
+    --home-mobile-content-gap: 32px;
+  }
+
+  .home-page .container,
+.home-page .contact-band-inner {
+    width: calc(100% - (var(--home-mobile-gutter) * 2));
+    max-width: none;
+  }
+
+  .home-page .contact-band,
+.home-page .contact-band-inner {
+    min-height: 0;
+  }
+
+  .home-page .contact-band {
+    padding: 72px var(--home-mobile-gutter);
+  }
+
+  .home-page .contact-band-inner {
+    width: 100%;
+    gap: 36px;
+    padding: 0;
+  }
+
+  .home-page .contact-copy {
+    padding: 0;
+  }
+
+  .home-page .contact-copy h2 {
+    margin: 12px 0 28px;
+    font-size: 36px;
+  }
+
+  .home-page .contact-methods {
+    gap: 16px;
+  }
+
+  .home-page .appointment-card {
+    padding: 28px 22px 24px;
+  }
+}

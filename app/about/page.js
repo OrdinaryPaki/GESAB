@@ -4,7 +4,7 @@ import { ContactBand } from "../components/ContactBand";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { AboutMissionSection, AboutStorySection } from "./about-sections";
-import styles from "./about.module.css";
+import styles from "./about-page.module.css";
 import { AboutRevealController } from "./reveal-controller";
 
 export const metadata = {

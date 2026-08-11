@@ -69,11 +69,26 @@ test("globals stays a small foundation instead of becoming a page-style dump aga
 
 test("route owners contain responsive rules without generated-class substring selectors", async () => {
   const ownerFiles = [
-    new URL("../app/home-fidelity.css", import.meta.url),
-    new URL("../app/about/about.module.css", import.meta.url),
-    new URL("../app/contact/contact-page.module.css", import.meta.url),
+    new URL("../app/components/HomePage.css", import.meta.url),
+    new URL("../app/components/HomeHero.css", import.meta.url),
+    new URL("../app/components/HomeSupportWhy.css", import.meta.url),
+    new URL("../app/components/HomeServices.css", import.meta.url),
+    new URL("../app/components/HomeAbout.css", import.meta.url),
+    new URL("../app/components/HomeTrustProcess.css", import.meta.url),
+    new URL("../app/components/HomeGalleryFaq.css", import.meta.url),
+    new URL("../app/about/about-page.module.css", import.meta.url),
+    new URL("../app/about/about-story.module.css", import.meta.url),
+    new URL("../app/about/about-mission.module.css", import.meta.url),
+    new URL("../app/contact/contact-shell.module.css", import.meta.url),
+    new URL("../app/contact/contact-hero.module.css", import.meta.url),
+    new URL("../app/contact/contact-form.module.css", import.meta.url),
+    new URL("../app/contact/contact-info.module.css", import.meta.url),
     new URL("../app/service/service-page.module.css", import.meta.url),
-    new URL("../app/service/[slug]/service-detail.module.css", import.meta.url),
+    new URL("../app/service/[slug]/service-detail-shell.module.css", import.meta.url),
+    new URL("../app/service/[slug]/service-detail-content.module.css", import.meta.url),
+    new URL("../app/service/[slug]/service-detail-faq.module.css", import.meta.url),
+    new URL("../app/service/[slug]/service-detail-quote.module.css", import.meta.url),
+    new URL("../app/service/[slug]/service-detail-related.module.css", import.meta.url),
   ];
 
   for (const fileUrl of ownerFiles) {
