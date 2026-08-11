@@ -90,25 +90,120 @@
 @media (max-width: 680px) {
   .page {
     --page-mobile-gutter: 28px;
-    --page-mobile-section-space: 80px;
-    --page-mobile-content-gap: 32px;
+    --page-mobile-section-space: 112px;
+    --page-mobile-content-gap: 40px;
+  }
+
+  .page :global(.process-section),
+  .page :global(.testimonial-section),
+  .page :global(.faq-section) {
+    height: auto !important;
+    padding: var(--page-mobile-section-space) 0 !important;
+  }
+
+  .page :global(.process-section) {
+    background: white;
+  }
+
+  .page :global(.faq-section) {
+    background: var(--soft);
+  }
+
+  .page :global(.process-section > .container),
+  .page :global(.testimonial-section > .container),
+  .page :global(.faq-section > .container) {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  .page :global(.process-grid) {
+    gap: var(--page-mobile-content-gap) !important;
+  }
+
+  .page :global(.process-list) {
+    gap: 20px;
+  }
+
+  .page :global(.process-card) {
+    min-height: 0;
+    padding: 20px 18px 28px;
+  }
+
+  .page :global(.process-section .section-title h2),
+  .page :global(.testimonial-section .section-title h2) {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    max-width: none;
+  }
+
+  .page :global(.testimonial-carousel) {
+    margin-top: var(--page-mobile-content-gap);
+  }
+
+  .page :global(.testimonial-grid) {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    margin-right: calc(var(--page-mobile-gutter) * -1);
+    margin-left: calc(var(--page-mobile-gutter) * -1);
+    padding: 0 var(--page-mobile-gutter) 8px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+
+  .page :global(.testimonial-grid::-webkit-scrollbar) {
+    display: none;
+  }
+
+  .page :global(.testimonial-card) {
+    width: min(350px, calc(100vw - (var(--page-mobile-gutter) * 2)));
+    min-width: min(350px, calc(100vw - (var(--page-mobile-gutter) * 2)));
+    min-height: 0;
+    height: auto;
+    flex: 0 0 min(350px, calc(100vw - (var(--page-mobile-gutter) * 2)));
+    scroll-snap-align: center;
+    padding: 28px 22px;
+  }
+
+  .page :global(.testimonial-card p) {
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .page :global(.testimonial-pagination) {
+    display: flex;
+    margin-top: 28px;
+  }
+
+  .page :global(.faq-grid) {
+    width: 100% !important;
+    gap: var(--page-mobile-content-gap);
+  }
+
+  .page :global(.faq-list) {
+    gap: 16px;
   }
 
   .page :global(.contact-band),
-.page :global(.contact-band-inner) {
+  .page :global(.contact-band-inner) {
     height: auto !important;
     min-height: 0 !important;
   }
 
   .page :global(.contact-band) {
-    padding: 72px var(--page-mobile-gutter) !important;
+    padding: var(--page-mobile-section-space) var(--page-mobile-gutter) !important;
   }
 
   .page :global(.contact-band-inner) {
     width: 100% !important;
     max-width: none !important;
     margin: 0 auto !important;
-    gap: 36px !important;
+    gap: var(--page-mobile-content-gap) !important;
     padding: 0 !important;
   }
 
@@ -128,40 +223,15 @@
     transform: none !important;
   }
 
+  .page :global(.contact-methods) {
+    gap: 14px;
+  }
+
   .page :global(.appointment-card) {
     width: 100% !important;
     height: auto !important;
     margin: 0 !important;
     padding: 28px 22px 24px !important;
-  }
-
-  :global(#about-page) :global(.testimonial-section),
-:global(#about-page) :global(.faq-section) {
-    height: auto !important;
-    padding: var(--page-mobile-section-space) 0 !important;
-  }
-
-  :global(#about-page) :where(:global(.testimonial-section > .container), :global(.faq-section > .container)) {
-    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
-    max-width: none !important;
-  }
-
-  :global(#about-page) :global(.testimonial-grid) {
-    margin-top: 48px;
-  }
-
-  :global(#about-page) :global(.testimonial-card) {
-    min-height: 0;
-    padding: 32px 24px;
-  }
-
-  :global(#about-page) :global(.faq-grid) {
-    width: 100% !important;
-    gap: 48px;
-  }
-
-  :global(#about-page) :global(.faq-list) {
-    gap: 16px;
   }
 }
 
@@ -186,13 +256,15 @@
   align-items: start;
 }
 
-.page :global(.process-section .section-title) {
-  position: sticky;
-  top: 160px;
-}
-
 .page :global(.process-section .section-title h2) {
   max-width: 442px;
+}
+
+@media (min-width: 981px) {
+  .page :global(.process-section .section-title) {
+    position: sticky;
+    top: 160px;
+  }
 }
 
 .page :global(.testimonial-section) {
@@ -249,84 +321,10 @@
 }
 
 @media (max-width: 520px) {
-
-  .page :global(.process-section) {
-    height: auto;
-    padding: 30px 0;
-  }
-
-  .page :global(.process-section > .container) {
-    width: 350px;
-  }
-
-  .page :global(.process-section .section-title h2),
-.page :global(.testimonial-section .section-title h2) {
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -0.3px;
-  }
-
-  .page :global(.process-section .section-title h2) {
-    max-width: 300px;
-  }
-
-  .page :global(.process-card) {
-    min-height: 0;
-    padding: 18px 16px 28px;
-  }
-
   .page :global(.process-card strong) {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-size: 26px;
-    line-height: 36.4px;
-  }
-
-  .page :global(.testimonial-section) {
-    position: relative;
-    height: auto;
-    padding: 60px 0;
-    overflow: clip;
-  }
-
-  .page :global(.testimonial-section > .container) {
-    width: 390px;
-  }
-
-  .page :global(.testimonial-section .section-title) {
-    width: 350px;
-    margin: 0 auto;
-  }
-
-  .page :global(.testimonial-grid) {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    margin-top: 32px;
-    padding: 0 20px;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-  }
-
-  .page :global(.testimonial-grid::-webkit-scrollbar) {
-    display: none;
-  }
-
-  .page :global(.testimonial-card) {
-    width: 350px;
-    min-width: 350px;
-    min-height: 278px;
-    height: 278px;
-    flex: 0 0 350px;
-    scroll-snap-align: center;
-    padding: 16px;
-  }
-
-  .page :global(.testimonial-card p) {
-    min-height: 0;
-    max-height: 82px;
-    overflow: hidden;
-    font-size: 16px;
-    line-height: 27.2px;
+    line-height: 1.35;
   }
 
   .page :global(.testimonial-card .person) {
@@ -335,68 +333,17 @@
 
   .page :global(.testimonial-card .person h3) {
     font-size: 18px;
-    line-height: 30.6px;
-    white-space: nowrap;
-  }
-
-  .page :global(.testimonial-card .rating-stars) {
-    margin-top: auto;
-  }
-
-  .page :global(.testimonial-section)::after {
-    content: "";
-    position: absolute;
-    bottom: 60px;
-    left: calc(50% - 20px);
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    background: white;
-    box-shadow: 20px 0 rgba(255, 255, 255, 0.58), 40px 0 rgba(255, 255, 255, 0.58);
-  }
-
-  .page :global(.faq-section) {
-    height: auto;
-  }
-
-  .page :global(.contact-band),
-.page :global(.contact-band-inner) {
-    min-height: 1031px;
-    height: 1031px;
-  }
-
-  .page :global(.contact-band-inner) {
-    gap: 24px;
-  }
-
-  .page :global(.contact-copy) {
-    padding-top: 60px;
-  }
-
-  .page :global(.contact-copy h2) {
-    margin: 14px 0 24px;
-    font-size: 48px;
-    line-height: 57.6px;
-    letter-spacing: -0.48px;
-  }
-
-  .page :global(.contact-methods) {
-    gap: 12px;
-  }
-
-  .page :global(.appointment-card) {
-    height: 532px;
-    padding: 24px;
+    line-height: 1.5;
   }
 
   .page :global(.appointment-card h2) {
     margin-bottom: 8px;
     font-size: 26px;
-    line-height: 36.4px;
+    line-height: 1.35;
   }
 
   .page :global(.appointment-card input),
-.page :global(.appointment-card select) {
+  .page :global(.appointment-card select) {
     height: 51px;
   }
 }

@@ -135,18 +135,137 @@
   margin-top: -20px;
 }
 .map {
+  position: relative;
   width: 100%;
   height: 704.984375px;
   margin-top: 120px;
   overflow: hidden;
   border-radius: 16px;
-  background: #e3e3df;
+  background: #e8ebe7;
+  isolation: isolate;
 }
 .mapFrame {
   display: block;
   width: 100%;
   height: 100%;
   border: 0;
+  z-index: 0;
+}
+.map :global(.leaflet-container) {
+  width: 100%;
+  height: 100%;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #f8f9fa;
+}
+.map :global(.leaflet-tile) {
+  /* Fixes white grid lines between tiles on some screens */
+  transform: translate3d(0, 0, 0);
+  image-rendering: -webkit-optimize-contrast;
+}
+.map :global(.leaflet-div-icon) {
+  background: transparent;
+  border: 0;
+}
+.map :global(.leaflet-control-zoom) {
+  border: 0 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(3, 3, 3, 0.12);
+}
+.map :global(.leaflet-control-zoom a) {
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  color: var(--black) !important;
+  border-bottom-color: var(--line) !important;
+}
+.map :global(.leaflet-control-attribution) {
+  max-width: min(280px, 55%);
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.82);
+}
+.resetButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: white;
+  color: var(--black);
+  box-shadow: 0 8px 24px rgba(3, 3, 3, 0.12);
+  cursor: pointer;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.resetButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: var(--soft);
+}
+.resetButton:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.markerWrap {
+  position: relative;
+  width: 48px;
+  height: 58px;
+  background: transparent;
+  border: 0;
+}
+.markerPulse {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(253, 188, 13, 0.35);
+  transform: translateX(-50%);
+  animation: markerPulse 2s ease-out infinite;
+}
+.markerPin {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+  border-radius: 50% 50% 50% 4px;
+  background: var(--yellow);
+  box-shadow: 0 10px 24px rgba(3, 3, 3, 0.28);
+  transform: translateX(-50%) rotate(-45deg);
+}
+.markerDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--black);
+  transform: rotate(45deg);
+}
+@keyframes markerPulse {
+  0% {
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.7;
+  }
+  70% {
+    transform: translateX(-50%) scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.8);
+    opacity: 0;
+  }
 }
 @media (max-width: 980px) {
 

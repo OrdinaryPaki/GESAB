@@ -15,6 +15,8 @@ function fieldClassName(className) {
 export function ServiceSelect({
   className,
   defaultValue = "",
+  value,
+  onChange,
   label = "Tjänst",
   name = "service",
   options,
@@ -30,6 +32,18 @@ export function ServiceSelect({
     undefined,
     () => createServiceSelectState(options, defaultValue),
   );
+
+  // Sync controlled value to internal state
+  useEffect(() => {
+    if (value !== undefined) {
+      const index = options.findIndex((opt) => opt.value === value);
+      if (index !== -1 && index !== state.selectedIndex) {
+        dispatch({ type: "select", index, programmatic: true });
+      } else if (value === "" && state.selectedIndex !== -1) {
+        dispatch({ type: "reset" });
+      }
+    }
+  }, [value, options, state.selectedIndex]);
 
   const selectedOption = options[state.selectedIndex];
   const selectedLabel = selectedOption?.label ?? placeholder;
@@ -63,6 +77,9 @@ export function ServiceSelect({
 
   function selectOption(index) {
     dispatch({ index, type: "select" });
+    if (onChange) {
+      onChange(options[index].value);
+    }
     triggerRef.current?.focus();
   }
 

@@ -5,14 +5,11 @@ import { siteUrl as baseUrl } from "./helpers/site-url.mjs";
 
 const serviceSlugs = [
   "badrumsrenovering",
+  "tvattstugsrenovering",
   "koksrenovering",
   "totalentreprenad",
   "rivningsarbeten",
   "bygg",
-  "fasadrenovering",
-  "snickeri",
-  "malning",
-  "montage",
 ];
 
 async function fetchServicePage(slug) {
@@ -86,8 +83,6 @@ test("every service detail explains who it suits and how to prepare", async () =
   for (const slug of serviceSlugs) {
     const html = await fetchServicePage(slug);
     const audienceLabel = html.match(/data-service-audience="([^"]+)"/)?.[1];
-    const fitSection = html.match(/data-service-fit-section[\s\S]*?(?=<img|data-service-detail-section)/)?.[0] ?? "";
-    const suitableForItems = fitSection.match(/faq-item/g) ?? [];
     const preparationItems = html.match(/data-service-preparation=/g) ?? [];
 
     assert.match(
@@ -96,12 +91,6 @@ test("every service detail explains who it suits and how to prepare", async () =
       `${slug} must identify its relevant customer groups`,
     );
     audienceLabels.push(audienceLabel);
-    assert.match(html, /När passar tjänsten\?/, `${slug} must explain suitable project types`);
-    assert.match(html, /data-service-fit-section/, `${slug} must include the fit guidance section`);
-    assert.ok(
-      suitableForItems.length >= 3,
-      `${slug} must include at least three concrete project types`,
-    );
     assert.match(
       html,
       /data-service-preparation-section/,
@@ -125,18 +114,13 @@ test("the service article introduces the work before guidance and moves supporti
   const introPosition = html.indexOf("data-service-introduction");
   const supportingImagePosition = html.indexOf("data-service-supporting-image");
   const detailPosition = html.indexOf("data-service-detail-section");
-  const suitableForPosition = html.indexOf("data-service-fit-section");
   const processPosition = html.indexOf("data-service-process-section");
   const preparationPosition = html.indexOf("data-service-preparation-section");
 
   assert.ok(introPosition >= 0, "the article must start with its service-specific introduction");
   assert.ok(
-    suitableForPosition > introPosition,
-    "project guidance must follow the introduction copy",
-  );
-  assert.ok(
-    supportingImagePosition > suitableForPosition,
-    "the supporting image must follow project guidance",
+    supportingImagePosition > introPosition,
+    "the supporting image must follow the introduction copy",
   );
   assert.ok(
     detailPosition > supportingImagePosition,

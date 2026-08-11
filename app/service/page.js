@@ -8,19 +8,16 @@ import styles from "./service-page.module.css";
 export const metadata = {
   title: "Tjänster för badrum, bygg och renovering i Göteborg",
   description:
-    "Se GESABs tjänster inom badrumsrenovering, köksrenovering, totalentreprenad, rivning, bygg, fasadrenovering, snickeri, målning och montage.",
+    "Se GESABs tjänster inom badrumsrenovering, tvättstugsrenovering, köksrenovering, totalentreprenad, rivning och bygg i Göteborg.",
 };
 
 const serviceIndexCopy = {
   badrumsrenovering: "Från rivning till färdig yta – med en kontakt genom hela projektet.",
+  tvattstugsrenovering: "Praktiskt våtrum med rätt tätskikt, smarta ytor och tydlig tidplan.",
   koksrenovering: "Planering, el, vatten och montage i rätt ordning – med tydlig tidplan.",
   totalentreprenad: "Ett avtal, en kontaktperson. Vi driver hela renoveringen åt dig.",
   rivningsarbeten: "Kontrollerad rivning som lämnar underlaget klart för nästa steg.",
   bygg: "Renovering och ombyggnad, samordnat med el, VVS och ytskikt.",
-  fasadrenovering: "Rätt metod för underlaget – säkert utfört och hållbart över tid.",
-  snickeri: "Måttanpassade lösningar och detaljer som gör renoveringen färdig.",
-  malning: "Ordentligt underarbete – för ytor som håller i många år.",
-  montage: "Kök, inredning och byggdelar – rätt monterat och klart att använda.",
 };
 
 const allServicesWithCopy = services.map((service) => ({

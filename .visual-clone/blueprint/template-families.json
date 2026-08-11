@@ -11,14 +11,11 @@
       "dataSource": "app/gesab-data.js services",
       "instances": [
         "/service/badrumsrenovering",
+        "/service/tvattstugsrenovering",
         "/service/koksrenovering",
         "/service/totalentreprenad",
         "/service/rivningsarbeten",
-        "/service/bygg",
-        "/service/fasadrenovering",
-        "/service/snickeri",
-        "/service/malning",
-        "/service/montage"
+        "/service/bygg"
       ],
       "evidence": [
         "one reusable dynamic route",

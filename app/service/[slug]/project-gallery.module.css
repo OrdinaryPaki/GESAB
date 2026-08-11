@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.hero {
+  position: relative;
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--soft);
+}
+
+.hero img {
+  width: 100%;
+  aspect-ratio: 827 / 494;
+  object-fit: cover;
+  display: block;
+}
+
+.hero figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 40px 24px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.thumbnails {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.thumb {
+  flex: 0 0 100px;
+  height: 70px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  background: var(--soft);
+}
+
+.thumb:hover {
+  opacity: 0.9;
+}
+
+.thumbActive {
+  opacity: 1;
+  border-color: var(--blue);
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .hero img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero figcaption {
+    font-size: 15px;
+    padding: 32px 16px 16px;
+  }
+
+  .thumb {
+    flex: 0 0 80px;
+    height: 60px;
+  }
+}

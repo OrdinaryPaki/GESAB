@@ -10,6 +10,7 @@ const navItems = [
   ["Hem", "/"],
   ["Om oss", "/about"],
   ["Tjänster", "/service"],
+  ["Galleri", "/galleri"],
   ["Kontakt", "/contact"],
 ];
 

@@ -199,32 +199,34 @@
     top: 85px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: auto;
     z-index: 101;
     display: grid;
     width: 100%;
     min-width: 0;
-    min-height: calc(100vh - 85px);
-    min-height: calc(100dvh - 85px);
+    min-height: auto;
     align-content: start;
-    gap: 8px;
+    justify-items: stretch;
+    gap: 4px;
     overflow-y: auto;
     border-top: 1px solid #dbe3ec;
-    border-radius: 0;
+    border-radius: 0 0 24px 24px;
     background: white;
     color: var(--text);
-    padding: 24px 16px 32px;
-    box-shadow: none;
+    padding: 28px 28px 40px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
   }
 
   .site-header .mobile-menu .mobile-menu-panel a {
-    min-height: 48px;
+    width: 100%;
+    min-height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     text-align: center;
-    border-radius: 8px;
-    padding: 12px 16px;
+    border-radius: 12px;
+    padding: 14px 18px;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.4;
@@ -237,10 +239,21 @@
   }
 
   .site-header .mobile-menu .mobile-menu-panel .mobile-phone-link {
-    display: flex;
+    width: 100%;
+    min-height: 52px;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
+    border-radius: 12px;
     background: var(--soft);
+    background-image: none;
+    color: var(--blue);
+    box-shadow: none;
+  }
+
+  .site-header .mobile-menu .mobile-menu-panel .mobile-phone-link:hover,
+  .site-header .mobile-menu .mobile-menu-panel .mobile-phone-link:focus-visible {
+    background: var(--soft);
+    background-image: none;
     color: var(--blue);
   }
 }
@@ -253,10 +266,8 @@
   .site-header .mobile-menu .mobile-menu-panel {
     width: 100%;
     max-width: none;
-    min-height: calc(100vh - 85px);
-    min-height: calc(100dvh - 85px);
-    padding-right: 16px;
-    padding-left: 16px;
+    min-height: auto;
+    padding: 24px 20px 36px;
   }
 }
 

@@ -40,5 +40,13 @@ export function reduceServiceSelectState(state, action, optionCount) {
     };
   }
 
+  if (action.type === "reset") {
+    return {
+      activeIndex: 0,
+      isOpen: false,
+      selectedIndex: -1,
+    };
+  }
+
   return state;
 }

@@ -8,7 +8,7 @@ export const metadata = {
     template: "%s | GESAB",
   },
   description:
-    "Göteborgs Entreprenad Service AB hjälper med badrumsrenovering, köksrenovering, totalentreprenad, bygg, fasad, snickeri, målning och montage i Göteborg.",
+    "Göteborgs Entreprenad Service AB hjälper med badrumsrenovering, tvättstugsrenovering, köksrenovering, totalentreprenad, rivning och bygg i Göteborg.",
   openGraph: {
     title: "GESAB - Badrumsrenovering och entreprenad i Göteborg",
     description:

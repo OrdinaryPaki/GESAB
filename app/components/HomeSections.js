@@ -2,11 +2,12 @@ import Link from "next/link";
 import { image, processSteps, services, testimonials } from "../gesab-data";
 import { CtaLink } from "./CtaButton";
 import { FaqSection } from "./FaqSection";
-import { ArrowIcon, CheckIcon, StarIcon } from "./GesabIcons";
+import { ArrowIcon, CheckIcon } from "./GesabIcons";
 import { ContactBand } from "./ContactBand";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { homeImages } from "./home-image-data";
+import { TestimonialCarousel } from "./TestimonialCarousel";
 import "./HomePage.css";
 import "./HomeHero.css";
 import "./HomeSupportWhy.css";
@@ -211,24 +212,7 @@ export function TrustNotes() {
     <section className="testimonial-section">
       <div className="container">
         <SectionTitle label="Kundomdömen" title="Tryggt val för renovering i Göteborg" center light />
-        <div className="testimonial-grid">
-          {testimonials.map((item, index) => (
-            <article key={item.name} className="testimonial-card">
-              <div className="person">
-                <div>
-                  <h3>{item.name}</h3>
-                  <span>{item.place}</span>
-                </div>
-              </div>
-              <p>{item.quote}</p>
-              <div className="rating-stars" aria-label="Fem av fem">
-                {Array.from({ length: 5 }).map((_, starIndex) => (
-                  <StarIcon key={starIndex} />
-                ))}
-              </div>
-            </article>
-          ))}
-        </div>
+        <TestimonialCarousel items={testimonials} />
       </div>
     </section>
   );

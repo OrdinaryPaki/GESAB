@@ -78,12 +78,8 @@
     height: auto !important;
   }
 
-  :global(#about-page) .missionInner {
-    padding: 48px 0;
-  }
-
   :global(#about-page) .missionImage,
-:global(#about-page) .missionPrinciples {
+  :global(#about-page) .missionPrinciples {
     position: static;
   }
 
@@ -93,7 +89,6 @@
 
   :global(#about-page) .missionPrinciples {
     width: 100%;
-    margin-top: -40px;
   }
 }
 
@@ -109,22 +104,32 @@
     width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
     height: auto !important;
     padding: 0 !important;
+    gap: var(--page-mobile-content-gap) !important;
   }
 
   :global(#about-page) .missionIntro {
-    gap: 16px;
+    gap: 20px;
   }
 
   :global(#about-page) .missionCopy {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--page-mobile-content-gap);
+    gap: 24px;
+  }
+
+  :global(#about-page) .missionBody {
+    gap: 16px;
+    padding-top: 0;
   }
 
   :global(#about-page) .missionCopy h2 {
     max-width: none;
     font-size: 32px;
     line-height: 1.2;
+  }
+
+  :global(#about-page) .missionStage {
+    gap: 0;
   }
 
   :global(#about-page) .missionImage {
@@ -138,13 +143,17 @@
     position: static;
     width: 100%;
     grid-template-columns: 1fr;
-    gap: 16px;
-    margin-top: -40px;
+    gap: 18px;
+    margin-top: -36px;
   }
 
   :global(#about-page) .missionPrinciples > * {
     min-height: 0;
     padding: 28px 24px;
+  }
+
+  :global(#about-page) .missionPrinciple:hover {
+    transform: none;
   }
 }
 
@@ -324,53 +333,8 @@
 }
 
 @media (max-width: 520px) {
-
-  .missionSection {
-    padding: 60px 0;
-  }
-
-  .missionInner {
-    width: 350px;
-    gap: 40px;
-  }
-
-  .missionIntro {
-    gap: 20px;
-  }
-
-  .missionCopy {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
   .missionCopy h2 {
-    max-width: none;
-    font-size: 36px;
-    line-height: 1.1;
-  }
-
-  .missionBody {
-    padding-top: 0;
-  }
-
-  .missionImage {
-    aspect-ratio: 4 / 3;
-  }
-
-  .missionPrinciples {
-    grid-template-columns: 1fr;
-    width: 100%;
-    margin-top: -48px;
-    gap: 14px;
-  }
-
-  .missionPrinciple {
-    min-height: 0;
-    padding: 28px 24px;
-  }
-
-  .missionPrinciple:hover {
-    transform: none;
+    font-size: 30px;
   }
 
   .missionPrincipleCopy {

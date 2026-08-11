@@ -345,7 +345,7 @@
 @media (max-width: 680px) {
 
   .home-page .support-strip {
-    padding: 72px 0;
+    padding: var(--home-mobile-section-space) 0;
   }
 
   .home-page .support-grid {

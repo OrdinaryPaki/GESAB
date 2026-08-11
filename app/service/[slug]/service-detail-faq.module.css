@@ -6,23 +6,6 @@
   }
 }
 
-.fitUnderIntro {
-  margin-top: 48px;
-}
-
-.fitUnderIntro.faqSection {
-  margin-top: 48px;
-}
-
-.fitUnderIntroTitle {
-  margin: 0 0 16px;
-  font-family: Inter, sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
-}
-
 .faqSection {
   margin-top: 82px;
   background: var(--soft);
@@ -32,46 +15,68 @@
 }
 
 .faqSection > h2 {
-  margin-bottom: 16px;
+  margin: 0 0 16px;
   color: var(--text);
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
 }
 
 .faqSection :global(.faq-list) {
+  display: flex;
+  flex-direction: column;
   gap: 0;
   overflow: hidden;
   border: none;
 }
 
-.faqSection :global(.faq-item) {
+.faqSection :global(.faq-item),
+.faqSection :global(.faq-item:first-child),
+.faqSection :global(.faq-item:last-child) {
+  border: none;
   border-bottom: 1px solid var(--line);
   border-radius: 0;
   padding: 0;
+  background: transparent;
+  transition: none;
 }
 
 .faqSection :global(.faq-item:last-child) {
   border-bottom: 0;
 }
 
+.faqSection :global(.faq-item:hover) {
+  background: transparent;
+}
+
 .faqSection :global(.faq-question) {
-  text-align: left;
+  gap: 16px;
   padding: 20px 0;
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.45;
   color: var(--text);
+  text-align: left;
 }
 
 .faqSection :global(.faq-toggle) {
+  display: flex;
   width: 24px;
   height: 24px;
-  background: transparent;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
   border: none;
+  border-radius: 0;
+  background: transparent;
   color: rgba(5, 5, 5, 0.4);
   font-size: 24px;
   font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2px;
+  line-height: 1;
+  padding: 0;
+  transition: transform 220ms ease, color 220ms ease;
 }
 
 .faqSection :global(.faq-toggle)::before {
@@ -80,9 +85,9 @@
 
 .faqSection :global(.faq-item.open) :global(.faq-toggle) {
   background: transparent;
+  border: none;
   color: var(--text);
   transform: rotate(90deg);
-  border-color: transparent;
 }
 
 .faqSection :global(.faq-item.open) :global(.faq-toggle)::before {
@@ -90,15 +95,14 @@
 }
 
 .faqSection :global(.faq-panel p) {
-  margin: 0 0 24px 0;
+  max-width: none;
+  margin: 0 0 20px;
   font-size: 15px;
-  line-height: 1.6;
-  color: rgba(5, 5, 5, 0.8);
+  line-height: 1.65;
+  color: rgba(5, 5, 5, 0.78);
 }
 
 @media (max-width: 640px) {
-
-
 
   .faqSection {
     margin-top: 64px;

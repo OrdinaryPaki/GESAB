@@ -201,7 +201,7 @@
 @media (max-width: 680px) {
   .home-page {
     --home-mobile-gutter: 28px;
-    --home-mobile-section-space: 80px;
+    --home-mobile-section-space: 96px;
     --home-mobile-content-gap: 32px;
   }
 

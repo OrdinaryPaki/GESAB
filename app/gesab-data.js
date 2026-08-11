@@ -28,157 +28,206 @@ export const services = [
   {
     slug: "badrumsrenovering",
     title: "Badrumsrenovering",
-    body: "Vi renoverar ditt badrum från rivning till färdig yta – fuktsäkert, fackmässigt och med en enda kontakt genom hela projektet.",
+    body: "Vi renoverar ditt badrum från rivning till färdig yta – rätt tätskikt, samordnade yrkesroller och en tidplan du kan planera din vardag efter.",
     image:
       "https://framerusercontent.com/images/DfUcNfyHmH7Do3MYCSM2HonZBbc.jpg?scale-down-to=512&width=1048&height=1024",
     detail: {
-      introTitle: "Ett tryggt badrumsprojekt – utan att du behöver styra det",
+      introTitle: "Ett tryggt och vackert badrum som håller i längden",
       intro:
-        "Badrummet är hemmets mest tekniska rum. Vi tar ansvar för helheten – rivning, VVS, el, tätskikt och plattsättning – så att du slipper jaga hantverkare och kan lita på resultatet.",
+        "Att renovera badrummet är en stor och viktig investering. För oss är noggrant underarbete och godkända tätskikt en självsklarhet, så att ditt nya badrum håller sig fräscht och säkert i årtionden. När vi är färdiga får du ett fullständigt våtrumsintyg för din trygghet och ditt försäkringsbolag.",
       sections: [
-        ["Kostnadsfri genomgång före offert", "Vi går igenom badrummet, dina önskemål och vad som påverkar priset – innan du bestämmer dig. Utan kostnad och utan krav."],
-        ["En kontakt – alla hantverkare", "VVS, el, rivning och plattsättning ingår i samma plan. Du får en kontaktperson i stället för fem olika telefonnummer."],
-        ["Dokumentation och ROT-avdrag", "Du får tydliga underlag på utfört arbete, och vi hjälper dig med ROT-avdraget direkt på fakturan."],
+        [
+          "Fast pris – inga obehagliga överraskningar",
+          "Vi går noggrant igenom ditt badrum innan vi startar. I vår skriftliga offert ingår hela jobbet med ett fast pris. Om vi under rivningen skulle upptäcka gamla fuktskador kontaktar vi dig direkt – inget extraarbete utförs utan ditt godkännande.",
+        ],
+        [
+          "En kontaktperson för allt – vi sköter hela projektet",
+          "Du slipper ringa runt till snickare, elektriker och rörmokare. Vi har alla hantverkare i samma team och samordnar hela renoveringen. Du har en enda kontaktperson från första mötet till slutbesiktningen.",
+        ],
+        [
+          "Klar i tid – du vet exakt vad som händer varje vecka",
+          "Innan vi startar får du en tydlig vecko- och tidsplan för rivning, rördragning, tätskikt, kakling och montering. Vi håller vad vi lovar så att du enkelt kan planera din vardag.",
+        ],
       ],
-      bullets: ["Kostnadsfri första genomgång", "Fuktsäkert utförande med rätt tätskikt", "En kontaktperson från start till klart"],
+      bullets: [
+        "Skyddstäckning och kontrollerad rivning med bortforsling av avfall.",
+        "Nya vatten- och avloppsdragningar samt byte av golvbrunn vid behov.",
+        "El, jordfelsbrytare, belysning och behaglig golvvärme.",
+        "Golvuppbyggnad med korrekt fall mot brunnen.",
+        "Godkänt och certifierat tätskikt på golv och väggar (BVK).",
+        "Professionell plattsättning, fogning och silikonering.",
+        "Montering av WC, kommod, blandare, dusch eller badkar.",
+        "Grundlig slutstädning och överlämning med officiellt våtrumsintyg.",
+      ],
+    },
+  },
+  {
+    slug: "tvattstugsrenovering",
+    title: "Tvättstugsrenovering",
+    body: "Vi renoverar din tvättstuga till ett praktiskt våtrum – rätt tätskikt, smarta ytor och en tydlig tidplan.",
+    image: "/images/home/why-waterproofing.webp",
+    detail: {
+      introTitle: "En tvättstuga som är praktisk, trygg och enkel att sköta",
+      intro:
+        "Tvättstugan är ett våtrum – precis som badrummet. Därför bygger vi med godkänt tätskikt, rätt fall och installationer som håller i vardagen. Resultatet blir en fräsch, funktionell yta med dokumentation du kan lita på.",
+      sections: [
+        [
+          "Fast pris utan dolda kostnader",
+          "Vi går igenom utrymmet innan start och ger dig en skriftlig offert med fast pris. Om något oväntat dyker upp under rivningen hör vi av oss innan vi går vidare.",
+        ],
+        [
+          "Byggd för riktig användning",
+          "Vi planerar för vatten, el, avlopp, förvaring och ytmaterial som tål fukt, tvättmedel och tung användning.",
+        ],
+        [
+          "Klar i tid med en kontaktperson",
+          "Du får en tydlig tidplan och en enda kontakt genom hela projektet – från hembesök till överlämning.",
+        ],
+      ],
+      bullets: [
+        "Rivning och bortforsling av gamla ytskikt",
+        "Nya vatten- och avloppsdragningar vid behov",
+        "El till maskiner, belysning och eventuella uttag",
+        "Golv med fall och godkänt tätskikt (BVK)",
+        "Slitstarka ytskikt som tål fukt och städning",
+        "Montering av inredning och blandare",
+        "Slutstädning och våtrumsintyg vid överlämning",
+      ],
     },
   },
   {
     slug: "koksrenovering",
     title: "Köksrenovering",
     body: "Vi renoverar ditt kök från planering till montage – allt i rätt ordning, med en kontaktperson och en tydlig tidplan.",
-    image:
-      "https://framerusercontent.com/images/cDrOWoyhgh20cvU27oJnd7n1fcc.jpg?scale-down-to=512&width=1048&height=1024",
+    image: "/images/home/service-kitchen-result.webp",
     detail: {
       introTitle: "Ett kök som blir klart – i rätt ordning",
       intro:
-        "En köksrenovering påverkar hela vardagen. Därför planerar vi el, vatten, snickeri och montage i rätt följd, så att projektet flyter på och du vet vad som händer varje vecka.",
+        "En köksrenovering påverkar hela vardagen. Därför planerar vi el, vatten, snickeri och montage i rätt följd, så att projektet flyter på och du vet vad som händer varje vecka. Du får fast pris innan vi startar.",
       sections: [
-        ["Planering som sparar pengar", "Vi räknar på lösningen tillsammans med dig innan arbetet startar – så slipper du dyra ändringar mitt i projektet."],
-        ["Alla installationer i samma plan", "El, vatten, snickeri, målning och montage samordnas av oss. Du behöver inte boka någon annan."],
-        ["Tydliga besked hela vägen", "Du får veta vad som ska beställas, när beslut behöver tas och vad som påverkar tidplanen."],
+        [
+          "Fast pris – utan dyra ändringar mitt i projektet",
+          "Vi räknar på lösningen tillsammans med dig innan arbetet startar. Leveranser, el och vatten låses i tid så att tidplanen håller.",
+        ],
+        [
+          "En kontaktperson för allt",
+          "El, vatten, snickeri, målning och montage samordnas av oss. Du behöver inte boka någon annan.",
+        ],
+        [
+          "Klar i tid – du vet vad som händer varje vecka",
+          "Du får veta vad som ska beställas, när beslut behöver tas och vad som påverkar tidplanen.",
+        ],
       ],
-      bullets: ["Hela eller delar av köket", "En kontaktperson för alla hantverkare", "Kostnadsfri rådgivning före start"],
+      bullets: [
+        "Rivning och bortforsling vid behov",
+        "El- och vattenarbeten i samma plan",
+        "Målning och snickeri",
+        "Montage av skåp, vitvaror och bänkskiva",
+        "Justering av luckor och funktioner",
+        "Slutstädning och genomgång",
+        "ROT-avdrag direkt på fakturan när villkoren är uppfyllda",
+      ],
     },
   },
   {
     slug: "totalentreprenad",
     title: "Totalentreprenad",
     body: "Ett avtal, en kontaktperson, ett ansvar. Vi driver hela din renovering från planering till färdigt resultat.",
-    image:
-      "https://framerusercontent.com/images/ZWKVbbjzjdlxCZdZzhABCBeDg.jpg?scale-down-to=512&width=1048&height=1024",
+    image: "/images/home/service-total-project.webp",
     detail: {
       introTitle: "Hela projektet på vårt bord – i stället för ditt",
       intro:
         "Vid större renoveringar är det oftast samordningen som fallerar, inte hantverket. Med totalentreprenad tar GESAB ansvar för plan, hantverkare och tidplan. Du fattar besluten – vi gör resten.",
       sections: [
-        ["Tydlig plan före start", "Omfattning, ansvar, material och tidplan dokumenteras innan arbetet börjar. Du vet vad du betalar för."],
-        ["Rätt moment i rätt ordning", "Rivning, bygg, installationer och ytskikt planeras så att inget behöver göras om."],
-        ["En kontakt genom hela projektet", "Du slipper koordinera hantverkare och får en samlad dialog kring beslut, ändringar och uppföljning."],
+        [
+          "Tydlig plan före start",
+          "Omfattning, ansvar, material och tidplan dokumenteras innan arbetet börjar. Du vet vad du betalar för.",
+        ],
+        [
+          "Rätt moment i rätt ordning",
+          "Rivning, bygg, installationer och ytskikt planeras så att inget behöver göras om.",
+        ],
+        [
+          "En kontakt genom hela projektet",
+          "Du slipper koordinera hantverkare och får en samlad dialog kring beslut, ändringar och uppföljning.",
+        ],
       ],
-      bullets: ["Passar badrum, kök och större renoveringar", "Ett samlat ansvar och en tidplan", "Färre överraskningar och omtag"],
+      bullets: [
+        "Planering och samordning av hela projektet",
+        "Rivning, bygg och installationer",
+        "Ytskikt, målning och montage",
+        "En kontaktperson från start till överlämning",
+        "Tydlig tidplan och uppföljning",
+        "Dokumentation enligt avtal",
+        "ROT-avdrag när villkoren är uppfyllda",
+      ],
     },
   },
   {
     slug: "rivningsarbeten",
     title: "Rivningsarbeten",
     body: "Kontrollerad rivning som förbereder nästa steg – säkert, sorterat och klart för återuppbyggnad.",
-    image: "https://framerusercontent.com/images/QYqRToXbEoQgV34SDfdVmvw1I.jpg?scale-down-to=512&width=1048&height=1024",
+    image: "/images/home/service-demolition.webp",
     detail: {
       introTitle: "Bra rivning handlar om det som kommer efter",
       intro:
         "Vi river kontrollerat, hanterar avfallet och lämnar ett kontrollerat underlag som nästa hantverkare kan bygga vidare på direkt – utan väntetid och utan överraskningar.",
       sections: [
-        ["Rätt avgränsning", "Vi klargör vad som ska bort, vad som ska sparas och vilka risker som kan dölja sig bakom ytskikten."],
-        ["Säkert och rent", "Damm, avfall och framkomlighet hanteras enligt plan – även om du bor kvar under arbetet."],
-        ["Klart för nästa steg", "Efter rivningen kontrollerar vi underlaget så att bygg, VVS eller tätskikt kan starta direkt."],
+        [
+          "Rätt avgränsning",
+          "Vi klargör vad som ska bort, vad som ska sparas och vilka risker som kan dölja sig bakom ytskikten.",
+        ],
+        [
+          "Säkert och rent",
+          "Damm, avfall och framkomlighet hanteras enligt plan – även om du bor kvar under arbetet.",
+        ],
+        [
+          "Klart för nästa steg",
+          "Efter rivningen kontrollerar vi underlaget så att bygg, VVS eller tätskikt kan starta direkt.",
+        ],
       ],
-      bullets: ["Rivning inför badrum, kök och bygg", "Sortering och bortforsling av avfall", "Kontrollerat underlag före återbyggnad"],
+      bullets: [
+        "Avgränsning och skydd av angränsande ytor",
+        "Kontrollerad rivning steg för steg",
+        "Sortering och bortforsling av avfall",
+        "Kontroll av underlag efter rivning",
+        "Förberedelse för bygg, VVS eller tätskikt",
+        "Tydlig offert innan start",
+      ],
     },
   },
   {
     slug: "bygg",
     title: "Bygg",
     body: "Byggarbeten för renovering och ombyggnad – utförda i rätt ordning och samordnade med el, VVS och ytskikt.",
-    image: "https://framerusercontent.com/images/td8HawPEPsqppzq8BOQKqENv34.jpg?scale-down-to=1024&width=2352&height=1856",
+    image: "/images/home/service-total-project.webp",
     detail: {
       introTitle: "Byggarbete som håller – inte bara ser klart ut",
       intro:
         "Vi tar byggjobb där konstruktion, material och installationer behöver hänga ihop. Då blir resultatet stabilt – och du slipper göra om det senare.",
       sections: [
-        ["Genomgång före offert", "Vi tittar på plats, mått och beroenden mot el och VVS innan vi lämnar pris – så håller både budget och tidplan."],
-        ["Rätt ordning, rätt underlag", "Varje moment bygger vidare på ett kontrollerat underlag. Det minskar risken för fel och omtag."],
-        ["Minsta möjliga störning", "Vi planerar arbetet efter hur du använder bostaden eller lokalen under tiden."],
+        [
+          "Genomgång före offert",
+          "Vi tittar på plats, mått och beroenden mot el och VVS innan vi lämnar pris – så håller både budget och tidplan.",
+        ],
+        [
+          "Rätt ordning, rätt underlag",
+          "Varje moment bygger vidare på ett kontrollerat underlag. Det minskar risken för fel och omtag.",
+        ],
+        [
+          "Minsta möjliga störning",
+          "Vi planerar arbetet efter hur du använder bostaden eller lokalen under tiden.",
+        ],
       ],
-      bullets: ["Renovering, ombyggnad och återställning", "Samordning med el, VVS och ytskikt", "Tydlig plan och arbetsordning"],
-    },
-  },
-  {
-    slug: "fasadrenovering",
-    title: "Fasadrenovering",
-    body: "Fasadrenovering med rätt metod för ditt underlag – säkert utfört och med skydd som håller över tid.",
-    image: "https://framerusercontent.com/images/kpzLt08Jr5pzvSVn5nxcIjE.jpg?scale-down-to=1024&width=2352&height=1856",
-    detail: {
-      introTitle: "Vi lagar orsaken – inte bara ytan",
-      intro:
-        "En fasadrenovering som bara döljer skadorna spricker om igen. Vi tar reda på varför skadan uppstått och väljer metod och material som fungerar med fasadens underlag.",
-      sections: [
-        ["Besiktning före pris", "Vi bedömer skador, underlag och åtkomst på plats innan du får offert – inga överraskningar i efterhand."],
-        ["Säker arbetsplats", "Ställning, väderskydd och avspärrning planeras efter byggnadens höjd och omgivning."],
-        ["Hållbart resultat", "Rätt lagning och ytbehandling förlänger fasadens livslängd och sänker underhållskostnaden."],
+      bullets: [
+        "Renovering, ombyggnad och återställning",
+        "Regelverk och mått på plats",
+        "Samordning med el, VVS och ytskikt",
+        "Material och infästningar enligt plan",
+        "Tydlig arbetsordning",
+        "Kontroll innan överlämning",
+        "ROT-avdrag när villkoren är uppfyllda",
       ],
-      bullets: ["Fasadrenovering och underhåll", "Besiktning och tydlig offert", "Metod anpassad efter underlaget"],
-    },
-  },
-  {
-    slug: "snickeri",
-    title: "Snickeri",
-    body: "Snickeri med precision – måttanpassade lösningar och detaljer som gör hela renoveringen färdig.",
-    image: "https://framerusercontent.com/images/5HvWrJmM6xzGq3DYvPA463WFMxA.jpg?scale-down-to=512&width=1536&height=1360",
-    detail: {
-      introTitle: "Detaljerna avgör hur färdigt det känns",
-      intro:
-        "Snyggt snickeri syns – och slarvigt snickeri syns ännu mer. Vi bygger och anpassar efter rummets verkliga mått, så att lister, luckor och inredning sitter som de ska och håller över tid.",
-      sections: [
-        ["Från idé till färdig lösning", "En skiss, en bild eller bara en tanke räcker som start. Vi hjälper dig ta fram en lösning som fungerar i rummet och håller din budget."],
-        ["Samordnat med resten av projektet", "Snickeriet planeras ihop med målning, el och montage. Då slipper du krockar mellan hantverkare och får ett resultat som hänger ihop."],
-        ["Justerat in i minsta detalj", "Innan vi lämnar justeras luckor, fogar och beslag tills allt fungerar och ser genomarbetat ut."],
-      ],
-      bullets: ["Platsanpassade snickeriarbeten", "Reparation och återställning", "Samordnas med målning och montage"],
-    },
-  },
-  {
-    slug: "malning",
-    title: "Målning",
-    body: "Målning med ordentligt underarbete – för ytor som ser bra ut och håller i många år, inte bara vid besiktningen.",
-    image: "https://framerusercontent.com/images/YzIewOSyeipY6CeBUEuF1AOJJa0.jpg?scale-down-to=512&width=1536&height=1360",
-    detail: {
-      introTitle: "Skillnaden sitter i förarbetet",
-      intro:
-        "Skillnaden mellan en målad yta som håller i två år och en som håller i femton sitter i underarbetet. Vi tvättar, lagar och grundar ordentligt – sedan målar vi.",
-      sections: [
-        ["Ärlig bedömning före pris", "Du får veta exakt vilket underarbete som ingår i offerten och varför. Inga luddiga formuleringar som blir diskussion i efterhand."],
-        ["Rätt färg för rätt yta", "Våtrum, kök, fasad eller sovrum ställer olika krav. Vi väljer färgsystem efter slitage och miljö, inte efter vad som råkar finnas i bilen."],
-        ["Skyddat och rent", "Vi täcker in golv och möbler under arbetet och lämnar rent efter oss. Du ska kunna använda rummet direkt."],
-      ],
-      bullets: ["Invändig och utvändig målning", "Underarbetet specificeras i offerten", "Samordnas med övrig renovering"],
-    },
-  },
-  {
-    slug: "montage",
-    title: "Montage",
-    body: "Professionellt montage av kök, inredning och byggdelar – rätt infäst, rakt och klart att användas.",
-    image: "https://framerusercontent.com/images/KUrLwljq131KPkT0gW3k032SOwE.jpg?scale-down-to=512&width=1536&height=1360",
-    detail: {
-      introTitle: "Sista steget ska inte vara det som strular",
-      intro:
-        "Du har beställt, betalat och väntat – nu ska det sitta rätt också. Vi kontrollerar mått, underlag och leverans innan vi börjar, och lämnar inte förrän allt fungerar.",
-      sections: [
-        ["Kontroll innan vi skruvar", "Vi stämmer av delar, mått och underlag innan något monteras fast. Det förebygger de vanligaste montagefelen – och sparar dig både tid och pengar."],
-        ["Infästning som håller", "Olika väggar kräver olika infästning. Vi monterar så att det håller även för det som belastas varje dag, som överskåp och garderober."],
-        ["Testat innan vi lämnar", "Luckor, lådor och funktioner provas och justeras. Vi går igenom resultatet tillsammans med dig innan vi packar ihop."],
-      ],
-      bullets: ["Montage av kök, inredning och byggdelar", "Kontroll av mått och underlag", "Funktionstest före överlämning"],
     },
   },
 ];
@@ -260,7 +309,7 @@ export const faqItems = [
   {
     question: "Vilka tjänster utför GESAB?",
     answer:
-      "GESAB utför badrumsrenovering, köksrenovering, totalentreprenad, rivningsarbeten, bygg, fasadrenovering, snickeri, målning och montage.",
+      "GESAB utför badrumsrenovering, tvättstugsrenovering, köksrenovering, totalentreprenad, rivningsarbeten och bygg i Göteborg.",
   },
   {
     question: "Kan ni hjälpa till från idé till färdigt badrum?",

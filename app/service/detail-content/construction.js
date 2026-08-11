@@ -1,42 +1,94 @@
 export const constructionDetailContent = {
   rivningsarbeten: {
-    audience: "Beställare som behöver rivning inför renovering",
-    suitableFor: [
-      [
-        "Inför en renovering",
-        "När kakel, inredning eller byggdelar behöver bort innan nästa hantverkare kan börja. Vi avgränsar vad som ska rivas, skyddar angränsande ytor och planerar bortforsling så att renoveringen kan starta utan onödigt stillestånd.",
-      ],
-      [
-        "Bara vissa delar ska bort",
-        "När delar ska sparas och resten rivas utan att skada det som ska vara kvar. Vi markerar gränserna tydligt, arbetar stegvis och kontrollerar att installationer och ytor som ska behållas inte påverkas i onödan.",
-      ],
-      [
-        "Rivning och återbyggnad i samma flöde",
-        "När underlaget behöver kontrolleras och lämnas klart för nästa steg direkt. Efter rivningen går vi igenom vad som syns bakom ytskikten och förbereder så att bygg, VVS eller tätskikt kan fortsätta utan dubbelarbete.",
-      ],
+    audience: "Privatpersoner inför renovering",
+    heroTitle: "Rivningsarbeten i Göteborg",
+    heroLead:
+      "Kontrollerad rivning som förbereder nästa steg – säkert, sorterat och klart för återuppbyggnad. Du får tydligt pris och en plan innan vi startar.",
+    heroImage: "/images/home/service-demolition.webp",
+    heroImageAlt: "Rivningsarbeten i Göteborg – kontrollerad rivning inför renovering",
+    highlights: [
+      ["Säkert", "Stegvis utförande"],
+      ["Sorterat", "Avfall enligt plan"],
+      ["Fast pris", "Innan vi startar"],
+      ["Klart", "För nästa hantverkare"],
     ],
+    preparationTitle: "Inför första kontakten",
+    preparationIntro: "Det räcker med ett enkelt underlag. Skicka gärna:",
     preparation: [
       "Bilder eller ritningar som visar vad som ska bort och vad som ska sparas.",
       "Om du vet något om installationer eller material i området.",
-      "Hur avfall kan forslas ut och när arbetet kan ske.",
+      "Hur avfall kan forslas ut.",
+      "När arbetet kan ske.",
     ],
-    supportingImage:
-      "https://framerusercontent.com/images/DZWmtqm9HQwIG5M2Ky157nHyzyA.jpg?scale-down-to=1024&width=1428&height=1548",
+    supportingImage: "/images/home/service-demolition.webp",
+    supportingImageAlt: "Rivning: kontrollerad borttagning inför återbyggnad",
+    projects: [
+      {
+        src: "/images/home/service-demolition.webp",
+        alt: "Rivningsarbeten: kontrollerad rivning",
+        caption: "Kontrollerad rivning där underlaget lämnas rent och redo för nästa steg.",
+      },
+      {
+        src: "/images/home/why-site-measurement.webp",
+        alt: "Genomgång innan rivning",
+        caption: "Vi avgränsar vad som ska bort och vad som ska skyddas innan arbetet börjar.",
+      },
+      {
+        src: "/images/home/service-total-project.webp",
+        alt: "Rivning som del av större renovering",
+        caption: "Rivning planeras ofta som första steg i en större renovering.",
+      },
+      {
+        src: "/images/home/why-waterproofing.webp",
+        alt: "Kontrollerat underlag efter rivning",
+        caption: "Efter rivningen kontrollerar vi underlaget så att bygg eller tätskikt kan starta direkt.",
+      },
+    ],
+    reviewNames: ["Katarina S.", "Familjen Johansson", "Lars G."],
+    quoteHeading: "Få en gratis offert",
+    quoteDescription:
+      "Beskriv vad som ska rivas eller skicka bilder. Vi återkommer inom 24h med rådgivning och prisförslag.",
+    quoteBenefits: [
+      "100% gratis första genomgång",
+      "Tydligt pris innan vi börjar",
+      "Säker rivning med sorterat avfall",
+      "Klart underlag för nästa steg",
+    ],
+    sectionsTitle: "Därför ska du välja GESAB för rivning",
+    bulletsTitle: "Det här ingår ofta i rivningsarbetet",
+    bulletsIntro: "Omfattningen anpassas efter platsen. Vanliga delar är:",
+    processTitle: "Så går det till",
+    processIntro: "Bra rivning handlar om det som kommer efter. Så här gör vi:",
     process: [
-      ["Avgränsning", "Vi går igenom vad som ska tas bort, vad som ska skyddas och vilket nästa steg rivningen ska förbereda."],
-      ["Kontroll före start", "Vi bedömer åtkomst, installationer och eventuella risker innan arbetet börjar."],
+      ["Gratis genomgång", "Vi går igenom vad som ska tas bort, vad som ska skyddas och vilket nästa steg rivningen ska förbereda."],
+      ["Tydlig offert", "Du får pris, avfallsplan och tidplan innan arbetet börjar."],
       ["Kontrollerad rivning", "Arbetet sker stegvis med fokus på säkerhet, damm och sortering."],
       ["Klart för nästa steg", "När ytorna är öppna kontrollerar vi underlaget så att återbyggnaden kan starta."],
     ],
+    timelineTitle: "Tidslinje: Så går rivningen till",
+    timelineIntro: "Tiden beror på omfattningen, men stegen är tydliga:",
+    timeline: [
+      ["Steg 1", "Avgränsning, skydd och riskbedömning."],
+      ["Steg 2", "Rivning i rätt ordning."],
+      ["Steg 3", "Sortering och bortforsling av avfall."],
+      ["Steg 4", "Kontroll av underlag och överlämning."],
+    ],
+    considerationsTitle: "Vad påverkar priset?",
+    considerationsIntro: "Vi ger dig ett tydligt pris innan start. Det som främst påverkar är:",
     considerations: [
       "Hur mycket som ska rivas och hur avfallet kan forslas ut.",
       "Om installationer eller bärande delar berörs.",
       "Behov av särskild hantering av riskmaterial.",
       "Vad som måste skyddas i angränsande rum.",
     ],
-    importantTitle: "Säkerhet och dolda fynd",
-    important:
-      "Rivning startar inte på gissningar. Om vi hittar fukt eller andra problem stoppar vi, visar dig vad vi sett och går vidare först när ni är överens.",
+    importantTitle: "Så säkerställer vi kvaliteten",
+    importantIntro: "Rivning startar inte på gissningar. Så här håller vi det tryggt:",
+    credentials: [
+      "Vad som ska bort och vad som ska sparas står klart innan start.",
+      "Damm, avfall och framkomlighet hanteras enligt plan.",
+      "Om vi hittar fukt eller andra problem stoppar vi och stämmer av med dig.",
+      "Underlaget lämnas kontrollerat för nästa hantverkare.",
+    ],
     faq: [
       {
         question: "Tar ni hand om avfallet?",
@@ -54,47 +106,108 @@ export const constructionDetailContent = {
         question: "Kan ni riva bara en del?",
         answer: "Ja. Vi avgränsar vad som ska bort och skyddar det som ska sparas.",
       },
+      {
+        question: "Kan jag bo kvar under rivningen?",
+        answer: "Oftast ja, beroende på omfattning. Vi går igenom damm, buller och tillgång innan start.",
+      },
+      {
+        question: "Kan rivningen ingå i en större renovering?",
+        answer: "Ja – och det är ofta smidigast, eftersom nästa steg kan starta direkt efteråt.",
+      },
     ],
-    related: ["bygg", "totalentreprenad", "malning"],
+    related: ["bygg", "totalentreprenad", "badrumsrenovering"],
   },
   bygg: {
-    audience: "Privatpersoner och företag med ombyggnadsbehov",
-    suitableFor: [
-      [
-        "Återställning efter skada eller rivning",
-        "När underlag eller konstruktion behöver lagas innan ytskikt och montage. Vi tar det som måste sitta rätt först – så nästa steg byggs på rätt grund.",
-      ],
-      [
-        "Renovering och ombyggnad",
-        "När ett rum eller en lokal ska anpassas till ny funktion. Vi går igenom mått, material och vad som påverkar resten av bostaden innan start.",
-      ],
-      [
-        "Bygg i ett större projekt",
-        "När byggarbetet behöver samordnas med el, VVS, målning eller snickeri. Då läggs momenten i samma ordning – så tidplanen håller.",
-      ],
+    audience: "Privatpersoner med ombyggnadsbehov",
+    heroTitle: "Byggarbeten i Göteborg",
+    heroLead:
+      "Byggarbeten för renovering och ombyggnad – utförda i rätt ordning och samordnade med el, VVS och ytskikt. Du får fast pris och tydlig plan.",
+    heroImage: "/images/home/service-total-project.webp",
+    heroImageAlt: "Byggarbeten i Göteborg – ombyggnad och renovering",
+    highlights: [
+      ["Rätt ordning", "Färre omtag"],
+      ["Fast pris", "Innan vi startar"],
+      ["Samordnat", "Med el och VVS"],
+      ["30% ROT", "När det gäller"],
     ],
+    preparationTitle: "Inför första kontakten",
+    preparationIntro: "Det räcker med ett enkelt underlag. Skicka gärna:",
     preparation: [
       "Bilder, mått och eventuella ritningar.",
       "Vad som ska ändras och vilken nivå ni siktar på.",
       "Tillträde och eventuella krav från BRF eller hyresvärd.",
+      "När arbetet helst ska starta.",
     ],
-    supportingImage:
-      "https://framerusercontent.com/images/kpzLt08Jr5pzvSVn5nxcIjE.jpg?scale-down-to=1024&width=2352&height=1856",
+    supportingImage: "/images/home/service-total-project.webp",
+    supportingImageAlt: "Bygg: ombyggnad med samordnade moment",
+    projects: [
+      {
+        src: "/images/home/service-total-project.webp",
+        alt: "Byggarbeten: ombyggnad i bostad",
+        caption: "Byggarbete där konstruktion, material och nästa ytskikt planeras tillsammans.",
+      },
+      {
+        src: "/images/home/gallery-carpentry-result.webp",
+        alt: "Bygg och snickeri i samma projekt",
+        caption: "Snickeri och byggdetaljer som gör att resultatet känns färdigt och stabilt.",
+      },
+      {
+        src: "/images/home/service-demolition.webp",
+        alt: "Bygg efter rivning",
+        caption: "Efter kontrollerad rivning bygger vi vidare på ett rent och kontrollerat underlag.",
+      },
+      {
+        src: "/images/home/why-site-measurement.webp",
+        alt: "Mätning inför byggarbete",
+        caption: "Mått och beroenden stäms av på plats innan offert och start.",
+      },
+    ],
+    reviewNames: ["Familjen Johansson", "Lars G.", "Anna & Mikael"],
+    quoteHeading: "Få en gratis offert",
+    quoteDescription:
+      "Beskriv vad du vill bygga eller skicka bilder. Vi återkommer inom 24h med rådgivning och prisförslag.",
+    quoteBenefits: [
+      "100% gratis första genomgång",
+      "Fast pris innan vi börjar",
+      "Samordning med el, VVS och ytskikt",
+      "ROT-avdrag när villkoren är uppfyllda",
+    ],
+    sectionsTitle: "Därför ska du välja GESAB för bygg",
+    bulletsTitle: "Det här kan ingå i byggarbetet",
+    bulletsIntro: "Omfattningen anpassas efter platsen. Vanliga delar är:",
+    processTitle: "Så går det till",
+    processIntro: "Bygg ska vara stabilt – inte bara se klart ut. Så här gör vi:",
     process: [
-      ["Behovsgenomgång", "Vi går igenom funktion, mått och hur arbetet hänger ihop med resten av bostaden."],
+      ["Gratis genomgång", "Vi går igenom funktion, mått och hur arbetet hänger ihop med resten av bostaden."],
       ["Plan före start", "Material, infästningar och eventuella installationer stäms av innan vi bygger."],
       ["Bygg och samordning", "Momenten utförs i rätt ordning och samordnas med el, VVS eller målning vid behov."],
       ["Kontroll och avslut", "Vi kontrollerar avtalad funktion innan överlämning."],
     ],
+    timelineTitle: "Tidslinje: Så planeras byggarbetet",
+    timelineIntro: "Tiden beror på omfattningen, men ordningen är densamma:",
+    timeline: [
+      ["Steg 1", "Genomgång, mått och risker."],
+      ["Steg 2", "Offert, material och tidplan."],
+      ["Steg 3", "Förberedelser och eventuella installationer."],
+      ["Steg 4", "Byggarbete och samordning."],
+      ["Steg 5", "Kontroll och överlämning."],
+    ],
+    considerationsTitle: "Vad påverkar priset?",
+    considerationsIntro: "Vi lämnar hellre ett genomarbetat pris än en snabb gissning. Offerten styrs bland annat av:",
     considerations: [
       "Om bärande delar eller installationer påverkas.",
       "Tillgång till ritningar och korrekta mått.",
       "Materialval, leveranser och åtkomst.",
       "Eventuellt bygglov eller godkännande från fastighetsägare.",
     ],
-    importantTitle: "Tillstånd och tydliga gränser",
-    important:
-      "Vissa ändringar kräver bygglov, anmälan eller godkännande från BRF. Vi hjälper dig se vad som gäller tidigt, så att ansvaret är klart innan start.",
+    importantTitle: "Så säkerställer vi kvaliteten",
+    importantIntro: "Bra byggarbete handlar om rätt underlag och rätt ordning. Så här håller vi det tryggt:",
+    credentials: [
+      "Vi går igenom plats, mått och beroenden innan offert.",
+      "Varje moment bygger vidare på ett kontrollerat underlag.",
+      "Samordning med el, VVS och ytskikt när det ingår.",
+      "ROT-avdrag hanteras på fakturan när villkoren är uppfyllda.",
+    ],
     faq: [
       {
         question: "Tar ni både små och stora jobb?",
@@ -112,65 +225,15 @@ export const constructionDetailContent = {
         question: "Behöver jag bygglov?",
         answer: "Det beror på åtgärden. Vi hjälper dig se vad som behöver kollas innan start – till exempel bygglov eller godkännande från BRF.",
       },
-    ],
-    related: ["totalentreprenad", "snickeri", "malning"],
-  },
-  fasadrenovering: {
-    audience: "Fastighetsägare, BRF:er och företag",
-    suitableFor: [
-      [
-        "Planerat underhåll",
-        "När du vill ha en tydlig bild av metod, åtkomst och kostnad innan något startar. Vi går igenom fasadens skick, vad som är akut och vad som kan planeras in i rätt säsong – så att du kan fatta beslut i lugn och ro.",
-      ],
-      [
-        "Lokala skador",
-        "När sprickor, färgsläpp eller fuktspår behöver åtgärdas innan skadan växer. Vi bedömer om det räcker med lokala lagningar, vad som orsakat problemet och hur ytan ska behandlas för att hålla längre.",
-      ],
-      [
-        "Större fasadarbeten",
-        "När lagning och ytbehandling behöver planeras för en hel fasad eller byggnadsdel. Då sätter vi upp en tydlig arbetsordning för ställning, underarbete och ytbehandling så att resultatet blir jämnt och långsiktigt.",
-      ],
-    ],
-    preparation: [
-      "Översiktsbilder och närbilder på skadorna.",
-      "Vilket fasadmaterial det är och när problemen upptäcktes.",
-      "Förutsättningar för ställning och åtkomst runt huset.",
-    ],
-    supportingImage:
-      "https://framerusercontent.com/images/YzIewOSyeipY6CeBUEuF1AOJJa0.jpg?scale-down-to=512&width=1536&height=1360",
-    process: [
-      ["Besiktning", "Vi går igenom skador, underlag och anslutningar som går att se på plats."],
-      ["Metod och offert", "Du får en tydlig plan för lagning, ytbehandling och vad som ingår i priset."],
-      ["Säkert utförande", "Ställning, väderskydd och arbetsordning planeras efter huset och omgivningen."],
-      ["Kontroll och råd", "Efteråt går vi igenom resultatet och vad som är bra att hålla koll på framåt."],
-    ],
-    considerations: [
-      "Fasadmaterial och hur omfattande underarbetet är.",
-      "Höjd, åtkomst och ställning.",
-      "Väder och temperatur.",
-      "Detaljer runt fönster, plåt och sockel.",
-    ],
-    importantTitle: "Rätt metod för underlaget",
-    important:
-      "En fasad håller bäst när lagning och färg passar materialet. Vi åtgärdar orsaken – inte bara det synliga – så att problemet inte kommer tillbaka snabbt.",
-    faq: [
       {
-        question: "Hur vet jag om fasaden behöver renoveras?",
-        answer: "Sprickor, färgsläpp och fuktspår är vanliga tecken. En genomgång visar om det räcker med lokala åtgärder.",
+        question: "Får jag fast pris?",
+        answer: "Ja. Efter genomgången får du en tydlig offert innan arbetet startar.",
       },
       {
-        question: "Kan arbetet göras året runt?",
-        answer: "Inte alltid. Väder påverkar många produkter, så tidplanen anpassas efter metoden.",
-      },
-      {
-        question: "Ingår ställning?",
-        answer: "När ställning behövs står det i offerten – så kostnaden inte kommer som en överraskning.",
-      },
-      {
-        question: "Måste hela fasaden göras samtidigt?",
-        answer: "Nej, inte alltid. Ibland räcker lokala lagningar, ibland är det bättre att ta en större yta.",
+        question: "Sköter ni ROT-avdraget?",
+        answer: "Ja, när arbetet och kunden uppfyller kraven. Det klargörs i offerten.",
       },
     ],
-    related: ["bygg", "malning", "snickeri"],
-  },
+    related: ["totalentreprenad", "badrumsrenovering", "rivningsarbeten"],
+  }
 };

@@ -346,6 +346,10 @@
 
 @media (max-width: 680px) {
 
+  .home-page .about-section .about-row .cta-button {
+    display: none;
+  }
+
   .home-page .about-section {
     padding: var(--home-mobile-section-space) 0;
   }

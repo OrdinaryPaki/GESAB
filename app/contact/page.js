@@ -1,19 +1,19 @@
 import { ContactBand } from "../components/ContactBand";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { CtaButton } from "../components/CtaButton";
 import { MailIcon, PhoneIcon } from "../components/GesabIcons";
 import { FaqSection } from "../components/FaqSection";
-import { ServiceSelect } from "../components/ServiceSelect";
-import { contactInfo, serviceSelectOptions } from "../gesab-data";
+import { contactInfo } from "../gesab-data";
 import { LocationIcon } from "./contact-icons";
+import { ContactForm } from "./ContactForm";
+import { ContactMap } from "./ContactMap";
 import styles from "./contact-styles.js";
 
 const contactFaqItems = [
   {
     question: "Vilka renoveringstjänster erbjuder ni?",
     answer:
-      "Vi hjälper till med badrum, kök, totalentreprenad, rivning, bygg, fasad, snickeri, målning och montage för både bostäder och lokaler i Göteborg. Vi samordnar arbetet från start till klart.",
+      "Vi hjälper till med badrum, tvättstuga, kök, totalentreprenad, rivning och bygg för bostäder i Göteborg. Vi samordnar arbetet från start till klart.",
   },
   {
     question: "Är era hantverkare utbildade och försäkrade?",
@@ -50,28 +50,7 @@ export default function ContactPage() {
             gärna
           </h1>
           <p>Vi hjälper dig gärna – kontakta oss med frågor eller för offert.</p>
-          <form className="contact-main-form">
-            <div className={styles.contactFormFields}>
-              <label>
-                Förnamn*
-                <input placeholder="Förnamn" />
-              </label>
-              <label>
-                Efternamn*
-                <input placeholder="Efternamn" />
-              </label>
-              <label className="wide">
-                E-post*
-                <input placeholder={contactInfo.email} type="email" />
-              </label>
-              <ServiceSelect className="wide" label="Tjänst*" options={serviceSelectOptions} />
-              <label className="wide">
-                Meddelande*
-                <textarea placeholder="Beskriv kort vad du vill ha hjälp med." />
-              </label>
-            </div>
-            <CtaButton>Skicka förfrågan</CtaButton>
-          </form>
+          <ContactForm />
         </div>
       </section>
       <section className="contact-info-section">
@@ -103,16 +82,7 @@ export default function ContactPage() {
               </p>
             </article>
           </div>
-          <div className={styles.map}>
-            <iframe
-              allowFullScreen
-              className={styles.mapFrame}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Solstr%C3%A5legatan%206%2C%20418%2043%20G%C3%B6teborg&output=embed"
-              title="Karta till GESAB på Solstrålegatan 6"
-            />
-          </div>
+          <ContactMap />
         </div>
       </section>
       <FaqSection items={contactFaqItems} />

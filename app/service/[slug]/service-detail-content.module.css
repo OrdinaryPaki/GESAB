@@ -1,4 +1,249 @@
 /* Service-detail article layout and content blocks. */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px 24px;
+  margin-top: 48px;
+}
+.projectCard {
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.projectCard:first-child {
+  grid-column: 1 / -1;
+}
+.projectImageWrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--soft);
+  margin-bottom: 16px;
+}
+.projectCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.projectCard:first-child img {
+  aspect-ratio: 21 / 9;
+}
+.projectCard figcaption {
+  color: rgba(5, 5, 5, 0.8);
+  font-size: 15px;
+  line-height: 1.65;
+  padding-right: 12px;
+}
+.projectCard figcaption::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--blue);
+  margin-bottom: 14px;
+}
+.reviewBreakout {
+  margin-top: 88px;
+}
+.reviewBreakoutInner h2 {
+  margin: 0 0 32px;
+  font-family: Inter, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+}
+.serviceCarousel :global(.review-grid) {
+  display: flex !important;
+  overflow-x: auto !important;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  gap: 0 !important; /* Remove gap so 100% width works perfectly */
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.serviceCarousel :global(.review-grid)::-webkit-scrollbar {
+  display: none;
+}
+.serviceCarousel :global(.review-card) {
+  flex: 0 0 100% !important;
+  scroll-snap-align: center;
+  background: var(--soft) !important;
+  color: var(--text) !important;
+  min-height: 280px !important;
+  padding: 48px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 16px;
+  border: 0;
+  box-shadow: none;
+}
+.serviceCarousel :global(.review-card blockquote) {
+  margin: 0;
+  color: rgba(5, 5, 5, 0.8);
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+.serviceCarousel :global(.review-card blockquote::before) {
+  content: "”";
+  display: block;
+  margin: 0 auto 16px;
+  color: var(--blue);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 0.6;
+}
+.serviceCarousel :global(.review-card figcaption) {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+.serviceCarousel :global(.review-pagination) {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+.serviceCarousel :global(.review-dot) {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #d1d5db;
+  cursor: pointer;
+}
+.serviceCarousel :global(.review-dot.is-active) {
+  background: var(--blue);
+}
+@media (max-width: 980px) {
+  .serviceCarousel :global(.review-card) {
+    flex: 0 0 100% !important;
+  }
+}
+@media (max-width: 640px) {
+  .serviceCarousel :global(.review-card) {
+    flex: 0 0 100% !important;
+    padding: 32px 24px !important;
+  }
+  .serviceCarousel :global(.review-card blockquote) {
+    font-size: 17px;
+  }
+  .reviewBreakout {
+    margin-top: 64px;
+  }
+}
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+.reviewCard {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  border-radius: 16px;
+  padding: 26px 24px;
+  background: var(--soft);
+  color: var(--text);
+}
+.reviewCard figcaption {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+.timeline {
+  margin: 36px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+  counter-reset: none;
+}
+.timeline li {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.timelineLabel {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+.timelineBody {
+  color: rgba(5, 5, 5, 0.72);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.segmentCard {
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+.segmentCard h2 {
+  font-size: 32px;
+  margin: 0 0 16px;
+}
+.segmentCard p {
+  margin: 0;
+  color: rgba(5, 5, 5, 0.76);
+  font-size: 17px;
+  line-height: 1.65;
+}
+@media (max-width: 640px) {
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .projectCard:first-child img,
+.projectCard img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .reviewGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .segmentCard h2 {
+    font-size: 26px;
+  }
+}
+.reviewCard blockquote {
+  margin: 0;
+  color: rgba(5, 5, 5, 0.8);
+  font-size: 15px;
+  line-height: 1.62;
+}
+.reviewCard blockquote::before {
+  content: "”";
+  display: block;
+  margin-bottom: 4px;
+  color: var(--blue);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 0.6;
+}
 @media (max-width: 680px) {
 
   .contentGrid {
@@ -14,10 +259,6 @@
     gap: 72px;
   }
 
-  .lead {
-    margin-bottom: 64px;
-  }
-
   .articleSection {
     margin-top: 64px;
   }
@@ -30,11 +271,9 @@
     margin-top: 64px;
   }
 }
-
 .contentSection {
   padding: 0 24px 128px;
 }
-
 .contentGrid {
   display: grid;
   grid-template-areas: "article quote";
@@ -42,36 +281,22 @@
   gap: 120px;
   align-items: start;
 }
-
 .article {
   min-width: 0;
   grid-area: article;
 }
-
-.lead {
-  max-width: 760px;
-  margin: 0 0 88px;
-  color: var(--text);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
 .textBlocks {
   display: grid;
   margin: 36px 0 0;
   padding: 0;
 }
-
 .textBlocks {
   border-top: 1px solid var(--line);
 }
-
 .textBlock {
   padding: 24px 0 26px;
   border-bottom: 1px solid var(--line);
 }
-
 .textBlock h3,
 .textBlock h4 {
   margin: 0;
@@ -80,7 +305,6 @@
   font-weight: 600;
   line-height: 1.35;
 }
-
 .textBlock p {
   max-width: 720px;
   margin: 9px 0 0;
@@ -88,7 +312,6 @@
   font-size: 16px;
   line-height: 1.68;
 }
-
 .standardList {
   display: grid;
   gap: 14px;
@@ -96,7 +319,6 @@
   padding: 0;
   list-style: none;
 }
-
 .standardList li {
   position: relative;
   padding-left: 28px;
@@ -104,7 +326,6 @@
   font-size: 17px;
   line-height: 1.65;
 }
-
 .standardList li::before {
   content: "";
   position: absolute;
@@ -115,15 +336,12 @@
   border-radius: 999px;
   background: var(--muted);
 }
-
 .articleSection {
   margin-top: 88px;
 }
-
 .articleSection:first-of-type {
   margin-top: 0;
 }
-
 .article h2 {
   margin: 0;
   font-family: Inter, sans-serif;
@@ -131,12 +349,10 @@
   letter-spacing: -0.025em;
   line-height: 1.18;
 }
-
 .article h2 {
   font-size: 36px;
   margin-bottom: 24px;
 }
-
 .articleSection > p {
   max-width: 780px;
   margin: 0;
@@ -144,7 +360,6 @@
   font-size: 17px;
   line-height: 1.75;
 }
-
 .supportingImage {
   display: block;
   width: 100%;
@@ -155,26 +370,23 @@
   background: var(--soft);
   object-fit: cover;
 }
-
 @media (max-width: 1100px) {
   .contentGrid {
     grid-template-columns: minmax(0, 1fr) 350px;
     gap: 64px;
   }
 }
-
 @media (max-width: 980px) {
 
   .contentGrid {
     width: min(720px, 100%);
     grid-template-areas:
-      "quote"
-      "article";
+      "article"
+      "quote";
     grid-template-columns: minmax(0, 1fr);
     gap: 72px;
   }
 }
-
 @media (max-width: 640px) {
 
   .contentSection {
@@ -183,12 +395,6 @@
 
   .contentGrid {
     gap: 60px;
-  }
-
-  .lead {
-    margin-bottom: 64px;
-    font-size: 20px;
-    line-height: 1.55;
   }
 
   .articleSection {
