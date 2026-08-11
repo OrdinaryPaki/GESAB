@@ -1,11 +1,202 @@
+/* Responsive ownership migrated from the former global responsive layer. */
+@media (min-width: 981px) and (max-width: 1248px) {
+  .serviceGrid {
+    width: 100%;
+  }
+
+  .serviceCard {
+    width: 100%;
+    grid-template-columns: minmax(190px, 42%) minmax(0, 1fr);
+  }
+
+  .serviceCard > img {
+    width: 100%;
+  }
+
+  .servicePage :global(.contact-band-inner) {
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 46%);
+    gap: clamp(40px, 5vw, 72px);
+  }
+
+  .servicePage :global(.appointment-card) {
+    width: 100%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 980px) {
+  .indexContainer,
+  .servicePage :global(.contact-band-inner) {
+    width: min(720px, calc(100% - 48px)) !important;
+    max-width: 100%;
+  }
+
+  .indexTitle,
+  .serviceGrid,
+  .serviceCard,
+  .serviceCardContent {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicePage :global(.contact-band),
+  .servicePage :global(.contact-band-inner) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .servicePage :global(.contact-band) {
+    padding: 72px 24px;
+  }
+
+  .servicePage :global(.contact-copy),
+  .servicePage :global(.appointment-card) {
+    height: auto !important;
+  }
+
+  .servicePage :global(.contact-copy > span),
+  .servicePage :global(.contact-copy h2) {
+    transform: none;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 980px) {
+  .serviceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 389px) {
+  .indexContainer,
+  .indexTitle,
+  .serviceGrid,
+  .serviceCard,
+  .serviceCardContent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .servicePage :global(.contact-band),
+  .servicePage :global(.contact-band-inner),
+  .servicePage :global(.contact-copy),
+  .servicePage :global(.appointment-card) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .servicePage :global(form),
+  .servicePage :global(input),
+  .servicePage :global(select),
+  .servicePage :global(textarea),
+  .servicePage :global(img),
+  .servicePage :global(iframe) {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .servicePage {
+    --page-mobile-gutter: 28px;
+    --page-mobile-section-space: 80px;
+    --page-mobile-content-gap: 32px;
+  }
+
+  .servicePage :global(.contact-band),
+  .servicePage :global(.contact-band-inner) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .servicePage :global(.contact-band) {
+    padding: 72px var(--page-mobile-gutter) !important;
+  }
+
+  .servicePage :global(.contact-band-inner) {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    gap: 36px !important;
+    padding: 0 !important;
+  }
+
+  .servicePage :global(.contact-copy) {
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .servicePage :global(.contact-copy h2) {
+    margin: 12px 0 28px !important;
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+    transform: none !important;
+  }
+
+  .servicePage :global(.contact-copy > span) {
+    transform: none !important;
+  }
+
+  .servicePage :global(.appointment-card) {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 28px 22px 24px !important;
+  }
+
+  .indexSection {
+    padding: 132px 0 var(--page-mobile-section-space) !important;
+  }
+
+  .indexContainer {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  .indexTitle,
+  .serviceGrid,
+  .serviceCard,
+  .serviceCardContent {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .indexTitle {
+    margin-bottom: 48px;
+  }
+
+  .indexTitle h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .serviceGrid {
+    gap: var(--page-mobile-content-gap);
+  }
+
+  .serviceCard {
+    height: 420px;
+  }
+
+  .serviceCardContent {
+    padding: 28px 24px;
+  }
+}
+
 .servicePage {
+  min-width: 0;
   overflow: clip;
   background: white;
   color: var(--text);
 }
 
+.servicePage :where(h1, h2, h3, p, a) {
+  overflow-wrap: break-word;
+}
+
 .indexSection {
-  padding: 170px 0 132.046875px;
+  padding: 170px 0 132px;
 }
 
 .indexContainer {
@@ -40,127 +231,117 @@
   display: grid;
   width: 1200px;
   max-width: 100%;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
 .serviceCard {
   position: relative;
-  display: grid;
-  width: 588px;
-  height: 256.40625px;
-  grid-template-columns: 262px minmax(0, 1fr);
+  height: 450px;
   overflow: hidden;
-  border: 1px solid var(--line);
   border-radius: 16px;
-  background: white;
-  color: var(--text);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  color: white;
 }
 
-.serviceCard:nth-child(n + 7) {
-  display: none;
-}
-
-.serviceGridExpanded .serviceCard {
-  display: grid;
-}
-
-.serviceCard > img {
-  width: 262px;
+.serviceCardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 220ms ease;
+  transition: transform 0.5s ease;
+}
+
+.serviceCardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease;
 }
 
 .serviceCardContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  min-width: 0;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 24px 32px 27px;
+  justify-content: flex-end;
+  padding: 40px;
 }
 
-.serviceCardCopy {
-  display: grid;
-  gap: 8px;
-}
-
-.serviceCard h3 {
+.serviceCardContent h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 34px;
+  transform: translateY(20px);
+  transition: transform 0.3s ease, margin 0.3s ease;
 }
 
-.serviceCard p {
-  margin: 0;
-  color: var(--muted);
+.serviceCardHidden {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.serviceCardHidden p {
+  margin: 0 0 24px;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 27.2px;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
-.readMore {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
+.serviceCardButton {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: white;
+  color: black;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 23.8px;
-}
-
-.readMore svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
-
-.loadMoreSlot {
-  display: flex;
-  height: 107px;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.loadMore {
-  display: flex;
-  width: 126.75px;
-  min-width: 126.75px;
-  height: 55.203125px;
-  min-height: 55.203125px;
-  margin: 0;
-  border-radius: 16px;
-  padding: 14px 22px;
-  font-size: 16px;
   font-weight: 600;
-  line-height: 27.2px;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .serviceCard:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+  .serviceCard:hover .serviceCardImage {
+    transform: scale(1.1);
   }
 
-  .serviceCard:hover > img {
-    transform: scale(1.04);
+  .serviceCard:hover .serviceCardOverlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .serviceCard:hover .serviceCardContent h3 {
+    margin-bottom: 16px;
+    transform: translateY(0);
+  }
+
+  .serviceCard:hover .serviceCardHidden {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @media (max-width: 980px) {
   .indexSection {
-    padding: 130px 0 60.0625px;
+    padding: 130px 0 60px;
   }
 
   .indexContainer,
-  .servicePage :global(.contact-band .container) {
-    width: calc(100% - 40px);
+  .servicePage :global(.contact-band-inner) {
+    width: calc(100% - 48px);
   }
 
   .indexTitle {
-    width: 350px;
+    width: min(350px, 100%);
     margin-bottom: 32px;
   }
 
@@ -177,58 +358,43 @@
   }
 
   .serviceGrid {
-    width: 350px;
+    width: min(350px, 100%);
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
-  .serviceCard,
-  .serviceGridExpanded .serviceCard {
-    display: flex;
-    width: 350px;
-    height: 458.453125px;
-    flex-direction: column;
-    border-radius: 16px;
-  }
-
-  .serviceCard:nth-child(n + 5) {
-    display: none;
-  }
-
-  .serviceGridExpanded .serviceCard {
-    display: flex;
-  }
-
-  .serviceCard > img {
-    width: 350px;
-    height: 243.046875px;
-    flex: 0 0 auto;
-    border-radius: 16px 16px 0 0;
+  .serviceCard {
+    height: 420px;
   }
 
   .serviceCardContent {
-    width: 350px;
-    height: 215.40625px;
-    flex: 0 0 auto;
-    padding: 24px 20px 20px;
+    padding: 28px 24px;
   }
 
-  .serviceCardCopy {
-    width: 310px;
+  .serviceCardContent h3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    transform: none;
   }
 
-  .loadMoreSlot {
-    height: 89.984375px;
+  .serviceCardOverlay {
+    background: rgba(0, 0, 0, 0.55);
   }
 
+  .serviceCardHidden {
+    max-height: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .serviceCardHidden p {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
 
   .servicePage :global(.contact-band) {
-    min-height: 1031px;
-    padding: 60px 20px;
-  }
-
-  .servicePage :global(.contact-band .container) {
-    width: 350px;
+    min-height: 0;
+    padding: 72px 24px;
   }
 
   .servicePage :global(.contact-band-inner) {
@@ -238,57 +404,46 @@
   }
 
   .servicePage :global(.contact-copy) {
-    height: 339.390625px;
-    padding-top: 40px;
+    height: auto;
+    padding-top: 0;
   }
 
   .servicePage :global(.contact-copy > span) {
     display: block;
     font-size: 14px;
-    line-height: 23.8px;
-    transform: translateY(-40px);
+    line-height: 1.7;
+    transform: none;
   }
 
   .servicePage :global(.contact-copy h2) {
-    margin: 14px 0 0;
+    margin: 12px 0 32px;
     font-size: 48px;
-    line-height: 57.6px;
-    transform: translateY(-40px);
+    line-height: 1.15;
+    transform: none;
   }
 
   .servicePage :global(.appointment-card) {
-    height: 531.609375px;
+    height: auto;
     gap: 12px;
-    padding: 20px 24px 24px;
+    padding: 28px 24px;
   }
 
   .servicePage :global(.appointment-card h2) {
     margin: 0 0 12px;
     font-size: 26px;
-    line-height: 36.4px;
-  }
-
-  .servicePage :global(.appointment-card input),
-  .servicePage :global(.appointment-card select) {
-    height: 51.203125px;
-    padding: 12px 18px;
-  }
-
-  .servicePage :global(.appointment-card label) {
-    height: 83px;
+    line-height: 1.3;
   }
 
   .servicePage :global(.appointment-card .cta-button) {
-    height: 47.203125px;
-    min-height: 47.203125px;
     margin-top: 0;
   }
-
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .serviceCard,
-  .serviceCard > img {
+  .serviceCardImage,
+  .serviceCardOverlay,
+  .serviceCardContent h3,
+  .serviceCardHidden {
     transition: none;
   }
 }

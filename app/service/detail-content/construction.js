@@ -1,112 +1,175 @@
 export const constructionDetailContent = {
   rivningsarbeten: {
-    audience: "Privatpersoner, fastighetsägare och verksamheter inför renovering",
+    audience: "Beställare som behöver rivning inför renovering",
     suitableFor: [
-      ["Förberedelse inför renovering", "När befintliga ytskikt, inredning eller byggdelar behöver tas bort innan nästa yrkesgrupp kan börja."],
-      ["Selektiv rivning", "När vissa delar ska rivas medan angränsande konstruktioner, installationer och ytor behöver skyddas och sparas."],
-      ["Samordnad rivning och återuppbyggnad", "När det är viktigt att det öppnade underlaget kontrolleras och lämnas redo för nästa byggmoment."],
+      [
+        "Inför en renovering",
+        "När kakel, inredning eller byggdelar behöver bort innan nästa hantverkare kan börja. Vi avgränsar vad som ska rivas, skyddar angränsande ytor och planerar bortforsling så att renoveringen kan starta utan onödigt stillestånd.",
+      ],
+      [
+        "Bara vissa delar ska bort",
+        "När delar ska sparas och resten rivas utan att skada det som ska vara kvar. Vi markerar gränserna tydligt, arbetar stegvis och kontrollerar att installationer och ytor som ska behållas inte påverkas i onödan.",
+      ],
+      [
+        "Rivning och återbyggnad i samma flöde",
+        "När underlaget behöver kontrolleras och lämnas klart för nästa steg direkt. Efter rivningen går vi igenom vad som syns bakom ytskikten och förbereder så att bygg, VVS eller tätskikt kan fortsätta utan dubbelarbete.",
+      ],
     ],
     preparation: [
-      "Bilder eller ritningar som visar vad som ska tas bort och vad som ska bevaras.",
-      "Information om byggnadens ålder, kända material och installationer i arbetsområdet.",
-      "Förutsättningar för tillträde, avspärrning, avfallshantering och transportvägar.",
+      "Bilder eller ritningar som visar vad som ska bort och vad som ska sparas.",
+      "Om du vet något om installationer eller material i området.",
+      "Hur avfall kan forslas ut och när arbetet kan ske.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/DZWmtqm9HQwIG5M2Ky157nHyzyA.jpg?scale-down-to=1024&width=1428&height=1548",
     process: [
-      ["Avgränsning", "Vi går igenom vad som ska tas bort, vad som ska skyddas och vilket nästa byggmoment rivningen ska förbereda."],
-      ["Risk- och materialkontroll", "Konstruktioner, installationer, åtkomst och misstänkta riskmaterial behöver bedömas innan arbetet startar."],
-      ["Kontrollerad rivning", "Arbetet utförs stegvis med fokus på säkerhet, dammbegränsning, sortering och framkomlighet."],
-      ["Redo för nästa steg", "När ytorna är öppna går vi igenom underlaget och fångar upp sådant som påverkar återuppbyggnaden."],
+      ["Avgränsning", "Vi går igenom vad som ska tas bort, vad som ska skyddas och vilket nästa steg rivningen ska förbereda."],
+      ["Kontroll före start", "Vi bedömer åtkomst, installationer och eventuella risker innan arbetet börjar."],
+      ["Kontrollerad rivning", "Arbetet sker stegvis med fokus på säkerhet, damm och sortering."],
+      ["Klart för nästa steg", "När ytorna är öppna kontrollerar vi underlaget så att återbyggnaden kan starta."],
     ],
     considerations: [
-      "Mängden material, åtkomst och möjlighet att transportera ut avfall.",
-      "Om installationer eller bärande konstruktioner berörs.",
-      "Behov av provtagning eller särskild hantering av riskmaterial.",
-      "Hur mycket som måste skyddas i angränsande rum eller verksamhet.",
+      "Hur mycket som ska rivas och hur avfallet kan forslas ut.",
+      "Om installationer eller bärande delar berörs.",
+      "Behov av särskild hantering av riskmaterial.",
+      "Vad som måste skyddas i angränsande rum.",
     ],
-    importantTitle: "Säkerhet, avfall och dolda förutsättningar",
+    importantTitle: "Säkerhet och dolda fynd",
     important:
-      "Rivning ska inte påbörjas på antaganden. Misstänkta riskmaterial och konstruktionsfrågor behöver utredas med rätt kompetens. Avfallshantering och vad som händer om dolda skador upptäcks klargörs innan start.",
+      "Rivning startar inte på gissningar. Om vi hittar fukt eller andra problem stoppar vi, visar dig vad vi sett och går vidare först när ni är överens.",
     faq: [
-      { question: "Tar ni hand om byggavfallet?", answer: "Avfallshantering kan ingå och specificeras då i offerten, inklusive sortering, transport och eventuella mottagningsavgifter." },
-      { question: "Kan ni riva en vägg?", answer: "Ja, men först behöver det klarläggas om väggen är bärande eller innehåller installationer. Konstruktionsändringar kan kräva ytterligare underlag." },
-      { question: "Vad händer om ni hittar fukt eller andra skador?", answer: "Vi stoppar det berörda momentet, dokumenterar fyndet och går igenom åtgärdsalternativ innan extra arbete beställs." },
-      { question: "Går det att riva bara en del av rummet?", answer: "Ja. En tydlig avgränsning och skyddsplan minskar risken att ytor som ska sparas skadas." },
+      {
+        question: "Tar ni hand om avfallet?",
+        answer: "Ja, det kan ingå. Då står det i offerten vad som ingår och vad som eventuellt kostar extra.",
+      },
+      {
+        question: "Kan ni riva en vägg?",
+        answer: "Ja. Först kollar vi om den är bärande eller innehåller installationer, så att rivningen inte skapar nya problem.",
+      },
+      {
+        question: "Vad händer om ni hittar fukt?",
+        answer: "Vi stoppar och visar dig vad vi sett. Sedan går vi vidare först när ni är överens om nästa steg.",
+      },
+      {
+        question: "Kan ni riva bara en del?",
+        answer: "Ja. Vi avgränsar vad som ska bort och skyddar det som ska sparas.",
+      },
     ],
     related: ["bygg", "totalentreprenad", "malning"],
   },
   bygg: {
-    audience: "Privatpersoner, företag och fastighetsägare med ombyggnadsbehov",
+    audience: "Privatpersoner och företag med ombyggnadsbehov",
     suitableFor: [
-      ["Renovering och ombyggnad", "När rum, byggdelar eller lokaler behöver anpassas till nya funktioner och ett nytt utförande."],
-      ["Återställning och reparation", "När underlag eller konstruktioner behöver repareras och färdigställas efter skada, rivning eller installation."],
-      ["Byggmoment i ett större projekt", "När byggarbetet behöver samordnas med VVS, el, målning, snickeri eller montage."],
+      [
+        "Återställning efter skada eller rivning",
+        "När underlag eller konstruktion behöver lagas innan ytskikt och montage. Vi tar det som måste sitta rätt först – så nästa steg byggs på rätt grund.",
+      ],
+      [
+        "Renovering och ombyggnad",
+        "När ett rum eller en lokal ska anpassas till ny funktion. Vi går igenom mått, material och vad som påverkar resten av bostaden innan start.",
+      ],
+      [
+        "Bygg i ett större projekt",
+        "När byggarbetet behöver samordnas med el, VVS, målning eller snickeri. Då läggs momenten i samma ordning – så tidplanen håller.",
+      ],
     ],
     preparation: [
-      "Bilder, mått och eventuella ritningar över det som ska byggas om eller återställas.",
-      "En beskrivning av önskad funktion, materialnivå och vilka delar som ska bevaras.",
-      "Information om fastigheten, tillträde och eventuella beslut från förening, hyresvärd eller myndighet.",
+      "Bilder, mått och eventuella ritningar.",
+      "Vad som ska ändras och vilken nivå ni siktar på.",
+      "Tillträde och eventuella krav från BRF eller hyresvärd.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/kpzLt08Jr5pzvSVn5nxcIjE.jpg?scale-down-to=1024&width=2352&height=1856",
     process: [
-      ["Behovsgenomgång", "Vi går igenom funktion, mått, befintlig konstruktion och hur arbetet hänger ihop med resten av fastigheten."],
-      ["Teknisk planering", "Material, infästningar, installationer och eventuella ritningar kontrolleras innan utförandet startar."],
-      ["Bygg och samordning", "Momenten utförs på rätt underlag och samordnas med el, VVS, målning eller montage när det behövs."],
-      ["Kontroll och avslut", "Vi kontrollerar avtalad funktion, ytor och anslutningar innan arbetet lämnas över."],
+      ["Behovsgenomgång", "Vi går igenom funktion, mått och hur arbetet hänger ihop med resten av bostaden."],
+      ["Plan före start", "Material, infästningar och eventuella installationer stäms av innan vi bygger."],
+      ["Bygg och samordning", "Momenten utförs i rätt ordning och samordnas med el, VVS eller målning vid behov."],
+      ["Kontroll och avslut", "Vi kontrollerar avtalad funktion innan överlämning."],
     ],
     considerations: [
-      "Om bärande delar, installationer eller klimatskal påverkas.",
-      "Tillgång till ritningar och korrekt måttsättning.",
-      "Materialval, leveranstider och åtkomst till arbetsområdet.",
-      "Behov av lov, anmälan eller andra beslut från fastighetsägare.",
+      "Om bärande delar eller installationer påverkas.",
+      "Tillgång till ritningar och korrekta mått.",
+      "Materialval, leveranser och åtkomst.",
+      "Eventuellt bygglov eller godkännande från fastighetsägare.",
     ],
-    importantTitle: "Konstruktion, tillstånd och tydliga gränser",
+    importantTitle: "Tillstånd och tydliga gränser",
     important:
-      "Vissa ändringar kräver konstruktionsunderlag, bygglov, anmälan eller godkännande från fastighetsägare eller förening. Vi hjälper dig identifiera frågorna tidigt, men ansvaret för myndighetsbeslut behöver vara tydligt i projektet.",
+      "Vissa ändringar kräver bygglov, anmälan eller godkännande från BRF. Vi hjälper dig se vad som gäller tidigt, så att ansvaret är klart innan start.",
     faq: [
-      { question: "Tar ni både små och stora bygguppdrag?", answer: "Vi bedömer uppdrag utifrån omfattning, plats och vilka yrkesroller som krävs. Beskriv behovet så återkommer vi med lämpligt nästa steg." },
-      { question: "Kan ni hjälpa med ritningar och mått?", answer: "Vi kan gå igenom befintligt underlag och tydliggöra vad som behöver kompletteras. Mer avancerade konstruktionsfrågor kan kräva separat specialistunderlag." },
-      { question: "Samordnar ni el och VVS?", answer: "Ja, när installationerna ingår i uppdraget planeras de tillsammans med byggmoment och ytskikt." },
-      { question: "Behöver jag söka bygglov?", answer: "Det beror på åtgärden och fastigheten. Frågan bör kontrolleras innan start, och det ska framgå vem som ansvarar för ansökan." },
+      {
+        question: "Tar ni både små och stora jobb?",
+        answer: "Ja. Skicka bilder eller en kort beskrivning, så återkommer vi med rätt nästa steg.",
+      },
+      {
+        question: "Kan ni hjälpa med mått och ritningar?",
+        answer: "Vi går igenom det du har och säger vad som behöver kompletteras innan start.",
+      },
+      {
+        question: "Samordnar ni el och VVS?",
+        answer: "Ja, när det ingår. Då planeras bygg och installationer i samma ordning, så du slipper dubbelarbete.",
+      },
+      {
+        question: "Behöver jag bygglov?",
+        answer: "Det beror på åtgärden. Vi hjälper dig se vad som behöver kollas innan start – till exempel bygglov eller godkännande från BRF.",
+      },
     ],
     related: ["totalentreprenad", "snickeri", "malning"],
   },
   fasadrenovering: {
-    audience: "Fastighetsägare, bostadsrättsföreningar och företag med fasadansvar",
+    audience: "Fastighetsägare, BRF:er och företag",
     suitableFor: [
-      ["Lokala skador och slitage", "När sprickor, färgsläpp eller utsatta partier behöver bedömas och åtgärdas innan skadan växer."],
-      ["Större sammanhängande fasadarbeten", "När rengöring, lagning och ytbehandling behöver planeras för en hel fasad eller byggnadsdel."],
-      ["Planerat fastighetsunderhåll", "När beställaren vill få en tydligare bild av metod, åtkomst, väderberoenden och framtida underhåll."],
+      [
+        "Planerat underhåll",
+        "När du vill ha en tydlig bild av metod, åtkomst och kostnad innan något startar. Vi går igenom fasadens skick, vad som är akut och vad som kan planeras in i rätt säsong – så att du kan fatta beslut i lugn och ro.",
+      ],
+      [
+        "Lokala skador",
+        "När sprickor, färgsläpp eller fuktspår behöver åtgärdas innan skadan växer. Vi bedömer om det räcker med lokala lagningar, vad som orsakat problemet och hur ytan ska behandlas för att hålla längre.",
+      ],
+      [
+        "Större fasadarbeten",
+        "När lagning och ytbehandling behöver planeras för en hel fasad eller byggnadsdel. Då sätter vi upp en tydlig arbetsordning för ställning, underarbete och ytbehandling så att resultatet blir jämnt och långsiktigt.",
+      ],
     ],
     preparation: [
-      "Översiktsbilder och närbilder på sprickor, släpp, missfärgning eller andra synliga problem.",
-      "Information om fasadmaterial, tidigare behandlingar och när problemen först upptäcktes.",
-      "Förutsättningar för ställning, markåtkomst, entréer och verksamhet nära arbetsområdet.",
+      "Översiktsbilder och närbilder på skadorna.",
+      "Vilket fasadmaterial det är och när problemen upptäcktes.",
+      "Förutsättningar för ställning och åtkomst runt huset.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/YzIewOSyeipY6CeBUEuF1AOJJa0.jpg?scale-down-to=512&width=1536&height=1360",
     process: [
-      ["Fasadbesiktning", "Vi går igenom sprickor, släpp, fuktspår, anslutningar och tidigare behandlingar på åtkomliga delar."],
-      ["Metod och provyta", "Underlag, rengöring, lagning och vald ytbehandling behöver fungera tillsammans för ett hållbart resultat."],
-      ["Säkert utförande", "Ställning, väderskydd, avspärrning och arbetsordning planeras efter byggnadens höjd och omgivning."],
-      ["Kontroll och underhållsråd", "Efter arbetet går vi igenom behandlade ytor och vilka kontroller som är kloka över tid."],
+      ["Besiktning", "Vi går igenom skador, underlag och anslutningar som går att se på plats."],
+      ["Metod och offert", "Du får en tydlig plan för lagning, ytbehandling och vad som ingår i priset."],
+      ["Säkert utförande", "Ställning, väderskydd och arbetsordning planeras efter huset och omgivningen."],
+      ["Kontroll och råd", "Efteråt går vi igenom resultatet och vad som är bra att hålla koll på framåt."],
     ],
     considerations: [
-      "Fasadmaterial, skadebild och hur omfattande underarbetet är.",
-      "Byggnadens höjd, åtkomst och behov av ställning eller väderskydd.",
-      "Temperatur, nederbörd och andra väderförutsättningar.",
-      "Detaljer runt fönster, plåt, sockel och anslutande byggdelar.",
+      "Fasadmaterial och hur omfattande underarbetet är.",
+      "Höjd, åtkomst och ställning.",
+      "Väder och temperatur.",
+      "Detaljer runt fönster, plåt och sockel.",
     ],
-    importantTitle: "Rätt system för fasadens underlag",
+    importantTitle: "Rätt metod för underlaget",
     important:
-      "En fasadrenovering håller bäst när lagning, puts, färg och anslutningar är anpassade till befintligt material. Vi undviker att bara dölja symptom och går i stället igenom vad som orsakar skadan och hur den bör hanteras.",
+      "En fasad håller bäst när lagning och färg passar materialet. Vi åtgärdar orsaken – inte bara det synliga – så att problemet inte kommer tillbaka snabbt.",
     faq: [
-      { question: "Hur vet jag om fasaden behöver renoveras?", answer: "Sprickor, färgsläpp, bompartier, missfärgning och återkommande fuktspår är vanliga tecken. En genomgång visar om det räcker med lokala åtgärder." },
-      { question: "Kan fasadarbete göras året runt?", answer: "Väder och temperatur påverkar många produkter och arbetsmoment. Tidplanen anpassas efter vald metod och tillverkarens krav." },
-      { question: "Ingår ställning?", answer: "När ställning behövs specificeras ansvar, hyrestid och kostnad i offerten så att det inte blir en överraskning senare." },
-      { question: "Måste hela fasaden göras samtidigt?", answer: "Inte alltid. Vi bedömer om lokala lagningar är tekniskt och visuellt rimliga eller om en större sammanhängande yta bör behandlas." },
+      {
+        question: "Hur vet jag om fasaden behöver renoveras?",
+        answer: "Sprickor, färgsläpp och fuktspår är vanliga tecken. En genomgång visar om det räcker med lokala åtgärder.",
+      },
+      {
+        question: "Kan arbetet göras året runt?",
+        answer: "Inte alltid. Väder påverkar många produkter, så tidplanen anpassas efter metoden.",
+      },
+      {
+        question: "Ingår ställning?",
+        answer: "När ställning behövs står det i offerten – så kostnaden inte kommer som en överraskning.",
+      },
+      {
+        question: "Måste hela fasaden göras samtidigt?",
+        answer: "Nej, inte alltid. Ibland räcker lokala lagningar, ibland är det bättre att ta en större yta.",
+      },
     ],
     related: ["bygg", "malning", "snickeri"],
   },

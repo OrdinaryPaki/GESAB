@@ -1,6 +1,8 @@
 import { FaqSection } from "../components/FaqSection";
 import { ProcessSection, TrustNotes } from "../components/HomeSections";
-import { ContactBand, Footer, Header } from "../components/GesabShell";
+import { ContactBand } from "../components/ContactBand";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import { AboutMissionSection, AboutStorySection } from "./about-sections";
 import styles from "./about.module.css";
 import { AboutRevealController } from "./reveal-controller";

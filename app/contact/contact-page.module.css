@@ -6,6 +6,225 @@
   font-weight: 600;
 }
 
+/* Responsive ownership migrated from the former global responsive layer. */
+@media (min-width: 981px) and (max-width: 1248px) {
+  .page :global(.contact-band-inner) {
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 46%);
+    gap: clamp(40px, 5vw, 72px);
+  }
+
+  .page :global(.appointment-card) {
+    width: 100%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 980px) {
+  .page :global(.contact-hero-inner),
+  .page :global(.contact-info-section > .container),
+  .page :global(.faq-grid),
+  .page :global(.contact-band-inner) {
+    width: min(720px, calc(100% - 40px)) !important;
+    max-width: 100%;
+  }
+
+  .page :global(.contact-main-form) {
+    width: 100% !important;
+  }
+
+  .contactFormFields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page :global(.contact-main-form .wide) {
+    grid-column: 1 / -1;
+  }
+
+  .page :global(.contact-card-row) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page :global(.contact-card-row article:last-child) {
+    grid-column: 1 / -1;
+  }
+
+  .page :global(.contact-band),
+  .page :global(.contact-band-inner) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .page :global(.contact-band-inner) {
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page :global(.contact-copy) {
+    padding-top: 0;
+  }
+
+  .page :global(.appointment-card) {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactFormFields,
+  .page :global(.contact-card-row) {
+    grid-template-columns: 1fr;
+  }
+
+  .page :global(.contact-card-row article:last-child) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 389px) {
+  .page :global(.contact-hero-inner),
+  .page :global(.contact-main-form),
+  .page :global(.contact-info-section > .container),
+  .page :global(.faq-grid),
+  .page :global(.contact-band-inner),
+  .page :global(.appointment-card) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .page :global(form),
+  .page :global(input),
+  .page :global(select),
+  .page :global(textarea),
+  .page :global(img),
+  .page :global(iframe) {
+    max-width: 100%;
+  }
+
+  .page :global(.contact-band),
+  .page :global(.contact-band-inner) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .page :global(.contact-band-inner) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 680px) {
+  .page {
+    --page-mobile-gutter: 28px;
+    --page-mobile-section-space: 80px;
+    --page-mobile-content-gap: 32px;
+  }
+
+  .page :global(.contact-band),
+  .page :global(.contact-band-inner) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .page :global(.contact-band) {
+    padding: 72px var(--page-mobile-gutter) !important;
+  }
+
+  .page :global(.contact-band-inner) {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    gap: 36px !important;
+    padding: 0 !important;
+  }
+
+  .page :global(.contact-copy) {
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .page :global(.contact-copy h2) {
+    margin: 12px 0 28px !important;
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+    transform: none !important;
+  }
+
+  .page :global(.contact-copy > span) {
+    transform: none !important;
+  }
+
+  .page :global(.appointment-card) {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 28px 22px 24px !important;
+  }
+
+  .page :global(.contact-hero-section) {
+    padding: 132px 0 var(--page-mobile-section-space) !important;
+    background: white;
+  }
+
+  .page :global(.contact-hero-inner) {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  .page :global(.contact-hero-inner h1) {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .page :global(.contact-main-form) {
+    width: 100% !important;
+    margin-top: 48px;
+    padding: 32px 24px;
+  }
+
+  .contactFormFields {
+    gap: 20px;
+  }
+
+  .page :global(.contact-info-section) {
+    padding: var(--page-mobile-section-space) 0 !important;
+    background: var(--soft);
+  }
+
+  .page :global(.contact-info-section > .container) {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  .page :global(.contact-info-section .section-title h2) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .page :global(.contact-card-row) {
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .page :global(.contact-card-row article) {
+    min-height: 0;
+    padding: 32px 24px;
+  }
+
+  .map {
+    height: 280px;
+    margin-top: 32px;
+  }
+
+  .page :global(.faq-section) {
+    padding: var(--page-mobile-section-space) 0 !important;
+  }
+
+  .page :global(.faq-grid) {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+}
+
 @font-face {
   font-family: "Contact Inter";
   src: url("/fonts/inter-400.woff2") format("woff2");
@@ -32,9 +251,14 @@
 
 .page {
   --soft: #f5f7fa;
+  min-width: 0;
   background: #fff;
   color: #000;
   font-family: "Contact Inter", Inter, sans-serif;
+}
+
+.page :where(h1, h2, h3, p, a) {
+  overflow-wrap: break-word;
 }
 
 .page :global(.contact-hero-section) {

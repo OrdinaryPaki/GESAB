@@ -27,13 +27,13 @@ export function MobileNavigationEnhancement() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const menu = document.querySelector("details.mobile-menu");
-    const button = menu?.querySelector("summary.mobile-menu-button");
+    const menu = document.querySelector("[data-mobile-menu]");
+    const button = menu?.querySelector("[data-mobile-menu-button]");
 
     if (!menu || !button) return undefined;
 
     const desktopQuery = window.matchMedia(desktopMediaQuery);
-    const links = Array.from(menu.querySelectorAll(".mobile-menu-panel a"));
+    const links = Array.from(menu.querySelectorAll("[data-mobile-menu-panel] a"));
     const handleToggle = () => synchronizeMenuState(menu, button);
     const handleEscape = (event) => {
       if (event.key === "Escape") closeMenu(menu, button, { restoreFocus: true });

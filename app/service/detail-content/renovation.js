@@ -1,112 +1,175 @@
 export const renovationDetailContent = {
   badrumsrenovering: {
-    audience: "Privatpersoner, fastighetsägare och BRF:er med våtrumsprojekt",
+    audience: "Privatpersoner och BRF:er med våtrumsprojekt",
     suitableFor: [
-      ["Helrenovering av befintligt badrum", "När ytskikt, tätskikt, installationer och inredning behöver förnyas som en sammanhållen helhet."],
-      ["Ändrad planlösning eller funktion", "När placering av dusch, badkar, förvaring eller installationer behöver ses över för att rummet ska fungera bättre."],
-      ["Samordnade våtrumsarbeten", "När du vill ha en tydlig arbetsordning mellan rivning, VVS, el, tätskikt, plattsättning och montage."],
+      [
+        "Du vill ändra planlösningen",
+        "När dusch, badkar eller förvaring ska flyttas behöver installationerna planeras om innan något rivs. Vi går igenom vad som är möjligt på platsen, hur vatten och el påverkas och vilka beslut som måste låsas tidigt för att tidplanen ska hålla.",
+      ],
+      [
+        "Hela badrummet ska göras om",
+        "När kakel, tätskikt, rör och inredning behöver bytas samtidigt blir det fort flera yrkesroller i samma rum. Då tar vi helheten – från rivning till färdig yta – så att varje steg får rätt förutsättningar innan nästa börjar.",
+      ],
+      [
+        "Du orkar inte koordinera själv",
+        "När rivning, VVS, el och plattsättning ska ske i rätt ordning är det lätt att tid och ansvar glider isär. Du får en kontaktperson som håller ihop arbetsgången, så att du kan fatta beslut utan att jaga varje hantverkare.",
+      ],
     ],
     preparation: [
-      "Bilder på badrummet och ungefärliga mått, inklusive golvbrunn och synliga installationer.",
-      "Dina viktigaste önskemål om funktion, stil, förvaring och material.",
-      "Information om boendeform, åtkomst och när du helst vill att arbetet ska genomföras.",
+      "Några bilder på badrummet och ungefärliga mått.",
+      "Vad som är viktigast för dig – till exempel mer förvaring, större dusch eller enklare underhåll.",
+      "När du helst vill att arbetet ska börja.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/rYld1RtawTcSnr6YgGDpswY4Hg.jpg?scale-down-to=2048&width=3309&height=1976",
     process: [
-      ["Genomgång på plats", "Vi mäter, går igenom befintligt skick och fångar upp önskemål, installationer och risker innan omfattningen låses."],
-      ["Offert och arbetsplan", "Du får en tydlig beskrivning av arbetsmoment, ansvar, materialval och beslut som behöver tas före start."],
-      ["Utförande i rätt ordning", "Rivning, VVS, el, underarbete, tätskikt, plattsättning och montage samordnas så att momenten inte krockar."],
-      ["Kontroll och överlämning", "Vi går igenom resultatet tillsammans och samlar den dokumentation som ingår i det avtalade arbetet."],
+      ["Genomgång på plats", "Vi tittar på badrummet, mäter och går igenom dina önskemål. Du får veta vad som är möjligt och vad som påverkar priset."],
+      ["Offert med tydlig plan", "Du får ett konkret förslag på arbetsmoment, material och tidplan – innan något börjar."],
+      ["Utförande i rätt ordning", "Rivning, VVS, el, tätskikt och plattsättning sker i följd. Du har en kontaktperson hela vägen."],
+      ["Kontroll och överlämning", "Vi går igenom resultatet tillsammans och lämnar över dokumentation och underlag för ROT."],
     ],
     considerations: [
-      "Badrummets storlek, planlösning och befintliga konstruktion.",
-      "Flytt av golvbrunn, vatten, avlopp eller elinstallationer.",
-      "Val av kakel, klinker, inredning och specialdetaljer.",
-      "Dolda skador som först blir synliga efter rivning.",
+      "Storlek och planlösning.",
+      "Om golvbrunn, vatten eller el behöver flyttas.",
+      "Val av kakel, inredning och detaljer.",
+      "Dolda skador som upptäcks efter rivning.",
     ],
-    importantTitle: "Tätskikt, dokumentation och ROT",
+    importantTitle: "ROT-avdrag och dokumentation",
     important:
-      "Våtrumsarbeten kräver rätt material, arbetsordning och yrkeskompetens. Vi klargör ansvar och dokumentation i offerten. ROT-avdrag kan vara möjligt för delar av arbetskostnaden när arbetet och kunden uppfyller Skatteverkets villkor.",
+      "Arbetskostnaden kan ge ROT-avdrag när villkoren är uppfyllda. Vi specificerar underlaget på fakturan. Tätskikt och våtrum utförs enligt gällande branschregler.",
     faq: [
-      { question: "Hur lång tid tar en badrumsrenovering?", answer: "Tiden beror på storlek, material, installationer och vad som upptäcks vid rivning. Efter genomgången får du en realistisk arbetsordning och preliminär tidplan." },
-      { question: "Kan ni samordna VVS, el och plattsättning?", answer: "Ja. När flera yrkesroller ingår planerar vi ordningen och kontaktvägarna så att du slipper koordinera varje moment själv." },
-      { question: "Kan jag köpa materialet själv?", answer: "Det går ofta, men inköp och leveranstider behöver stämmas av innan start. Vi tydliggör vad du respektive GESAB ansvarar för i offerten." },
-      { question: "Kan badrumsrenoveringen ge ROT-avdrag?", answer: "Arbetskostnaden kan omfattas när villkoren är uppfyllda. Vi specificerar underlaget, medan du ansvarar för att du har rätt till och utrymme för avdraget." },
+      {
+        question: "Hur lång tid tar en badrumsrenovering?",
+        answer: "Oftast några veckor, beroende på storlek och material. Efter genomgången får du en realistisk tidplan.",
+      },
+      {
+        question: "Samordnar ni VVS, el och plattsättning?",
+        answer: "Ja. Du får en kontakt – vi planerar ordningen mellan yrkesrollerna så att stegen hänger ihop.",
+      },
+      {
+        question: "Kan jag köpa material själv?",
+        answer: "Ja, ofta. Vi stämmer av vad som behöver vara klart innan start, så tidplanen håller.",
+      },
+      {
+        question: "Kan jag få ROT-avdrag?",
+        answer: "Ja, på arbetskostnaden när villkoren är uppfyllda. Vi hanterar underlaget på fakturan.",
+      },
     ],
     related: ["totalentreprenad", "rivningsarbeten", "montage"],
   },
   koksrenovering: {
-    audience: "Privatpersoner, fastighetsägare och BRF:er med köksprojekt",
+    audience: "Privatpersoner med köksprojekt i Göteborg",
     suitableFor: [
-      ["Komplett köksrenovering", "När stommar, ytskikt, installationer, vitvaror och montage behöver planeras i ett gemensamt projekt."],
-      ["Delvis förnyelse", "När delar av köket ska bytas eller byggas om utan att allt befintligt behöver rivas ut."],
-      ["Kök med ändrade installationer", "När vatten, avlopp, ventilation eller el behöver anpassas till en ny planlösning eller ny utrustning."],
+      [
+        "El eller vatten behöver flyttas",
+        "När en ny planlösning kräver nya elpunkter, vatten eller avlopp måste det stämmas av innan skåp och ytskikt beställs. Vi går igenom vad som behöver flyttas, hur det påverkar tidplanen och vilka beslut som behöver vara klara före start.",
+      ],
+      [
+        "Delar av köket ska förnyas",
+        "När du vill byta vissa delar utan att riva ut allt – till exempel luckor, bänkskiva eller belysning – planerar vi omfattningen så att det gamla och nya möts snyggt. Det ger ofta kortare störning i vardagen och en tydligare kostnadsbild.",
+      ],
+      [
+        "Hela köket ska bytas",
+        "När skåp, bänkskiva, vitvaror och installationer ska planeras och monteras i ett sammanhang behövs rätt ordning från rivning till montage. Vi samordnar momenten så att leveranser, el, vatten och ytskikt hänger ihop hela vägen.",
+      ],
     ],
     preparation: [
-      "Köksritning, produktlista eller inspirationsbilder om sådant redan finns.",
-      "Bilder och ungefärliga mått på rummet samt information om befintligt vatten, avlopp och el.",
-      "Önskad tidpunkt, kända leveransdatum och om bostaden behöver fungera under renoveringen.",
+      "Bilder på köket och ungefärliga mått – eller en ritning om du har en.",
+      "Vilka vitvaror och material du tänker dig.",
+      "När du vill starta och om ni bor kvar under tiden.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/c7c6aPJa4eimkeRgCTstTKRg24.jpg?scale-down-to=1024&width=1640&height=2088",
     process: [
-      ["Mått och behov", "Vi går igenom planlösning, köksritning, installationer och hur du vill använda köket i vardagen."],
-      ["Beslut före start", "Skåp, vitvaror, bänkskiva, elpunkter och vatten behöver passa ihop innan arbetsordningen fastställs."],
-      ["Samordnad renovering", "Rivning, bygg, VVS, el, målning, snickeri och montage utförs i den ordning som projektet kräver."],
-      ["Funktionskontroll", "När montaget är klart går vi igenom anslutningar, luckor, beslag, ytskikt och överenskomna avslut."],
+      ["Mått och behov", "Vi går igenom hur ni använder köket, vad som ska ändras och vilka installationer som påverkas."],
+      ["Beslut före start", "Skåp, vitvaror, el och vatten stäms av innan arbetet börjar – så slipper ni stopp mitt i projektet."],
+      ["Samordnad renovering", "Rivning, bygg, el, VVS, målning och montage sker i rätt ordning."],
+      ["Kontroll innan överlämning", "Vi provar luckor, anslutningar och ytskikt innan vi lämnar."],
     ],
     considerations: [
-      "Om planlösning, vatten, avlopp eller el ska flyttas.",
-      "Leveranstider för kök, vitvaror och måttbeställda bänkskivor.",
-      "Underlagets skick efter att det gamla köket har rivits.",
-      "Om bostaden ska kunna användas under arbetets gång.",
+      "Om planlösning, vatten eller el ska flyttas.",
+      "Leveranstider på kök och vitvaror.",
+      "Underlagets skick efter rivning.",
+      "Om ni ska bo kvar under arbetet.",
     ],
-    importantTitle: "Beställningar, ansvar och ROT",
+    importantTitle: "Beställningar och ROT",
     important:
-      "Ett köksprojekt blir säkrare när leveranser och installationsmått är bekräftade före start. Offerten ska visa vem som beställer vad och vilka förberedelser som ingår. ROT-avdrag kan vara möjligt för arbetskostnad som uppfyller villkoren.",
+      "Köksprojekt blir smidigast när leveranser och mått är klara före start. Offerten visar vem som beställer vad. ROT-avdrag kan gälla arbetskostnaden när villkoren är uppfyllda.",
     faq: [
-      { question: "Behöver köket vara beställt innan ni lämnar offert?", answer: "Inte alltid, men en ritning och preliminära produktval gör offerten tydligare. Mått och installationskrav behöver bekräftas innan byggstart." },
-      { question: "Samordnar ni elektriker och VVS-montör?", answer: "Ja, när momenten ingår i uppdraget planerar vi dem tillsammans med bygg, ytskikt och montage." },
-      { question: "Kan vi bo kvar under renoveringen?", answer: "Ofta går det, men vatten, matlagning och framkomlighet påverkas. Vi går igenom praktiska begränsningar innan start." },
-      { question: "Vad behöver jag förbereda?", answer: "Töm skåp och arbetsytor, säkra tillgång till bostaden och stäm av leveranser. Exakt ansvar dokumenteras i projektplaneringen." },
+      {
+        question: "Behöver köket vara beställt innan offert?",
+        answer: "Nej. En ritning eller tydliga önskemål räcker först. Mått och leveranser låser vi innan start.",
+      },
+      {
+        question: "Samordnar ni elektriker och VVS?",
+        answer: "Ja, när det ingår. Då planeras el och vatten i samma ordning som resten av köksarbetet.",
+      },
+      {
+        question: "Kan vi bo kvar under renoveringen?",
+        answer: "Oftast ja. Vi går igenom hur vatten och matlagning påverkas innan start.",
+      },
+      {
+        question: "Vad behöver jag förbereda?",
+        answer: "Töm skåp och arbetsytor, och säkra tillgång till bostaden. Resten stämmer vi av tillsammans.",
+      },
     ],
     related: ["totalentreprenad", "snickeri", "montage"],
   },
   totalentreprenad: {
-    audience: "Beställare av större renoveringar, företag, fastighetsägare och föreningar",
+    audience: "Beställare av större renoveringar",
     suitableFor: [
-      ["Renoveringar med flera yrkesroller", "När bygg, VVS, el, ytskikt och montage behöver planeras och följas upp som en helhet."],
-      ["Projekt över flera rum eller delar", "När olika arbetsområden påverkar varandra och behöver en gemensam ordning, tidplan och kontaktväg."],
-      ["Beställare som vill samla ansvaret", "När du vill minska den egna samordningen och ha tydliga gränser för omfattning, beslut och uppföljning."],
+      [
+        "Flera yrkesroller i samma projekt",
+        "När bygg, VVS, el och ytskikt måste hänga ihop blir det snabbt många beroenden. Vi tar ansvar för helheten från start, så att varje yrkesroll får rätt underlag och du slipper vara den som håller ihop flödet.",
+      ],
+      [
+        "Flera rum eller större omfattning",
+        "När arbetet påverkar flera delar av bostaden behövs en gemensam tidplan, inte flera lösa delprojekt. Vi delar upp momenten, sätter ordning och följer upp så att projektet rör sig framåt utan onödiga stopp mellan rummen.",
+      ],
+      [
+        "Du vill slippa samordna själv",
+        "När du vill fatta beslut men inte jaga hantverkare i varje steg fungerar totalentreprenad bäst. Du får en tydlig kontaktväg, löpande uppföljning och en överlämning där omfattning och resultat är klart beskrivna.",
+      ],
     ],
     preparation: [
-      "Ritningar, bilder och en enkel beskrivning av vad som ska förändras och vad som ska bevaras.",
-      "Projektets viktigaste prioriteringar, önskad kvalitetsnivå och ungefärliga tidsram.",
-      "Information om beslutsvägar, tillträde och vilka andra leverantörer eller konsulter som redan är involverade.",
+      "Bilder eller ritningar och en kort beskrivning av vad som ska ändras.",
+      "Vad som är viktigast: tid, budget eller kvalitetsnivå.",
+      "När arbetet helst ska starta och vem som fattar beslut.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/td8HawPEPsqppzq8BOQKqENv34.jpg?scale-down-to=1024&width=2352&height=1856",
     process: [
-      ["Gemensam projektbild", "Vi samlar mål, omfattning, ritningar, tekniska beroenden och ansvar i en tydlig startpunkt."],
-      ["Plan och kalkyl", "Arbetet delas upp i moment med beslutspunkter, material, yrkesroller och en genomförbar ordning."],
-      ["Samordnat utförande", "GESAB håller ihop dialogen mellan berörda yrkesroller och följer upp att nästa moment har rätt förutsättningar."],
-      ["Överlämning", "Projektet avslutas med genomgång av utfört arbete, eventuella återstående punkter och avtalat underlag."],
+      ["Gemensam startbild", "Vi samlar mål, omfattning och tekniska beroenden så att alla vet vad som gäller."],
+      ["Plan och offert", "Arbetet delas upp i moment med tydligt ansvar, material och tidplan."],
+      ["Samordnat utförande", "Vi håller ihop hantverkarna och följer upp att varje steg har rätt förutsättningar."],
+      ["Överlämning", "Vi går igenom resultatet och lämnar över det underlag som avtalats."],
     ],
     considerations: [
-      "Projektets omfattning, ritningsunderlag och hur många yrkesroller som behövs.",
-      "Tekniska beroenden mellan bygg, VVS, el och ytskikt.",
-      "Materialval, leveranser och beslut som måste tas i rätt tid.",
-      "Ändringar som beställs efter att arbetet har startat.",
+      "Hur stort projektet är och vilka yrkesroller som behövs.",
+      "Beroenden mellan bygg, VVS, el och ytskikt.",
+      "Materialval och beslut som måste tas i rätt tid.",
+      "Ändringar efter att arbetet har startat.",
     ],
-    importantTitle: "Ett ansvar som är tydligt från början",
+    importantTitle: "Tydligt ansvar från början",
     important:
-      "Totalentreprenad ska minska din samordning, men kräver ett tydligt avtal. Vi beskriver omfattning, gränsdragningar, kommunikation och hur ändringar hanteras så att projektets ansvar inte hamnar mellan flera aktörer.",
+      "Totalentreprenad minskar din samordning – men kräver ett tydligt avtal. Vi beskriver omfattning, gränser och hur ändringar hanteras innan start.",
     faq: [
-      { question: "Vad innebär totalentreprenad hos GESAB?", answer: "Du får en samlad projektkontakt och en plan där flera avtalade arbetsmoment samordnas som en helhet." },
-      { question: "Kan ni arbeta från arkitektritningar?", answer: "Ja. Vi går igenom ritningar och kompletterar med de platsbesök och tekniska underlag som behövs för att bedöma genomförandet." },
-      { question: "Hur hanteras ändringar under projektet?", answer: "Ändringar behöver beskrivas, bedömas och godkännas innan de utförs eftersom de kan påverka både pris och tidplan." },
-      { question: "Har jag en kontaktperson?", answer: "Projektets kontaktvägar bestäms före start så att frågor, beslut och uppföljning går genom en tydlig kanal." },
+      {
+        question: "Vad innebär totalentreprenad hos GESAB?",
+        answer: "Du får en kontakt och en plan där flera moment samordnas som en helhet – från start till överlämning.",
+      },
+      {
+        question: "Kan ni arbeta från ritningar?",
+        answer: "Ja. Vi går igenom ritningarna och kompletterar med platsbesök vid behov.",
+      },
+      {
+        question: "Hur hanteras ändringar?",
+        answer: "Ändringar godkänns innan de utförs, eftersom de kan påverka både pris och tidplan.",
+      },
+      {
+        question: "Har jag en kontaktperson?",
+        answer: "Ja. Kontaktvägarna bestäms före start, så du vet vem som följer upp projektet.",
+      },
     ],
     related: ["badrumsrenovering", "koksrenovering", "bygg"],
   },

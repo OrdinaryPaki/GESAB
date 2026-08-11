@@ -1,6 +1,5 @@
 import { HomePageFidelity } from "./components/HomePageFidelity";
 import "./home-fidelity.css";
-import "./responsive/home-mobile.css";
 
 export const metadata = {
   title: "Badrumsrenovering och entreprenad i Göteborg",

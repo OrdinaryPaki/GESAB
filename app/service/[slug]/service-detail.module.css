@@ -1,8 +1,117 @@
+/* Responsive ownership migrated from the former global responsive layer. */
+@media (min-width: 521px) and (max-width: 980px) {
+  .container {
+    width: min(720px, calc(100% - 40px));
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 389px) {
+  .container {
+    width: calc(100% - 32px) !important;
+    max-width: 100% !important;
+  }
+
+  .page :global(form),
+  .page :global(input),
+  .page :global(select),
+  .page :global(textarea),
+  .page :global(img),
+  .page :global(iframe) {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .page {
+    --page-mobile-gutter: 24px;
+    --page-mobile-section-space: 80px;
+    --page-mobile-content-gap: 32px;
+  }
+
+  .page main > .hero {
+    padding: 132px var(--page-mobile-gutter) 64px !important;
+  }
+
+  .hero > .container,
+  .contentGrid,
+  .relatedSection > .container {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .title {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  .meta {
+    margin-top: 24px;
+  }
+
+  .heroImage {
+    margin-top: 32px;
+  }
+
+  .contentSection {
+    padding: 0 var(--page-mobile-gutter) 96px !important;
+  }
+
+  .contentGrid {
+    gap: 72px;
+  }
+
+  .quoteCard {
+    padding: 32px 24px;
+  }
+
+  .lead {
+    margin-bottom: 64px;
+  }
+
+  .articleSection {
+    margin-top: 64px;
+  }
+
+  .supportingImage {
+    margin-top: 40px;
+  }
+
+  .importantNote {
+    margin-top: 64px;
+  }
+
+  .faqSection {
+    margin-top: 72px;
+  }
+
+  .relatedSection {
+    padding: var(--page-mobile-section-space) var(--page-mobile-gutter) 96px !important;
+  }
+
+  .relatedHeader {
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+
+  .relatedHeader h2 {
+    font-size: 38px;
+  }
+
+  .relatedGrid {
+    gap: var(--page-mobile-content-gap);
+  }
+}
+
 .page {
   min-width: 0;
   overflow: clip;
   background: #fff;
   color: var(--text);
+}
+
+.page :where(h1, h2, h3, p, a) {
+  overflow-wrap: break-word;
 }
 
 .container {
@@ -96,7 +205,8 @@
   border-bottom: 1px solid var(--line);
 }
 
-.textBlock h3 {
+.textBlock h3,
+.textBlock h4 {
   margin: 0;
   font-family: Inter, sans-serif;
   font-size: 21px;
@@ -169,6 +279,23 @@
   line-height: 1.75;
 }
 
+.fitUnderIntro {
+  margin-top: 48px;
+}
+
+.fitUnderIntro.faqSection {
+  margin-top: 48px;
+}
+
+.fitUnderIntroTitle {
+  margin: 0 0 16px;
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
 .supportingImage {
   display: block;
   width: 100%;
@@ -185,12 +312,14 @@
 .faqSection {
   margin-top: 82px;
   background: var(--soft);
+  color: var(--text);
   border-radius: 16px;
   padding: 40px;
 }
 
 .faqSection > h2 {
   margin-bottom: 16px;
+  color: var(--text);
 }
 
 .faqSection :global(.faq-list) {
@@ -214,6 +343,7 @@
   padding: 20px 0;
   font-size: 16px;
   font-weight: 500;
+  color: var(--text);
 }
 
 .faqSection :global(.faq-toggle) {
@@ -249,11 +379,12 @@
   margin: 0 0 24px 0;
   font-size: 15px;
   line-height: 1.6;
+  color: rgba(5, 5, 5, 0.8);
 }
 
 .quoteCard {
   position: sticky;
-  top: 28px;
+  top: 96px;
   grid-area: quote;
   border-radius: 16px;
   background: var(--blue);
@@ -261,7 +392,7 @@
   padding: 34px 32px 32px;
 }
 
-.page .quoteCard :global(.appointment-card) {
+.page .quoteCard :global(.service-quote-form) {
   display: grid;
   width: 100%;
   height: auto;
@@ -273,7 +404,7 @@
   box-shadow: none;
 }
 
-.page .quoteCard :global(.appointment-card h2) {
+.page .quoteCard :global(.service-quote-form h2) {
   margin: 0;
   color: white;
   text-align: left;
@@ -282,23 +413,20 @@
   line-height: 1.16;
 }
 
-.page .quoteCard :global(.appointment-card-intro) {
+.page .quoteCard :global(.service-quote-form-intro) {
   margin: 0 0 10px;
   color: rgba(255, 255, 255, 0.83);
   font-size: 15px;
   line-height: 1.58;
 }
 
-.page .quoteCard :global(.appointment-card label),
-.page .quoteCard :global(.appointment-card .service-select-field) {
+.page .quoteCard :global(.service-quote-form label) {
   gap: 6px;
   color: white;
   font-size: 13px;
 }
 
-.page .quoteCard :global(.appointment-card input),
-.page .quoteCard :global(.appointment-card select),
-.page .quoteCard :global(.appointment-card .service-select-trigger) {
+.page .quoteCard :global(.service-quote-form input) {
   height: 52px;
   border: 0;
   border-radius: 6px;
@@ -308,7 +436,7 @@
   font-size: 15px;
 }
 
-.page .quoteCard :global(.appointment-card .cta-button) {
+.page .quoteCard :global(.service-quote-form .cta-button) {
   height: 52px;
   min-height: 52px;
   margin-top: 6px;
@@ -341,7 +469,7 @@
 }
 
 .relatedSection {
-  background: var(--soft);
+  background: white;
   padding: 42px 24px 118px;
 }
 
@@ -514,7 +642,7 @@
     padding: 28px 20px 26px;
   }
 
-  .page .quoteCard :global(.appointment-card h2) {
+  .page .quoteCard :global(.service-quote-form h2) {
     font-size: 29px;
   }
 

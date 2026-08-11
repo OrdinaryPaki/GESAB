@@ -6,7 +6,7 @@ export function FaqSection({
   items = faqItems,
 }) {
   return (
-    <section className="faq-section">
+    <section className="faq-section" data-faq-section>
       <div className="container faq-grid">
         <div className="faq-intro">
           <span className="faq-label">FAQ</span>

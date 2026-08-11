@@ -1,0 +1,91 @@
+/* Style owner: AppointmentForm inside ContactBand. */
+
+.appointment-card {
+  position: relative;
+  display: grid;
+  width: 520px;
+  gap: 13px;
+  margin-top: 112px;
+  border-radius: 16px;
+  background: white;
+  color: black;
+  padding: 38px 40px 40px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.14);
+}
+
+.appointment-card h2 {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.appointment-card label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.appointment-card input,
+.appointment-card textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  color: #777;
+  outline: none;
+}
+
+.appointment-card input {
+  height: 56px;
+  padding: 12px 20px;
+}
+
+.appointment-card textarea {
+  min-height: 92px;
+  padding: 14px 20px;
+  resize: vertical;
+}
+
+.appointment-card .cta-button {
+  width: 100%;
+  height: 56px;
+  min-height: 56px;
+  margin-top: 2px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  background-image: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.appointment-card .cta-button:hover,
+.appointment-card .cta-button:focus-visible {
+  background: var(--yellow);
+  color: black;
+}
+
+@media (max-width: 980px) {
+  .appointment-card {
+    width: 100%;
+    margin-top: 0;
+    padding: 32px 24px 28px;
+  }
+}
+
+@media (max-width: 680px) {
+  .appointment-card {
+    padding: 28px 22px 24px;
+  }
+
+  .appointment-card h2 {
+    margin-bottom: 12px;
+    font-size: 28px;
+  }
+}
+

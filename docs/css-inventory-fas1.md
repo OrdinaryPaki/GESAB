@@ -1487,17 +1487,30 @@ These five files are imported by both `app/layout.js` and `app/responsive.css`:
 
 ## Fas 3 progress (shared component style owners)
 
-Internal order: ServiceSelect → FAQ → CTA → header/footer → ContactBand/AppointmentForm
+Corrected order/ownership (see plan corrections):
 
-- [x] **ServiceSelect** — base + `prefers-reduced-motion` moved to `app/components/ServiceSelect.css` (imported by the component). Context overrides under `.appointment-card` / contact / service-detail left with those hosts until their step.
-- [x] **FAQ** — split owners on purpose:
-  - `FaqAccordion.css` = shared accordion primitive
-  - `FaqSection.css` = section shell (home/about/contact)
-  - HOME rhythm stays under `.home-page` in `home-fidelity.css` / `home-mobile.css`
-  - Service detail keeps its own accordion look via `service-detail.module.css` (does not use `FaqSection`)
-- [ ] CTA
-- [ ] Header / footer
-- [ ] ContactBand / AppointmentForm
+- [x] **ServiceSelect** → `ServiceSelect.css`
+- [x] **FAQ** → `FaqAccordion.css` + `FaqSection.css` (HOME ≠ detail preserved)
+- [x] **CTA** → `CtaButton.css` (base + variants yellow/blue/dark; blue/dark are live via `cta-button-${variant}`)
+  - Header keeps `.phone-button` / `.cta-button.phone-button`
+  - Hosts keep contextual CTA layout
+- [x] **Header / Footer**
+  - `Header.js` + `Header.css` (bas + mobile-nav; `data-mobile-menu*`; JS hooks via data-attrs)
+  - `Footer.js` + `Footer.css` (bas + responsive; deleted `responsive/footer.css`)
+  - `ContactBand.js` / `AppointmentForm.js` split (CSS still global until next step)
+  - `GesabShell.js` removed; call sites use direct imports
+  - deleted `responsive/mobile-navigation.css` after move
+- [ ] **ContactBand / AppointmentForm** — separate form owners:
+  - `AppointmentForm.css` = contact-band form (`data-appointment-form`)
+  - `ServiceQuoteForm` / service-detail = quote form (different fields; do not merge ServiceSelect overrides into AppointmentForm)
+
+### Plan corrections locked in
+
+1. Green tests (36/36) before each CSS move; About FAQ uses `data-faq-section`.
+2. No thin CSS re-exports; delete responsive files when emptied.
+3. Preserve existing `!important` on move; remove later when owner is unified.
+4. Visual browser approval required before fas 5 dead-CSS deletion.
+5. `responsive-layout.test.mjs` must be rewritten during fas 4 (not after).
 
 ### Contact form cascade (verified example)
 

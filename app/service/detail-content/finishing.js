@@ -1,112 +1,175 @@
 export const finishingDetailContent = {
   snickeri: {
-    audience: "Privatpersoner, företag och fastighetsägare med måttanpassade behov",
+    audience: "Beställare av platsbyggda snickerilösningar",
     suitableFor: [
-      ["Måttanpassade lösningar", "När förvaring, inredning eller byggdelar behöver anpassas till rummets verkliga mått och funktion."],
-      ["Återställning och detaljarbeten", "När lister, foder, paneler, luckor eller andra snickeridetaljer ska repareras, bytas eller färdigställas."],
-      ["Snickeri i en större renovering", "När lösningen behöver planeras tillsammans med målning, el, ytskikt eller montage."],
+      [
+        "Snickeri i en renovering",
+        "När snickeriet behöver planeras tillsammans med målning, el eller montage. Då låser vi mått och detaljer i rätt fas, så att luckor, lister och inredning passar när övriga ytor är klara.",
+      ],
+      [
+        "Måttanpassade lösningar",
+        "När förvaring eller inredning behöver byggas efter rummets faktiska mått – inte efter standardmått. Vi tar fram en lösning som fungerar praktiskt på platsen och som möter väggar, golv och övriga ytor på ett rent sätt.",
+      ],
+      [
+        "Lister, foder och detaljer",
+        "När detaljer ska bytas, lagas eller färdigställas så att helheten ser klar ut. Det är ofta sista steget som gör att ett rum känns färdigt – och därför planeras det in när underlag och ytskikt är redo.",
+      ],
     ],
     preparation: [
-      "Skiss, inspirationsbild eller en enkel beskrivning av funktionen du vill uppnå.",
-      "Bilder och ungefärliga mått på platsen där lösningen ska byggas eller monteras.",
-      "Önskemål om material, kulör, beslag och när arbetet behöver vara färdigt.",
+      "En skiss, bild eller kort beskrivning av vad du vill ha.",
+      "Bilder och ungefärliga mått på platsen.",
+      "Önskemål om material, kulör och när det ska vara klart.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/KUrLwljq131KPkT0gW3k032SOwE.jpg?scale-down-to=512&width=1536&height=1360",
     process: [
-      ["Mått och funktion", "Vi går igenom platsen, önskad funktion, referenser och vilka anslutningar den färdiga snickerilösningen ska möta."],
-      ["Material och detaljlösning", "Träslag, skivmaterial, beslag, ytbehandling och toleranser väljs utifrån användning och omgivning."],
-      ["Tillverkning och montage", "Delarna anpassas och monteras med hänsyn till befintliga väggar, golv, installationer och andra ytskikt."],
-      ["Passning och avslut", "Luckor, lister, fogar och beslag justeras så att funktionen och helhetsintrycket blir genomarbetat."],
+      ["Mått och funktion", "Vi går igenom platsen, vad lösningen ska klara och hur den ska möta övriga ytor."],
+      ["Material och detaljer", "Trä, skivor, beslag och ytbehandling väljs efter användning och budget."],
+      ["Tillverkning och montage", "Delarna anpassas och monteras med hänsyn till väggar, golv och installationer."],
+      ["Justering innan överlämning", "Luckor, fogar och beslag justeras tills allt fungerar och ser klart ut."],
     ],
     considerations: [
-      "Om lösningen är standardiserad eller måttanpassad.",
-      "Material, beslag och önskad ytbehandling.",
-      "Väggars, golvs och taks verkliga mått och rakhet.",
-      "Behov av el, målning eller andra anslutande arbeten.",
+      "Om lösningen är standard eller måttanpassad.",
+      "Material, beslag och ytbehandling.",
+      "Hur raka väggar och golv är på platsen.",
+      "Om el, målning eller andra arbeten behövs samtidigt.",
     ],
-    importantTitle: "Måttbeställt kräver beslut i rätt tid",
+    importantTitle: "Beslut i rätt tid",
     important:
-      "Snickeri blir bäst när funktion, uttryck och material är bestämda innan tillverkning eller kapning startar. Vi dokumenterar viktiga mått och val så att ändringar inte upptäcks först vid montaget.",
+      "Måttbeställt snickeri blir bäst när funktion och material är bestämda innan kapning och tillverkning startar. Då undviker ni dyra ändringar sent.",
     faq: [
-      { question: "Gör ni platsbyggda lösningar?", answer: "Vi kan hjälpa med måttanpassade snickeriarbeten när omfattning, material och utförande passar uppdraget." },
-      { question: "Kan ni arbeta från min skiss?", answer: "Ja. Vi går igenom skissen, kontrollerar mått och tydliggör vilka detaljer som behöver bestämmas före start." },
-      { question: "Ingår målning av snickerier?", answer: "Målning eller annan ytbehandling kan samordnas och ska då framgå som en egen del av offerten." },
-      { question: "Kan snickeriet kombineras med en renovering?", answer: "Ja. Det är ofta en fördel eftersom infästningar, el, ytskikt och montage då kan planeras i samma arbetsordning." },
+      {
+        question: "Gör ni platsbyggda lösningar?",
+        answer: "Ja, när omfattning och material passar uppdraget – till exempel måttanpassad förvaring eller inredning.",
+      },
+      {
+        question: "Kan ni arbeta från min skiss?",
+        answer: "Ja. Vi går igenom skissen, kollar mått på plats och säger vad som behöver låsas före start.",
+      },
+      {
+        question: "Ingår målning?",
+        answer: "Det kan samordnas. Då står det som en egen del i offerten.",
+      },
+      {
+        question: "Kan snickeriet kombineras med renovering?",
+        answer: "Ja – och det är ofta smartare, eftersom allt kan planeras i samma ordning.",
+      },
     ],
     related: ["bygg", "koksrenovering", "montage"],
   },
   malning: {
-    audience: "Privatpersoner, lokalägare, fastighetsägare och bostadsrättsföreningar",
+    audience: "Privatpersoner, lokalägare, fastighetsägare och BRF:er",
     suitableFor: [
-      ["Invändig målning", "När väggar, tak, snickerier eller andra ytor behöver förberedas och målas i bostad eller lokal."],
-      ["Utvändig målning", "När fasaddelar, trädetaljer eller andra väderutsatta ytor behöver ett anpassat underarbete och färgsystem."],
-      ["Målning som del av renovering", "När ytskikten behöver samordnas med bygg, snickeri, installationer och slutmontage."],
+      [
+        "Målning i en renovering",
+        "När ytskikten behöver samordnas med bygg, snickeri och montage. Vi lägger in målningen i rätt fas så att underarbetet hinns med och du slipper skador på nymålade ytor senare i projektet.",
+      ],
+      [
+        "Invändig målning",
+        "När väggar, tak eller snickerier behöver förberedas och målas i bostad eller lokal. Vi går igenom underlagets skick, skyddar övriga ytor och väljer produkt efter hur rummet används i vardagen.",
+      ],
+      [
+        "Utvändig målning",
+        "När fasaddelar eller trädetaljer behöver rätt underarbete och färgsystem. Tidplanen anpassas efter väder, och vi åtgärdar underlaget innan färg läggs – så att resultatet håller längre.",
+      ],
     ],
     preparation: [
-      "Bilder på ytorna och en ungefärlig uppskattning av rum, kvadratmeter eller fasaddelar.",
-      "Information om sprickor, fläckar, färgsläpp eller andra kända problem i underlaget.",
-      "Önskad kulör eller uttryck, tillträde till ytorna och när arbetet helst ska utföras.",
+      "Bilder på ytorna och ungefär hur många rum eller kvadratmeter det gäller.",
+      "Om det finns sprickor, fläckar eller färgsläpp.",
+      "Önskad kulör och när arbetet helst ska ske.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/kpzLt08Jr5pzvSVn5nxcIjE.jpg?scale-down-to=1024&width=2352&height=1856",
     process: [
-      ["Ytbedömning", "Vi går igenom underlag, skador, tidigare behandling och vilken belastning den färdiga ytan ska tåla."],
-      ["Skydd och underarbete", "Ytor täcks in och underlaget tvättas, lagas, slipas eller grundas i den omfattning som har avtalats."],
-      ["Målning", "Produkter och antal behandlingar anpassas efter underlag, kulör, miljö och önskad finish."],
-      ["Kontroll och städning", "Vi kontrollerar täckning, avslut och avtalade ytor innan skydd tas bort och arbetet lämnas över."],
+      ["Ytbedömning", "Vi tittar på underlaget och vad ytan behöver tåla i vardagen."],
+      ["Skydd och underarbete", "Golv och möbler skyddas. Ytor lagas, slipas eller grundas enligt offerten."],
+      ["Målning", "Antal lager och produkt anpassas efter underlag och kulör."],
+      ["Kontroll och städning", "Vi kontrollerar täckning och lämnar rent innan vi går."],
     ],
     considerations: [
-      "Underlagets skick och mängden spackling, slipning eller lagning.",
-      "Kulörbyte, glans och krav på tvättbarhet eller fukttålighet.",
-      "Mängden lister, foder, dörrar och andra detaljytor.",
-      "Åtkomst, möblering och om arbetet sker inne eller ute.",
+      "Hur mycket underarbete som behövs.",
+      "Kulörbyte och krav på tvättbarhet.",
+      "Mängden lister, dörrar och detaljer.",
+      "Åtkomst och om arbetet sker inne eller ute.",
     ],
-    importantTitle: "Underarbetet avgör hur ytan åldras",
+    importantTitle: "Underarbetet avgör resultatet",
     important:
-      "Färg kan inte kompensera för ett instabilt eller dåligt förberett underlag. Därför skiljer vi på rengöring, lagning, grundning och färdigmålning i bedömningen, så att du vet vilken finish offerten bygger på.",
+      "Färg döljer inte ett dåligt underlag. Därför står underarbetet tydligt i offerten – så att du vet vilken finish priset bygger på.",
     faq: [
-      { question: "Hjälper ni till att välja kulör och glans?", answer: "Vi kan resonera kring funktion, ljus, slitage och provmålning. Det slutliga kulörvalet bekräftas före beställning och målning." },
-      { question: "Behöver jag flytta möbler?", answer: "Fria arbetsytor ger ett säkrare och snabbare arbete. Vi går igenom vad du behöver flytta och vilken intäckning som ingår." },
-      { question: "Målar ni både invändigt och utvändigt?", answer: "Ja, beroende på uppdragets omfattning och förutsättningar. Utvändigt arbete planeras efter underlag och väder." },
-      { question: "Hur många lager färg behövs?", answer: "Det beror på underlag, produkt och kulörbyte. Offerten utgår från den behandling som bedöms behövas för avtalat resultat." },
+      {
+        question: "Hjälper ni till att välja kulör?",
+        answer: "Ja. Vi kan resonera kring funktion och ljus. Det slutliga valet bekräftas före målning.",
+      },
+      {
+        question: "Behöver jag flytta möbler?",
+        answer: "Fria ytor går snabbare och säkrare. Vi går igenom vad som behöver flyttas innan start.",
+      },
+      {
+        question: "Målar ni både inne och ute?",
+        answer: "Ja, beroende på uppdrag. Utomhusarbete planeras efter väder.",
+      },
+      {
+        question: "Hur många lager behövs?",
+        answer: "Det beror på underlag och kulör. Offerten utgår från det som behövs för avtalat resultat.",
+      },
     ],
     related: ["bygg", "fasadrenovering", "snickeri"],
   },
   montage: {
-    audience: "Privatpersoner, företag och fastighetsägare med produkter för montage",
+    audience: "Beställare med kök, inredning eller byggdelar att montera",
     suitableFor: [
-      ["Kök, badrum och fast inredning", "När levererade delar behöver monteras, passas in och avslutas mot befintliga ytor och installationer."],
-      ["Byggdelar och inredningsdetaljer", "När korrekt måttsättning, infästning och justering är avgörande för funktion och hållbarhet."],
-      ["Montage i ett samordnat projekt", "När monteringen behöver ske i rätt ordning tillsammans med snickeri, el, VVS eller målning."],
+      [
+        "Montage i ett större projekt",
+        "När monteringen behöver ske i rätt ordning tillsammans med snickeri, el eller målning. Vi planerar in montaget när underlaget är klart, så att delar inte monteras för tidigt och behöver göras om.",
+      ],
+      [
+        "Byggdelar och detaljer",
+        "När rätt mått och infästning är avgörande för att det ska hålla. Vi kontrollerar underlag, infästning och leverans innan arbetet börjar, så att detaljerna sitter stadigt och linjerar rätt.",
+      ],
+      [
+        "Kök, badrum och inredning",
+        "När levererade delar ska monteras och passas mot befintliga ytor och installationer. Vi justerar luckor, anslutningar och linjer tills funktionen stämmer – och går igenom resultatet med dig innan överlämning.",
+      ],
     ],
     preparation: [
-      "Produktnamn, monteringsanvisning och information om mått, vikt och antal delar.",
-      "Bilder på platsen och underlaget där produkten ska monteras eller anslutas.",
-      "Leveransstatus, önskad tidpunkt och uppgift om huruvida el, VVS eller andra arbeten krävs före montaget.",
+      "Produktinfo, monteringsanvisning och antal delar.",
+      "Bilder på platsen där det ska monteras.",
+      "Leveransstatus och önskad tidpunkt.",
     ],
     supportingImage:
       "https://framerusercontent.com/images/5HvWrJmM6xzGq3DYvPA463WFMxA.jpg?scale-down-to=512&width=1536&height=1360",
     process: [
-      ["Kontroll av leverans", "Vi stämmer av delar, mått, monteringsanvisningar och att arbetsplatsen är redo innan montaget börjar."],
-      ["Underlag och infästning", "Väggar, golv och anslutningar kontrolleras så att rätt infästning och arbetsmetod kan användas."],
-      ["Montering och justering", "Delarna monteras metodiskt och justeras med hänsyn till funktion, linjer, springor och angränsande ytor."],
-      ["Funktionsgenomgång", "Vi provar det som har monterats och går igenom eventuella skötsel- eller efterjusteringspunkter."],
+      ["Kontroll av leverans", "Vi stämmer av delar, mått och att platsen är redo innan montaget börjar."],
+      ["Underlag och infästning", "Vi kontrollerar väggar och golv så att rätt infästning används."],
+      ["Montering och justering", "Delarna monteras och justeras tills luckor, linjer och funktion stämmer."],
+      ["Funktionsgenomgång", "Vi provar det som monterats och går igenom resultatet med dig."],
     ],
     considerations: [
-      "Produktens storlek, vikt, antal delar och monteringsanvisning.",
-      "Underlagets material och behov av särskild infästning.",
-      "Om leveransen är komplett och om delarna behöver anpassas på plats.",
-      "Behov av el, VVS, snickeri eller målning i anslutning till montaget.",
+      "Storlek, vikt och monteringsanvisning.",
+      "Vilket underlag det ska fästas i.",
+      "Om leveransen är komplett.",
+      "Om el, VVS eller snickeri behövs samtidigt.",
     ],
     importantTitle: "Rätt förutsättningar före montering",
     important:
-      "Ett montage blir inte bättre än underlaget och leveransen. Saknade delar, felaktiga mått eller okända installationer bakom en vägg kan stoppa arbetet. Vi går därför igenom dessa punkter innan infästning och kapning påbörjas.",
+      "Montage blir inte bättre än underlaget och leveransen. Saknade delar eller fel mått stoppar arbetet. Därför kontrollerar vi detta innan vi skruvar.",
     faq: [
-      { question: "Vad kan ni montera?", answer: "Vi utför montage i samband med bland annat kök, badrum, snickeri och bygg. Skicka produktinformation och bilder så kan vi bedöma uppdraget." },
-      { question: "Kan ni hämta eller ta emot leveransen?", answer: "Logistik kan ibland ingå, men behöver avtalas separat med tydlig information om storlek, vikt, adress och leveranstid." },
-      { question: "Vad händer om delar saknas?", answer: "Vi dokumenterar vad som saknas och stämmer av nästa steg. Extra besök eller väntetid hanteras enligt det som avtalats." },
-      { question: "Kan ni göra nödvändiga anpassningar på plats?", answer: "Mindre anpassningar kan ofta utföras. Större ändringar behöver bedömas eftersom de kan påverka garanti, funktion och slutresultat." },
+      {
+        question: "Vad kan ni montera?",
+        answer: "Bland annat kök, badrumsinredning, snickeri och byggdelar. Skicka produktinfo så bedömer vi uppdraget.",
+      },
+      {
+        question: "Kan ni ta emot leveransen?",
+        answer: "Det kan ibland ingå, men behöver avtalas separat.",
+      },
+      {
+        question: "Vad händer om delar saknas?",
+        answer: "Vi dokumenterar vad som saknas och stämmer av nästa steg innan vi fortsätter.",
+      },
+      {
+        question: "Kan ni anpassa på plats?",
+        answer: "Mindre anpassningar går ofta. Större ändringar bedöms först, eftersom de kan påverka funktion och garanti.",
+      },
     ],
     related: ["snickeri", "koksrenovering", "badrumsrenovering"],
   },

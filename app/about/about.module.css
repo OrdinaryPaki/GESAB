@@ -1,10 +1,486 @@
+/* Responsive ownership migrated from the former global responsive layer. */
+@media (min-width: 981px) and (max-width: 1248px) {
+  :global(#about-page) .storySection {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  :global(#about-page) :where(.storyGrid, .storyCollage, .missionInner) {
+    width: min(1200px, calc(100% - 48px)) !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  :global(#about-page) .storyCollage {
+    grid-template-columns: minmax(0, 2.1fr) repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+  }
+
+  :global(#about-page) .storySecondaryImage {
+    aspect-ratio: 282 / 237;
+    height: auto;
+  }
+
+  :global(#about-page) .storyPrimaryImage {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  :global(#about-page) .quoteCard {
+    grid-template-columns: minmax(110px, 0.42fr) minmax(0, 1fr);
+    align-items: center;
+    overflow: visible;
+    min-height: 0;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    aspect-ratio: 197 / 192;
+  }
+
+  :global(#about-page) .missionCopy {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(56px, 8vw, 120px);
+  }
+
+  :global(#about-page) .missionImage,
+  :global(#about-page) .missionStage {
+    width: 100%;
+  }
+
+  .page :global(.contact-band-inner) {
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 46%);
+    gap: clamp(40px, 5vw, 72px);
+  }
+
+  .page :global(.appointment-card) {
+    width: 100%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 980px) {
+  :global(#about-page) .storySection {
+    height: auto !important;
+    padding: 130px 0 72px;
+  }
+
+  :global(#about-page) :where(.storyGrid, .storyCollage, .missionInner) {
+    width: min(720px, calc(100% - 40px)) !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  :global(#about-page) .storyGrid {
+    gap: 48px;
+  }
+
+  :global(#about-page) :where(.storyTitle, .storyTitle h1, .storyTitle p) {
+    width: min(520px, 100%) !important;
+  }
+
+  :global(#about-page) .storyCollage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  :global(#about-page) .storyPrimaryImage {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  :global(#about-page) .storySecondaryImage {
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  :global(#about-page) .quoteCard {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1fr);
+    height: auto;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+  }
+
+  :global(#about-page) .missionSection,
+  :global(#about-page) .missionInner {
+    height: auto !important;
+  }
+
+  :global(#about-page) .missionInner {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  :global(#about-page) .missionCopy {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  :global(#about-page) .missionIntro {
+    gap: 20px;
+  }
+
+  :global(#about-page) .missionImage {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  :global(#about-page) .missionPrinciples {
+    position: static;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: -56px;
+  }
+
+  :global(#about-page) .missionPrinciples > * {
+    min-height: 280px;
+  }
+
+  :global(#about-page) .missionPrinciples > :last-child {
+    grid-column: 1 / -1;
+  }
+
+  .page :global(.container) {
+    width: min(720px, calc(100% - 40px));
+    max-width: 100%;
+  }
+
+  .page :global(.contact-band),
+  .page :global(.contact-band-inner) {
+    height: auto;
+    min-height: 0;
+  }
+
+  .page :global(.contact-band-inner) {
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page :global(.contact-copy) {
+    height: auto;
+    padding-top: 0;
+  }
+
+  .page :global(.contact-copy h2) {
+    margin-bottom: 40px;
+  }
+
+  .page :global(.appointment-card) {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 389px) {
+  :global(#about-page) :where(
+      .storyGrid,
+      .storyTitle,
+      .storyTitle h1,
+      .storyTitle p,
+      .storyCollage,
+      .missionInner,
+      .missionImage,
+      :global(.faq-grid)
+    ) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  :global(#about-page) :where(.storySection, .storyGrid, .storyCollage) {
+    height: auto !important;
+  }
+
+  :global(#about-page) .storyCollage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  :global(#about-page) :where(.storyPrimaryImage, .storySecondaryImage) {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  :global(#about-page) .quoteCard {
+    height: auto;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 0.9;
+  }
+
+  :global(#about-page) :where(.missionSection, .missionInner) {
+    height: auto !important;
+  }
+
+  :global(#about-page) .missionInner {
+    padding: 48px 0;
+  }
+
+  :global(#about-page) .missionImage,
+  :global(#about-page) .missionPrinciples {
+    position: static;
+  }
+
+  :global(#about-page) .missionImage {
+    height: auto;
+  }
+
+  :global(#about-page) .missionPrinciples {
+    width: 100%;
+    margin-top: -40px;
+  }
+
+  :global(#about-page) :where(:global(.testimonial-section), :global(.faq-section)) {
+    height: auto !important;
+  }
+
+  :global(#about-page) :global(.testimonial-section > .container) {
+    width: 100% !important;
+  }
+
+  :global(#about-page) :global(.testimonial-section .section-title) {
+    width: calc(100% - 32px) !important;
+  }
+
+  :global(#about-page) :global(.testimonial-card) {
+    width: calc(100vw - 32px) !important;
+    min-width: calc(100vw - 32px) !important;
+    flex-basis: calc(100vw - 32px) !important;
+  }
+
+  .page :global(.container),
+  .page :global(.appointment-card),
+  .page :global(.faq-grid) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .page :global(form),
+  .page :global(input),
+  .page :global(select),
+  .page :global(textarea),
+  .page :global(img),
+  .page :global(iframe) {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .page {
+    --page-mobile-gutter: 28px;
+    --page-mobile-section-space: 80px;
+    --page-mobile-content-gap: 32px;
+  }
+
+  .page :global(.contact-band),
+  .page :global(.contact-band-inner) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .page :global(.contact-band) {
+    padding: 72px var(--page-mobile-gutter) !important;
+  }
+
+  .page :global(.contact-band-inner) {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    gap: 36px !important;
+    padding: 0 !important;
+  }
+
+  .page :global(.contact-copy) {
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .page :global(.contact-copy h2) {
+    margin: 12px 0 28px !important;
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+    transform: none !important;
+  }
+
+  .page :global(.contact-copy > span) {
+    transform: none !important;
+  }
+
+  .page :global(.appointment-card) {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 28px 22px 24px !important;
+  }
+
+  :global(#about-page) .storySection {
+    height: auto !important;
+    padding: 132px 0 var(--page-mobile-section-space) !important;
+    background: white;
+  }
+
+  :global(#about-page) .storyGrid {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    height: auto !important;
+    gap: 48px !important;
+  }
+
+  :global(#about-page) :where(.storyTitle, .storyTitle h1, .storyTitle p) {
+    width: 100% !important;
+  }
+
+  :global(#about-page) .storyTitle h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  :global(#about-page) .storyTitle p {
+    margin-top: 16px;
+  }
+
+  :global(#about-page) .storyCollage {
+    width: 100% !important;
+    height: auto !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    gap: 16px;
+    margin-top: 0;
+  }
+
+  :global(#about-page) .storyPrimaryImage {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  :global(#about-page) .storySecondaryImage {
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  :global(#about-page) .quoteCard {
+    display: grid;
+    height: auto;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  :global(#about-page) .quoteCard > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  :global(#about-page) .missionSection {
+    height: auto !important;
+    padding: var(--page-mobile-section-space) 0 !important;
+    background: var(--soft);
+  }
+
+  :global(#about-page) .missionInner {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  :global(#about-page) .missionIntro {
+    gap: 16px;
+  }
+
+  :global(#about-page) .missionCopy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--page-mobile-content-gap);
+  }
+
+  :global(#about-page) .missionCopy h2 {
+    max-width: none;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  :global(#about-page) .missionImage {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  :global(#about-page) .missionPrinciples {
+    position: static;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: -40px;
+  }
+
+  :global(#about-page) .missionPrinciples > * {
+    min-height: 0;
+    padding: 28px 24px;
+  }
+
+  :global(#about-page) :global(.testimonial-section),
+  :global(#about-page) :global(.faq-section) {
+    height: auto !important;
+    padding: var(--page-mobile-section-space) 0 !important;
+  }
+
+  :global(#about-page) :where(:global(.testimonial-section > .container), :global(.faq-section > .container)) {
+    width: calc(100% - (var(--page-mobile-gutter) * 2)) !important;
+    max-width: none !important;
+  }
+
+  :global(#about-page) :global(.testimonial-grid) {
+    margin-top: 48px;
+  }
+
+  :global(#about-page) :global(.testimonial-card) {
+    min-height: 0;
+    padding: 32px 24px;
+  }
+
+  :global(#about-page) :global(.faq-grid) {
+    width: 100% !important;
+    gap: 48px;
+  }
+
+  :global(#about-page) :global(.faq-list) {
+    gap: 16px;
+  }
+}
+
 .page {
   width: 100%;
+  min-width: 0;
   overflow: clip;
 }
 
+.page :where(h1, h2, h3, p, a) {
+  overflow-wrap: break-word;
+}
+
 .storySection {
-  height: 873px;
+  height: auto;
   padding: 160px 0 0;
   margin-bottom: 40px;
 }
@@ -12,7 +488,7 @@
 .storyGrid {
   display: flex;
   width: 1200px;
-  height: 713px;
+  height: auto;
   flex-direction: column;
   align-items: center;
   gap: 56px;
@@ -45,9 +521,9 @@
 .storyCollage {
   display: grid;
   width: 1200px;
-  height: 501px;
-  grid-template-columns: 588px 282px 282px;
-  grid-template-rows: 237px 240px;
+  height: auto;
+  grid-template-columns: minmax(0, 588px) minmax(0, 282px) minmax(0, 282px);
+  grid-template-rows: minmax(220px, 237px) auto;
   gap: 24px;
 }
 
@@ -65,9 +541,11 @@
 .quoteCard {
   display: grid;
   grid-column: 2 / 4;
-  grid-template-columns: 197px 1fr;
+  grid-template-columns: minmax(0, 197px) minmax(0, 1fr);
   gap: 24px;
-  overflow: hidden;
+  align-items: center;
+  min-height: 0;
+  overflow: clip;
   border-radius: 16px;
   background: var(--blue);
   color: white;
@@ -75,10 +553,16 @@
 }
 
 .quoteCard > img {
-  width: 197px;
-  height: 192px;
+  width: 100%;
+  max-width: 197px;
+  height: auto;
+  aspect-ratio: 197 / 192;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.quoteCard > div {
+  min-width: 0;
 }
 
 .quoteCard blockquote {
@@ -87,25 +571,26 @@
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 27.2px;
+  line-height: 1.7;
 }
 
 .quoteCard strong,
 .quoteCard span {
   display: block;
+  color: white;
 }
 
 .quoteCard strong {
   margin-top: 14px;
   font-size: 18px;
   font-weight: 500;
-  line-height: 30.6px;
+  line-height: 1.7;
 }
 
 .quoteCard span {
   color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
-  line-height: 23.8px;
+  line-height: 1.7;
 }
 
 .missionSection {
@@ -255,8 +740,14 @@
 }
 
 .page :global(.process-grid) {
-  grid-template-columns: 575px 575px;
-  gap: 50px;
+  grid-template-columns: 442px 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.page :global(.process-section .section-title) {
+  position: sticky;
+  top: 160px;
 }
 
 .page :global(.process-section .section-title h2) {

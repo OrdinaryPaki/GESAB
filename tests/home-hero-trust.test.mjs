@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-const siteUrl = process.env.SITE_URL ?? "http://127.0.0.1:3000";
+import { siteUrl } from "./helpers/site-url.mjs";
 
 test("the home hero trust message is rendered without person images", async () => {
   const response = await fetch(new URL("/", siteUrl));

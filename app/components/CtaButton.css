@@ -1,0 +1,69 @@
+/* Style owner: CtaButton (CtaLink / CtaAnchor / CtaButton).
+   Header owns .phone-button (+ .cta-button.phone-button).
+   Host pages own contextual CTA layout (hero, forms, related, etc.). */
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
+  width: fit-content;
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 22px;
+  background-color: var(--cta-bg);
+  background-image: linear-gradient(var(--cta-hover-bg), var(--cta-hover-bg));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  color: var(--cta-color);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.4;
+  box-shadow: none;
+  transition: background-size 180ms ease-in, color 120ms ease-in;
+  white-space: nowrap;
+}
+
+.cta-button-yellow {
+  --cta-bg: var(--yellow);
+  --cta-color: black;
+  --cta-hover-bg: var(--black);
+  --cta-hover-color: white;
+}
+
+.cta-button-blue {
+  --cta-bg: var(--blue);
+  --cta-color: white;
+  --cta-hover-bg: var(--black);
+  --cta-hover-color: white;
+}
+
+.cta-button-dark {
+  --cta-bg: var(--black);
+  --cta-color: white;
+  --cta-hover-bg: var(--blue);
+  --cta-hover-color: white;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cta-button:hover {
+    background-size: 100% 100%;
+    color: var(--cta-hover-color);
+    box-shadow: none;
+  }
+}
+
+.cta-button:focus-visible {
+  background-size: 100% 100%;
+  color: var(--cta-hover-color);
+  outline: 3px solid rgba(22, 129, 255, 0.35);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-button {
+    transition-duration: 1ms;
+  }
+}

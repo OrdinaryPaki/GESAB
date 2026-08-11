@@ -1,123 +1,106 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
 import postcss from "postcss";
 
-const responsiveStylesPath = new URL("../app/responsive.css", import.meta.url);
+const appDirectory = new URL("../app/", import.meta.url);
+const responsiveEntry = new URL("../app/responsive.css", import.meta.url);
 
-async function responsiveStylesExist() {
+async function exists(fileUrl) {
   try {
-    await access(responsiveStylesPath);
+    await access(fileUrl);
     return true;
   } catch {
     return false;
   }
 }
 
-async function readResponsiveBundleSource() {
-  const entrySource = await readFile(responsiveStylesPath, "utf8");
-  const importedSources = await Promise.all(
-    [...entrySource.matchAll(/@import\s+["'](.+?)["'];/g)].map(
-      async ([, relativePath]) =>
-        readFile(new URL(relativePath, responsiveStylesPath), "utf8"),
-    ),
+async function findCssFiles(directory) {
+  const entries = await readdir(directory, { withFileTypes: true });
+  const nestedFiles = await Promise.all(
+    entries.map((entry) => {
+      const entryUrl = new URL(entry.name + (entry.isDirectory() ? "/" : ""), directory);
+      return entry.isDirectory() ? findCssFiles(entryUrl) : [entryUrl];
+    }),
   );
 
-  return [entrySource, ...importedSources].join("\n");
+  return nestedFiles.flat().filter((fileUrl) => fileUrl.pathname.endsWith(".css"));
 }
 
-test("the root layout loads the responsive layer after the base styles", async () => {
-  const layoutSource = await readFile(
-    new URL("../app/layout.js", import.meta.url),
-    "utf8",
-  );
-  const baseImportPosition = layoutSource.indexOf('import "./globals.css";');
-  const responsiveImportPosition = layoutSource.indexOf(
-    'import "./responsive.css";',
-  );
+test("responsive styles load through their component and route owners", async () => {
+  const layoutSource = await readFile(new URL("../app/layout.js", import.meta.url), "utf8");
 
-  assert.notEqual(baseImportPosition, -1, "the base stylesheet must remain loaded");
-  assert.notEqual(
-    responsiveImportPosition,
-    -1,
-    "the shared responsive stylesheet must be loaded by every route",
+  assert.match(layoutSource, /import "\.\/globals\.css";/, "the global foundation must remain loaded");
+  assert.doesNotMatch(
+    layoutSource,
+    /responsive\.css/,
+    "the root layout must not restore a site-wide responsive override dump",
   );
-  assert.ok(
-    responsiveImportPosition > baseImportPosition,
-    "responsive safeguards must load after the base stylesheet",
+  assert.equal(
+    await exists(responsiveEntry),
+    false,
+    "app/responsive.css must disappear once responsive rules belong to their owners",
   );
 });
 
-test("the responsive layer covers every page family and critical viewport range", async () => {
-  assert.equal(
-    await responsiveStylesExist(),
-    true,
-    "app/responsive.css must exist before its responsive contracts can be checked",
-  );
+test("route owners contain responsive rules without generated-class substring selectors", async () => {
+  const ownerFiles = [
+    new URL("../app/home-fidelity.css", import.meta.url),
+    new URL("../app/about/about.module.css", import.meta.url),
+    new URL("../app/contact/contact-page.module.css", import.meta.url),
+    new URL("../app/service/service-page.module.css", import.meta.url),
+    new URL("../app/service/[slug]/service-detail.module.css", import.meta.url),
+  ];
 
-  const source = await readResponsiveBundleSource();
-  const root = postcss.parse(source);
-  const mediaQueries = [];
+  for (const fileUrl of ownerFiles) {
+    const source = await readFile(fileUrl, "utf8");
+    const root = postcss.parse(source, { from: fileUrl.pathname });
+    const mediaQueries = [];
 
-  root.walkAtRules("media", (rule) => mediaQueries.push(rule.params));
+    root.walkAtRules("media", (rule) => mediaQueries.push(rule.params));
 
-  assert.ok(
-    mediaQueries.includes("(min-width: 981px) and (max-width: 1248px)"),
-    "small laptops need a fluid bridge between mobile and the 1200px desktop layout",
-  );
-  assert.ok(
-    mediaQueries.includes("(min-width: 521px) and (max-width: 980px)"),
-    "tablets need layouts wider than the 350px phone snapshot",
-  );
-  assert.ok(
-    mediaQueries.includes("(max-width: 389px)"),
-    "narrow phones need protection from the fixed 350px reference layout",
-  );
-
-  for (const pageScope of [
-    ".home-page",
-    "#about-page",
-    "contact-page-module",
-    "service-page-module",
-    "service-detail-page",
-    "blog-module",
-  ]) {
-    assert.match(
+    assert.ok(mediaQueries.length > 0, `${fileUrl.pathname} must own its responsive rules`);
+    assert.doesNotMatch(
       source,
-      new RegExp(pageScope.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")),
-      `${pageScope} must be included in the shared responsive layer`,
+      /\[class\*=/,
+      `${fileUrl.pathname} must use its real local classes instead of generated-name guesses`,
     );
   }
 });
 
-test("narrow-phone rules constrain fixed-width content to the viewport", async () => {
-  assert.equal(
-    await responsiveStylesExist(),
-    true,
-    "app/responsive.css must exist before its narrow-phone rules can be checked",
-  );
+test("no stylesheet reaches CSS modules through generated class-name fragments", async () => {
+  for (const fileUrl of await findCssFiles(appDirectory)) {
+    const source = await readFile(fileUrl, "utf8");
 
-  const source = await readResponsiveBundleSource();
-  const root = postcss.parse(source);
+    assert.doesNotMatch(
+      source,
+      /\[class\*=/,
+      `${fileUrl.pathname} contains a fragile generated-class substring selector`,
+    );
+  }
+});
+
+test("narrow-phone rules keep fixed-width content inside the viewport", async () => {
   const narrowPhoneRules = [];
 
-  root.walkAtRules("media", (mediaRule) => {
-    if (mediaRule.params !== "(max-width: 389px)") return;
-    mediaRule.walkRules((rule) => narrowPhoneRules.push(rule));
-  });
+  for (const fileUrl of await findCssFiles(appDirectory)) {
+    const source = await readFile(fileUrl, "utf8");
+    const root = postcss.parse(source, { from: fileUrl.pathname });
+
+    root.walkAtRules("media", (mediaRule) => {
+      if (mediaRule.params !== "(max-width: 389px)") return;
+      mediaRule.walkRules((rule) => narrowPhoneRules.push(rule));
+    });
+  }
 
   assert.ok(narrowPhoneRules.length > 0, "narrow-phone rules must not be empty");
   assert.ok(
     narrowPhoneRules.some((rule) => {
       const declarations = new Map();
-      rule.walkDecls((declaration) => {
-        declarations.set(declaration.prop, declaration.value);
-      });
-      return (
-        declarations.get("width") === "100%" &&
-        declarations.get("max-width") === "100%"
-      );
+      rule.walkDecls((declaration) => declarations.set(declaration.prop, declaration.value));
+
+      return declarations.get("width") === "100%" && declarations.get("max-width") === "100%";
     }),
     "at least one narrow-phone guard must replace fixed widths with viewport-safe widths",
   );

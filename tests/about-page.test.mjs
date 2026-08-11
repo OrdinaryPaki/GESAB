@@ -1,15 +1,17 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-const aboutUrl = process.env.ABOUT_PAGE_URL ?? "http://127.0.0.1:3000/about";
+import { siteUrl } from "./helpers/site-url.mjs";
+
+const aboutUrl = process.env.ABOUT_PAGE_URL ?? `${siteUrl}/about`;
 
 test("the About route includes the FAQ section before the contact band", async () => {
   const response = await fetch(aboutUrl);
   assert.equal(response.status, 200);
 
   const html = await response.text();
-  const faqPosition = html.indexOf("Vanliga frågor inför renovering");
-  const contactPosition = html.indexOf("VI ÄR REDO ATT HJÄLPA DIG");
+  const faqPosition = html.indexOf("data-faq-section");
+  const contactPosition = html.indexOf("data-contact-band");
 
   assert.notEqual(faqPosition, -1, "The About route is missing its FAQ section");
   assert.notEqual(contactPosition, -1, "The About route is missing its contact band");

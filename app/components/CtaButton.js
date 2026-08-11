@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import "./CtaButton.css";
+
 function classNames(...values) {
   return values.filter(Boolean).join(" ");
 }

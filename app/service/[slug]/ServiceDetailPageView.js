@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Footer, Header } from "../../components/GesabShell";
+import { ContactBand } from "../../components/ContactBand";
+import { Footer } from "../../components/Footer";
+import { Header } from "../../components/Header";
 import { CtaLink } from "../../components/CtaButton";
 import { FaqAccordion } from "../../components/FaqAccordion";
 import { ServiceQuoteForm } from "./ServiceQuoteForm";
@@ -71,13 +73,13 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
             >
               <ServiceQuoteForm
                 defaultServiceSlug={service.slug}
-                description="Berätta kort om platsen, omfattningen och när du vill komma igång. Vi återkommer med rätt nästa steg."
-                heading="Få en tydlig offert"
+                description="Beskriv platsen och vad du vill göra. Bilder hjälper oss lämna ett tydligare pris."
+                heading={`Få pris på ${service.title.toLowerCase()}`}
               />
               <ul className={styles.quoteBenefits}>
                 <li>Kostnadsfri första kontakt</li>
-                <li>Tydlig omfattning före byggstart</li>
-                <li>Samordning efter projektets behov</li>
+                <li>Tydligt pris innan arbete börjar</li>
+                <li>ROT-avdrag hanteras på fakturan</li>
               </ul>
             </aside>
 
@@ -87,6 +89,17 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
               <section className={styles.articleSection} data-service-introduction>
                 <h2>{service.detail.introTitle}</h2>
                 <p>{service.detail.intro}</p>
+
+                <div className={`${styles.fitUnderIntro} ${styles.faqSection}`} data-service-fit-section>
+                  <h3 className={styles.fitUnderIntroTitle}>När passar tjänsten?</h3>
+                  <FaqAccordion
+                    items={detail.suitableFor.map(([title, body]) => ({
+                      question: title,
+                      answer: body,
+                    }))}
+                  />
+                </div>
+
                 <img
                   alt={`${service.title} – planerat och fackmässigt arbete`}
                   className={styles.supportingImage}
@@ -99,11 +112,11 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 />
               </section>
 
-              <section className={styles.articleSection} data-service-fit-section>
-                <h2>När passar tjänsten?</h2>
+              <section className={styles.articleSection} data-service-detail-section>
+                <h2>Därför väljer kunder GESAB</h2>
                 <div className={styles.textBlocks}>
-                  {detail.suitableFor.map(([title, body], index) => (
-                    <div className={styles.textBlock} data-service-fit={index + 1} key={title}>
+                  {service.detail.sections.map(([title, body]) => (
+                    <div className={styles.textBlock} key={title}>
                       <h3>{title}</h3>
                       <p>{body}</p>
                     </div>
@@ -111,34 +124,17 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 </div>
               </section>
 
-              {service.detail.sections.map(([title, body]) => (
-                <section className={styles.articleSection} data-service-detail-section key={title}>
-                  <h2>{title}</h2>
-                  <p>{body}</p>
-                </section>
-              ))}
-
               <section className={styles.articleSection}>
-                <h2>Det här ingår ofta</h2>
-                <p>Den slutliga omfattningen anpassas efter platsen och det vi kommer överens om. Vanliga delar är:</p>
+                <h2>Det här kan ingå</h2>
+                <p>Omfattningen anpassas efter platsen och dina behov. Vanliga delar i uppdraget är:</p>
                 <ul className={styles.standardList}>
                   {service.detail.bullets.map((item) => <li key={item}>{item}</li>)}
                 </ul>
               </section>
 
-              <section className={styles.articleSection} data-service-preparation-section>
-                <h2>Inför första genomgången</h2>
-                <p>Det räcker med ett enkelt underlag. Det här hjälper oss att förstå projektet och ge dig rätt nästa steg:</p>
-                <ul className={styles.standardList}>
-                  {detail.preparation.map((item, index) => (
-                    <li data-service-preparation={index + 1} key={item}>{item}</li>
-                  ))}
-                </ul>
-              </section>
-
               <section className={styles.articleSection} data-service-process-section>
-                <h2>Så arbetar vi</h2>
-                <p>En tydlig ordning minskar väntetid, missförstånd och kostsamma omtag.</p>
+                <h2>Så går det till</h2>
+                <p>Målet är att du ska veta vad som ingår innan arbetet startar.</p>
                 <div className={styles.textBlocks}>
                   {detail.process.map(([title, body], index) => (
                     <div className={styles.textBlock} key={title}>
@@ -149,9 +145,19 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 </div>
               </section>
 
+              <section className={styles.articleSection} data-service-preparation-section>
+                <h2>Inför första kontakten</h2>
+                <p>Det räcker med ett enkelt underlag. Skicka gärna:</p>
+                <ul className={styles.standardList}>
+                  {detail.preparation.map((item, index) => (
+                    <li data-service-preparation={index + 1} key={item}>{item}</li>
+                  ))}
+                </ul>
+              </section>
+
               <section className={styles.articleSection}>
-                <h2>Det här påverkar offert och tidplan</h2>
-                <p>Vi lämnar hellre en genomarbetad bedömning än ett snabbt pris som inte speglar verkligheten.</p>
+                <h2>Vad påverkar priset?</h2>
+                <p>Vi lämnar hellre ett genomarbetat pris än en snabb gissning. Offerten styrs bland annat av:</p>
                 <ul className={styles.standardList}>
                   {detail.considerations.map((item) => <li key={item}>{item}</li>)}
                 </ul>
@@ -202,6 +208,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
           </div>
         </section>
       </main>
+      <ContactBand />
       <Footer />
       <script dangerouslySetInnerHTML={{ __html: structuredData }} type="application/ld+json" />
     </div>

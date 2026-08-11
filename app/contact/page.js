@@ -1,4 +1,6 @@
-import { ContactBand, Footer, Header } from "../components/GesabShell";
+import { ContactBand } from "../components/ContactBand";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import { CtaButton } from "../components/CtaButton";
 import { MailIcon, PhoneIcon } from "../components/GesabIcons";
 import { FaqSection } from "../components/FaqSection";

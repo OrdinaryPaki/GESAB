@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-const siteUrl = process.env.SITE_URL ?? "http://127.0.0.1:3000";
+import { siteUrl } from "./helpers/site-url.mjs";
 
 async function fetchPage(pathname) {
   const response = await fetch(new URL(pathname, siteUrl));

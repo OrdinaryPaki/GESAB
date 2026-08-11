@@ -1,5 +1,4 @@
 import "./globals.css";
-import "./responsive.css";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
 
 export const metadata = {

@@ -1,6 +1,8 @@
-import { ContactBand, Footer, Header } from "../components/GesabShell";
+import { ContactBand } from "../components/ContactBand";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import { services } from "../gesab-data";
-import { ServiceConcepts } from "./ServiceConcepts";
+import { ServiceGrid } from "./ServiceGrid";
 import styles from "./service-page.module.css";
 
 export const metadata = {
@@ -10,12 +12,15 @@ export const metadata = {
 };
 
 const serviceIndexCopy = {
-  badrumsrenovering: "Badrumsrenovering med planering, samordning och trygg arbetsgång från start till klart.",
-  koksrenovering: "Köksrenovering med planering för ytskikt, el, vatten, snickeri och montage.",
-  totalentreprenad: "En samlad kontakt för projekt där flera delar behöver planeras, utföras och följas upp.",
-  rivningsarbeten: "Kontrollerad rivning inför renovering, med fokus på säkerhet, underlag och nästa steg.",
-  bygg: "Byggarbeten för renovering, ombyggnad och anpassning av bostäder och lokaler.",
-  fasadrenovering: "Fasadrenovering med rätt metod, säkert utförande och långsiktigt skydd.",
+  badrumsrenovering: "Från rivning till färdig yta – med en kontakt genom hela projektet.",
+  koksrenovering: "Planering, el, vatten och montage i rätt ordning – med tydlig tidplan.",
+  totalentreprenad: "Ett avtal, en kontaktperson. Vi driver hela renoveringen åt dig.",
+  rivningsarbeten: "Kontrollerad rivning som lämnar underlaget klart för nästa steg.",
+  bygg: "Renovering och ombyggnad, samordnat med el, VVS och ytskikt.",
+  fasadrenovering: "Rätt metod för underlaget – säkert utfört och hållbart över tid.",
+  snickeri: "Måttanpassade lösningar och detaljer som gör renoveringen färdig.",
+  malning: "Ordentligt underarbete – för ytor som håller i många år.",
+  montage: "Kök, inredning och byggdelar – rätt monterat och klart att använda.",
 };
 
 const allServicesWithCopy = services.map((service) => ({
@@ -32,9 +37,9 @@ export default function ServicePage() {
           <div className={`container ${styles.indexContainer}`}>
             <header className={styles.indexTitle}>
               <h1>Tjänster</h1>
-              <p>Trygga tjänster för badrum, kök och renovering – anpassade efter ditt hem och dina behov.</p>
+              <p>Badrum, kök, bygg och renovering i Göteborg – med tydlig plan och en kontaktperson.</p>
             </header>
-            <ServiceConcepts services={allServicesWithCopy} />
+            <ServiceGrid services={allServicesWithCopy} />
           </div>
         </section>
       </main>

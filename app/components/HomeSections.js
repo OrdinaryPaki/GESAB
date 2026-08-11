@@ -3,7 +3,9 @@ import { image, processSteps, services, testimonials } from "../gesab-data";
 import { CtaLink } from "./CtaButton";
 import { FaqSection } from "./FaqSection";
 import { ArrowIcon, CheckIcon, StarIcon } from "./GesabIcons";
-import { Footer, Header, ContactBand } from "./GesabShell";
+import { ContactBand } from "./ContactBand";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 import { homeImages } from "./home-image-data";
 
 const servicePreviewCopy = {
@@ -175,7 +177,7 @@ export function AboutPreview() {
               <strong>100+</strong>
               <span>projekt med tydlig ordning</span>
             </div>
-            <div>
+            <div className="about-row-copy">
               <p>GESAB samordnar badrum, kök och bygg med tydlig planering, rätt yrkesroller och ansvar från första genomgång till färdigt resultat.</p>
               <CtaLink href="/about" variant="yellow">
                 Läs mer om oss
@@ -258,4 +260,3 @@ function GallerySection() {
     </section>
   );
 }
-

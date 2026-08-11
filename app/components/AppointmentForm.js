@@ -1,13 +1,11 @@
-import { CtaButton } from "../../components/CtaButton";
-import { contactInfo } from "../../gesab-data";
-import "./ServiceQuoteForm.css";
+import { contactInfo } from "../gesab-data";
+import { CtaButton } from "./CtaButton";
+import "./AppointmentForm.css";
 
-export function ServiceQuoteForm({ defaultServiceSlug, description, heading }) {
+export function AppointmentForm() {
   return (
-    <form className="service-quote-form" data-service-quote-form>
-      <h2>{heading}</h2>
-      <p className="service-quote-form-intro">{description}</p>
-      <input type="hidden" name="service" value={defaultServiceSlug} />
+    <form className="appointment-card" data-appointment-form>
+      <h2>Boka offert</h2>
       <label>
         Namn
         <input type="text" placeholder="För- och efternamn" />

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-const baseUrl = process.env.TEST_BASE_URL ?? "http://localhost:3000";
+import { siteUrl as baseUrl } from "./helpers/site-url.mjs";
 
 const serviceSlugs = [
   "badrumsrenovering",
@@ -25,7 +25,7 @@ async function fetchServicePage(slug) {
 
 test("service details keep one quote form beside the main content", async () => {
   const html = await fetchServicePage("badrumsrenovering");
-  const bookingForms = html.match(/class="appointment-card"/g) ?? [];
+  const bookingForms = html.match(/<form[^>]*data-service-quote-form/g) ?? [];
 
   assert.equal(
     bookingForms.length,
@@ -37,10 +37,19 @@ test("service details keep one quote form beside the main content", async () => 
     /data-service-quote="badrumsrenovering"/,
     "the quote form must be contextual to the service being viewed",
   );
-  assert.doesNotMatch(
+  assert.match(
     html,
-    /class="contact-band"/,
-    "the old full-width contact band must not duplicate the new in-page quote experience",
+    /data-contact-band/,
+    "the shared contact band CTA must appear below related services",
+  );
+  assert.ok(
+    html.indexOf("data-contact-band") > html.indexOf("related-services-title"),
+    "the contact band must sit after the related services section",
+  );
+  assert.match(
+    html,
+    /data-appointment-form/,
+    "the contact band must include the shared appointment form",
   );
 });
 
@@ -50,10 +59,10 @@ test("every service detail renders decision-helping content, FAQs and related se
     const faqQuestions = html.match(/class="faq-question"/g) ?? [];
     const relatedServices = html.match(/data-related-service=/g) ?? [];
 
-    assert.match(html, /Så arbetar vi/, `${slug} must explain the work process`);
+    assert.match(html, /Så går det till/, `${slug} must explain the work process`);
     assert.match(
       html,
-      /Det här påverkar offert och tidplan/,
+      /Vad påverkar priset\?/,
       `${slug} must explain the variables behind scope, price and timing`,
     );
     assert.match(html, /Vanliga frågor/, `${slug} must answer common questions`);
@@ -77,7 +86,8 @@ test("every service detail explains who it suits and how to prepare", async () =
   for (const slug of serviceSlugs) {
     const html = await fetchServicePage(slug);
     const audienceLabel = html.match(/data-service-audience="([^"]+)"/)?.[1];
-    const suitableForItems = html.match(/data-service-fit=/g) ?? [];
+    const fitSection = html.match(/data-service-fit-section[\s\S]*?(?=<img|data-service-detail-section)/)?.[0] ?? "";
+    const suitableForItems = fitSection.match(/faq-item/g) ?? [];
     const preparationItems = html.match(/data-service-preparation=/g) ?? [];
 
     assert.match(
@@ -87,13 +97,14 @@ test("every service detail explains who it suits and how to prepare", async () =
     );
     audienceLabels.push(audienceLabel);
     assert.match(html, /När passar tjänsten\?/, `${slug} must explain suitable project types`);
+    assert.match(html, /data-service-fit-section/, `${slug} must include the fit guidance section`);
     assert.ok(
       suitableForItems.length >= 3,
       `${slug} must include at least three concrete project types`,
     );
     assert.match(
       html,
-      /Inför första genomgången/,
+      /data-service-preparation-section/,
       `${slug} must help the customer prepare for the first conversation`,
     );
     assert.ok(
@@ -113,24 +124,31 @@ test("the service article introduces the work before guidance and moves supporti
   const html = await fetchServicePage("badrumsrenovering");
   const introPosition = html.indexOf("data-service-introduction");
   const supportingImagePosition = html.indexOf("data-service-supporting-image");
-  const suitableForPosition = html.indexOf("data-service-fit-section");
   const detailPosition = html.indexOf("data-service-detail-section");
-  const preparationPosition = html.indexOf("data-service-preparation-section");
+  const suitableForPosition = html.indexOf("data-service-fit-section");
   const processPosition = html.indexOf("data-service-process-section");
+  const preparationPosition = html.indexOf("data-service-preparation-section");
 
   assert.ok(introPosition >= 0, "the article must start with its service-specific introduction");
   assert.ok(
-    supportingImagePosition > introPosition,
-    "the supporting image must follow the introduction",
+    suitableForPosition > introPosition,
+    "project guidance must follow the introduction copy",
   );
   assert.ok(
-    suitableForPosition > supportingImagePosition,
-    "project guidance must follow the early supporting image",
+    supportingImagePosition > suitableForPosition,
+    "the supporting image must follow project guidance",
   );
-  assert.ok(detailPosition > suitableForPosition, "detailed service copy must follow project guidance");
   assert.ok(
-    preparationPosition > detailPosition && preparationPosition < processPosition,
-    "preparation guidance must sit naturally before the work process",
+    detailPosition > supportingImagePosition,
+    "detailed service copy must follow the early supporting image",
+  );
+  assert.ok(
+    processPosition > detailPosition,
+    "the work process must follow the detailed service copy",
+  );
+  assert.ok(
+    preparationPosition > processPosition,
+    "preparation guidance must follow the work process",
   );
 });
 

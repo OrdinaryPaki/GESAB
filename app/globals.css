@@ -18,8 +18,10 @@
 
 html,
 body {
+  max-width: 100%;
   margin: 0;
   min-height: 100%;
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -40,11 +42,18 @@ svg {
   display: block;
 }
 
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
 button,
 input,
 select,
 textarea {
   font: inherit;
+  min-width: 0;
 }
 
 .container {
@@ -52,283 +61,12 @@ textarea {
   margin: 0 auto;
 }
 
-.site-header {
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 99;
-  height: 72px;
-  width: 100%;
-  background: white;
-  color: var(--text);
-  border-bottom: 1px solid var(--line);
-  font-family: Inter, Arial, Helvetica, sans-serif;
-}
-
-.site-header.dark {
-  color: var(--text);
-}
-
-.header-inner {
-  display: flex;
-  width: min(1200px, calc(100% - 48px));
-  max-width: 1200px;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
-  margin: 0 auto;
-  color: var(--text);
-}
-
-.header-left,
-.header-right {
-  display: flex;
-  flex: 1;
-  align-items: center;
-}
-
-.header-left {
-  justify-content: flex-start;
-}
-
-.header-right {
-  justify-content: flex-end;
-}
-
-.logo-link {
-  flex: 0 0 auto;
-}
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-}
-
-.logo-mark {
-  display: grid;
-  width: 45px;
-  height: 45px;
-  place-items: center;
-  border-radius: 999px;
-  background: white;
-  color: var(--yellow);
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.logo-text {
-  color: white;
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 0;
-}
-
-.site-header .logo-text,
-.logo-text.dark,
-.site-header.dark .logo-text {
-  color: var(--text);
-}
-
-.site-header.dark .logo-mark,
-.footer .logo-mark {
-  background: var(--blue);
-  color: white;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.7;
-}
-
-.nav-links a {
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: var(--blue);
-}
-
-.mobile-menu {
-  position: relative;
-  display: none;
-  margin-left: auto;
-}
-
-.mobile-menu-button {
-  display: grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  gap: 7px;
-  border: 0;
-  border-radius: 8px;
-  background: white;
-  color: var(--blue);
-  cursor: pointer;
-  list-style: none;
-}
-
-.mobile-menu-button::-webkit-details-marker {
-  display: none;
-}
-
-.mobile-menu-button span {
-  width: 18px;
-  height: 2px;
-  border-radius: 99px;
-  background: currentColor;
-}
-
-.mobile-menu-panel {
-  position: absolute;
-  top: calc(100% + 12px);
-  right: 0;
-  display: grid;
-  min-width: 230px;
-  gap: 4px;
-  border-radius: 12px;
-  background: white;
-  color: var(--text);
-  padding: 12px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
-}
-
-.mobile-menu-panel a {
-  border-radius: 8px;
-  padding: 11px 12px;
-  font-weight: 700;
-}
-
-.mobile-menu-panel a:not(.cta-button):hover,
-.mobile-menu-panel a:not(.cta-button):focus-visible {
-  background: var(--soft);
-}
-
-.mobile-menu-panel .mobile-phone-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-top: 6px;
-  min-height: 47px;
-  border-radius: 12px;
-  padding: 10px 14px;
-}
-
-.mobile-phone-link svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
-
-.phone-button {
-  --cta-bg: var(--blue);
-  --cta-hover-bg: var(--black);
-  --cta-color: white;
-  --cta-hover-color: white;
-  gap: 12px;
-  margin-left: 0;
-}
-
-.phone-button svg,
 .blue-icon svg,
-.contact-methods svg,
 .contact-tile-grid svg,
 .detail-checks svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
-}
-
-/* All CTA hover behavior lives here. Use CtaLink, CtaAnchor or CtaButton instead of page-specific button classes. */
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 55px;
-  width: fit-content;
-  border: 0;
-  border-radius: 16px;
-  padding: 14px 22px;
-  background-color: var(--cta-bg);
-  background-image: linear-gradient(var(--cta-hover-bg), var(--cta-hover-bg));
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 0%;
-  color: var(--cta-color);
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 1.4;
-  box-shadow: none;
-  transition: background-size 180ms ease-in, color 120ms ease-in;
-  white-space: nowrap;
-}
-
-.cta-button-yellow {
-  --cta-bg: var(--yellow);
-  --cta-color: black;
-  --cta-hover-bg: var(--black);
-  --cta-hover-color: white;
-}
-
-.cta-button-blue {
-  --cta-bg: var(--blue);
-  --cta-color: white;
-  --cta-hover-bg: var(--black);
-  --cta-hover-color: white;
-}
-
-.cta-button-dark {
-  --cta-bg: var(--black);
-  --cta-color: white;
-  --cta-hover-bg: var(--blue);
-  --cta-hover-color: white;
-}
-
-.cta-button.phone-button {
-  min-width: 0;
-  min-height: 44px;
-  height: 44px;
-  padding: 0 18px;
-  border-radius: 8px;
-  background-color: var(--blue);
-  font-size: 14px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .cta-button:hover {
-    background-size: 100% 100%;
-    color: var(--cta-hover-color);
-    box-shadow: none;
-  }
-
-  .phone-button:hover {
-    background-size: 100% 0%;
-    color: var(--cta-color);
-  }
-}
-
-.cta-button:focus-visible {
-  background-size: 100% 100%;
-  color: var(--cta-hover-color);
-  outline: 3px solid rgba(22, 129, 255, 0.35);
-  outline-offset: 3px;
-  box-shadow: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cta-button {
-    transition-duration: 1ms;
-  }
 }
 
 .hero {
@@ -784,7 +522,7 @@ textarea {
   display: grid;
   grid-template-columns: 298px 1fr;
   gap: 62px;
-  align-items: center;
+  align-items: stretch;
   margin-top: 85px;
 }
 
@@ -819,6 +557,13 @@ textarea {
   margin-top: 80px;
 }
 
+.about-section .about-row-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 100%;
+}
+
 .metric-card {
   position: relative;
   display: flex;
@@ -834,7 +579,10 @@ textarea {
 
 .metric-card img {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -860,7 +608,7 @@ textarea {
 }
 
 .about-section .about-row .cta-button {
-  margin-top: 24px;
+  margin-top: auto;
   font-weight: 600;
   line-height: 1.7;
 }
@@ -1105,66 +853,6 @@ textarea {
   grid-column: span 3;
 }
 
-.contact-band {
-  position: relative;
-  overflow: hidden;
-  min-height: 822px;
-  color: white;
-}
-
-.contact-band-bg,
-.contact-band-overlay {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.contact-band-bg {
-  object-fit: cover;
-}
-
-.contact-band-overlay {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.72) 46%, rgba(0, 0, 0, 0.08) 100%);
-}
-
-.contact-band-inner {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  min-height: 822px;
-  grid-template-columns: minmax(0, 1fr) 520px;
-  gap: 88px;
-  align-items: start;
-}
-
-.contact-copy {
-  min-width: 0;
-  padding-top: 176px;
-}
-
-.contact-copy span {
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.contact-copy h2 {
-  max-width: 443px;
-  margin: 14px 0 293px;
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.contact-methods {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px 40px;
-}
-
-.contact-methods a,
 .contact-tile-grid a {
   display: inline-flex;
   align-items: center;
@@ -1174,7 +862,6 @@ textarea {
   line-height: 1.7;
 }
 
-.contact-methods svg,
 .contact-tile-grid svg {
   width: 18px;
   height: 18px;
@@ -1184,203 +871,6 @@ textarea {
   background: var(--blue);
   color: white;
 }
-
-.appointment-card {
-  position: relative;
-  display: grid;
-  width: 520px;
-  gap: 13px;
-  margin-top: 112px;
-  border-radius: 16px;
-  background: white;
-  color: black;
-  padding: 38px 40px 40px;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.14);
-}
-
-.appointment-card h2 {
-  margin: 0 0 16px;
-  text-align: center;
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 34px;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.appointment-card label,
-.appointment-card .service-select-field {
-  display: grid;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.appointment-card input,
-.appointment-card select,
-.appointment-card .service-select-trigger,
-.appointment-card textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: white;
-  color: #777;
-  outline: none;
-}
-
-.appointment-card input,
-.appointment-card select,
-.appointment-card .service-select-trigger {
-  height: 56px;
-  padding: 12px 20px;
-}
-
-.appointment-card .service-select-trigger:focus-visible {
-  outline: 3px solid var(--yellow);
-  outline-offset: 2px;
-}
-
-.appointment-card textarea {
-  min-height: 92px;
-  padding: 14px 20px;
-  resize: vertical;
-}
-
-.appointment-card .cta-button {
-  width: 100%;
-  height: 56px;
-  min-height: 56px;
-  margin-top: 2px;
-  border-radius: 12px;
-  padding: 10px 20px;
-  background-image: none;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.appointment-card .cta-button:hover,
-.appointment-card .cta-button:focus-visible {
-  background: var(--yellow);
-  color: black;
-}
-
-.footer {
-  padding: 100px 0 40px;
-  border-top: 4px solid var(--blue);
-  background: var(--soft);
-  color: var(--text);
-  font-family: Inter, Arial, Helvetica, sans-serif;
-}
-
-.footer-grid {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  padding-bottom: 60px;
-  border-bottom: 1px solid var(--line);
-}
-
-.footer-brand {
-  width: 320px;
-}
-
-.footer-brand p {
-  margin: 24px 0 32px;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.socials a {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: var(--blue);
-  color: white;
-  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
-}
-
-.socials a:hover,
-.socials a:focus-visible {
-  background: var(--yellow);
-  color: black;
-  transform: translateY(-3px);
-}
-
-.socials svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
-
-.footer-list {
-  display: grid;
-  align-content: start;
-  gap: 16px;
-}
-
-.footer-list span {
-  margin-bottom: 8px;
-  color: var(--text);
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.7;
-}
-
-.footer-list a,
-.footer-list p {
-  color: var(--text);
-  font-size: 15px;
-  line-height: 1.7;
-  transition: color 200ms ease, transform 200ms ease;
-  margin: 0;
-}
-
-.footer-list a:hover,
-.footer-list a:focus-visible {
-  color: var(--blue);
-  transform: translateX(4px);
-}
-
-.badge-grid {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.badge-grid img {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 200ms ease;
-}
-
-.badge-grid img:hover {
-  transform: scale(1.05);
-}
-
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 40px;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.7;
-}
-
 
 .contact-page-grid {
   align-items: start;
@@ -1821,29 +1311,10 @@ textarea {
 }
 
 .about-story-section p,
-.about-story-section blockquote,
 .mission-section p {
   color: var(--muted);
   font-size: 18px;
   line-height: 1.65;
-}
-
-.about-story-section blockquote {
-  margin: 42px 0 28px;
-  color: var(--text);
-  font-family: Outfit, Inter, sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.about-story-section strong,
-.about-story-section span {
-  display: block;
-}
-
-.about-story-section span {
-  margin-top: 6px;
-  color: var(--muted);
 }
 
 .about-collage {
@@ -2063,14 +1534,6 @@ textarea {
     width: min(720px, calc(100% - 40px));
   }
 
-  .nav-links {
-    display: none;
-  }
-
-  .phone-button {
-    display: none;
-  }
-
   .hero {
     min-height: 930px;
   }
@@ -2122,8 +1585,7 @@ textarea {
   .process-grid,
   .contact-page-grid,
   .service-detail-layout,
-  .detail-grid,
-  .contact-band-inner {
+  .detail-grid {
     grid-template-columns: 1fr;
     gap: 42px;
   }
@@ -2209,10 +1671,32 @@ textarea {
   }
 
   .services-grid,
-  .testimonial-grid,
   .stat-grid,
   .detail-checks {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    margin-right: -16px;
+    margin-left: -16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .testimonial-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
   }
 
   .service-card {
@@ -2263,27 +1747,6 @@ textarea {
     height: auto;
     grid-column: auto;
   }
-
-  .contact-copy h2 {
-    margin-bottom: 72px;
-    font-size: 56px;
-  }
-
-  .contact-copy {
-    padding-top: 80px;
-  }
-
-  .contact-methods {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
-
-  .appointment-card {
-    width: 100%;
-    margin-top: 0;
-    padding: 32px 24px 28px;
-  }
-
 
   .contact-hero-inner h1,
   .service-index-title h1,
@@ -2447,10 +1910,6 @@ textarea {
 
   .testimonial-card p {
     font-size: 18px;
-  }
-
-  .contact-band-inner {
-    min-height: 720px;
   }
 
 }
