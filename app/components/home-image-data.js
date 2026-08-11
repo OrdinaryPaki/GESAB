@@ -38,8 +38,8 @@ export const homeImages = {
     },
   },
   about: {
-    src: "/images/home/about-plumbing-detail.webp",
-    alt: "Röranslutning justeras under ett handfat",
+    src: placeholderImages.content,
+    alt: "",
     ...homeImageDimensions,
   },
   gallery: [

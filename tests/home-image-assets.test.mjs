@@ -4,19 +4,28 @@ import test from "node:test";
 const siteUrl = process.env.SITE_URL ?? "http://127.0.0.1:3000";
 
 const homeImagePaths = [
-  "/images/home/why-waterproofing.webp",
-  "/images/home/why-site-measurement.webp",
   "/images/home/service-bathroom-result.webp",
   "/images/home/service-kitchen-result.webp",
-  "/images/home/service-total-project.webp",
-  "/images/home/service-demolition.webp",
-  "/images/home/about-plumbing-detail.webp",
   "/images/home/gallery-bathroom-result.webp",
   "/images/home/gallery-kitchen-result.webp",
-  "/images/home/gallery-shower-detail.webp",
-  "/images/home/gallery-carpentry-result.webp",
-  "/images/home/gallery-tiling-progress.webp",
 ];
+
+const aboutPlaceholderPath = "/images/placeholders/gesab-content-placeholder.svg";
+
+test("the HOME about section renders the GESAB image placeholder", async () => {
+  const response = await fetch(new URL("/", siteUrl));
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  const aboutSection = html.match(/<section class="about-section">[\s\S]*?<\/section>/)?.[0];
+
+  assert.ok(aboutSection, "the Om GESAB section is missing from HOME");
+  assert.match(
+    aboutSection,
+    new RegExp(`<img class="about-photo"[^>]*src="${aboutPlaceholderPath}"`),
+    "the Om GESAB section must render the GESAB image placeholder",
+  );
+});
 
 test("the home route renders the local work-and-results image collection", async () => {
   const response = await fetch(new URL("/", siteUrl));
