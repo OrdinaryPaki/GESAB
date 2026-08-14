@@ -4,7 +4,7 @@ export const renovationDetailContent = {
     heroTitle: "Badrumsrenovering i Göteborg",
     heroLead:
       "Vi renoverar ditt badrum från start till mål. Du får fast pris, certifierade hantverkare, klar i tid-garanti och en enda kontaktperson under hela projektet.",
-    heroImage: "/images/home/service-bathroom-result.webp",
+    heroImage: "/images/services/badrumsrenovering/hero-olive-compact.webp",
     heroImageAlt:
       "Badrumsrenovering i Göteborg – färdigt badrum med walk in-dusch, ljusa storformatsplattor och kommod i trä",
     highlights: [
@@ -19,75 +19,49 @@ export const renovationDetailContent = {
       "Dina önskemål kring stil: t.ex. dusch, badkar, inredning eller förvaring.",
       "När du ungefär vill att arbetet ska dras igång.",
     ],
-    supportingImage: "/images/home/why-waterproofing.webp",
+    supportingImage: "/images/services/badrumsrenovering/project-07-tiling.webp",
     supportingImageAlt:
       "Badrumsrenovering: tätskikt rollas på väggen och skarvarna i golvet är tejpade före plattsättning",
     projects: [
       {
-        src: "/images/services/badrumsrenovering/badrum-01-gront-terrazzo.webp",
-        alt: "Badrumsrenovering med mörkgrönt kakel, kommod i ek och terrazzogolv",
-        caption:
-          "Mörkgrönt kakel, kommod i ek och terrazzogolv ger ett varmt uttryck i ett mindre badrum.",
+        src: "/images/services/badrumsrenovering/project-01-white-classic.webp",
+        alt: "Badrumsrenovering med ljust klassiskt badrum, äldre fönster och mörkt klinkergolv",
+        caption: "Ett ljust badrum där den äldre bostadens fönster och proportioner har fått vara kvar.",
       },
       {
-        src: "/images/services/badrumsrenovering/badrum-04-vitt-terrazzo.webp",
-        alt: "Ljust färdigt badrum med vitt kakel, kommod i trä och mönstrat terrazzogolv",
-        caption:
-          "Vitt kakel och ett levande terrazzogolv gör rummet ljust utan att kännas sterilt.",
+        src: "/images/services/badrumsrenovering/project-02-attic-sand.webp",
+        alt: "Färdigt vindsbadrum med snedtak, sandfärgade ytor och takfönster",
+        caption: "Snedtak och takfönster tas till vara i ett kompakt badrum med lugna material.",
       },
       {
-        src: "/images/services/badrumsrenovering/badrum-05-salviagron-dusch.webp",
-        alt: "Smalt färdigt badrum med salviagrönt kakel i duschen och grå klinker",
-        caption:
-          "Den salviagröna duschdelen ger färg samtidigt som den smala planlösningen hålls enkel.",
+        src: "/images/services/badrumsrenovering/project-03-forest-green.webp",
+        alt: "Färdigt badrum med mörkgrönt kakel, kommod i trä och duschvägg",
+        caption: "Mörkgrönt kakel ger djup medan kommoden i trä gör det mindre badrummet varmare.",
       },
       {
-        src: "/images/services/badrumsrenovering/badrum-08-badkar-familj.webp",
-        alt: "Färdigt familjebadrum med badkar, kommod i ek och ljusgrå klinker",
-        caption:
-          "Ett praktiskt familjebadrum med badkar, bra förvaring och slitstarka ljusgrå ytor.",
+        src: "/images/services/badrumsrenovering/project-04-dusty-pink.webp",
+        alt: "Färdigt badrum med dämpat rosa kakel och terrazzogolv",
+        caption: "Dämpat rosa kakel kombineras med neutral inredning och ett tåligt terrazzogolv.",
       },
       {
-        src: "/images/services/badrumsrenovering/badrum-09-mork-dusch.webp",
-        alt: "Färdigt badrum med mörkgrå dusch, kommod i trä och frostat fönster",
-        caption:
-          "Mörkare kakel kring duschen skapar djup medan kommoden i trä mjukar upp helheten.",
+        src: "/images/services/badrumsrenovering/project-05-white-terrazzo.webp",
+        alt: "Ljust färdigt badrum med vitt kakel, träkommod och terrazzogolv",
+        caption: "Vitt kakel och ett levande golv gör rummet ljust utan att kännas sterilt.",
       },
       {
-        src: "/images/services/badrumsrenovering/badrum-10-snedtak.webp",
-        alt: "Färdigt vindsbadrum med snedtak, takfönster och duschvägg i glas",
-        caption:
-          "Snedtak och takfönster tas till vara i ett kompakt vindsbadrum med en lugn materialpalett.",
+        src: "/images/services/badrumsrenovering/project-06-brick-red.webp",
+        alt: "Färdigt badrum med tegelrött kakel och mörk kommod",
+        caption: "Tegelrött kakel ger duschdelen karaktär och möter en mörk kommod och ljust golv.",
       },
       {
-        src: "/images/services/badrumsrenovering/badrum-12-ljusblatt.webp",
-        alt: "Färdigt badrum med ljusblått kakel, duschhörna och grå klinker",
-        caption:
-          "Ljusblått kakel och en enkel duschhörna ger ett mjukt uttryck i det mindre badrummet.",
+        src: "/images/services/badrumsrenovering/project-07-tiling.webp",
+        alt: "Plattsättare monterar grönt kakel i ett badrum",
+        caption: "Plattsättningen dokumenteras under arbetet så att underlag och detaljer kan följas upp.",
       },
       {
-        src: "/images/services/badrumsrenovering/badrum-14-dammrosa.webp",
-        alt: "Färdigt badrum med dämpat rosa kakel, ljus kommod och terrazzogolv",
-        caption:
-          "Dämpat rosa kakel kombineras med en neutral kommod och ett tåligt terrazzogolv.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/badrum-17-vitt-klassiskt.webp",
-        alt: "Klassiskt färdigt badrum med vitt kakel, mörkt klinkergolv och äldre fönster",
-        caption:
-          "Klassiskt vitt kakel och mörkt klinkergolv passar den äldre lägenhetens bevarade detaljer.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/badrum-18-sand-ek.webp",
-        alt: "Färdigt sandfärgat badrum med kommod i ek och dusch bakom glas",
-        caption:
-          "Sandfärgade ytor och ek skapar ett varmt, avskalat badrum med gott om förvaring.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/badrum-19-tegelrott.webp",
-        alt: "Färdigt badrum med tegelrött kakel i duschen, mörk kommod och terrazzogolv",
-        caption:
-          "Tegelrött kakel ger duschen karaktär och möter en mörk kommod och ett mönstrat golv.",
+        src: "/images/services/badrumsrenovering/project-08-pre-handover.webp",
+        alt: "Nästan färdigt badrum med golvskydd och verktyg kvar",
+        caption: "Det nästan färdiga badrummet kontrolleras innan verktyg och golvskydd tas bort.",
       },
     ],
     reviewNames: ["Anna & Mikael", "Katarina S.", "Familjen Johansson"],
@@ -184,8 +158,8 @@ export const renovationDetailContent = {
     heroTitle: "Tvättstugsrenovering i Göteborg",
     heroLead:
       "Vi renoverar din tvättstuga till ett tryggt och praktiskt våtrum. Fast pris, certifierat tätskikt och en kontaktperson genom hela projektet.",
-    heroImage: "/images/home/why-waterproofing.webp",
-    heroImageAlt: "Tvättstugsrenovering i Göteborg – tätskikt och våtrumsarbete",
+    heroImage: "/images/services/tvattstugsrenovering/hero-sage-compact.webp",
+    heroImageAlt: "Färdig kompakt tvättstuga med salviagröna skåp och smart förvaring",
     highlights: [
       ["Våtrum", "Rätt tätskikt"],
       ["2–4 veckor", "Vanlig tidsplan"],
@@ -200,28 +174,48 @@ export const renovationDetailContent = {
       "Vad som är viktigast: mer förvaring, nya ytskikt eller bättre layout.",
       "När du ungefär vill att arbetet ska starta.",
     ],
-    supportingImage: "/images/home/about-plumbing-detail.webp",
+    supportingImage: "/images/services/tvattstugsrenovering/project-07-plumbing-connections.webp",
     supportingImageAlt: "Tvättstugsrenovering: rördragning och våtrumsförberedelse",
     projects: [
       {
-        src: "/images/home/why-waterproofing.webp",
-        alt: "Tvättstugsrenovering: tätskikt på vägg och golv",
-        caption: "Godkänt tätskikt är avgörande även i tvättstugan – samma krav som i badrum.",
+        src: "/images/services/tvattstugsrenovering/project-01-basement-white.webp",
+        alt: "Färdig ljus tvättstuga i källare med två maskiner och arbetsbänk",
+        caption: "En äldre källartvättstuga har fått tåliga ytor, arbetsbänk och ordnad förvaring.",
       },
       {
-        src: "/images/home/about-plumbing-detail.webp",
-        alt: "Tvättstugsrenovering: VVS-installation",
-        caption: "Vatten och avlopp dras rätt från början så maskiner och blandare fungerar säkert.",
+        src: "/images/services/tvattstugsrenovering/project-02-stacked-blue.webp",
+        alt: "Färdig tvättstuga med blå skåp och staplade tvättmaskiner",
+        caption: "Staplad maskinlösning frigör arbetsyta i en mindre tvättstuga.",
       },
       {
-        src: "/images/home/gallery-tiling-progress.webp",
-        alt: "Tvättstugsrenovering: plattsättning",
-        caption: "Slitstarka ytskikt som tål fukt, städning och daglig användning.",
+        src: "/images/services/tvattstugsrenovering/project-03-family-green.webp",
+        alt: "Färdig familjetvättstuga med gröna skåp och två maskiner",
+        caption: "Arbetsyta, golvbrunn och förvaring samlas i en lättskött familjetvättstuga.",
       },
       {
-        src: "/images/home/why-site-measurement.webp",
-        alt: "Tvättstugsrenovering: mätning på plats",
-        caption: "Noggrann genomgång på plats innan offert – så att layout och installationer stämmer.",
+        src: "/images/services/tvattstugsrenovering/project-04-older-home.webp",
+        alt: "Praktisk tvättstuga i äldre villa med synliga rör och djup ho",
+        caption: "I den äldre villan har befintliga förutsättningar tagits till vara i en robust lösning.",
+      },
+      {
+        src: "/images/services/tvattstugsrenovering/project-05-mudroom-combo.webp",
+        alt: "Färdig kombinerad groventré och tvättstuga med förvaring",
+        caption: "Tvätt, ytterkläder och vardagsförvaring ryms i samma praktiska passage.",
+      },
+      {
+        src: "/images/services/tvattstugsrenovering/project-06-plywood-basement.webp",
+        alt: "Källartvättstuga med plywoodskåp, tvättho och två maskiner",
+        caption: "Plywoodförvaring och en djup ho ger värme och funktion i källarens råare miljö.",
+      },
+      {
+        src: "/images/services/tvattstugsrenovering/project-07-plumbing-connections.webp",
+        alt: "VVS-montör ansluter vatten och avlopp till tvättmaskin",
+        caption: "Maskinernas vatten och avlopp ansluts och kontrolleras innan de skjuts på plats.",
+      },
+      {
+        src: "/images/services/tvattstugsrenovering/project-08-final-inspection.webp",
+        alt: "Slutkontroll av nyrenoverad tvättstuga",
+        caption: "Den färdiga tvättstugan kontrolleras punkt för punkt före överlämning.",
       },
     ],
     reviewNames: ["Katarina S.", "Anna & Mikael", "Familjen Johansson"],
@@ -304,8 +298,8 @@ export const renovationDetailContent = {
     heroTitle: "Köksrenovering i Göteborg",
     heroLead:
       "Vi renoverar ditt kök från start till mål. Du får fast pris, samordnade hantverkare, klar tidplan och en enda kontaktperson under hela projektet.",
-    heroImage: "/images/home/service-kitchen-result.webp",
-    heroImageAlt: "Köksrenovering i Göteborg – färdigt kök med ljusa skåp och arbetsyta",
+    heroImage: "/images/services/koksrenovering/hero-gothenburg-classic.webp",
+    heroImageAlt: "Färdigt kök i äldre Göteborgslägenhet med grå skåp och bevarade detaljer",
     highlights: [
       ["1500+", "Genomförda projekt"],
       ["2–4 veckor", "Vanlig tidsplan"],
@@ -320,28 +314,48 @@ export const renovationDetailContent = {
       "Om el eller vatten behöver flyttas.",
       "När du ungefär vill att arbetet ska starta.",
     ],
-    supportingImage: "/images/home/gallery-kitchen-result.webp",
+    supportingImage: "/images/services/koksrenovering/project-08-final-inspection.webp",
     supportingImageAlt: "Köksrenovering: färdigt kök efter samordnat montage",
     projects: [
       {
-        src: "/images/home/gallery-kitchen-result.webp",
-        alt: "Köksrenovering: färdigt kök med ljusa skåp",
-        caption: "Ett nytt kök där skåp, arbetsyta och belysning är samordnade för en ren och praktisk helhet.",
+        src: "/images/services/koksrenovering/project-01-sage-compact.webp",
+        alt: "Färdigt kompakt kök med mörkgröna skåp och matplats",
+        caption: "Ett mindre kök där förvaring och arbetsyta utnyttjar hela väggen utan att rummet känns trångt.",
       },
       {
-        src: "/images/home/service-kitchen-result.webp",
-        alt: "Köksrenovering i Göteborg – färdigt resultat",
-        caption: "Färdigt kök efter rivning, installationer och montage – klart att användas direkt.",
+        src: "/images/services/koksrenovering/project-02-family-island.webp",
+        alt: "Färdigt familjekök med köksö och matplats",
+        caption: "Köksö, förvaring och matplats samordnas för en vardag där flera kan använda köket samtidigt.",
       },
       {
-        src: "/images/home/gallery-carpentry-result.webp",
-        alt: "Snickeridetaljer i kök",
-        caption: "Platsanpassade snickeridetaljer som får köket att kännas färdigt in i minsta detalj.",
+        src: "/images/services/koksrenovering/project-03-cream-terracotta.webp",
+        alt: "Färdigt kök med gräddvita skåp och terrakottagolv",
+        caption: "Klassiska luckor och terrakottagolv ger ett varmt kök som passar husets befintliga uttryck.",
       },
       {
-        src: "/images/home/why-site-measurement.webp",
-        alt: "Mätning inför köksrenovering",
-        caption: "Noggrann mätning på plats innan skåp och vitvaror beställs, så att allt passar när montaget börjar.",
+        src: "/images/services/koksrenovering/project-04-charcoal-wood.webp",
+        alt: "Färdigt kök med mörka underskåp och överskåp i trä",
+        caption: "Mörka arbetsytor och träfronter kombineras i ett kök som känns ombonat och används varje dag.",
+      },
+      {
+        src: "/images/services/koksrenovering/project-05-offwhite-narrow.webp",
+        alt: "Smalt färdigt kök med ljusa skåp och rostfri arbetsyta",
+        caption: "Den smala planlösningen får tydliga arbetszoner och gott om förvaring längs ena väggen.",
+      },
+      {
+        src: "/images/services/koksrenovering/project-06-dark-green-townhouse.webp",
+        alt: "Färdigt mörkgrönt kök i radhus med matbord",
+        caption: "Ett mörkgrönt radhuskök där arbetsytan får dagsljus och matplatsen ligger nära.",
+      },
+      {
+        src: "/images/services/koksrenovering/project-07-hall-to-kitchen.webp",
+        alt: "Färdigt kök sett från hallen med matplats och vardagsrum",
+        caption: "Kök, matplats och vardagsrum binds ihop av samma golv och en tydlig passage.",
+      },
+      {
+        src: "/images/services/koksrenovering/project-08-final-inspection.webp",
+        alt: "Slutkontroll av färdigrenoverat kök",
+        caption: "Luckor, anslutningar och arbetsytor kontrolleras innan köket lämnas över.",
       },
     ],
     reviewNames: ["Lars G.", "Anna & Mikael", "Familjen Johansson"],
@@ -423,7 +437,7 @@ export const renovationDetailContent = {
     heroTitle: "Totalentreprenad i Göteborg",
     heroLead:
       "Ett avtal, en kontaktperson, ett ansvar. Vi driver hela din renovering från planering till färdigt resultat – med fast pris och tydlig tidplan.",
-    heroImage: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
+    heroImage: "/images/services/totalentreprenad/hero-hall-kitchen-living.webp",
     heroImageAlt: "Totalentreprenad i Göteborg – färdig samordnad renovering med kök och vardagsrum",
     highlights: [
       ["1 kontakt", "För hela projektet"],
@@ -439,58 +453,48 @@ export const renovationDetailContent = {
       "När arbetet helst ska starta.",
       "Vem som fattar beslut under projektet.",
     ],
-    supportingImage: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
+    supportingImage: "/images/services/totalentreprenad/project-08-team-plans.webp",
     supportingImageAlt: "Totalentreprenad med färdigrenoverat kök och vardagsrum",
     projects: [
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
-        alt: "Färdig samordnad renovering med grönt kök och vardagsrum",
-        caption: "Kök och vardagsrum färdigställda som en sammanhängande helhet med samma golv och ytskikt.",
+        src: "/images/services/totalentreprenad/project-01-open-plan-beige.webp",
+        alt: "Färdig öppen planlösning med ljust kök och vardagsrum",
+        caption: "Kök och vardagsrum färdigställs som en sammanhängande helhet med samma golv och ytskikt.",
       },
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-02-oppen-planlosning.webp",
-        alt: "Färdig öppen planlösning med grått kök, matplats och vardagsrum",
-        caption: "Kök, matplats och vardagsrum samordnade i en praktisk öppen planlösning.",
+        src: "/images/services/totalentreprenad/project-02-rowhouse-ground-floor.webp",
+        alt: "Färdigrenoverat radhus med kök, matplats och vardagsrum",
+        caption: "Entréplanet hålls ihop från kök och matplats till sällskapsyta och passager.",
       },
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-04-kok-matplats.webp",
-        alt: "Färdigrenoverat kök och matplats med vardagsrum i anslutning",
-        caption: "Kök, matplats och angränsande rum har fått ett enhetligt uttryck och gemensam tidplan.",
+        src: "/images/services/totalentreprenad/project-03-gothenburg-classic.webp",
+        alt: "Färdig totalrenovering i äldre Göteborgslägenhet",
+        caption: "Nya ytor och ett nytt kök kombineras med den äldre lägenhetens bevarade detaljer.",
       },
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-05-radhus.webp",
-        alt: "Färdigrenoverat radhus med trappa, kök, matplats och vardagsrum",
-        caption: "En samlad renovering av entréplan där trappa, kök och sällskapsytor hålls ihop.",
+        src: "/images/services/totalentreprenad/project-04-attic-apartment.webp",
+        alt: "Färdigrenoverad vindsvåning med kök och vardagsrum",
+        caption: "Kök och sällskapsyta anpassas till vindsvåningens sneda tak och dagsljus.",
       },
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-06-planering.webp",
-        alt: "Två hantverkare planerar flera installationsmoment utifrån en ritning",
-        caption: "Ritning, bygg, VVS och el stäms av innan väggarna stängs och nästa moment tar vid.",
+        src: "/images/services/totalentreprenad/project-05-townhouse-landing.webp",
+        alt: "Färdigrenoverat radhus sett från trappan mot kök och matplats",
+        caption: "Trappa, kök och matplats får en gemensam plan och ett enhetligt materialval.",
       },
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-11-sekelskifte.webp",
-        alt: "Färdig totalrenovering i äldre lägenhet med kök, matrum och vardagsrum",
-        caption: "Nytt kök och nya ytskikt kombinerade med den äldre lägenhetens bevarade detaljer.",
+        src: "/images/services/totalentreprenad/project-06-blue-island-living.webp",
+        alt: "Färdig helhetsrenovering med blå köksö och vardagsrum",
+        caption: "Köksön blir navet i en öppen planlösning med tydliga ytor för mat och vardag.",
       },
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-12-vindsvaning.webp",
-        alt: "Färdigrenoverad vindsvåning med kök, förvaring och vardagsrum",
-        caption: "Kök, platsbyggd förvaring och sällskapsyta anpassade till vindsvåningens sneda tak.",
+        src: "/images/services/totalentreprenad/project-07-old-meets-new.webp",
+        alt: "Renoverad äldre lägenhet med originaldörrar och nytt kök",
+        caption: "Originaldörrar och äldre snickerier bevaras när kök och ytskikt förnyas.",
       },
       {
-        src: "/images/services/totalentreprenad/totalentreprenad-14-oppning.webp",
-        alt: "Färdig lägenhetsrenovering med öppning mellan kök och vardagsrum",
-        caption: "En bredare öppning knyter ihop köket och vardagsrummet med gemensamt golv och målning.",
-      },
-      {
-        src: "/images/services/totalentreprenad/totalentreprenad-18-overlamning.webp",
-        alt: "Slutstädning inför överlämning av färdigrenoverad lägenhet",
-        caption: "De sista detaljerna och slutstädningen kontrolleras innan den färdiga bostaden lämnas över.",
-      },
-      {
-        src: "/images/services/totalentreprenad/totalentreprenad-20-helhet.webp",
-        alt: "Färdig helhetsrenovering med kök, badrum, hall och vardagsrum",
-        caption: "Kök, badrum, hall och vardagsrum färdigställda inom samma entreprenad och tidplan.",
+        src: "/images/services/totalentreprenad/project-08-team-plans.webp",
+        alt: "Två hantverkare går igenom ritning i en nästan färdig lägenhet",
+        caption: "Yrkesrollerna går igenom ritning och nästa moment innan arbetet fortsätter.",
       },
     ],
     reviewNames: ["Familjen Johansson", "Lars G.", "Katarina S."],

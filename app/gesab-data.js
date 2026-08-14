@@ -13,7 +13,7 @@ export const services = [
     slug: "badrumsrenovering",
     title: "Badrumsrenovering",
     body: "Vi renoverar ditt badrum från rivning till färdig yta – rätt tätskikt, samordnade yrkesroller och en tidplan du kan planera din vardag efter.",
-    image: "/images/home/service-bathroom-warm.webp",
+    image: "/images/services/badrumsrenovering/hero-olive-compact.webp",
     detail: {
       introTitle: "Ett tryggt och vackert badrum som håller i längden",
       intro:
@@ -48,7 +48,7 @@ export const services = [
     slug: "tvattstugsrenovering",
     title: "Tvättstugsrenovering",
     body: "Vi renoverar din tvättstuga till ett praktiskt våtrum – rätt tätskikt, smarta ytor och en tydlig tidplan.",
-    image: "/images/home/why-waterproofing.webp",
+    image: "/images/services/tvattstugsrenovering/hero-sage-compact.webp",
     detail: {
       introTitle: "En tvättstuga som är praktisk, trygg och enkel att sköta",
       intro:
@@ -82,7 +82,7 @@ export const services = [
     slug: "koksrenovering",
     title: "Köksrenovering",
     body: "Vi renoverar ditt kök från planering till montage – allt i rätt ordning, med en kontaktperson och en tydlig tidplan.",
-    image: "/images/home/service-kitchen-result.webp",
+    image: "/images/services/koksrenovering/hero-gothenburg-classic.webp",
     detail: {
       introTitle: "Ett kök som blir klart – i rätt ordning",
       intro:
@@ -116,7 +116,7 @@ export const services = [
     slug: "totalentreprenad",
     title: "Totalentreprenad",
     body: "Ett avtal, en kontaktperson, ett ansvar. Vi driver hela din renovering från planering till färdigt resultat.",
-    image: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
+    image: "/images/services/totalentreprenad/hero-hall-kitchen-living.webp",
     detail: {
       introTitle: "Hela projektet på vårt bord – i stället för ditt",
       intro:
@@ -150,7 +150,7 @@ export const services = [
     slug: "rivningsarbeten",
     title: "Rivningsarbeten",
     body: "Kontrollerad rivning som förbereder nästa steg – säkert, sorterat och klart för återuppbyggnad.",
-    image: "/images/home/service-demolition.webp",
+    image: "/images/services/rivningsarbeten/hero-partition-removal.webp",
     detail: {
       introTitle: "Bra rivning handlar om det som kommer efter",
       intro:
@@ -183,7 +183,7 @@ export const services = [
     slug: "bygg",
     title: "Bygg",
     body: "Byggarbeten för renovering och ombyggnad – utförda i rätt ordning och samordnade med el, VVS och ytskikt.",
-    image: "/images/home/service-total-project.webp",
+    image: "/images/services/bygg/hero-new-doorway-opening.webp",
     detail: {
       introTitle: "Byggarbete som håller – inte bara ser klart ut",
       intro:

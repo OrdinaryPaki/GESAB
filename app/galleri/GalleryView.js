@@ -51,24 +51,24 @@ const mockProjects = [
   },
   {
     id: 7,
-    title: "Ljust badrum",
+    title: "Klassiskt badrum",
     category: "Badrum",
     size: "tall",
-    image: "/images/home/service-bathroom-result.webp",
+    image: "/images/services/badrumsrenovering/project-01-white-classic.webp",
   },
   {
     id: 8,
     title: "Köksrenovering i Göteborg",
     category: "Kök",
     size: "normal",
-    image: "/images/home/gallery-kitchen-result.webp",
+    image: "/images/services/koksrenovering/project-06-dark-green-townhouse.webp",
   },
   {
     id: 9,
     title: "Samordnad totalentreprenad",
     category: "Totalentreprenad",
     size: "normal",
-    image: "/images/home/service-total-project.webp",
+    image: "/images/services/totalentreprenad/project-07-old-meets-new.webp",
   },
 ];
 

@@ -1,4 +1,3 @@
-import { placeholderImages } from "../components/placeholder-images";
 import missionStyles from "./about-mission.module.css";
 import storyStyles from "./about-story.module.css";
 
@@ -53,11 +52,11 @@ export function AboutStorySection() {
           <p>Från badrumsrenovering till bygg och entreprenad – GESAB samordnar yrkesrollerna och håller ihop projektet.</p>
         </div>
         <div className={storyStyles.storyCollage}>
-          <img className={storyStyles.storyPrimaryImage} src={placeholderImages.content} alt="" />
-          <img className={storyStyles.storySecondaryImage} src={placeholderImages.content} alt="" />
-          <img className={storyStyles.storySecondaryImage} src={placeholderImages.content} alt="" />
+          <img className={storyStyles.storyPrimaryImage} src="/images/home/about-team-workshop.webp" alt="Två hantverkare planerar ett badrumsarbete från ritning" />
+          <img className={storyStyles.storySecondaryImage} src="/images/home/why-team-planning.webp" alt="GESAB-teamet samordnar nästa steg på arbetsplatsen" />
+          <img className={storyStyles.storySecondaryImage} src="/images/home/why-final-inspection.webp" alt="Slutkontroll av ett färdigt renoveringsarbete" />
           <article className={storyStyles.quoteCard}>
-            <img src={placeholderImages.round} alt="" />
+            <img src="/images/home/why-site-measurement.webp" alt="Hantverkare mäter på plats inför renovering" />
             <div>
               <blockquote>“Vårt mål är enkelt – tydlig planering, pålitlig service och ett fackmässigt resultat du kan känna dig trygg med.”</blockquote>
               <strong>GESAB</strong>
@@ -93,7 +92,7 @@ export function AboutMissionSection() {
 
         <div className={missionStyles.missionStage}>
           <figure className={missionStyles.missionImage}>
-            <img src={placeholderImages.content} alt="" loading="lazy" decoding="async" />
+            <img src="/images/home/why-waterproofing.webp" alt="Noggrant tätskiktsarbete i ett våtrum" loading="lazy" decoding="async" />
           </figure>
 
           <div className={missionStyles.missionPrinciples}>
