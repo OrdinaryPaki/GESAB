@@ -60,8 +60,23 @@ export function HomePage() {
 function Hero() {
   return (
     <section className="hero">
-      <img className="hero-pattern" src={image.heroPattern} alt="" />
-      <img className="hero-photo" src={image.heroPlumber} alt="Plumber repairing sink" />
+      <img
+        alt=""
+        className="hero-pattern"
+        decoding="async"
+        height="1024"
+        src={image.heroPattern}
+        width="949"
+      />
+      <img
+        alt="Hantverkare arbetar vid en diskho"
+        className="hero-photo"
+        decoding="async"
+        fetchPriority="high"
+        height="1024"
+        src={image.heroPlumber}
+        width="856"
+      />
       <div className="container hero-content">
         <div className="rating-line">
           <span className="rating-pill">GESAB</span>

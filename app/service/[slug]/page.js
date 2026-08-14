@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { services } from "../../gesab-data";
 import { serviceDetailContent } from "../detail-content";
 import { ServiceDetailPageView } from "./ServiceDetailPageView";
+import { createPageMetadata } from "../../seo";
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -17,10 +18,14 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+  const detail = serviceDetailContent[slug];
+
+  return createPageMetadata({
     title: `${service.title} i Göteborg`,
     description: service.body,
-  };
+    path: `/service/${slug}`,
+    image: detail?.heroImage ?? service.image,
+  });
 }
 
 export default async function ServiceDetailPage({ params }) {

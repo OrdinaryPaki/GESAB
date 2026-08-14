@@ -1,8 +1,10 @@
 import "./globals.css";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
+import { createLocalBusinessStructuredData } from "./seo";
+import { siteConfig } from "./site-config";
 
 export const metadata = {
-  metadataBase: new URL("https://www.ges-ab.se"),
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "GESAB - Badrumsrenovering och entreprenad i Göteborg",
     template: "%s | GESAB",
@@ -24,19 +26,16 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
+  const structuredData = JSON.stringify(createLocalBusinessStructuredData()).replaceAll("<", "\\u003c");
+
   return (
     <html lang="sv" data-scroll-behavior="smooth">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body>
         <MobileNavigationEnhancement />
         {children}
+        <script dangerouslySetInnerHTML={{ __html: structuredData }} type="application/ld+json" />
       </body>
     </html>
   );

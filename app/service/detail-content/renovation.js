@@ -24,52 +24,70 @@ export const renovationDetailContent = {
       "Badrumsrenovering: tätskikt rollas på väggen och skarvarna i golvet är tejpade före plattsättning",
     projects: [
       {
-        src: "/images/home/gallery-bathroom-result.webp",
-        alt: "Badrumsrenovering: färdigt badrum med mörkgrönt stavformat kakel, duschvägg i glas, kommod i ek och terrazzoklinker",
+        src: "/images/services/badrumsrenovering/badrum-01-gront-terrazzo.webp",
+        alt: "Badrumsrenovering med mörkgrönt kakel, kommod i ek och terrazzogolv",
         caption:
-          "Stavformat kakel och terrazzoklinker. Duschen fick glasvägg i stället för draperi, vilket håller golvytan fri i ett litet badrum.",
+          "Mörkgrönt kakel, kommod i ek och terrazzogolv ger ett varmt uttryck i ett mindre badrum.",
       },
       {
-        src: "/images/home/gallery-tiling-progress.webp",
-        alt: "Plattsättare sätter storformatsplattor mot tätskiktet med tandspackel och vattenpass",
+        src: "/images/services/badrumsrenovering/badrum-04-vitt-terrazzo.webp",
+        alt: "Ljust färdigt badrum med vitt kakel, kommod i trä och mönstrat terrazzogolv",
         caption:
-          "Plattsättning mot färdigt och kontrollerat tätskikt. Varje rad stäms av mot vattenpass innan nästa sätts.",
+          "Vitt kakel och ett levande terrazzogolv gör rummet ljust utan att kännas sterilt.",
       },
       {
-        src: "/images/home/gallery-shower-detail.webp",
-        alt: "Infälld nisch i duschväggen, kaklad i samma storformatsplattor som resten av väggen",
+        src: "/images/services/badrumsrenovering/badrum-05-salviagron-dusch.webp",
+        alt: "Smalt färdigt badrum med salviagrönt kakel i duschen och grå klinker",
         caption:
-          "Infälld nisch i duschen. Nischen byggs och tätas i samma moment som väggen, så att tätskiktet blir sammanhängande.",
+          "Den salviagröna duschdelen ger färg samtidigt som den smala planlösningen hålls enkel.",
       },
       {
-        src: "/images/home/service-bathroom-result.webp",
-        alt: "Ljust badrum med storformatsplattor och vägghängd wc",
+        src: "/images/services/badrumsrenovering/badrum-08-badkar-familj.webp",
+        alt: "Färdigt familjebadrum med badkar, kommod i ek och ljusgrå klinker",
         caption:
-          "Ett ljust och rymligt badrum med storformatsplattor och vägghängd wc. All rördragning är dold i vägg för ett rent intryck.",
+          "Ett praktiskt familjebadrum med badkar, bra förvaring och slitstarka ljusgrå ytor.",
       },
       {
-        src: "/images/home/why-waterproofing.webp",
-        alt: "Applicering av tätskikt på vägg och golv",
+        src: "/images/services/badrumsrenovering/badrum-09-mork-dusch.webp",
+        alt: "Färdigt badrum med mörkgrå dusch, kommod i trä och frostat fönster",
         caption:
-          "Noggrant underarbete är A och O. Här rollas tätskiktet på väggen och alla skarvar i golvet tejpas omsorgsfullt före plattsättning.",
+          "Mörkare kakel kring duschen skapar djup medan kommoden i trä mjukar upp helheten.",
       },
       {
-        src: "/images/home/about-plumbing-detail.webp",
-        alt: "VVS-installation och rördragning",
+        src: "/images/services/badrumsrenovering/badrum-10-snedtak.webp",
+        alt: "Färdigt vindsbadrum med snedtak, takfönster och duschvägg i glas",
         caption:
-          "Dolda rördragningar och säkra VVS-installationer utförda av certifierade montörer. Allt förbereds innan ytskikten kommer på plats.",
+          "Snedtak och takfönster tas till vara i ett kompakt vindsbadrum med en lugn materialpalett.",
       },
       {
-        src: "/images/home/why-site-measurement.webp",
-        alt: "Mätning och planering på plats",
+        src: "/images/services/badrumsrenovering/badrum-12-ljusblatt.webp",
+        alt: "Färdigt badrum med ljusblått kakel, duschhörna och grå klinker",
         caption:
-          "Noggrann mätning och planering på plats innan arbetet drar igång, så att alla mått stämmer när inredningen ska monteras.",
+          "Ljusblått kakel och en enkel duschhörna ger ett mjukt uttryck i det mindre badrummet.",
       },
       {
-        src: "/images/home/service-demolition.webp",
-        alt: "Rivning av gammalt badrum",
+        src: "/images/services/badrumsrenovering/badrum-14-dammrosa.webp",
+        alt: "Färdigt badrum med dämpat rosa kakel, ljus kommod och terrazzogolv",
         caption:
-          "Kontrollerad rivning av det gamla badrummet. Vi ser till att underlaget är helt rent och redo för återuppbyggnad.",
+          "Dämpat rosa kakel kombineras med en neutral kommod och ett tåligt terrazzogolv.",
+      },
+      {
+        src: "/images/services/badrumsrenovering/badrum-17-vitt-klassiskt.webp",
+        alt: "Klassiskt färdigt badrum med vitt kakel, mörkt klinkergolv och äldre fönster",
+        caption:
+          "Klassiskt vitt kakel och mörkt klinkergolv passar den äldre lägenhetens bevarade detaljer.",
+      },
+      {
+        src: "/images/services/badrumsrenovering/badrum-18-sand-ek.webp",
+        alt: "Färdigt sandfärgat badrum med kommod i ek och dusch bakom glas",
+        caption:
+          "Sandfärgade ytor och ek skapar ett varmt, avskalat badrum med gott om förvaring.",
+      },
+      {
+        src: "/images/services/badrumsrenovering/badrum-19-tegelrott.webp",
+        alt: "Färdigt badrum med tegelrött kakel i duschen, mörk kommod och terrazzogolv",
+        caption:
+          "Tegelrött kakel ger duschen karaktär och möter en mörk kommod och ett mönstrat golv.",
       },
     ],
     reviewNames: ["Anna & Mikael", "Katarina S.", "Familjen Johansson"],
@@ -405,8 +423,8 @@ export const renovationDetailContent = {
     heroTitle: "Totalentreprenad i Göteborg",
     heroLead:
       "Ett avtal, en kontaktperson, ett ansvar. Vi driver hela din renovering från planering till färdigt resultat – med fast pris och tydlig tidplan.",
-    heroImage: "/images/home/service-total-project.webp",
-    heroImageAlt: "Totalentreprenad i Göteborg – större renoveringsprojekt under samordning",
+    heroImage: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
+    heroImageAlt: "Totalentreprenad i Göteborg – färdig samordnad renovering med kök och vardagsrum",
     highlights: [
       ["1 kontakt", "För hela projektet"],
       ["Fast pris", "Innan vi startar"],
@@ -421,28 +439,58 @@ export const renovationDetailContent = {
       "När arbetet helst ska starta.",
       "Vem som fattar beslut under projektet.",
     ],
-    supportingImage: "/images/home/service-total-project.webp",
-    supportingImageAlt: "Totalentreprenad: flera moment samordnade i samma renovering",
+    supportingImage: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
+    supportingImageAlt: "Totalentreprenad med färdigrenoverat kök och vardagsrum",
     projects: [
       {
-        src: "/images/home/service-total-project.webp",
-        alt: "Totalentreprenad: större renoveringsprojekt",
-        caption: "Större renoveringar där bygg, installationer och ytskikt samordnas under samma ansvar.",
+        src: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
+        alt: "Färdig samordnad renovering med grönt kök och vardagsrum",
+        caption: "Kök och vardagsrum färdigställda som en sammanhängande helhet med samma golv och ytskikt.",
       },
       {
-        src: "/images/home/gallery-bathroom-result.webp",
-        alt: "Badrum som del av totalentreprenad",
-        caption: "Badrum kan ingå i samma avtal när flera rum renoveras samtidigt.",
+        src: "/images/services/totalentreprenad/totalentreprenad-02-oppen-planlosning.webp",
+        alt: "Färdig öppen planlösning med grått kök, matplats och vardagsrum",
+        caption: "Kök, matplats och vardagsrum samordnade i en praktisk öppen planlösning.",
       },
       {
-        src: "/images/home/gallery-kitchen-result.webp",
-        alt: "Kök som del av totalentreprenad",
-        caption: "Kök och angränsande ytor planeras i samma tidplan för färre störningar.",
+        src: "/images/services/totalentreprenad/totalentreprenad-04-kok-matplats.webp",
+        alt: "Färdigrenoverat kök och matplats med vardagsrum i anslutning",
+        caption: "Kök, matplats och angränsande rum har fått ett enhetligt uttryck och gemensam tidplan.",
       },
       {
-        src: "/images/home/service-demolition.webp",
-        alt: "Rivning inför totalentreprenad",
-        caption: "Kontrollerad rivning som första steg – så att återbyggnaden kan starta utan väntetid.",
+        src: "/images/services/totalentreprenad/totalentreprenad-05-radhus.webp",
+        alt: "Färdigrenoverat radhus med trappa, kök, matplats och vardagsrum",
+        caption: "En samlad renovering av entréplan där trappa, kök och sällskapsytor hålls ihop.",
+      },
+      {
+        src: "/images/services/totalentreprenad/totalentreprenad-06-planering.webp",
+        alt: "Två hantverkare planerar flera installationsmoment utifrån en ritning",
+        caption: "Ritning, bygg, VVS och el stäms av innan väggarna stängs och nästa moment tar vid.",
+      },
+      {
+        src: "/images/services/totalentreprenad/totalentreprenad-11-sekelskifte.webp",
+        alt: "Färdig totalrenovering i äldre lägenhet med kök, matrum och vardagsrum",
+        caption: "Nytt kök och nya ytskikt kombinerade med den äldre lägenhetens bevarade detaljer.",
+      },
+      {
+        src: "/images/services/totalentreprenad/totalentreprenad-12-vindsvaning.webp",
+        alt: "Färdigrenoverad vindsvåning med kök, förvaring och vardagsrum",
+        caption: "Kök, platsbyggd förvaring och sällskapsyta anpassade till vindsvåningens sneda tak.",
+      },
+      {
+        src: "/images/services/totalentreprenad/totalentreprenad-14-oppning.webp",
+        alt: "Färdig lägenhetsrenovering med öppning mellan kök och vardagsrum",
+        caption: "En bredare öppning knyter ihop köket och vardagsrummet med gemensamt golv och målning.",
+      },
+      {
+        src: "/images/services/totalentreprenad/totalentreprenad-18-overlamning.webp",
+        alt: "Slutstädning inför överlämning av färdigrenoverad lägenhet",
+        caption: "De sista detaljerna och slutstädningen kontrolleras innan den färdiga bostaden lämnas över.",
+      },
+      {
+        src: "/images/services/totalentreprenad/totalentreprenad-20-helhet.webp",
+        alt: "Färdig helhetsrenovering med kök, badrum, hall och vardagsrum",
+        caption: "Kök, badrum, hall och vardagsrum färdigställda inom samma entreprenad och tidplan.",
       },
     ],
     reviewNames: ["Familjen Johansson", "Lars G.", "Katarina S."],

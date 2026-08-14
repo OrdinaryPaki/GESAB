@@ -10,6 +10,7 @@ import { contactInfo, testimonials } from "../../gesab-data";
 import { ServiceQuoteForm } from "./ServiceQuoteForm";
 import { ProjectGallery } from "./ProjectGallery";
 import styles from "./service-detail-styles.js";
+import { siteConfig } from "../../site-config";
 
 const QUOTE_ANCHOR = "boka";
 
@@ -22,11 +23,7 @@ function buildStructuredData(service, detail) {
         name: service.title,
         description: service.detail.intro,
         areaServed: "Göteborg med omnejd",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Göteborgs Entreprenad Service AB",
-          telephone: "+46707299633",
-        },
+        provider: { "@id": `${siteConfig.url}/#business` },
       },
       {
         "@type": "FAQPage",

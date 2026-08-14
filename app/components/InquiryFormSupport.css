@@ -1,0 +1,21 @@
+.inquiry-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.inquiry-form-error {
+  width: 100%;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid #b42318;
+  border-radius: 8px;
+  background: #fff1f0;
+  color: #8f1d14;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}

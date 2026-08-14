@@ -3,7 +3,9 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { ServiceSelect } from "../components/ServiceSelect";
 import { CtaButton } from "../components/CtaButton";
+import { InquiryFormError, InquiryHoneypot } from "../components/InquiryFormSupport";
 import { serviceSelectOptions } from "../gesab-data";
+import { createInquirySubmissionSession } from "../lib/inquiries/submit-inquiry.mjs";
 import styles from "./contact-form.module.css";
 import "./ContactForm.css";
 
@@ -11,14 +13,17 @@ const MESSAGE_MAX_HEIGHT = 280;
 
 export function ContactForm() {
   const messageRef = useRef(null);
+  const submissionSessionRef = useRef(null);
+  submissionSessionRef.current ??= createInquirySubmissionSession();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     service: "",
     message: "",
+    website: "",
   });
-  const [status, setStatus] = useState("idle"); // idle, submitting, success
+  const [status, setStatus] = useState("idle");
 
   useLayoutEffect(() => {
     const el = messageRef.current;
@@ -32,21 +37,41 @@ export function ContactForm() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    submissionSessionRef.current.invalidate();
+    setStatus((current) => current === "error" ? "idle" : current);
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleServiceChange = (value) => {
+    submissionSessionRef.current.invalidate();
+    setStatus((current) => current === "error" ? "idle" : current);
     setFormData((prev) => ({ ...prev, service: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (status === "submitting") return;
     setStatus("submitting");
-    
-    // Simulate API call
-    setTimeout(() => {
+
+    try {
+      await submissionSessionRef.current.submit({ source: "contact", ...formData });
       setStatus("success");
-    }, 1000);
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  const resetForm = () => {
+    submissionSessionRef.current.invalidate();
+    setStatus("idle");
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      service: "",
+      message: "",
+      website: "",
+    });
   };
 
   if (status === "success") {
@@ -62,7 +87,7 @@ export function ContactForm() {
         <button 
           type="button"
           className="success-reset-button" 
-          onClick={() => { setStatus("idle"); setFormData({ firstName: "", lastName: "", email: "", service: "", message: "" }); }}
+          onClick={resetForm}
         >
           Skicka ett till meddelande
         </button>
@@ -123,8 +148,10 @@ export function ContactForm() {
               required
             />
           </label>
+          <InquiryHoneypot value={formData.website} onChange={handleChange} />
         </div>
         <div className="contact-form-actions">
+          <InquiryFormError visible={status === "error"} />
           <CtaButton type="submit" disabled={status === "submitting"}>
             {status === "submitting" ? "Skickar..." : "Skicka förfrågan"}
           </CtaButton>

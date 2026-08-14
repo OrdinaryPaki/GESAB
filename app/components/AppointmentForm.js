@@ -2,19 +2,24 @@
 
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { CtaButton } from "./CtaButton";
+import { InquiryFormError, InquiryHoneypot } from "./InquiryFormSupport";
+import { createInquirySubmissionSession } from "../lib/inquiries/submit-inquiry.mjs";
 import "./AppointmentForm.css";
 
 const MESSAGE_MAX_HEIGHT = 280;
 
 export function AppointmentForm() {
   const messageRef = useRef(null);
+  const submissionSessionRef = useRef(null);
+  submissionSessionRef.current ??= createInquirySubmissionSession();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
+    website: "",
   });
-  const [status, setStatus] = useState("idle"); // idle, submitting, success
+  const [status, setStatus] = useState("idle");
 
   const adjustMessageHeight = useCallback(() => {
     const el = messageRef.current;
@@ -33,17 +38,28 @@ export function AppointmentForm() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    submissionSessionRef.current.invalidate();
+    setStatus((current) => current === "error" ? "idle" : current);
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (status === "submitting") return;
     setStatus("submitting");
-    
-    // Simulate API call
-    setTimeout(() => {
+
+    try {
+      await submissionSessionRef.current.submit({ source: "footer", ...formData });
       setStatus("success");
-    }, 1000);
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  const resetForm = () => {
+    submissionSessionRef.current.invalidate();
+    setStatus("idle");
+    setFormData({ name: "", email: "", phone: "", message: "", website: "" });
   };
 
   return (
@@ -98,6 +114,8 @@ export function AppointmentForm() {
             required
           />
         </label>
+        <InquiryHoneypot value={formData.website} onChange={handleChange} />
+        <InquiryFormError visible={status === "error"} />
         <div className="appointment-form-actions">
           <CtaButton variant="yellow" type="submit" disabled={status === "submitting"}>
             {status === "submitting" ? "Skickar..." : "Skicka förfrågan"}
@@ -113,7 +131,7 @@ export function AppointmentForm() {
         </div>
         <h3>Tack för din förfrågan!</h3>
         <p>Vi återkommer till dig så snart vi kan.</p>
-        <CtaButton variant="yellow" className="success-reset-button" onClick={() => { setStatus("idle"); setFormData({ name: "", email: "", phone: "", message: "" }); }}>
+        <CtaButton variant="yellow" className="success-reset-button" onClick={resetForm}>
           Skicka ett till meddelande
         </CtaButton>
       </div>

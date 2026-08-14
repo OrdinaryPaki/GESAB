@@ -4,12 +4,15 @@ import { Header } from "../components/Header";
 import { services } from "../gesab-data";
 import { ServiceGrid } from "./ServiceGrid";
 import styles from "./service-page.module.css";
+import { createPageMetadata } from "../seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Tjänster för badrum, bygg och renovering i Göteborg",
   description:
     "Se GESABs tjänster inom badrumsrenovering, tvättstugsrenovering, köksrenovering, totalentreprenad, rivning och bygg i Göteborg.",
-};
+  path: "/service",
+  image: "/images/home/service-total-project.webp",
+});
 
 const serviceIndexCopy = {
   badrumsrenovering: "Från rivning till färdig yta – med en kontakt genom hela projektet.",

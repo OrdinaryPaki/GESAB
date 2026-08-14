@@ -8,6 +8,7 @@ import { LocationIcon } from "./contact-icons";
 import { ContactForm } from "./ContactForm";
 import { ContactMap } from "./ContactMap";
 import styles from "./contact-styles.js";
+import { createPageMetadata } from "../seo";
 
 const contactFaqItems = [
   {
@@ -32,11 +33,13 @@ const contactFaqItems = [
   },
 ];
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Kontakta GESAB",
   description:
     "Kontakta Göteborgs Entreprenad Service AB för offert eller rådgivning kring badrumsrenovering, köksrenovering, bygg och entreprenad i Göteborg.",
-};
+  path: "/contact",
+  image: "/images/home/why-site-measurement.webp",
+});
 
 export default function ContactPage() {
   return (

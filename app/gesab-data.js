@@ -1,36 +1,19 @@
 export const image = {
-  heroPattern:
-    "https://framerusercontent.com/images/103ND4j7PijC4HeTNa6Ypuu0zc.jpg?scale-down-to=1024&width=3144&height=3392",
-  heroPlumber:
-    "https://framerusercontent.com/images/XjlHJTrjfARAHBuipgxM3GkuIg.jpg?scale-down-to=1024&width=2836&height=3392",
-  aboutPattern:
-    "https://framerusercontent.com/images/i1Q21Y5um9Mhlr1tWmkdbhpsg4.jpg?width=1244&height=1252",
-  ctaBg:
-    "https://framerusercontent.com/images/mhxhhhWWPx2n0wtFeA22WW7g20.jpg?scale-down-to=2048&width=5760&height=3440",
-  badges: [
-    "https://framerusercontent.com/images/q05e4fwr8su4jydDalYSvEwJDgA.jpg?width=386&height=385",
-  ],
+  heroPattern: "/images/site/hero-pattern.jpg",
+  heroPlumber: "/images/site/hero-plumber.jpg",
+  aboutPattern: "/images/site/about-pattern.jpg",
+  ctaBg: "/images/site/contact-band-background.jpg",
+  badges: ["/images/site/trust-badge.jpg"],
 };
 
-export const contactInfo = {
-  company: "Göteborgs Entreprenad Service AB",
-  shortName: "GESAB",
-  addressLine: "Solstrålegatan 6, 418 43 Göteborg",
-  phonePrimary: "0707 299 633",
-  phoneSecondary: "0760 50 44 08",
-  phonePrimaryHref: "tel:+46707299633",
-  phoneSecondaryHref: "tel:+46760504408",
-  email: "arijana@ges-ab.se",
-  emailHref: "mailto:arijana@ges-ab.se",
-};
+export { contactInfo } from "./site-config";
 
 export const services = [
   {
     slug: "badrumsrenovering",
     title: "Badrumsrenovering",
     body: "Vi renoverar ditt badrum från rivning till färdig yta – rätt tätskikt, samordnade yrkesroller och en tidplan du kan planera din vardag efter.",
-    image:
-      "https://framerusercontent.com/images/DfUcNfyHmH7Do3MYCSM2HonZBbc.jpg?scale-down-to=512&width=1048&height=1024",
+    image: "/images/home/service-bathroom-warm.webp",
     detail: {
       introTitle: "Ett tryggt och vackert badrum som håller i längden",
       intro:
@@ -133,7 +116,7 @@ export const services = [
     slug: "totalentreprenad",
     title: "Totalentreprenad",
     body: "Ett avtal, en kontaktperson, ett ansvar. Vi driver hela din renovering från planering till färdigt resultat.",
-    image: "/images/home/service-total-project.webp",
+    image: "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
     detail: {
       introTitle: "Hela projektet på vårt bord – i stället för ditt",
       intro:
@@ -241,22 +224,22 @@ export const team = [
   {
     name: "VVS-montörer",
     role: "VVS och våtrum",
-    image: "https://framerusercontent.com/images/Fo2tjIRVMHEIiHhnDrtcHCe1xo.jpg?scale-down-to=1024&width=1128&height=1356",
+    image: "/images/team/vvs-montor.jpg",
   },
   {
     name: "Plattsättare",
     role: "Kakel och tätskikt",
-    image: "https://framerusercontent.com/images/KjYQEry0UtGyS4N9UsQON0lJ64.jpg?scale-down-to=1024&width=1128&height=1356",
+    image: "/images/team/plattsattare.jpg",
   },
   {
     name: "Elektriker",
     role: "El i renovering",
-    image: "https://framerusercontent.com/images/WqzXjFVjyDC9jz9EL6KsdLGvC8.jpg?scale-down-to=1024&width=1128&height=1356",
+    image: "/images/team/elektriker.jpg",
   },
   {
     name: "Snickare och målare",
     role: "Bygg och målning",
-    image: "https://framerusercontent.com/images/xHtTgxQkKG5vAwtgaBoMxlrSjO8.jpg?scale-down-to=1024&width=1128&height=1356",
+    image: "/images/team/snickare-malare.jpg",
   },
 ];
 

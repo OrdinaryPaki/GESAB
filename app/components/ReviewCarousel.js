@@ -39,7 +39,6 @@ export function ReviewCarousel({ items, className = "", cardClassName = "" }) {
 
     const updateActive = () => {
       setActiveIndex(getActiveIndex(scroller));
-      // Use scrollWidth > clientWidth with a small threshold to account for rounding errors
       setCanScroll(scroller.scrollWidth > scroller.clientWidth + 5);
     };
 
@@ -61,7 +60,7 @@ export function ReviewCarousel({ items, className = "", cardClassName = "" }) {
 
   useEffect(() => {
     if (!canScroll) return;
-    
+
     const interval = setInterval(() => {
       const nextIndex = (activeIndex + 1) % items.length;
       scrollToIndex(nextIndex);
