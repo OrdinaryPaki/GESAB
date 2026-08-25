@@ -65,7 +65,7 @@
 }
 :global(#contact-page) :global(.contact-info-section .section-title h2) {
   margin: 0 auto;
-  font-family: "Contact Outfit", Outfit, sans-serif;
+  font-family: var(--font-heading);
   font-size: 48px;
   font-weight: 600;
   letter-spacing: -0.48px;
@@ -76,8 +76,8 @@
 }
 :global(#contact-page) :global(.contact-info-section .section-title p) {
   margin: 14px auto 0;
-  color: #3b3b3b;
-  font-family: "Contact Inter", Inter, sans-serif;
+  color: var(--muted);
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
@@ -98,7 +98,7 @@
   gap: 20px;
   border-radius: 16px;
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
   padding: 44px 32px;
   text-align: center;
 }
@@ -109,8 +109,8 @@
   flex: 0 0 auto;
   place-items: center;
   border-radius: 999px;
-  background: #f5f7fa;
-  color: #fdbc0d;
+  background: var(--soft);
+  color: var(--yellow);
 }
 :global(#contact-page) :global(.contact-card-row svg) {
   width: 24px;
@@ -119,14 +119,14 @@
 }
 :global(#contact-page) :global(.contact-card-row h3) {
   margin: 0;
-  font-family: "Contact Inter", Inter, sans-serif;
+  font-family: var(--font-body);
   font-size: 20px;
   font-weight: 600;
   line-height: 34px;
 }
 :global(#contact-page) :global(.contact-card-row p) {
   margin: -12px 0 0;
-  font-family: "Contact Inter", Inter, sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
@@ -154,13 +154,11 @@
 .map :global(.leaflet-container) {
   width: 100%;
   height: 100%;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   background: #f8f9fa;
 }
 .map :global(.leaflet-tile) {
-  /* Fixes white grid lines between tiles on some screens */
-  transform: translate3d(0, 0, 0);
-  image-rendering: -webkit-optimize-contrast;
+  /* No special transforms, let Leaflet handle it to avoid missing tiles */
 }
 .map :global(.leaflet-div-icon) {
   background: transparent;
@@ -182,7 +180,7 @@
 .map :global(.leaflet-control-attribution) {
   max-width: min(280px, 55%);
   font-size: 10px;
-  background: rgba(255, 255, 255, 0.82);
+  background: color-mix(in srgb, var(--white) 82%, transparent);
 }
 .resetButton {
   position: absolute;
@@ -196,11 +194,11 @@
   padding: 0 16px;
   border: 0;
   border-radius: 999px;
-  background: white;
+  background: var(--white);
   color: var(--black);
   box-shadow: 0 8px 24px rgba(3, 3, 3, 0.12);
   cursor: pointer;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -228,7 +226,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(253, 188, 13, 0.35);
+  background: var(--blue-a35);
   transform: translateX(-50%);
   animation: markerPulse 2s ease-out infinite;
 }
@@ -240,9 +238,9 @@
   place-items: center;
   width: 40px;
   height: 40px;
-  border: 3px solid white;
+  border: 3px solid var(--white);
   border-radius: 50% 50% 50% 4px;
-  background: var(--yellow);
+  background: var(--blue);
   box-shadow: 0 10px 24px rgba(3, 3, 3, 0.28);
   transform: translateX(-50%) rotate(-45deg);
 }
@@ -250,7 +248,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--black);
+  background: var(--white);
   transform: rotate(45deg);
 }
 @keyframes markerPulse {

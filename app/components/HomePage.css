@@ -9,7 +9,7 @@
 .section-title h2 {
   max-width: 560px;
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
@@ -26,7 +26,7 @@
 
 .section-title .light,
 .section-title h2.light {
-  color: white;
+  color: var(--on-blue);
 }
 
 @media (max-width: 980px) {

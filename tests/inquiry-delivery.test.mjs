@@ -8,10 +8,10 @@ import {
 
 const contactInfo = {
   company: "Göteborgs Entreprenad Service AB",
-  addressLine: "Solstrålegatan 6, 418 43 Göteborg",
+  addressLine: "Östergärde Industriväg 39, 417 29 Göteborg",
   phonePrimary: "0707 299 633",
   phonePrimaryHref: "tel:+46707299633",
-  email: "arijana@ges-ab.se",
+  email: "kontakt@ges-ab.se",
 };
 
 const validInquiry = {
@@ -38,7 +38,7 @@ test("sends internal and customer messages with separate stable idempotency keys
   await deliverInquiry(resend, validInquiry, { contactInfo });
 
   assert.equal(sent.length, 2);
-  assert.equal(sent[0][0].to, "arijana@ges-ab.se");
+  assert.equal(sent[0][0].to, "kontakt@ges-ab.se");
   assert.equal(sent[0][0].replyTo, "anna@example.com");
   assert.equal(
     sent[0][1].idempotencyKey,

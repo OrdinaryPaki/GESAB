@@ -194,7 +194,7 @@
 /* Email Body Area */
 .emailBody {
   padding: 40px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.6;
   color: #333;
@@ -376,7 +376,7 @@
 }
 
 .macWindow.dark .summaryCard {
-  background-color: rgba(22, 129, 255, 0.15);
+  background-color: var(--blue-a15);
   border-left-color: #409cff;
 }
 

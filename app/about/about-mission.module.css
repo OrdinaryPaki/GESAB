@@ -159,7 +159,7 @@
 
 .missionSection {
   padding: 160px 0 120px;
-  background: white;
+  background: var(--white);
 }
 
 .missionInner {
@@ -196,7 +196,7 @@
   margin: 0;
   max-width: 14ch;
   text-align: left;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: clamp(36px, 4vw, 48px);
   font-weight: 600;
   line-height: 1.1;
@@ -256,7 +256,7 @@
   padding: 36px 28px;
   border-radius: var(--radius);
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
   transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -271,7 +271,7 @@
   place-items: center;
   margin-bottom: auto;
   border-radius: 50%;
-  background: white;
+  background: var(--white);
   color: var(--blue);
   flex-shrink: 0;
 }
@@ -285,7 +285,7 @@
 
 .missionPrinciple h3 {
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
@@ -295,7 +295,7 @@
   margin: 0;
   font-size: 15px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.92);
+  color: color-mix(in srgb, var(--on-blue) 92%, transparent);
 }
 
 :global(#about-page):global(.about-animations-ready) .missionStage {

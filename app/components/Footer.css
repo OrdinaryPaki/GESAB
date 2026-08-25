@@ -2,15 +2,15 @@
 
 .footer .logo-mark {
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
 }
 
 .footer {
   padding: 100px 0 40px;
   border-top: 4px solid var(--blue);
-  background: var(--soft);
+  background: var(--footer-bg, var(--soft));
   color: var(--text);
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }
 
 .footer-grid {
@@ -46,14 +46,14 @@
   justify-content: center;
   border-radius: 999px;
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
   transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
 }
 
 .socials a:hover,
 .socials a:focus-visible {
   background: var(--yellow);
-  color: black;
+  color: var(--on-yellow);
   transform: translateY(-3px);
 }
 
@@ -72,7 +72,7 @@
 .footer-list span {
   margin-bottom: 8px;
   color: var(--text);
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.7;

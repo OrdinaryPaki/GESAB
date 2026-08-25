@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   min-height: 822px;
-  color: white;
+  color: var(--white);
 }
 
 .contact-band-bg,
@@ -52,7 +52,7 @@
 .contact-copy h2 {
   max-width: 443px;
   margin: 14px 0 293px;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 72px;
   font-weight: 600;
   line-height: 1.2;
@@ -81,7 +81,7 @@
   box-sizing: content-box;
   border-radius: 999px;
   background: var(--blue);
-  color: white;
+  color: var(--white);
   fill: currentColor;
 }
 

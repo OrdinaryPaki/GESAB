@@ -27,23 +27,23 @@
 
 .cta-button-yellow {
   --cta-bg: var(--yellow);
-  --cta-color: black;
+  --cta-color: var(--on-yellow);
   --cta-hover-bg: var(--black);
-  --cta-hover-color: white;
+  --cta-hover-color: var(--on-black);
 }
 
 .cta-button-blue {
   --cta-bg: var(--blue);
-  --cta-color: white;
+  --cta-color: var(--on-blue);
   --cta-hover-bg: var(--black);
-  --cta-hover-color: white;
+  --cta-hover-color: var(--on-black);
 }
 
 .cta-button-dark {
   --cta-bg: var(--black);
-  --cta-color: white;
+  --cta-color: var(--on-black);
   --cta-hover-bg: var(--blue);
-  --cta-hover-color: white;
+  --cta-hover-color: var(--on-blue);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -57,7 +57,7 @@
 .cta-button:focus-visible {
   background-size: 100% 100%;
   color: var(--cta-hover-color);
-  outline: 3px solid rgba(22, 129, 255, 0.35);
+  outline: 3px solid var(--blue-a35);
   outline-offset: 3px;
   box-shadow: none;
 }

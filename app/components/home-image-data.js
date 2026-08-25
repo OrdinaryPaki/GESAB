@@ -24,6 +24,11 @@ export const homeImages = {
       alt: "Färdigrenoverat badrum med varm beige sten och kommod i ek",
       ...serviceImageDimensions,
     },
+    altanbygge: {
+      src: "/images/home/service-altan.png",
+      alt: "Nybyggd altan i trä med räcke och uteplats",
+      ...serviceImageDimensions,
+    },
     tvattstugsrenovering: {
       src: "/images/home/service-laundry-compact.webp",
       alt: "Färdigrenoverad kompakt tvättstuga med arbetsbänk och förvaring",

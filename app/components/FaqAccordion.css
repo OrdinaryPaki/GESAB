@@ -65,7 +65,7 @@
 .faq-item.open .faq-toggle {
   background: var(--blue);
   border-color: var(--blue);
-  color: white;
+  color: var(--on-blue);
   transform: rotate(180deg);
 }
 
@@ -74,7 +74,7 @@
 }
 
 .faq-question:focus-visible {
-  outline: 3px solid rgba(22, 129, 255, 0.35);
+  outline: 3px solid var(--blue-a35);
   outline-offset: 4px;
 }
 

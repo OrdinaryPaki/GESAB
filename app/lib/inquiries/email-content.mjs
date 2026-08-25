@@ -1,6 +1,8 @@
+import { siteConfig } from "../../site-config.js";
 import { SERVICE_TITLES } from "./constants.mjs";
 
-const WEBSITE_URL = "https://www.ges-ab.se";
+const WEBSITE_URL = siteConfig.url;
+const SHORT_NAME = siteConfig.shortName;
 
 function escapeHtml(value) {
   return String(value)
@@ -47,12 +49,12 @@ function internalSubject(inquiry, title, now) {
 
 function customerSubject(inquiry, title) {
   if (inquiry.source === "contact") {
-    return `Tack för din förfrågan gällande ${title} - GESAB`;
+    return `Tack för din förfrågan gällande ${title} - ${SHORT_NAME}`;
   }
   if (inquiry.source === "service") {
-    return `Tack för din offertförfrågan gällande ${title} - GESAB`;
+    return `Tack för din offertförfrågan gällande ${title} - ${SHORT_NAME}`;
   }
-  return "Tack för din förfrågan - GESAB";
+  return `Tack för din förfrågan - ${SHORT_NAME}`;
 }
 
 function row(label, value) {
@@ -108,7 +110,7 @@ function customerBody(inquiry, title, contactInfo) {
     WEBSITE_URL,
   ].join("\n");
 
-  const html = `<!doctype html><html lang="sv"><body style="margin:0;background:#f4f6f8;font-family:Arial,sans-serif;color:#142033"><div style="max-width:640px;margin:0 auto;padding:32px 20px"><div style="background:#fff;border-radius:12px;padding:32px"><div style="margin:0 0 24px;font-size:28px;font-weight:800;letter-spacing:-1px">GESAB</div><h1 style="margin:0 0 20px;font-size:26px">Tack för din förfrågan!</h1><p>Hej ${escapeHtml(firstName)},</p><p>Vi har tagit emot din förfrågan${title ? ` gällande <strong>${escapeHtml(title)}</strong>` : ""}. Vi uppskattar att du vänder dig till oss på GESAB för ditt kommande projekt.</p><p>Vi går nu igenom dina uppgifter och återkommer inom kort för att diskutera nästa steg.</p><div style="margin:28px 0;padding:20px;border-radius:10px;background:#f8fafc"><p style="margin:0 0 14px">Har du frågor redan nu? Tveka inte att höra av dig.</p><a href="${safePhoneHref}" style="display:inline-block;padding:12px 18px;border-radius:8px;background:#172033;color:#fff;text-decoration:none;font-weight:700">Ring oss: ${escapeHtml(contactInfo.phonePrimary)}</a></div><div style="padding-top:20px;border-top:1px solid #e5e7eb;color:#596579;font-size:14px"><p><strong>${escapeHtml(contactInfo.company)}</strong><br>${escapeHtml(contactInfo.addressLine)}</p><p><a href="mailto:${safeEmail}" style="color:#0b63ce">${safeEmail}</a> · ${escapeHtml(contactInfo.phonePrimary)}</p><p><a href="${WEBSITE_URL}" style="color:#0b63ce">www.ges-ab.se</a></p></div></div></div></body></html>`;
+  const html = `<!doctype html><html lang="sv"><body style="margin:0;background:#f4f6f8;font-family:Arial,sans-serif;color:#142033"><div style="max-width:640px;margin:0 auto;padding:32px 20px"><div style="background:#fff;border-radius:12px;padding:32px"><div style="margin:0 0 24px;font-size:28px;font-weight:800;letter-spacing:-1px">${escapeHtml(SHORT_NAME)}</div><h1 style="margin:0 0 20px;font-size:26px">Tack för din förfrågan!</h1><p>Hej ${escapeHtml(firstName)},</p><p>Vi har tagit emot din förfrågan${title ? ` gällande <strong>${escapeHtml(title)}</strong>` : ""}. Vi uppskattar att du vänder dig till oss på ${escapeHtml(SHORT_NAME)} för ditt kommande projekt.</p><p>Vi går nu igenom dina uppgifter och återkommer inom kort för att diskutera nästa steg.</p><div style="margin:28px 0;padding:20px;border-radius:10px;background:#f8fafc"><p style="margin:0 0 14px">Har du frågor redan nu? Tveka inte att höra av dig.</p><a href="${safePhoneHref}" style="display:inline-block;padding:12px 18px;border-radius:8px;background:#172033;color:#fff;text-decoration:none;font-weight:700">Ring oss: ${escapeHtml(contactInfo.phonePrimary)}</a></div><div style="padding-top:20px;border-top:1px solid #e5e7eb;color:#596579;font-size:14px"><p><strong>${escapeHtml(contactInfo.company)}</strong><br>${escapeHtml(contactInfo.addressLine)}</p><p><a href="mailto:${safeEmail}" style="color:#0b63ce">${safeEmail}</a> · ${escapeHtml(contactInfo.phonePrimary)}</p><p><a href="${WEBSITE_URL}" style="color:#0b63ce">${escapeHtml(WEBSITE_URL.replace(/^https?:\/\//, ""))}</a></p></div></div></div></body></html>`;
 
   return { html, text };
 }
@@ -120,14 +122,14 @@ export function buildInquiryEmails(inquiry, { contactInfo, now = new Date() }) {
 
   return {
     internal: {
-      from: `GESAB Hemsida <${contactInfo.email}>`,
+      from: `${SHORT_NAME} Hemsida <${contactInfo.email}>`,
       to: contactInfo.email,
       replyTo: inquiry.email,
       subject: internalSubject(inquiry, title, now),
       ...internalBodyContent,
     },
     customer: {
-      from: `GESAB <${contactInfo.email}>`,
+      from: `${SHORT_NAME} <${contactInfo.email}>`,
       to: inquiry.email,
       replyTo: contactInfo.email,
       subject: customerSubject(inquiry, title),
@@ -151,17 +153,17 @@ export function buildPreviewHeaders(
 
   if (recipient === "customer") {
     return {
-      from: `GESAB <${contactEmail}>`,
+      from: `${SHORT_NAME} <${contactEmail}>`,
       to: "Anna Andersson <anna.andersson@example.com>",
       subject: source === "blog"
-        ? "Tack för ditt meddelande - GESAB"
+        ? `Tack för ditt meddelande - ${SHORT_NAME}`
         : customerSubject(sampleInquiry, title),
     };
   }
 
   return {
-    from: `GESAB Hemsida <${contactEmail}>`,
-    to: `GESAB <${contactEmail}>`,
+    from: `${SHORT_NAME} Hemsida <${contactEmail}>`,
+    to: `${SHORT_NAME} <${contactEmail}>`,
     subject: source === "blog"
       ? `Förfrågan via bloggen – ${sampleInquiry.name} (${formatDate(now)})`
       : internalSubject(sampleInquiry, title, now),

@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-background, #ffffff);
+  background-color: var(--white);
 }
 
 .main {
@@ -19,18 +19,18 @@
 }
 
 .title {
-  font-family: var(--font-heading, "Inter", sans-serif);
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: 600;
-  color: var(--color-text, #111111);
+  color: var(--text);
   margin-bottom: 24px;
   letter-spacing: -0.02em;
 }
 
 .subtitle {
-  font-family: var(--font-body, "Inter", sans-serif);
+  font-family: var(--font-body);
   font-size: 1.25rem;
-  color: var(--color-text-light, #555555);
+  color: var(--muted);
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
@@ -46,26 +46,26 @@
 
 .filterButton {
   background: transparent;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--line);
   padding: 10px 24px;
   border-radius: 40px;
   cursor: pointer;
-  font-family: var(--font-body, "Inter", sans-serif);
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  color: #555555;
+  color: var(--muted);
 }
 
 .filterButton:hover {
-  border-color: #111111;
-  color: #111111;
+  border-color: var(--text);
+  color: var(--text);
 }
 
 .filterButton.active {
-  background: #111111;
-  color: #ffffff;
-  border-color: #111111;
+  background: var(--text);
+  color: var(--white);
+  border-color: var(--text);
 }
 
 .galleryGrid {
@@ -144,8 +144,8 @@
 }
 
 .itemTitle {
-  color: white;
-  font-family: var(--font-heading, "Inter", sans-serif);
+  color: var(--white);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0 0 8px 0;
@@ -158,8 +158,8 @@
 }
 
 .itemCategory {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-body, "Inter", sans-serif);
+  color: color-mix(in srgb, var(--white) 80%, transparent);
+  font-family: var(--font-body);
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -178,7 +178,7 @@
   text-align: center;
   padding: 60px 0;
   color: #888;
-  font-family: var(--font-body, "Inter", sans-serif);
+  font-family: var(--font-body);
   font-size: 1.1rem;
 }
 

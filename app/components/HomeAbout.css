@@ -78,7 +78,7 @@
   overflow: hidden;
   border-radius: 16px;
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
   padding: 90px 80px;
 }
 
@@ -91,7 +91,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.32;
+  opacity: 0.4;
+  filter: grayscale(1);
+  mix-blend-mode: soft-light;
 }
 
 .metric-card strong,
@@ -100,7 +102,7 @@
 }
 
 .metric-card strong {
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 64px;
   font-weight: 600;
   line-height: 1.1625;
@@ -144,7 +146,7 @@
 
 .stat-grid strong {
   display: block;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 64px;
   line-height: 1;
 }

@@ -2,40 +2,41 @@
 
 import { useEffect, useRef, useState } from "react";
 import "leaflet/dist/leaflet.css";
+import { contactInfo, siteConfig } from "../site-config";
 import styles from "./contact-info.module.css";
 
-const CENTER = [57.7377438, 11.8965335];
-const DEFAULT_ZOOM = 13.5;
+const MAP_CENTER = [contactInfo.map.lat, contactInfo.map.lng];
+const MAP_TITLE = `${siteConfig.shortName} – ${contactInfo.streetAddress}`;
 
 export function ContactMap() {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
-  const [ready, setReady] = useState(false);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    let cancelled = false;
+    let isCancelled = false;
 
     async function initMap() {
       const L = (await import("leaflet")).default;
-      if (cancelled || !containerRef.current || mapRef.current) return;
+      if (isCancelled || !containerRef.current || mapRef.current) return;
 
       const map = L.map(containerRef.current, {
-        center: CENTER,
-        zoom: DEFAULT_ZOOM,
+        center: MAP_CENTER,
+        zoom: contactInfo.map.zoom,
         scrollWheelZoom: false,
         zoomControl: false,
       });
 
       L.control.zoom({ position: "topright" }).addTo(map);
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
         attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · <a href="https://carto.com/">CARTO</a>',
         subdomains: "abcd",
         maxZoom: 20,
       }).addTo(map);
 
-      const icon = L.divIcon({
+      const customIcon = L.divIcon({
         className: styles.markerWrap,
         html: `
           <span class="${styles.markerPulse}" aria-hidden="true"></span>
@@ -47,20 +48,20 @@ export function ContactMap() {
         iconAnchor: [24, 56],
       });
 
-      L.marker(CENTER, { icon, title: "GESAB – Solstrålegatan 6" }).addTo(map);
+      L.marker(MAP_CENTER, { icon: customIcon, title: MAP_TITLE }).addTo(map);
 
       mapRef.current = map;
-      setReady(true);
+      setIsReady(true);
 
-      requestAnimationFrame(() => {
-        map.invalidateSize();
-      });
+      // Force recalculation of map size a few times to ensure tiles fill the space properly
+      setTimeout(() => map.invalidateSize(), 100);
+      setTimeout(() => map.invalidateSize(), 500);
     }
 
     initMap();
 
     return () => {
-      cancelled = true;
+      isCancelled = true;
       if (mapRef.current) {
         mapRef.current.remove();
         mapRef.current = null;
@@ -68,9 +69,9 @@ export function ContactMap() {
     };
   }, []);
 
-  function resetMap() {
-    mapRef.current?.setView(CENTER, DEFAULT_ZOOM, { animate: true });
-  }
+  const handleResetMap = () => {
+    mapRef.current?.setView(MAP_CENTER, contactInfo.map.zoom, { animate: true });
+  };
 
   return (
     <div className={styles.map}>
@@ -78,14 +79,14 @@ export function ContactMap() {
         ref={containerRef}
         className={styles.mapFrame}
         role="img"
-        aria-label="Karta till GESAB på Solstrålegatan 6, Göteborg"
+        aria-label={`Karta till ${siteConfig.shortName} på ${contactInfo.addressLine}`}
       />
       <button
         type="button"
         className={styles.resetButton}
-        onClick={resetMap}
-        disabled={!ready}
-        aria-label="Återställ kartan till GESAB"
+        onClick={handleResetMap}
+        disabled={!isReady}
+        aria-label={`Återställ kartan till ${siteConfig.shortName}`}
       >
         Återställ
       </button>

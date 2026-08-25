@@ -7,10 +7,10 @@
   z-index: 99;
   height: 72px;
   width: 100%;
-  background: white;
+  background: var(--white);
   color: var(--text);
   border-bottom: 1px solid var(--line);
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }
 
 .site-header.dark {
@@ -58,7 +58,7 @@
   height: 45px;
   place-items: center;
   border-radius: 999px;
-  background: white;
+  background: var(--white);
   color: var(--yellow);
   font-size: 30px;
   font-weight: 800;
@@ -66,8 +66,8 @@
 }
 
 .logo-text {
-  color: white;
-  font-family: Outfit, Inter, sans-serif;
+  color: var(--on-blue);
+  font-family: var(--font-heading);
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0;
@@ -81,7 +81,7 @@
 
 .site-header.dark .logo-mark {
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
 }
 
 .nav-links {
@@ -106,8 +106,8 @@
 .phone-button {
   --cta-bg: var(--blue);
   --cta-hover-bg: var(--black);
-  --cta-color: white;
-  --cta-hover-color: white;
+  --cta-color: var(--on-blue);
+  --cta-hover-color: var(--on-black);
   gap: 12px;
   margin-left: 0;
 }

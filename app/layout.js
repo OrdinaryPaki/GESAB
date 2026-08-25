@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./brand.css";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
 import { createLocalBusinessStructuredData } from "./seo";
 import { siteConfig } from "./site-config";
@@ -6,13 +7,13 @@ import { siteConfig } from "./site-config";
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "GESAB - Badrumsrenovering och entreprenad i Göteborg",
-    template: "%s | GESAB",
+    default: `${siteConfig.shortName} - Badrumsrenovering och entreprenad i Göteborg`,
+    template: `%s | ${siteConfig.shortName}`,
   },
   description:
-    "Göteborgs Entreprenad Service AB hjälper med badrumsrenovering, tvättstugsrenovering, köksrenovering, totalentreprenad, rivning och bygg i Göteborg.",
+    `${siteConfig.name} hjälper med badrumsrenovering, altanbygge, tvättstugsrenovering, köksrenovering, totalentreprenad, rivning och bygg i Göteborg.`,
   openGraph: {
-    title: "GESAB - Badrumsrenovering och entreprenad i Göteborg",
+    title: `${siteConfig.shortName} - Badrumsrenovering och entreprenad i Göteborg`,
     description:
       "Rådgivning, planering och utförande för badrum, kök, bygg och renovering i Göteborg.",
     locale: "sv_SE",

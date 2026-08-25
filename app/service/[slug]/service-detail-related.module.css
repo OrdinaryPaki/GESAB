@@ -26,14 +26,14 @@
 
 .relatedHeader h2 {
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: var(--font-body);
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.18;
 }
 
 .relatedSection {
-  background: white;
+  background: var(--white);
   padding: 42px 24px 118px;
 }
 
@@ -68,7 +68,7 @@
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: white;
+  background: var(--white);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .relatedCard:focus-visible {
-  outline: 3px solid rgba(22, 129, 255, 0.38);
+  outline: 3px solid var(--blue-a35);
   outline-offset: 4px;
 }
 
@@ -100,7 +100,7 @@
 
 .relatedCard h3 {
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: var(--font-body);
   font-size: 25px;
   font-weight: 600;
   line-height: 1.25;

@@ -16,8 +16,16 @@ import "./HomeAbout.css";
 import "./HomeTrustProcess.css";
 import "./HomeGalleryFaq.css";
 
+const HOME_SERVICE_SLUGS = [
+  "badrumsrenovering",
+  "altanbygge",
+  "totalentreprenad",
+  "koksrenovering",
+];
+
 const servicePreviewCopy = {
   badrumsrenovering: "Planering, tätskikt, VVS och plattsättning i rätt ordning.",
+  altanbygge: "Altan och trädäck med rätt konstruktion, material och fast pris.",
   koksrenovering: "Praktisk planering för ytskikt, el, vatten, snickeri och montage.",
   totalentreprenad: "En samlad kontakt när flera moment ska planeras och följas upp.",
   rivningsarbeten: "Kontrollerad rivning inför nästa byggsteg med ordning på avfall.",
@@ -154,7 +162,9 @@ function WhyChoose() {
 }
 
 export function ServicesPreview({ compact = false }) {
-  const homeServices = services.slice(0, 4);
+  const homeServices = HOME_SERVICE_SLUGS.map((slug) =>
+    services.find((service) => service.slug === slug),
+  ).filter(Boolean);
 
   return (
     <section className={compact ? "services-section compact" : "services-section"}>

@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { services } from "../gesab-data";
 import styles from "./galleri.module.css";
 
-const allCategories = ["Alla", "Badrum", "Tvättstuga", "Kök", "Totalentreprenad", "Bygg"];
+const allCategories = ["Alla", "Badrum", "Altan", "Tvättstuga", "Kök", "Totalentreprenad", "Bygg"];
 
 const mockProjects = [
   {
@@ -36,11 +36,18 @@ const mockProjects = [
     image: services.find((s) => s.slug === "totalentreprenad")?.image,
   },
   {
-    id: 5,
+    id: 15,
     title: "Renoverad tvättstuga",
     category: "Tvättstuga",
     size: "normal",
     image: services.find((s) => s.slug === "tvattstugsrenovering")?.image,
+  },
+  {
+    id: 5,
+    title: "Nybyggd altan",
+    category: "Altan",
+    size: "normal",
+    image: services.find((s) => s.slug === "altanbygge")?.image,
   },
   {
     id: 6,

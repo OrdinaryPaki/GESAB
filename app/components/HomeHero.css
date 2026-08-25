@@ -1,6 +1,7 @@
 /* Home hero and trust line across all breakpoints. */
 .hero {
   position: relative;
+  isolation: isolate;
   min-height: 808px;
   overflow: hidden;
   background: var(--blue);
@@ -17,6 +18,8 @@
 .hero-pattern {
   left: 0;
   width: 57%;
+  filter: grayscale(1) contrast(1.15);
+  mix-blend-mode: luminosity;
 }
 
 .hero-photo {
@@ -37,7 +40,7 @@
   align-items: flex-start;
   padding-top: 153px;
   padding-left: 40px;
-  color: white;
+  color: var(--on-blue);
 }
 
 .rating-line {
@@ -55,15 +58,15 @@
   align-items: center;
   border-radius: 100px;
   background: var(--yellow);
-  color: black;
+  color: var(--on-yellow);
   padding: 3px 10px;
 }
 
 .hero h1 {
   max-width: 420px;
   margin: 0;
-  color: white;
-  font-family: Outfit, Inter, sans-serif;
+  color: var(--on-blue);
+  font-family: var(--font-heading);
   font-size: 60px;
   font-weight: 600;
   line-height: 1.1;
@@ -87,7 +90,7 @@
   gap: 16px;
   max-width: 320px;
   margin-top: 76px;
-  color: rgba(255, 255, 255, 0.9);
+  color: color-mix(in srgb, var(--on-blue) 90%, transparent);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.7;
@@ -127,7 +130,7 @@
 
   .hero h1 {
     max-width: 350px;
-    color: rgba(255, 255, 255, 0.24);
+    color: color-mix(in srgb, var(--on-blue) 24%, transparent);
     font-size: 48px;
   }
 
@@ -216,7 +219,7 @@
 @media (hover: hover) and (pointer: fine) {
   .home-page .hero .cta-button:hover {
     background-size: 100% 0%;
-    color: black;
+    color: var(--on-yellow);
   }
 }
 
@@ -259,7 +262,7 @@
 
   .home-page .hero h1 {
     max-width: 100%;
-    color: white;
+    color: var(--on-blue);
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -0.02em;

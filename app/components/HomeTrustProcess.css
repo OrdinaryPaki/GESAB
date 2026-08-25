@@ -29,6 +29,7 @@
 
 .testimonial-section {
   background: var(--blue);
+  color: var(--on-blue);
   padding: 172px 0 151px;
 }
 
@@ -51,7 +52,8 @@
   min-height: 356.4px;
   flex-direction: column;
   border-radius: 16px;
-  background: white;
+  background: var(--card-bg, var(--white));
+  color: var(--card-text, var(--text));
   padding: 40px;
 }
 
@@ -71,7 +73,7 @@
 
 .person span {
   display: block;
-  color: rgba(59, 59, 59, 0.8);
+  color: var(--muted-80);
   font-size: 16px;
   line-height: 1.7;
 }
@@ -80,6 +82,7 @@
   flex-grow: 1;
   min-height: 122px;
   margin: 0;
+  color: var(--card-muted, var(--text));
   font-size: 18px;
   font-weight: 500;
   line-height: 1.7;
@@ -89,7 +92,7 @@
   display: flex;
   gap: 6px;
   margin-top: 40px;
-  color: var(--yellow);
+  color: var(--card-star, var(--yellow));
 }
 
 .rating-stars svg {
@@ -123,15 +126,12 @@
   border-radius: 16px;
   background: var(--yellow);
   padding: 18px 32px 28px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
-  background-size: 120px 120px;
 }
 
 .process-card strong {
   display: block;
   margin-bottom: 24px;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 40px;
   font-weight: 600;
   line-height: 1.4;
@@ -206,12 +206,12 @@
     padding: 0;
     border: 0;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.45);
+    background: color-mix(in srgb, var(--white) 45%, transparent);
     cursor: pointer;
   }
 
   .testimonial-dot.is-active {
-    background: white;
+    background: var(--white);
   }
 }
 

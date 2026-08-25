@@ -47,7 +47,7 @@
   gap: 16px;
   margin-top: 56px;
   border-radius: 16px;
-  background: #f5f7fa;
+  background: var(--soft);
   padding: 48px 40px;
   text-align: left;
 }
@@ -63,8 +63,8 @@
 :global(#contact-page) :global(.contact-main-form .service-select-field) {
   display: grid;
   gap: 8px;
-  color: #000;
-  font-family: "Contact Inter", Inter, sans-serif;
+  color: var(--black);
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 600;
   line-height: 27.2px;
@@ -81,9 +81,9 @@
   width: 100%;
   border: 0;
   border-radius: 16px;
-  background: #fff;
-  color: rgba(59, 59, 59, 0.8);
-  font-family: "Contact Inter", Inter, sans-serif;
+  background: var(--white);
+  color: var(--muted-80);
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
@@ -109,7 +109,7 @@
 :global(#contact-page) :global(.contact-main-form select:focus),
 :global(#contact-page) :global(.contact-main-form .service-select-trigger:focus-visible),
 :global(#contact-page) :global(.contact-main-form textarea:focus) {
-  outline: 1px solid #000;
+  outline: 1px solid var(--black);
   outline-offset: 0;
 }
 
@@ -118,20 +118,20 @@
   height: 47.203125px;
   min-height: 47.203125px;
   border-radius: 12px;
-  background-color: #000;
-  background-image: linear-gradient(#1681ff, #1681ff);
-  color: #fff;
-  font-family: "Contact Inter", Inter, sans-serif;
+  background-color: var(--black);
+  background-image: linear-gradient(var(--blue), var(--blue));
+  color: var(--white);
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 500;
   line-height: 27.2px;
-  box-shadow: inset 0 4px 4px rgba(255, 255, 255, 0.32);
+  box-shadow: inset 0 4px 4px color-mix(in srgb, var(--white) 32%, transparent);
 }
 
 :global(#contact-page) :global(.appointment-card .cta-button) {
   height: 47.203125px;
   min-height: 47.203125px;
-  font-family: "Contact Inter", Inter, sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 500;
   line-height: 27.2px;
@@ -140,7 +140,7 @@
 @media (hover: hover) and (pointer: fine) {
   :global(#contact-page) :global(.contact-main-form .cta-button:hover) {
     background-size: 100% 100%;
-    color: #fff;
+    color: var(--white);
   }
 }
 

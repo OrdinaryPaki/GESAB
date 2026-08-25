@@ -151,7 +151,107 @@ export const renovationDetailContent = {
           "Självklart. När badrummet är färdigt och godkänt får du ett fullständigt våtrumsintyg som styrker att arbetet är utfört enligt alla branschregler – väldigt viktigt för ditt försäkringsbolag!",
       },
     ],
-    related: ["tvattstugsrenovering", "totalentreprenad", "rivningsarbeten"],
+    related: ["koksrenovering", "totalentreprenad", "rivningsarbeten"],
+  },
+  altanbygge: {
+    audience: "Privatpersoner med villa eller radhus",
+    heroTitle: "Bygga altan i Göteborg",
+    heroLead:
+      "Vi bygger altaner, trädäck och uteplatser i hela Göteborgsområdet. Fast pris, hjälp med bygglov och en kontaktperson från första skiss till färdig altan.",
+    heroImage: "/images/services/altanbygge/hero-altan.png",
+    heroImageAlt: "Altanbygge i Göteborg – nybyggd altan i trä med räcke och trappa",
+    highlights: [
+      ["Fast pris", "Inga dolda kostnader"],
+      ["1–3 veckor", "Vanlig byggtid"],
+      ["Bygglov", "Vi hjälper dig hela vägen"],
+      ["30% ROT", "Dras direkt på fakturan"],
+    ],
+    preparationTitle: "Inför första kontakten",
+    preparationIntro: "Det är enkelt att komma igång. Skicka gärna:",
+    preparation: [
+      "Några bilder på platsen där altanen ska stå, gärna från olika håll.",
+      "Ungefärliga mått eller önskad storlek på altanen.",
+      "Önskemål om material, räcke, trappa eller inglasning.",
+      "När du ungefär vill att arbetet ska starta.",
+    ],
+    supportingImage: "/images/services/altanbygge/altan-construction.png",
+    supportingImageAlt: "Altanbygge: bärande konstruktion och trall monteras",
+    reviewNames: ["Katarina S.", "Anna & Mikael", "Familjen Johansson"],
+    quoteHeading: "Få en gratis offert",
+    quoteDescription:
+      "Beskriv dina önskemål eller skicka några bilder på platsen. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
+    quoteBenefits: [
+      "100% gratis platsbesök & rådgivning",
+      "Fast pris utan obehagliga överskridanden",
+      "Hjälp med bygglov och anmälan",
+      "30% ROT-avdrag direkt på fakturan",
+    ],
+    sectionsTitle: "Därför ska du välja GESAB till din altan",
+    bulletsTitle: "Det här ingår i ett komplett altanbygge",
+    bulletsIntro: "Vi tar hand om allt från markarbete till färdig altan. Normalt ingår:",
+    processTitle: "Så går det till",
+    processIntro: "Det ska vara enkelt att bygga altan. Så här fungerar det:",
+    process: [
+      ["Gratis platsbesök & rådgivning", "Vi mäter upp, tittar på mark och fasad och går igenom dina önskemål kring storlek, material och räcke. Helt gratis."],
+      ["Skriftlig offert med fast pris", "Du får ett tydligt avtal där arbete, material och ROT-avdrag ingår innan vi startar."],
+      ["Bygglov om det behövs", "Vi vet vad som kräver lov eller anmälan i Göteborg och hjälper dig med ritningar och ansökan."],
+      ["Bygge & överlämning", "Grund, konstruktion, trall och räcken byggs i rätt ordning. Vi går igenom resultatet tillsammans innan vi lämnar."],
+    ],
+    timelineTitle: "Tidslinje: Så snabbt blir det klart",
+    timelineIntro: "En standardaltan tar oftast 1–3 veckor beroende på storlek och markförhållanden. Så här ser stegen ut:",
+    timeline: [
+      ["Vecka 1", "Markarbete, plintar och bärande konstruktion."],
+      ["Vecka 1–2", "Regelverk, trall och infästning mot fasad."],
+      ["Vecka 2–3", "Räcken, trappor, detaljer och slutkontroll."],
+    ],
+    considerationsTitle: "Vad påverkar priset?",
+    considerationsIntro: "Vi ger dig alltid ett rättvist och fast pris. Det som främst avgör budgeten är:",
+    considerations: [
+      "Altanens storlek och höjd över marken.",
+      "Markförhållanden och grundläggning.",
+      "Val av trall: tryckimpregnerat, lärk eller komposit.",
+      "Tillval som räcke, trappa, belysning eller inglasning.",
+    ],
+    importantTitle: "Så säkerställer vi kvaliteten",
+    importantIntro: "En altan ska stå stadigt i decennier – i västkustens väder. Så här garanterar vi resultatet:",
+    credentials: [
+      "Dimensionerad konstruktion med rätt plintar och bärlinor.",
+      "Korrekt infästning mot fasad utan risk för fuktskador.",
+      "Egenkontroller i varje steg innan nästa moment påbörjas.",
+      "30% ROT-avdrag dras direkt på fakturan när villkoren är uppfyllda.",
+    ],
+    faq: [
+      {
+        question: "Vad kostar det att bygga altan i Göteborg?",
+        answer:
+          "Priset beror på storlek, höjd, markförhållanden och materialval. Efter platsbesöket får du en offert med fast pris, och ROT-avdraget dras direkt på fakturan.",
+      },
+      {
+        question: "Behöver jag bygglov för altan?",
+        answer:
+          "Det beror på höjd, storlek och avstånd till tomtgräns. Lägre altaner kräver ofta varken lov eller anmälan, medan högre eller inglasade altaner kan göra det. Vi vet vad som gäller i Göteborg och hjälper dig med hela ansökan.",
+      },
+      {
+        question: "Hur lång tid tar ett altanbygge?",
+        answer: "Oftast 1–3 veckor från markarbete till färdig altan, beroende på storlek och grundläggning.",
+      },
+      {
+        question: "Vilket material ska jag välja till trallen?",
+        answer:
+          "Tryckimpregnerat är prisvärt och tåligt, lärk åldras vackert utan behandling och komposit är nästan underhållsfritt. Vi går igenom för- och nackdelar vid platsbesöket.",
+      },
+      {
+        question: "Renoverar ni befintliga altaner?",
+        answer:
+          "Ja. Vi byter trall, förstärker konstruktioner och renoverar äldre altaner så att de blir säkra och snygga igen.",
+      },
+      {
+        question: "Bygger ni altaner utanför Göteborg?",
+        answer:
+          "Ja, vi bygger altaner i hela Göteborgsområdet – bland annat Mölndal, Partille, Lerum, Kungälv, Härryda och Kungsbacka.",
+      },
+    ],
+    related: ["bygg", "totalentreprenad", "rivningsarbeten"],
   },
   tvattstugsrenovering: {
     audience: "Privatpersoner med tvättstuga",

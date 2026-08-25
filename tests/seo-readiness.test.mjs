@@ -52,8 +52,8 @@ test("the home page publishes one authoritative local-business entity", async ()
   assert.equal(business.telephone, "+46707299633");
   assert.deepEqual(business.address, {
     "@type": "PostalAddress",
-    streetAddress: "Solstrålegatan 6",
-    postalCode: "418 43",
+    streetAddress: "Östergärde Industriväg 39",
+    postalCode: "417 29",
     addressLocality: "Göteborg",
     addressCountry: "SE",
   });

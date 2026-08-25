@@ -25,7 +25,7 @@
   gap: 16px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: white;
+  background: var(--white);
   color: var(--text);
   cursor: pointer;
   padding: 12px 20px;
@@ -33,7 +33,7 @@
 }
 
 .service-select-trigger:focus-visible {
-  outline: 3px solid rgba(22, 129, 255, 0.35);
+  outline: 3px solid var(--blue-a35);
   outline-offset: 2px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .service-select-value.placeholder {
-  color: #777;
+  color: var(--placeholder);
 }
 
 .service-select-chevron {
@@ -72,9 +72,9 @@
   max-height: 280px;
   gap: 4px;
   overflow-y: auto;
-  border: 1px solid rgba(22, 129, 255, 0.2);
+  border: 1px solid var(--blue-a20);
   border-radius: 14px;
-  background: white;
+  background: var(--white);
   color: var(--text);
   padding: 8px;
   box-shadow: 0 24px 60px rgba(5, 5, 5, 0.18);
@@ -89,7 +89,7 @@
   gap: 12px;
   border: 0;
   border-radius: 9px;
-  background: white;
+  background: var(--white);
   color: var(--text);
   cursor: pointer;
   padding: 10px 12px;
@@ -101,13 +101,13 @@
 .service-select-option:hover,
 .service-select-option:focus-visible,
 .service-select-option.active {
-  background: #eef6ff;
+  background: var(--blue-soft);
   outline: none;
 }
 
 .service-select-option.selected {
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
 }
 
 .service-select-check {
@@ -118,7 +118,7 @@
   place-items: center;
   border-radius: 999px;
   background: var(--yellow);
-  color: black;
+  color: var(--on-yellow);
   font-size: 13px;
   font-weight: 700;
 }

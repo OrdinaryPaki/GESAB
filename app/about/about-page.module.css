@@ -102,7 +102,7 @@
   }
 
   .page :global(.process-section) {
-    background: white;
+    background: var(--white);
   }
 
   .page :global(.faq-section) {

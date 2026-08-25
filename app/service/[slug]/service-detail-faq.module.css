@@ -17,7 +17,7 @@
 .faqSection > h2 {
   margin: 0 0 16px;
   color: var(--text);
-  font-family: Inter, sans-serif;
+  font-family: var(--font-body);
   font-size: 28px;
   font-weight: 600;
   letter-spacing: -0.02em;

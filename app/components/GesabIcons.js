@@ -1,7 +1,9 @@
+import { siteConfig } from "../site-config";
+
 export function Logo({ dark = false }) {
   return (
-    <span className="logo" aria-label="GESAB">
-      <span className={dark ? "logo-text dark" : "logo-text"}>GESAB</span>
+    <span className="logo" aria-label={siteConfig.shortName}>
+      <span className={dark ? "logo-text dark" : "logo-text"}>{siteConfig.shortName}</span>
     </span>
   );
 }

@@ -5,10 +5,10 @@ import { buildInquiryEmails } from "../app/lib/inquiries/email-content.mjs";
 
 const contactInfo = {
   company: "Göteborgs Entreprenad Service AB",
-  addressLine: "Solstrålegatan 6, 418 43 Göteborg",
+  addressLine: "Östergärde Industriväg 39, 417 29 Göteborg",
   phonePrimary: "0707 299 633",
   phonePrimaryHref: "tel:+46707299633",
-  email: "arijana@ges-ab.se",
+  email: "kontakt@ges-ab.se",
 };
 
 const validInquiry = {
@@ -23,11 +23,11 @@ const validInquiry = {
 
 const fixedDate = new Date("2026-08-13T10:00:00Z");
 
-test("builds the internal message for Arijana with customer reply-to", () => {
+test("builds the internal message for the contact mailbox with customer reply-to", () => {
   const { internal } = buildInquiryEmails(validInquiry, { contactInfo, now: fixedDate });
 
-  assert.equal(internal.from, "GESAB Hemsida <arijana@ges-ab.se>");
-  assert.equal(internal.to, "arijana@ges-ab.se");
+  assert.equal(internal.from, "GESAB Hemsida <kontakt@ges-ab.se>");
+  assert.equal(internal.to, "kontakt@ges-ab.se");
   assert.equal(internal.replyTo, "anna@example.com");
   assert.equal(
     internal.subject,
@@ -40,9 +40,9 @@ test("builds the internal message for Arijana with customer reply-to", () => {
 test("builds the customer confirmation from the authoritative mailbox", () => {
   const { customer } = buildInquiryEmails(validInquiry, { contactInfo, now: fixedDate });
 
-  assert.equal(customer.from, "GESAB <arijana@ges-ab.se>");
+  assert.equal(customer.from, "GESAB <kontakt@ges-ab.se>");
   assert.equal(customer.to, "anna@example.com");
-  assert.equal(customer.replyTo, "arijana@ges-ab.se");
+  assert.equal(customer.replyTo, "kontakt@ges-ab.se");
   assert.equal(
     customer.subject,
     "Tack för din förfrågan gällande Badrumsrenovering - GESAB",

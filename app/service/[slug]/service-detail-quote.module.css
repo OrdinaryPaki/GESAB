@@ -12,7 +12,7 @@
   grid-area: quote;
   border-radius: 16px;
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
   padding: 34px 32px 32px;
 }
 
@@ -24,29 +24,29 @@
   margin: 0;
   padding: 0;
   background: transparent;
-  color: white;
+  color: var(--on-blue);
   box-shadow: none;
 }
 
 :global(.service-detail-page) .quoteCard :global(.service-quote-form h2) {
   margin: 0;
-  color: white;
+  color: var(--on-blue);
   text-align: left;
-  font-family: Inter, sans-serif;
+  font-family: var(--font-body);
   font-size: 30px;
   line-height: 1.16;
 }
 
 :global(.service-detail-page) .quoteCard :global(.service-quote-form-intro) {
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, 0.83);
+  color: color-mix(in srgb, var(--on-blue) 83%, transparent);
   font-size: 15px;
   line-height: 1.58;
 }
 
 :global(.service-detail-page) .quoteCard :global(.service-quote-form label) {
   gap: 6px;
-  color: white;
+  color: var(--on-blue);
   font-size: 13px;
 }
 
@@ -55,7 +55,7 @@
   border: 0;
   border-radius: 6px;
   padding: 11px 14px;
-  background: white;
+  background: var(--white);
   color: var(--text);
   font-size: 15px;
 }
@@ -72,14 +72,14 @@
   gap: 11px;
   margin: 24px 0 0;
   padding: 20px 0 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  border-top: 1px solid color-mix(in srgb, var(--on-blue) 24%, transparent);
   list-style: none;
 }
 
 .quoteBenefits li {
   position: relative;
   padding-left: 25px;
-  color: rgba(255, 255, 255, 0.9);
+  color: color-mix(in srgb, var(--on-blue) 90%, transparent);
   font-size: 13px;
   line-height: 1.45;
 }
@@ -88,7 +88,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: white;
+  color: var(--on-blue);
   font-weight: 800;
 }
 

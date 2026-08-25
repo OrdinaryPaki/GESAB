@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { contactInfo, services } from "../gesab-data";
+import { siteConfig } from "../site-config";
 import { Logo, MailIcon, PhoneIcon } from "./GesabIcons";
 import { placeholderImages } from "./placeholder-images";
 import "./Footer.css";
@@ -18,10 +19,10 @@ export function Footer() {
             tydlig planering och fackmässigt utförande.
           </p>
           <div className="socials" aria-label="Snabba kontaktvägar">
-            <a href={contactInfo.phonePrimaryHref} aria-label="Ring GESAB">
+            <a href={contactInfo.phonePrimaryHref} aria-label={`Ring ${siteConfig.shortName}`}>
               <PhoneIcon />
             </a>
-            <a href={contactInfo.emailHref} aria-label="Mejla GESAB">
+            <a href={contactInfo.emailHref} aria-label={`Mejla ${siteConfig.shortName}`}>
               <MailIcon />
             </a>
           </div>
@@ -51,9 +52,9 @@ export function Footer() {
       </div>
       <div className="container footer-bottom">
         <div className="footer-bottom-left">
-          Copyright © {new Date().getFullYear()} GESAB. Alla rättigheter förbehålls.
+          Copyright © {new Date().getFullYear()} {siteConfig.shortName}. Alla rättigheter förbehålls.
         </div>
-        <div className="badge-grid" aria-label="GESAB bilder">
+        <div className="badge-grid" aria-label={`${siteConfig.shortName} bilder`}>
           {footerBadges.map((src, index) => (
             <img key={`${src}-${index}`} src={src} alt="" />
           ))}

@@ -33,14 +33,39 @@
 }
 
 :root {
-  --blue: #1681ff;
-  --yellow: #fdbc0d;
-  --black: #030303;
-  --text: #050505;
-  --muted: #3b3b3b;
-  --line: #e8e8e8;
-  --soft: #f6f7f9;
+  --blue: #312e81;
+  --yellow: #f3e6c8;
+  --black: #1e1b4b;
+  --text: #1e1b4b;
+  --muted: #5b567a;
+  --line: #e4e0f0;
+  --soft: #f7f5fb;
+  --white: #ffffff;
+  --placeholder: #777777;
   --radius: 16px;
+  --on-blue: #ffffff;
+  --on-yellow: #1e1b4b;
+  --on-black: #ffffff;
+  --card-bg: #f3e6c8;
+  --card-text: #1e1b4b;
+  --card-muted: #5b567a;
+  --card-star: #eab308;
+  --services-bg: #f3e6c8;
+  --services-heading: #1e1b4b;
+  --services-kicker: #5b567a;
+  --footer-bg: #ffffff;
+
+  --font-body: Inter, Arial, Helvetica, sans-serif;
+  --font-heading: Outfit, Inter, sans-serif;
+
+  --blue-soft: color-mix(in srgb, var(--blue) 10%, var(--white));
+  --blue-a15: color-mix(in srgb, var(--blue) 15%, transparent);
+  --blue-a18: color-mix(in srgb, var(--blue) 18%, transparent);
+  --blue-a20: color-mix(in srgb, var(--blue) 20%, transparent);
+  --blue-a35: color-mix(in srgb, var(--blue) 35%, transparent);
+  --muted-80: color-mix(in srgb, var(--muted) 80%, transparent);
+  --ring: var(--blue-a35);
+
   color-scheme: light;
 }
 
@@ -58,9 +83,9 @@ body {
 }
 
 body {
-  background: white;
+  background: var(--white);
   color: var(--text);
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
 }
 

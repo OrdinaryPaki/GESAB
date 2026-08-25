@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #ffffff;
+  background: var(--white);
   padding: 48px 32px;
   border-radius: 16px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
@@ -24,13 +24,13 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--blue, #1681ff);
-  color: white;
+  background: var(--blue);
+  color: var(--on-blue);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  box-shadow: 0 8px 16px rgba(22, 129, 255, 0.2);
+  box-shadow: 0 8px 16px var(--blue-a20);
   animation: scaleIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
@@ -47,7 +47,7 @@
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 12px;
-  color: var(--black, #030303);
+  color: var(--black);
   opacity: 0;
   animation: slideUp 0.4s ease-out forwards;
   animation-delay: 0.1s;
@@ -55,7 +55,7 @@
 
 .contact-success-card p {
   font-size: 16px;
-  color: var(--muted, #3b3b3b);
+  color: var(--muted);
   margin-bottom: 32px;
   opacity: 0;
   animation: slideUp 0.4s ease-out forwards;
@@ -63,8 +63,8 @@
 }
 
 .success-reset-button {
-  background-color: var(--yellow, #fdbc0d);
-  color: #000;
+  background-color: var(--yellow);
+  color: var(--black);
   border: none;
   border-radius: 12px;
   padding: 16px 32px;

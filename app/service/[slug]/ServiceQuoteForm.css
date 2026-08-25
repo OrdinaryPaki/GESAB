@@ -7,8 +7,8 @@
   width: 520px;
   margin-top: 112px;
   border-radius: 16px;
-  background: white;
-  color: black;
+  background: var(--white);
+  color: var(--text);
   padding: 38px 40px 40px;
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.14);
 }
@@ -30,7 +30,7 @@
 .service-quote-form h2 {
   margin: 0 0 16px;
   text-align: center;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 34px;
   font-weight: 600;
   line-height: 1.4;
@@ -49,8 +49,8 @@
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: white;
-  color: #777;
+  background: var(--white);
+  color: var(--placeholder);
   outline: none;
 }
 
@@ -90,7 +90,7 @@
 .service-quote-form .cta-button:hover,
 .service-quote-form .cta-button:focus-visible {
   background: var(--yellow);
-  color: black;
+  color: var(--on-yellow);
 }
 
 /* Overlay that sits on top of the form */
@@ -102,7 +102,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--blue, #1681ff);
+  background: var(--blue);
   z-index: 10;
   opacity: 0;
   pointer-events: none;
@@ -119,8 +119,8 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: white;
-  color: var(--blue, #1681ff);
+  background: var(--white);
+  color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,12 +148,12 @@
 }
 
 .service-quote-success-overlay h3 {
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
-  color: white;
+  color: var(--on-blue);
   opacity: 0;
 }
 
@@ -163,9 +163,9 @@
 }
 
 .service-quote-success-overlay p {
-  font-family: Inter, sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.9);
+  color: color-mix(in srgb, var(--on-blue) 90%, transparent);
   margin-bottom: 32px;
   opacity: 0;
 }
@@ -185,7 +185,7 @@
   flex: none;
   background-color: var(--yellow) !important;
   background-image: none !important;
-  color: black !important;
+  color: var(--on-yellow) !important;
 }
 
 .service-quote-success-overlay.visible .success-reset-button {
@@ -196,6 +196,6 @@
 .service-quote-success-overlay .success-reset-button:hover,
 .service-quote-success-overlay .success-reset-button:focus-visible {
   background-color: var(--black) !important;
-  color: white !important;
+  color: var(--on-black) !important;
 }
 

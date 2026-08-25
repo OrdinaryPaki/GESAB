@@ -14,7 +14,7 @@ const contactFaqItems = [
   {
     question: "Vilka renoveringstjänster erbjuder ni?",
     answer:
-      "Vi hjälper till med badrum, tvättstuga, kök, totalentreprenad, rivning och bygg för bostäder i Göteborg. Vi samordnar arbetet från start till klart.",
+      "Vi hjälper till med badrum, altaner, tvättstuga, kök, totalentreprenad, rivning och bygg för bostäder i Göteborg. Vi samordnar arbetet från start till klart.",
   },
   {
     question: "Är era hantverkare utbildade och försäkrade?",
@@ -79,7 +79,7 @@ export default function ContactPage() {
               <span><LocationIcon /></span>
               <h3>Adress</h3>
               <p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Solstr%C3%A5legatan%206%2C%20418%2043%20G%C3%B6teborg">
+                <a href={contactInfo.mapsSearchHref}>
                   {contactInfo.addressLine}
                 </a>
               </p>

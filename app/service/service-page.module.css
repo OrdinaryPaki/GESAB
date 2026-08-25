@@ -187,7 +187,7 @@
 .servicePage {
   min-width: 0;
   overflow: clip;
-  background: white;
+  background: var(--white);
   color: var(--text);
 }
 
@@ -212,7 +212,7 @@
 
 .indexTitle h1 {
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 72px;
   font-weight: 600;
   letter-spacing: -1.44px;
@@ -240,7 +240,7 @@
   height: 450px;
   overflow: hidden;
   border-radius: 16px;
-  color: white;
+  color: var(--white);
 }
 
 .serviceCardImage {
@@ -303,8 +303,8 @@
   display: inline-block;
   padding: 10px 20px;
   border-radius: 8px;
-  background: white;
-  color: black;
+  background: var(--white);
+  color: var(--text);
   font-size: 14px;
   font-weight: 600;
 }

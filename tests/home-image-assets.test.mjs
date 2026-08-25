@@ -7,7 +7,6 @@ const homeImagePaths = [
   "/images/home/why-team-planning.webp",
   "/images/home/why-final-inspection.webp",
   "/images/home/service-bathroom-warm.webp",
-  "/images/home/service-laundry-compact.webp",
   "/images/home/service-kitchen-warm.webp",
   "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
   "/images/home/about-team-workshop.webp",
@@ -55,9 +54,9 @@ test("HOME service cards render their configured placeholder or local service im
     serviceImageSources,
     [
       "/images/home/service-bathroom-warm.webp",
-      "/images/home/service-laundry-compact.webp",
-      "/images/home/service-kitchen-warm.webp",
+      "/images/home/service-altan.png",
       "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
+      "/images/home/service-kitchen-warm.webp",
     ],
     "HOME service cards must show the selected finished-project images",
   );

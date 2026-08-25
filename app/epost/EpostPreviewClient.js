@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { contactInfo } from "../gesab-data";
+import { siteConfig } from "../site-config";
 import { buildPreviewHeaders } from "../lib/inquiries/email-content.mjs";
 import styles from "./epost.module.css";
 
@@ -169,7 +170,7 @@ function EmailTemplate({ theme, recipient, source }) {
 function CustomerEmail({ source }) {
   return (
     <>
-      <div className={styles.emailLogo}>GESAB</div>
+      <div className={styles.emailLogo}>{siteConfig.shortName}</div>
       <h2 className={styles.greeting}>
         {source === 'blog' ? 'Tack för ditt meddelande!' : 'Tack för din förfrågan!'}
       </h2>
@@ -177,7 +178,7 @@ function CustomerEmail({ source }) {
       <p>
         Vi har tagit emot din förfrågan
         {(source === 'contact' || source === 'service') && <span> gällande <strong>Badrumsrenovering</strong></span>}.
-        Vi uppskattar att du vänder dig till oss på GESAB för ditt kommande projekt.
+        Vi uppskattar att du vänder dig till oss på {siteConfig.shortName} för ditt kommande projekt.
       </p>
       <p>
         Vårt team kommer nu att gå igenom dina uppgifter. Vi återkommer till dig inom kort för att diskutera nästa steg, svara på eventuella frågor och boka in en kostnadsfri genomgång på plats.
@@ -196,7 +197,7 @@ function CustomerEmail({ source }) {
         <p>
           <a href={contactInfo.emailHref}>{contactInfo.email}</a> | <a href={contactInfo.phonePrimaryHref}>{contactInfo.phonePrimary}</a>
         </p>
-        <p><a href="https://gesab.se">www.gesab.se</a></p>
+        <p><a href={siteConfig.url}>{siteConfig.url.replace(/^https?:\/\//, "")}</a></p>
       </div>
     </>
   );

@@ -45,6 +45,40 @@ export const services = [
     },
   },
   {
+    slug: "altanbygge",
+    title: "Altanbygge",
+    body: "Vi bygger din altan från grund till räcke – rätt konstruktion, tåliga material och ett fast pris innan vi startar.",
+    image: "/images/home/service-altan.png",
+    detail: {
+      introTitle: "En altan byggd för västkustens väder",
+      intro:
+        "Att bygga altan i Göteborg ställer krav på konstruktionen – regn, vind och salt luft sliter hårt. Därför bygger vi med rätt grundläggning, dimensionerade bärlinor och material som håller år efter år. Vi hjälper dig hela vägen från idé och eventuellt bygglov till färdigt trädäck.",
+      sections: [
+        [
+          "Fast pris utan dolda kostnader",
+          "Vi besöker platsen, mäter upp och går igenom markförhållandena innan vi lämnar en skriftlig offert med fast pris. Inga överraskningar när arbetet väl är igång.",
+        ],
+        [
+          "Hjälp med bygglov och regler",
+          "Behöver altanen bygglov eller anmälan? Vi vet vad som gäller i Göteborg och kranskommunerna och hjälper dig med ritningar och ansökan.",
+        ],
+        [
+          "Byggd för att hålla – inte bara se bra ut",
+          "Rätt plintar, förankring och virkesval gör att altanen står stadigt och åldras vackert. Du väljer mellan tryckimpregnerat, lärk eller komposit.",
+        ],
+      ],
+      bullets: [
+        "Platsbesök med uppmätning och rådgivning",
+        "Hjälp med bygglov eller anmälan när det behövs",
+        "Markarbete, plintar och bärande konstruktion",
+        "Trall i tryckimpregnerat, lärk eller komposit",
+        "Räcken, trappor och infästning mot fasad",
+        "Altanrenovering och byte av gammal trall",
+        "Bortforsling av spill och slutstädning",
+      ],
+    },
+  },
+  {
     slug: "tvattstugsrenovering",
     title: "Tvättstugsrenovering",
     body: "Vi renoverar din tvättstuga till ett praktiskt våtrum – rätt tätskikt, smarta ytor och en tydlig tidplan.",
@@ -260,7 +294,7 @@ export const testimonials = [
     name: "Katarina S.",
     place: "Torslanda",
     quote:
-      "Mycket seriöst företag. De höll både budget och tidsplan när vi renoverade tvättstugan. Väl utfört arbete och de lämnade alltid rent och snyggt efter sig.",
+      "Mycket seriöst företag. De höll både budget och tidsplan när de byggde vår nya altan. Väl utfört arbete och de lämnade alltid rent och snyggt efter sig.",
   },
   {
     name: "Familjen Johansson",
@@ -292,7 +326,7 @@ export const faqItems = [
   {
     question: "Vilka tjänster utför GESAB?",
     answer:
-      "GESAB utför badrumsrenovering, tvättstugsrenovering, köksrenovering, totalentreprenad, rivningsarbeten och bygg i Göteborg.",
+      "GESAB utför badrumsrenovering, altanbygge, tvättstugsrenovering, köksrenovering, totalentreprenad, rivningsarbeten och bygg i Göteborg.",
   },
   {
     question: "Kan ni hjälpa till från idé till färdigt badrum?",

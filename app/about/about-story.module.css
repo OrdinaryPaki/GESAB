@@ -126,7 +126,7 @@
     height: auto !important;
     padding: 132px 0 var(--page-mobile-section-space) !important;
     margin-bottom: 0 !important;
-    background: white;
+    background: var(--white);
   }
 
   :global(#about-page) .storyGrid {
@@ -189,7 +189,7 @@
 .storyTitle h1 {
   width: 500px;
   margin: 0;
-  font-family: Outfit, Inter, sans-serif;
+  font-family: var(--font-heading);
   font-size: 72px;
   font-weight: 600;
   line-height: 79.2px;
@@ -230,7 +230,7 @@
   overflow: clip;
   border-radius: 16px;
   background: var(--blue);
-  color: white;
+  color: var(--on-blue);
   padding: 24px;
 }
 .quoteCard > img {
@@ -246,8 +246,8 @@
 }
 .quoteCard blockquote {
   margin: 0;
-  color: white;
-  font-family: Inter, sans-serif;
+  color: var(--on-blue);
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.7;
@@ -255,7 +255,7 @@
 .quoteCard strong,
 .quoteCard span {
   display: block;
-  color: white;
+  color: var(--on-blue);
 }
 .quoteCard strong {
   margin-top: 14px;
@@ -264,7 +264,7 @@
   line-height: 1.7;
 }
 .quoteCard span {
-  color: rgba(255, 255, 255, 0.9);
+  color: color-mix(in srgb, var(--on-blue) 90%, transparent);
   font-size: 14px;
   line-height: 1.7;
 }
