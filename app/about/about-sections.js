@@ -92,7 +92,12 @@ export function AboutMissionSection() {
 
         <div className={missionStyles.missionStage}>
           <figure className={missionStyles.missionImage}>
-            <img src="/images/home/why-waterproofing.webp" alt="Noggrant tätskiktsarbete i ett våtrum" loading="lazy" decoding="async" />
+            <img
+              src="/images/about/townhouse-landing.webp"
+              alt="Färdig totalrenovering med kök, matplats och trappa i ett sammanhållet hem"
+              loading="lazy"
+              decoding="async"
+            />
           </figure>
 
           <div className={missionStyles.missionPrinciples}>
