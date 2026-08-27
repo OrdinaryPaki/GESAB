@@ -1,6 +1,6 @@
 export const image = {
   heroPattern: "/images/site/hero-pattern.jpg",
-  heroPlumber: "/images/site/hero-plumber.jpg",
+  heroPhoto: "/images/home/hero-final-inspection.webp",
   aboutPattern: "/images/site/about-pattern.jpg",
   ctaBg: "/images/site/contact-band-background.jpg",
   badges: ["/images/site/trust-badge.jpg"],

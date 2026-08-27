@@ -11,7 +11,6 @@ const workspaceRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)),
 
 const localImages = [
   ["/images/site/hero-pattern.jpg", "e7d75cd30f35402bd29cd8b94ad67d40f0c56e0d82917f3890e7c03cf6ab9806"],
-  ["/images/site/hero-plumber.jpg", "e07fc13aedd526cf010bac1638c8a3b8e8775a089f5500b06bb1cf29d8691b61"],
   ["/images/site/about-pattern.jpg", "ea8137bdf7ab0deb84ccb01ffeae314a96787b524333f5df2acaebd1ac7a4d98"],
   ["/images/site/contact-band-background.jpg", "63c866fc094fd92859d0459f15aa5a60606570b260a7ec0213eaab0f4eb91b07"],
   ["/images/site/trust-badge.jpg", "9633fd822bb0297dd185230e5db68ac6910c9480fc6980447f3d7089a0e052ab"],

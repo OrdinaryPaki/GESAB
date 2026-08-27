@@ -4,6 +4,7 @@ import test from "node:test";
 import { siteUrl } from "./helpers/site-url.mjs";
 
 const homeImagePaths = [
+  "/images/home/hero-final-inspection.webp",
   "/images/home/why-team-planning.webp",
   "/images/home/why-final-inspection.webp",
   "/images/home/service-bathroom-warm.webp",

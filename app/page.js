@@ -7,7 +7,7 @@ export const metadata = createPageMetadata({
   description:
     "GESAB hjälper privatpersoner, företag och offentlig sektor i Göteborg med badrumsrenovering, köksrenovering, bygg och totalentreprenad.",
   path: "/",
-  image: image.heroPlumber,
+  image: image.heroPhoto,
 });
 
 export default function Home() {

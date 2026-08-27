@@ -59,12 +59,14 @@ test("the home page publishes one authoritative local-business entity", async ()
   });
 });
 
-test("the home page uses bundled fonts and stable hero dimensions", async () => {
+test("the home page uses bundled fonts and the selected final-inspection hero", async () => {
   const html = await fetch(siteUrl).then((response) => response.text());
   const heroPhoto = html.match(/<img[^>]+class="hero-photo"[^>]*>/)?.[0] ?? "";
 
   assert.doesNotMatch(html, /fonts\.googleapis\.com|fonts\.gstatic\.com/);
-  assert.match(heroPhoto, /width="856"/);
-  assert.match(heroPhoto, /height="1024"/);
+  assert.match(heroPhoto, /src="\/images\/home\/hero-final-inspection\.webp"/);
+  assert.match(heroPhoto, /alt="Slutkontroll av en färdigrenoverad hall med trappa och snickerier"/);
+  assert.match(heroPhoto, /width="1448"/);
+  assert.match(heroPhoto, /height="1086"/);
   assert.match(heroPhoto, /fetchPriority="high"/);
 });
