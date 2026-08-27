@@ -77,7 +77,7 @@ function Hero() {
         width="949"
       />
       <img
-        alt="Slutkontroll av en färdigrenoverad hall med trappa och snickerier"
+        alt="Två hantverkare planerar de sista momenten i en renoverad bostad"
         className="hero-photo"
         decoding="async"
         fetchPriority="high"
