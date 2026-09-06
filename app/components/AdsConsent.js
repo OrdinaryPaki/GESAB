@@ -53,7 +53,7 @@ export function AdsConsent() {
         GESAB. Besöksuppgifter delas då med Google för annonsmätning, utan personanpassade annonser.
       </p>
       <div className={styles.actions}>
-        <button type="button" className={styles.accept} aria-label="Ja, tillåt annonsmätning" onClick={() => saveChoice(true)}>JA</button>
+        <button type="button" className={styles.accept} onClick={() => saveChoice(true)}>Ja, tillåt annonsmätning</button>
         <button type="button" aria-expanded={managing} aria-controls="cookie-preferences" onClick={() => setManaging(!managing)}>Hantera cookies</button>
       </div>
       <button type="button" className={styles.reject} onClick={() => saveChoice(false)}>Neka alla</button>
