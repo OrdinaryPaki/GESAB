@@ -36,11 +36,24 @@
 .actions button:hover, .settings:hover { background: var(--soft); }
 .actions .accept { background: var(--blue); color: var(--on-blue); }
 .actions .accept:hover { background: var(--black); }
-.panel .note { font-size: 12px; margin: 12px 0 16px; color: var(--muted); }
+.reject {
+  display: block;
+  min-height: 44px;
+  margin: 8px auto 0;
+  padding: 10px 16px;
+  border: 0;
+  background: transparent;
+  color: var(--blue);
+  font: inherit;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .details { border-top: 1px solid var(--line); padding-top: 14px; font-size: 13px; }
-.details summary { cursor: pointer; padding: 8px 0; }
 .details p { margin: 8px 0 0; font-size: 13px; }
-.actions button:focus-visible, .settings:focus-visible, .panel a:focus-visible {
+.preference { display: flex; gap: 12px; align-items: center; min-height: 44px; font-size: 14px; cursor: pointer; }
+.preference input { width: 20px; height: 20px; flex-shrink: 0; accent-color: var(--blue); }
+.panel button:focus-visible, .settings:focus-visible, .panel a:focus-visible, .preference input:focus-visible {
   outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
