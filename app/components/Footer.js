@@ -42,6 +42,7 @@ export function Footer() {
           <Link href="/service">Tjänster</Link>
           <Link href="/galleri">Galleri</Link>
           <Link href="/contact">Kontakt</Link>
+          <Link href="/cookies">Integritet och cookies</Link>
         </div>
         <div className="footer-list footer-contact">
           <span>Kontakt</span>

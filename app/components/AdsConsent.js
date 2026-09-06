@@ -4,10 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { CONSENT_KEY, createAdsConsentController } from "../tracking/google-ads-consent.mjs";
 import styles from "./ads-consent.module.css";
 import { CookiePreferences } from "./CookiePreferences";
+import { OPEN_COOKIE_PREFERENCES } from "../tracking/cookie-preferences-events.mjs";
 
 export function AdsConsent() {
   const controller = useRef(null);
-  const settingsButton = useRef(null);
+  const returnFocus = useRef(null);
+  const openedFromPage = useRef(false);
   const heading = useRef(null);
   const popup = useRef(null);
   const [ready, setReady] = useState(false);
@@ -26,7 +28,18 @@ export function AdsConsent() {
       if (event.key === CONSENT_KEY || event.key === null) window.location.reload();
     }
     window.addEventListener("storage", syncChoice);
-    return () => window.removeEventListener("storage", syncChoice);
+    function showPreferences(event) {
+      returnFocus.current = event.detail?.trigger;
+      openedFromPage.current = true;
+      setAdsAllowed(controller.current.restore() === true);
+      setManaging(true);
+      setOpen(true);
+    }
+    window.addEventListener(OPEN_COOKIE_PREFERENCES, showPreferences);
+    return () => {
+      window.removeEventListener("storage", syncChoice);
+      window.removeEventListener(OPEN_COOKIE_PREFERENCES, showPreferences);
+    };
   }, []);
 
   useEffect(() => {
@@ -49,7 +62,7 @@ export function AdsConsent() {
     setAdsAllowed(allowed);
     setManaging(false);
     setOpen(false);
-    requestAnimationFrame(() => settingsButton.current?.focus());
+    requestAnimationFrame(() => returnFocus.current?.focus({ preventScroll: true }));
   }
 
   if (!ready) return null;
@@ -59,7 +72,7 @@ export function AdsConsent() {
     <dialog ref={popup} className={styles.panel} aria-labelledby="ads-consent-heading" onCancel={(event) => {
       event.preventDefault();
       setOpen(false);
-      requestAnimationFrame(() => settingsButton.current?.focus());
+      requestAnimationFrame(() => returnFocus.current?.focus({ preventScroll: true }));
     }}>
       <div className={styles.brand}>
         <img src="/images/gesab/logo.webp" width="815" height="330" alt="GESAB" />
@@ -79,21 +92,13 @@ export function AdsConsent() {
     </dialog>
     <CookiePreferences open={managing} allowed={adsAllowed} onChange={setAdsAllowed} onSave={saveChoice} error={error} onClose={() => {
       setManaging(false);
-      requestAnimationFrame(() => heading.current?.focus());
+      if (openedFromPage.current) {
+        setOpen(false);
+        requestAnimationFrame(() => returnFocus.current?.focus({ preventScroll: true }));
+      } else {
+        requestAnimationFrame(() => heading.current?.focus());
+      }
     }} />
     </>
-  ) : (
-    <button
-      type="button"
-      className={styles.settings}
-      ref={settingsButton}
-      onClick={() => {
-        setManaging(true);
-        setOpen(true);
-        requestAnimationFrame(() => heading.current?.focus());
-      }}
-    >
-      Cookieinställningar
-    </button>
-  );
+  ) : null;
 }

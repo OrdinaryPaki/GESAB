@@ -35,7 +35,7 @@ export function CookiePreferences({ open, allowed, onChange, onSave, onClose, er
         <p>Hjälper oss se vilka annonser som leder till besök. Cookies används och besöksuppgifter delas med Google. Personanpassade annonser är avstängda.</p>
         <span className={styles.choiceState}>{allowed ? "På" : "Av"}</span>
       </div>
-      <p className={styles.note}>Ditt val sparas i den här webbläsaren i 180 dagar och kan ändras via Cookieinställningar. Återkallar du ett ja laddas sidan om för att stoppa mätningen.</p>
+      <p className={styles.note}>Ditt val sparas i den här webbläsaren i 180 dagar och kan ändras via Integritet och cookies i sidfoten. Återkallar du ett ja laddas sidan om för att stoppa mätningen.</p>
       <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener noreferrer">Så använder Google uppgifterna</a>
       {error ? <p role="alert">Ditt nej kunde inte sparas. Rensa webbplatsens sparade data i webbläsaren för att ta bort ditt tidigare ja.</p> : null}
       <div className={styles.actions}>
