@@ -1,3 +1,5 @@
+import { gesabImages } from "../../components/gesab-image-data.js";
+
 export const renovationDetailContent = {
   badrumsrenovering: {
     audience: "Privatpersoner",
@@ -24,9 +26,9 @@ export const renovationDetailContent = {
       "Badrumsrenovering: tätskikt rollas på väggen och skarvarna i golvet är tejpade före plattsättning",
     projects: [
       {
-        src: "/images/services/badrumsrenovering/project-01-white-classic.webp",
-        alt: "Badrumsrenovering med ljust klassiskt badrum, äldre fönster och mörkt klinkergolv",
-        caption: "Ett ljust badrum där den äldre bostadens fönster och proportioner har fått vara kvar.",
+        src: gesabImages.vanity.src,
+        alt: gesabImages.vanity.alt,
+        caption: "Belyst spegel och en bred kommod kombineras med en duschdel i naturfärgade material.",
       },
       {
         src: "/images/services/badrumsrenovering/project-02-attic-sand.webp",

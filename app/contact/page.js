@@ -48,7 +48,7 @@ export default function ContactPage() {
       <section className="contact-hero-section">
         <div className="contact-hero-inner">
           <h1>
-            Kontakta oss
+            Kontakta oss{" "}
             <br />
             gärna
           </h1>

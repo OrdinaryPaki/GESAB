@@ -1,9 +1,9 @@
 import { siteConfig } from "../site-config";
 
-export function Logo({ dark = false }) {
+export function Logo() {
   return (
     <span className="logo" aria-label={siteConfig.shortName}>
-      <span className={dark ? "logo-text dark" : "logo-text"}>{siteConfig.shortName}</span>
+      <img className="logo-image" src="/images/gesab/logo.webp" alt={siteConfig.shortName} width="815" height="330" />
     </span>
   );
 }

@@ -1,3 +1,4 @@
+import { gesabImages } from "./gesab-image-data";
 import { placeholderImages } from "./placeholder-images";
 
 const homeImageDimensions = { width: 1440, height: 960 };
@@ -50,17 +51,9 @@ export const homeImages = {
       ...homeImageDimensions,
     },
   },
-  about: {
-    src: "/images/home/about-team-workshop.webp",
-    alt: "Två hantverkare planerar material tillsammans i verkstaden",
-    ...portraitImageDimensions,
-  },
+  about: gesabImages.work,
   gallery: [
-    {
-      src: "/images/home/gallery-bathroom-green.webp",
-      alt: "Färdigrenoverat badrum med grönt kakel och dusch",
-      ...galleryImageDimensions,
-    },
+    gesabImages.bathtub,
     {
       src: "/images/home/gallery-kitchen-island.webp",
       alt: "Färdigrenoverat kök med köksö och varma trädetaljer",
@@ -71,11 +64,7 @@ export const homeImages = {
       alt: "Platsbyggd bokhylla och förvaring i vardagsrum",
       ...galleryImageDimensions,
     },
-    {
-      src: "/images/home/gallery-shower-blue-grey.webp",
-      alt: "Färdig dusch med blågrått kakel och inbyggd hylla",
-      ...galleryImageDimensions,
-    },
+    gesabImages.shower,
     {
       src: "/images/home/gallery-whole-home.webp",
       alt: "Samordnad renovering med nytt kök och vardagsrum",

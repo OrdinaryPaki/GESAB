@@ -77,13 +77,13 @@ function Hero() {
         width="949"
       />
       <img
-        alt="Två hantverkare planerar de sista momenten i en renoverad bostad"
+        alt="Armin framför GESAB:s servicebil"
         className="hero-photo"
         decoding="async"
         fetchPriority="high"
-        height="1086"
+        height="1024"
         src={image.heroPhoto}
-        width="1448"
+        width="768"
       />
       <div className="container hero-content">
         <div className="rating-line">

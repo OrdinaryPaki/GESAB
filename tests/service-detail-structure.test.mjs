@@ -142,7 +142,7 @@ test("service details use meaningful, distinct editorial images", async () => {
     alt: tag.match(/alt="([^"]*)"/)?.[1] ?? "",
     src: tag.match(/src="([^"]+)"/)?.[1] ?? "",
   }));
-  const contentImages = images.filter(({ alt }) => alt.includes("Badrumsrenovering"));
+  const contentImages = images.filter(({ src }) => src.startsWith("/images/services/badrumsrenovering/") || src === "/images/gesab/badrum-belyst-spegel.webp");
 
   assert.ok(contentImages.length >= 2, "the service story must include hero and supporting imagery");
   assert.notEqual(

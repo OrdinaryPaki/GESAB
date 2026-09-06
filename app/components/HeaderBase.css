@@ -136,3 +136,12 @@
     color: var(--cta-color);
   }
 }
+
+.logo-image {
+  display: block;
+  width: 120px;
+  height: auto;
+  padding: 3px;
+  border-radius: 3px;
+  background: var(--white);
+}

@@ -181,6 +181,10 @@
   width: 50%;
 }
 
+.home-page .hero-photo {
+  object-position: 62% center;
+}
+
 .home-page .hero-content {
   width: min(1200px, calc(100% - 48px));
   min-height: 1000px;
@@ -242,6 +246,7 @@
   }
 
   .home-page .hero-photo {
+    object-position: center 28%;
     top: 587px;
     bottom: auto;
     width: 100%;

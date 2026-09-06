@@ -4,17 +4,17 @@ import test from "node:test";
 import { siteUrl } from "./helpers/site-url.mjs";
 
 const homeImagePaths = [
-  "/images/home/hero-team-planning.webp",
+  "/images/gesab/armin-servicebil.webp",
   "/images/home/why-team-planning.webp",
   "/images/home/why-final-inspection.webp",
   "/images/home/service-bathroom-warm.webp",
   "/images/home/service-kitchen-warm.webp",
   "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
-  "/images/home/about-team-workshop.webp",
-  "/images/home/gallery-bathroom-green.webp",
+  "/images/gesab/badrum-under-arbete.webp",
+  "/images/gesab/badrum-badkar.webp",
   "/images/home/gallery-kitchen-island.webp",
   "/images/home/gallery-built-in-storage.webp",
-  "/images/home/gallery-shower-blue-grey.webp",
+  "/images/gesab/badrum-dubbeldusch.webp",
   "/images/home/gallery-whole-home.webp",
 ];
 
@@ -73,7 +73,7 @@ test("the HOME about section renders the selected team image", async () => {
   assert.ok(aboutSection, "the Om GESAB section is missing from HOME");
   assert.match(
     aboutSection,
-    /<img class="about-photo"[^>]*src="\/images\/home\/about-team-workshop\.webp"/,
+    /<img class="about-photo"[^>]*src="\/images\/gesab\/badrum-under-arbete\.webp"/,
     "the Om GESAB section must render the selected team image",
   );
 });
@@ -92,10 +92,10 @@ test("the HOME gallery renders the five selected projects in the intended order"
   assert.deepEqual(
     imageSources,
     [
-      "/images/home/gallery-bathroom-green.webp",
+      "/images/gesab/badrum-badkar.webp",
       "/images/home/gallery-kitchen-island.webp",
       "/images/home/gallery-built-in-storage.webp",
-      "/images/home/gallery-shower-blue-grey.webp",
+      "/images/gesab/badrum-dubbeldusch.webp",
       "/images/home/gallery-whole-home.webp",
     ],
     "the HOME gallery must preserve the five selected projects and their order",

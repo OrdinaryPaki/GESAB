@@ -1,18 +1,19 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { gesabImages } from "../components/gesab-image-data";
 import { services } from "../gesab-data";
 import styles from "./galleri.module.css";
 
 const allCategories = ["Alla", "Badrum", "Altan", "Tvättstuga", "Kök", "Totalentreprenad", "Bygg"];
 
-const mockProjects = [
+const galleryProjects = [
   {
     id: 1,
     title: "Modern badrumsrenovering",
     category: "Badrum",
     size: "large",
-    image: services.find((s) => s.slug === "badrumsrenovering")?.image,
+    image: gesabImages.bathtub.src,
   },
   {
     id: 2,
@@ -58,10 +59,10 @@ const mockProjects = [
   },
   {
     id: 7,
-    title: "Klassiskt badrum",
+    title: "Badrum med belyst spegel",
     category: "Badrum",
     size: "tall",
-    image: "/images/services/badrumsrenovering/project-01-white-classic.webp",
+    image: gesabImages.vanity.src,
   },
   {
     id: 8,
@@ -84,8 +85,8 @@ export default function GalleryView() {
 
   const filteredProjects = useMemo(() => {
     return activeCategory === "Alla"
-      ? mockProjects
-      : mockProjects.filter((p) => p.category === activeCategory);
+      ? galleryProjects
+      : galleryProjects.filter((p) => p.category === activeCategory);
   }, [activeCategory]);
 
   return (
@@ -93,7 +94,7 @@ export default function GalleryView() {
       <div className={styles.header}>
         <h1 className={styles.title}>Vårt Galleri</h1>
         <p className={styles.subtitle}>
-          Här har vi samlat ett urval av våra tidigare projekt. Filtrera på kategori för att hitta inspiration för ditt kommande projekt.
+          Här har vi samlat projektbilder och inspiration för badrum, kök och bygg. Filtrera på kategori för att hitta inspiration för ditt kommande projekt.
         </p>
       </div>
 
@@ -102,6 +103,7 @@ export default function GalleryView() {
           <button
             key={category}
             type="button"
+            aria-pressed={activeCategory === category}
             className={`${styles.filterButton} ${activeCategory === category ? styles.active : ""}`}
             onClick={() => setActiveCategory(category)}
           >
