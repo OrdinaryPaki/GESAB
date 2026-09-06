@@ -1,7 +1,7 @@
 .panel {
   position: fixed;
-  inset: 0;
-  margin: auto;
+  inset: auto 16px 16px auto;
+  margin: 0;
   width: min(520px, calc(100% - 32px));
   max-height: calc(100dvh - 32px);
   overflow-y: auto;
