@@ -80,8 +80,8 @@ export function AdsConsent() {
       </div>
       <h2 id="ads-consent-heading" ref={heading} tabIndex={-1}>Cookies</h2>
       <p>
-        Får vi använda cookies för annonsmätning med Google Ads? Då delas besöksuppgifter
-        med Google så att vi kan se vilka annonser som fungerar. Inga personanpassade annonser.
+        Får vi använda cookies för att se hur våra annonser fungerar? Vi mäter med Google Ads,
+        och du kan när som helst ändra ditt val.
       </p>
       <div className={styles.actions}>
         <button type="button" className={styles.accept} aria-label="JA, tillåt annonsmätning med Google Ads" onClick={() => saveChoice(true)}>JA</button>
