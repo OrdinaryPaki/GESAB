@@ -29,11 +29,13 @@ export function ContactMap() {
         zoomControl: false,
       });
 
+      map.attributionControl.setPrefix(false);
+
       L.control.zoom({ position: "topright" }).addTo(map);
 
-      L.tileLayer(`https://api.mapbox.com/styles/v1/mapbox/light-v11/tiles/512/{z}/{x}/{y}{r}?access_token=${MAPBOX_TOKEN}`, {
+      L.tileLayer(`https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/tiles/512/{z}/{x}/{y}{r}?access_token=${MAPBOX_TOKEN}`, {
         attribution:
-          '&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · <a href="https://apps.mapbox.com/feedback/" target="_blank" rel="noopener noreferrer">Förbättra kartan</a>',
+          '&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://www.maxar.com/">Maxar</a> · <a href="https://apps.mapbox.com/feedback/" target="_blank" rel="noopener noreferrer">Förbättra kartan</a>',
         tileSize: 512,
         zoomOffset: -1,
         maxZoom: 22,
