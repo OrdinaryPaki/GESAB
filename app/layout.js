@@ -1,6 +1,7 @@
 import "./globals.css";
 import "./brand.css";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
+import { AdsConsent } from "./components/AdsConsent";
 import { createLocalBusinessStructuredData } from "./seo";
 import { siteConfig } from "./site-config";
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body>
         <MobileNavigationEnhancement />
         {children}
+        <AdsConsent />
         <script dangerouslySetInnerHTML={{ __html: structuredData }} type="application/ld+json" />
       </body>
     </html>
