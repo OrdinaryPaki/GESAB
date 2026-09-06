@@ -17,9 +17,9 @@
 .brand { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 .brand img { display: block; width: 96px; height: auto; }
 .brand span { font-size: 12px; color: var(--muted); }
-.panel h2 { margin: 0 0 12px; font-family: var(--font-heading, inherit); font-size: 25px; line-height: 1.2; }
-.panel p { margin: 0 0 12px; font-size: 14px; line-height: 1.6; }
-.panel a { color: var(--blue); text-decoration: underline; }
+.panel h2, .preferences h2 { margin: 0 0 12px; font-family: var(--font-heading, inherit); font-size: 25px; line-height: 1.2; }
+.panel p, .preferences p { margin: 0 0 12px; font-size: 14px; line-height: 1.6; }
+.preferences a { color: var(--blue); text-decoration: underline; font-size: 13px; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 .actions button, .settings {
   padding: 12px 16px;
@@ -49,16 +49,41 @@
   text-decoration: underline;
   cursor: pointer;
 }
-.details { border-top: 1px solid var(--line); padding-top: 14px; font-size: 13px; }
-.details p { margin: 8px 0 0; font-size: 13px; }
-.preference { display: flex; gap: 12px; align-items: center; min-height: 44px; font-size: 14px; cursor: pointer; }
-.preference input { width: 20px; height: 20px; flex-shrink: 0; accent-color: var(--blue); }
-.panel button:focus-visible, .settings:focus-visible, .panel a:focus-visible, .preference input:focus-visible {
+.preferences {
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 28px;
+  margin: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--text);
+  box-shadow: 0 24px 80px #0003;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.preferences::backdrop { background: #1e1b4b66; backdrop-filter: blur(3px); }
+.dialogHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; color: var(--muted); }
+.close { width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; background: var(--white); color: var(--blue); font-size: 26px; cursor: pointer; }
+.preferenceCard { margin: 24px 0 20px; padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--soft); }
+.preferenceCard p { color: var(--muted); font-size: 13px; margin-top: 12px; }
+.preference { display: flex; justify-content: space-between; gap: 20px; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.switch { position: relative; width: 50px; height: 44px; flex-shrink: 0; display: flex; align-items: center; }
+.switch input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.switchTrack { width: 50px; height: 28px; border-radius: 20px; background: #77738b; pointer-events: none; }
+.switchTrack::after { content: ""; display: block; width: 22px; height: 22px; margin: 3px; border-radius: 50%; background: white; }
+.switch input:checked + .switchTrack { background: var(--blue); }
+.switch input:checked + .switchTrack::after { transform: translateX(22px); }
+.switch input:focus-visible + .switchTrack { outline: 3px solid var(--blue); outline-offset: 4px; }
+.choiceState { font-size: 12px; font-weight: 600; color: var(--blue); }
+.preferences .note { font-size: 12px; color: var(--muted); }
+.panel button:focus-visible, .preferences button:focus-visible, .preferences a:focus-visible, .settings:focus-visible {
   outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
 @media (max-width: 420px) {
-  .panel { padding: 20px; }
+  .panel, .preferences { padding: 20px; }
   .brand span { max-width: 100px; text-align: right; }
 }
 .settings {

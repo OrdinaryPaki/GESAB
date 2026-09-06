@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { CONSENT_KEY, createAdsConsentController } from "../tracking/google-ads-consent.mjs";
 import styles from "./ads-consent.module.css";
+import { CookiePreferences } from "./CookiePreferences";
 
 export function AdsConsent() {
   const controller = useRef(null);
@@ -42,41 +43,29 @@ export function AdsConsent() {
   if (!ready) return null;
 
   return open ? (
-    <section className={styles.panel} aria-labelledby="ads-consent-heading">
+    <>
+    <section className={styles.panel} aria-labelledby="ads-consent-heading" hidden={managing}>
       <div className={styles.brand}>
         <img src="/images/gesab/logo.webp" width="815" height="330" alt="GESAB" />
         <span>Ditt besök. Ditt val.</span>
       </div>
       <h2 id="ads-consent-heading" ref={heading} tabIndex={-1}>Cookies</h2>
       <p>
-        Med ditt ja använder vi cookies för att se vilka annonser som leder till besök hos
-        GESAB. Besöksuppgifter delas då med Google för annonsmätning, utan personanpassade annonser.
+        Får vi använda cookies för annonsmätning med Google Ads? Då delas besöksuppgifter
+        med Google så att vi kan se vilka annonser som fungerar. Inga personanpassade annonser.
       </p>
       <div className={styles.actions}>
-        <button type="button" className={styles.accept} onClick={() => saveChoice(true)}>Ja, tillåt annonsmätning</button>
-        <button type="button" aria-expanded={managing} aria-controls="cookie-preferences" onClick={() => setManaging(!managing)}>Hantera cookies</button>
+        <button type="button" className={styles.accept} aria-label="JA, tillåt annonsmätning med Google Ads" onClick={() => saveChoice(true)}>JA</button>
+        <button type="button" aria-haspopup="dialog" onClick={() => setManaging(true)}>Hantera cookies</button>
       </div>
       <button type="button" className={styles.reject} onClick={() => saveChoice(false)}>Neka alla</button>
       {error ? <p role="alert">Webbläsaren kunde inte spara ditt nej. Rensa webbplatsens sparade data i webbläsarens inställningar för att ta bort ditt tidigare ja.</p> : null}
-      <div id="cookie-preferences" className={styles.details} hidden={!managing}>
-        <label className={styles.preference}>
-          <input type="checkbox" checked={adsAllowed} onChange={(event) => setAdsAllowed(event.target.checked)} />
-          Annonsmätning med Google Ads
-        </label>
-        <p>
-        Vi använder Google-taggen och annonscookies för Google Ads.
-        Ditt ja eller nej sparas separat i den här webbläsaren i 180 dagar. Du kan när som helst
-        ändra valet via Cookieinställningar. Om du återkallar ett ja laddas sidan om för att
-        stoppa mätningen. {" "}
-        <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener noreferrer">
-          Så använder Google uppgifterna
-        </a>.
-        </p>
-        <div className={styles.actions}>
-          <button type="button" onClick={() => saveChoice(adsAllowed)}>Spara mitt val</button>
-        </div>
-      </div>
     </section>
+    <CookiePreferences open={managing} allowed={adsAllowed} onChange={setAdsAllowed} onSave={saveChoice} error={error} onClose={() => {
+      setManaging(false);
+      requestAnimationFrame(() => heading.current?.focus());
+    }} />
+    </>
   ) : (
     <button
       type="button"
