@@ -9,6 +9,7 @@ export function AdsConsent() {
   const controller = useRef(null);
   const settingsButton = useRef(null);
   const heading = useRef(null);
+  const popup = useRef(null);
   const [ready, setReady] = useState(false);
   const [open, setOpen] = useState(false);
   const [error, setError] = useState(false);
@@ -28,6 +29,17 @@ export function AdsConsent() {
     return () => window.removeEventListener("storage", syncChoice);
   }, []);
 
+  useEffect(() => {
+    const dialog = popup.current;
+    if (!dialog) return;
+    if (ready && open && !managing) {
+      if (!dialog.open) dialog.showModal();
+      heading.current?.focus();
+    } else if (dialog.open) {
+      dialog.close();
+    }
+  }, [ready, open, managing]);
+
   function saveChoice(allowed) {
     if (controller.current.choose(allowed) === false) {
       setError(true);
@@ -44,7 +56,11 @@ export function AdsConsent() {
 
   return open ? (
     <>
-    <section className={styles.panel} aria-labelledby="ads-consent-heading" hidden={managing}>
+    <dialog ref={popup} className={styles.panel} aria-labelledby="ads-consent-heading" onCancel={(event) => {
+      event.preventDefault();
+      setOpen(false);
+      requestAnimationFrame(() => settingsButton.current?.focus());
+    }}>
       <div className={styles.brand}>
         <img src="/images/gesab/logo.webp" width="815" height="330" alt="GESAB" />
         <span>Ditt besök. Ditt val.</span>
@@ -60,7 +76,7 @@ export function AdsConsent() {
       </div>
       <button type="button" className={styles.reject} onClick={() => saveChoice(false)}>Neka alla</button>
       {error ? <p role="alert">Webbläsaren kunde inte spara ditt nej. Rensa webbplatsens sparade data i webbläsarens inställningar för att ta bort ditt tidigare ja.</p> : null}
-    </section>
+    </dialog>
     <CookiePreferences open={managing} allowed={adsAllowed} onChange={setAdsAllowed} onSave={saveChoice} error={error} onClose={() => {
       setManaging(false);
       requestAnimationFrame(() => heading.current?.focus());
