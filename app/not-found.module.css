@@ -1,0 +1,143 @@
+.page {
+  min-height: 100svh;
+  background: var(--soft);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  padding: 112px 24px 0;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  padding: 16px 0 64px;
+  text-align: center;
+}
+
+.code {
+  margin: 0 0 16px;
+  color: var(--blue);
+  font-family: var(--font-heading);
+  font-size: clamp(128px, 18vw, 224px);
+  font-weight: 600;
+  letter-spacing: -0.07em;
+  line-height: 0.95;
+}
+
+.code span {
+  color: var(--muted);
+}
+
+.content h1 {
+  margin: 24px 0 20px;
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+.description {
+  max-width: 460px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.actions a {
+  gap: 16px;
+}
+
+.actions svg,
+.links svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.bottom p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.links a:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 108px 24px 0;
+  }
+
+  .content {
+    padding: 20px 0 44px;
+  }
+
+  .desktopBreak {
+    display: none;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions a {
+    width: min(100%, 320px);
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  .links {
+    gap: 20px;
+  }
+}
