@@ -1,8 +1,6 @@
-import { gesabImages } from "./components/gesab-image-data";
-
 export const image = {
   heroPattern: "/images/site/hero-pattern.jpg",
-  heroPhoto: gesabImages.armin.src,
+  heroPhoto: "/images/gesab/hero-servicebil.webp",
   aboutPattern: "/images/site/about-pattern.jpg",
   ctaBg: "/images/site/contact-band-background.jpg",
   badges: ["/images/site/trust-badge.jpg"],

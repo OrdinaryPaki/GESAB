@@ -81,9 +81,9 @@ function Hero() {
         className="hero-photo"
         decoding="async"
         fetchPriority="high"
-        height="1024"
+        height="941"
         src={image.heroPhoto}
-        width="768"
+        width="1671"
       />
       <div className="container hero-content">
         <div className="rating-line">
