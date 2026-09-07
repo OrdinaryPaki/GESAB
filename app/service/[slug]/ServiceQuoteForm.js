@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import { CtaButton } from "../../components/CtaButton";
 import { InquiryFormError, InquiryHoneypot } from "../../components/InquiryFormSupport";
 import { createInquirySubmissionSession } from "../../lib/inquiries/submit-inquiry.mjs";
+import { contactInfo } from "../../site-config";
 import "./ServiceQuoteForm.css";
 
 const MESSAGE_MAX_HEIGHT = 280;
@@ -68,7 +69,10 @@ export function ServiceQuoteForm({ defaultServiceSlug, description, heading, isM
     <form className={`service-quote-form ${status === 'success' ? 'is-success' : ''}`} data-service-quote-form={!isMobile ? true : undefined} data-mobile-quote-form={isMobile ? true : undefined} onSubmit={handleSubmit} style={{ position: 'relative', overflow: 'hidden' }}>
       <div className={`service-quote-form-wrapper ${status === 'success' ? 'is-hidden' : ''}`}>
         <h2>{heading}</h2>
-        <p className="service-quote-form-intro">{description}</p>
+        <p className="service-quote-form-intro">
+          {description}{" "}
+          Bilder kan du mejla till <a href={contactInfo.emailHref}>{contactInfo.email}</a>.
+        </p>
         <input type="hidden" name="service" value={defaultServiceSlug} />
         <label>
           Namn

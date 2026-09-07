@@ -37,10 +37,10 @@ export const services = [
         "Nya vatten- och avloppsdragningar samt byte av golvbrunn.",
         "El, jordfelsbrytare, belysning och behaglig golvvärme.",
         "Golvuppbyggnad med korrekt fall mot brunnen.",
-        "Godkänt och certifierat tätskikt på golv och väggar (BKR).",
+        "BKR-godkänt tätskiktssystem på golv och väggar.",
         "Professionell plattsättning, fogning och silikonering.",
         "Montering av WC, kommod, blandare, dusch eller badkar.",
-        "Grundlig slutstädning och överlämning med officiellt våtrumsintyg.",
+        "Grundlig slutstädning och överlämning med BKR:s kvalitetsdokument för tätskiktsarbetet.",
       ],
     },
   },
@@ -86,7 +86,7 @@ export const services = [
     detail: {
       introTitle: "En tvättstuga som är praktisk, trygg och enkel att sköta",
       intro:
-        "Tvättstugan är ett våtrum – precis som badrummet. Därför bygger vi med godkänt tätskikt, rätt fall och installationer som håller i vardagen. Resultatet blir en fräsch, funktionell yta med dokumentation du kan lita på.",
+        "En vanlig tvättstuga behöver tätskikt på golvet med uppvik mot vägg. Väggarna har inte samma tätskiktskrav som i ett badrum. Vi bygger med godkänt tätskikt, rätt fall och installationer som håller i vardagen. Resultatet blir en fräsch, funktionell yta med dokumentation du kan lita på.",
       sections: [
         [
           "Fast pris utan dolda kostnader",

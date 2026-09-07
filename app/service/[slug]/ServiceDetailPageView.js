@@ -109,7 +109,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 defaultServiceSlug={service.slug}
                 description={
                   detail.quoteDescription ??
-                  "Beskriv dina önskemål eller skicka några bilder. Vi återkommer inom 24h med rådgivning och ett fast prisförslag."
+                  "Beskriv dina önskemål i formuläret. Vi återkommer inom 24h med rådgivning och ett fast prisförslag."
                 }
                 heading={detail.quoteHeading ?? "Få en gratis offert"}
               />
@@ -212,7 +212,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
 
               <section className={styles.articleSection} data-service-preparation-section>
                 <h2>{detail.preparationTitle ?? "Inför första kontakten"}</h2>
-                <p>{detail.preparationIntro ?? "Det räcker med ett enkelt underlag. Skicka gärna:"}</p>
+                <p>{detail.preparationIntro ?? "Det räcker med ett enkelt underlag. Förbered gärna:"}</p>
                 <ul className={styles.standardList}>
                   {detail.preparation.map((item, index) => (
                     <li data-service-preparation={index + 1} key={item}>{item}</li>

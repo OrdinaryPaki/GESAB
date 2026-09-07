@@ -48,7 +48,7 @@ export function MobileStickyContact({ defaultServiceSlug }) {
             <ServiceQuoteForm 
               defaultServiceSlug={defaultServiceSlug} 
               heading="Få en gratis offert"
-              description="Beskriv dina önskemål eller skicka några bilder. Vi återkommer inom 24h med ett fast prisförslag."
+              description="Beskriv dina önskemål i formuläret. Vi återkommer inom 24h med ett fast prisförslag."
               isMobile
             />
             <ul className="mobile-sticky-benefits">

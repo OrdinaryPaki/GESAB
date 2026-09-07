@@ -5,7 +5,7 @@ export const renovationDetailContent = {
     audience: "Privatpersoner",
     heroTitle: "Badrumsrenovering i Göteborg",
     heroLead:
-      "Vi renoverar ditt badrum från start till mål. Du får fast pris, certifierade hantverkare, klar i tid-garanti och en enda kontaktperson under hela projektet.",
+      "Vi renoverar ditt badrum från start till mål. Du får fast pris, BKR-behöriga plattsättare, klar i tid-garanti och en enda kontaktperson under hela projektet.",
     heroImage: "/images/services/badrumsrenovering/hero-olive-compact.webp",
     heroImageAlt:
       "Badrumsrenovering i Göteborg – färdigt badrum med walk in-dusch, ljusa storformatsplattor och kommod i trä",
@@ -69,11 +69,11 @@ export const renovationDetailContent = {
     reviewNames: ["Anna & Mikael", "Katarina S.", "Familjen Johansson"],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
-      "Beskriv dina önskemål eller skicka några bilder. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
+      "Beskriv dina önskemål i formuläret. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
     quoteBenefits: [
       "100% gratis hembesök & rådgivning",
       "Fast pris utan obehagliga överskridanden",
-      "Certifierade våtrumsbyggare (BKR)",
+      "BKR-behöriga plattsättare",
       "30% ROT-avdrag direkt på fakturan",
     ],
     sectionsTitle: "Därför ska du välja GESAB till ditt badrum",
@@ -84,7 +84,7 @@ export const renovationDetailContent = {
     process: [
       ["Gratis hembesök & rådgivning", "Vi kommer hem till dig, mäter upp badrummet och lyssnar på dina idéer. Helt gratis och utan köptvång."],
       ["Skriftlig offert med fast pris", "Du får ett tydligt avtal där hela arbetet, material och ROT-avdrag ingår. Inga överraskningar."],
-      ["Smidigt utförande & uppdateringar", "Våra certifierade hantverkare bygger badrummet i rätt ordning, städar efter sig varje dag och håller dig uppdaterad."],
+      ["Smidigt utförande & uppdateringar", "Våra hantverkare bygger badrummet i rätt ordning, städar efter sig varje dag och håller dig uppdaterad."],
       ["Slutbesiktning & våtrumsintyg", "Vi går igenom det färdiga badrummet tillsammans så att du är 100% nöjd och lämnar över ditt våtrumsintyg."],
     ],
     timelineTitle: "Tidslinje: Så snabbt blir det klart",
@@ -116,9 +116,9 @@ export const renovationDetailContent = {
     importantIntro:
       "Ditt badrum ska vara tryggt och hålla i årtionden. Så här garanterar vi högsta kvalitet:",
     credentials: [
-      "Certifierade våtrumsbyggare som följer alla gällande branschregler (BKR).",
+      "BKR-behöriga plattsättare som utför tätskiktsarbetet enligt BBV, Byggkeramikrådets branschregler för våtrum.",
       "Egenkontroller utförs i varje steg innan nästa moment påbörjas.",
-      "Du får officiellt våtrumsintyg för ditt försäkringsbolag vid överlämning.",
+      "Du får BKR:s kvalitetsdokument för tätskiktsarbetet vid överlämning.",
       "30% ROT-avdrag dras direkt på fakturan – vi sköter hela kontakten med Skatteverket.",
     ],
     faq: [
@@ -150,7 +150,7 @@ export const renovationDetailContent = {
       {
         question: "Får jag ett våtrumsintyg efteråt?",
         answer:
-          "Självklart. När badrummet är färdigt och godkänt får du ett fullständigt våtrumsintyg som styrker att arbetet är utfört enligt alla branschregler – väldigt viktigt för ditt försäkringsbolag!",
+          "Ja. Du får ett våtrumsintyg i form av BKR:s kvalitetsdokument för tätskiktsarbetet enligt BBV, Byggkeramikrådets branschregler för våtrum.",
       },
     ],
     related: ["koksrenovering", "totalentreprenad", "rivningsarbeten"],
@@ -169,7 +169,7 @@ export const renovationDetailContent = {
       ["30% ROT", "Dras direkt på fakturan"],
     ],
     preparationTitle: "Inför första kontakten",
-    preparationIntro: "Det är enkelt att komma igång. Skicka gärna:",
+    preparationIntro: "Det är enkelt att komma igång. Förbered gärna:",
     preparation: [
       "Några bilder på platsen där altanen ska stå, gärna från olika håll.",
       "Ungefärliga mått eller önskad storlek på altanen.",
@@ -181,7 +181,7 @@ export const renovationDetailContent = {
     reviewNames: ["Katarina S.", "Anna & Mikael", "Familjen Johansson"],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
-      "Beskriv dina önskemål eller skicka några bilder på platsen. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
+      "Beskriv dina önskemål i formuläret. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
     quoteBenefits: [
       "100% gratis platsbesök & rådgivning",
       "Fast pris utan obehagliga överskridanden",
@@ -259,7 +259,7 @@ export const renovationDetailContent = {
     audience: "Privatpersoner med tvättstuga",
     heroTitle: "Tvättstugsrenovering i Göteborg",
     heroLead:
-      "Vi renoverar din tvättstuga till ett tryggt och praktiskt våtrum. Fast pris, certifierat tätskikt och en kontaktperson genom hela projektet.",
+      "Vi renoverar din tvättstuga till ett tryggt och praktiskt våtrum. Fast pris, BKR-godkänt tätskiktssystem och en kontaktperson genom hela projektet.",
     heroImage: "/images/services/tvattstugsrenovering/hero-sage-compact.webp",
     heroImageAlt: "Färdig kompakt tvättstuga med salviagröna skåp och smart förvaring",
     highlights: [
@@ -269,7 +269,7 @@ export const renovationDetailContent = {
       ["30% ROT", "Dras direkt på fakturan"],
     ],
     preparationTitle: "Inför första kontakten",
-    preparationIntro: "Det är enkelt att komma igång. Skicka gärna:",
+    preparationIntro: "Det är enkelt att komma igång. Förbered gärna:",
     preparation: [
       "Några bilder på tvättstugan, gärna en per vägg.",
       "Ungefärliga mått eller golvyta.",
@@ -323,11 +323,11 @@ export const renovationDetailContent = {
     reviewNames: ["Katarina S.", "Anna & Mikael", "Familjen Johansson"],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
-      "Beskriv dina önskemål eller skicka några bilder. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
+      "Beskriv dina önskemål i formuläret. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
     quoteBenefits: [
       "100% gratis hembesök & rådgivning",
       "Fast pris utan obehagliga överskridanden",
-      "Certifierat våtrumsarbete (BKR)",
+      "Tätskiktsarbete enligt BBV",
       "30% ROT-avdrag direkt på fakturan",
     ],
     sectionsTitle: "Därför ska du välja GESAB till tvättstugan",
@@ -360,7 +360,7 @@ export const renovationDetailContent = {
     importantTitle: "Så säkerställer vi kvaliteten",
     importantIntro: "En tvättstuga ska tåla fukt och tung användning. Så här garanterar vi resultatet:",
     credentials: [
-      "Certifierat våtrumsarbete enligt gällande branschregler (BKR).",
+      "Tätskiktsarbete enligt BBV, utfört av BKR-behöriga plattsättare.",
       "Egenkontroller i varje steg innan nästa moment påbörjas.",
       "Du får våtrumsintyg och dokumentation vid överlämning.",
       "30% ROT-avdrag dras direkt på fakturan när villkoren är uppfyllda.",
@@ -374,7 +374,7 @@ export const renovationDetailContent = {
       {
         question: "Behöver tvättstugan ha tätskikt?",
         answer:
-          "Ja. En tvättstuga är ett våtrum. Vi utför tätskikt enligt branschreglerna så att ytan blir trygg och godkänd.",
+          "Ja. En vanlig tvättstuga behöver tätskikt på golvet med uppvik mot vägg. Väggarna har inte samma tätskiktskrav som i ett badrum.",
       },
       {
         question: "Hur lång tid tar det?",
@@ -409,7 +409,7 @@ export const renovationDetailContent = {
       ["30% ROT", "Dras direkt på fakturan"],
     ],
     preparationTitle: "Inför första kontakten",
-    preparationIntro: "Det är enkelt att komma igång. Skicka gärna:",
+    preparationIntro: "Det är enkelt att komma igång. Förbered gärna:",
     preparation: [
       "Några bilder på köket och ungefärliga mått.",
       "Önskemål om skåp, vitvaror och arbetsyta.",
@@ -463,7 +463,7 @@ export const renovationDetailContent = {
     reviewNames: ["Lars G.", "Anna & Mikael", "Familjen Johansson"],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
-      "Beskriv dina önskemål eller skicka några bilder. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
+      "Beskriv dina önskemål i formuläret. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",
     quoteBenefits: [
       "100% gratis hembesök & rådgivning",
       "Fast pris utan obehagliga överskridanden",
@@ -548,7 +548,7 @@ export const renovationDetailContent = {
       ["30% ROT", "När det gäller"],
     ],
     preparationTitle: "Inför första kontakten",
-    preparationIntro: "Det räcker med ett enkelt underlag. Skicka gärna:",
+    preparationIntro: "Det räcker med ett enkelt underlag. Förbered gärna:",
     preparation: [
       "Bilder eller ritningar och en kort beskrivning av vad som ska ändras.",
       "Vad som är viktigast: tid, budget eller kvalitetsnivå.",
@@ -602,7 +602,7 @@ export const renovationDetailContent = {
     reviewNames: ["Familjen Johansson", "Lars G.", "Katarina S."],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
-      "Beskriv projektet kort eller skicka bilder. Vi återkommer inom 24h med nästa steg och ett tydligt prisförslag.",
+      "Beskriv projektet kort i formuläret. Vi återkommer inom 24h med nästa steg och ett tydligt prisförslag.",
     quoteBenefits: [
       "100% gratis första genomgång",
       "Ett samlat ansvar och en tidplan",

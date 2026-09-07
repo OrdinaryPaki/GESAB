@@ -13,7 +13,7 @@ export const constructionDetailContent = {
       ["Klart", "För nästa hantverkare"],
     ],
     preparationTitle: "Inför första kontakten",
-    preparationIntro: "Det räcker med ett enkelt underlag. Skicka gärna:",
+    preparationIntro: "Det räcker med ett enkelt underlag. Förbered gärna:",
     preparation: [
       "Bilder eller ritningar som visar vad som ska bort och vad som ska sparas.",
       "Om du vet något om installationer eller material i området.",
@@ -67,7 +67,7 @@ export const constructionDetailContent = {
     reviewNames: ["Katarina S.", "Familjen Johansson", "Lars G."],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
-      "Beskriv vad som ska rivas eller skicka bilder. Vi återkommer inom 24h med rådgivning och prisförslag.",
+      "Beskriv vad som ska rivas i formuläret. Vi återkommer inom 24h med rådgivning och prisförslag.",
     quoteBenefits: [
       "100% gratis första genomgång",
       "Tydligt pris innan vi börjar",
@@ -151,7 +151,7 @@ export const constructionDetailContent = {
       ["30% ROT", "När det gäller"],
     ],
     preparationTitle: "Inför första kontakten",
-    preparationIntro: "Det räcker med ett enkelt underlag. Skicka gärna:",
+    preparationIntro: "Det räcker med ett enkelt underlag. Förbered gärna:",
     preparation: [
       "Bilder, mått och eventuella ritningar.",
       "Vad som ska ändras och vilken nivå ni siktar på.",
@@ -205,7 +205,7 @@ export const constructionDetailContent = {
     reviewNames: ["Familjen Johansson", "Lars G.", "Anna & Mikael"],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
-      "Beskriv vad du vill bygga eller skicka bilder. Vi återkommer inom 24h med rådgivning och prisförslag.",
+      "Beskriv vad du vill bygga i formuläret. Vi återkommer inom 24h med rådgivning och prisförslag.",
     quoteBenefits: [
       "100% gratis första genomgång",
       "Fast pris innan vi börjar",
@@ -251,7 +251,7 @@ export const constructionDetailContent = {
     faq: [
       {
         question: "Tar ni både små och stora jobb?",
-        answer: "Ja. Skicka bilder eller en kort beskrivning, så återkommer vi med rätt nästa steg.",
+        answer: "Ja. Skicka en kort beskrivning, så återkommer vi med rätt nästa steg. Bilder kan du skicka via e-post.",
       },
       {
         question: "Kan ni hjälpa med mått och ritningar?",
