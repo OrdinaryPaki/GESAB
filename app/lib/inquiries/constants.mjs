@@ -11,6 +11,7 @@ export const INQUIRY_LIMITS = Object.freeze({
 });
 
 export const SERVICE_TITLES = Object.freeze({
+  altanbygge: "Altanbygge",
   badrumsrenovering: "Badrumsrenovering",
   tvattstugsrenovering: "Tvättstugsrenovering",
   koksrenovering: "Köksrenovering",

@@ -26,8 +26,20 @@ export default function CookiesPage() {
         </section>
         <section>
           <h2>Vad använder vi cookies till?</h2>
-          <p>Med ditt godkännande använder vi Google Ads för att mäta vilka annonser som leder till besök på hemsidan. Då används annonscookies och besöksuppgifter delas med Google. Vi aktiverar inte personanpassade annonser.</p>
+          <p>Med ditt godkännande använder vi Google Ads för att mäta vilka annonser som leder till besök och skickade förfrågningar. Då används annonscookies och uppgifter om besöket och händelsen delas med Google. Vi aktiverar inte personanpassade annonser.</p>
           <p>Google-taggen laddas först efter ett godkännande. Du kan läsa mer om behandlingen hos <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener noreferrer">Google</a>.</p>
+          <p>Om du godkänner annonsmätning sparar vi också annonsens klick-ID och kampanjuppgifter i webbläsaren i högst 90 dagar. Skickar du en förfrågan följer dessa uppgifter med den, så att vi kan koppla förfrågan till annonsen. När du stänger av annonsmätning rensas dessa lokalt sparade uppgifter.</p>
+          <p>Om förfrågan blir ett bokat jobb kan vi även återrapportera annonsens klick-ID, ett slumpmässigt ärende-ID, bokningsdatum och affärsvärde till Google Ads. Det görs bara för förfrågningar med registrerat annonssamtycke. Namn, e-postadress, telefonnummer och meddelanden ingår inte i denna export.</p>
+        </section>
+        <section>
+          <h2>När du kontaktar oss</h2>
+          <p>Vi använder de uppgifter du lämnar i formuläret för att besvara din förfrågan och följa upp ditt ärende. Förfrågningar sparas i vår databas hos Neon och hanteras med hjälp av e-post och Google-kalkylark. Innehållet i ditt meddelande skickas inte till Google Ads.</p>
+          <p>När du klickar på ett telefonnummer sparar vi tidpunkten, sidan och vilket av våra nummer du klickade på i databasen och kalkylarket. Det visar ett telefonklick, inte att ett samtal genomfördes. Vi sparar inte ditt telefonnummer eller din IP-adress i denna lista. Annonsuppgifter följer med endast om du har godkänt annonsmätning.</p>
+        </section>
+        <section>
+          <h2>Besöksstatistik och prestanda</h2>
+          <p>Vi använder Vercel Web Analytics och Speed Insights för att förstå hur hemsidan används och hur snabbt den fungerar. Vi mäter sidvisningar, påbörjade och skickade formulär samt klick på telefon- och e-postlänkar. Formulärens innehåll, som namn, e-postadress och meddelande, skickas inte till denna statistik.</p>
+          <p>Läs mer om <a href="https://vercel.com/docs/analytics/privacy-policy">Vercels besöksstatistik</a> och <a href="https://vercel.com/docs/speed-insights/privacy-policy">prestandamätning</a>.</p>
         </section>
         <section>
           <h2>Så kommer vi ihåg ditt val</h2>

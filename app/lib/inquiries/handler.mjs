@@ -1,8 +1,9 @@
 import { normalizeInquiry } from "./validation.mjs";
+import { normalizeLeadAttribution } from "../../tracking/lead-attribution.mjs";
 
 const MAX_REQUEST_BYTES = 16 * 1024;
 const INVALID_ERROR = "Förfrågan kunde inte skickas.";
-const DELIVERY_ERROR = "E-posttjänsten svarar inte just nu. Försök igen om en stund.";
+const DELIVERY_ERROR = "Förfrågan kunde inte slutföras just nu. Försök igen om en stund.";
 
 function jsonResponse(body, status) {
   return Response.json(body, {
@@ -58,7 +59,7 @@ export async function handleInquiryRequest(request, deliver) {
   }
 
   try {
-    await deliver(result.inquiry);
+    await deliver(result.inquiry, normalizeLeadAttribution(raw.attribution));
   } catch {
     return publicError(DELIVERY_ERROR, 503);
   }

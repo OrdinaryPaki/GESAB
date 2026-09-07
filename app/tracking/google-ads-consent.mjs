@@ -1,6 +1,10 @@
+import { GOOGLE_ADS_TAG_ID } from "./google-ads-config.mjs";
+import { captureLeadAttribution, clearLeadAttribution } from "./lead-attribution.mjs";
+
 export const CONSENT_KEY = "gesab.ads-consent.v1";
 const MAX_AGE = 180 * 24 * 60 * 60 * 1000;
-const TAG_ID = "AW-18434262533";
+const TAG_ID = GOOGLE_ADS_TAG_ID;
+const activeChoices = new WeakMap();
 const DENIED = {
   ad_storage: "denied",
   ad_user_data: "denied",
@@ -17,6 +21,15 @@ function readChoice(storage, now) {
   } catch {
     return null;
   }
+}
+
+export function hasAdsConsent(window, now = Date.now()) {
+  const current = activeChoices.get(window);
+  if (current) {
+    const age = now - current.savedAt;
+    return current.allowed && age >= 0 && age < MAX_AGE;
+  }
+  try { return readChoice(window.localStorage, now) === true; } catch { return false; }
 }
 
 function clearAdvertisingCookies(document, hostname) {
@@ -60,13 +73,19 @@ export function createAdsConsentController(window, document, now = Date.now) {
   function restore() {
     let choice = null;
     try { choice = readChoice(window.localStorage, now()); } catch { /* Storage may be disabled. */ }
-    if (choice === true) loadTag();
-    else clearAdvertisingCookies(document, window.location.hostname);
+    if (choice === true) {
+      captureLeadAttribution(window, { allowed: true, now: now() });
+      loadTag();
+    } else {
+      clearLeadAttribution(window);
+      clearAdvertisingCookies(document, window.location.hostname);
+    }
     return choice;
   }
 
   function choose(allowed) {
     if (typeof allowed !== "boolean") return;
+    activeChoices.set(window, { allowed, savedAt: now() });
     if (!allowed) {
       // Remove a stale grant before writing: storage quota must never reinstate it.
       try { window.localStorage.removeItem(CONSENT_KEY); } catch { /* Try replacement below. */ }
@@ -75,8 +94,10 @@ export function createAdsConsentController(window, document, now = Date.now) {
       window.localStorage.setItem(CONSENT_KEY, JSON.stringify({ allowed, savedAt: now() }));
     } catch { /* The choice still applies to the current page if storage is blocked. */ }
     if (allowed) {
+      captureLeadAttribution(window, { allowed: true, now: now() });
       loadTag();
     } else {
+      clearLeadAttribution(window);
       if (loaded) window.gtag("consent", "update", { ...DENIED });
       clearAdvertisingCookies(document, window.location.hostname);
       try {

@@ -38,6 +38,7 @@ export function AppointmentForm() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name !== "website") submissionSessionRef.current.start({ source: "footer" });
     submissionSessionRef.current.invalidate();
     setStatus((current) => current === "error" ? "idle" : current);
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -57,7 +58,7 @@ export function AppointmentForm() {
   };
 
   const resetForm = () => {
-    submissionSessionRef.current.invalidate();
+    submissionSessionRef.current.reset();
     setStatus("idle");
     setFormData({ name: "", email: "", phone: "", message: "", website: "" });
   };

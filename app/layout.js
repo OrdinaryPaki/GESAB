@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
 import { AdsConsent } from "./components/AdsConsent";
+import { ContactClickTracking } from "./components/ContactClickTracking";
 import { createLocalBusinessStructuredData } from "./seo";
 import { siteConfig } from "./site-config";
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <MobileNavigationEnhancement />
         {children}
         <AdsConsent />
+        <ContactClickTracking />
         <Analytics />
         <SpeedInsights />
         <script dangerouslySetInnerHTML={{ __html: structuredData }} type="application/ld+json" />

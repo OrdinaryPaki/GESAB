@@ -115,6 +115,6 @@ test("returns a retryable public error when delivery fails", async () => {
   assert.equal(response.status, 503);
   assert.deepEqual(await response.json(), {
     ok: false,
-    error: "E-posttjänsten svarar inte just nu. Försök igen om en stund.",
+    error: "Förfrågan kunde inte slutföras just nu. Försök igen om en stund.",
   });
 });

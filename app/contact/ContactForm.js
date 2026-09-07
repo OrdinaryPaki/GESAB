@@ -37,12 +37,14 @@ export function ContactForm() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name !== "website") submissionSessionRef.current.start({ source: "contact", service: formData.service });
     submissionSessionRef.current.invalidate();
     setStatus((current) => current === "error" ? "idle" : current);
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleServiceChange = (value) => {
+    submissionSessionRef.current.start({ source: "contact", service: value });
     submissionSessionRef.current.invalidate();
     setStatus((current) => current === "error" ? "idle" : current);
     setFormData((prev) => ({ ...prev, service: value }));
@@ -62,7 +64,7 @@ export function ContactForm() {
   };
 
   const resetForm = () => {
-    submissionSessionRef.current.invalidate();
+    submissionSessionRef.current.reset();
     setStatus("idle");
     setFormData({
       firstName: "",

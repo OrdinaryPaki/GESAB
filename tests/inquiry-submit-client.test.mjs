@@ -16,6 +16,20 @@ const validPayload = {
   website: "",
 };
 
+test("optional attribution failure cannot stop an inquiry", async () => {
+  let posted;
+  const result = await submitInquiry(validPayload, {
+    getAttribution() { throw new Error("storage unavailable"); },
+    fetchImpl: async (_url, options) => {
+      posted = JSON.parse(options.body);
+      return Response.json({ ok: true });
+    },
+  });
+  assert.deepEqual(result, { ok: true });
+  assert.equal(posted.name, validPayload.name);
+  assert.equal(posted.attribution, undefined);
+});
+
 test("posts one submission with a generated stable ID", async () => {
   const calls = [];
   const result = await submitInquiry(validPayload, {

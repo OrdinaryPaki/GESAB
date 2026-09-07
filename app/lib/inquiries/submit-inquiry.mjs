@@ -1,3 +1,8 @@
+import { trackFormStarted, trackInquirySubmitted } from "../../tracking/marketing-tracking.mjs";
+import { safelyMeasure } from "../../tracking/marketing-events.mjs";
+import { captureLeadAttribution } from "../../tracking/lead-attribution.mjs";
+import { hasAdsConsent } from "../../tracking/google-ads-consent.mjs";
+
 const PUBLIC_ERROR =
   "Din förfrågan kunde inte skickas. Försök igen eller kontakta oss via telefon.";
 
@@ -12,19 +17,44 @@ export function createSubmissionId() {
   return globalThis.crypto.randomUUID();
 }
 
+function currentAttribution() {
+  if (typeof window === "undefined") return {};
+  return captureLeadAttribution(window, { allowed: hasAdsConsent(window) });
+}
+
 export function createInquirySubmissionSession({
   createId = createSubmissionId,
   submitImpl = submitInquiry,
+  onStart = trackFormStarted,
+  onSuccess = trackInquirySubmitted,
 } = {}) {
   let submissionId;
+  let started = false;
+  let countedId;
 
   return {
+    start({ source, service }) {
+      if (started) return;
+      started = true;
+      safelyMeasure(() => onStart({ source, service }));
+    },
+    reset() {
+      submissionId = undefined;
+      countedId = undefined;
+      started = false;
+    },
     invalidate() {
       submissionId = undefined;
     },
-    submit(payload) {
+    async submit(payload) {
       submissionId ??= createId();
-      return submitImpl(payload, { submissionId });
+      const id = submissionId;
+      const result = await submitImpl(payload, { submissionId: id });
+      if (result?.ok === true && countedId !== id) {
+        countedId = id;
+        safelyMeasure(() => onSuccess({ source: payload.source, service: payload.service, submissionId: id }));
+      }
+      return result;
     },
   };
 }
@@ -35,13 +65,17 @@ export async function submitInquiry(
     fetchImpl = globalThis.fetch,
     createId = createSubmissionId,
     submissionId = createId(),
+    getAttribution = currentAttribution,
   } = {},
 ) {
   try {
+    let attribution = {};
+    safelyMeasure(() => { attribution = getAttribution() ?? {}; });
     const response = await fetchImpl("/api/inquiries", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ ...payload, submissionId }),
+      body: JSON.stringify({ ...payload, submissionId,
+        ...(Object.keys(attribution).length ? { attribution } : {}) }),
     });
 
     if (!response.ok) throw new InquirySubmissionError();

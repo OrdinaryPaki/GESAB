@@ -36,7 +36,7 @@ export function CookiePreferences({ open, allowed, onChange, onSave, onClose, er
             <span className={styles.switchTrack} aria-hidden="true" />
           </span>
         </label>
-        <p>Hjälper oss se vilka annonser som leder till besök. Cookies används och besöksuppgifter delas med Google. Personanpassade annonser är avstängda.</p>
+        <p>Hjälper oss se vilka annonser som leder till besök och skickade förfrågningar. Cookies används och uppgifter om besöket och händelsen delas med Google. Personanpassade annonser är avstängda.</p>
         <span className={styles.choiceState}>{allowed ? "På" : "Av"}</span>
       </div>
       <p className={styles.note}>Ditt val sparas i den här webbläsaren i 180 dagar och kan ändras via Integritet och cookies i sidfoten. Återkallar du ett ja laddas sidan om för att stoppa mätningen.</p>

@@ -1,0 +1,6 @@
+.env
+.env.*
+.vercel
+integrations
+tests
+migrations
