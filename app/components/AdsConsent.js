@@ -16,13 +16,13 @@ export function AdsConsent() {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState(false);
   const [managing, setManaging] = useState(false);
-  const [adsAllowed, setAdsAllowed] = useState(false);
+  const [adsAllowed, setAdsAllowed] = useState(true);
 
   useEffect(() => {
     controller.current ??= createAdsConsentController(window, document);
     const savedChoice = controller.current.restore();
     setOpen(savedChoice === null);
-    setAdsAllowed(savedChoice === true);
+    setAdsAllowed(savedChoice ?? true);
     setReady(true);
     function syncChoice(event) {
       if (event.key === CONSENT_KEY || event.key === null) window.location.reload();
@@ -31,7 +31,7 @@ export function AdsConsent() {
     function showPreferences(event) {
       returnFocus.current = event.detail?.trigger;
       openedFromPage.current = true;
-      setAdsAllowed(controller.current.restore() === true);
+      setAdsAllowed(controller.current.restore() ?? true);
       setManaging(true);
       setOpen(true);
     }
