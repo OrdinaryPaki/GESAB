@@ -41,7 +41,6 @@ export function CookiePreferences({ open, allowed, onChange, onSave, onClose, er
       <div className={styles.actions}>
         <button type="button" className={styles.accept} onClick={() => onSave(allowed)}>Spara mitt val</button>
       </div>
-      <button type="button" className={styles.reject} onClick={() => onSave(false)}>Neka alla</button>
     </dialog>
   );
 }

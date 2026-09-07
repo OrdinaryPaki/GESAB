@@ -87,7 +87,6 @@ export function AdsConsent() {
         <button type="button" className={styles.accept} aria-label="JA, tillåt annonsmätning med Google Ads" onClick={() => saveChoice(true)}>JA</button>
         <button type="button" aria-haspopup="dialog" onClick={() => setManaging(true)}>Hantera cookies</button>
       </div>
-      <button type="button" className={styles.reject} onClick={() => saveChoice(false)}>Neka alla</button>
       {error ? <p role="alert">Webbläsaren kunde inte spara ditt nej. Rensa webbplatsens sparade data i webbläsarens inställningar för att ta bort ditt tidigare ja.</p> : null}
     </dialog>
     <CookiePreferences open={managing} allowed={adsAllowed} onChange={setAdsAllowed} onSave={saveChoice} error={error} onClose={() => {
