@@ -7,7 +7,7 @@ export function CookiePreferences({ open, allowed, onChange, onSave, onClose, er
   const dialog = useRef(null);
 
   useEffect(() => {
-    if (open && !dialog.current.open) dialog.current.showModal();
+    if (open && !dialog.current.open) dialog.current.show();
     if (!open && dialog.current.open) dialog.current.close();
   }, [open]);
 
@@ -16,7 +16,11 @@ export function CookiePreferences({ open, allowed, onChange, onSave, onClose, er
       ref={dialog}
       className={styles.preferences}
       aria-labelledby="cookie-preferences-title"
-      onCancel={(event) => { event.preventDefault(); onClose(); }}
+      onKeyDown={(event) => {
+        if (event.key !== "Escape") return;
+        event.preventDefault();
+        onClose();
+      }}
     >
       <div className={styles.dialogHeader}>
         <span className={styles.eyebrow}>GESAB · COOKIES</span>

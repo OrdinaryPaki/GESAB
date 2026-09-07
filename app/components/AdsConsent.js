@@ -46,7 +46,7 @@ export function AdsConsent() {
     const dialog = popup.current;
     if (!dialog) return;
     if (ready && open && !managing) {
-      if (!dialog.open) dialog.showModal();
+      if (!dialog.open) dialog.show();
       heading.current?.focus();
     } else if (dialog.open) {
       dialog.close();
@@ -69,7 +69,8 @@ export function AdsConsent() {
 
   return open ? (
     <>
-    <dialog ref={popup} className={styles.panel} aria-labelledby="ads-consent-heading" onCancel={(event) => {
+    <dialog ref={popup} className={styles.panel} aria-labelledby="ads-consent-heading" onKeyDown={(event) => {
+      if (event.key !== "Escape") return;
       event.preventDefault();
       setOpen(false);
       requestAnimationFrame(() => returnFocus.current?.focus({ preventScroll: true }));
