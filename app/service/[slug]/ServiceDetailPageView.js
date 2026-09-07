@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BkrCredential } from "../../components/BkrCredential";
 import { ContactBand } from "../../components/ContactBand";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
@@ -128,6 +129,9 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
               <section className={styles.articleSection} data-service-introduction>
                 <h2>{service.detail.introTitle}</h2>
                 <p>{service.detail.intro}</p>
+                {["badrumsrenovering", "tvattstugsrenovering"].includes(service.slug) ? (
+                  <BkrCredential />
+                ) : null}
 
                 {detail.projects ? (
                   <ProjectGallery projects={detail.projects} />

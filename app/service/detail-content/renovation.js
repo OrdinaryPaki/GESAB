@@ -73,7 +73,7 @@ export const renovationDetailContent = {
     quoteBenefits: [
       "100% gratis hembesök & rådgivning",
       "Fast pris utan obehagliga överskridanden",
-      "Certifierade våtrumsbyggare (BVK)",
+      "Certifierade våtrumsbyggare (BKR)",
       "30% ROT-avdrag direkt på fakturan",
     ],
     sectionsTitle: "Därför ska du välja GESAB till ditt badrum",
@@ -116,7 +116,7 @@ export const renovationDetailContent = {
     importantIntro:
       "Ditt badrum ska vara tryggt och hålla i årtionden. Så här garanterar vi högsta kvalitet:",
     credentials: [
-      "Certifierade våtrumsbyggare som följer alla gällande branschregler (BVK).",
+      "Certifierade våtrumsbyggare som följer alla gällande branschregler (BKR).",
       "Egenkontroller utförs i varje steg innan nästa moment påbörjas.",
       "Du får officiellt våtrumsintyg för ditt försäkringsbolag vid överlämning.",
       "30% ROT-avdrag dras direkt på fakturan – vi sköter hela kontakten med Skatteverket.",
@@ -327,7 +327,7 @@ export const renovationDetailContent = {
     quoteBenefits: [
       "100% gratis hembesök & rådgivning",
       "Fast pris utan obehagliga överskridanden",
-      "Certifierat våtrumsarbete (BVK)",
+      "Certifierat våtrumsarbete (BKR)",
       "30% ROT-avdrag direkt på fakturan",
     ],
     sectionsTitle: "Därför ska du välja GESAB till tvättstugan",
@@ -360,7 +360,7 @@ export const renovationDetailContent = {
     importantTitle: "Så säkerställer vi kvaliteten",
     importantIntro: "En tvättstuga ska tåla fukt och tung användning. Så här garanterar vi resultatet:",
     credentials: [
-      "Certifierat våtrumsarbete enligt gällande branschregler (BVK).",
+      "Certifierat våtrumsarbete enligt gällande branschregler (BKR).",
       "Egenkontroller i varje steg innan nästa moment påbörjas.",
       "Du får våtrumsintyg och dokumentation vid överlämning.",
       "30% ROT-avdrag dras direkt på fakturan när villkoren är uppfyllda.",
