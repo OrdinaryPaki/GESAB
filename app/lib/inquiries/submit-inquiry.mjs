@@ -1,7 +1,6 @@
 import { trackFormStarted, trackInquirySubmitted } from "../../tracking/marketing-tracking.mjs";
 import { safelyMeasure } from "../../tracking/marketing-events.mjs";
-import { captureLeadAttribution } from "../../tracking/lead-attribution.mjs";
-import { hasAdsConsent } from "../../tracking/google-ads-consent.mjs";
+import { captureContactAttribution } from "../../tracking/contact-attribution.mjs";
 
 const PUBLIC_ERROR =
   "Din förfrågan kunde inte skickas. Försök igen eller kontakta oss via telefon.";
@@ -19,7 +18,7 @@ export function createSubmissionId() {
 
 function currentAttribution() {
   if (typeof window === "undefined") return {};
-  return captureLeadAttribution(window, { allowed: hasAdsConsent(window) });
+  return captureContactAttribution(window);
 }
 
 export function createInquirySubmissionSession({

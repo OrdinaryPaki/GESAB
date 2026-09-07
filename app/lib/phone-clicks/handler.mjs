@@ -1,6 +1,6 @@
 import { BUSINESS_PHONES } from '../../tracking/phone-clicks.mjs';
 import { pageContext } from '../../tracking/marketing-events.mjs';
-import { normalizeLeadAttribution } from '../../tracking/lead-attribution.mjs';
+import { normalizeContactAttribution } from '../../tracking/contact-attribution.mjs';
 import { isUuid } from '../leads/progress-validation.mjs';
 
 const MAX_BYTES = 8192;
@@ -29,7 +29,7 @@ export async function handlePhoneClick(request, store) {
       || typeof body.page !== 'string' || body.page.length > 200 || pageContext(body.page) !== body.page
       || body.page === 'other') return response(400);
     await store.registerPhoneClick({eventId:body.eventId,phone:body.phone,page:body.page,
-      attribution:normalizeLeadAttribution(body.attribution)});
+      attribution:normalizeContactAttribution(body.attribution)});
     return response(202);
   } catch (error) { return response(error?.name === 'PhoneClickConflictError' ? 409 : 503); }
 }

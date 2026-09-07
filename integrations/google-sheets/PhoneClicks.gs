@@ -3,10 +3,10 @@ function gesabPhoneClickRow_(click) {
   return [gesabText_(click.event_id), gesabDate_(click.created_at), gesabText_(click.page), gesabText_(click.phone),
     'Telefonklick (inte bekräftat samtal)', gesabText_(a.campaignid || a.utm_campaign), gesabText_(a.adgroupid),
     gesabText_(a.creative), gesabText_(a.gclid), gesabText_(a.gbraid), gesabText_(a.wbraid),
-    a.consentGranted === true ? 'Ja' : 'Nej', gesabDate_(a.consentAt), gesabText_(a.landingPage)];
+    a.consentGranted === true ? 'Ja' : 'Nej', gesabDate_(a.consentAt), gesabText_(a.landingPage)].concat(gesabTrafficCells_(a));
 }
 function gesabAppendPhoneClicks_(clicks) {
-  return gesabAppendRecords_(clicks, 'Telefonklick', 'event_id', gesabPhoneClickRow_, 14);
+  return gesabAppendRecords_(clicks, 'Telefonklick', 'event_id', gesabPhoneClickRow_, 17);
 }
 function gesabSyncPhoneClicks_() {
   var incoming = gesabRequest_(null, 'phone_clicks');

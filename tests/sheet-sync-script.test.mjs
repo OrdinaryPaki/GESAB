@@ -149,7 +149,7 @@ test('phone click append retries keep one row and preserve explicit non-call lab
   assert.deepEqual(Array.from(c.gesabAppendPhoneClicks_([click])),['click-id']);
   assert.deepEqual(Array.from(c.gesabAppendPhoneClicks_([click])),['click-id']);
   assert.equal(rows.length,2);
-  assert.equal(rows[1].length,14);
+  assert.equal(rows[1].length,17);
   assert.equal(rows[1][4],'Telefonklick (inte bekräftat samtal)');
   assert.equal(rows[1][1].toISOString(),click.created_at.replace('Z','.000Z'));
   assert.equal(rows[1][11],'Nej');
@@ -208,4 +208,19 @@ test('booked edit queues and writes a real date without reformatting typed colum
   assert.equal(queued.length,1);
   assert.ok(booked[0] instanceof Date);
   assert.equal(JSON.parse(queued[0][2]).progress.bookedAt,booked[0].toISOString());
+});
+
+
+test('visit source is separate from form location and retained Google Ads identifiers', () => {
+  const c = script();
+  const attribution = {gclid:'prior-ad',consentGranted:true,traffic:{channel:'Organisk sökning (SEO)',source:'google',campaign:''}};
+  const row = c.gesabLeadRow_({inquiry:{source:'contact'},attribution});
+  assert.equal(row.length,26);
+  assert.equal(row[13],'contact');
+  assert.equal(row[17],'prior-ad');
+  assert.equal(row[23],'Organisk sökning (SEO)');
+  assert.equal(row[24],'google');
+  const phone = c.gesabPhoneClickRow_({attribution});
+  assert.equal(phone[14],'Organisk sökning (SEO)');
+  assert.equal(phone[15],'google');
 });

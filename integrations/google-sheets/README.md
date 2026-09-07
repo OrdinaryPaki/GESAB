@@ -39,7 +39,7 @@ mappas till Order_ID för dubblettskydd. Bokade jobb är en sekundär konverteri
 
 1. Importera den förberedda arbetsboken som ett Google-kalkylark. Använd
    svensk lokal och Europe/Stockholm. Lägg Google Ads-export först för Data Manager, med rubriker på rad 1.
-2. Behåll kolumner A:W i mallens ordning. H:M är redigerbara arbetsfält.
+2. Behåll kolumner A:Z i mallens ordning. N heter Formulär; X:Z är Besökskanal, Besökskälla och Besökskampanj. H:M är redigerbara arbetsfält.
    Konvertera den importerade tabellen till en native Sheets-tabell med
    statusval: Ny, Kontaktad, Offert skickad, Bokat jobb, Avböjd, Ej relevant.
 3. Utöka Förfrågningar till 100001 rader. Byt formlernas sista rad från
@@ -77,10 +77,10 @@ och dubblettskydd har verifierats i Google Ads.
 ## Telefonklick
 
 Migrering `003_phone_clicks.sql` är applicerad i produktion. Lägg till `PhoneClicks.gs` i samma bundna Apps Script-projekt.
-Skapa fliken **Telefonklick** med följande kolumner A:N:
+Skapa fliken **Telefonklick** med följande kolumner A:Q:
 Händelse-ID, Tidpunkt, Sida, Företagets telefonnummer, Händelsetyp, Kampanj,
 Annonsgrupp, Annons, GCLID, GBRAID, WBRAID, Annonsmedgivande,
-Medgivande tidpunkt, Landningssida. Kör `setupGesabSync` för att säkerställa
+Medgivande tidpunkt, Landningssida, Besökskanal, Besökskälla, Besökskampanj. Kör `setupGesabSync` för att säkerställa
 Europe/Stockholm som kalkylarkets tidszon. Tidpunkt är databasens mottagningstid,
 inte telefonens klocka. Återförsök behåller originaltid och originaluppgifter.
 
@@ -95,3 +95,30 @@ Webbläsarens sändning är bästa möjliga försök och kan blockeras eller avb
 
 Tabellernas kolumntyper styr datum-, text- och talformat. Skriptet skriver
 bara värden: setNumberFormat får inte anropas på de typade kolumnerna.
+
+
+## Besökskälla för alla kontakter
+
+Samma klassificering används för förfrågningar och telefonklick. Den skiljer
+Google Ads, andra annonser, organisk sökning (SEO), sociala medier, e-post,
+andra webbplatser, andra märkta kampanjer och direkt/okänd. UTM-kampanjer
+fungerar utan Google-klick-ID. `fbclid` ensamt bevisar inte en betald annons;
+märk betalda sociala länkar med exempelvis `utm_source=facebook&utm_medium=paid_social&utm_campaign=badrum`.
+
+Besökskanalen avser ingången till den aktuella laddningen av webbplatsen,
+bevarad under intern Next.js-navigering i högst 30 minuter i minnet. Ingen
+cookie eller browser storage används för detta. En omladdning/intern
+fullsidnavigering kan förlora källan; då visas Direkt/okänd. Ingen historisk
+SEO-källa gissas. Äldre poster utan metadata får Ej registrerad.
+Endast kanal, begränsad källetikett/domän och kampanjetikett sparas tillsammans
+med kontakten. Hänvisarens sökväg, sökord och parametrar sparas inte.
+
+En tidigare samtyckt Google Ads-koppling sparas separat enligt befintliga
+90-dagarsregler. Ett senare SEO-besök kan därför ha SEO som besökskanal
+samtidigt som Google Ads kan tillskriva sin tidigare annons en konvertering.
+Google Ads-exportens villkor och fasta kolumnpositioner är oförändrade.
+Källuppgifterna är klientrapporterade statistikuppgifter, inte autentiserade
+bevis. Normalisering sker åter på servern före databaslagring.
+
+Källor: https://support.google.com/analytics/answer/15612152 och
+https://developer.mozilla.org/en-US/docs/Web/API/Document/referrer

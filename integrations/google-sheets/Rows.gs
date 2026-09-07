@@ -14,7 +14,7 @@ function gesabIso_(value) { var date = gesabDate_(value); return date ? date.toI
 
 function gesabLeadRow_(lead) {
   var inquiry = lead.inquiry || {}, attribution = lead.attribution || {};
-  return [gesabText_(lead.submission_id), gesabDate_(lead.created_at), gesabText_(inquiry.name), gesabText_(inquiry.phone), gesabText_(inquiry.email), gesabText_(inquiry.service), gesabText_(inquiry.message), gesabText_(lead.status || 'Ny'), gesabDate_(lead.next_contact), gesabText_(lead.owner), gesabText_(lead.notes), gesabDate_(lead.booked_at), lead.value_sek == null ? '' : Number(lead.value_sek), gesabText_(inquiry.source), gesabText_(attribution.campaignid || attribution.utm_campaign), gesabText_(attribution.adgroupid), gesabText_(attribution.creative), gesabText_(attribution.gclid), gesabText_(attribution.gbraid), gesabText_(attribution.wbraid), attribution.consentGranted === true ? 'Ja' : 'Nej', gesabDate_(attribution.consentAt), gesabText_(attribution.landingPage)];
+  return [gesabText_(lead.submission_id), gesabDate_(lead.created_at), gesabText_(inquiry.name), gesabText_(inquiry.phone), gesabText_(inquiry.email), gesabText_(inquiry.service), gesabText_(inquiry.message), gesabText_(lead.status || 'Ny'), gesabDate_(lead.next_contact), gesabText_(lead.owner), gesabText_(lead.notes), gesabDate_(lead.booked_at), lead.value_sek == null ? '' : Number(lead.value_sek), gesabText_(inquiry.source), gesabText_(attribution.campaignid || attribution.utm_campaign), gesabText_(attribution.adgroupid), gesabText_(attribution.creative), gesabText_(attribution.gclid), gesabText_(attribution.gbraid), gesabText_(attribution.wbraid), attribution.consentGranted === true ? 'Ja' : 'Nej', gesabDate_(attribution.consentAt), gesabText_(attribution.landingPage)].concat(gesabTrafficCells_(attribution));
 }
 
 function gesabEnsureRows_(sheet, lastRow) {
@@ -23,7 +23,7 @@ function gesabEnsureRows_(sheet, lastRow) {
 }
 
 function gesabAppendLeads_(leads) {
-  return gesabAppendRecords_(leads, 'Förfrågningar', 'submission_id', gesabLeadRow_, 23);
+  return gesabAppendRecords_(leads, 'Förfrågningar', 'submission_id', gesabLeadRow_, 26);
 }
 
 function gesabAppendRecords_(records, tab, idKey, toRow, width) {
@@ -58,3 +58,8 @@ function gesabCalendarDate_(value) {
   return Utilities.formatDate(gesabDate_(value), 'Europe/Stockholm', 'yyyy-MM-dd');
 }
 
+
+function gesabTrafficCells_(attribution) {
+  var traffic = attribution.traffic || {};
+  return [gesabText_(traffic.channel || 'Ej registrerad'), gesabText_(traffic.source), gesabText_(traffic.campaign)];
+}

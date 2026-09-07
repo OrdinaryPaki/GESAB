@@ -1,5 +1,5 @@
 import { normalizeInquiry } from "./validation.mjs";
-import { normalizeLeadAttribution } from "../../tracking/lead-attribution.mjs";
+import { normalizeContactAttribution } from "../../tracking/contact-attribution.mjs";
 
 const MAX_REQUEST_BYTES = 16 * 1024;
 const INVALID_ERROR = "Förfrågan kunde inte skickas.";
@@ -59,7 +59,7 @@ export async function handleInquiryRequest(request, deliver) {
   }
 
   try {
-    await deliver(result.inquiry, normalizeLeadAttribution(raw.attribution));
+    await deliver(result.inquiry, normalizeContactAttribution(raw.attribution));
   } catch {
     return publicError(DELIVERY_ERROR, 503);
   }
