@@ -253,7 +253,7 @@ export const renovationDetailContent = {
           "Ja, vi bygger altaner i hela Göteborgsområdet – bland annat Mölndal, Partille, Lerum, Kungälv, Härryda och Kungsbacka.",
       },
     ],
-    related: ["bygg", "totalentreprenad", "rivningsarbeten"],
+    related: ["snickeri", "totalentreprenad", "rivningsarbeten"],
   },
   tvattstugsrenovering: {
     audience: "Privatpersoner med tvättstuga",
@@ -393,7 +393,7 @@ export const renovationDetailContent = {
         answer: "Ja. När arbetet är klart får du dokumentation som visar att våtrummet är utfört enligt reglerna.",
       },
     ],
-    related: ["badrumsrenovering", "totalentreprenad", "bygg"],
+    related: ["badrumsrenovering", "totalentreprenad", "golvlaggning"],
   },
   koksrenovering: {
     audience: "Privatpersoner med köksprojekt",
@@ -532,7 +532,7 @@ export const renovationDetailContent = {
         answer: "Töm skåp och arbetsytor, och säkra tillgång till bostaden. Resten stämmer vi av tillsammans.",
       },
     ],
-    related: ["koksmontering", "totalentreprenad", "bygg"],
+    related: ["koksmontering", "totalentreprenad", "golvlaggning"],
   },
   totalentreprenad: {
     audience: "Privatpersoner med större renoveringar",
@@ -675,6 +675,6 @@ export const renovationDetailContent = {
         answer: "Ja, när arbetet och kunden uppfyller kraven. Det klargörs i offerten.",
       },
     ],
-    related: ["badrumsrenovering", "koksrenovering", "bygg"],
+    related: ["badrumsrenovering", "koksrenovering", "golvlaggning"],
   },
 };

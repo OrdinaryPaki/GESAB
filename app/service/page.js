@@ -9,7 +9,7 @@ import { createPageMetadata } from "../seo";
 export const metadata = createPageMetadata({
   title: "Tjänster för badrum, bygg och renovering i Göteborg",
   description:
-    "Se GESABs tjänster inom badrumsrenovering, altanbygge, tvättstugsrenovering, köksrenovering, totalentreprenad, rivning och bygg i Göteborg.",
+    "Se GESABs tjänster inom badrum, kök, altan, tvättstuga, totalentreprenad, rivning, golvläggning, köksmontering och snickeri i Göteborg.",
   path: "/service",
   image: "/images/home/service-total-project.webp",
 });
@@ -23,7 +23,7 @@ const serviceIndexCopy = {
   rivningsarbeten: "Kontrollerad rivning som lämnar underlaget klart för nästa steg.",
   koksmontering: "Montering av ditt kök – med tydlig omfattning och kontroll av varje detalj.",
   snickeri: "Lister, foder, innerväggar och förvaring anpassade efter ditt hem.",
-  bygg: "Renovering och ombyggnad, samordnat med el, VVS och ytskikt.",
+  golvlaggning: "Nytt golv med genomgång av underlag, material och avslut – med tydlig offert.",
 };
 
 const allServicesWithCopy = services.map((service) => ({

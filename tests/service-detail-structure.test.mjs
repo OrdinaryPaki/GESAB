@@ -9,7 +9,7 @@ const serviceSlugs = [
   "koksrenovering",
   "totalentreprenad",
   "rivningsarbeten",
-  "bygg",
+  "golvlaggning",
 ];
 
 async function fetchServicePage(slug) {

@@ -1,3 +1,4 @@
+import { service as flooring } from "./service/catalog/golvlaggning";
 import { service as kitchenInstallation } from "./service/catalog/koksmontering";
 import { service as carpentry } from "./service/catalog/snickeri";
 
@@ -216,40 +217,7 @@ export const services = [
       ],
     },
   },
-  {
-    slug: "bygg",
-    title: "Bygg",
-    body: "Byggarbeten för renovering och ombyggnad – utförda i rätt ordning och samordnade med el, VVS och ytskikt.",
-    image: "/images/services/bygg/hero-new-doorway-opening.webp",
-    detail: {
-      introTitle: "Byggarbete som håller – inte bara ser klart ut",
-      intro:
-        "Vi tar byggjobb där konstruktion, material och installationer behöver hänga ihop. Då blir resultatet stabilt – och du slipper göra om det senare.",
-      sections: [
-        [
-          "Genomgång före offert",
-          "Vi tittar på plats, mått och beroenden mot el och VVS innan vi lämnar pris – så håller både budget och tidplan.",
-        ],
-        [
-          "Rätt ordning, rätt underlag",
-          "Varje moment bygger vidare på ett kontrollerat underlag. Det minskar risken för fel och omtag.",
-        ],
-        [
-          "Minsta möjliga störning",
-          "Vi planerar arbetet efter hur du använder bostaden eller lokalen under tiden.",
-        ],
-      ],
-      bullets: [
-        "Renovering, ombyggnad och återställning",
-        "Regelverk och mått på plats",
-        "Samordning med el, VVS och ytskikt",
-        "Material och infästningar enligt plan",
-        "Tydlig arbetsordning",
-        "Kontroll innan överlämning",
-        "ROT-avdrag när villkoren är uppfyllda",
-      ],
-    },
-  },
+  flooring,
   kitchenInstallation,
   carpentry,
 ];
@@ -331,7 +299,7 @@ export const faqItems = [
   {
     question: "Vilka tjänster utför GESAB?",
     answer:
-      "GESAB utför badrumsrenovering, altanbygge, tvättstugsrenovering, köksrenovering, totalentreprenad, rivningsarbeten och bygg i Göteborg.",
+      "GESAB utför badrumsrenovering, altanbygge, tvättstugsrenovering, köksrenovering, totalentreprenad, rivningsarbeten, golvläggning, köksmontering och snickeri i Göteborg.",
   },
   {
     question: "Kan ni hjälpa till från idé till färdigt badrum?",

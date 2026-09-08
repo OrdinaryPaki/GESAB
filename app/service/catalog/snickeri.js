@@ -100,7 +100,7 @@ export const detail = {
     }
   ],
   "related": [
-    "bygg",
+    "golvlaggning",
     "koksmontering",
     "altanbygge"
   ]

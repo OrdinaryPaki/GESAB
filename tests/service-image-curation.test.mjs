@@ -16,7 +16,6 @@ const serviceSlugs = [
   "koksrenovering",
   "totalentreprenad",
   "rivningsarbeten",
-  "bygg",
 ];
 
 test("every service page uses one curated hero and eight distinct gallery images from its own folder or supplied photographs", () => {

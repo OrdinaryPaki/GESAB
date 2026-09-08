@@ -14,7 +14,7 @@ const publicPages = [
   ["/service/koksrenovering", "Köksrenovering i Göteborg", "https://www.ges-ab.se/service/koksrenovering"],
   ["/service/totalentreprenad", "Totalentreprenad i Göteborg", "https://www.ges-ab.se/service/totalentreprenad"],
   ["/service/rivningsarbeten", "Rivningsarbeten i Göteborg", "https://www.ges-ab.se/service/rivningsarbeten"],
-  ["/service/bygg", "Bygg i Göteborg", "https://www.ges-ab.se/service/bygg"],
+  ["/service/golvlaggning", "Golvläggning i Göteborg", "https://www.ges-ab.se/service/golvlaggning"],
 ];
 
 function metaContent(html, property) {

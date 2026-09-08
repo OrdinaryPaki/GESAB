@@ -31,7 +31,7 @@ const publicRoutes = [
   "/service/koksrenovering",
   "/service/totalentreprenad",
   "/service/rivningsarbeten",
-  "/service/bygg",
+  "/service/golvlaggning",
 ];
 
 test("local image files preserve the exact downloaded source bytes", () => {

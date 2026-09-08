@@ -27,7 +27,7 @@ const galleryProjects = [
     title: "Ombyggnad i bostad",
     category: "Bygg",
     size: "tall",
-    image: services.find((s) => s.slug === "bygg")?.image,
+    image: "/images/services/bygg/hero-new-doorway-opening.webp",
   },
   {
     id: 4,

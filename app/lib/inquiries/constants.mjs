@@ -17,7 +17,8 @@ export const SERVICE_TITLES = Object.freeze({
   koksrenovering: "Köksrenovering",
   totalentreprenad: "Totalentreprenad",
   rivningsarbeten: "Rivningsarbeten",
-  bygg: "Bygg",
+  bygg: "Bygg", // Keep the label for historical inquiries.
+  golvlaggning: "Golvläggning",
   koksmontering: "Köksmontering",
   snickeri: "Snickeri",
 });
