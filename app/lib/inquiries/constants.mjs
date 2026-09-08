@@ -18,4 +18,6 @@ export const SERVICE_TITLES = Object.freeze({
   totalentreprenad: "Totalentreprenad",
   rivningsarbeten: "Rivningsarbeten",
   bygg: "Bygg",
+  koksmontering: "Köksmontering",
+  snickeri: "Snickeri",
 });

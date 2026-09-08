@@ -1,3 +1,6 @@
+import { service as kitchenInstallation } from "./service/catalog/koksmontering";
+import { service as carpentry } from "./service/catalog/snickeri";
+
 export const image = {
   heroPattern: "/images/site/hero-pattern.jpg",
   heroPhoto: "/images/gesab/hero-servicebil.webp",
@@ -157,6 +160,18 @@ export const services = [
         "Vid större renoveringar är det oftast samordningen som fallerar, inte hantverket. Med totalentreprenad tar GESAB ansvar för plan, hantverkare och tidplan. Du fattar besluten – vi gör resten.",
       sections: [
         [
+          "Totalrenovering av lägenhet",
+          "När kök, ytskikt och flera rum ska renoveras tillsammans samordnar vi momenten i en gemensam plan. Vi går igenom tillträde, hänsyn till grannar och vilka godkännanden som behöver vara klara före start.",
+        ],
+        [
+          "Renovering av villa eller radhus",
+          "Vi håller ihop renoveringen när flera delar av bostaden berörs. Bygg, installationer och ytskikt planeras efter omfattningen och efter hur ni behöver använda hemmet under arbetet.",
+        ],
+        [
+          "Kök och badrum i samma projekt",
+          "Ska både kök och badrum göras om samordnar vi rivning, el, VVS och färdigställande. Offerten tydliggör vilka rum och arbetsmoment som ingår, så att ansvar och tidplan hänger ihop.",
+        ],
+        [
           "Tydlig plan före start",
           "Omfattning, ansvar, material och tidplan dokumenteras innan arbetet börjar. Du vet vad du betalar för.",
         ],
@@ -247,6 +262,8 @@ export const services = [
       ],
     },
   },
+  kitchenInstallation,
+  carpentry,
 ];
 
 export const serviceSelectOptions = services.map(({ slug, title }) => ({

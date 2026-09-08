@@ -274,6 +274,6 @@ export const constructionDetailContent = {
         answer: "Ja, när arbetet och kunden uppfyller kraven. Det klargörs i offerten.",
       },
     ],
-    related: ["totalentreprenad", "badrumsrenovering", "rivningsarbeten"],
+    related: ["snickeri", "totalentreprenad", "rivningsarbeten"],
   }
 };

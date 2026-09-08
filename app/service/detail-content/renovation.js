@@ -532,7 +532,7 @@ export const renovationDetailContent = {
         answer: "Töm skåp och arbetsytor, och säkra tillgång till bostaden. Resten stämmer vi av tillsammans.",
       },
     ],
-    related: ["totalentreprenad", "bygg", "rivningsarbeten"],
+    related: ["koksmontering", "totalentreprenad", "bygg"],
   },
   totalentreprenad: {
     audience: "Privatpersoner med större renoveringar",
@@ -609,7 +609,7 @@ export const renovationDetailContent = {
       "En kontaktperson genom hela projektet",
       "ROT-avdrag när villkoren är uppfyllda",
     ],
-    sectionsTitle: "Därför ska du välja GESAB som totalentreprenör",
+    sectionsTitle: "Vilka renoveringar hjälper vi med?",
     bulletsTitle: "Det här kan ingå i en totalentreprenad",
     bulletsIntro: "Omfattningen anpassas efter projektet. Vanliga delar är:",
     processTitle: "Så går det till",

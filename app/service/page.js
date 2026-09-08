@@ -21,6 +21,8 @@ const serviceIndexCopy = {
   koksrenovering: "Planering, el, vatten och montage i rätt ordning – med tydlig tidplan.",
   totalentreprenad: "Ett avtal, en kontaktperson. Vi driver hela renoveringen åt dig.",
   rivningsarbeten: "Kontrollerad rivning som lämnar underlaget klart för nästa steg.",
+  koksmontering: "Montering av ditt kök – med tydlig omfattning och kontroll av varje detalj.",
+  snickeri: "Lister, foder, innerväggar och förvaring anpassade efter ditt hem.",
   bygg: "Renovering och ombyggnad, samordnat med el, VVS och ytskikt.",
 };
 
