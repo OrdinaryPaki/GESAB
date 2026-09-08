@@ -22,10 +22,10 @@ export const service = {
     ],
     "bullets": [
       "Genomgång av golvytan och underlagets förutsättningar.",
-      "Borttagning av befintligt golv när det ingår i offerten.",
-      "Förberedelse av underlaget enligt överenskommelse.",
+      "Vi går igenom om det gamla golvet behöver tas bort. Offerten anger om rivning och bortforsling ingår.",
+      "Vi kontrollerar underlagets skick och jämnhet och kommer överens om vilka förberedelser som behövs före läggningen.",
       "Läggning av överenskommet golvmaterial enligt produktens anvisningar.",
-      "Lister, trösklar och övergångar när det ingår.",
+      "Vi stämmer av hur golvet ska avslutas vid väggar och dörrar. Offerten anger vilka lister, trösklar och övergångar som ska anpassas eller bytas.",
       "Genomgång av golvet och råd om skötsel utifrån materialet."
     ]
   }
