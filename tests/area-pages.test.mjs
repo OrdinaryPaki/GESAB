@@ -4,6 +4,7 @@ import { siteUrl } from "./helpers/site-url.mjs";
 const services = ["badrumsrenovering", "altanbygge", "tvattstugsrenovering", "koksrenovering", "totalentreprenad", "rivningsarbeten", "golvlaggning", "koksmontering", "snickeri"];
 test("all 18 local service pages have unique metadata, the correct service form and local schema", async () => {
  const titles = new Set();
+ const descriptions = new Set();
  for (const slug of services) for (const area of ["boras", "kungsbacka"]) {
   const path = `/service/${slug}/${area}`;
   const response = await fetch(siteUrl + path);
@@ -18,6 +19,17 @@ test("all 18 local service pages have unique metadata, the correct service form 
   assert.match(html, /data-local-service-context/);
   assert.ok(html.includes(`href="/service/${slug}"`), path);
   const graphs = [...html.matchAll(/<script type="application\/ld\+json">([^<]+)<\/script>/g)].flatMap(m => { const d=JSON.parse(m[1]);return d['@graph']??[d]; });
+  const description = html.match(/<meta name="description" content="([^"]+)"/)?.[1];
+  assert.ok(description && !descriptions.has(description), `distinct description: ${path}`);
+  descriptions.add(description);
+  const breadcrumb = graphs.find(d => d['@type'] === 'BreadcrumbList');
+  assert.deepEqual(breadcrumb?.itemListElement.map(item => item.item), [
+   'https://ges-ab.se/', `https://ges-ab.se/service/${slug}`, `https://ges-ab.se${path}`
+  ], `breadcrumb hierarchy: ${path}`);
+  assert.match(html, /aria-label="Brödsmulor"/);
+  assert.match(html, /data-local-service-decisions/);
+  const intro = html.match(/data-service-introduction[^>]*>(.*?)<\/section>/s)?.[1];
+  assert.ok(!intro?.includes('renovering i Göteborg'), `local introduction: ${path}`);
   const schema = graphs.find(d=>d['@type']==='Service');
   assert.equal(schema.url, `https://ges-ab.se${path}`);
   assert.equal(schema.areaServed, area==='boras'?'Borås':'Kungsbacka');

@@ -1,3 +1,5 @@
+import { localServiceDecisions } from "./local-service-decisions";
+
 const serviceCopy = {
   badrumsrenovering: {
     lead: "Vi hjälper dig att renovera badrummet från rivning till färdig yta, med samordning av yrkesroller och en tydlig offert.",
@@ -48,21 +50,31 @@ const serviceCopy = {
 
 export function createLocalServiceDetail(service, detail, area) {
   const copy = serviceCopy[service.slug];
-  const title = `${service.title} i ${area.name}`;
+  const editorial = localServiceDecisions[service.slug];
+  const title = `${editorial.searchName} i ${area.name}`;
   return {
     ...detail,
     heroTitle: title,
+    quoteBenefits: ["Tydlig omfattning i offerten", "Planering utifrån ditt projekt", "Kontakt med GESAB från första förfrågan"],
+    process: detail.process.map(([heading, body], index) => index === 0 ? [
+      "Första genomgången",
+      "Vi går igenom dina önskemål och underlag. Om ett platsbesök behövs stämmer vi av upplägg och villkor innan det bokas.",
+    ] : [heading, body]),
     heroLead: `${copy.lead} Vi tar uppdrag i ${area.name}.`,
     heroImageAlt: `${service.title} – inspiration inför ditt projekt`,
     quoteHeading: `Få offert i ${area.name}`,
     quoteDescription: `Beskriv ditt projekt inom ${service.title.toLocaleLowerCase("sv-SE")} och ange adress i ${area.name}. Vi återkommer om omfattning och nästa steg.`,
-    localPreparation: copy.preparation,
-    localDescription: `${title} med GESAB. ${copy.lead} Kontakta oss om pris och offert för ditt projekt.`,
-    preparation: [copy.preparation, ...(detail.preparation ?? [])],
+    localDecisions: editorial.sections,
+    introTitle: editorial.topic,
+    intro: copy.lead,
+    considerationsIntro: copy.pricing,
+    preparationIntro: copy.preparation,
+    localDescription: `${title}. ${editorial.description}`,
+    reviewsTitle: "Kundomdömen om GESAB",
     faq: [
       { question: `Vad kostar ${service.title.toLocaleLowerCase("sv-SE")} i ${area.name}?`, answer: copy.pricing },
-      { question: `Hur planerar ni mitt uppdrag i ${area.name}?`, answer: `${area.planning} ${copy.preparation}` },
-      ...detail.faq.filter(({ question }) => !/kostar|pris/i.test(question)),
+      { question: `Hur planerar ni mitt uppdrag i ${area.name}?`, answer: "Ange adress, önskad start och vilka delar du behöver hjälp med. Vi stämmer av omfattning, tillgänglighet och hur en eventuell genomgång på plats ska ordnas. Eventuella kostnader för besök eller resor behöver klargöras innan ni bokar." },
+      ...detail.faq.filter(({ question }) => !/kostar|pris|områden|Göteborg|bygglov/i.test(question)),
     ],
   };
 }

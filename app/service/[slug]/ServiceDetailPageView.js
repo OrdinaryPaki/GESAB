@@ -13,15 +13,25 @@ import { ProjectGallery } from "./ProjectGallery";
 import { ServiceAreas } from "./ServiceAreas";
 import styles from "./service-detail-styles.js";
 import { siteConfig } from "../../site-config";
+import { LocalServiceContext } from "./LocalServiceContext";
+import { ServiceBreadcrumbs } from "./ServiceBreadcrumbs";
+import { localServiceDecisions } from "../local-service-decisions";
 import { localServicePath } from "../local-areas";
 
 const QUOTE_ANCHOR = "boka";
 
-function buildStructuredData(service, detail, area) {
+function buildStructuredData(service, detail, area, breadcrumbs) {
   const path = area ? localServicePath(service.slug, area.slug) : `/service/${service.slug}`;
   return {
     "@context": "https://schema.org",
     "@graph": [
+      ...(breadcrumbs ? [{
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbs.map((item, index) => ({
+          "@type": "ListItem", position: index + 1, name: item.name,
+          item: new URL(item.href, siteConfig.url).href,
+        })),
+      }] : []),
       {
         "@type": "Service",
         "@id": `${siteConfig.url}${path}#service`,
@@ -48,7 +58,12 @@ function buildStructuredData(service, detail, area) {
 }
 
 export function ServiceDetailPageView({ detail, relatedServices, service, area }) {
-  const structuredData = JSON.stringify(buildStructuredData(service, detail, area)).replaceAll("<", "\\u003c");
+  const breadcrumbs = area ? [
+    { name: "Hem", href: "/" },
+    { name: service.title, href: `/service/${service.slug}` },
+    { name: area.name, href: localServicePath(service.slug, area.slug) },
+  ] : null;
+  const structuredData = JSON.stringify(buildStructuredData(service, detail, area, breadcrumbs)).replaceAll("<", "\\u003c");
   const heroImage = (detail.heroImage ?? service.image).replace("scale-down-to=512", "scale-down-to=1024");
   const heroTitle = detail.heroTitle ?? service.title;
   const heroLead = detail.heroLead ?? service.body;
@@ -62,6 +77,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service, area }
       <main>
         <section className={styles.hero} aria-labelledby="service-title">
           <div className={`container ${styles.container}`}>
+            {breadcrumbs ? <ServiceBreadcrumbs items={breadcrumbs} /> : null}
             <h1
               className={`${styles.title} ${detail.heroTitle ? styles.titleLong : ""}`}
               id="service-title"
@@ -132,17 +148,9 @@ export function ServiceDetailPageView({ detail, relatedServices, service, area }
             </aside>
 
             <article className={styles.article}>
-              {area ? (
-                <section className={styles.articleSection} data-local-service-context>
-                  <h2>Ditt projekt i {area.name}</h2>
-                  <p>{area.planning}</p>
-                  <p>{detail.localPreparation}</p>
-                  <p><Link href={`/service/${service.slug}`}>Läs mer om {service.title.toLocaleLowerCase("sv-SE")} hos GESAB</Link></p>
-                </section>
-              ) : null}
               <section className={styles.articleSection} data-service-introduction>
-                <h2>{service.detail.introTitle}</h2>
-                <p>{service.detail.intro}</p>
+                <h2>{detail.introTitle ?? service.detail.introTitle}</h2>
+                <p>{detail.intro ?? service.detail.intro}</p>
                 {["badrumsrenovering", "tvattstugsrenovering"].includes(service.slug) ? (
                   <BkrCredential />
                 ) : null}
@@ -162,6 +170,8 @@ export function ServiceDetailPageView({ detail, relatedServices, service, area }
                   />
                 )}
               </section>
+
+              {area ? <LocalServiceContext service={service} detail={detail} area={area} /> : null}
 
               {detail.projectScope ? (
                 <section className={styles.articleSection} data-service-project-scope>
@@ -286,7 +296,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service, area }
                   key={relatedService.slug}
                 >
                   <img
-                    alt={`${relatedService.title} med GESAB i Göteborg`}
+                    alt={`${relatedService.title} med GESAB`}
                     height="240"
                     loading="lazy"
                     src={relatedService.image}
@@ -294,7 +304,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service, area }
                   />
                   <div>
                     <h3>{relatedService.title}</h3>
-                    <p>{relatedService.body}</p>
+                    <p>{area ? localServiceDecisions[relatedService.slug].description : relatedService.body}</p>
                     <span>Läs mer om tjänsten <span aria-hidden="true">→</span></span>
                   </div>
                 </Link>
