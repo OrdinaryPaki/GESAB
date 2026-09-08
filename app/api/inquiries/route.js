@@ -1,4 +1,5 @@
 import { Resend } from "resend";
+import { enforceContactBudget } from "../../lib/abuse/guard.mjs";
 
 import { contactInfo } from "../../site-config";
 import { deliverInquiry } from "../../lib/inquiries/delivery.mjs";
@@ -22,10 +23,11 @@ function getResendClient() {
 }
 
 export async function POST(request) {
-  return handleInquiryRequest(request, (inquiry, attribution) =>
-    saveAndDeliverLead(inquiry, attribution, {
+  return handleInquiryRequest(request, async (inquiry, attribution) => {
+    await enforceContactBudget(request, "inquiry", inquiry);
+    return saveAndDeliverLead(inquiry, attribution, {
       store: { registerLead, markLeadEmailSent },
       deliver: (savedInquiry) => deliverInquiry(getResendClient(), savedInquiry, { contactInfo }),
-    }),
-  );
+    });
+  });
 }

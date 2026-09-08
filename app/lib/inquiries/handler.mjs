@@ -60,7 +60,9 @@ export async function handleInquiryRequest(request, deliver) {
 
   try {
     await deliver(result.inquiry, normalizeContactAttribution(raw.attribution));
-  } catch {
+  } catch (error) {
+    if (error?.name === "AbuseLimitError") return Response.json({ok:false,error:error.message},{status:429,headers:{"cache-control":"no-store","retry-after":String(error.retryAfter)}});
+    if (error?.name === "ContactConflictError") return publicError(INVALID_ERROR,409);
     return publicError(DELIVERY_ERROR, 503);
   }
 

@@ -6,8 +6,8 @@ const PUBLIC_ERROR =
   "Din förfrågan kunde inte skickas. Försök igen eller kontakta oss via telefon.";
 
 export class InquirySubmissionError extends Error {
-  constructor() {
-    super(PUBLIC_ERROR);
+  constructor(message = PUBLIC_ERROR) {
+    super(message);
     this.name = "InquirySubmissionError";
   }
 }
@@ -77,6 +77,7 @@ export async function submitInquiry(
         ...(Object.keys(attribution).length ? { attribution } : {}) }),
     });
 
+    if (response.status === 429) throw new InquirySubmissionError("För många försök. Vänta en stund och försök igen, eller ring oss.");
     if (!response.ok) throw new InquirySubmissionError();
 
     const result = await response.json();

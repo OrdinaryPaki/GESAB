@@ -31,5 +31,8 @@ export async function handlePhoneClick(request, store) {
     await store.registerPhoneClick({eventId:body.eventId,phone:body.phone,page:body.page,
       attribution:normalizeContactAttribution(body.attribution)});
     return response(202);
-  } catch (error) { return response(error?.name === 'PhoneClickConflictError' ? 409 : 503); }
+  } catch (error) {
+    if (error?.name === 'AbuseLimitError') return Response.json({ok:false},{status:429,headers:{'cache-control':'no-store','retry-after':String(error.retryAfter)}});
+    return response(['PhoneClickConflictError','ContactConflictError'].includes(error?.name) ? 409 : 503);
+  }
 }

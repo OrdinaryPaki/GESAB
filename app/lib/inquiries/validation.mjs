@@ -21,7 +21,7 @@ export function normalizeInquiry(raw) {
   }
 
   const source = clean(raw.source);
-  const submissionId = clean(raw.submissionId);
+  const submissionId = clean(raw.submissionId).toLowerCase();
   const firstName = clean(raw.firstName);
   const lastName = clean(raw.lastName);
   const providedName = clean(raw.name);
