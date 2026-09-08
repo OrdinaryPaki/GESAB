@@ -10,6 +10,14 @@ import { siteConfig } from "./site-config";
 
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
+      { url: "/favicon-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   title: {
     default: `${siteConfig.shortName} - Badrumsrenovering och entreprenad i Göteborg`,
     template: `%s | ${siteConfig.shortName}`,
