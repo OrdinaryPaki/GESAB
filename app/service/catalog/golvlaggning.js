@@ -36,52 +36,52 @@ export const detail = {
   "heroTitle": "Golvläggning i Göteborg",
   "heroLead": "Golvläggning i Göteborg för lägenheter, villor och radhus. Vi går igenom underlag, materialval och avslut och lämnar en tydlig offert för ditt golv.",
   "heroImage": "/images/services/golvlaggning/hero-iphone.webp",
-  "heroImageAlt": "Illustrationsbild av ljust golv i ett vardagsrum",
+  "heroImageAlt": "Ljust golv i ett vardagsrum",
   "projects": [
     {
       "src": "/images/services/golvlaggning/01-hall-iphone.webp",
       "alt": "Ljust golv i hall med vita dörrar och skoskåp",
-      "caption": "Illustrationsbild – ljust golv i hall med vita dörrar och skoskåp."
+      "caption": "Ljust golv i hall med vita dörrar och skoskåp."
     },
     {
       "src": "/images/services/golvlaggning/02-kok-iphone.webp",
       "alt": "Golvyta i kök med vita skåp",
-      "caption": "Illustrationsbild – golvyta i kök med vita skåp."
+      "caption": "Golvyta i kök med vita skåp."
     },
     {
       "src": "/images/services/golvlaggning/03-sovrum-iphone.webp",
       "alt": "Golv i sovrum med blått påslakan",
-      "caption": "Illustrationsbild – golv i sovrum med blått påslakan."
+      "caption": "Golv i sovrum med blått påslakan."
     },
     {
       "src": "/images/services/golvlaggning/04-matplats-iphone.webp",
       "alt": "Golvyta kring en matplats i ett hem",
-      "caption": "Illustrationsbild – golvyta kring en matplats i ett hem."
+      "caption": "Golvyta kring en matplats i ett hem."
     },
     {
       "src": "/images/services/golvlaggning/05-list-iphone.webp",
       "alt": "Närbild på golvets anslutning till vit golvlist",
-      "caption": "Illustrationsbild – närbild på golvets anslutning till vit golvlist."
+      "caption": "Närbild på golvets anslutning till vit golvlist."
     },
     {
       "src": "/images/services/golvlaggning/06-troskel-iphone.webp",
       "alt": "Tröskel mellan golven i två rum",
-      "caption": "Illustrationsbild – tröskel mellan golven i två rum."
+      "caption": "Tröskel mellan golven i två rum."
     },
     {
       "src": "/images/services/golvlaggning/07-tomt-rum-iphone.webp",
       "alt": "Golvyta i ett tomt färdigställt rum",
-      "caption": "Illustrationsbild – golvyta i ett tomt färdigställt rum."
+      "caption": "Golvyta i ett tomt färdigställt rum."
     },
     {
       "src": "/images/services/golvlaggning/08-golv-narbild-iphone.webp",
       "alt": "Närbild på golvbrädor och trästruktur",
-      "caption": "Illustrationsbild – närbild på golvbrädor och trästruktur."
+      "caption": "Närbild på golvbrädor och trästruktur."
     },
     {
       "src": "/images/services/golvlaggning/09-allrum-iphone.webp",
       "alt": "Golv i allrum med bokhylla och soffa",
-      "caption": "Illustrationsbild – golv i allrum med bokhylla och soffa."
+      "caption": "Golv i allrum med bokhylla och soffa."
     }
   ],
   "quoteHeading": "Få offert på golvläggning",
