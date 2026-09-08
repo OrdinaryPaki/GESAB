@@ -26,7 +26,7 @@ export const homeImages = {
       ...serviceImageDimensions,
     },
     altanbygge: {
-      src: "/images/home/service-altan.png",
+      src: "/images/home/service-altan.webp",
       alt: "Nybyggd altan i trä med räcke och uteplats",
       ...serviceImageDimensions,
     },

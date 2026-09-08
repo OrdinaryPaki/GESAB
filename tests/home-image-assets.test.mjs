@@ -4,7 +4,7 @@ import test from "node:test";
 import { siteUrl } from "./helpers/site-url.mjs";
 
 const homeImagePaths = [
-  "/images/gesab/armin-servicebil.webp",
+  "/images/gesab/hero-servicebil.webp",
   "/images/home/why-team-planning.webp",
   "/images/home/why-final-inspection.webp",
   "/images/home/service-bathroom-warm.webp",
@@ -55,7 +55,7 @@ test("HOME service cards render their configured placeholder or local service im
     serviceImageSources,
     [
       "/images/home/service-bathroom-warm.webp",
-      "/images/home/service-altan.png",
+      "/images/home/service-altan.webp",
       "/images/services/totalentreprenad/totalentreprenad-01-kok-vardagsrum.webp",
       "/images/home/service-kitchen-warm.webp",
     ],

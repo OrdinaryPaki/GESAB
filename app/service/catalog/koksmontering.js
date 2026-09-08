@@ -36,9 +36,9 @@ export const detail = {
   "heroTitle": "Köksmontering i Göteborg",
   "heroLead": "Vi monterar ditt kök i Göteborg – skåp, luckor och inredning med tydlig offert och samordning av el och VVS när det ingår.",
   "heroImage": "/images/services/koksrenovering/hero-gothenburg-classic.webp",
-  "heroImageAlt": "Köksmontering i Göteborg",
+  "heroImageAlt": "Grå köksskåp med svarta handtag i ett ljust kök",
   "supportingImage": "/images/services/koksrenovering/project-08-final-inspection.webp",
-  "supportingImageAlt": "Köksmontering i Göteborg",
+  "supportingImageAlt": "Genomgång av monterade köksskåp och bänkskiva",
   "preparation": [
     "Köksritning med mått och gärna en beställningslista.",
     "Bilder på rummet och befintliga anslutningar.",

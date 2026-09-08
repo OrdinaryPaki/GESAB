@@ -4,17 +4,17 @@ import test from "node:test";
 import { siteUrl } from "./helpers/site-url.mjs";
 
 const publicPages = [
-  ["/", "Badrumsrenovering och entreprenad i Göteborg", "https://www.ges-ab.se"],
-  ["/about", "Om Göteborgs Entreprenad Service AB", "https://www.ges-ab.se/about"],
-  ["/service", "Tjänster för badrum, bygg och renovering i Göteborg", "https://www.ges-ab.se/service"],
-  ["/galleri", "Galleri", "https://www.ges-ab.se/galleri"],
-  ["/contact", "Kontakta GESAB", "https://www.ges-ab.se/contact"],
-  ["/service/badrumsrenovering", "Badrumsrenovering i Göteborg", "https://www.ges-ab.se/service/badrumsrenovering"],
-  ["/service/tvattstugsrenovering", "Tvättstugsrenovering i Göteborg", "https://www.ges-ab.se/service/tvattstugsrenovering"],
-  ["/service/koksrenovering", "Köksrenovering i Göteborg", "https://www.ges-ab.se/service/koksrenovering"],
-  ["/service/totalentreprenad", "Totalentreprenad i Göteborg", "https://www.ges-ab.se/service/totalentreprenad"],
-  ["/service/rivningsarbeten", "Rivningsarbeten i Göteborg", "https://www.ges-ab.se/service/rivningsarbeten"],
-  ["/service/golvlaggning", "Golvläggning i Göteborg", "https://www.ges-ab.se/service/golvlaggning"],
+  ["/", "Badrumsrenovering och entreprenad i Göteborg", "https://ges-ab.se"],
+  ["/about", "Om Göteborgs Entreprenad Service AB", "https://ges-ab.se/about"],
+  ["/service", "Tjänster för badrum, bygg och renovering i Göteborg", "https://ges-ab.se/service"],
+  ["/galleri", "Galleri", "https://ges-ab.se/galleri"],
+  ["/contact", "Kontakta GESAB", "https://ges-ab.se/contact"],
+  ["/service/badrumsrenovering", "Badrumsrenovering i Göteborg", "https://ges-ab.se/service/badrumsrenovering"],
+  ["/service/tvattstugsrenovering", "Tvättstugsrenovering i Göteborg", "https://ges-ab.se/service/tvattstugsrenovering"],
+  ["/service/koksrenovering", "Köksrenovering i Göteborg", "https://ges-ab.se/service/koksrenovering"],
+  ["/service/totalentreprenad", "Totalentreprenad i Göteborg", "https://ges-ab.se/service/totalentreprenad"],
+  ["/service/rivningsarbeten", "Rivningsarbeten i Göteborg", "https://ges-ab.se/service/rivningsarbeten"],
+  ["/service/golvlaggning", "Golvläggning i Göteborg", "https://ges-ab.se/service/golvlaggning"],
 ];
 
 function metaContent(html, property) {
@@ -47,8 +47,8 @@ test("the home page publishes one authoritative local-business entity", async ()
   const business = jsonScripts.find((entry) => entry["@type"] === "HomeAndConstructionBusiness");
 
   assert.ok(business, "the local-business entity must be present");
-  assert.equal(business["@id"], "https://www.ges-ab.se/#business");
-  assert.equal(business.url, "https://www.ges-ab.se");
+  assert.equal(business["@id"], "https://ges-ab.se/#business");
+  assert.equal(business.url, "https://ges-ab.se");
   assert.equal(business.telephone, "+46707299633");
   assert.deepEqual(business.address, {
     "@type": "PostalAddress",
@@ -64,9 +64,9 @@ test("the home page uses bundled fonts and the supplied Armin portrait", async (
   const heroPhoto = html.match(/<img[^>]+class="hero-photo"[^>]*>/)?.[0] ?? "";
 
   assert.doesNotMatch(html, /fonts\.googleapis\.com|fonts\.gstatic\.com/);
-  assert.match(heroPhoto, /src="\/images\/gesab\/armin-servicebil\.webp"/);
+  assert.match(heroPhoto, /src="\/images\/gesab\/hero-servicebil\.webp"/);
   assert.match(heroPhoto, /alt="Armin framför GESAB:s servicebil"/);
-  assert.match(heroPhoto, /width="768"/);
-  assert.match(heroPhoto, /height="1024"/);
+  assert.match(heroPhoto, /width="1671"/);
+  assert.match(heroPhoto, /height="941"/);
   assert.match(heroPhoto, /fetchPriority="high"/);
 });

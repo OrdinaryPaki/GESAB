@@ -7,7 +7,7 @@ import { createPageMetadata } from "../seo";
 
 export const metadata = createPageMetadata({
   title: "Galleri",
-  description: "Se våra tidigare projekt och inspireras av våra badrumsrenoveringar, köksrenoveringar och andra byggprojekt.",
+  description: "Hitta inspiration till badrumsrenovering, köksrenovering och andra renoveringar i hemmet. Utforska GESAB:s bildgalleri.",
   path: "/galleri",
   image: "/images/home/gallery-bathroom-result.webp",
 });

@@ -52,7 +52,7 @@ export const services = [
     slug: "altanbygge",
     title: "Altanbygge",
     body: "Vi bygger din altan från grund till räcke – rätt konstruktion, tåliga material och ett fast pris innan vi startar.",
-    image: "/images/home/service-altan.png",
+    image: "/images/home/service-altan.webp",
     detail: {
       introTitle: "En altan byggd för västkustens väder",
       intro:

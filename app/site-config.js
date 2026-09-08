@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Göteborgs Entreprenad Service AB",
   shortName: "GESAB",
-  url: "https://www.ges-ab.se",
+  url: "https://ges-ab.se",
   locale: "sv_SE",
   areaServed: "Göteborg med omnejd",
 };

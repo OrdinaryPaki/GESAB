@@ -22,6 +22,9 @@ function buildStructuredData(service, detail) {
     "@graph": [
       {
         "@type": "Service",
+        "@id": `${siteConfig.url}/service/${service.slug}#service`,
+        url: `${siteConfig.url}/service/${service.slug}`,
+        image: new URL(detail.heroImage ?? service.image, siteConfig.url).href,
         name: service.title,
         description: service.detail.intro,
         areaServed: "Göteborg med omnejd",

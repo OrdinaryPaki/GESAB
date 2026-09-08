@@ -1,14 +1,16 @@
+import { createPageMetadata } from "../seo";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { contactInfo, siteConfig } from "../site-config";
 import { CookieSettingsButton } from "./CookieSettingsButton";
 import styles from "./cookies.module.css";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Integritet och cookies",
   description: "Läs om GESAB:s annonsmätning och ändra dina cookieinställningar.",
-  alternates: { canonical: "/cookies" },
-};
+  path: "/cookies",
+  image: "/images/gesab/hero-servicebil.webp",
+});
 
 export default function CookiesPage() {
   return (

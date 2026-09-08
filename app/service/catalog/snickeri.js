@@ -36,9 +36,9 @@ export const detail = {
   "heroTitle": "Snickare i Göteborg",
   "heroLead": "Behöver du en snickare i Göteborg? GESAB hjälper med lister, dörrfoder, innerväggar och förvaring – med tydlig omfattning och offert.",
   "heroImage": "/images/services/bygg/project-07-casing-carpenter.webp",
-  "heroImageAlt": "Snickare i Göteborg",
+  "heroImageAlt": "Kontroll av dörrfoder med vattenpass",
   "supportingImage": "/images/services/bygg/project-05-built-in-shelving.webp",
-  "supportingImageAlt": "Snickare i Göteborg",
+  "supportingImageAlt": "Platsbyggd bokhylla med underskåp i vardagsrum",
   "preparation": [
     "Bilder på platsen där arbetet ska göras.",
     "Ungefärliga mått och en beskrivning av önskat resultat.",

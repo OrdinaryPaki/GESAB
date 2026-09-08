@@ -277,7 +277,7 @@
   padding: 40px;
 }
 
-.serviceCardContent h3 {
+.serviceCardContent h2 {
   margin: 0;
   font-size: 28px;
   font-weight: 600;
@@ -318,7 +318,7 @@
     background: rgba(0, 0, 0, 0.7);
   }
 
-  .serviceCard:hover .serviceCardContent h3 {
+  .serviceCard:hover .serviceCardContent h2 {
     margin-bottom: 16px;
     transform: translateY(0);
   }
@@ -371,7 +371,7 @@
     padding: 28px 24px;
   }
 
-  .serviceCardContent h3 {
+  .serviceCardContent h2 {
     margin-bottom: 12px;
     font-size: 24px;
     transform: none;
@@ -442,7 +442,7 @@
 @media (prefers-reduced-motion: reduce) {
   .serviceCardImage,
   .serviceCardOverlay,
-  .serviceCardContent h3,
+  .serviceCardContent h2,
   .serviceCardHidden {
     transition: none;
   }

@@ -160,7 +160,7 @@ export const renovationDetailContent = {
     heroTitle: "Bygga altan i Göteborg",
     heroLead:
       "Vi bygger altaner, trädäck och uteplatser i hela Göteborgsområdet. Fast pris, hjälp med bygglov och en kontaktperson från första skiss till färdig altan.",
-    heroImage: "/images/services/altanbygge/hero-altan.png",
+    heroImage: "/images/services/altanbygge/hero-altan.webp",
     heroImageAlt: "Altanbygge i Göteborg – nybyggd altan i trä med räcke och trappa",
     highlights: [
       ["Fast pris", "Inga dolda kostnader"],
@@ -176,7 +176,7 @@ export const renovationDetailContent = {
       "Önskemål om material, räcke, trappa eller inglasning.",
       "När du ungefär vill att arbetet ska starta.",
     ],
-    supportingImage: "/images/services/altanbygge/altan-construction.png",
+    supportingImage: "/images/services/altanbygge/altan-construction.webp",
     supportingImageAlt: "Altanbygge: bärande konstruktion och trall monteras",
     reviewNames: ["Katarina S.", "Anna & Mikael", "Familjen Johansson"],
     quoteHeading: "Få en gratis offert",
