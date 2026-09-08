@@ -13,8 +13,8 @@ export function ServiceAreas({ quoteAnchor, service, currentArea }) {
       </summary>
       <div className={styles.content}>
         <p>
-          Vi utgår från Göteborg och tar uppdrag runt om i regionen. Berätta var
-          du behöver hjälp, så återkommer vi om ditt projekt.
+          Vi hjälper privatpersoner i Göteborg med omnejd, bland annat i Borås och
+          Kungsbacka. Berätta var du behöver hjälp, så återkommer vi om ditt projekt.
         </p>
         <p>Läs om {service.title.toLocaleLowerCase("sv-SE")} på några av orterna där vi arbetar:</p>
         <ul>
