@@ -96,7 +96,7 @@ export function ReviewCarousel({ items, className = "", cardClassName = "" }) {
       </div>
 
       {canScroll && (
-        <div className="review-pagination" role="tablist" aria-label="Kundomdömen">
+        <div className="review-pagination" role="group" aria-label="Kundomdömen">
           {items.map((item, index) => {
             const isActive = index === activeIndex;
 

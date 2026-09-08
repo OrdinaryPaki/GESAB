@@ -91,7 +91,7 @@ export function TestimonialCarousel({ items, className = "" }) {
               </div>
             </div>
             <p>{item.quote}</p>
-            <div className="rating-stars" aria-label="Fem av fem">
+            <div className="rating-stars" role="img" aria-label="Fem av fem">
               {Array.from({ length: 5 }).map((_, starIndex) => (
                 <StarIcon key={starIndex} />
               ))}
@@ -100,7 +100,7 @@ export function TestimonialCarousel({ items, className = "" }) {
         ))}
       </div>
 
-      <div className="testimonial-pagination" role="tablist" aria-label="Kundomdömen">
+      <div className="testimonial-pagination" role="group" aria-label="Kundomdömen">
         {items.map((item, index) => {
           const isActive = index === activeIndex;
 
