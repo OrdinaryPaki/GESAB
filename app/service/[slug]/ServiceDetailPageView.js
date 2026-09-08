@@ -10,6 +10,7 @@ import { ReviewCarousel } from "../../components/ReviewCarousel";
 import { contactInfo, testimonials } from "../../gesab-data";
 import { ServiceQuoteForm } from "./ServiceQuoteForm";
 import { ProjectGallery } from "./ProjectGallery";
+import { ServiceAreas } from "./ServiceAreas";
 import styles from "./service-detail-styles.js";
 import { siteConfig } from "../../site-config";
 
@@ -252,6 +253,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 <h2>Vanliga frågor</h2>
                 <FaqAccordion items={detail.faq} />
               </section>
+              <ServiceAreas quoteAnchor={QUOTE_ANCHOR} />
             </article>
           </div>
         </section>
