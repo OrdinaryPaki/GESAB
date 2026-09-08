@@ -23,14 +23,14 @@ test("all 18 local service pages have unique metadata, the correct service form 
   assert.equal(schema.areaServed, area==='boras'?'Borås':'Kungsbacka');
  }
 });
-test("local pages are linked from their service and included in sitemap without an area overview", async () => {
+test("local pages remain linked but are deferred from the sitemap for later indexing", async () => {
  const xml = await fetch(siteUrl+'/sitemap.xml').then(r=>r.text());
  for(const slug of services){
   const html=await fetch(siteUrl+'/service/'+slug).then(r=>r.text());
   for(const area of ['boras','kungsbacka']){
    const path=`/service/${slug}/${area}`;
    assert.ok(html.includes(`href="${path}"`));
-   assert.ok(xml.includes(`https://ges-ab.se${path}`));
+   assert.ok(!xml.includes(`https://ges-ab.se${path}`));
   }
   assert.ok(!html.includes('href="/omraden"'));
  }

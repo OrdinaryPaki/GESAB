@@ -31,7 +31,7 @@ test('sitemap contains every public canonical and excludes obsolete and internal
   assert.equal(response.status, 200);
   const xml = await response.text();
   const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]);
-  assert.deepEqual(urls.sort(), paths.map(path => new URL(path, origin).href).sort());
+  assert.deepEqual(urls.sort(), paths.filter(path => !/^\/service\/[^/]+\/[^/]+$/.test(path)).map(path => new URL(path, origin).href).sort());
   const robots = await fetch(`${siteUrl}/robots.txt`).then(response => response.text());
   assert.match(robots, /Allow: \/\n/);
   assert.match(robots, /Sitemap: https:\/\/ges-ab.se\/sitemap.xml/);
