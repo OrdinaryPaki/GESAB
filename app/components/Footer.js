@@ -55,7 +55,7 @@ export function Footer() {
         <div className="footer-bottom-left">
           Copyright © {new Date().getFullYear()} {siteConfig.shortName}. Alla rättigheter förbehålls.
         </div>
-        <div className="badge-grid" aria-label={`${siteConfig.shortName} bilder`}>
+        <div className="badge-grid">
           {footerBadges.map((src, index) => (
             <img key={`${src}-${index}`} src={src} alt="" />
           ))}

@@ -118,7 +118,7 @@ function SupportStrip() {
               <CheckIcon />
             </span>
             <div>
-              <h3>{title}</h3>
+              <h2>{title}</h2>
               <p>{body}</p>
             </div>
           </article>

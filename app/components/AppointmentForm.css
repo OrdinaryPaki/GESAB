@@ -50,8 +50,14 @@
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--white);
-  color: var(--placeholder);
+  color: var(--text);
   outline: none;
+}
+
+.appointment-card input::placeholder,
+.appointment-card textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
 }
 
 .appointment-card input {
@@ -251,4 +257,3 @@
     font-size: 28px;
   }
 }
-
