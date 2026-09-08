@@ -54,6 +54,9 @@ export function Footer() {
       <div className="container footer-bottom">
         <div className="footer-bottom-left">
           Copyright © {new Date().getFullYear()} {siteConfig.shortName}. Alla rättigheter förbehålls.
+          <p className="footer-credit">
+            Utvecklad och drivs av <a href="https://modernasidor.se">Moderna Sidor AB</a>
+          </p>
         </div>
         <div className="badge-grid">
           {footerBadges.map((src, index) => (

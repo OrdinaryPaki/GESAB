@@ -194,3 +194,18 @@
     width: calc(100% - 32px) !important;
   }
 }
+
+.footer-credit {
+  margin: 8px 0 0;
+}
+
+.footer-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  color: var(--blue);
+}
