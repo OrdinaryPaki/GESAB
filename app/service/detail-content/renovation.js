@@ -609,7 +609,11 @@ export const renovationDetailContent = {
       "En kontaktperson genom hela projektet",
       "ROT-avdrag när villkoren är uppfyllda",
     ],
-    sectionsTitle: "Vilka renoveringar hjälper vi med?",
+    projectScope: {
+      title: "Vilka projekt passar tjänsten för?",
+      body: "Totalentreprenad passar större renoveringar av lägenheter, villor och radhus där flera rum eller yrkesgrupper behöver samordnas. Det kan till exempel vara en totalrenovering av lägenheten eller ett projekt där kök, badrum och andra delar av bostaden görs om tillsammans. Vi går igenom vad du vill förändra och kommer överens om vilka arbeten vi ska ta ansvar för.",
+    },
+    sectionsTitle: "Så håller vi ihop din renovering",
     bulletsTitle: "Det här kan ingå i en totalentreprenad",
     bulletsIntro: "Omfattningen anpassas efter projektet. Vanliga delar är:",
     processTitle: "Så går det till",

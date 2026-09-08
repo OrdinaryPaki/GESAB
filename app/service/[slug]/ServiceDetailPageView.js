@@ -149,6 +149,13 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 )}
               </section>
 
+              {detail.projectScope ? (
+                <section className={styles.articleSection} data-service-project-scope>
+                  <h2>{detail.projectScope.title}</h2>
+                  <p>{detail.projectScope.body}</p>
+                </section>
+              ) : null}
+
               <section className={styles.articleSection} data-service-detail-section>
                 <h2>{detail.sectionsTitle ?? "Därför väljer kunder GESAB"}</h2>
                 <div className={styles.textBlocks}>
