@@ -13,21 +13,23 @@ import { ProjectGallery } from "./ProjectGallery";
 import { ServiceAreas } from "./ServiceAreas";
 import styles from "./service-detail-styles.js";
 import { siteConfig } from "../../site-config";
+import { localServicePath } from "../local-areas";
 
 const QUOTE_ANCHOR = "boka";
 
-function buildStructuredData(service, detail) {
+function buildStructuredData(service, detail, area) {
+  const path = area ? localServicePath(service.slug, area.slug) : `/service/${service.slug}`;
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Service",
-        "@id": `${siteConfig.url}/service/${service.slug}#service`,
-        url: `${siteConfig.url}/service/${service.slug}`,
+        "@id": `${siteConfig.url}${path}#service`,
+        url: `${siteConfig.url}${path}`,
         image: new URL(detail.heroImage ?? service.image, siteConfig.url).href,
-        name: service.title,
-        description: service.detail.intro,
-        areaServed: "Göteborg med omnejd",
+        name: area ? detail.heroTitle : service.title,
+        description: detail.localDescription ?? service.detail.intro,
+        areaServed: area?.name ?? "Göteborg med omnejd",
         provider: { "@id": `${siteConfig.url}/#business` },
       },
       {
@@ -45,8 +47,8 @@ function buildStructuredData(service, detail) {
   };
 }
 
-export function ServiceDetailPageView({ detail, relatedServices, service }) {
-  const structuredData = JSON.stringify(buildStructuredData(service, detail)).replaceAll("<", "\\u003c");
+export function ServiceDetailPageView({ detail, relatedServices, service, area }) {
+  const structuredData = JSON.stringify(buildStructuredData(service, detail, area)).replaceAll("<", "\\u003c");
   const heroImage = (detail.heroImage ?? service.image).replace("scale-down-to=512", "scale-down-to=1024");
   const heroTitle = detail.heroTitle ?? service.title;
   const heroLead = detail.heroLead ?? service.body;
@@ -68,7 +70,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
             </h1>
             <div className={styles.meta} aria-label="Tjänsteinformation">
               <span data-service-audience={detail.audience}>{detail.audience}</span>
-              <span>Göteborg med omnejd</span>
+              <span>{area?.name ?? "Göteborg med omnejd"}</span>
             </div>
             <p className={styles.heroLead}>{heroLead}</p>
             <div className={styles.heroActions}>
@@ -130,6 +132,14 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
             </aside>
 
             <article className={styles.article}>
+              {area ? (
+                <section className={styles.articleSection} data-local-service-context>
+                  <h2>Ditt projekt i {area.name}</h2>
+                  <p>{area.planning}</p>
+                  <p>{detail.localPreparation}</p>
+                  <p><Link href={`/service/${service.slug}`}>Läs mer om {service.title.toLocaleLowerCase("sv-SE")} hos GESAB</Link></p>
+                </section>
+              ) : null}
               <section className={styles.articleSection} data-service-introduction>
                 <h2>{service.detail.introTitle}</h2>
                 <p>{service.detail.intro}</p>
@@ -256,7 +266,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 <h2>Vanliga frågor</h2>
                 <FaqAccordion items={detail.faq} />
               </section>
-              <ServiceAreas quoteAnchor={QUOTE_ANCHOR} />
+              <ServiceAreas quoteAnchor={QUOTE_ANCHOR} service={service} currentArea={area} />
             </article>
           </div>
         </section>
@@ -272,7 +282,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service }) {
                 <Link
                   className={styles.relatedCard}
                   data-related-service={relatedService.slug}
-                  href={`/service/${relatedService.slug}`}
+                  href={area ? localServicePath(relatedService.slug, area.slug) : `/service/${relatedService.slug}`}
                   key={relatedService.slug}
                 >
                   <img

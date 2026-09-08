@@ -4,7 +4,7 @@ import { siteUrl } from './helpers/site-url.mjs';
 
 const origin = 'https://ges-ab.se';
 const serviceSlugs = ['badrumsrenovering', 'altanbygge', 'tvattstugsrenovering', 'koksrenovering', 'totalentreprenad', 'rivningsarbeten', 'golvlaggning', 'koksmontering', 'snickeri'];
-const paths = ['/', '/about', '/service', '/galleri', '/contact', '/cookies', ...serviceSlugs.map(slug => `/service/${slug}`)];
+const paths = ['/', '/about', '/service', '/galleri', '/contact', '/cookies', ...serviceSlugs.map(slug => `/service/${slug}`), ...serviceSlugs.flatMap(slug => ['boras', 'kungsbacka'].map(area => `/service/${slug}/${area}`))];
 
 test('every public page has its own canonical, unique metadata, and one main heading', async () => {
   const titles = new Set();
