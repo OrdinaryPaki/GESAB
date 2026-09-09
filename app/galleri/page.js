@@ -6,8 +6,8 @@ import styles from "./galleri.module.css";
 import { createPageMetadata } from "../seo";
 
 export const metadata = createPageMetadata({
-  title: "Galleri",
-  description: "Hitta inspiration till badrumsrenovering, köksrenovering och andra renoveringar i hemmet. Utforska GESAB:s bildgalleri.",
+  title: "Badrum och kök – bilder och renoveringsinspiration",
+  description: "Utforska bilder på badrum, kök och renovering hos GESAB. Hitta idéer för material, färger och planlösning inför ditt eget projekt.",
   path: "/galleri",
   image: "/images/home/gallery-bathroom-result.webp",
 });

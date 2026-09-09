@@ -34,9 +34,9 @@ const contactFaqItems = [
 ];
 
 export const metadata = createPageMetadata({
-  title: "Kontakta GESAB",
+  title: "Kontakta GESAB – offert för din renovering",
   description:
-    "Kontakta Göteborgs Entreprenad Service AB för offert eller rådgivning kring badrumsrenovering, köksrenovering, bygg och entreprenad i Göteborg.",
+    "Planerar du badrum, kök eller bygg i Göteborg med omnejd? Ring eller skriv till GESAB. Beskriv ditt projekt och få hjälp med nästa steg inför offert.",
   path: "/contact",
   image: "/images/home/why-site-measurement.webp",
 });
@@ -48,11 +48,11 @@ export default function ContactPage() {
       <section className="contact-hero-section">
         <div className="contact-hero-inner">
           <h1>
-            Kontakta oss{" "}
+            Prata med oss om{" "}
             <br />
-            gärna
+            din renovering
           </h1>
-          <p>Vi hjälper dig gärna – kontakta oss med frågor eller för offert.</p>
+          <p>Beskriv vad du vill göra, var arbetet ska utföras och när du önskar börja. Vi återkommer om omfattning och nästa steg inför offert. Du kan också ringa eller mejla oss direkt.</p>
           <ContactForm />
         </div>
       </section>

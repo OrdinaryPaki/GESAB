@@ -92,9 +92,9 @@ export default function GalleryView() {
   return (
     <main className={styles.main}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Vårt Galleri</h1>
+        <h1 className={styles.title}>Inspiration för ditt hem</h1>
         <p className={styles.subtitle}>
-          Här har vi samlat projektbilder och inspiration för badrum, kök och bygg. Filtrera på kategori för att hitta inspiration för ditt kommande projekt.
+          Utforska bilder på badrum, kök och bygg. Filtrera på kategori och hitta idéer för färger, material och utformning. Berätta gärna vilka detaljer du gillar när du kontaktar oss om din renovering.
         </p>
       </div>
 

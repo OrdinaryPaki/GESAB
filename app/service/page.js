@@ -7,9 +7,9 @@ import styles from "./service-page.module.css";
 import { createPageMetadata } from "../seo";
 
 export const metadata = createPageMetadata({
-  title: "Tjänster för badrum, bygg och renovering i Göteborg",
+  title: "Renovering och bygg i Göteborg – våra tjänster",
   description:
-    "Se GESABs tjänster inom badrum, kök, altan, tvättstuga, totalentreprenad, rivning, golvläggning, köksmontering och snickeri i Göteborg.",
+    "Hitta hjälp med badrum, kök, altan, golv och snickeri i Göteborg med omnejd. Se våra nio tjänster, läs vad som kan ingå och be om offert.",
   path: "/service",
   image: "/images/home/service-total-project.webp",
 });
@@ -39,8 +39,8 @@ export default function ServicePage() {
         <section className={styles.indexSection}>
           <div className={`container ${styles.indexContainer}`}>
             <header className={styles.indexTitle}>
-              <h1>Tjänster</h1>
-              <p>Badrum, kök, bygg och renovering i Göteborg – med tydlig plan och en kontaktperson.</p>
+              <h1>Bygg och renovering</h1>
+              <p>Behöver du hjälp med ett rum, ett snickerijobb eller en större renovering? Här hittar du våra tjänster i Göteborg med omnejd. Välj tjänst för att läsa om omfattning, förberedelser och offert.</p>
             </header>
             <ServiceGrid services={allServicesWithCopy} />
           </div>

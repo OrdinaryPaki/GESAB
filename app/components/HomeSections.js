@@ -91,7 +91,7 @@ function Hero() {
           <span>Göteborgs Entreprenad Service AB</span>
         </div>
         <h1>Badrum och bygg för hela ditt hem</h1>
-        <p>Vi samordnar badrum, kök och bygg från första planering till färdigt resultat.</p>
+        <p>Vi hjälper dig med badrumsrenovering, köksrenovering och bygg i Göteborg med omnejd. Från ett enskilt rum till en större renovering – med en kontakt genom projektet.</p>
         <CtaLink href="/contact" variant="yellow">
           Be om offert
         </CtaLink>

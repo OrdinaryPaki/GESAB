@@ -9,9 +9,9 @@ import { AboutRevealController } from "./reveal-controller";
 import { createPageMetadata } from "../seo";
 
 export const metadata = createPageMetadata({
-  title: "Om Göteborgs Entreprenad Service AB",
+  title: "Om GESAB – bygg och renovering i Göteborg",
   description:
-    "Läs om GESAB, ett hantverksföretag i Göteborg med fokus på badrumsrenovering, bygg, säker arbetsmiljö, dokumentation och miljöansvar.",
+    "Lär känna Göteborgs Entreprenad Service AB. Läs hur vi planerar din renovering, samordnar hantverkare och gör omfattning och ansvar tydliga.",
   path: "/about",
   image: "/images/home/about-plumbing-detail.webp",
 });

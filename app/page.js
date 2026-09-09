@@ -3,9 +3,9 @@ import { image } from "./gesab-data";
 import { createPageMetadata } from "./seo";
 
 export const metadata = createPageMetadata({
-  title: "Badrumsrenovering och entreprenad i Göteborg",
+  title: "Badrumsrenovering, kök och bygg i Göteborg",
   description:
-    "GESAB hjälper dig att renovera ditt hem i Göteborg. Badrumsrenovering, köksrenovering, golvläggning och totalentreprenad. Kontakta oss för en offert.",
+    "Renovera badrum, kök eller hela hemmet med GESAB i Göteborg med omnejd. Vi samordnar arbetet och tydliggör vad som ingår. Be om offert för ditt projekt.",
   path: "/",
   image: image.heroPhoto,
 });

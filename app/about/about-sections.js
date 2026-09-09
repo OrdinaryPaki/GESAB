@@ -49,7 +49,7 @@ export function AboutStorySection() {
       <div className={`container ${storyStyles.storyGrid}`}>
         <div className={storyStyles.storyTitle}>
           <h1>Om GESAB</h1>
-          <p>Från badrumsrenovering till bygg och entreprenad – GESAB samordnar yrkesrollerna och håller ihop projektet.</p>
+          <p>Göteborgs Entreprenad Service AB hjälper dig med badrum, kök och bygg i Göteborg med omnejd. Vi samordnar hantverkarna så att du har en kontakt genom renoveringen.</p>
         </div>
         <div className={storyStyles.storyCollage}>
           <img className={storyStyles.storyPrimaryImage} src="/images/home/about-team-workshop.webp" alt="Två hantverkare planerar ett badrumsarbete från ritning" />
@@ -76,11 +76,11 @@ export function AboutMissionSection() {
         <header className={missionStyles.missionIntro}>
           <span className={missionStyles.missionEyebrow}>Vårt ansvar</span>
           <div className={missionStyles.missionCopy}>
-            <h2>Tryggt arbete med ansvar och ordning</h2>
+            <h2>Så planerar vi din renovering</h2>
             <div className={missionStyles.missionBody}>
               <p>
-                GESAB skapar trygga renoveringar där kunden vet vad som ska göras, varför det görs och vilka
-                yrkesroller som behövs. I våtrum är ordning, dokumentation och rätt arbetsmetod avgörande.
+                Vi börjar med vad du vill förändra och vilka förutsättningar bostaden har. Därefter går vi igenom
+                omfattning, material och arbetsordning, så att du kan ta ställning till offerten med ett tydligt underlag.
               </p>
               <p>
                 Vi tar arbetsmiljö och miljöansvar på allvar, med säkrare arbetsplatser, sorterat avfall och

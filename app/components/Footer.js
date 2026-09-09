@@ -29,7 +29,7 @@ export function Footer() {
         </div>
         <div className="footer-list footer-services">
           <span>Tjänster</span>
-          {services.slice(0, 4).map((service) => (
+          {services.map((service) => (
             <Link key={service.slug} href={`/service/${service.slug}`}>
               {service.title}
             </Link>
