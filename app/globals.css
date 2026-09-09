@@ -113,6 +113,13 @@ textarea {
   min-width: 0;
 }
 
+/* Keep editable text legible independently of smaller labels and avoid iOS focus zoom. */
+input,
+select,
+textarea {
+  font-size: max(16px, 1rem);
+}
+
 .container {
   width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
