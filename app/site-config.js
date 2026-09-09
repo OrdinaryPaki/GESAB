@@ -19,9 +19,9 @@ export const contactInfo = {
   addressCountry: "SE",
   mapsSearchHref: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS_LINE)}`,
   map: {
-    lat: 57.7502526,
-    lng: 11.8808103,
-    zoom: 14,
+    lat: 57.751392,
+    lng: 11.880683,
+    zoom: 11,
   },
   phonePrimary: "0707 299 633",
   phoneSecondary: "0736 72 88 14",
