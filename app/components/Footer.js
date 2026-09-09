@@ -3,10 +3,7 @@ import Link from "next/link";
 import { contactInfo, services } from "../gesab-data";
 import { siteConfig } from "../site-config";
 import { Logo, MailIcon, PhoneIcon } from "./GesabIcons";
-import { placeholderImages } from "./placeholder-images";
 import "./Footer.css";
-
-const footerBadges = Array.from({ length: 4 }, () => placeholderImages.round);
 
 export function Footer() {
   return (
@@ -58,11 +55,13 @@ export function Footer() {
             Utvecklad och drivs av <a href="https://modernasidor.se">Moderna Sidor AB</a>
           </p>
         </div>
-        <div className="badge-grid">
-          {footerBadges.map((src, index) => (
-            <img key={`${src}-${index}`} src={src} alt="" />
-          ))}
-        </div>
+        <Link className="footer-area" href="/contact">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+            <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          <span><strong>Göteborg med omnejd</strong><span>Fråga om ditt område →</span></span>
+        </Link>
       </div>
     </footer>
   );
