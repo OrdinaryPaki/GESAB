@@ -2,7 +2,7 @@ export const service = {
   "slug": "koksmontering",
   "title": "Köksmontering",
   "body": "Vi monterar ditt kök i Göteborg – skåp, luckor och inredning med tydlig offert och samordning av el och VVS när det ingår.",
-  "image": "/images/services/koksrenovering/hero-gothenburg-classic.webp",
+  "image": "/images/services/koksmontering/01-ek-kokso.webp",
   "detail": {
     "introTitle": "Har du köpt köket? Vi hjälper dig med montaget.",
     "intro": "Köksmontering passar dig som har valt ett kök och behöver hjälp att få det på plats. Vi går igenom köksritningen, leveransen och rummets förutsättningar innan vi lämnar offert. Du får veta vad som ingår i montaget och vilka förberedelser som behövs.",
@@ -35,10 +35,58 @@ export const detail = {
   "audience": "Privatpersoner",
   "heroTitle": "Köksmontering i Göteborg",
   "heroLead": "Vi monterar ditt kök i Göteborg – skåp, luckor och inredning med tydlig offert och samordning av el och VVS när det ingår.",
-  "heroImage": "/images/services/koksrenovering/hero-gothenburg-classic.webp",
-  "heroImageAlt": "Grå köksskåp med svarta handtag i ett ljust kök",
-  "supportingImage": "/images/services/koksrenovering/project-08-final-inspection.webp",
-  "supportingImageAlt": "Genomgång av monterade köksskåp och bänkskiva",
+  "heroImage": "/images/services/koksmontering/01-ek-kokso.webp",
+  "heroImageAlt": "Kök med köksö och lådfronter i ek samt ljusa överskåp",
+  "supportingImage": "/images/services/koksmontering/02-salviagront-hornkok.webp",
+  "supportingImageAlt": "Salviagrönt hörnkök med spegelluckor och diskbänk vid fönstret",
+  // AI-generated illustrations approved for this service; not documented customer projects.
+  "projects": [
+    {
+      "src": "/images/services/koksmontering/02-salviagront-hornkok.webp",
+      "alt": "Salviagrönt hörnkök med spegelluckor och diskbänk vid fönstret",
+      "caption": "Köksinspiration – ett kompakt hörnkök med förvaring längs två väggar."
+    },
+    {
+      "src": "/images/services/koksmontering/03-bla-halvo.webp",
+      "alt": "Blått kök med halvö, ljus terrazzobänkskiva och två träpallar",
+      "caption": "Köksinspiration – en halvö som ger extra arbetsyta och sittplatser."
+    },
+    {
+      "src": "/images/services/koksmontering/04-sekelskifte-greige.webp",
+      "alt": "Greige kök med höga skåp, stuckatur och runt matbord",
+      "caption": "Köksinspiration – klassiska luckor i ett rum med högt i tak."
+    },
+    {
+      "src": "/images/services/koksmontering/05-valnot-langvagg.webp",
+      "alt": "Kök längs en vägg med valnötsfronter, ljusa överskåp och mörk bänkskiva",
+      "caption": "Köksinspiration – sammanhängande förvaring och arbetsyta längs en vägg."
+    },
+    {
+      "src": "/images/services/koksmontering/06-vindskok-ek.webp",
+      "alt": "L-format kök i ek under snedtak med stort takfönster",
+      "caption": "Köksinspiration – ett kök anpassat till snedtak och takfönster."
+    },
+    {
+      "src": "/images/services/koksmontering/07-morkgront-matkok.webp",
+      "alt": "Mörkgrönt kök med mässingsknoppar, lågt fönster och matbord i trä",
+      "caption": "Köksinspiration – mörkgröna skåp med hög förvaring och en separat matplats."
+    },
+    {
+      "src": "/images/services/koksmontering/08-vitt-u-kok.webp",
+      "alt": "Vitt U-format kök med träbänkskivor och brett fönster över diskhon",
+      "caption": "Köksinspiration – arbetsytor och skåp som följer rummets tre väggar."
+    },
+    {
+      "src": "/images/services/koksmontering/09-creme-terracotta.webp",
+      "alt": "Cremefärgat kök med profilerade luckor, mörk bänkskiva och terrakottagolv",
+      "caption": "Köksinspiration – klassiska skåpfronter tillsammans med varma golvtoner."
+    },
+    {
+      "src": "/images/services/koksmontering/10-tegelrott-oppet-kok.webp",
+      "alt": "Tegelrött kök med ljus halvö och öppen planlösning mot vardagsrummet",
+      "caption": "Köksinspiration – en halvö som avgränsar köket mot vardagsrummet."
+    }
+  ],
   "preparation": [
     "Köksritning med mått och gärna en beställningslista.",
     "Bilder på rummet och befintliga anslutningar.",
