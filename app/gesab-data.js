@@ -120,7 +120,7 @@ export const services = [
     slug: "koksrenovering",
     title: "Köksrenovering",
     body: "Vi renoverar ditt kök från planering till montage – allt i rätt ordning, med en kontaktperson och en tydlig tidplan.",
-    image: "/images/services/koksrenovering/hero-gothenburg-classic.webp",
+    image: "/images/services/koksrenovering/hero-villa-kokso-tra.webp",
     detail: {
       introTitle: "Ett kök som blir klart – i rätt ordning",
       intro:

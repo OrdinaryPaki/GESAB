@@ -400,8 +400,8 @@ export const renovationDetailContent = {
     heroTitle: "Köksrenovering i Göteborg",
     heroLead:
       "Vi renoverar ditt kök från start till mål. Du får fast pris, samordnade hantverkare, klar tidplan och en enda kontaktperson under hela projektet.",
-    heroImage: "/images/services/koksrenovering/hero-gothenburg-classic.webp",
-    heroImageAlt: "Färdigt kök i äldre Göteborgslägenhet med grå skåp och bevarade detaljer",
+    heroImage: "/images/services/koksrenovering/hero-villa-kokso-tra.webp",
+    heroImageAlt: "Beigefärgat villakök med köksö i trä och utsikt mot trädgården",
     highlights: [
       ["1500+", "Genomförda projekt"],
       ["2–4 veckor", "Vanlig tidsplan"],
@@ -416,13 +416,14 @@ export const renovationDetailContent = {
       "Om el eller vatten behöver flyttas.",
       "När du ungefär vill att arbetet ska starta.",
     ],
-    supportingImage: "/images/services/koksrenovering/project-08-final-inspection.webp",
-    supportingImageAlt: "Köksrenovering: färdigt kök efter samordnat montage",
+    supportingImage: "/images/services/koksrenovering/project-08-marinblatt-snedtak.webp",
+    supportingImageAlt: "Marinblått och vitt villakök med halvö och takfönster",
+    // Selected kitchen illustrations; captions describe the design, not documented customer jobs.
     projects: [
       {
-        src: "/images/services/koksrenovering/project-01-sage-compact.webp",
-        alt: "Färdigt kompakt kök med mörkgröna skåp och matplats",
-        caption: "Ett mindre kök där förvaring och arbetsyta utnyttjar hela väggen utan att rummet känns trångt.",
+        src: "/images/services/koksrenovering/project-01-varmvit-shaker.webp",
+        alt: "Varmvitt kök med spegelluckor, träbänkskiva och diskho vid fönstret",
+        caption: "Köksinspiration – varmvita luckor och träbänkskiva ger ett ljust kök med varm känsla.",
       },
       {
         src: "/images/services/koksrenovering/project-02-family-island.webp",
@@ -430,9 +431,9 @@ export const renovationDetailContent = {
         caption: "Köksö, förvaring och matplats samordnas för en vardag där flera kan använda köket samtidigt.",
       },
       {
-        src: "/images/services/koksrenovering/project-03-cream-terracotta.webp",
-        alt: "Färdigt kök med gräddvita skåp och terrakottagolv",
-        caption: "Klassiska luckor och terrakottagolv ger ett varmt kök som passar husets befintliga uttryck.",
+        src: "/images/services/koksrenovering/project-03-mork-ek-villa.webp",
+        alt: "Villakök med mörka träfronter, ljusa stenytor och fönster mot trädgården",
+        caption: "Köksinspiration – mörka träfronter möter ljusa stenytor och stora fönster mot trädgården.",
       },
       {
         src: "/images/services/koksrenovering/project-04-charcoal-wood.webp",
@@ -440,9 +441,9 @@ export const renovationDetailContent = {
         caption: "Mörka arbetsytor och träfronter kombineras i ett kök som känns ombonat och används varje dag.",
       },
       {
-        src: "/images/services/koksrenovering/project-05-offwhite-narrow.webp",
-        alt: "Smalt färdigt kök med ljusa skåp och rostfri arbetsyta",
-        caption: "Den smala planlösningen får tydliga arbetszoner och gott om förvaring längs ena väggen.",
+        src: "/images/services/koksrenovering/project-05-ask-sand-villa.webp",
+        alt: "Villakök med ljusa träfronter, sandfärgade överskåp och dörr mot uteplatsen",
+        caption: "Köksinspiration – ljusa träfronter och sandtoner binder ihop köket med uteplatsen.",
       },
       {
         src: "/images/services/koksrenovering/project-06-dark-green-townhouse.webp",
@@ -450,14 +451,14 @@ export const renovationDetailContent = {
         caption: "Ett mörkgrönt radhuskök där arbetsytan får dagsljus och matplatsen ligger nära.",
       },
       {
-        src: "/images/services/koksrenovering/project-07-hall-to-kitchen.webp",
-        alt: "Färdigt kök sett från hallen med matplats och vardagsrum",
-        caption: "Kök, matplats och vardagsrum binds ihop av samma golv och en tydlig passage.",
+        src: "/images/services/koksrenovering/project-07-morkgront-matplats.webp",
+        alt: "Mörkgrönt villakök med mässingshandtag och matplats vid fönstret",
+        caption: "Köksinspiration – mörkgröna luckor, trä och en matplats nära arbetsytorna.",
       },
       {
-        src: "/images/services/koksrenovering/project-08-final-inspection.webp",
-        alt: "Slutkontroll av färdigrenoverat kök",
-        caption: "Luckor, anslutningar och arbetsytor kontrolleras innan köket lämnas över.",
+        src: "/images/services/koksrenovering/project-08-marinblatt-snedtak.webp",
+        alt: "Marinblått och vitt villakök med halvö under ett ljust snedtak med takfönster",
+        caption: "Köksinspiration – en halvö ger extra arbetsyta medan takfönstret släpper in dagsljus.",
       },
     ],
     reviewNames: ["Lars G.", "Anna & Mikael", "Familjen Johansson"],
