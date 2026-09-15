@@ -2,7 +2,7 @@ export const service = {
   "slug": "golvlaggning",
   "title": "Golvläggning",
   "body": "Golvläggning i Göteborg för lägenheter, villor och radhus. Vi går igenom underlag, materialval och avslut och lämnar en tydlig offert för ditt golv.",
-  "image": "/images/services/golvlaggning/hero-iphone.webp",
+  "image": "/images/services/golvlaggning/01-villa-ljus-ek.webp",
   "detail": {
     "introTitle": "Ett nytt golv börjar med rätt underlag",
     "intro": "Vill du byta golv i ett rum eller lägga nytt i flera delar av hemmet? GESAB hjälper privatpersoner i Göteborg med omnejd med golvläggning. Vi går igenom befintligt golv, underlag och ditt materialönskemål innan vi bestämmer omfattning och lämnar offert.",
@@ -35,53 +35,53 @@ export const detail = {
   "audience": "Privatpersoner som vill byta golv",
   "heroTitle": "Golvläggning i Göteborg",
   "heroLead": "Golvläggning i Göteborg för lägenheter, villor och radhus. Vi går igenom underlag, materialval och avslut och lämnar en tydlig offert för ditt golv.",
-  "heroImage": "/images/services/golvlaggning/hero-iphone.webp",
-  "heroImageAlt": "Ljust golv i ett vardagsrum",
+  "heroImage": "/images/services/golvlaggning/01-villa-ljus-ek.webp",
+  "heroImageAlt": "Ljust trägolv i vardagsrum med stora fönster mot trädgården",
   "projects": [
     {
-      "src": "/images/services/golvlaggning/01-hall-iphone.webp",
-      "alt": "Ljust golv i hall med vita dörrar och skoskåp",
-      "caption": "Ljust golv i hall med vita dörrar och skoskåp."
+      "src": "/images/services/golvlaggning/02-villa-matplats.webp",
+      "alt": "Varmtonat trägolv vid en matplats i villa",
+      "caption": "Varmtonat trägolv vid en matplats i villa."
     },
     {
-      "src": "/images/services/golvlaggning/02-kok-iphone.webp",
-      "alt": "Golvyta i kök med vita skåp",
-      "caption": "Golvyta i kök med vita skåp."
+      "src": "/images/services/golvlaggning/03-villa-ljust-plankgolv.webp",
+      "alt": "Ljust plankgolv i rum med panelväggar och höga fönster",
+      "caption": "Ljust plankgolv i rum med panelväggar och höga fönster."
     },
     {
-      "src": "/images/services/golvlaggning/03-sovrum-iphone.webp",
-      "alt": "Golv i sovrum med blått påslakan",
-      "caption": "Golv i sovrum med blått påslakan."
+      "src": "/images/services/golvlaggning/04-villa-morkt-tragolv.webp",
+      "alt": "Mörkare trägolv genom vardagsrum och matplats i villa",
+      "caption": "Mörkare trägolv genom vardagsrum och matplats i villa."
     },
     {
-      "src": "/images/services/golvlaggning/04-matplats-iphone.webp",
-      "alt": "Golvyta kring en matplats i ett hem",
-      "caption": "Golvyta kring en matplats i ett hem."
+      "src": "/images/services/golvlaggning/05-lagenhet-parkett.webp",
+      "alt": "Varmtonad parkett i lägenhet med höga fönster och äldre dörrar",
+      "caption": "Varmtonad parkett i lägenhet med höga fönster och äldre dörrar."
     },
     {
-      "src": "/images/services/golvlaggning/05-list-iphone.webp",
-      "alt": "Närbild på golvets anslutning till vit golvlist",
-      "caption": "Närbild på golvets anslutning till vit golvlist."
+      "src": "/images/services/golvlaggning/06-lagenhet-ljus-ek.webp",
+      "alt": "Ljust trägolv i vardagsrum med grön soffa och balkongdörr",
+      "caption": "Ljust trägolv i vardagsrum med grön soffa och balkongdörr."
     },
     {
-      "src": "/images/services/golvlaggning/06-troskel-iphone.webp",
-      "alt": "Tröskel mellan golven i två rum",
-      "caption": "Tröskel mellan golven i två rum."
+      "src": "/images/services/golvlaggning/07-lagenhet-sammanhangande-golv.webp",
+      "alt": "Sammanhängande trägolv mellan vardagsrum och kök i lägenhet",
+      "caption": "Sammanhängande trägolv mellan vardagsrum och kök i lägenhet."
     },
     {
-      "src": "/images/services/golvlaggning/07-tomt-rum-iphone.webp",
-      "alt": "Golvyta i ett tomt färdigställt rum",
-      "caption": "Golvyta i ett tomt färdigställt rum."
+      "src": "/images/services/golvlaggning/08-golvlist-dorrfoder.webp",
+      "alt": "Närbild på trägolvets möte med vit golvlist och dörrfoder",
+      "caption": "Närbild på trägolvets möte med vit golvlist och dörrfoder."
     },
     {
-      "src": "/images/services/golvlaggning/08-golv-narbild-iphone.webp",
-      "alt": "Närbild på golvbrädor och trästruktur",
-      "caption": "Närbild på golvbrädor och trästruktur."
+      "src": "/images/services/golvlaggning/09-overgang-tra-klinker.webp",
+      "alt": "Övergång mellan trägolv och ljusa golvplattor i en dörröppning",
+      "caption": "Övergång mellan trägolv och ljusa golvplattor i en dörröppning."
     },
     {
-      "src": "/images/services/golvlaggning/09-allrum-iphone.webp",
-      "alt": "Golv i allrum med bokhylla och soffa",
-      "caption": "Golv i allrum med bokhylla och soffa."
+      "src": "/images/services/golvlaggning/10-tragolv-struktur.webp",
+      "alt": "Närbild på trägolvets ådring och skarvar i naturligt ljus",
+      "caption": "Närbild på trägolvets ådring och skarvar i naturligt ljus."
     }
   ],
   "quoteHeading": "Få offert på golvläggning",
