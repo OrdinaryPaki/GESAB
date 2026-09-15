@@ -421,9 +421,9 @@ export const renovationDetailContent = {
     // Selected kitchen illustrations; captions describe the design, not documented customer jobs.
     projects: [
       {
-        src: "/images/services/koksrenovering/project-01-varmvit-shaker.webp",
-        alt: "Varmvitt kök med spegelluckor, träbänkskiva och diskho vid fönstret",
-        caption: "Varmvita luckor och träbänkskiva ger ett ljust kök med varm känsla.",
+        src: "/images/services/koksrenovering/project-03-mork-ek-villa.webp",
+        alt: "Villakök med mörka träfronter, ljusa stenytor och fönster mot trädgården",
+        caption: "Mörka träfronter möter ljusa stenytor och stora fönster mot trädgården.",
       },
       {
         src: "/images/services/koksrenovering/project-02-family-island.webp",
@@ -431,9 +431,9 @@ export const renovationDetailContent = {
         caption: "Köksö, förvaring och matplats samordnas för en vardag där flera kan använda köket samtidigt.",
       },
       {
-        src: "/images/services/koksrenovering/project-03-mork-ek-villa.webp",
-        alt: "Villakök med mörka träfronter, ljusa stenytor och fönster mot trädgården",
-        caption: "Mörka träfronter möter ljusa stenytor och stora fönster mot trädgården.",
+        src: "/images/services/koksrenovering/project-01-varmvit-shaker.webp",
+        alt: "Varmvitt kök med spegelluckor, träbänkskiva och diskho vid fönstret",
+        caption: "Varmvita luckor och träbänkskiva ger ett ljust kök med varm känsla.",
       },
       {
         src: "/images/services/koksrenovering/project-04-charcoal-wood.webp",
