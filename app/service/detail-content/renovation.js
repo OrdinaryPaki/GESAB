@@ -423,7 +423,7 @@ export const renovationDetailContent = {
       {
         src: "/images/services/koksrenovering/project-01-varmvit-shaker.webp",
         alt: "Varmvitt kök med spegelluckor, träbänkskiva och diskho vid fönstret",
-        caption: "Köksinspiration – varmvita luckor och träbänkskiva ger ett ljust kök med varm känsla.",
+        caption: "Varmvita luckor och träbänkskiva ger ett ljust kök med varm känsla.",
       },
       {
         src: "/images/services/koksrenovering/project-02-family-island.webp",
@@ -433,7 +433,7 @@ export const renovationDetailContent = {
       {
         src: "/images/services/koksrenovering/project-03-mork-ek-villa.webp",
         alt: "Villakök med mörka träfronter, ljusa stenytor och fönster mot trädgården",
-        caption: "Köksinspiration – mörka träfronter möter ljusa stenytor och stora fönster mot trädgården.",
+        caption: "Mörka träfronter möter ljusa stenytor och stora fönster mot trädgården.",
       },
       {
         src: "/images/services/koksrenovering/project-04-charcoal-wood.webp",
@@ -443,7 +443,7 @@ export const renovationDetailContent = {
       {
         src: "/images/services/koksrenovering/project-05-ask-sand-villa.webp",
         alt: "Villakök med ljusa träfronter, sandfärgade överskåp och dörr mot uteplatsen",
-        caption: "Köksinspiration – ljusa träfronter och sandtoner binder ihop köket med uteplatsen.",
+        caption: "Ljusa träfronter och sandtoner binder ihop köket med uteplatsen.",
       },
       {
         src: "/images/services/koksrenovering/project-06-dark-green-townhouse.webp",
@@ -453,12 +453,12 @@ export const renovationDetailContent = {
       {
         src: "/images/services/koksrenovering/project-07-morkgront-matplats.webp",
         alt: "Mörkgrönt villakök med mässingshandtag och matplats vid fönstret",
-        caption: "Köksinspiration – mörkgröna luckor, trä och en matplats nära arbetsytorna.",
+        caption: "Mörkgröna luckor, trä och en matplats nära arbetsytorna.",
       },
       {
         src: "/images/services/koksrenovering/project-08-marinblatt-snedtak.webp",
         alt: "Marinblått och vitt villakök med halvö under ett ljust snedtak med takfönster",
-        caption: "Köksinspiration – en halvö ger extra arbetsyta medan takfönstret släpper in dagsljus.",
+        caption: "En halvö ger extra arbetsyta medan takfönstret släpper in dagsljus.",
       },
     ],
     reviewNames: ["Lars G.", "Anna & Mikael", "Familjen Johansson"],
