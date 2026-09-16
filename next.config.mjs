@@ -3,6 +3,8 @@ const nextConfig = {
   devIndicators: false,
   async redirects() {
     return [
+      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/tjanster.html", destination: "/service", permanent: true },
       { source: "/service/bygg", destination: "/service/snickeri", permanent: true },
     ];
   },
