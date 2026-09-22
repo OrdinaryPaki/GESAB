@@ -416,8 +416,6 @@ export const renovationDetailContent = {
       "Om el eller vatten behöver flyttas.",
       "När du ungefär vill att arbetet ska starta.",
     ],
-    supportingImage: "/images/services/koksrenovering/project-08-marinblatt-snedtak.webp",
-    supportingImageAlt: "Marinblått och vitt villakök med halvö och takfönster",
     // Selected kitchen illustrations; captions describe the design, not documented customer jobs.
     projects: [
       {
@@ -450,18 +448,7 @@ export const renovationDetailContent = {
         alt: "Färdigt mörkgrönt kök i radhus med matbord",
         caption: "Ett mörkgrönt radhuskök där arbetsytan får dagsljus och matplatsen ligger nära.",
       },
-      {
-        src: "/images/services/koksrenovering/project-07-morkgront-matplats.webp",
-        alt: "Mörkgrönt villakök med mässingshandtag och matplats vid fönstret",
-        caption: "Mörkgröna luckor, trä och en matplats nära arbetsytorna.",
-      },
-      {
-        src: "/images/services/koksrenovering/project-08-marinblatt-snedtak.webp",
-        alt: "Marinblått och vitt villakök med halvö under ett ljust snedtak med takfönster",
-        caption: "En halvö ger extra arbetsyta medan takfönstret släpper in dagsljus.",
-      },
     ],
-    reviewNames: ["Lars G.", "Anna & Mikael", "Familjen Johansson"],
     quoteHeading: "Få en gratis offert",
     quoteDescription:
       "Beskriv dina önskemål i formuläret. Vi återkommer inom 24h med rådgivning och ett fast prisförslag.",

@@ -18,7 +18,7 @@ const serviceSlugs = [
   "rivningsarbeten",
 ];
 
-test("every service page uses one curated hero and eight distinct gallery images from its own folder or supplied photographs", () => {
+test("every service page uses one curated hero and its selected distinct gallery images", () => {
   for (const slug of serviceSlugs) {
     const detail = serviceDetails[slug];
     const expectedPrefix = `/images/services/${slug}/`;
@@ -28,7 +28,8 @@ test("every service page uses one curated hero and eight distinct gallery images
       detail.heroImage.startsWith(expectedPrefix),
       `${slug} hero must live in ${expectedPrefix}`,
     );
-    assert.equal(galleryImages.length, 8, `${slug} must have eight curated gallery images`);
+    const expectedCount = slug === "koksrenovering" ? 6 : 8;
+    assert.equal(galleryImages.length, expectedCount, `${slug} must have ${expectedCount} curated gallery images`);
     assert.ok(
       galleryImages.every((image) => image.startsWith(expectedPrefix) ||
         (slug === "badrumsrenovering" && image === gesabImages.vanity.src)),
