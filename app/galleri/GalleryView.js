@@ -5,7 +5,7 @@ import { gesabImages } from "../components/gesab-image-data";
 import { services } from "../gesab-data";
 import styles from "./galleri.module.css";
 
-const allCategories = ["Alla", "Badrum", "Altan", "Tvättstuga", "Kök", "Totalentreprenad", "Bygg"];
+const allCategories = ["Alla", "Badrum", "Altan", "Kök", "Totalentreprenad", "Bygg"];
 
 const galleryProjects = [
   {
@@ -37,13 +37,6 @@ const galleryProjects = [
     image: services.find((s) => s.slug === "totalentreprenad")?.image,
   },
   {
-    id: 15,
-    title: "Renoverad tvättstuga",
-    category: "Tvättstuga",
-    size: "normal",
-    image: services.find((s) => s.slug === "tvattstugsrenovering")?.image,
-  },
-  {
     id: 5,
     title: "Nybyggd altan",
     category: "Altan",
@@ -69,7 +62,7 @@ const galleryProjects = [
     title: "Köksrenovering i Göteborg",
     category: "Kök",
     size: "normal",
-    image: "/images/services/koksrenovering/project-06-dark-green-townhouse.webp",
+    image: "/images/services/koksrenovering/project-03-mork-ek-villa.webp",
   },
   {
     id: 9,
