@@ -6,6 +6,15 @@ const origin = 'https://ges-ab.se';
 const serviceSlugs = ['badrumsrenovering', 'altanbygge', 'tvattstugsrenovering', 'koksrenovering', 'totalentreprenad', 'rivningsarbeten', 'golvlaggning', 'koksmontering', 'snickeri'];
 const paths = ['/', '/about', '/service', '/galleri', '/contact', '/cookies', ...serviceSlugs.map(slug => `/service/${slug}`), ...serviceSlugs.flatMap(slug => ['boras', 'kungsbacka'].map(area => `/service/${slug}/${area}`))];
 
+test('legacy gallery links permanently redirect to the gallery and preserve query parameters', async () => {
+  const response = await fetch(`${siteUrl}/galleri.html?utm_source=legacy`, { redirect: 'manual' });
+  assert.equal(response.status, 308);
+  const destination = new URL(response.headers.get('location'), siteUrl);
+  assert.equal(destination.pathname, '/galleri');
+  assert.equal(destination.searchParams.get('utm_source'), 'legacy');
+  assert.equal((await fetch(destination)).status, 200);
+});
+
 test('every public page has its own canonical, unique metadata, and one main heading', async () => {
   const titles = new Set();
   const descriptions = new Set();
