@@ -1,4 +1,4 @@
-import { gesabImages } from "../../components/gesab-image-data.js";
+import { bathroomImages } from "../../components/bathroom-image-data.js";
 
 export const renovationDetailContent = {
   badrumsrenovering: {
@@ -6,9 +6,9 @@ export const renovationDetailContent = {
     heroTitle: "Badrumsrenovering i Göteborg",
     heroLead:
       "Vi renoverar ditt badrum från start till mål. Du får fast pris, BKR-behöriga plattsättare, klar i tid-garanti och en enda kontaktperson under hela projektet.",
-    heroImage: "/images/services/badrumsrenovering/hero-olive-compact.webp",
-    heroImageAlt:
-      "Badrumsrenovering i Göteborg – färdigt badrum med walk in-dusch, ljusa storformatsplattor och kommod i trä",
+    heroImage: bathroomImages[0].src,
+    heroImageAlt: bathroomImages[0].alt,
+    heroImageSrcSet: bathroomImages[0].srcSet,
     highlights: [
       ["1500+", "Färdiga badrum"],
       ["3–5 veckor", "Fast tidsplan"],
@@ -21,51 +21,9 @@ export const renovationDetailContent = {
       "Dina önskemål kring stil: t.ex. dusch, badkar, inredning eller förvaring.",
       "När du ungefär vill att arbetet ska dras igång.",
     ],
-    supportingImage: "/images/services/badrumsrenovering/project-07-tiling.webp",
-    supportingImageAlt:
-      "Badrumsrenovering: tätskikt rollas på väggen och skarvarna i golvet är tejpade före plattsättning",
-    projects: [
-      {
-        src: gesabImages.vanity.src,
-        alt: gesabImages.vanity.alt,
-        caption: "Belyst spegel och en bred kommod kombineras med en duschdel i naturfärgade material.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/project-02-attic-sand.webp",
-        alt: "Färdigt vindsbadrum med snedtak, sandfärgade ytor och takfönster",
-        caption: "Snedtak och takfönster tas till vara i ett kompakt badrum med lugna material.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/project-03-forest-green.webp",
-        alt: "Färdigt badrum med mörkgrönt kakel, kommod i trä och duschvägg",
-        caption: "Mörkgrönt kakel ger djup medan kommoden i trä gör det mindre badrummet varmare.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/project-04-dusty-pink.webp",
-        alt: "Färdigt badrum med dämpat rosa kakel och terrazzogolv",
-        caption: "Dämpat rosa kakel kombineras med neutral inredning och ett tåligt terrazzogolv.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/project-05-white-terrazzo.webp",
-        alt: "Ljust färdigt badrum med vitt kakel, träkommod och terrazzogolv",
-        caption: "Vitt kakel och ett levande golv gör rummet ljust utan att kännas sterilt.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/project-06-brick-red.webp",
-        alt: "Färdigt badrum med tegelrött kakel och mörk kommod",
-        caption: "Tegelrött kakel ger duschdelen karaktär och möter en mörk kommod och ljust golv.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/project-07-tiling.webp",
-        alt: "Plattsättare monterar grönt kakel i ett badrum",
-        caption: "Plattsättningen dokumenteras under arbetet så att underlag och detaljer kan följas upp.",
-      },
-      {
-        src: "/images/services/badrumsrenovering/project-08-pre-handover.webp",
-        alt: "Nästan färdigt badrum med golvskydd och verktyg kvar",
-        caption: "Det nästan färdiga badrummet kontrolleras innan verktyg och golvskydd tas bort.",
-      },
-    ],
+    supportingImage: bathroomImages[1].src,
+    supportingImageAlt: bathroomImages[1].alt,
+    projects: bathroomImages.slice(1),
     reviewNames: ["Anna & Mikael", "Katarina S.", "Familjen Johansson"],
     quoteHeading: "Få en gratis offert",
     quoteDescription:

@@ -1,6 +1,7 @@
 import { service as flooring } from "./service/catalog/golvlaggning";
 import { service as kitchenInstallation } from "./service/catalog/koksmontering";
 import { service as carpentry } from "./service/catalog/snickeri";
+import { bathroomImages } from "./components/bathroom-image-data.js";
 
 export const image = {
   heroPattern: "/images/site/hero-pattern.jpg",
@@ -17,7 +18,7 @@ export const services = [
     slug: "badrumsrenovering",
     title: "Badrumsrenovering",
     body: "Vi renoverar ditt badrum från rivning till färdig yta – rätt tätskikt, samordnade yrkesroller och en tidplan du kan planera din vardag efter.",
-    image: "/images/services/badrumsrenovering/hero-olive-compact.webp",
+    image: bathroomImages[0].src,
     detail: {
       introTitle: "Ett tryggt och vackert badrum som håller i längden",
       intro:

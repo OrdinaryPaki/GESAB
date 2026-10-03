@@ -104,6 +104,8 @@ export function ServiceDetailPageView({ detail, relatedServices, service, area }
               fetchPriority="high"
               height="680"
               src={heroImage}
+              srcSet={detail.heroImageSrcSet}
+              sizes={detail.heroImageSrcSet ? "(max-width: 768px) 100vw, (max-width: 1400px) 90vw, 1320px" : undefined}
               width="1320"
             />
             {detail.highlights ? (

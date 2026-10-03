@@ -4,12 +4,13 @@ import { ContactBand } from "../components/ContactBand";
 import GalleryView from "./GalleryView";
 import styles from "./galleri.module.css";
 import { createPageMetadata } from "../seo";
+import { bathroomImages } from "../components/bathroom-image-data.js";
 
 export const metadata = createPageMetadata({
   title: "Badrum och kök – bilder och renoveringsinspiration",
   description: "Utforska bilder på badrum, kök och renovering hos GESAB. Hitta idéer för material, färger och planlösning inför ditt eget projekt.",
   path: "/galleri",
-  image: "/images/home/gallery-bathroom-result.webp",
+  image: bathroomImages[0].src,
 });
 
 export default function GalleriPage() {

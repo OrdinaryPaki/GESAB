@@ -16,6 +16,11 @@ export function ProjectGallery({ projects }) {
         <img
           alt={activeProject.alt}
           src={activeProject.src}
+          srcSet={activeProject.srcSet}
+          sizes={activeProject.srcSet ? "(max-width: 900px) 100vw, 827px" : undefined}
+          width={activeProject.width}
+          height={activeProject.height}
+          decoding="async"
           loading="lazy"
           data-service-supporting-image
         />
@@ -30,7 +35,7 @@ export function ProjectGallery({ projects }) {
             onClick={() => setActiveIndex(index)}
             aria-label={`Visa projektbild ${index + 1}`}
           >
-            <img alt={project.alt} src={project.src} loading="lazy" />
+            <img alt={project.alt} src={project.thumbnailSrc ?? project.src} loading="lazy" decoding="async" />
           </button>
         ))}
       </div>

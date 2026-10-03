@@ -1,20 +1,24 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { gesabImages } from "../components/gesab-image-data";
+import { bathroomImages } from "../components/bathroom-image-data.js";
 import { services } from "../gesab-data";
 import styles from "./galleri.module.css";
 
 const allCategories = ["Alla", "Badrum", "Altan", "Kök", "Totalentreprenad", "Bygg"];
 
 const galleryProjects = [
-  {
-    id: 1,
-    title: "Modern badrumsrenovering",
+  ...bathroomImages.map((image, index) => ({
+    id: `bathroom-${index}`,
+    title: image.title,
+    alt: image.alt,
     category: "Badrum",
-    size: "large",
-    image: gesabImages.bathtub.src,
-  },
+    size: index === 0 ? "large" : "normal",
+    image: image.src,
+    srcSet: image.srcSet,
+    width: image.width,
+    height: image.height,
+  })),
   {
     id: 2,
     title: "Stilrent platsbyggt kök",
@@ -49,13 +53,6 @@ const galleryProjects = [
     category: "Bygg",
     size: "large",
     image: services.find((s) => s.slug === "rivningsarbeten")?.image,
-  },
-  {
-    id: 7,
-    title: "Badrum med belyst spegel",
-    category: "Badrum",
-    size: "tall",
-    image: gesabImages.vanity.src,
   },
   {
     id: 8,
@@ -116,7 +113,21 @@ export default function GalleryView() {
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               {project.image ? (
-                <img className={styles.galleryImage} src={project.image} alt={project.title} loading="lazy" />
+                <img
+                  className={styles.galleryImage}
+                  src={project.image}
+                  srcSet={project.srcSet}
+                  sizes={project.srcSet
+                    ? project.size === "large"
+                      ? "(max-width: 1024px) 90vw, 850px"
+                      : "(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 420px"
+                    : undefined}
+                  width={project.width}
+                  height={project.height}
+                  alt={project.alt ?? project.title}
+                  loading="lazy"
+                  decoding="async"
+                />
               ) : null}
               <div className={styles.overlay}>
                 <h2 className={styles.itemTitle}>{project.title}</h2>

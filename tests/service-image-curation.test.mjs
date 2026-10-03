@@ -28,7 +28,7 @@ test("every service page uses one curated hero and its selected distinct gallery
       detail.heroImage.startsWith(expectedPrefix),
       `${slug} hero must live in ${expectedPrefix}`,
     );
-    const expectedCount = slug === "koksrenovering" ? 6 : 8;
+    const expectedCount = { badrumsrenovering: 5, koksrenovering: 6 }[slug] ?? 8;
     assert.equal(galleryImages.length, expectedCount, `${slug} must have ${expectedCount} curated gallery images`);
     assert.ok(
       galleryImages.every((image) => image.startsWith(expectedPrefix) ||
