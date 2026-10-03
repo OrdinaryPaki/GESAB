@@ -7,6 +7,7 @@ const nextConfig = {
       { source: "/tjanster.html", destination: "/service", permanent: true },
       { source: "/kontakt.html", destination: "/contact", permanent: true },
       { source: "/galleri.html", destination: "/galleri", permanent: true },
+      { source: "/om_oss.html", destination: "/about", permanent: true },
       { source: "/service/bygg", destination: "/service/snickeri", permanent: true },
     ];
   },
