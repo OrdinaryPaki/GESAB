@@ -222,14 +222,14 @@ export function AboutPreview() {
         </div>
         <img className="about-photo" {...homeImages.about} loading="lazy" decoding="async" />
       </div>
-      <div className="container stat-grid">
+      <ul className="container stat-grid">
         {aboutStats.map((stat) => (
-          <div key={stat.label}>
+          <li key={stat.label}>
             <strong>{stat.value}</strong>
             <span>{stat.label}</span>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

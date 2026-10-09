@@ -13,6 +13,7 @@ import { ProjectGallery } from "./ProjectGallery";
 import { ServiceAreas } from "./ServiceAreas";
 import styles from "./service-detail-styles.js";
 import { siteConfig } from "../../site-config";
+import { createFaqPageNode } from "../../seo";
 import { LocalServiceContext } from "./LocalServiceContext";
 import { ServiceBreadcrumbs } from "./ServiceBreadcrumbs";
 import { localServiceDecisions } from "../local-service-decisions";
@@ -42,17 +43,7 @@ function buildStructuredData(service, detail, area, breadcrumbs) {
         areaServed: area?.name ?? "Göteborg med omnejd",
         provider: { "@id": `${siteConfig.url}/#business` },
       },
-      {
-        "@type": "FAQPage",
-        mainEntity: detail.faq.map((item) => ({
-          "@type": "Question",
-          name: item.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.answer,
-          },
-        })),
-      },
+      createFaqPageNode(detail.faq),
     ],
   };
 }

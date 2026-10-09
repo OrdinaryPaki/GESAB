@@ -34,6 +34,20 @@ export function createPageMetadata({ title, description, path, image }) {
   };
 }
 
+export function createFaqPageNode(items) {
+  return {
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
 export function createWebSiteStructuredData() {
   return {
     "@context": "https://schema.org",
@@ -52,8 +66,9 @@ export function createLocalBusinessStructuredData() {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${siteConfig.url}/#business`,
-    name: siteConfig.name,
-    alternateName: siteConfig.shortName,
+    name: siteConfig.shortName,
+    legalName: siteConfig.name,
+    alternateName: siteConfig.name,
     url: siteConfig.url,
     telephone: contactInfo.phonePrimaryInternational,
     email: contactInfo.email,
