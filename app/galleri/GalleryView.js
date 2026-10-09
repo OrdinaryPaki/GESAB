@@ -80,7 +80,7 @@ export default function GalleryView() {
   }, [activeCategory]);
 
   return (
-    <main className={styles.main}>
+    <main id="main-content" className={styles.main}>
       <div className={styles.header}>
         <h1 className={styles.title}>Inspiration för ditt hem</h1>
         <p className={styles.subtitle}>

@@ -21,6 +21,9 @@ export function Header({ dark = false, hero = false }) {
 
   return (
     <header className={className}>
+      <a className="skip-link" href="#main-content">
+        Hoppa till innehållet
+      </a>
       <div className="container header-inner">
         <div className="header-left">
           <Link href="/" className="logo-link">

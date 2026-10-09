@@ -16,7 +16,7 @@ export default function CookiesPage() {
   return (
     <>
       <Header dark />
-      <main className={styles.page}>
+      <main id="main-content" className={styles.page}>
         <span className={styles.eyebrow}>GESAB · DINA VAL</span>
         <h1>Integritet och cookies</h1>
         <p className={styles.intro}>Här kan du läsa om vår annonsmätning och välja hur cookies får användas i din webbläsare.</p>

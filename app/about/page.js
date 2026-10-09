@@ -21,11 +21,13 @@ export default function AboutPage() {
     <div className={styles.page} id="about-page">
       <AboutRevealController />
       <Header dark />
-      <AboutStorySection />
-      <AboutMissionSection />
-      <ProcessSection />
-      <TrustNotes />
-      <FaqSection />
+      <main id="main-content">
+        <AboutStorySection />
+        <AboutMissionSection />
+        <ProcessSection />
+        <TrustNotes />
+        <FaqSection />
+      </main>
       <ContactBand />
       <Footer />
     </div>

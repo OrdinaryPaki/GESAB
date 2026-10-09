@@ -35,7 +35,7 @@ export default function ServicePage() {
   return (
     <div className={styles.servicePage}>
       <Header dark />
-      <main>
+      <main id="main-content">
         <section className={styles.indexSection}>
           <div className={`container ${styles.indexContainer}`}>
             <header className={styles.indexTitle}>

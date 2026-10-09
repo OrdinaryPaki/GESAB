@@ -51,14 +51,16 @@ export function HomePage() {
   return (
     <>
       <Header hero />
-      <Hero />
-      <SupportStrip />
-      <WhyChoose />
-      <ServicesPreview />
-      <AboutPreview />
-      <TrustNotes />
-      <GallerySection />
-      <FaqSection />
+      <main id="main-content">
+        <Hero />
+        <SupportStrip />
+        <WhyChoose />
+        <ServicesPreview />
+        <AboutPreview />
+        <TrustNotes />
+        <GallerySection />
+        <FaqSection />
+      </main>
       <ContactBand />
       <Footer />
     </>
@@ -206,7 +208,7 @@ export function AboutPreview() {
           <SectionTitle label="Om GESAB" title="Trygg renovering med rätt team i Göteborg" />
           <div className="about-row">
             <div className="metric-card">
-              <img src={image.aboutPattern} alt="" />
+              <img src={image.aboutPattern} alt="" width="1244" height="1252" loading="lazy" decoding="async" />
               <strong>100+</strong>
               <span>projekt med tydlig ordning</span>
             </div>

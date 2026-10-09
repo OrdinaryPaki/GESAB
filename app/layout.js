@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { MobileNavigationEnhancement } from "./components/MobileNavigationEnhancement";
 import { AdsConsent } from "./components/AdsConsent";
 import { ContactClickTracking } from "./components/ContactClickTracking";
-import { createLocalBusinessStructuredData } from "./seo";
+import { createLocalBusinessStructuredData, createWebSiteStructuredData } from "./seo";
 import { siteConfig } from "./site-config";
 
 export const metadata = {
@@ -39,7 +39,9 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  const structuredData = JSON.stringify(createLocalBusinessStructuredData()).replaceAll("<", "\\u003c");
+  const structuredData = [createWebSiteStructuredData(), createLocalBusinessStructuredData()].map((entry) =>
+    JSON.stringify(entry).replaceAll("<", "\\u003c"),
+  );
 
   return (
     <html lang="sv" data-scroll-behavior="smooth">
@@ -52,7 +54,9 @@ export default function RootLayout({ children }) {
         <ContactClickTracking />
         <Analytics />
         <SpeedInsights />
-        <script dangerouslySetInnerHTML={{ __html: structuredData }} type="application/ld+json" />
+        {structuredData.map((json) => (
+          <script key={json} dangerouslySetInnerHTML={{ __html: json }} type="application/ld+json" />
+        ))}
       </body>
     </html>
   );

@@ -1,9 +1,9 @@
 import { siteConfig } from "../site-config";
 
-export function Logo() {
+export function Logo({ lazy = false }) {
   return (
     <span className="logo" aria-label={siteConfig.shortName}>
-      <img className="logo-image" src="/images/gesab/logo.webp" alt={siteConfig.shortName} width="815" height="330" />
+      <img className="logo-image" src="/images/gesab/logo.webp" alt={siteConfig.shortName} width="815" height="330" loading={lazy ? "lazy" : undefined} decoding={lazy ? "async" : undefined} />
     </span>
   );
 }

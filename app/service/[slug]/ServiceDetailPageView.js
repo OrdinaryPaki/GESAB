@@ -74,7 +74,7 @@ export function ServiceDetailPageView({ detail, relatedServices, service, area }
   return (
     <div className={`${styles.page} service-detail-page`} data-service-detail-page={service.slug}>
       <Header dark />
-      <main>
+      <main id="main-content">
         <section className={styles.hero} aria-labelledby="service-title">
           <div className={`container ${styles.container}`}>
             {breadcrumbs ? <ServiceBreadcrumbs items={breadcrumbs} /> : null}

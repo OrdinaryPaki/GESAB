@@ -45,50 +45,52 @@ export default function ContactPage() {
   return (
     <div className={styles.page} id="contact-page">
       <Header dark />
-      <section className="contact-hero-section">
-        <div className="contact-hero-inner">
-          <h1>
-            Prata med oss om{" "}
-            <br />
-            din renovering
-          </h1>
-          <p>Beskriv vad du vill göra, var arbetet ska utföras och när du önskar börja. Vi återkommer om omfattning och nästa steg inför offert. Du kan också ringa eller mejla oss direkt.</p>
-          <ContactForm />
-        </div>
-      </section>
-      <section className="contact-info-section">
-        <div className="container">
-          <div className="section-title center">
-            <h2>Kontaktuppgifter</h2>
-            <p>Ring eller mejla om du vill diskutera badrum, kök, bygg eller totalentreprenad.</p>
+      <main id="main-content">
+        <section className="contact-hero-section">
+          <div className="contact-hero-inner">
+            <h1>
+              Prata med oss om{" "}
+              <br />
+              din renovering
+            </h1>
+            <p>Beskriv vad du vill göra, var arbetet ska utföras och när du önskar börja. Vi återkommer om omfattning och nästa steg inför offert. Du kan också ringa eller mejla oss direkt.</p>
+            <ContactForm />
           </div>
-          <div className="contact-card-row">
-            <article>
-              <span><PhoneIcon /></span>
-              <h3>Telefon</h3>
-              <p><a href={contactInfo.phonePrimaryHref}>{contactInfo.phonePrimary}</a></p>
-              <p><a href={contactInfo.phoneSecondaryHref}>{contactInfo.phoneSecondary}</a></p>
-            </article>
-            <article>
-              <span><MailIcon /></span>
-              <h3>E-post</h3>
-              <p><a href={contactInfo.emailHref}>{contactInfo.email}</a></p>
-              <p>Offert och rådgivning</p>
-            </article>
-            <article>
-              <span><LocationIcon /></span>
-              <h3>Adress</h3>
-              <p>
-                <a href={contactInfo.mapsSearchHref}>
-                  {contactInfo.addressLine}
-                </a>
-              </p>
-            </article>
+        </section>
+        <section className="contact-info-section">
+          <div className="container">
+            <div className="section-title center">
+              <h2>Kontaktuppgifter</h2>
+              <p>Ring eller mejla om du vill diskutera badrum, kök, bygg eller totalentreprenad.</p>
+            </div>
+            <div className="contact-card-row">
+              <article>
+                <span><PhoneIcon /></span>
+                <h3>Telefon</h3>
+                <p><a href={contactInfo.phonePrimaryHref}>{contactInfo.phonePrimary}</a></p>
+                <p><a href={contactInfo.phoneSecondaryHref}>{contactInfo.phoneSecondary}</a></p>
+              </article>
+              <article>
+                <span><MailIcon /></span>
+                <h3>E-post</h3>
+                <p><a href={contactInfo.emailHref}>{contactInfo.email}</a></p>
+                <p>Offert och rådgivning</p>
+              </article>
+              <article>
+                <span><LocationIcon /></span>
+                <h3>Adress</h3>
+                <p>
+                  <a href={contactInfo.mapsSearchHref}>
+                    {contactInfo.addressLine}
+                  </a>
+                </p>
+              </article>
+            </div>
+            <ContactMap />
           </div>
-          <ContactMap />
-        </div>
-      </section>
-      <FaqSection items={contactFaqItems} />
+        </section>
+        <FaqSection items={contactFaqItems} />
+      </main>
       <ContactBand />
       <Footer />
     </div>

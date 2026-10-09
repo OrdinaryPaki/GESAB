@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <div className={styles.page}>
       <Header dark />
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <div className={styles.content}>
           <p className={styles.code} aria-label="Fel 404">404<span aria-hidden="true">.</span></p>
           <h1>Här finns inget att<br className={styles.desktopBreak} /> bygga vidare på.</h1>

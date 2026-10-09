@@ -17,7 +17,7 @@ export function EpostPreviewClient() {
   return (
     <div className={styles.page}>
       <Header dark />
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <div className={styles.controls}>
           <h2>E-post Förhandsgranskning</h2>
 

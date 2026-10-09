@@ -6,7 +6,7 @@ import "./ContactBand.css";
 export function ContactBand() {
   return (
     <section className="contact-band" data-contact-band>
-      <img className="contact-band-bg" src={image.ctaBg} alt="" />
+      <img className="contact-band-bg" src={image.ctaBg} alt="" width="2048" height="1223" loading="lazy" decoding="async" />
       <div className="contact-band-overlay" />
       <div className="container contact-band-inner">
         <div className="contact-copy">

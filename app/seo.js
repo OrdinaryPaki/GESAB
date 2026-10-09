@@ -34,6 +34,19 @@ export function createPageMetadata({ title, description, path, image }) {
   };
 }
 
+export function createWebSiteStructuredData() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteConfig.url}/#website`,
+    name: siteConfig.shortName,
+    alternateName: siteConfig.name,
+    url: siteConfig.url,
+    inLanguage: "sv-SE",
+    publisher: { "@id": `${siteConfig.url}/#business` },
+  };
+}
+
 export function createLocalBusinessStructuredData() {
   return {
     "@context": "https://schema.org",

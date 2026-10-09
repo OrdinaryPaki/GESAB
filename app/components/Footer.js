@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <Logo dark />
+          <Logo lazy />
           <p>
             Badrumsrenovering, köksrenovering och entreprenadarbeten i Göteborg med fokus på
             tydlig planering och fackmässigt utförande.
